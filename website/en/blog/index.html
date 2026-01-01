@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 2026 Modern Meta Tags -->
+  <meta name="theme-color" content="#1a202c" />
+  <meta name="color-scheme" content="light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="view-transition" content="same-origin" />
+
+  <!-- PWA Support -->
+  <link rel="manifest" href="../../manifest.json" />
+  <link rel="apple-touch-icon" href="../../pictures.final/Final Transparent Logo.png" />
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" as="style" href="../../css/main.min.css" />
+
+  <link rel="icon" type="image/png" href="../../pictures.final/Final Transparent Logo.png" />
+  <title>Blog - TheBackROM</title>
+
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/blog/index.html" />
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/blogg/index.html" />
+  <link rel="canonical" href="https://thebackrom.com/en/blog/index.html" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540166625752174');
+        fbq('track', 'PageView');
+      }, 2000);
+    });
+
+  </script>
+  <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Modular CSS Loading -->
+  <link rel="stylesheet" href="../../css/main.min.css?v=20260101">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+  <link rel="preload" as="style" href="../../css/font-awesome-minimal.css">
+  <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
+</head>
+
+<body id="top">
+  <!-- Skip-link for accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="../index.html" class="header__logo logo"><img src="../../pictures.final/logo-header.webp"
+            alt="TheBackROM Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <div class="header__navigation">
+          <div class="language-toggle" role="group" aria-label="Language selection">
+            <button class="language-toggle__button" data-lang="no" aria-label="Switch to Norwegian" aria-pressed="false">NO</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="en" aria-label="English" aria-pressed="true">EN</button>
+            <div class="language-toggle__slider"></div>
+          </div>
+          <button type="button" class="icon-menu" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="../index.html" class="menu__link">Home</a></li>
+              <li class="menu__item"><a href="../about.html" class="menu__link">About Me</a></li>
+              <li class="menu__item"><a href="../services.html" class="menu__link">Services</a></li>
+              <li class="menu__item"><a href="../conditions.html" class="menu__link">Conditions</a></li>
+              <li class="menu__item"><a href="../prices.html" class="menu__link">Prices</a></li>
+              <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+              <li class="menu__item"><a href="../contact.html" class="menu__link">Contact</a></li>
+              <li class="menu__item"><a href="./index.html" class="menu__link">Blog</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                  class="actions-header__button">Book Appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page" id="main">
+
+      <section class="page__main main main_pages blog-hero">
+        <div class="main__container main__container_pages">
+          <h1 class="main__title">Blog</h1>
+
+          <!-- Blog Filter Section moved to hero -->
+          <div class="blog-filters__hero-container" style="margin-top: var(--spacing-lg);">
+            <h2 class="blog-filters__title"
+              style="color: var(--color-white); margin-bottom: var(--spacing-lg); font-size: clamp(1.125rem, 2.5vw, 1.5rem); font-weight: 500;">
+              Filter blog posts</h2>
+
+            <!-- Compact tag buttons styled for hero background -->
+            <div class="blog-tag-grid"
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; max-width: 900px; margin: 0 auto var(--spacing-lg);">
+              <button class="tag-filter active" data-tag="all"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.95); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 600; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                All
+              </button>
+              <button class="tag-filter" data-tag="back-pain"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Back
+              </button>
+              <button class="tag-filter" data-tag="neck-pain"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Neck
+              </button>
+              <button class="tag-filter" data-tag="shoulder"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Shoulder & Arm
+              </button>
+              <button class="tag-filter" data-tag="hip-pain"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Hip & Pelvis
+              </button>
+              <button class="tag-filter" data-tag="knee-pain"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Knee
+              </button>
+              <button class="tag-filter" data-tag="foot-pain"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Foot & Ankle
+              </button>
+              <button class="tag-filter" data-tag="headache"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Headache
+              </button>
+              <button class="tag-filter" data-tag="dizziness"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Dizziness
+              </button>
+              <button class="tag-filter" data-tag="jaw-pain"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Jaw
+              </button>
+              <button class="tag-filter" data-tag="sports-injuries"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Sports Injuries
+              </button>
+              <button class="tag-filter" data-tag="other-interests"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Other Interests
+              </button>
+              <button class="tag-filter" data-tag="courses"
+                style="padding: 6px 12px; font-size: 0.85rem; min-height: 36px; background: rgba(255,255,255,0.9); border: 2px solid rgba(255,255,255,0.3); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); font-weight: 500; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                Courses
+              </button>
+            </div>
+
+            <!-- Dropdown for advanced filtering -->
+            <div class="blog-dropdown-container" style="text-align: center; margin-bottom: var(--spacing-lg);">
+              <label for="blog-category-dropdown"
+                style="display: block; margin-bottom: var(--spacing-xs); font-weight: 600; color: var(--color-white);">Or
+                choose category:</label>
+              <select id="blog-category-dropdown"
+                style="padding: 8px 12px; border: 2px solid rgba(255,255,255,0.3); border-radius: var(--border-radius); font-size: 0.9rem; background: rgba(255,255,255,0.95); min-width: 200px; backdrop-filter: blur(8px);">
+                <option value="all">All categories</option>
+                <optgroup label="Conditions">
+                  <option value="back-pain">Back Pain</option>
+                  <option value="neck-pain">Neck Pain</option>
+                  <option value="headache">Headache and Migraine</option>
+                  <option value="knee-pain">Knee Pain</option>
+                  <option value="shoulder">Shoulder and Arm Problems</option>
+                  <option value="dizziness">Dizziness</option>
+                  <option value="sports-injuries">Sports Injuries</option>
+                  <option value="hip-pain">Hip & Pelvic Pain</option>
+                  <option value="jaw-pain">Jaw Pain</option>
+                  <option value="foot-pain">Foot & Ankle Pain</option>
+                </optgroup>
+                <optgroup label="Treatment">
+                  <option value="chiropractic">Chiropractic</option>
+                  <option value="dry-needling">Dry Needling</option>
+                  <option value="fascial-manipulation">Fascial Manipulation</option>
+                  <option value="shockwave">Shockwave Therapy</option>
+                  <option value="rehabilitation">Rehabilitation</option>
+                  <option value="dizziness-treatment">Dizziness Treatment</option>
+                </optgroup>
+                <optgroup label="Other">
+                  <option value="other-interests">Other Interests</option>
+                  <option value="courses">Courses</option>
+                  <option value="research">Research</option>
+                  <option value="tips">Tips and Advice</option>
+                  <option value="home-exercise">Home Exercise</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Posts Section -->
+      <section class="page__klinisk-hjorne">
+        <div class="klinisk-hjorne__container">
+          <div class="klinisk-hjorne__scroll" id="blog-posts-container">
+            <!-- Blog posts will be loaded here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Responsive styling for blog navigation -->
+      <style>
+        /* Hero filter styling */
+        .blog-filters__hero-container .tag-filter {
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+
+        .blog-filters__hero-container .tag-filter.active {
+          background: var(--color-accent) !important;
+          border-color: var(--color-accent) !important;
+          color: var(--color-white) !important;
+          transform: translateY(-2px) scale(1.02);
+          box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4) !important;
+        }
+
+        .blog-filters__hero-container .tag-filter:hover:not(.active) {
+          background: rgba(255, 255, 255, 1) !important;
+          transform: translateY(-1px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+          border-color: rgba(255, 255, 255, 0.6) !important;
+        }
+
+        #blog-category-dropdown:focus {
+          outline: none;
+          border-color: var(--color-accent) !important;
+          box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3) !important;
+        }
+
+        @media (max-width: 767.98px) {
+          .blog-filters__hero-container .blog-tag-grid {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)) !important;
+            gap: 6px !important;
+            max-width: 100% !important;
+          }
+
+          .blog-filters__hero-container .tag-filter {
+            padding: 4px 8px !important;
+            font-size: 0.8rem !important;
+            min-height: 32px !important;
+          }
+
+          .blog-filters__hero-container .blog-dropdown-container label {
+            font-size: 0.9rem !important;
+          }
+
+          .blog-filters__hero-container #blog-category-dropdown {
+            font-size: 0.85rem !important;
+            padding: 6px 10px !important;
+            min-width: 180px !important;
+          }
+
+          .blog-filters__title {
+            font-size: clamp(1rem, 2.5vw, 1.25rem) !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .blog-filters__hero-container .blog-tag-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 4px !important;
+          }
+
+          .blog-filters__hero-container .tag-filter {
+            padding: 4px 6px !important;
+            font-size: 0.75rem !important;
+            min-height: 30px !important;
+          }
+
+          .blog-filters__hero-container #blog-category-dropdown {
+            min-width: 160px !important;
+            font-size: 0.8rem !important;
+          }
+
+          .blog-filters__title {
+            font-size: 0.95rem !important;
+            margin-bottom: var(--spacing-md) !important;
+          }
+        }
+
+        /* Improved blog post cards styling */
+        .klinisk-hjorne__item {
+          height: auto !important;
+          min-height: 240px !important;
+        }
+
+        .klinisk-hjorne__scroll {
+          gap: var(--spacing-md) !important;
+        }
+
+        @media (max-width: 767.98px) {
+          .klinisk-hjorne__item {
+            min-height: 220px !important;
+          }
+
+          .klinisk-hjorne__image {
+            height: 180px !important;
+          }
+
+          .klinisk-hjorne__image h3 {
+            font-size: 0.9rem !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .klinisk-hjorne__item {
+            min-height: 200px !important;
+          }
+
+          .klinisk-hjorne__image {
+            height: 160px !important;
+          }
+
+          .klinisk-hjorne__image h3 {
+            font-size: 0.85rem !important;
+            line-height: 1.2 !important;
+          }
+        }
+      </style>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Left Column -->
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link">
+              <img src="../../pictures.final/Media iconer/facebook_media_social_icon.png" alt="Follow TheBackROM on Facebook" loading="lazy"
+                decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link">
+              <img src="../../pictures.final/Media iconer/instagramlogo.png" alt="Follow chiropractor Mads Finstad on Instagram" loading="lazy"
+                decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link">
+              <img src="../../pictures.final/Media iconer/youtube_icon.png" alt="Watch videos from TheBackROM on YouTube" loading="lazy"
+                decoding="async" />
+            </a>
+            <a href="../contact.html" class="footer__social-link">
+              <img src="../../pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send email to TheBackROM" loading="lazy"
+                decoding="async" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Column -->
+        <div class="footer__center">
+          <div class="footer__logo">
+            <a href="../index.html" class="logo"><img src="../../pictures.final/logo-header.webp" alt="TheBackROM Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="back-to-top-text">Back to start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Go to top of page">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Up
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 08:00 - 19:00</p>
+            <p>Saturday: 10:00 - 16:00</p>
+            <p>Sunday: Closed</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Contact Information</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Phone: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>Email: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <a href="../privacy-policy.html" class="footer__policy">Privacy Policy</a>
+        <p class="footer__copyright">© 2025 TheBackROM  All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../../js/script.min.js" defer></script>
+  <script src="../../js/modern-enhancements.min.js" defer></script>
+  <script src="../../js/breadcrumbs.js" defer></script>
+  <script src="../../js/scroll-enhancements.min.js" defer></script>
+  <script src="../../blogg/js/blog-posts.js"></script>
+  <script src="../../blogg/js/blog-init.js"></script>
+  <script src="../../blogg/js/blog-filter.js"></script>
+  <script src="../../blogg/js/infinite-scroll.js"></script>
+  <script src="../../js/language-toggle.min.js" defer></script>
+</body>
+
+</html>

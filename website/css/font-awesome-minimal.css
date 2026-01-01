@@ -1,0 +1,41 @@
+/* Font Awesome 6.4.0 - Minimal subset for TheBackROM website */
+/* Only includes icons actually used on the site */
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2") format("woff2");
+}
+
+.fas, .fa-solid {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-style: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* Icons used on the site */
+.fa-arrow-up::before { content: "\f062"; }
+.fa-arrow-left::before { content: "\f060"; }
+.fa-arrow-right::before { content: "\f061"; }
+.fa-chevron-left::before { content: "\f053"; }
+.fa-chevron-right::before { content: "\f054"; }
+.fa-phone::before { content: "\f095"; }
+.fa-envelope::before { content: "\f0e0"; }
+.fa-home::before { content: "\f015"; }
+.fa-info-circle::before { content: "\f05a"; }
+.fa-map-marker-alt::before { content: "\f3c5"; }
+.fa-directions::before { content: "\f5eb"; }
+.fa-subway::before { content: "\f239"; }
+.fa-bus::before { content: "\f207"; }
+.fa-tram::before { content: "\f7da"; }
+.fa-parking::before { content: "\f540"; }
+.fa-calendar::before { content: "\f133"; }
+.fa-user::before { content: "\f007"; }
+.fa-clock::before { content: "\f017"; }
