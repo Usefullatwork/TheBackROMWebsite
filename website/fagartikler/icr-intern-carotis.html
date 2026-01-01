@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a202c" />
+  <link rel="icon" type="image/png" href="../pictures.final/Final Transparent Logo.png" />
+  <!-- Critical CSS for header positioning -->
+  <style>
+    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
+    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
+    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
+    #main-content{padding-top:var(--header-height)}
+  </style>
+  <link rel="preload" as="style" href="../css/main.min.css?v=20260101-fix" />
+  <title>Intern Carotis-relatert Smerte - Carotidyni og Disseksjon | Fagartikkel</title>
+  <meta name="description" content="Intern carotis-relatert smerte: Carotidyni, disseksjon og andre vaskulære årsaker til hals- og ansiktssmerte. Røde flagg og differensialdiagnostikk.">
+  <meta name="keywords" content="carotidyni, carotisdisseksjon, halssmerter, ansiktssmerte, vaskulær smerte, kiropraktor">
+  <meta name="author" content="Mads Finstad">
+  <link rel="canonical" href="https://thebackrom.com/fagartikler/icr-intern-carotis.html" />
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Intern Carotis-relatert Smerte - Carotidyni og Disseksjon | Fagartikkel">
+  <meta property="og:url" content="https://thebackrom.com/fagartikler/icr-intern-carotis.html">
+  <meta property="og:image" content="https://thebackrom.com/pictures.final/Behandling/behandling-6-1.jpg">
+  <meta property="og:description" content="Intern carotis-relatert smerte: Carotidyni, disseksjon og andre vaskulære årsaker til hals- og ansiktssmerte. Røde flagg og differensialdiagnostikk.">
+  <link rel="stylesheet" href="../css/main.min.css?v=20260101-fix" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="../index.html" class="header__logo" aria-label="Til forsiden">
+        <img src="../pictures.final/Final Transparent Logo.png" alt="TheBackROM logo" width="50" height="50" />
+      </a>
+      <nav class="header__nav" aria-label="Hovedmeny">
+        <ul class="header__menu">
+          <li><a href="../plager/brystryggsmerter.html">Hjem</a></li>
+          <li><a href="../services.html">Tjenester</a></li>
+          <li><a href="../plager.html">Plager</a></li>
+          <li><a href="../priser.html">Priser</a></li>
+          <li><a href="../about.html">Om meg</a></li>
+          <li><a href="../blogg/index.html">Blogg</a></li>
+          <li><a href="../contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary header__cta" target="_blank" rel="noopener">Bestill time</a>
+      <button class="header__menu-toggle" aria-label="Apne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <article class="blog-post">
+      <div class="container container--narrow">
+        <nav class="breadcrumb" aria-label="Brodsmuler">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="../plager/brystryggsmerter.html">Hjem</a></li>
+            <li class="breadcrumb__item"><a href="../plager/kjevesmerte.html">Kjeveleddsproblemer</a></li>
+            <li class="breadcrumb__item" aria-current="page">Intern Carotis-relatert Smerte</li>
+          </ol>
+        </nav>
+
+        <header class="blog-post__header">
+          <div class="blog-post__meta">
+            <span class="blog-post__category">Fagartikkel</span>
+            <time class="blog-post__date" datetime="2025-12-28">28. desember 2025</time>
+            <span class="blog-post__reading-time">10 min lesetid</span>
+          </div>
+          <h1 class="blog-post__title">Intern Carotis-relatert Smerte: Vaskulære Differensialdiagnoser</h1>
+          <p class="blog-post__intro">Vaskulær patologi kan gi hals- og ansiktssmerte som etterligner muskel-skjelettlidelser. Carotisdisseksjon og carotidyni er viktige differensialdiagnoser å kjenne til.</p>
+          <div class="blog-post__author">
+            <img src="../pictures.final/Om/mads-finstad-kiropraktor-portrett.webp" alt="Kiropraktor Mads Finstad" class="blog-post__author-image" width="60" height="60" loading="lazy" />
+            <div class="blog-post__author-info">
+              <span class="blog-post__author-name">Mads Finstad</span>
+              <span class="blog-post__author-title">Kiropraktor, TheBackROM</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Key Points Box -->
+        <div class="highlight-box" style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left: 4px solid #dc2626; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
+          <h3 style="margin-top: 0; color: #dc2626;">Kritisk Viktig</h3>
+          <ul style="margin-bottom: 0;">
+            <li><strong>Carotisdisseksjon:</strong> Kan forårsake slag - krever umiddelbar utredning</li>
+            <li><strong>Cervical manipulasjon:</strong> Mulig risikofaktor - forsiktighet påkrevd</li>
+            <li><strong>Presentasjon:</strong> Unilateral hals-/ansiktssmerte med eller uten nevrologiske symptomer</li>
+            <li><strong>Diagnostikk:</strong> MR/MRA eller CT-angiografi</li>
+            <li><strong>Kjenn røde flagg:</strong> Horners syndrom, TIA-symptomer, pulserende tinnitus</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+
+          <h2>Anatomi og Relevans</h2>
+          <p>Arteria carotis interna forsyner hjernen med blod. Den løper fra halsen opp gjennom skallebasis, nær kjeveleddet og indre øre. Patologi i denne arterien kan gi:</p>
+          <ul>
+            <li>Lokal smerte i hals, ansikt, kjeve</li>
+            <li>Henvist smerte (hodepine)</li>
+            <li>Nevrologiske symptomer ved kompromittert blodstrøm</li>
+          </ul>
+
+          <h2>Carotisdisseksjon</h2>
+          <p>Disseksjon er en rift i arterieveggen der blod trenger inn mellom vegglagene. Dette kan gi:</p>
+          <ul>
+            <li>Innsnevring (stenose) av arterien</li>
+            <li>Blodpropp-dannelse</li>
+            <li>Embolisering til hjernen</li>
+          </ul>
+
+          <h3>Epidemiologi</h3>
+          <ul>
+            <li>Insidens: Ca. 2,5-3 per 100 000 per år</li>
+            <li>Ansvarlig for <strong>10-25% av slag</strong> hos yngre voksne (<50 år)</li>
+            <li>Gjennomsnittsalder: 40-45 år</li>
+            <li>Ofte underdiagnostisert</li>
+          </ul>
+
+          <h3>Risikofaktorer</h3>
+          <ul>
+            <li><strong>Traume:</strong> Direkte slag, whiplash, strangulering</li>
+            <li><strong>Bindevesessykdommer:</strong> Marfan, Ehlers-Danlos, fibromuscular dysplasi</li>
+            <li><strong>Infeksjoner:</strong> Nylig øvre luftveisinfeksjon</li>
+            <li><strong>Nakkemanipulasjon:</strong> Omdiskutert, men mulig assosiasjon</li>
+            <li><strong>Andre:</strong> Migrene, hypertensjon, p-piller</li>
+          </ul>
+
+          <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h4 style="margin-top: 0; color: #dc2626;">Viktig for Kiropraktorer</h4>
+            <p>Selv om kausalitet er omdiskutert, er det en <strong>temporal assosiasjon</strong> mellom cervical manipulasjon og carotisdisseksjon. Pasienter kan oppsøke kiropraktor med prodromale symptomer (hodepine, nakkesmerter) som skyldes begynnende disseksjon - ikke manipulasjon. Uansett årsak: <strong>Vær årvåken for røde flagg.</strong></p>
+          </div>
+
+          <h3>Klinisk Presentasjon</h3>
+
+          <h4>Smerte (70-90%)</h4>
+          <ul>
+            <li>Unilateral hals- eller ansiktssmerte</li>
+            <li>Hodepine (ofte frontal eller temporal)</li>
+            <li>Smerte bak øyet</li>
+            <li>Smerter i kjeve eller øre</li>
+            <li>Ofte konstant, kan være pulserende</li>
+          </ul>
+
+          <h4>Horners Syndrom (25-40%)</h4>
+          <p>Klassisk triade på samme side som disseksjonen:</p>
+          <ul>
+            <li><strong>Miose:</strong> Liten pupill</li>
+            <li><strong>Ptose:</strong> Hengende øyelokk</li>
+            <li><strong>Anhidrose:</strong> Manglende svetting (ofte subtil)</li>
+          </ul>
+
+          <h4>Nevrologiske Symptomer</h4>
+          <ul>
+            <li>TIA eller slag (hemiparese, afasi, synsfeltutfall)</li>
+            <li>Amaurosis fugax (forbigående synstap)</li>
+            <li>Kranienervepareser (XII, IX, X, XI)</li>
+            <li>Pulserende tinnitus</li>
+          </ul>
+
+          <h3>Tidslinje</h3>
+          <p>Viktig: Smerte kommer ofte <strong>dager til uker FØR</strong> nevrologiske symptomer. Dette gir et tidsvindu for diagnostikk og behandling.</p>
+
+          <h2>Carotidyni</h2>
+          <p>Carotidyni er en kontrovers diagnose som refererer til smerter relatert til carotis uten påvisbar strukturell årsak.</p>
+
+          <h3>ICHD-3 Klassifikasjon</h3>
+          <p>International Classification of Headache Disorders beskriver "Headache attributed to carotid or vertebral artery disorder" (kode 6.5), men carotidyni som selvstendig diagnose er fjernet.</p>
+
+          <h3>Mulige Underliggende Årsaker</h3>
+          <ul>
+            <li>Inflammasjon i arterieveggen</li>
+            <li>Subklinisk disseksjon</li>
+            <li>Aterosklerose</li>
+            <li>Fibromuskular dysplasi</li>
+            <li>Arteritt</li>
+          </ul>
+
+          <h3>Symptomer</h3>
+          <ul>
+            <li>Unilateral halssmerter over carotis</li>
+            <li>Ømhet ved palpasjon</li>
+            <li>Smerte som stråler til ansikt, øre, kjeve</li>
+            <li>Kan ligne TMD eller cervikal patologi</li>
+          </ul>
+
+          <h2>Røde Flagg - Når Mistenke Vaskulær Årsak</h2>
+
+          <h3>Høy Mistanke</h3>
+          <ul>
+            <li><strong>Nyoppstått unilateral hals-/hodepine</strong> hos yngre pasient</li>
+            <li><strong>Horners syndrom</strong> - må alltid utredes</li>
+            <li><strong>Pulserende tinnitus</strong> - ikke muskulær!</li>
+            <li><strong>Nevrologiske symptomer</strong> - TIA, synsforstyrrelser, pareser</li>
+            <li><strong>Nylig traume</strong> - inkludert "minor" traume</li>
+          </ul>
+
+          <h3>Moderat Mistanke</h3>
+          <ul>
+            <li>Vedvarende unilateral smerte som ikke responderer på behandling</li>
+            <li>Atypisk smertemønster</li>
+            <li>Nylig øvre luftveisinfeksjon med etterfølgende hodepine/nakkesmerter</li>
+            <li>Kjent bindevessykdom</li>
+          </ul>
+
+          <h2>Diagnostikk</h2>
+
+          <h3>Bildediagnostikk</h3>
+          <ul>
+            <li><strong>MR + MRA:</strong> Foretrukket - viser disseksjonsflap, veggtykkelse, stenose</li>
+            <li><strong>CT-angiografi:</strong> Rask, god tilgjengelighet, god sensitivitet</li>
+            <li><strong>Ultralyd:</strong> Kan være nyttig, men begrenset for høye disseksjoner</li>
+            <li><strong>Konvensjonell angiografi:</strong> Gullstandard, men invasiv</li>
+          </ul>
+
+          <h3>Laboratorieprøver</h3>
+          <p>Ved mistanke om vaskulitt eller bindevevssykdom:</p>
+          <ul>
+            <li>SR, CRP</li>
+            <li>ANA, ANCA</li>
+            <li>Genetisk testing ved mistanke om EDS eller Marfan</li>
+          </ul>
+
+          <h2>Behandling av Carotisdisseksjon</h2>
+
+          <h3>Akutt</h3>
+          <ul>
+            <li><strong>Antitrombotisk behandling:</strong> Antikoagulasjon eller platehemmere</li>
+            <li><strong>Varighet:</strong> Vanligvis 3-6 måneder</li>
+            <li><strong>Oppfølging:</strong> Kontroll-MRA for å vurdere tilheling</li>
+          </ul>
+
+          <h3>Endovaskulær/Kirurgisk</h3>
+          <p>Sjelden nødvendig, men vurderes ved:</p>
+          <ul>
+            <li>Progredierende symptomer tross medisinsk behandling</li>
+            <li>Kontraindikasjon mot antitrombotisk behandling</li>
+            <li>Pseudoaneurisme</li>
+          </ul>
+
+          <h3>Prognose</h3>
+          <ul>
+            <li>De fleste disseksjoner tilheler spontant</li>
+            <li>Slagrisiko er høyest første uker</li>
+            <li>Ved tidlig diagnose og behandling: God prognose</li>
+            <li>Restenose forekommer hos noen</li>
+          </ul>
+
+          <h2>Kiropraktorens Rolle</h2>
+
+          <h3>Screening</h3>
+          <p>Ved alle pasienter med hals-/hodepine:</p>
+          <ul>
+            <li>Spør om nevrologiske symptomer</li>
+            <li>Undersøk pupiller (Horners?)</li>
+            <li>Vær oppmerksom på atypiske presentasjoner</li>
+            <li>Kartlegg risikofaktorer</li>
+          </ul>
+
+          <h3>Ved Mistanke</h3>
+          <ol>
+            <li><strong>Ikke manipuler nakken</strong></li>
+            <li>Henvis til akutt nevrologisk vurdering</li>
+            <li>Ved akutte nevrologiske symptomer: Ring 113</li>
+          </ol>
+
+          <h3>Kontraindikasjoner for Cervical Manipulasjon</h3>
+          <ul>
+            <li>Nyoppstått hodepine av ukjent årsak</li>
+            <li>Unilateral halssmerte med atypiske trekk</li>
+            <li>Ethvert tegn på Horners syndrom</li>
+            <li>Pulserende tinnitus</li>
+            <li>Nevrologiske symptomer</li>
+            <li>Kjent bindevevssykdom</li>
+          </ul>
+
+          <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h4 style="margin-top: 0; color: #166534;">Klinisk Tips</h4>
+            <p style="margin-bottom: 0;">Ved tvil, ta det trygge valget. En unødvendig henvisning er alltid bedre enn en oversett disseksjon. Pasienter forstår at forsiktighet er profesjonelt ansvarlig.</p>
+          </div>
+
+          <h2>Differensialdiagnose-tabell</h2>
+          <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+            <thead>
+              <tr style="background: #f0f0f0;">
+                <th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Tilstand</th>
+                <th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Kjennetegn</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Carotisdisseksjon</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Unilateral, Horners, TIA, nylig traume</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">TMD</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Kjevebevegelsesbegrenset, palpabel ømhet, klikking</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Cervikal spondylose</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Gradvis debut, bevegelsesrelatert, radikulære symptomer</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Giant cell arteritt</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Alder >50, claudicatio, tyggevansker, forhøyet SR</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Migrene</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Periodisk, aura, kvalme, lys-/lydfølsomhet</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Konklusjon</h2>
+          <p>Vaskulære årsaker til hals- og ansiktssmerte er sjeldne, men potensielt livstruende:</p>
+          <ul>
+            <li>Carotisdisseksjon kan presentere seg som "vanlig" hals-/hodepine</li>
+            <li>Røde flagg må aktivt ettersøkes</li>
+            <li>Ved mistanke: Ikke manipuler, henvis akutt</li>
+            <li>Tidlig diagnose kan forebygge slag</li>
+          </ul>
+
+          <!-- Related Pages -->
+          <h2>Relaterte Artikler</h2>
+          <ul>
+            <li><a href="eagle-syndrom.html"><strong>Eagle Syndrom</strong></a></li>
+            <li><a href="glossopharyngeal-nevralgi.html"><strong>Glossopharyngeal Nevralgi</strong></a></li>
+            <li><a href="../plager/nakkesmerter.html"><strong>Nakkesmerter</strong></a></li>
+            <li><a href="../plager/hodepine.html"><strong>Hodepine</strong></a></li>
+            <li><a href="../plager/kjeve/nakke-kjeve-sammenheng.html"><strong>TMD og Nakkesmerter</strong></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4>TheBackROM</h4>
+          <p>Kiropraktor på Majorstua med fokus på evidensbasert behandling.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <p>Gardeveien 17<br>0363 Oslo</p>
+          <p>Mads.finstad@hotmail.com</p>
+        </div>
+        <div class="footer__col">
+          <h4>Åpningstider</h4>
+          <p>Man-Fre: 08-20<br>Lør: 10-16</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 TheBackROM. Alle rettigheter reservert.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Mobile Sticky Booking Button -->
+  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+     class="mobile-sticky-cta"
+     aria-label="Bestill time hos kiropraktor">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+      <line x1="16" y1="2" x2="16" y2="6"></line>
+      <line x1="8" y1="2" x2="8" y2="6"></line>
+      <line x1="3" y1="10" x2="21" y2="10"></line>
+    </svg>
+    Bestill time
+  </a>
+
+  <script src="../js/script.min.js" defer></script>
+</body>
+</html>

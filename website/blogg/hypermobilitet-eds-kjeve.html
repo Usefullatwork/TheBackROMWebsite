@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a202c" />
+  <link rel="icon" type="image/png" href="../pictures.final/Final Transparent Logo.png" />
+  <!-- Critical CSS for header positioning -->
+  <style>
+    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
+    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
+    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
+    #main-content{padding-top:var(--header-height)}
+  </style>
+  <link rel="preload" as="style" href="../css/main.min.css?v=20260101-fix" />
+  <title>Hypermobilitet, EDS og Kjevesmerter - Beighton Score | Kiropraktor Majorstua</title>
+  <meta name="description" content="Hypermobilitet og Ehlers-Danlos syndrom (EDS) øker risikoen for kjeveplager. Lær om sammenhengen, symptomer og tilpasset behandling ved løse ledd.">
+  <meta name="keywords" content="hypermobilitet kjeve, EDS TMD, Ehlers-Danlos kjeve, Beighton score, løse ledd kjeve, kiropraktor Oslo">
+  <meta name="author" content="Mads Finstad">
+  <link rel="canonical" href="https://thebackrom.com/blogg/hypermobilitet-eds-kjeve.html" />
+  <link rel="stylesheet" href="../css/main.min.css?v=20260101-fix" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="../index.html" class="header__logo" aria-label="Til forsiden">
+        <img src="../pictures.final/Final Transparent Logo.png" alt="TheBackROM logo" width="50" height="50" />
+      </a>
+      <nav class="header__nav" aria-label="Hovedmeny">
+        <ul class="header__menu">
+          <li><a href="../plager/brystryggsmerter.html">Hjem</a></li>
+          <li><a href="../services.html">Tjenester</a></li>
+          <li><a href="../plager.html">Plager</a></li>
+          <li><a href="../priser.html">Priser</a></li>
+          <li><a href="../about.html">Om meg</a></li>
+          <li><a href="../blogg/index.html" class="active">Blogg</a></li>
+          <li><a href="../contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary header__cta" target="_blank" rel="noopener">Bestill time</a>
+      <button class="header__menu-toggle" aria-label="Apne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <article class="blog-post">
+      <div class="container container--narrow">
+        <nav class="breadcrumb" aria-label="Brodsmuler">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="../plager/brystryggsmerter.html">Hjem</a></li>
+            <li class="breadcrumb__item"><a href="../blogg/index.html">Blogg</a></li>
+            <li class="breadcrumb__item"><a href="../plager/kjevesmerte.html">Kjeveleddsproblemer</a></li>
+            <li class="breadcrumb__item" aria-current="page">Hypermobilitet og Kjeve</li>
+          </ol>
+        </nav>
+
+        <header class="blog-post__header">
+          <div class="blog-post__meta">
+            <span class="blog-post__category">Kjeve</span>
+            <time class="blog-post__date" datetime="2025-12-28">28. desember 2025</time>
+            <span class="blog-post__reading-time">8 min lesetid</span>
+          </div>
+          <h1 class="blog-post__title">Hypermobilitet, EDS og Kjevesmerter: Når Løse Ledd Gir Problemer</h1>
+          <p class="blog-post__intro">Har du overbevegelighet i leddene? Hypermobilitet og Ehlers-Danlos syndrom kan påvirke kjeveleddet - her er hva du bør vite.</p>
+          <div class="blog-post__author">
+            <img src="../pictures.final/Om/mads-finstad-kiropraktor-portrett.webp" alt="Kiropraktor Mads Finstad" class="blog-post__author-image" width="60" height="60" loading="lazy" />
+            <div class="blog-post__author-info">
+              <span class="blog-post__author-name">Mads Finstad</span>
+              <span class="blog-post__author-title">Kiropraktor, TheBackROM</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- TL;DR Box -->
+        <div class="highlight-box" style="background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%); border-left: 4px solid #e8a838; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
+          <h3 style="margin-top: 0; color: #1a1a2e;">TL;DR - Hypermobilitet og Kjeve</h3>
+          <ul style="margin-bottom: 0;">
+            <li><strong>Økt risiko:</strong> Hypermobile har 2-3x høyere forekomst av TMD</li>
+            <li><strong>EDS:</strong> Ehlers-Danlos syndrom påvirker bindevev i hele kroppen, inkludert kjeveleddet</li>
+            <li><strong>Utfordringer:</strong> Subluksasjoner, klikking, ustabilitet, kroniske smerter</li>
+            <li><strong>Behandling:</strong> Stabilisering viktigere enn mobilisering - styrketrening, ikke tøyning</li>
+            <li><strong>Beighton score:</strong> Enkel test for generell hypermobilitet</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+
+          <h2>Hva Er Hypermobilitet?</h2>
+          <p>Hypermobilitet betyr at leddene dine har større bevegelighet enn normalt. Det skyldes løsere bindevev og leddbånd. Noen har bare hypermobile ledd uten plager (benign hypermobilitet), mens andre utvikler symptomer.</p>
+
+          <h3>Hypermobilitets-spektrum</h3>
+          <ul>
+            <li><strong>Asymptomatisk hypermobilitet:</strong> Løse ledd uten plager - vanlig hos dansere, gymnaster</li>
+            <li><strong>Hypermobilitets-spektrum-forstyrrelse (HSD):</strong> Løse ledd med smerter og andre symptomer</li>
+            <li><strong>Ehlers-Danlos syndrom (EDS):</strong> Genetisk bindevevssykdom med mer omfattende symptomer</li>
+          </ul>
+
+          <p>Anslagsvis <strong>10-20% av befolkningen</strong> har generell hypermobilitet. Kvinner rammes oftere enn menn.</p>
+
+          <h2>Beighton Score - Selvtest</h2>
+          <p>Beighton score er en enkel test for generell hypermobilitet. Du får poeng for:</p>
+          <ol>
+            <li>Kan lillefingeren bøyes bakover over 90° (1 poeng per hånd)</li>
+            <li>Kan tommelen berøre underarmen ved bøyning av håndleddet (1 poeng per hånd)</li>
+            <li>Kan albuen overbøyes mer enn 10° (1 poeng per arm)</li>
+            <li>Kan kneet overbøyes mer enn 10° (1 poeng per ben)</li>
+            <li>Kan håndflatene berøre gulvet med strake knær (1 poeng)</li>
+          </ol>
+          <p><strong>Tolkning:</strong> Score på 5 eller mer (av 9) indikerer generell hypermobilitet. For voksne over 50 brukes ofte lavere cut-off (4+).</p>
+
+          <div style="background: #f0f9ff; border-left: 4px solid #0284c7; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h4 style="margin-top: 0; color: #0369a1;">Viktig</h4>
+            <p style="margin-bottom: 0;">Beighton score måler kun generell hypermobilitet. Du kan ha et hypermobilt kjeveledd uten å score høyt på Beighton, og du kan score høyt uten kjeveplager. Kjeveleddet vurderes separat.</p>
+          </div>
+
+          <h2>Hvordan Hypermobilitet Påvirker Kjeveleddet</h2>
+          <p>Kjeveleddet er spesielt sårbart ved hypermobilitet fordi:</p>
+
+          <h3>Strukturelle Utfordringer</h3>
+          <ul>
+            <li><strong>Løse leddbånd:</strong> Gir mindre støtte til leddet</li>
+            <li><strong>Økt bevegelighet:</strong> Kjeven kan bevege seg for langt</li>
+            <li><strong>Diskproblemer:</strong> Økt risiko for diskforskyvning</li>
+            <li><strong>Subluksasjoner:</strong> Leddet kan delvis gå ut av stilling</li>
+          </ul>
+
+          <h3>Vanlige Symptomer</h3>
+          <ul>
+            <li>Hyppig klikking og knaselyder</li>
+            <li>Følelse av at kjeven "glipper"</li>
+            <li>Episoder der kjeven låser seg</li>
+            <li>Smerter ved gaping</li>
+            <li>Tretthet i kjevemuskulaturen</li>
+            <li>Kroniske smerter som er vanskelig å behandle</li>
+          </ul>
+
+          <h2>EDS og Kjeveleddet</h2>
+          <p>Ehlers-Danlos syndrom (EDS) er en gruppe genetiske tilstander som påvirker bindevevet. Den vanligste typen er hypermobil EDS (hEDS).</p>
+
+          <h3>EDS-spesifikke Utfordringer</h3>
+          <ul>
+            <li><strong>Kollagendefekt:</strong> Svakere bindevev i leddbånd og brusk</li>
+            <li><strong>Multisystem:</strong> Påvirker mange organer, ikke bare ledd</li>
+            <li><strong>Kronisk smerte:</strong> Ofte vedvarende smerter som er vanskelig å behandle</li>
+            <li><strong>Autonom dysfunksjon:</strong> Kan påvirke blodtrykk og svimmelhet</li>
+            <li><strong>Langsom tilheling:</strong> Tar lengre tid å komme seg etter behandling</li>
+          </ul>
+
+          <h3>Studier på EDS og TMD</h3>
+          <ul>
+            <li>Opptil <strong>70% av EDS-pasienter</strong> rapporterer kjeveleddssymptomer</li>
+            <li>Subluksasjon av kjeveleddet er <strong>signifikant vanligere</strong> ved EDS</li>
+            <li>TMD-symptomer korrelerer med alvorlighetsgrad av EDS</li>
+          </ul>
+
+          <h2>Behandling ved Hypermobilitet</h2>
+          <p>Behandling av hypermobile pasienter krever en annen tilnærming:</p>
+
+          <h3>Hva Som IKKE Virker</h3>
+          <ul>
+            <li><strong>Manipulasjon/knepping:</strong> Kan gjøre leddet enda mer ustabilt</li>
+            <li><strong>Tøyning:</strong> Problemet er allerede for mye bevegelighet</li>
+            <li><strong>Aggressiv mobilisering:</strong> Kan forverre symptomene</li>
+          </ul>
+
+          <h3>Hva Som Virker</h3>
+          <ul>
+            <li><strong>Stabiliseringsøvelser:</strong> Styrke musklene som støtter leddet</li>
+            <li><strong>Proprioseptiv trening:</strong> Bedre kontroll over leddbevegelser</li>
+            <li><strong>Bløtvevsbehandling:</strong> Forsiktig for å løsne overaktive muskler</li>
+            <li><strong>Bevegelsesgrenser:</strong> Lære å unngå ekstreme bevegelser</li>
+            <li><strong>Holdningstrening:</strong> Redusere belastning på kjeveleddet</li>
+          </ul>
+
+          <h2>Øvelser for Hypermobile</h2>
+
+          <h3>Kontrollert Gaping</h3>
+          <ol>
+            <li>Plasser tungen i ganen bak fortennene</li>
+            <li>Gape kun så langt at tungen forblir i kontakt med ganen</li>
+            <li>Lukk sakte</li>
+            <li>10 repetisjoner, 3 ganger daglig</li>
+          </ol>
+
+          <h3>Isometrisk Styrking</h3>
+          <ol>
+            <li>Plasser hånden under haken</li>
+            <li>Trykk forsiktig ned med kjeven mot motstanden (ikke bevegelse)</li>
+            <li>Hold 5 sekunder</li>
+            <li>Gjenta til sidene med hånd mot kinn</li>
+            <li>10 repetisjoner hver retning</li>
+          </ol>
+
+          <h3>Proprioseptiv Kontroll</h3>
+          <ol>
+            <li>Stå foran speilet</li>
+            <li>Gape sakte og observer kjeven</li>
+            <li>Prøv å holde kjeven på midtlinjen (ikke la den skli til siden)</li>
+            <li>Korriger med lette fingertips om nødvendig</li>
+          </ol>
+
+          <h2>Livsstilsråd</h2>
+
+          <h3>Unngå</h3>
+          <ul>
+            <li>Å gape ekstremt stort</li>
+            <li>Hard og seig mat som krever mye tygging</li>
+            <li>Å støtte haken i hånden (asymmetrisk belastning)</li>
+            <li>Aktiviteter som gir gjentatte leddbelastninger</li>
+          </ul>
+
+          <h3>Gjør</h3>
+          <ul>
+            <li>Kutt maten i mindre biter</li>
+            <li>Ta pauser under tygging</li>
+            <li>Hold god holdning</li>
+            <li>Støtt hodet ved hvile</li>
+            <li>Regelmessig styrketrening</li>
+          </ul>
+
+          <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h4 style="margin-top: 0; color: #dc2626;">Ved EDS - Søk Spesialisthjelp</h4>
+            <p style="margin-bottom: 0;">Hvis du mistenker EDS (spesielt ved hudsymptomer, organkomplikasjoner, eller alvorlige leddsymptomer), bør du vurderes av lege med EDS-kompetanse. EDS kan påvirke mer enn bare leddene og krever tverrfaglig oppfølging.</p>
+          </div>
+
+          <h2>Prognose</h2>
+          <p>Med riktig tilnærming kan de fleste med hypermobilitetsrelaterte kjeveplager få betydelig bedring:</p>
+          <ul>
+            <li>Fokus på styrke og kontroll gir bedre langtidsresultat enn passiv behandling</li>
+            <li>Egeninnsats er spesielt viktig ved hypermobilitet</li>
+            <li>Symptomene kan variere over tid - noen perioder bedre, noen verre</li>
+            <li>Fullstendig symptomfrihet er ikke alltid realistisk, men god funksjon er oppnåelig</li>
+          </ul>
+
+          <!-- Booking CTA -->
+          <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center;">
+            <h3 style="color: #e8a838; margin-top: 0;">Hypermobil med Kjeveplager?</h3>
+            <p style="margin-bottom: 20px;">Jeg tilbyr tilpasset undersøkelse og stabiliserende behandling.</p>
+            <p style="font-size: 14px; margin-bottom: 20px;">
+              <strong>Nytt problem:</strong> 1105 kr (45 min) | <strong>Oppfølging:</strong> 780 kr (30 min)
+            </p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" target="_blank" rel="noopener" style="display: inline-block; background: #e8a838; color: #1a1a2e; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold;">Bestill Time</a>
+            <p style="margin-top: 16px; font-size: 13px; opacity: 0.8;">Gardeveien 17, Majorstua | Ingen henvisning nødvendig</p>
+          </div>
+
+          <h2>Les Mer</h2>
+          <ul>
+            <li><a href="../plager/kjeve/klikking-lasing-leddproblemer.html"><strong>Klikking og Låsing</strong></a> - Leddproblemer i kjeven</li>
+            <li><a href="kjeveovelser-hjemme.html"><strong>Kjeveøvelser Hjemme</strong></a> - Øvelsesprogram</li>
+            <li><a href="../plager/kjevesmerte.html"><strong>Kjeveleddsproblemer (TMD)</strong></a> - Alt om TMD</li>
+          </ul>
+
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4>TheBackROM</h4>
+          <p>Kiropraktor på Majorstua med fokus på evidensbasert behandling.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <p>Gardeveien 17<br>0363 Oslo</p>
+          <p>Mads.finstad@hotmail.com</p>
+        </div>
+        <div class="footer__col">
+          <h4>Åpningstider</h4>
+          <p>Man-Fre: 08-20<br>Lør: 10-16</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 TheBackROM. Alle rettigheter reservert.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Mobile Sticky Booking Button -->
+  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+     class="mobile-sticky-cta"
+     aria-label="Bestill time hos kiropraktor">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+      <line x1="16" y1="2" x2="16" y2="6"></line>
+      <line x1="8" y1="2" x2="8" y2="6"></line>
+      <line x1="3" y1="10" x2="21" y2="10"></line>
+    </svg>
+    Bestill time
+  </a>
+
+  <script src="../js/script.min.js" defer></script>
+</body>
+</html>

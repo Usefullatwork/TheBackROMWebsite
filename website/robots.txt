@@ -1,0 +1,30 @@
+# Robots.txt for TheBackROM - Mads Finstad Kiropraktor
+# https://thebackrom.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://thebackrom.com/sitemap.xml
+
+# Disallow admin/test pages
+Disallow: /test-improvements.html
+Disallow: /css/archive/
+Disallow: /404.html
+
+# Disallow template and documentation files
+Disallow: /docs/
+Disallow: /blogg/create-post-template.html
+Disallow: /blogg/post-template.html
+
+# Allow all important directories
+Allow: /pictures.final/
+Allow: /css/
+Allow: /js/
+Allow: /tjeneste/
+Allow: /plager/
+Allow: /faq/
+Allow: /blogg/
+
+# Crawl-delay for politeness (optional)
+Crawl-delay: 1

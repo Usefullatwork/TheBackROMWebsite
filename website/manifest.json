@@ -1,0 +1,55 @@
+{
+  "name": "TheBackROM - Mads Finstad Kiropraktor",
+  "short_name": "TheBackROM",
+  "description": "Kiropraktor Mads Finstad på Majorstua Oslo. Behandling av ryggsmerter, nakkesmerter, svimmelhet og skulderproblemer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a202c",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "nb-NO",
+  "icons": [
+    {
+      "src": "pictures.final/Final Transparent Logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pictures.final/Final Transparent Logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "pictures.final/Final Transparent Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pictures.final/Final Transparent Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["health", "medical"],
+  "shortcuts": [
+    {
+      "name": "Bestill Time",
+      "short_name": "Bestill",
+      "description": "Bestill en time hos kiropraktor",
+      "url": "https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available",
+      "icons": [{ "src": "pictures.final/Final Transparent Logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Kontakt",
+      "short_name": "Kontakt",
+      "description": "Kontakt oss",
+      "url": "/contact.html",
+      "icons": [{ "src": "pictures.final/Final Transparent Logo.png", "sizes": "96x96" }]
+    }
+  ]
+}

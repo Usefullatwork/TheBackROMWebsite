@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(findstr:*)",
+      "Bash(done)",
+      "Bash(powershell -Command:*)",
+      "Bash(del \"E:\\1- Tottal mappe Web-  Combinned - 95% - Finished material - Publish ready - Folder pr Site with pictures and sortments\\0 - 0 - Nettside code – Kopi\\update_summary.txt\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a202c" />
+  <link rel="icon" type="image/png" href="../pictures.final/Final Transparent Logo.png" />
+  <!-- Critical CSS for header positioning -->
+  <style>
+    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
+    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
+    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
+    #main-content{padding-top:var(--header-height)}
+  </style>
+  <link rel="preload" as="style" href="../css/main.min.css?v=20260101-fix" />
+  <title>Svimmel og kvalm - Årsaker, behandling og når du bør søke hjelp | Kiropraktor Majorstua</title>
+  <meta name="description" content="Svimmelhet kombinert med kvalme kan ha mange årsaker. Lar om BPPV, vestibulaer migrene og når du bør oppsoke hjelp.">
+  <meta name="keywords" content="svimmel og kvalm, svimmelhet kvalme, BPPV, vestibulaer migrene, kiropraktor Oslo">
+  <meta name="author" content="Mads Finstad">
+  <link rel="canonical" href="https://thebackrom.com/blogg/svimmel-og-kvalm.html" />
+  <link rel="stylesheet" href="../css/main.min.css?v=20260101-fix" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="../index.html" class="header__logo" aria-label="Til forsiden">
+        <img src="../pictures.final/Final Transparent Logo.png" alt="TheBackROM logo" width="50" height="50" />
+      </a>
+      <nav class="header__nav" aria-label="Hovedmeny">
+        <ul class="header__menu">
+          <li><a href="../plager/brystryggsmerter.html">Hjem</a></li>
+          <li><a href="../services.html">Tjenester</a></li>
+          <li><a href="../plager.html">Plager</a></li>
+          <li><a href="../priser.html">Priser</a></li>
+          <li><a href="../about.html">Om meg</a></li>
+          <li><a href="../blogg/index.html" class="active">Blogg</a></li>
+          <li><a href="../contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary header__cta" target="_blank" rel="noopener">Bestill time</a>
+      <button class="header__menu-toggle" aria-label="Apne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <article class="blog-post">
+      <div class="container container--narrow">
+        <nav class="breadcrumb" aria-label="Brodsmuler">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="../plager/brystryggsmerter.html">Hjem</a></li>
+            <li class="breadcrumb__item"><a href="../blogg/index.html">Blogg</a></li>
+            <li class="breadcrumb__item"><a href="../plager/svimmelhet.html">Svimmelhet</a></li>
+            <li class="breadcrumb__item" aria-current="page">Svimmel og kvalm</li>
+          </ol>
+        </nav>
+
+        <header class="blog-post__header">
+          <div class="blog-post__meta">
+            <span class="blog-post__category">Svimmelhet</span>
+            <time class="blog-post__date" datetime="2025-01-20">20. januar 2025</time>
+            <span class="blog-post__reading-time">10 min lesetid</span>
+          </div>
+          <h1 class="blog-post__title">Svimmel og kvalm - Årsaker, behandling og når du bør søke hjelp</h1>
+          <p class="blog-post__intro">Svimmelhet rammer 15-20% av voksne hvert år. Når svimmelheten kommer sammen med kvalme, er det ofte et tegn pa at balansesystemet er pavirket.</p>
+          <div class="blog-post__author">
+            <img src="../pictures.final/Om/mads-finstad-kiropraktor-portrett.webp" alt="Kiropraktor Mads Finstad" class="blog-post__author-image" width="60" height="60" loading="lazy" />
+            <div class="blog-post__author-info">
+              <span class="blog-post__author-name">Mads Finstad</span>
+              <span class="blog-post__author-title">Kiropraktor, TheBackROM</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- TL;DR Box -->
+        <div class="highlight-box" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0284c7; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
+          <h3 style="margin-top: 0; color: #0369a1;">TL;DR - Kort oppsummert</h3>
+          <ul style="margin-bottom: 0;">
+            <li><strong>Hva det er:</strong> Svimmelhet kombinert med kvalme - et vanlig symptombilde som kan ha mange ulike årsaker</li>
+            <li><strong>Vanligste årsaker:</strong> Krystallsyke (BPPV), vestibulaer migrene, ortostatisk hypotensjon, angst/stress, lavt blodsukker</li>
+            <li><strong>Behandling:</strong> Sterk evidens for Epley-manover ved BPPV (74% blir symptomfrie), moderat evidens for manuell behandling ved nakkesvimmelhet</li>
+            <li><strong>Rode flagg:</strong> Akutt svimmelhet med lammelser, talevansker, dobbeltsyn, brystsmerter eller kraftig hodepine - ring 113</li>
+            <li><strong>Konsultasjon:</strong> 45 min første gang, 30 min oppfolging</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+          <h2>Hva betyr det a være svimmel og kvalm?</h2>
+          <p>Kombinasjonen kan foles dramatisk - mange beskriver det som a miste fotfestet, bokstavelig talt. Det finnes mange mulige forklaringer, fra helt ufarlige tilstander som kan behandles på en konsultasjon, til mer alvorlige årsaker som krever rask medisinsk hjelp.</p>
+          <p>Denne artikkelen hjelper deg a forsta hva som kan ligge bak symptomene dine, og når du bør oppsoke hvilken type helsehjelp.</p>
+
+          <h2>Årsaker til svimmelhet og kvalme</h2>
+
+          <h3>Vestibulare årsaker (balanseorganet)</h3>
+
+          <h4>Krystallsyke (BPPV) - vanligst</h4>
+          <p>Benign paroksysmal posisjonsvertigo (BPPV), ofte kalt krystallsyke, er den vanligste arsaken til svimmelhet når du søker hjelp hos spesialist. Tilstanden star for 17-42% av tilfellene i svimmelhetsklinikker. Livstidsprevalensen er 2,4%.</p>
+          <p>Sma kalsiumkrystaller i det indre oret losner og havner i buegangene, der de forstyrrer balansesignalene. Resultatet er intense, korte svimmelhetsanfall (under ett minutt) som utloses av hodebevegelser - typisk når du legger deg ned, snur deg i sengen eller ser opp. Kvalme er vanlig under anfallene.</p>
+          <p>Kvinner rammes 2,2 ganger oftere enn menn, og tilstanden er vanligst mellom 50-70 år.</p>
+
+          <h4>Vestibulaer migrene - underdiagnostisert</h4>
+          <p>Vestibulaer migrene rammer 1-2,7% av befolkningen og er den nest vanligste arsaken til tilbakevendende svimmelhetsanfall. Likevel får bare 10% av de som oppfyller diagnosekriteriene beskjed om at migrene er arsaken til svimmelheten deres.</p>
+          <p>Anfallene varer fra 5 minutter til 72 timer og inkluderer ofte hodepine, lys- eller lydfolsomhet. Et viktig diagnostisk kriterium er nettopp at hodebevegelse-utlost svimmelhet MED kvalme er et karakteristisk symptom.</p>
+
+          <h4>Vestibularisnevritt</h4>
+          <p>Vestibularisnevritt er en betennelse i balansenerven, ofte etter en virusinfeksjon. Arlig forekomst er 3,5-15,5 per 100 000, tilsvarende ca. 500-1000 tilfeller i Norge per år.</p>
+          <p>Symptomene kommer bratt: kraftig roterende svimmelhet, uttalt kvalme og oppkast, og vansker med a ga. I motsetning til krystallsyke er symptomene konstante (ikke anfallsvise). De fleste opplever markant bedring innen 1-3 dager, og 50% er symptomfrie innen 6 uker.</p>
+
+          <h4>Menieres sykdom - sjelden</h4>
+          <p>Menieres sykdom er relativt sjelden med en forekomst pa ca. 43 per 100 000. Tilstanden gir anfall med svimmelhet (20 minutter til 12 timer), horselstap, oresus og trykkfolelse i oret.</p>
+
+          <h3>Ikke-vestibulare årsaker</h3>
+
+          <h4>Ortostatisk hypotensjon (blodtrykksfall)</h4>
+          <p>Når blodtrykket faller bratt ved stillingsendring, kan du bli svimmel og kvalm. Dette rammer ca. 20% av voksne over 60 år og opp til 50% av sykehjemspasienter.</p>
+
+          <h4>Angst og funksjonell svimmelhet</h4>
+          <p>28,3% av pasienter med svimmelhet har symptomer pa minst en angstlidelse. Persistent postural-perceptual dizziness (PPPD) er en kronisk tilstand som ofte starter etter en akutt svimmelhetsepisode, og rammer 15-20% av pasienter i spesialistklinikker.</p>
+
+          <h4>Lavt blodsukker</h4>
+          <p>Hypoglykemi gir ofte svimmelhet som første symptom - 72,3% rapporterer dette. Kvalme, skjelving og sultfolelse folger gjerne med.</p>
+
+          <h4>Medikamentbivirkninger</h4>
+          <p>Over 1000 medikamenter har svimmelhet som kjent bivirkning. Blodtrykksmedisin, beroligende midler, smertestillende og epilepsimedisiner er vanlige syndere. Hos eldre pasienter forklarer medisiner 23% av vedvarende svimmelhet.</p>
+
+          <!-- Warning Box -->
+          <div class="warning-box" style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left: 4px solid #dc2626; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h3 style="color: #dc2626; margin-top: 0;">Rode flagg - Ring 113 ved akutt svimmelhet med:</h3>
+            <ul style="margin-bottom: 0;">
+              <li><strong>Lammelser</strong> eller nummenhet i ansikt/arm/ben</li>
+              <li><strong>Talevansker</strong> eller forstaelsesproblemer</li>
+              <li><strong>Dobbeltsyn</strong> eller synstap</li>
+              <li><strong>Brystsmerter</strong></li>
+              <li><strong>Kraftig hodepine</strong> - spesielt hvis nyoppstatt</li>
+              <li><strong>Klarer ikke sta eller ga</strong></li>
+            </ul>
+          </div>
+
+          <h2>Behandling</h2>
+
+          <h3>Hva kan kiropraktoren gjore?</h3>
+
+          <h4>Krystallsyke (BPPV)</h4>
+          <p>Epley-manoveren er gullstandarden. En metaanalyse viser at 74% blir kvitt symptomene - 6,5 ganger bedre enn kontrollgrupper. En systematisk oversikt fra 2022 viser NNT pa 3, altsa at hver tredje pasient som behandles blir symptomfri sammenlignet med ingen behandling.</p>
+          <p>Den modifiserte Epley-teknikken gir 85% suksess ved første behandling versus 63% for tradisjonell teknikk. Til sammenligning: Ubehandlet krystallsyke gir bare 18% bedring etter en maned.</p>
+          <p>Tilbakefall er vanlig - ca. 30% får symptomer igjen innen ett år, og 50% innen fem år. Dette betyr at de fleste vil trenge behandling igjen pa et tidspunkt.</p>
+
+          <h4>Nakke-relatert svimmelhet</h4>
+          <p>Cervikogen svimmelhet er en omdiskutert diagnose. Barany Society har eksplisitt nektet a foresta diagnosekriterier fordi evidensen for en direkte mekanistisk sammenheng mellom nakke og svimmelhet mangler.</p>
+          <p>Likevel finnes det pasienter som opplever bedring av svimmelhet etter nakkebehandling. En systematisk oversikt og metaanalyse av 13 randomiserte studier (898 pasienter) fant moderat kvalitet evidens for at manuell behandling reduserer svimmelhet, nakkesymptomer og balanseplager.</p>
+
+          <h3>Hva kan du forvente?</h3>
+          <ul>
+            <li><strong>BPPV:</strong> Mange opplever betydelig bedring etter 1-3 behandlinger</li>
+            <li><strong>Nakke-relatert:</strong> Typisk 4-8 behandlinger over noen uker</li>
+            <li><strong>Vestibulaer rehabilitering:</strong> 4-12 ukers program ved mer sammensatte tilstander</li>
+          </ul>
+
+          <!-- FAQ Section -->
+          <div class="faq-section" style="background: #f8fafc; padding: 25px; border-radius: 12px; margin: 30px 0;">
+            <h2 style="margin-top: 0;">Ofte stilte sporsmal</h2>
+
+            <div class="faq-item" style="margin-bottom: 20px;">
+              <h4>Hvor lenge varer kvalmen ved svimmelhet?</h4>
+              <p>Det avhenger av arsaken. Ved BPPV varer kvalmen typisk sekunder til minutter etter hodebevegelse. Ved vestibularisnevritt kan kvalmen være vedvarende i dager. Ved migrene kan den vare i timer.</p>
+            </div>
+
+            <div class="faq-item" style="margin-bottom: 20px;">
+              <h4>Kan stress gi svimmelhet og kvalme?</h4>
+              <p>Ja. Stress og angst kan forarsake hyperventilering som gir svimmelhet. I tillegg er 30-50% av svimmelhetspasienter også rammet av angst eller depresjon - dette er en biologisk kobling, ikke "innbilt".</p>
+            </div>
+
+            <div class="faq-item" style="margin-bottom: 20px;">
+              <h4>Er svimmelhet og kvalme farlig?</h4>
+              <p>Vanligvis ikke. De fleste årsaker er godartede og behandlingsbare. Men akutt svimmelhet med nevrologiske symptomer (lammelser, talevansker, synsforstyrrelser) kan være tegn pa hjerneslag og krever ojeblikkelig legevurdering.</p>
+            </div>
+
+            <div class="faq-item" style="margin-bottom: 20px;">
+              <h4>Hva hjelper mot kvalmen?</h4>
+              <p>Behandle arsaken til svimmelheten. Ved BPPV gir reposisjonsmanover rask bedring. Ved anfall kan det hjelpe a ligge stille, fokusere pa et fast punkt, og ta dype pust. Kvalmestillende medikamenter kan brukes kortvarig, men bør ikke brukes over 2-3 dager da de kan forsinke tilheling.</p>
+            </div>
+          </div>
+
+          <div class="blog-post__cta-box">
+            <h2>Er du svimmel og kvalm?</h2>
+            <p>Kiropraktor Mads Finstad har spesialkompetanse pa svimmelhet. Jeg tilbyr grundig utredning med VNG og TRV-stol for å finne arsaken og gi riktig behandling.</p>
+            <p><strong>Priser:</strong> Nytt problem 1105 kr | Oppfolging 780 kr</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary" target="_blank" rel="noopener">Bestill time</a>
+          </div>
+
+          <!-- Sources Section -->
+          <div class="sources-section" style="background: #f1f5f9; padding: 20px; border-radius: 8px; margin: 30px 0;">
+            <h3 style="margin-top: 0;">Kilder</h3>
+            <ol style="font-size: 0.9rem; margin-bottom: 0;">
+              <li>Neuhauser HK. Epidemiology of dizziness. Handbook of Clinical Neurology. 2016</li>
+              <li>Bosner S, et al. Dizziness in primary care. BMC Family Practice. 2018</li>
+              <li>von Brevern M, et al. BPPV epidemiology. J Neurol Neurosurg Psychiatry. 2007</li>
+              <li>Paz-Tamayo A, et al. Vestibular migraine. Frontiers in Genetics. 2020</li>
+              <li>Prim-Espada P. Epley maneuver effectiveness. Neurologia</li>
+              <li>De Vestel C, et al. Manual therapy for cervicogenic dizziness. JMMT. 2022</li>
+            </ol>
+          </div>
+
+          <h2>Relaterte artikler</h2>
+          <ul>
+            <li><a href="../plager/svimmelhet.html">Alt om svimmelhet</a></li>
+            <li><a href="../plager/svimmelhet/krystallsyke-bppv.html">Krystallsyke (BPPV)</a></li>
+            <li><a href="../plager/svimmelhet/vestibulaer-migrene.html">Vestibulaer migrene</a></li>
+            <li><a href="svimmelhet-stress-angst.html">Svimmelhet og stress/angst</a></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../pictures.final/Final Transparent Logo.png" alt="TheBackROM logo" class="footer__logo" width="60" height="60" loading="lazy" />
+          <p>TheBackROM - Din kiropraktor pa Majorstua</p>
+        </div>
+        <div class="footer__contact">
+          <h3>Kontakt</h3>
+          <p>Sorgenfrigata 11, 0365 Oslo</p>
+          <p>Tlf: <a href="tel:+4740178178">401 78 178</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 TheBackROM. Alle rettigheter reservert.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Mobile Sticky Booking Button -->
+  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+     class="mobile-sticky-cta"
+     aria-label="Bestill time hos kiropraktor">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+      <line x1="16" y1="2" x2="16" y2="6"></line>
+      <line x1="8" y1="2" x2="8" y2="6"></line>
+      <line x1="3" y1="10" x2="21" y2="10"></line>
+    </svg>
+    Bestill time
+  </a>
+
+  <script src="../js/script.min.js" defer></script>
+</body>
+</html>

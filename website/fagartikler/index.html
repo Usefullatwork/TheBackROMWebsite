@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a202c" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" type="image/png" href="../pictures.final/Final Transparent Logo.png" />
+  <!-- Critical CSS for header positioning -->
+  <style>
+    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
+    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
+    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
+    #main-content{padding-top:var(--header-height)}
+  </style>
+  <link rel="preload" as="style" href="../css/main.min.css?v=20260101-fix" />
+  <title>Fagartikler | Kiropraktor Mads Finstad - TheBackROM</title>
+  <meta name="description" content="Dybdeartikler om muskel- og skjelettplager, svimmelhet, balansesystemet og behandlingsmetoder. Evidensbasert informasjon fra kiropraktor Mads Finstad.">
+  <meta name="keywords" content="fagartikler kiropraktor, svimmelhet artikler, VNG undersokelse, vestibular rehabilitering, balansesystem, Eagle syndrom">
+  <meta name="author" content="Mads Finstad">
+  <link rel="canonical" href="https://thebackrom.com/fagartikler/" />
+  <link rel="stylesheet" href="../css/main.min.css?v=20260101-fix" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <style>
+    .fagartikler-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .fagartikkel-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+    .fagartikkel-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+    .fagartikkel-card__content {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .fagartikkel-card__category {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #2c5282;
+      margin-bottom: 0.5rem;
+    }
+    .fagartikkel-card__title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #1a202c;
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+    .fagartikkel-card__description {
+      font-size: 0.95rem;
+      color: #4a5568;
+      line-height: 1.6;
+      flex: 1;
+    }
+    .fagartikkel-card__meta {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e2e8f0;
+      font-size: 0.85rem;
+      color: #718096;
+    }
+    .category-section {
+      margin-bottom: 3rem;
+    }
+    .category-section__title {
+      font-size: 1.5rem;
+      color: #2c5282;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e2e8f0;
+    }
+    @media (max-width: 640px) {
+      .fagartikler-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="../index.html" class="header__logo logo"><img src="../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <div class="header__navigation">
+          <div class="language-toggle" role="group" aria-label="Sprakvalg">
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk" aria-pressed="false">EN</button>
+            <div class="language-toggle__slider"></div>
+          </div>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="../index.html" class="menu__link">Hjem</a></li>
+              <li class="menu__item"><a href="../about.html" class="menu__link">Om meg</a></li>
+              <li class="menu__item"><a href="../services.html" class="menu__link">Tjenester</a></li>
+              <li class="menu__item"><a href="../plager.html" class="menu__link">Plager</a></li>
+              <li class="menu__item"><a href="../priser.html" class="menu__link">Priser</a></li>
+              <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+              <li class="menu__item"><a href="../contact.html" class="menu__link">Kontakt</a></li>
+              <li class="menu__item"><a href="../fagartikler/index.html" class="menu__link">Fagartikler</a></li>
+              <li class="menu__item"><a href="../blogg/index.html" class="menu__link">Blogg</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Bestill Time</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="page__main main main_pages">
+        <div class="main__container main__container_pages">
+          <h1 class="main__title">Fagartikler</h1>
+          <div class="main__text main__text_pages">
+            Dybdeartikler om diagnostikk, behandling og anatomi
+          </div>
+        </div>
+      </section>
+
+      <section class="page__content">
+        <div class="about__container" style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+
+          <!-- Svimmelhet og Balanse -->
+          <div class="category-section">
+            <h2 class="category-section__title">Svimmelhet og Balanse</h2>
+            <div class="fagartikler-grid">
+
+              <a href="vng-undersokelse.html" class="fagartikkel-card">
+                <div class="fagartikkel-card__content">
+                  <span class="fagartikkel-card__category">Diagnostikk</span>
+                  <h3 class="fagartikkel-card__title">VNG-undersokelse</h3>
+                  <p class="fagartikkel-card__description">Hva er videonystagmografi og hvordan brukes det til a utrede svimmelhet? Les om kalorisk test, posisjonstester og tolkning av resultater.</p>
+                  <div class="fagartikkel-card__meta">15 min lesetid</div>
+                </div>
+              </a>
+
+              <a href="vestibular-rehabilitering.html" class="fagartikkel-card">
+                <div class="fagartikkel-card__content">
+                  <span class="fagartikkel-card__category">Behandling</span>
+                  <h3 class="fagartikkel-card__title">Vestibular Rehabilitering</h3>
+                  <p class="fagartikkel-card__description">Laar hvordan spesifikke ovelser kan trene hjernen til a tolke balansesignaler pa nytt. Evidensbasert behandling av svimmelhet.</p>
+                  <div class="fagartikkel-card__meta">12 min lesetid</div>
+                </div>
+              </a>
+
+              <a href="balansesystemet.html" class="fagartikkel-card">
+                <div class="fagartikkel-card__content">
+                  <span class="fagartikkel-card__category">Anatomi</span>
+                  <h3 class="fagartikkel-card__title">Balansesystemets Anatomi og Funksjon</h3>
+                  <p class="fagartikkel-card__description">Dybdeartikkel om hvordan det vestibulare systemet, synet og propriosepsjonen samarbeider for a holde deg stodig.</p>
+                  <div class="fagartikkel-card__meta">15 min lesetid</div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Kjeve og Ansikt -->
+          <div class="category-section">
+            <h2 class="category-section__title">Kjeve og Ansikt</h2>
+            <div class="fagartikler-grid">
+
+              <a href="eagle-syndrom.html" class="fagartikkel-card">
+                <div class="fagartikkel-card__content">
+                  <span class="fagartikkel-card__category">Differensialdiagnose</span>
+                  <h3 class="fagartikkel-card__title">Eagle Syndrom</h3>
+                  <p class="fagartikkel-card__description">Forlenget styloidutloper kan gi hals- og kjevesmerter. Les om symptomer, diagnostikk og behandling av denne sjeldne tilstanden.</p>
+                  <div class="fagartikkel-card__meta">10 min lesetid</div>
+                </div>
+              </a>
+
+              <a href="glossopharyngeal-nevralgi.html" class="fagartikkel-card">
+                <div class="fagartikkel-card__content">
+                  <span class="fagartikkel-card__category">Differensialdiagnose</span>
+                  <h3 class="fagartikkel-card__title">Glossopharyngeal Nevralgi</h3>
+                  <p class="fagartikkel-card__description">Intens, stikkende smerte i svelg og ore. Les om årsaker, diagnostikk og behandlingsmuligheter.</p>
+                  <div class="fagartikkel-card__meta">8 min lesetid</div>
+                </div>
+              </a>
+
+              <a href="pifp-ansiktssmerte.html" class="fagartikkel-card">
+                <div class="fagartikkel-card__content">
+                  <span class="fagartikkel-card__category">Differensialdiagnose</span>
+                  <h3 class="fagartikkel-card__title">Persistent Idiopatisk Ansiktssmerte (PIFP)</h3>
+                  <p class="fagartikkel-card__description">Kronisk ansiktssmerte uten pavisbar arsak. Forstaelse, diagnostikk og behandlingstilnarming.</p>
+                  <div class="fagartikkel-card__meta">10 min lesetid</div>
+                </div>
+              </a>
+
+              <a href="icr-intern-carotis.html" class="fagartikkel-card">
+                <div class="fagartikkel-card__content">
+                  <span class="fagartikkel-card__category">Differensialdiagnose</span>
+                  <h3 class="fagartikkel-card__title">ICR - Intern Carotis Relatert Smerte</h3>
+                  <p class="fagartikkel-card__description">Vaskulare årsaker til hode- og ansiktssmerte. Viktige varselsignaler og når det haster.</p>
+                  <div class="fagartikkel-card__meta">8 min lesetid</div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="page__outro outro">
+        <div class="outro__container">
+          <h2 class="outro__title title">Har du sporsmal?</h2>
+          <div class="outro__text">
+            <p>Disse artiklene er ment som generell informasjon og erstatter ikke en individuell vurdering. Ta gjerne kontakt for en konsultasjon.</p>
+          </div>
+          <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="outro__button button">Bestill time</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link">
+              <img loading="lazy" decoding="async" src="../pictures.final/Media iconer/facebook_media_social_icon.png" alt="Folg TheBackROM pa Facebook" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link">
+              <img src="../pictures.final/Media iconer/instagramlogo.png" alt="Folg kiropraktor Mads Finstad pa Instagram" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link">
+              <img src="../pictures.final/Media iconer/youtube_icon.png" alt="Se videoer fra TheBackROM pa YouTube" loading="lazy" decoding="async"/>
+            </a>
+            <a href="../contact.html" class="footer__social-link">
+              <img loading="lazy" decoding="async" src="../pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__center">
+          <div class="footer__logo">
+            <a href="../index.html" class="logo"><img src="../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="back-to-top-text">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Ga til toppen av siden"><i class="fas fa-arrow-up" aria-hidden="true"></i> Opp</a>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Apningstider</h3>
+            <p>Mandag - Fredag: 08:00 - 19:00</p>
+            <p>Lordag: 10:00 - 16:00</p>
+            <p>Sondag: Stengt</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Kontaktinformasjon</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>E-post: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a href="../personvern.html" class="footer__policy">Personvernerklaering</a>
+        <p class="footer__copyright">&copy; 2025 TheBackROM - Alle rettigheter reservert</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/script.min.js" defer></script>
+  <script src="../js/language-toggle.min.js" defer></script>
+  <script src="../js/modern-enhancements.min.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a202c" />
+  <link rel="icon" type="image/png" href="../pictures.final/Final Transparent Logo.png" />
+  <!-- Critical CSS for header positioning -->
+  <style>
+    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
+    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
+    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
+    #main-content{padding-top:var(--header-height)}
+  </style>
+  <link rel="preload" as="style" href="../css/main.min.css?v=20260101-fix" />
+  <title>PIFP - Persistent Idiopatisk Ansiktssmerte | Fagartikkel Kiropraktor</title>
+  <meta name="description" content="Persistent Idiopatisk Ansiktssmerte (PIFP): Kronisk ansiktssmerte uten kjent årsak. Diagnostiske kriterier, differensialdiagnoser og behandlingsstrategier.">
+  <meta name="keywords" content="PIFP, atypisk ansiktssmerte, kronisk ansiktssmerte, atypisk odontalgi, ansiktssmerter uten årsak, kiropraktor">
+  <meta name="author" content="Mads Finstad">
+  <link rel="canonical" href="https://thebackrom.com/fagartikler/pifp-ansiktssmerte.html" />
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="PIFP - Persistent Idiopatisk Ansiktssmerte | Fagartikkel Kiropraktor">
+  <meta property="og:url" content="https://thebackrom.com/fagartikler/pifp-ansiktssmerte.html">
+  <meta property="og:image" content="https://thebackrom.com/pictures.final/plager%20hodepine-og-migrene/Hodepine%20(2).jpg">
+  <meta property="og:description" content="Persistent Idiopatisk Ansiktssmerte (PIFP): Kronisk ansiktssmerte uten kjent årsak. Diagnostiske kriterier og behandlingsstrategier.">
+  <link rel="stylesheet" href="../css/main.min.css?v=20260101-fix" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="../index.html" class="header__logo" aria-label="Til forsiden">
+        <img src="../pictures.final/Final Transparent Logo.png" alt="TheBackROM logo" width="50" height="50" />
+      </a>
+      <nav class="header__nav" aria-label="Hovedmeny">
+        <ul class="header__menu">
+          <li><a href="../plager/brystryggsmerter.html">Hjem</a></li>
+          <li><a href="../services.html">Tjenester</a></li>
+          <li><a href="../plager.html">Plager</a></li>
+          <li><a href="../priser.html">Priser</a></li>
+          <li><a href="../about.html">Om meg</a></li>
+          <li><a href="../blogg/index.html">Blogg</a></li>
+          <li><a href="../contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary header__cta" target="_blank" rel="noopener">Bestill time</a>
+      <button class="header__menu-toggle" aria-label="Apne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <article class="blog-post">
+      <div class="container container--narrow">
+        <nav class="breadcrumb" aria-label="Brodsmuler">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="../plager/brystryggsmerter.html">Hjem</a></li>
+            <li class="breadcrumb__item"><a href="../plager/kjevesmerte.html">Kjeveleddsproblemer</a></li>
+            <li class="breadcrumb__item" aria-current="page">PIFP - Ansiktssmerte</li>
+          </ol>
+        </nav>
+
+        <header class="blog-post__header">
+          <div class="blog-post__meta">
+            <span class="blog-post__category">Fagartikkel</span>
+            <time class="blog-post__date" datetime="2025-12-28">28. desember 2025</time>
+            <span class="blog-post__reading-time">10 min lesetid</span>
+          </div>
+          <h1 class="blog-post__title">PIFP: Persistent Idiopatisk Ansiktssmerte</h1>
+          <p class="blog-post__intro">PIFP er en utfordrende diagnose med vedvarende ansiktssmerte uten identifiserbar årsak. Her er hva klinikere bør vite om diagnostikk og behandling.</p>
+          <div class="blog-post__author">
+            <img src="../pictures.final/Om/mads-finstad-kiropraktor-portrett.webp" alt="Kiropraktor Mads Finstad" class="blog-post__author-image" width="60" height="60" loading="lazy" />
+            <div class="blog-post__author-info">
+              <span class="blog-post__author-name">Mads Finstad</span>
+              <span class="blog-post__author-title">Kiropraktor, TheBackROM</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Key Points Box -->
+        <div class="highlight-box" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0284c7; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
+          <h3 style="margin-top: 0; color: #0369a1;">Kliniske Nøkkelpunkter</h3>
+          <ul style="margin-bottom: 0;">
+            <li><strong>Definisjon:</strong> Vedvarende ansiktssmerte >2 timer/dag, >3 måneder, uten identifiserbar årsak</li>
+            <li><strong>Tidligere navn:</strong> Atypisk ansiktssmerte, atypisk odontalgi</li>
+            <li><strong>Prevalens:</strong> Ca. 0,03% - sjelden, men ofte underdiagnostisert</li>
+            <li><strong>Typisk pasient:</strong> Kvinner, middelaldrende, ofte historie med dental behandling</li>
+            <li><strong>Viktig:</strong> Eksklusjonsdiagnose - andre årsaker må utelukkes først</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+
+          <h2>Definisjon og Terminologi</h2>
+          <p>Persistent Idiopatisk Ansiktssmerte (PIFP) defineres av ICHD-3 som:</p>
+          <blockquote style="border-left: 4px solid #e8a838; padding-left: 20px; margin: 20px 0; font-style: italic;">
+            "Vedvarende ansiktssmerte og/eller oral smerte med varierende presentasjon, som oppstår daglig i mer enn 2 timer per dag i mer enn 3 måneder, uten kliniske nevrologiske funn."
+          </blockquote>
+
+          <h3>Historisk Terminologi</h3>
+          <ul>
+            <li><strong>Atypisk ansiktssmerte:</strong> Eldre term, fremdeles brukt</li>
+            <li><strong>Atypisk odontalgi:</strong> Når smerten oppleves i tenner/tannkjøtt</li>
+            <li><strong>Phantom tooth pain:</strong> Smerte etter tannekstraksjon</li>
+          </ul>
+
+          <h2>ICHD-3 Diagnostiske Kriterier</h2>
+          <p>For diagnose må alle følgende være oppfylt:</p>
+          <ol>
+            <li>Ansikts- og/eller oral smerte som oppfyller kriterium B og C</li>
+            <li>Tilbakevendende daglig i >2 timer/dag i >3 måneder</li>
+            <li>Smerten har begge følgende:
+              <ul>
+                <li>Dårlig lokalisert og følger ikke distribusjon av perifere nerver</li>
+                <li>Dov, verkende eller prikkende kvalitet</li>
+              </ul>
+            </li>
+            <li>Klinisk nevrologisk undersøkelse er normal</li>
+            <li>Dental årsak er utelukket ved grundig undersøkelse</li>
+            <li>Ikke bedre forklart av annen ICHD-3 diagnose</li>
+          </ol>
+
+          <h2>Epidemiologi</h2>
+          <ul>
+            <li><strong>Prevalens:</strong> Anslagsvis 0,03% av befolkningen</li>
+            <li><strong>Kjønn:</strong> Kvinner rammes 2-4 ganger oftere enn menn</li>
+            <li><strong>Alder:</strong> Oftest debut i 40-50 årene</li>
+            <li><strong>Komorbiditet:</strong> Ofte sammenfallende med angst, depresjon, søvnforstyrrelser</li>
+          </ul>
+
+          <h2>Patofysiologi</h2>
+          <p>Den eksakte mekanismen er ukjent, men flere teorier finnes:</p>
+
+          <h3>Sentral Sensitisering</h3>
+          <ul>
+            <li>Økt eksitabilitet i sentralnervesystemet</li>
+            <li>Endret smertemodulering</li>
+            <li>Lignende mekanismer som ved fibromyalgi</li>
+          </ul>
+
+          <h3>Nevropatisk Komponent</h3>
+          <ul>
+            <li>Subklinisk nerveskade (f.eks. etter tannbehandling)</li>
+            <li>Perifer sensitisering som vedlikeholdes sentralt</li>
+            <li>Endret sensorisk prosessering i hjernestammen</li>
+          </ul>
+
+          <h3>Psykososiale Faktorer</h3>
+          <ul>
+            <li>Høy forekomst av psykiatrisk komorbiditet</li>
+            <li>Stress som forverrende faktor</li>
+            <li>Mulig rolle for tidlige livshendelser</li>
+          </ul>
+
+          <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h4 style="margin-top: 0; color: #166534;">Viktig Perspektiv</h4>
+            <p style="margin-bottom: 0;">PIFP er en <strong>reell smertetilstand</strong>, ikke "innbilt". Pasientene opplever ekte smerte, selv om jeg ikke finner en strukturell årsak. Anerkjennelse av dette er viktig for terapeutisk allianse.</p>
+          </div>
+
+          <h2>Klinisk Presentasjon</h2>
+
+          <h3>Smertekvalitet</h3>
+          <ul>
+            <li>Konstant, dov, verkende, trykkende</li>
+            <li>Kan beskrives som brennende eller prikkende</li>
+            <li>Intensitet: Ofte moderat (VAS 4-6)</li>
+            <li>Varierer gjennom dagen</li>
+          </ul>
+
+          <h3>Lokalisering</h3>
+          <ul>
+            <li>Ofte nasolabialfold, kinn, kjeve</li>
+            <li>Kan oppleves i tenner/tannkjøtt (atypisk odontalgi)</li>
+            <li>Dårlig avgrenset - "diffus"</li>
+            <li>Kan skifte side eller lokalisasjon over tid</li>
+            <li>Følger IKKE anatomisk nervedistribusjon</li>
+          </ul>
+
+          <h3>Assosierte Symptomer</h3>
+          <ul>
+            <li>Følelse av hevelse (uten synlig hevelse)</li>
+            <li>Nummenhet eller endret sensibilitet (subjektiv)</li>
+            <li>Tannømfintlighet</li>
+            <li>Hodepine</li>
+            <li>Søvnforstyrrelser</li>
+          </ul>
+
+          <h3>Typisk Sykehistorie</h3>
+          <p>Mange pasienter har en karakteristisk bakgrunn:</p>
+          <ul>
+            <li>Smertedebut etter dental prosedyre (ekstraksjon, rotfylling, implantat)</li>
+            <li>Ofte multiple tannbehandlinger i forsøk på lindring</li>
+            <li>Gjentatte konsultasjoner uten diagnose</li>
+            <li>Frustrasjon over å ikke bli trodd</li>
+          </ul>
+
+          <h2>Differensialdiagnoser</h2>
+          <p>PIFP er en eksklusjonsdiagnose. Følgende må utelukkes:</p>
+
+          <h3>Odontogene Årsaker</h3>
+          <ul>
+            <li>Pulpitt/periodontitt</li>
+            <li>Sprekk i tann</li>
+            <li>Impaktert tann</li>
+            <li>Komplikasjon etter behandling</li>
+          </ul>
+
+          <h3>Nevralgier</h3>
+          <ul>
+            <li>Trigeminal nevralgi</li>
+            <li>Glossopharyngeal nevralgi</li>
+            <li>Post-herpetisk nevralgi</li>
+            <li>Painful trigeminal neuropathy</li>
+          </ul>
+
+          <h3>TMD</h3>
+          <ul>
+            <li>Myalgi i kjevemuskulatur</li>
+            <li>Artralgi i kjeveledd</li>
+            <li>Disklidelser</li>
+          </ul>
+
+          <h3>Andre</h3>
+          <ul>
+            <li>Sinusitt</li>
+            <li>Giant cell arteritt</li>
+            <li>Salivært patologi</li>
+            <li>Tumor (nasopharynx, bihuler, hjerne)</li>
+            <li>Migrene/TAC (trigeminal autonomic cephalalgias)</li>
+          </ul>
+
+          <h2>Utredning</h2>
+
+          <h3>Anamnese</h3>
+          <ul>
+            <li>Nøye kartlegging av smertehistorie</li>
+            <li>Tidligere dental og medisinsk behandling</li>
+            <li>Psykososial vurdering</li>
+            <li>Medikamentbruk</li>
+          </ul>
+
+          <h3>Klinisk Undersøkelse</h3>
+          <ul>
+            <li>Full nevrologisk undersøkelse (skal være normal ved PIFP)</li>
+            <li>Kranienervefunksjon</li>
+            <li>Sensorisk testing i ansikt</li>
+            <li>TMD-vurdering</li>
+            <li>Intraoral undersøkelse</li>
+          </ul>
+
+          <h3>Bildediagnostikk</h3>
+          <ul>
+            <li><strong>Dental røntgen:</strong> Utelukke odontogen patologi</li>
+            <li><strong>MR hjerne:</strong> Ved atypiske trekk, utelukke tumor/MS</li>
+            <li><strong>CT bihuler:</strong> Ved mistanke om sinuspatologi</li>
+          </ul>
+
+          <h2>Behandling</h2>
+
+          <h3>Generelle Prinsipper</h3>
+          <ul>
+            <li><strong>Validering:</strong> Anerkjenn at smerten er reell</li>
+            <li><strong>Unngå ytterligere inngrep:</strong> Spesielt tannekstraksjoner</li>
+            <li><strong>Realistiske forventninger:</strong> Målet er bedring, ikke nødvendigvis smertefrihet</li>
+            <li><strong>Tverrfaglig:</strong> Ofte behov for flere faggrupper</li>
+          </ul>
+
+          <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h4 style="margin-top: 0; color: #dc2626;">Advarsel</h4>
+            <p style="margin-bottom: 0;">Unngå ytterligere invasive prosedyrer! Tannekstraksjoner eller kirurgi gjør ofte situasjonen verre, ikke bedre. Mange PIFP-pasienter har allerede gjennomgått multiple unødvendige inngrep.</p>
+          </div>
+
+          <h3>Medikamentell Behandling</h3>
+          <ul>
+            <li><strong>Trisykliske antidepressiva:</strong> Amitriptylin 10-75 mg, førstevalg</li>
+            <li><strong>SNRI:</strong> Duloxetin, venlafaxin</li>
+            <li><strong>Antiepileptika:</strong> Gabapentin, pregabalin (mindre evidens)</li>
+            <li><strong>Topisk:</strong> Capsaicin-krem kan forsøkes</li>
+          </ul>
+
+          <h3>Ikke-medikamentell Behandling</h3>
+          <ul>
+            <li><strong>Kognitiv atferdsterapi (CBT):</strong> Beste evidens</li>
+            <li><strong>Mindfulness-basert stressreduksjon</strong></li>
+            <li><strong>Fysioterapi:</strong> Ved medfølgende muskulære komponenter</li>
+            <li><strong>Akupunktur:</strong> Kan forsøkes, variabel effekt</li>
+          </ul>
+
+          <h2>Kiropraktorens Rolle</h2>
+
+          <h3>Gjenkjennelse</h3>
+          <ul>
+            <li>Vær oppmerksom på pasienter med kronisk ansiktssmerte som har vært "overalt"</li>
+            <li>Spør om tidligere dental behandlingshistorie</li>
+            <li>Kjenn kriteriene for PIFP</li>
+          </ul>
+
+          <h3>Hva Kan Kiropraktoren Bidra Med?</h3>
+          <ul>
+            <li>Utelukke TMD som primær årsak</li>
+            <li>Behandle medfølgende nakke-/kjevekomponenter</li>
+            <li>Henvise til nevrolog/smerteklinikk ved mistanke</li>
+            <li>Være del av tverrfaglig team</li>
+          </ul>
+
+          <h3>Begrensninger</h3>
+          <ul>
+            <li>PIFP responderer vanligvis ikke godt på manuell behandling alene</li>
+            <li>Medikamentell behandling er ofte nødvendig</li>
+            <li>Psykologisk støtte viktig for mange pasienter</li>
+          </ul>
+
+          <h2>Prognose</h2>
+          <ul>
+            <li>PIFP er ofte en kronisk tilstand</li>
+            <li>De fleste oppnår bedring, men ikke nødvendigvis full smertefrihet</li>
+            <li>Tidlig, riktig diagnose forbedrer utfallet</li>
+            <li>Unngåelse av unødvendige inngrep er viktig</li>
+          </ul>
+
+          <h2>Konklusjon</h2>
+          <p>PIFP er en utfordrende, men viktig diagnose å kjenne til:</p>
+          <ul>
+            <li>Eksklusjonsdiagnose - andre årsaker må utelukkes</li>
+            <li>Reell smertetilstand, ikke "psykosomatisk"</li>
+            <li>Behandling er tverrfaglig og ofte langvarig</li>
+            <li>Unngå unødvendige invasive inngrep</li>
+          </ul>
+
+          <!-- Related Pages -->
+          <h2>Relaterte Artikler</h2>
+          <ul>
+            <li><a href="glossopharyngeal-nevralgi.html"><strong>Glossopharyngeal Nevralgi</strong></a></li>
+            <li><a href="eagle-syndrom.html"><strong>Eagle Syndrom</strong></a></li>
+            <li><a href="../plager/kjevesmerte.html"><strong>Kjeveleddsproblemer (TMD)</strong></a></li>
+            <li><a href="../plager/hodepine.html"><strong>Hodepine</strong></a> - PIFP kan ligne på atypiske hodepiner</li>
+          </ul>
+
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4>TheBackROM</h4>
+          <p>Kiropraktor på Majorstua med fokus på evidensbasert behandling.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <p>Gardeveien 17<br>0363 Oslo</p>
+          <p>Mads.finstad@hotmail.com</p>
+        </div>
+        <div class="footer__col">
+          <h4>Åpningstider</h4>
+          <p>Man-Fre: 08-20<br>Lør: 10-16</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 TheBackROM. Alle rettigheter reservert.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Mobile Sticky Booking Button -->
+  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+     class="mobile-sticky-cta"
+     aria-label="Bestill time hos kiropraktor">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+      <line x1="16" y1="2" x2="16" y2="6"></line>
+      <line x1="8" y1="2" x2="8" y2="6"></line>
+      <line x1="3" y1="10" x2="21" y2="10"></line>
+    </svg>
+    Bestill time
+  </a>
+
+  <script src="../js/script.min.js" defer></script>
+</body>
+</html>

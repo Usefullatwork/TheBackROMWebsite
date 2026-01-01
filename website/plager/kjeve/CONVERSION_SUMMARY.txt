@@ -1,0 +1,70 @@
+============================================
+HTML CONVERSION SUMMARY - Hub Layout
+============================================
+Date: 2025-12-28
+Converted by: Claude Code
+
+FILES CONVERTED (4 total):
+--------------------------
+1. tanngnissing-bruksisme.html
+2. oresmerter-tinnitus.html
+3. nakke-kjeve-sammenheng.html
+4. klikking-lasing-leddproblemer.html
+
+CHANGES APPLIED:
+----------------
+1. HEAD SECTION:
+   - Removed old critical CSS block
+   - Added <meta name="color-scheme" content="light" />
+   - Injected new hub-article CSS styles (with custom properties for colors)
+
+2. HEADER:
+   - Changed from old header structure to new header with:
+     - language-toggle component
+     - menu__body structure with updated navigation
+   - Changed body tag to: <body id="top"><div class="wrapper">
+
+3. MAIN CONTENT:
+   - Changed <main id="main-content"> to <main class="page">
+   - Wrapped content in: <div class="hub-wrapper"><article class="hub-main">
+   - Removed breadcrumb navigation
+   - Converted blog-post__header to hub-hero section with:
+     - Title in <h1>
+     - Author attribution in <p class="author">
+   - Wrapped all content in <div class="hub-content">
+   - Kept all original content including:
+     - TL;DR boxes
+     - Warning boxes
+     - Info boxes
+     - CTA boxes
+     - FAQ schema (unchanged)
+     - All article content
+
+4. FOOTER:
+   - Replaced old footer with new structure:
+     - Social media links (left)
+     - Logo (center)
+     - Hours and contact info (right)
+     - Footer bottom with privacy link and copyright
+   - Added language-toggle.js script
+   - Removed mobile sticky CTA button
+
+BACKUP FILES:
+-------------
+All original files backed up with .bak extension:
+- tanngnissing-bruksisme.html.bak
+- oresmerter-tinnitus.html.bak
+- nakke-kjeve-sammenheng.html.bak
+- klikking-lasing-leddproblemer.html.bak
+
+TEMPLATE SOURCE:
+----------------
+kjevehodepine.html (updated 2025-12-28)
+
+VERIFICATION:
+-------------
+- All 4 files successfully converted
+- Structure matches template
+- All content preserved
+- Schema markup intact
+- File sizes increased by ~4KB due to CSS injection

@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        ".htaccess": "plaintext",
+        "*.htaccess": "plaintext"
+    },
+    "shellcheck.exclude": [
+        ".htaccess"
+    ],
+    "[plaintext]": {
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        }
+    },
+    "window.autoDetectColorScheme": false,
+    "window.border": "nativ",
+    "workbench.colorTheme": "Default Dark+"
+}

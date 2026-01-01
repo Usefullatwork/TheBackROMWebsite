@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a202c" />
+  <link rel="icon" type="image/png" href="../pictures.final/Final Transparent Logo.png" />
+  <!-- Critical CSS for header positioning -->
+  <style>
+    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
+    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
+    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
+    #main-content{padding-top:var(--header-height)}
+  </style>
+  <link rel="preload" as="style" href="../css/main.min.css?v=20260101-fix" />
+  <title>Svimmel når du star opp - Årsaker og hva du bør vite | Kiropraktor Majorstua</title>
+  <meta name="description" content="Svimmelhet når du reiser deg kan skyldes blodtrykksfall eller krystallsyke. Lar a skille mellom dem og når du bør søke hjelp.">
+  <meta name="keywords" content="svimmel star opp, ortostatisk hypotensjon, blodtrykksfall, BPPV, kiropraktor Oslo">
+  <meta name="author" content="Mads Finstad">
+  <link rel="canonical" href="https://thebackrom.com/blogg/svimmel-naar-du-staar-opp.html" />
+  <link rel="stylesheet" href="../css/main.min.css?v=20260101-fix" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="../index.html" class="header__logo" aria-label="Til forsiden">
+        <img src="../pictures.final/Final Transparent Logo.png" alt="TheBackROM logo" width="50" height="50" />
+      </a>
+      <nav class="header__nav" aria-label="Hovedmeny">
+        <ul class="header__menu">
+          <li><a href="../plager/brystryggsmerter.html">Hjem</a></li>
+          <li><a href="../services.html">Tjenester</a></li>
+          <li><a href="../plager.html">Plager</a></li>
+          <li><a href="../priser.html">Priser</a></li>
+          <li><a href="../about.html">Om meg</a></li>
+          <li><a href="../blogg/index.html" class="active">Blogg</a></li>
+          <li><a href="../contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary header__cta" target="_blank" rel="noopener">Bestill time</a>
+      <button class="header__menu-toggle" aria-label="Apne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <article class="blog-post">
+      <div class="container container--narrow">
+        <nav class="breadcrumb" aria-label="Brodsmuler">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="../plager/brystryggsmerter.html">Hjem</a></li>
+            <li class="breadcrumb__item"><a href="../blogg/index.html">Blogg</a></li>
+            <li class="breadcrumb__item"><a href="../plager/svimmelhet.html">Svimmelhet</a></li>
+            <li class="breadcrumb__item" aria-current="page">Svimmel når du star opp</li>
+          </ol>
+        </nav>
+
+        <header class="blog-post__header">
+          <div class="blog-post__meta">
+            <span class="blog-post__category">Svimmelhet</span>
+            <time class="blog-post__date" datetime="2025-01-20">20. januar 2025</time>
+            <span class="blog-post__reading-time">8 min lesetid</span>
+          </div>
+          <h1 class="blog-post__title">Svimmel når du star opp - Årsaker og hva du bør vite</h1>
+          <p class="blog-post__intro">Svimmelhet ved reising er overraskende vanlig. En stor tysk befolkningsstudie fant at rundt 11% av voksne opplever dette i lopet av ett år. Men hva skyldes det egentlig?</p>
+          <div class="blog-post__author">
+            <img src="../pictures.final/Om/mads-finstad-kiropraktor-portrett.webp" alt="Kiropraktor Mads Finstad" class="blog-post__author-image" width="60" height="60" loading="lazy" />
+            <div class="blog-post__author-info">
+              <span class="blog-post__author-name">Mads Finstad</span>
+              <span class="blog-post__author-title">Kiropraktor, TheBackROM</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- TL;DR Box -->
+        <div class="highlight-box" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0284c7; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
+          <h3 style="margin-top: 0; color: #0369a1;">TL;DR - Kort oppsummert</h3>
+          <ul style="margin-bottom: 0;">
+            <li><strong>Hva det er:</strong> Svimmelhet ved posisjonsskifte - enten fra blodtrykksfall (ortostatisk) eller balanseorganet (vestibulaer)</li>
+            <li><strong>Vanligste årsaker:</strong> Ortostatisk hypotensjon (blodtrykksfall) er vanligst totalt, BPPV (krystallsyke) er vanligste vestibulare arsak</li>
+            <li><strong>Viktigste skille:</strong> Ortostatisk svimmelhet skjer bare når du reiser deg opp. Vestibulaer svimmelhet kan også oppsta når du ligger og snur deg</li>
+            <li><strong>Rode flagg:</strong> Besvimelse under aktivitet, brystsmerter, lammelser, talevansker - ring 113 umiddelbart</li>
+            <li><strong>Konsultasjon:</strong> 45 min første gang, 30 min oppfolging</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+          <h2>Hvor vanlig er svimmelhet når du star opp?</h2>
+          <p>Svimmelhet ved reising er overraskende vanlig. En stor tysk befolkningsstudie fant at rundt 11% av voksne opplever dette i lopet av ett år. Kvinner rammes oftere enn menn - 13% mot 8%.</p>
+          <p>Et kanskje overraskende funn: Selve symptomet er faktisk vanligst hos unge voksne. Hele 22% av personer under 30 år rapporterer ortostatisk svimmelhet. Alvorlighetsgraden og risikoen for komplikasjoner oker imidlertid betydelig med alderen.</p>
+          <p>Nordiske tall viser lignende monster. En norsk undersokelse fant at 16% av nordmenn rapporterte svimmelhet eller balanseplager i lopet av en tremaneders periode. I Danmark viste en studie at 20% av voksne over 50 år var rammet.</p>
+
+          <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+            <thead>
+              <tr style="background: #f1f5f9;">
+                <th style="padding: 12px; text-align: left; border: 1px solid #e2e8f0;">Aldersgruppe</th>
+                <th style="padding: 12px; text-align: left; border: 1px solid #e2e8f0;">Forekomst</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Under 50 ar</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">~5%</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">60+ ar</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">22%</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Over 70 ar</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">30%</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Sykehjemsbeboere</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">24-50%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Årsaker - fra vanligst til sjeldnest</h2>
+
+          <h3>1. Ortostatisk hypotensjon (blodtrykksfall ved reising)</h3>
+          <p>Dette er den vanligste arsaken totalt sett, og utgjor rundt 42% av alle svimmelhetskasus. Når du reiser deg, samler 500-1000 ml blod seg i beina på grunn av tyngdekraften. Normalt kompenserer kroppen ved a oke pulsen og trekke sammen blodarene. Ved ortostatisk hypotensjon svikter disse mekanismene, og hjernen får midlertidig for lite blod.</p>
+          <p><strong>Hvem rammes oftest?</strong> Eldre over 65 år, personer som tar blodtrykksmedisiner, diabetikere (24% forekomst), og Parkinson-pasienter (30-40% forekomst).</p>
+          <p><strong>Typiske symptomer:</strong> Arhet og ustadighet som oppstar sekunder til minutter etter at du reiser deg. Mange opplever at synet "graner" eller får tunnelsyn. Symptomene forsvinner når du setter deg ned igjen. <strong>Viktig:</strong> Symptomene skjer aldri når du ligger flatt.</p>
+
+          <h3>2. Krystallsyke (BPPV)</h3>
+          <p>BPPV er den vanligste vestibulare arsaken til posisjonsrelatert svimmelhet. Rundt 2,4% av befolkningen opplever dette i lopet av livet, og tilstanden utgjor 17-42% av alle svimmelhetskonsultasjoner. Kvinner rammes dobbelt sa ofte som menn.</p>
+          <p>BPPV skyldes at sma kalsiumkrystaller i det indre oret losner og havner i buegangene. Dette sender falske rotasjonssignaler til hjernen.</p>
+          <p><strong>Typiske symptomer:</strong> Intens folelse av at rommet spinner. Episodene varer typisk 10-60 sekunder og utloses av hodebevegelser - inkludert når du snur deg i sengen. Kvalme er vanlig.</p>
+
+          <h3>3. Medikamentbivirkninger</h3>
+          <p>Over 250 medikamenter kan forarsake ortostatisk hypotensjon. De viktigste inkluderer:</p>
+          <ul>
+            <li>Alfablokkere gir hoyest risiko</li>
+            <li>Trisykliske antidepressiva gir seks ganger okt risiko</li>
+            <li>Vanndrivende medisiner</li>
+            <li>Alle typer blodtrykksmedisin</li>
+          </ul>
+
+          <h2>Hvordan skille mellom ortostatisk og vestibulaer svimmelhet?</h2>
+
+          <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+            <thead>
+              <tr style="background: #f1f5f9;">
+                <th style="padding: 12px; text-align: left; border: 1px solid #e2e8f0;">Kjennetegn</th>
+                <th style="padding: 12px; text-align: left; border: 1px solid #e2e8f0;">Ortostatisk (blodtrykk)</th>
+                <th style="padding: 12px; text-align: left; border: 1px solid #e2e8f0;">Vestibulaer (ore)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Når oppstar det?</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Bare når du reiser deg</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Ved alle hodebevegelser</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Symptomtype</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Arhet, "graning", tunnelsyn</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Rotasjonsfolelse</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Varighet</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Sekunder til minutter</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">10-60 sekunder per episode</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">I senga?</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Nei, aldri</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Ja, ved snuing</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Kvalme</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Sjelden</td>
+                <td style="padding: 12px; border: 1px solid #e2e8f0;">Vanlig</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Warning Box -->
+          <div class="warning-box" style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left: 4px solid #dc2626; padding: 20px; margin: 30px 0; border-radius: 8px;">
+            <h3 style="color: #dc2626; margin-top: 0;">Rode flagg - Ring 113 ved:</h3>
+            <ul style="margin-bottom: 0;">
+              <li><strong>Besvimelse</strong> under fysisk aktivitet</li>
+              <li><strong>Brystsmerter</strong> sammen med svimmelhet</li>
+              <li><strong>Lammelser</strong> eller nummenhet i ansikt/arm/ben</li>
+              <li><strong>Talevansker</strong> eller forstaelsesproblemer</li>
+              <li><strong>Kraftig hodepine</strong> - spesielt hvis nyoppstatt</li>
+              <li><strong>Uregelmessig hjerterytme</strong> som starter plutselig</li>
+            </ul>
+          </div>
+
+          <h2>Hva kan du gjore selv?</h2>
+
+          <h3>Ved ortostatisk hypotensjon</h3>
+          <ul>
+            <li>Reis deg langsomt - sitt pa sengekanten for du star</li>
+            <li>Drikk nok vaske (1,5-2 liter daglig)</li>
+            <li>unngå langvarig staing</li>
+            <li>Bruk storompestroper ved behov</li>
+            <li>Gjennomga medisinene med legen din</li>
+          </ul>
+
+          <h3>Ved mistanke om krystallsyke</h3>
+          <ul>
+            <li>Bestill time for undersokelse og eventuell behandling</li>
+            <li>unngå raske hodebevegelser i akuttfasen</li>
+            <li>Sov med hodet litt hevet de første nettene</li>
+          </ul>
+
+          <h2>Hva kan kiropraktoren gjore?</h2>
+          <ul>
+            <li><strong>Grundig undersokelse:</strong> Skille mellom ortostatisk og vestibulaer arsak</li>
+            <li><strong>Dix-Hallpike test:</strong> Diagnostisere krystallsyke</li>
+            <li><strong>VNG-testing:</strong> Objektiv maling av oyebevegelser</li>
+            <li><strong>Epley-manover:</strong> Behandling av krystallsyke med over 90% suksessrate</li>
+            <li><strong>Henvisning:</strong> Ved mistanke om ortostatisk hypotensjon eller andre årsaker som krever medisinsk vurdering</li>
+          </ul>
+
+          <div class="blog-post__cta-box">
+            <h2>Blir du svimmel når du star opp?</h2>
+            <p>Kiropraktor Mads Finstad har spesialkompetanse pa svimmelhet. Jeg hjelper deg a finne arsaken og fa riktig behandling.</p>
+            <p><strong>Priser:</strong> Nytt problem 1105 kr | Oppfolging 780 kr</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary" target="_blank" rel="noopener">Bestill time</a>
+          </div>
+
+          <!-- Sources Section -->
+          <div class="sources-section" style="background: #f1f5f9; padding: 20px; border-radius: 8px; margin: 30px 0;">
+            <h3 style="margin-top: 0;">Kilder</h3>
+            <ol style="font-size: 0.9rem; margin-bottom: 0;">
+              <li>Radtke A, et al. Prevalence of orthostatic dizziness. Clinical Autonomic Research. 2011</li>
+              <li>Lehnen N, et al. Orthostatic intolerance prevalence. PLOS One. 2017</li>
+              <li>von Brevern M, et al. BPPV epidemiology. J Neurol Neurosurg Psychiatry. 2007</li>
+              <li>Ricci F, et al. Orthostatic hypotension. J Am Coll Cardiol. 2015</li>
+              <li>Saedon NI, et al. Orthostatic hypotension in older adults. Age and Ageing. 2020</li>
+              <li>Zhou Y, et al. Orthostatic hypotension in diabetes. Medicine. 2017</li>
+            </ol>
+          </div>
+
+          <h2>Relaterte artikler</h2>
+          <ul>
+            <li><a href="../plager/svimmelhet/krystallsyke-bppv.html">Alt om krystallsyke (BPPV)</a></li>
+            <li><a href="svimmel-i-senga.html">Svimmel når du legger deg?</a></li>
+            <li><a href="eldre-svimmelhet-fallrisiko.html">Svimmelhet hos eldre og fallrisiko</a></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../pictures.final/Final Transparent Logo.png" alt="TheBackROM logo" class="footer__logo" width="60" height="60" loading="lazy" />
+          <p>TheBackROM - Din kiropraktor pa Majorstua</p>
+        </div>
+        <div class="footer__contact">
+          <h3>Kontakt</h3>
+          <p>Sorgenfrigata 11, 0365 Oslo</p>
+          <p>Tlf: <a href="tel:+4740178178">401 78 178</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 TheBackROM. Alle rettigheter reservert.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Mobile Sticky Booking Button -->
+  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+     class="mobile-sticky-cta"
+     aria-label="Bestill time hos kiropraktor">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+      <line x1="16" y1="2" x2="16" y2="6"></line>
+      <line x1="8" y1="2" x2="8" y2="6"></line>
+      <line x1="3" y1="10" x2="21" y2="10"></line>
+    </svg>
+    Bestill time
+  </a>
+
+  <script src="../js/script.min.js" defer></script>
+</body>
+</html>
