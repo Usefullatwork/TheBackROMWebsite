@@ -1,0 +1,1580 @@
+/* =========================================
+   INDEX PAGE DESIGN EXPERIMENTS
+   Norwegian index only (index.html)
+
+   2026 PREMIUM MEDICAL DESIGN SYSTEM
+   Version: 3.0 | Last updated: 2026-01-01
+
+   Technical Fixes Applied:
+   1. Mads section: 5fr/7fr grid, organic squircle, text overlap
+   2. Premium padding: 40px cards, 20px title margins
+   3. Intelligent grids: auto-fit minmax(320px, 1fr), gap 40px
+   4. Typography: 1.6rem titles, line-height 1.7, #4A4A4A body
+   ========================================= */
+
+/* =========================================
+   DESIGN TOKENS
+   ========================================= */
+
+:root {
+    /* --- COLOR PALETTE (MASTER PROMPT V2) --- */
+    --color-primary: #1A5F7A;
+    /* Dark Teal */
+    --color-accent: #F26522;
+    /* Vibrant Orange (CTA Only) */
+    --color-text-body: #4A4A4A;
+    /* Soft Dark Gray */
+    --color-bg-light: #F8F9FA;
+    /* Soft off-white */
+    --color-bg-white: #FFFFFF;
+    /* Pure white */
+
+    /* --- FLOATING CARD STANDARD --- */
+    --card-bg: #FFFFFF;
+    --card-radius: 24px;
+    --card-padding: 40px;
+    --card-padding-mobile: 24px;
+    --card-shadow: 0 20px 40px -10px rgba(26, 95, 122, 0.1);
+    --card-hover-transform: translateY(-8px);
+
+    /* --- SPACING (PREMIUM RHYTHM) --- */
+    --section-spacing: 140px;
+    /* Desktop */
+    --section-spacing-mobile: 80px;
+
+    /* --- FONTS --- */
+    --font-family-base: 'Inter', sans-serif;
+    --font-family-header: 'Oswald', sans-serif;
+}
+
+/* 1.2 THE FLOATING CARD STANDARD */
+.floating-card,
+.item-services,
+.problems__item,
+.klinisk-hjorne__item,
+.title-section__text {
+    background: var(--card-bg) !important;
+    border-radius: var(--card-radius) !important;
+    box-shadow: var(--card-shadow) !important;
+    padding: var(--card-padding) !important;
+    transition: transform 0.3s ease !important;
+}
+
+.floating-card:hover,
+.item-services:hover,
+.problems__item:hover,
+.klinisk-hjorne__item:hover {
+    transform: var(--card-hover-transform) !important;
+}
+
+@media (max-width: 768px) {
+
+    .floating-card,
+    .item-services,
+    .problems__item,
+    .klinisk-hjorne__item,
+    .title-section__text {
+        padding: var(--card-padding-mobile) !important;
+    }
+}
+
+/* 1.3 ORGANIC IMAGERY UTILITIES (NO RECTANGLES) */
+
+/* Mandatory Image Fit Helper */
+.img-fit {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+/* Treatment A: The Blob (Complex Organic Shape) */
+.img-organic-blob {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% !important;
+    overflow: hidden !important;
+    transform: translateZ(0);
+    /* Fix for Safari radius clipping */
+}
+
+/* Treatment B: The Squircle (Heavy Uniform Radius) */
+.img-organic-squircle {
+    border-radius: 32px !important;
+    overflow: hidden !important;
+    transform: translateZ(0);
+}
+
+/* 2.1 THE INTELLIGENT GRID (AUTO-FIT) */
+.auto-fit-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)) !important;
+    gap: 48px !important;
+    justify-content: center !important;
+    max-width: 1400px !important;
+    /* Allow width for 3-4 columns */
+    margin: 0 auto !important;
+}
+
+/* 2.2 PREMIUM VERTICAL RHYTHM */
+.section-spacer {
+    margin-bottom: var(--section-spacing) !important;
+}
+
+@media (max-width: 768px) {
+    .auto-fit-grid {
+        gap: 24px !important;
+        grid-template-columns: 1fr !important;
+        /* Stack context on mobile */
+    }
+
+    .section-spacer {
+        margin-bottom: var(--section-spacing-mobile) !important;
+    }
+}
+
+/* =========================================
+   VISION UPGRADE: GLASSMORPHISM & MOTION
+   ========================================= */
+
+/* Glass Header State */
+.header.glass-active {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    transition: var(--transition-standard) !important;
+}
+
+/* Subtle Floating Animation for "Alive" feel */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Magnetic Button Base */
+.magnetic-btn {
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+}
+
+/* =========================================
+   ANIMATIONS & EFFECTS
+   ========================================= */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Base class for elements to be animated - handles initial state if JS is running */
+.js-scroll-hidden {
+    opacity: 0;
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.main_home {
+    /* 1. We force a minimum height so it feels grand, not cramped */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    /* 2. THE GRADIENT OVERLAY (The Magic Fix) */
+    /* This creates a fade from solid Dark Teal (left) to transparent (right) */
+    background:
+        linear-gradient(90deg,
+            rgba(26, 95, 122, 0.95) 0%,
+            rgba(26, 95, 122, 0.8) 40%,
+            rgba(26, 95, 122, 0.1) 100%),
+        url('../pictures.final/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;
+
+    padding-top: 100px;
+}
+
+.main_home .main__container {
+    text-align: left;
+    padding: 80px var(--container-padding);
+    max-width: 650px;
+    margin-left: clamp(3rem, 10vw, 12rem);
+    width: 100%;
+}
+
+/* STRICT H1: 3.5rem, 800 weight, 1.2 line-height */
+/* 3. Make the text PURE WHITE and BIGGER */
+.main_home .main__title {
+    font-family: var(--font-family-header);
+    color: #FFFFFF;
+    /* White text pops against the dark gradient */
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    max-width: 700px;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Adds depth */
+}
+
+/* Optional: Make the button glow to stand out against the dark */
+.main_home .button--accent {
+    box-shadow: 0 0 20px rgba(242, 101, 34, 0.6);
+}
+
+.main_home .main__button,
+.main_home .button--accent,
+.button--accent,
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--color-accent);
+    color: var(--color-text-light) !important;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow-subtle);
+    transition: var(--transition-standard);
+}
+
+.main_home .main__button:hover,
+.main_home .button--accent:hover,
+.button--accent:hover,
+.btn-cta:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    /* Subtle lift for buttons */
+    box-shadow: var(--shadow-cta-hover);
+}
+
+.main_home .main__container::after {
+    display: none;
+}
+
+/* =========================================
+   FIX 1: MADS FINSTAD SECTION
+   5fr/7fr grid, organic squircle, text overlap
+   ========================================= */
+
+.title-section {
+    position: relative !important;
+    padding: 50px 0 var(--section-spacing) 0 !important;
+    margin-top: 0 !important;
+    background-color: var(--color-bg-light) !important;
+    overflow: visible !important;
+}
+
+.title-section>.container {
+    max-width: var(--container-width) !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 var(--container-padding) !important;
+}
+
+/* 1:1 grid for balanced text/image ratio - More space for image */
+/* MADS FINSTAD SECTION (Overlap Success) */
+.title-section__content {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    /* 50/50 Split */
+    align-items: center !important;
+    position: relative !important;
+    max-width: 1200px !important;
+    margin: 40px auto !important;
+}
+
+/* The Overlap Card */
+/* The Overlap Card */
+.mads-text-card {
+    background: #FFFFFF;
+    padding: 60px;
+    /* INCREASE PADDING for luxury feel */
+    border-radius: 0 24px 24px 24px;
+    /* Distinctive shape */
+    margin-right: -120px;
+    /* Pull it tighter */
+    position: relative;
+    z-index: 10;
+    max-width: 600px;
+
+    /* Add a "Border Left" accent to give it structure */
+    border-left: 6px solid #F26522;
+}
+
+/* Image Container */
+.title-section__image {
+    position: relative !important;
+    z-index: 1 !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 600px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.title-section__image img {
+    /* Ensure Organic Blob Class is used in HTML, but helper styles here */
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.title-section__heading {
+    margin-bottom: 20px;
+}
+
+.title-section__name {
+    font-family: var(--font-family-header);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    color: var(--color-primary);
+    font-weight: var(--header-weight);
+    margin-bottom: 0.5rem;
+}
+
+.title-section__subtitle {
+    font-size: 1.15rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+}
+
+.text--primary-highlight {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text-body);
+    margin-bottom: 1.5rem;
+}
+
+.bio-teaser__text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-body);
+    margin-bottom: 1.5rem;
+}
+
+.bio-teaser .button {
+    margin-top: 0.5rem;
+}
+
+/* Image column */
+.title-section__image {
+    position: relative !important;
+    z-index: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: visible !important;
+    width: 100% !important;
+    max-width: none !important;
+}
+
+/* Image styling - natural size, no zoom */
+.page__title-section .title-section__image img,
+.title-section .title-section__image img,
+section.title-section .title-section__image img,
+.title-section__image img {
+    width: auto !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: unset !important;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Image container - LARGE and DYNAMIC */
+.title-section__image {
+    position: relative !important;
+    z-index: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: visible !important;
+    width: 100% !important;
+    min-width: unset !important;
+    /* Allow it to fill the grid cell naturally */
+    height: 100% !important;
+    min-height: 600px !important;
+    /* Enforce tall image */
+}
+
+.title-section__image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    /* Ensure it covers the area */
+    max-height: 700px !important;
+}
+
+
+/* =========================================
+   CTA BUTTON COMPONENT
+   ========================================= */
+
+/* Consolidated Button Styles in Hero Block */
+
+/* =========================================
+   FIX 3: SERVICES SECTION
+   Intelligent grid: auto-fit minmax(320px, 1fr)
+   ========================================= */
+
+.services,
+.page__services {
+    background-color: var(--color-bg-white);
+    padding: var(--section-spacing) 0;
+}
+
+.services__container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* STAGGERED LAYOUT: 3-over-2 */
+.services__row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    /* Space between cards */
+    max-width: 1300px !important;
+    margin: 0 auto !important;
+    padding-bottom: 40px !important;
+    /* Space for the stagger */
+}
+
+/* Card Sizing - 3 per row comfortable */
+.item-services {
+    flex: 0 0 calc(33.333% - 20px) !important;
+    /* 3 items minus gap */
+    max-width: 400px !important;
+    margin-bottom: 0 !important;
+}
+
+/* The "Fun" Stagger Logic - Bottom 2 items */
+.services__row .item-services:nth-last-child(-n+2) {
+    margin-top: -60px !important;
+    /* The precise overlap */
+    z-index: 2 !important;
+    /* Ensure they float "above" or interact well */
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15) !important;
+    /* Stronger shadow for depth */
+    /* INVERTED Organic Shape for "Puzzle" feel */
+    border-radius: 80px 40px 80px 40px !important;
+}
+
+/* Stagger hover fix */
+.services__row .item-services:nth-last-child(-n+2):hover {
+    transform: translateY(-70px) !important;
+    /* Move up slightly more on hover relative to margin */
+    z-index: 10 !important;
+}
+
+/* Responsiveness - Mobile/Tablet stack normally */
+@media (max-width: 992px) {
+    .services__row {
+        gap: 30px !important;
+    }
+
+    .item-services {
+        flex: 0 0 calc(50% - 15px) !important;
+        /* 2 per row */
+        margin-top: 0 !important;
+        /* Reset stagger */
+    }
+
+    .services__row .item-services:nth-last-child(-n+2) {
+        margin-top: 0 !important;
+    }
+
+    .services__row .item-services:nth-last-child(-n+2):hover {
+        transform: translateY(-10px) !important;
+        /* Standard hover */
+    }
+}
+
+@media (max-width: 600px) {
+    .item-services {
+        flex: 0 0 100% !important;
+        /* 1 per row */
+    }
+}
+
+/* SERVICE CARDS - Organic Pebble Shapes */
+.item-services {
+    /* Row 1 Default Shape (Asymmetric) */
+    border-radius: 40px 80px 40px 80px !important;
+    overflow: hidden !important;
+    box-shadow: var(--shadow-floating-card) !important;
+    transition: var(--transition-standard) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    background: var(--color-bg-white) !important;
+    position: relative !important;
+}
+
+.item-services:hover {
+    box-shadow: var(--shadow-floating-card-hover) !important;
+    /* slight scale up on hover */
+    transform: translateY(-10px) scale(1.02) !important;
+}
+
+/* STRICT: Image container - 260px height (Larger context) */
+.item-services__image {
+    position: relative !important;
+    height: 260px !important;
+    /* Increased from 220px to show context */
+    width: calc(100% - 30px) !important;
+    overflow: hidden !important;
+    order: -1 !important;
+    /* Soften the image border to match the card's organic feel */
+    border-radius: 30px 40px 20px 20px !important;
+    margin: 15px 15px 25px 15px !important;
+}
+
+/* STRICT: Image tag - object-fit cover prevents squishing */
+.item-services__image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.4s ease !important;
+    display: block !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+.item-services:hover .item-services__image img {
+    transform: scale(1.05) !important;
+}
+
+/* NO gradient overlay */
+.item-services__image::after,
+.item-services__image::before,
+.item-services::after,
+.item-services::before {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    opacity: 0 !important;
+}
+
+/* FIX 2 & 4: Text content with PREMIUM PADDING */
+.item-services__content {
+    position: relative !important;
+    padding: var(--card-padding) !important;
+    background: var(--color-bg-white) !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Restore Standard Typography for wider cards */
+.item-services__title {
+    font-family: var(--font-family-header) !important;
+    font-size: 1.6rem !important;
+    /* Restored size */
+    color: var(--color-primary) !important;
+    margin-bottom: 15px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+    text-shadow: none !important;
+}
+
+/* STRICT TYPOGRAPHY - 1.1rem body text, line-height 1.7 */
+.item-services__text {
+    color: #4A4A4A !important;
+    line-height: 1.7 !important;
+    font-size: 1.1rem !important;
+    flex: 1 !important;
+    text-shadow: none !important;
+}
+
+.services__cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* =========================================
+   FIX 3: PROBLEMS SECTION
+   Intelligent grid: auto-fit minmax(320px, 1fr)
+   ========================================= */
+
+.problems,
+.page__problems {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--section-spacing) 0;
+}
+
+.problems__container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.problems__title {
+    font-family: var(--font-family-header);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--color-text-light);
+    text-align: center;
+    margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+/* FIX 4: PROBLEMS SECTION (Master Prompt V2) */
+/* D. Intelligent Grid & Breathing Room */
+
+/* FIX 4: PROBLEMS SECTION (Master Prompt V2) */
+/* D. Intelligent Grid & Breathing Room */
+
+.problems__content {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)) !important;
+    gap: 48px !important;
+}
+
+.problem-list li {
+    padding: 0.85rem 0 0.85rem 1.75rem !important;
+    margin-bottom: 16px !important;
+    /* 4. Breathing Room */
+    position: relative !important;
+    color: #4A4A4A !important;
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+    border-bottom: 1px solid var(--color-border-subtle) !important;
+}
+
+.problem-list li:last-child {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+}
+
+.problem-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: var(--color-accent);
+    border-radius: 50%;
+}
+
+.problems__cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* =========================================
+   BLOG SECTION - Hidden Scrollbar
+   ========================================= */
+
+.page__klinisk-hjorne {
+    background: var(--color-bg-light) !important;
+    padding: var(--section-spacing) 0 !important;
+}
+
+.klinisk-hjorne__container {
+    max-width: var(--container-width) !important;
+    margin: 0 auto !important;
+    padding: 0 var(--container-padding) !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.klinisk-hjorne__title {
+    font-family: var(--font-family-header) !important;
+    font-size: clamp(1.75rem, 4vw, 2.5rem) !important;
+    color: var(--color-primary) !important;
+    text-align: center !important;
+    margin-bottom: 0.75rem !important;
+}
+
+.klinisk-hjorne__description {
+    text-align: center !important;
+    color: var(--color-text-muted) !important;
+    font-size: 1.1rem !important;
+    max-width: 650px !important;
+    margin: 0 auto clamp(2rem, 4vw, 3rem) !important;
+    line-height: 1.7 !important;
+}
+
+.blog-scroll-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    overflow: visible !important;
+}
+
+/* BLOG: Horizontal scroll - HIDDEN SCROLLBAR */
+/* E. Blog Section (Master Prompt V2) */
+/* 3-Column Grid + Tall Squircle Images */
+
+/* REPLACES SCROLL CONTAINER WITH GRID */
+.klinisk-hjorne__scroll,
+#blog-scroll-container,
+.blog-grid-view {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)) !important;
+    gap: 48px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    overflow: visible !important;
+}
+
+.klinisk-hjorne__scroll::-webkit-scrollbar,
+#blog-scroll-container::-webkit-scrollbar {
+    display: none !important;
+}
+
+.klinisk-hjorne__item,
+.page__klinisk-hjorne .klinisk-hjorne__item {
+    /* Auto-fit width */
+    width: 100% !important;
+    min-width: unset !important;
+    background: var(--color-bg-white) !important;
+    border-radius: var(--card-radius) !important;
+    box-shadow: var(--shadow-floating-card) !important;
+    transition: var(--transition-standard) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+    /* Reset scroll margin */
+    /* Padding handled by generic class or variable */
+}
+
+.klinisk-hjorne__item:hover {
+    transform: translateY(-8px) !important;
+}
+
+.klinisk-hjorne__image {
+    aspect-ratio: 4 / 3 !important;
+    /* TALLER ASPECT RATIO */
+    overflow: hidden !important;
+    height: 300px !important;
+    /* Fixed height guideline */
+    width: 100% !important;
+    border-radius: 32px !important;
+    /* TREATMENT B: SQUIRCLE */
+    margin-bottom: 20px !important;
+}
+
+.klinisk-hjorne__image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.4s ease !important;
+    border-radius: 32px !important;
+    /* Match container */
+}
+
+/* FIX 4: TYPOGRAPHY */
+.klinisk-hjorne__item-title {
+    font-family: var(--font-family-header) !important;
+    font-size: 1.6rem !important;
+    color: var(--color-primary) !important;
+    margin-bottom: 20px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+}
+
+.klinisk-hjorne__text {
+    color: #4A4A4A !important;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 1rem !important;
+    flex: 1 !important;
+}
+
+.klinisk-hjorne__meta {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: auto !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+}
+
+.klinisk-hjorne__tags {
+    display: flex !important;
+    gap: 0.5rem !important;
+    align-items: center !important;
+}
+
+.klinisk-hjorne__category {
+    background: var(--color-bg-light) !important;
+    color: var(--color-primary) !important;
+    padding: 0.3rem 0.6rem !important;
+    border-radius: 20px !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+}
+
+.klinisk-hjorne__date {
+    color: var(--color-text-muted) !important;
+    font-size: 0.85rem !important;
+}
+
+.klinisk-hjorne__link {
+    color: var(--color-accent) !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    font-size: 0.95rem !important;
+}
+
+.klinisk-hjorne__link:hover {
+    text-decoration: underline !important;
+}
+
+.klinisk-hjorne__footer {
+    text-align: center !important;
+    margin-top: 2rem !important;
+}
+
+.klinisk-hjorne__more {
+    color: var(--color-primary) !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    font-size: 1.1rem !important;
+}
+
+.klinisk-hjorne__more:hover {
+    color: var(--color-accent) !important;
+}
+
+/* Blog scroll arrows */
+.blog-scroll-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 48px !important;
+    height: 48px !important;
+    background: var(--color-bg-white) !important;
+    border: none !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+    cursor: pointer !important;
+    z-index: 10 !important;
+    transition: var(--transition-standard) !important;
+    color: var(--color-primary) !important;
+    font-size: 1.2rem !important;
+}
+
+.blog-scroll-btn:hover {
+    background: var(--color-primary) !important;
+    color: white !important;
+    transform: translateY(-50%) scale(1.1) !important;
+}
+
+.blog-scroll-prev {
+    left: -24px !important;
+}
+
+.blog-scroll-next {
+    right: -24px !important;
+}
+
+/* =========================================
+   TRUST SECTION - Centered Logos
+   ========================================= */
+
+.trust-section {
+    background: var(--color-bg-white);
+    padding: var(--section-spacing) 0;
+    text-align: center;
+}
+
+.trust-section__title {
+    font-family: var(--font-family-header);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.trust-section__description {
+    color: #4A4A4A;
+    font-size: 1.1rem;
+    max-width: 750px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+    padding: 0 var(--container-padding);
+}
+
+.trust-section__link {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.trust-section__link:hover {
+    text-decoration: underline;
+}
+
+.logo-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: clamp(2.5rem, 6vw, 5rem) !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    padding: 0 var(--container-padding) !important;
+}
+
+.trust-item {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.trust-item img {
+    max-height: 70px !important;
+    width: auto !important;
+    opacity: 1 !important;
+    transition: var(--transition-standard) !important;
+    filter: none !important;
+}
+
+.trust-item img:hover {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: scale(1.05) !important;
+}
+
+/* =========================================
+   OUTRO/CTA SECTION
+   ========================================= */
+
+.outro_home,
+.outro--home-bg {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--section-spacing) 0;
+    text-align: center;
+}
+
+.outro__container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.outro__title--white {
+    font-family: var(--font-family-header);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--color-text-light);
+    margin-bottom: 1rem;
+}
+
+.outro__text--white {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 991px) {
+    :root {
+        --card-padding: var(--card-padding-mobile);
+    }
+
+    .main_home {
+        min-height: 70vh;
+        background:
+            linear-gradient(180deg,
+                rgba(26, 95, 122, 0.88) 0%,
+                rgba(26, 95, 122, 0.75) 100%),
+            url('../pictures.final/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;
+    }
+
+    .main_home .main__container {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    /* Stack Mads section on tablet - remove overlap */
+    .title-section__content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        text-align: center !important;
+    }
+
+    .title-section__text {
+        margin-right: 0 !important;
+        max-width: 100% !important;
+        order: 2 !important;
+        padding: var(--card-padding-mobile) !important;
+    }
+
+    .title-section__image {
+        order: 1 !important;
+        justify-content: center !important;
+    }
+
+    .title-section__image img {
+        max-width: 350px !important;
+        margin: 0 auto !important;
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% !important;
+    }
+
+    .blog-scroll-prev {
+        left: 10px !important;
+    }
+
+    .blog-scroll-next {
+        right: 10px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .klinisk-hjorne__item,
+    .page__klinisk-hjorne .klinisk-hjorne__item {
+        min-width: 300px !important;
+        width: 300px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-section__image img {
+        max-width: 280px !important;
+    }
+
+    .klinisk-hjorne__item,
+    .page__klinisk-hjorne .klinisk-hjorne__item {
+        min-width: 85vw !important;
+        width: 85vw !important;
+    }
+
+    .logo-grid {
+        gap: clamp(1.5rem, 8vw, 3rem) !important;
+    }
+
+    .trust-item img {
+        max-height: 55px !important;
+    }
+
+    .blog-scroll-btn {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .blog-scroll-prev {
+        left: 5px !important;
+    }
+
+    .blog-scroll-next {
+        right: 5px !important;
+    }
+
+    /* FIX 4: Smaller titles on mobile */
+    .item-services__title,
+    .problems__item-title,
+    .klinisk-hjorne__item-title {
+        font-size: 1.35rem !important;
+    }
+}
+
+/* =========================================
+   SECTION SPACING - Premium 120px margins
+   ========================================= */
+
+.services,
+.page__services,
+.problems,
+.page__problems,
+.page__klinisk-hjorne,
+.page__din-trygghet {
+    margin-bottom: 0 !important;
+}
+
+/* Add spacing between major sections */
+.title-section+.services,
+.title-section+.page__services {
+    margin-top: 60px !important;
+}
+
+.services+.problems,
+.page__services+.page__problems {
+    margin-top: 0 !important;
+}
+
+.problems+.page__klinisk-hjorne,
+.page__problems+.page__klinisk-hjorne {
+    margin-top: 0 !important;
+}
+
+/* =========================================
+   BUTTON CONSISTENCY - All CTAs match hero
+   ========================================= */
+
+.services__cta .button--accent,
+.problems__cta .button--accent,
+.button--accent,
+a.button--accent {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    background-color: var(--color-accent) !important;
+    color: var(--color-text-light) !important;
+    padding: 16px 36px !important;
+    border-radius: var(--border-radius-button) !important;
+    font-weight: 600 !important;
+    font-size: 1.05rem !important;
+    text-decoration: none !important;
+    transition: var(--transition-standard) !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+.services__cta .button--accent:hover,
+.problems__cta .button--accent:hover,
+.button--accent:hover,
+a.button--accent:hover {
+    background-color: var(--color-accent-hover) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: var(--shadow-cta-hover) !important;
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   MASTER PROMPT V2: CRITICAL OVERRIDES
+   Ensures final design matches "Premium Lifestyle Health"
+   ========================================= */
+
+/* 1. HERO SECTION FIX */
+.main_home {
+    min-height: auto !important;
+    padding: 120px 0 !important;
+    padding-top: 120px !important;
+    /* Force override */
+}
+
+/* 2. SERVICES SECTION FIX (Intelligent Grid) */
+.services__row {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)) !important;
+    gap: 48px !important;
+    padding-bottom: 0 !important;
+    max-width: 1400px !important;
+}
+
+.item-services {
+    /* Reset Stagger */
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    flex: 0 0 auto !important;
+}
+
+.item-services:nth-last-child(-n+2) {
+    margin-top: 0 !important;
+    transform: none !important;
+    box-shadow: var(--shadow-floating-card) !important;
+}
+
+.item-services:nth-last-child(-n+2):hover {
+    transform: translateY(-8px) !important;
+}
+
+.item-services__image {
+    height: 240px !important;
+    margin-bottom: 24px !important;
+}
+
+/* 3. PROBLEMS SECTION FIX */
+.problems__content {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)) !important;
+    gap: 48px !important;
+}
+
+.problem-list li {
+    margin-bottom: 16px !important;
+}
+
+/* 4. BLOG SECTION FIX (Grid Conversion) */
+.klinisk-hjorne__scroll,
+#blog-scroll-container,
+.blog-grid-view {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)) !important;
+    gap: 48px !important;
+    width: 100% !important;
+    overflow: visible !important;
+    padding: 0 !important;
+}
+
+.klinisk-hjorne__item {
+    width: 100% !important;
+    min-width: unset !important;
+    margin: 0 !important;
+}
+
+.klinisk-hjorne__image {
+    height: 300px !important;
+    border-radius: 32px !important;
+}
+
+.klinisk-hjorne__image img {
+    border-radius: 32px !important;
+}
+
+/* =========================================
+   CRITICAL CSS CORRECTION: OVERWRITE PREVIOUS STYLES (USER REQUEST)
+   ========================================= */
+
+/* 1. THE "FLOATING CARD" STANDARD (Fixing flat, tight boxes) */
+.floating-card,
+.service-card,
+.blog-card,
+.problem-card,
+.mads-intro-card {
+    background: #FFFFFF !important;
+    border-radius: 24px !important;
+    /* Soft, modern corners */
+    /* Deep, premium teal-tinted shadow for floating effect */
+    box-shadow: 0 20px 40px -10px rgba(26, 95, 122, 0.15) !important;
+    /* Massive internal padding for premium feel */
+    padding: 40px !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+}
+
+/* Hover lift effect */
+.floating-card:hover,
+.service-card:hover,
+.blog-card:hover,
+.blog-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 30px 60px -12px rgba(26, 95, 122, 0.25) !important;
+}
+
+/* Typography inside cards */
+.floating-card h3,
+.service-card h3,
+.blog-card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1A5F7A;
+    /* Dark Teal */
+}
+
+.floating-card p,
+.service-card p,
+.problem-card li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4A4A4A;
+    /* Soft dark gray */
+}
+
+/* 2. ORGANIC IMAGERY (Fixing squished rectangles) */
+/* The container for the image at the top of a card */
+.card-image-container {
+    height: 240px;
+    /* Fixed height is crucial */
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 25px;
+    /* THE "BLOB" SHAPE - Mandatory */
+    border-radius: 40% 60% 70% 30% / 50% 60% 30% 70% !important;
+}
+
+/* The image tag itself */
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    /* Prevents squishing, fills the blob shape */
+    object-fit: cover !important;
+}
+
+/* Exception for Mads' large photo - a different shape */
+.mads-hero-image-container img {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% !important;
+}
+
+/* 3. INTELLIGENT GRIDS (Fixing rigid layouts) */
+/* Apply to the container holding the cards */
+.services-grid,
+.problems-grid,
+.blog-grid {
+    display: grid !important;
+    /* Creates columns that are at least 340px wide, fitting as many as possible */
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)) !important;
+    gap: 48px !important;
+    /* Large premium gap */
+    justify-content: center !important;
+    max-width: 1300px !important;
+    margin: 0 auto !important;
+}
+
+/* =========================================
+   FIX 1: GLOBAL VARIABLES & TEXT (Readability Fix)
+   ========================================= */
+:root {
+    --color-primary: #1A5F7A;
+    /* Deep Teal */
+    --color-text-body: #333333;
+    /* Darker Grey for better readability */
+    --card-shadow: 0 20px 40px -10px rgba(26, 95, 122, 0.15);
+}
+
+/* =========================================
+   FIX 2: THE "MADS" OVERLAP SECTION
+   Tightens the gap and forces the overlap.
+   ========================================= */
+.mads-section-container {
+    display: grid;
+    /* 50/50 split to bring image closer */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.mads-text-card {
+    background: white;
+    padding: 50px;
+    border-radius: 24px;
+    box-shadow: var(--card-shadow);
+    /* FORCE THE OVERLAP */
+    margin-right: -100px;
+    position: relative;
+    z-index: 10;
+    /* Sits on top of image */
+    max-width: 550px;
+}
+
+.mads-image-container img {
+    width: 100%;
+    /* The Organic Shape */
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Fallback */
+@media (max-width: 992px) {
+    .mads-section-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .mads-text-card {
+        margin-right: 0;
+        margin-bottom: -50px;
+        /* Vertical overlap on mobile */
+    }
+}
+
+/* =========================================
+   FIX 1: COMPACT SERVICES GRID (No Scroll, No Lumps)
+   ========================================= */
+
+.services-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    /* Centers the items (3 top, 2 bottom) */
+    gap: 24px !important;
+    /* Tighter gap */
+    padding: 0 20px !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+    /* Disables the scroll wheel */
+}
+
+.service-card {
+    /* Make them smaller and compacter */
+    flex: 0 1 240px !important;
+    /* Base width 240px, can grow slightly */
+    min-width: 220px !important;
+    max-width: 280px !important;
+    /* Prevents them from getting "massive" */
+
+    background: #FFFFFF !important;
+    padding: 30px 20px !important;
+    /* Reduce padding to reduce "lumpiness" */
+    border-radius: 20px !important;
+    box-shadow: 0 15px 30px rgba(26, 95, 122, 0.08) !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    /* Center content inside card */
+    text-align: center !important;
+}
+
+/* Make the image smaller to match the compact card */
+.service-image-header {
+    height: 180px !important;
+    /* Reduced from 240px */
+    width: 100% !important;
+    border-radius: 40% 60% 70% 30% / 50% 60% 30% 70% !important;
+    margin-bottom: 20px !important;
+}
+
+.service-card h3 {
+    font-size: 1.3rem !important;
+    /* Slightly smaller title */
+    margin-bottom: 10px !important;
+}
+
+/* =========================================
+   FIX 2: THE "SHALLOW" LAYOUT (Adding Depth)
+   ========================================= */
+
+/* A. Add a subtle pattern to the background */
+body {
+    background-color: #F8F9FA;
+    /* Optional: A very subtle noise or dot pattern adds "texture" quality */
+    background-image: radial-gradient(#1A5F7A 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    opacity: 1;
+}
+
+/* B. Make the Cards "Heavier" */
+.floating-card,
+.service-card,
+.mads-text-card {
+    /* Heavier, deeper shadow */
+    box-shadow: 0 30px 60px -15px rgba(26, 95, 122, 0.25) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* Subtle glass border */
+}
+
+/* =========================================
+   FIX 2: FOOTER READABILITY (Force White)
+   ========================================= */
+
+/* Target the footer specifically */
+footer,
+.footer-section {
+    background-color: #111b2b !important;
+    /* Very dark background */
+    color: #FFFFFF !important;
+}
+
+/* Force all text elements inside footer to be white */
+footer p,
+footer li,
+footer a,
+footer span,
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+    color: #FFFFFF !important;
+    opacity: 0.9 !important;
+}
+
+footer a:hover {
+    color: var(--color-accent) !important;
+    opacity: 1 !important;
+}
+
+/* Fix Social Icons visibility */
+.footer-social-icon {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Force specific footer elements to white (Overrides generic styles) */
+.footer .text--muted-small,
+.footer__link--muted,
+.footer__contact a {
+    color: #FFFFFF !important;
+    opacity: 0.9 !important;
+}
+
+.footer a:hover,
+.footer__link--muted:hover {
+    color: var(--color-accent) !important;
+    opacity: 1 !important;
+}
+
+/* =========================================
+   FIX 3: PREMIUM BUTTON STYLE
+   ========================================= */
+
+.btn-cta,
+.button--accent,
+button[type="submit"] {
+    background: linear-gradient(135deg, #F26522 0%, #d95a1c 100%) !important;
+    box-shadow: 0 10px 20px rgba(242, 101, 34, 0.4) !important;
+    /* The Orange Glow */
+    border-radius: 50px !important;
+    padding: 16px 36px !important;
+    color: white !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+    border: none !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.btn-cta:hover,
+.button--accent:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 15px 30px rgba(242, 101, 34, 0.6) !important;
+    /* Stronger glow on hover */
+}

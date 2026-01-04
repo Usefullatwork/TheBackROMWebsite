@@ -2197,7 +2197,7 @@ select:focus-visible {
    =============================== */
 
 .main {
-  background: url("../pictures.final/Home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
+  background: url("../pictures.final/pages/home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
   min-height: 50vh;
   max-height: 70vh;
   position: relative;
@@ -2278,14 +2278,14 @@ select:focus-visible {
 }
 
 .main_about {
-  background: url("../pictures.final/Home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
+  background: url("../pictures.final/pages/home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
 }
 
 .main_services,
 .main_contact,
 .main_faq,
 .main_pages {
-  background: url("../pictures.final/Home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
+  background: url("../pictures.final/pages/home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
 }
 
 .main__container_pages {
@@ -2320,7 +2320,7 @@ section.page__main.main.main_pages.blog-hero,
 
 /* Hero section for specific pages */
 .plager-hero-mobile {
-  background: url("../pictures.final/Plager/nakkesmerte.webp") center / cover no-repeat;
+  background: url("../pictures.final/conditions/general/nakkesmerte.webp") center / cover no-repeat;
 }
 
 /* ===============================
@@ -8090,7 +8090,7 @@ textarea:valid:not(:placeholder-shown) {
 }
 
 .outro--home-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../pictures.final/Home/ryggmassasje-klinikk.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../pictures.final/pages/home/ryggmassasje-klinikk.jpg');
 }
 
 .outro__title--white {

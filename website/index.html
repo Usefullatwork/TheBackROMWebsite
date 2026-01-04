@@ -22,33 +22,194 @@
   <!-- Critical CSS inlined for faster FCP -->
   <style>
     /* Critical CSS - Above the fold styles */
-    *,*::before,*::after{padding:0;margin:0;border:0;box-sizing:border-box}
-    :root{--color-primary:#1a202c;--color-primary-light:#2d3748;--color-accent:#f59e0b;--color-accent-dark:#d97706;--color-white:#fff;--color-text:#1a202c;--font-family-header:'Oswald',sans-serif;--font-family-body:'Inter',sans-serif;--h1-size:clamp(2.25rem,4vw,3.25rem);--h2-size:clamp(1.75rem,3vw,2.5rem);--body-size:clamp(1rem,0.5vw,1.125rem);--spacing-md:clamp(0.75rem,1vw + 0.25rem,1.25rem);--spacing-lg:clamp(1rem,1.5vw + 0.5rem,2rem);--container-padding:clamp(1rem,3vw,2rem);--header-height:70px}
-    html{font-size:16px;scroll-behavior:smooth}
-    body{font-family:var(--font-family-body);font-size:var(--body-size);color:var(--color-text);margin:0;line-height:1.6}
-    img{max-width:100%;height:auto;display:block}
-    a{text-decoration:none;color:inherit}
-    .wrapper{min-height:100vh;display:flex;flex-direction:column}
-    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--color-white);box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
-    .header__container{max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding);display:flex;align-items:center;justify-content:space-between;height:100%}
-    .header__logo img{height:clamp(3rem,4vw + 1.5rem,4.5rem);width:auto}
-    .page{flex:1}
-    .main_home{min-height:60vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)),url('pictures.final/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;padding-top:var(--header-height)}
-    .main__container{text-align:center;padding:var(--spacing-lg)}
-    .main__title{font-family:var(--font-family-header);font-size:var(--h1-size);color:var(--color-white);margin-bottom:var(--spacing-lg);text-shadow:0 2px 4px rgba(0,0,0,.3)}
-    .button{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border:2px solid var(--color-primary);background:var(--color-primary);color:var(--color-white);border-radius:8px;font-weight:600;font-size:clamp(1rem,1vw,1.125rem);cursor:pointer;min-height:48px}
-    .button--accent{background:var(--color-accent);border-color:var(--color-accent);color:var(--color-primary)}
-    .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    .skip-link{position:absolute;top:-40px;left:8px;background:var(--color-primary);color:var(--color-white);padding:8px 16px;z-index:10000}
-    .skip-link:focus{top:8px}
-    .icon-menu{display:none}
-    @media(max-width:991.98px){.icon-menu{display:flex;flex-direction:column;gap:5px;width:30px;height:20px;cursor:pointer}.icon-menu span{width:100%;height:3px;background:var(--color-primary);transition:.3s}}
+    *,
+    *::before,
+    *::after {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      box-sizing: border-box
+    }
+
+    :root {
+      --color-primary: #1a202c;
+      --color-primary-light: #2d3748;
+      --color-accent: #f59e0b;
+      --color-accent-dark: #d97706;
+      --color-white: #fff;
+      --color-text: #1a202c;
+      --font-family-header: 'Oswald', sans-serif;
+      --font-family-body: 'Inter', sans-serif;
+      --h1-size: clamp(2.25rem, 4vw, 3.25rem);
+      --h2-size: clamp(1.75rem, 3vw, 2.5rem);
+      --body-size: clamp(1rem, 0.5vw, 1.125rem);
+      --spacing-md: clamp(0.75rem, 1vw + 0.25rem, 1.25rem);
+      --spacing-lg: clamp(1rem, 1.5vw + 0.5rem, 2rem);
+      --container-padding: clamp(1rem, 3vw, 2rem);
+      --header-height: 70px
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: var(--font-family-body);
+      font-size: var(--body-size);
+      color: var(--color-text);
+      margin: 0;
+      line-height: 1.6
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--color-white);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+      height: var(--header-height)
+    }
+
+    .header__container {
+      max-width: 87.5rem;
+      margin: 0 auto;
+      padding: 0 var(--container-padding);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%
+    }
+
+    .header__logo img {
+      height: clamp(3rem, 4vw + 1.5rem, 4.5rem);
+      width: auto
+    }
+
+    .page {
+      flex: 1
+    }
+
+    .main_home {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url('pictures.final/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;
+      padding-top: var(--header-height)
+    }
+
+    .main__container {
+      text-align: center;
+      padding: var(--spacing-lg)
+    }
+
+    .main__title {
+      font-family: var(--font-family-header);
+      font-size: var(--h1-size);
+      color: var(--color-white);
+      margin-bottom: var(--spacing-lg);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, .3)
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border: 2px solid var(--color-primary);
+      background: var(--color-primary);
+      color: var(--color-white);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: clamp(1rem, 1vw, 1.125rem);
+      cursor: pointer;
+      min-height: 48px
+    }
+
+    .button--accent {
+      background: var(--color-accent);
+      border-color: var(--color-accent);
+      color: var(--color-primary)
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 8px;
+      background: var(--color-primary);
+      color: var(--color-white);
+      padding: 8px 16px;
+      z-index: 10000
+    }
+
+    .skip-link:focus {
+      top: 8px
+    }
+
+    .icon-menu {
+      display: none
+    }
+
+    @media(max-width:991.98px) {
+      .icon-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 30px;
+        height: 20px;
+        cursor: pointer
+      }
+
+      .icon-menu span {
+        width: 100%;
+        height: 3px;
+        background: var(--color-primary);
+        transition: .3s
+      }
+    }
   </style>
 
   <!-- Non-blocking main CSS -->
   <link rel="preload" as="style" href="css/main.min.css?v=20260101_v5" />
   <link rel="stylesheet" href="css/main.min.css?v=20260101_v5" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="css/main.min.css?v=20260101_v5"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="css/main.min.css?v=20260101_v5">
+  </noscript>
+  <!-- Design experiments - Norwegian index only -->
+  <link rel="stylesheet" href="css/index-design.css?v=1">
+  <link rel="stylesheet" href="css/index-2026-fixes.css">
   <link rel="icon" type="image/png" href="pictures.final/Final Transparent Logo.png" />
   <title>Kiropraktor Majorstua Oslo | Mads Finstad - TheBackROM</title>
 
@@ -201,15 +362,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Non-blocking Google Fonts loading -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
 
   <!-- Non-blocking Font Awesome - Only load essential icons -->
   <link rel="preload" as="style" href="css/font-awesome-minimal.css">
   <link rel="stylesheet" href="css/font-awesome-minimal.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="css/font-awesome-minimal.css"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="css/font-awesome-minimal.css">
+  </noscript>
 
 </head>
 
@@ -243,7 +412,7 @@
               <li class="menu__item"><a href="priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="fagartikler/index.html" class="menu__link">Fagartikler</a></li>
+              <a href="fagartikler/index.html" class="menu__link">Fagartikler</a>
               <li class="menu__item"><a href="blogg/index.html" class="menu__link">Blogg</a></li>
               <li class="menu__item">
                 <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
@@ -264,461 +433,473 @@
         </div>
       </section>
 
-  <section class="title-section">
-    <div class="container">
-      <div class="title-section__heading">
-        <h2 class="title-section__name">Mads Finstad</h2>
-        <p class="title-section__subtitle">Kiropraktor | TheBackROM Majorstua</p>
-      </div>
-
-      <div class="title-section__content">
-        <div class="title-section__text">
-          <p class="text--primary-highlight">
-            Vondt i ryggen, akutt svimmel eller en nakke som krangler? Jeg hjelper deg med å finne ut hvorfor.
-            Finner jeg årsaken, finner jeg løsningen.
-          </p>
-
-          <div class="bio-teaser">
-
-            <!-- Kort, presis tekst -->
-            <p class="bio-teaser__text">
-              Hei, jeg er Mads Finstad. Mange kommer til meg når de føler de har "prøvd alt".
-              Som kiropraktor med videreutdanning innen svimmelhet og rehabilitering,
-              graver jeg dypere for å forstå <em>hvorfor</em> du har vondt – ikke bare hvor det gjør vondt.
+      <section class="title-section">
+        <div class="mads-section-container">
+          <div class="mads-text-card">
+            <h2 class="title-section__name">Mads Finstad</h2>
+            <p class="title-section__subtitle">Kiropraktor | TheBackROM Majorstua</p>
+            <p class="text--primary-highlight">
+              Vondt i ryggen, akutt svimmel eller en nakke som krangler? Jeg hjelper deg med å finne ut hvorfor.
+              Finner jeg årsaken, finner jeg løsningen.
             </p>
 
-            <!-- Knapp som leder til den lange teksten på "Om meg"-siden -->
-            <a href="about.html" class="button button--accent">Les mer om min bakgrunn &rarr;</a>
-          </div>
-        </div>
-
-        <div class="title-section__image">
-          <img src="pictures.final/Om/meg.webp"
-            alt="Mads Finstad kiropraktor i hvit skjorte med TheBackROM logo, Majorstua Oslo" width="768"
-            height="1019" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page__services services">
-    <div class="services__container">
-      <div class="services__row">
-        <a href="akutt-behandling.html" class="item-services">
-          <div class="item-services__content">
-            <h3 class="item-services__title">Akutt Behandling helg</h3>
-            <div class="item-services__text">
-              Har du akutte smerter i helgene? Muligheter for akutt behandling når du trenger det mest.
-            </div>
-          </div>
-          <div class="item-services__image">
-            <img src="pictures.final/Plager/nakkesmerte-thumb-optimized.webp"
-              alt="Mann med akutte nakkesmerter holder seg på nakken, trenger akutt kiropraktorbehandling" width="768"
-              height="511" loading="lazy" decoding="async">
-          </div>
-        </a>
-        <a href="akutt-svimmelhet-helg.html" class="item-services">
-          <div class="item-services__content">
-            <h3 class="item-services__title">Akutt svimmelhet helg</h3>
-            <div class="item-services__text">
-              Akutt hjelp for svimmelhet i helgene. Jeg har utstyr og kompetanse for å hjelpe deg.
-            </div>
-          </div>
-          <div class="item-services__image">
-            <img src="pictures.final/Tjenester Svimmelhet/svimmelhet-optimized.webp"
-              alt="Kvinne med svimmelhet og vertigo holder seg på hodet, omgivelsene snurrer rundt" width="800"
-              height="417" loading="lazy" decoding="async">
-          </div>
-        </a>
-        <a href="tjeneste/svimmelhet.html" class="item-services">
-          <div class="item-services__content">
-            <h3 class="item-services__title">Svimmelhets behandling</h3>
-            <div class="item-services__text">
-              Spesialisert behandling for svimmelhet, inkludert BPPV og nakke-relatert svimmelhet.
-            </div>
-          </div>
-          <div class="item-services__image">
-            <img src="pictures.final/Home/trv-optimized.webp"
-              alt="TRV roterende stol for diagnostisering og behandling av svimmelhet og BPPV krystallsyke" width="739"
-              height="842" loading="lazy" decoding="async">
-          </div>
-        </a>
-        <a href="nye-pasienter.html" class="item-services">
-          <div class="item-services__content">
-            <h3 class="item-services__title">Første gang hos kiropraktor?</h3>
-            <div class="item-services__text">
-              Er du usikker på hva som skjer første gang du besøker en kiropraktor?
-            </div>
-          </div>
-          <div class="item-services__image">
-            <img src="pictures.final/Home/forste-time-optimized.webp"
-              alt="Kiropraktor undersøker pasientens nakke under første konsultasjon" width="800" height="1200"
-              loading="lazy" decoding="async">
-          </div>
-        </a>
-        <a href="tjeneste/kiropraktikk.html" class="item-services">
-          <div class="item-services__content">
-            <h3 class="item-services__title">Kiropraktor Behandling</h3>
-            <div class="item-services__text">
-              Lær mer om hvordan kiropraktorbehandling kan hjelpe deg med dine plager og smerter.
-            </div>
-          </div>
-          <div class="item-services__image">
-            <img src="pictures.final/Tjenester Kiroprakikk/behandling-optimized.webp"
-              alt="Kiropraktor utfører manuell ryggbehandling på kvinnelig pasient" width="800" height="1198"
-              loading="lazy" decoding="async">
-          </div>
-        </a>
-      </div>
-      <div class="services__cta">
-        <a href="services.html" class="item-services__button button button--accent">Se alle Tjenester</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="page__problems problems">
-    <div class="problems__container">
-      <h2 class="problems__title">Problemer jeg ofte ser i klinikken, og behandler:</h2>
-      <div class="problems__content">
-        <div class="problems__item">
-          <h3 class="problems__item-title">Rygg- og nakkesmerter</h3>
-          <ul class="problem-list">
-            <li>Akutt kink i ryggen</li>
-            <li>Stiv nakke / nakkesperre</li>
-            <li>Isjias og stråling</li>
-            <li>Langvarige smerter</li>
-          </ul>
-        </div>
-        <div class="problems__item">
-          <h3 class="problems__item-title">Svimmelhet</h3>
-          <ul class="problem-list">
-            <li>Krystallsyke (BPPV)</li>
-            <li>Virus på balansenerven</li>
-            <li>Nakkesvimmelhet</li>
-            <li>Uforklarlig ustøhet</li>
-          </ul>
-        </div>
-        <div class="problems__item">
-          <h3 class="problems__item-title">Kjevesmerter</h3>
-          <ul class="problem-list">
-            <li>Klikking og låsning</li>
-            <li>Smerter ved tygging</li>
-            <li>Gnissing av tenner</li>
-            <li>Kjeve-relatert hodepine</li>
-          </ul>
-        </div>
-        <div class="problems__item">
-          <h3 class="problems__item-title">Hodepine og migrene</h3>
-          <ul class="problem-list">
-            <li>Spenningshodepine</li>
-            <li>Migrene</li>
-            <li>Nakkehodepine</li>
-            <li>Kjevehodepine</li>
-          </ul>
-        </div>
-        <div class="problems__item">
-          <h3 class="problems__item-title">Korsryggsmerter</h3>
-          <ul class="problem-list">
-            <li>Lumbago / hekseskudd</li>
-            <li>Prolaps</li>
-            <li>Bekkenløsning</li>
-            <li>Slitasje / artrose</li>
-          </ul>
-        </div>
-        <div class="problems__item">
-          <h3 class="problems__item-title">Smerter i skulder, kne, hofte og albue</h3>
-          <ul class="problem-list">
-            <li>Tennisalbue / golfalbue</li>
-            <li>Hopperkne / løperkne</li>
-            <li>Slimposebetennelse</li>
-            <li>Frossen skulder</li>
-          </ul>
-        </div>
-      </div>
-      <div class="problems__cta">
-        <a href="plager.html" class="problems__button button button--accent">Se alle plager</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="page__klinisk-hjorne">
-    <div class="klinisk-hjorne__container">
-      <h2 class="klinisk-hjorne__title">Blogg</h2>
-      <p class="klinisk-hjorne__description">
-        Utforsk våre faglige artikler og få innsikt i ulike helsetemaer, behandlingsmetoder og forskningsbaserte
-        råd.
-      </p>
-      <div class="blog-scroll-wrapper">
-        <button class="blog-scroll-btn blog-scroll-prev" aria-label="Bla til forrige blogginnlegg">
-          <i class="fas fa-chevron-left" aria-hidden="true"></i>
-        </button>
-        <div class="klinisk-hjorne__scroll" id="blog-scroll-container">
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="pictures.final/plager korsryggsmerter/korsrygg-optimized.webp"
-                alt="Medisinsk illustrasjon av isjias med prolaps og nervekompresjon i korsryggen" width="800"
-                height="974" loading="lazy" decoding="async">
-            </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Forstå dine ryggsmerter</h3>
-              <p class="klinisk-hjorne__text">
-                Lær mer om årsaker til ryggsmerter og hvordan du kan håndtere dem i hverdagen.
+            <div class="bio-teaser">
+              <p class="bio-teaser__text">
+                Hei, jeg er Mads Finstad. Mange kommer til meg når de føler de har "prøvd alt".
+                Som kiropraktor med videreutdanning innen svimmelhet og rehabilitering,
+                graver jeg dypere for å forstå <em>hvorfor</em> du har vondt – ikke bare hvor det gjør vondt.
               </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Rygg</span>
-                  <span class="klinisk-hjorne__date">15. jan 2026</span>
-                </div>
-                <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
-              </div>
+              <a href="about.html" class="button button--accent">Les mer om min bakgrunn &rarr;</a>
             </div>
-          </article>
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="pictures.final/plager nakkesmerter/nakkesmerte-optimized.webp"
-                alt="Mann med nakkesmerter masserer stiv nakke bakfra" width="800" height="450" loading="lazy"
-                decoding="async">
+          </div>
+
+          <div class="mads-image-container">
+            <img src="pictures.final/pages/about/meg.webp"
+              alt="Mads Finstad kiropraktor i hvit skjorte med TheBackROM logo, Majorstua Oslo" width="768"
+              height="1019" />
+          </div>
+        </div>
+      </section>
+
+      <section class="page__services services">
+        <!-- The Grid Container -->
+        <div class="services-grid">
+
+          <!-- CARD 1 -->
+          <a href="akutt-behandling.html" class="service-card">
+            <!-- 1. Image at the TOP -->
+            <div class="service-image-header">
+              <img src="pictures.final/conditions/general/nakkesmerte-thumb-optimized.webp"
+                alt="Mann med akutte nakkesmerter holder seg på nakken, trenger akutt kiropraktorbehandling" width="768"
+                height="511" loading="lazy" decoding="async">
             </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Nakkesmerter og hodepine</h3>
-              <p class="klinisk-hjorne__text">
-                Utforsk sammenhengen mellom nakkesmerter og hodepine, og finn effektive behandlingsmetoder.
-              </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Nakke</span>
-                  <span class="klinisk-hjorne__date">22. jan 2026</span>
-                </div>
-                <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
-              </div>
+            <!-- 2. Text Content Below -->
+            <div class="item-services__content">
+              <h3>Akutt Behandling helg</h3>
+              <p>Har du akutte smerter i helgene? Muligheter for akutt behandling når du trenger det mest.</p>
             </div>
-          </article>
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="pictures.final/Tjenester Rehabilitering/aktiv-optimized.webp"
-                alt="Aktiv mann klatrer på innendørs klatrevegg som del av rehabilitering og trening" width="800"
-                height="1200" loading="lazy" decoding="async">
+          </a>
+
+          <!-- CARD 2 -->
+          <a href="akutt-svimmelhet-helg.html" class="service-card">
+            <div class="service-image-header">
+              <img src="pictures.final/Tjenester Svimmelhet/svimmelhet-optimized.webp"
+                alt="Kvinne med svimmelhet og vertigo holder seg på hodet, omgivelsene snurrer rundt" width="800"
+                height="417" loading="lazy" decoding="async">
             </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Riktig treningsform</h3>
-              <p class="klinisk-hjorne__text">
-                Finn den beste treningsformen for din kropp og dine mål.
-              </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Trening</span>
-                  <span class="klinisk-hjorne__date">5. feb 2026</span>
-                </div>
-                <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
-              </div>
+            <div class="item-services__content">
+              <h3>Akutt svimmelhet helg</h3>
+              <p>Akutt hjelp for svimmelhet i helgene. Jeg har utstyr og kompetanse for å hjelpe deg.</p>
             </div>
-          </article>
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="pictures.final/plager svimmelhet/bppv.gif"
-                alt="Animasjon som viser BPPV krystallsyke og løse krystaller i det indre øret" width="442" height="356"
+          </a>
+
+          <!-- CARD 3 -->
+          <a href="tjeneste/svimmelhet.html" class="service-card">
+            <div class="service-image-header">
+              <img src="pictures.final/Home/trv-optimized.webp"
+                alt="TRV roterende stol for diagnostisering og behandling av svimmelhet og BPPV krystallsyke"
+                width="739" height="842" loading="lazy" decoding="async">
+            </div>
+            <div class="item-services__content">
+              <h3>Svimmelhets behandling</h3>
+              <p>Spesialisert behandling for svimmelhet, inkludert BPPV og nakke-relatert svimmelhet.</p>
+            </div>
+          </a>
+
+          <!-- CARD 4 -->
+          <a href="tjeneste/kiropraktikk.html" class="service-card">
+            <div class="service-image-header">
+              <img src="pictures.final/Tjenester Kiroprakikk/behandling-optimized.webp"
+                alt="Kiropraktor utfører manuell ryggbehandling på kvinnelig pasient" width="800" height="1198"
                 loading="lazy" decoding="async">
             </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Håndtering av svimmelhet</h3>
-              <p class="klinisk-hjorne__text">
-                Opplever du svimmelhet? Lær om ulike årsaker og behandlingsmuligheter.
-              </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Helse</span>
-                  <span class="klinisk-hjorne__date">12. feb 2026</span>
+            <div class="item-services__content">
+              <h3>Kiropraktor Behandling</h3>
+              <p>Lær mer om hvordan kiropraktorbehandling kan hjelpe deg med dine plager og smerter.</p>
+            </div>
+          </a>
+
+        </div>
+        <div class="services__cta">
+          <a href="services.html" class="item-services__button button button--accent">Se alle Tjenester</a>
+        </div>
+      </section>
+
+      <section class="page__problems problems">
+        <div class="problems__container">
+          <h2 class="problems__title">Problemer jeg ofte ser i klinikken, og behandler:</h2>
+          <div class="problems-grid">
+            <!-- Card 1: Rygg- og nakkesmerter -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="plager/ryggsmerter.html">Rygg- og nakkesmerter</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="plager/korsrygg/hekseskudd.html">Akutt kink i ryggen</a></li>
+                <li><a href="plager/nakke/torticollis.html">Stiv nakke / nakkesperre</a></li>
+                <li><a href="plager/korsrygg/isjias.html">Isjias og stråling</a></li>
+                <li><a href="plager/korsrygg/nociplastisk-smerte.html">Langvarige smerter</a></li>
+              </ul>
+              <a href="plager/ryggsmerter.html" class="card-footer-link">Les mer →</a>
+            </div>
+
+            <!-- Card 2: Svimmelhet -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="plager/svimmelhet.html">Svimmelhet</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="plager/svimmelhet/krystallsyke-bppv.html">Krystallsyke (BPPV)</a></li>
+                <li><a href="plager/svimmelhet/vestibularisnevritt.html">Virus på balansenerven</a></li>
+                <li><a href="plager/svimmelhet/nakkesvimmelhet.html">Nakkesvimmelhet</a></li>
+                <li><a href="plager/svimmelhet/pppd-kronisk-svimmelhet.html">Uforklarlig ustøhet</a></li>
+              </ul>
+              <a href="plager/svimmelhet.html" class="card-footer-link">Les mer →</a>
+            </div>
+
+            <!-- Card 3: Kjevesmerter -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="plager/kjevesmerte.html">Kjevesmerter</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="plager/kjeve/klikking-lasing-leddproblemer.html">Klikking og låsning</a></li>
+                <li><a href="plager/kjeve/stress-og-kjevesmerter.html">Smerter ved tygging</a></li>
+                <li><a href="plager/kjeve/tanngnissing-bruksisme.html">Gnissing av tenner</a></li>
+                <li><a href="plager/kjeve/kjevehodepine.html">Kjeve-relatert hodepine</a></li>
+              </ul>
+              <a href="plager/kjevesmerte.html" class="card-footer-link">Les mer →</a>
+            </div>
+
+            <!-- Card 4: Hodepine og migrene -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="plager/hodepine.html">Hodepine og migrene</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="plager/hodepine/spenningshodepine.html">Spenningshodepine</a></li>
+                <li><a href="plager/hodepine/migrene.html">Migrene</a></li>
+                <li><a href="plager/hodepine/nakkehodepine.html">Nakkehodepine</a></li>
+                <li><a href="plager/kjeve/kjevehodepine.html">Kjevehodepine</a></li>
+              </ul>
+              <a href="plager/hodepine.html" class="card-footer-link">Les mer →</a>
+            </div>
+
+            <!-- Card 5: Korsryggsmerter -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="plager/korsryggsmerte.html">Korsryggsmerter</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="plager/korsrygg/hekseskudd.html">Lumbago / hekseskudd</a></li>
+                <li><a href="plager/korsrygg/skiveprolaps.html">Prolaps</a></li>
+                <li><a href="plager/hofte/bekkenleddsmerter-graviditet.html">Bekkenløsning</a></li>
+                <li><a href="plager/korsrygg/spinal-stenose.html">Slitasje / artrose</a></li>
+              </ul>
+              <a href="plager/korsryggsmerte.html" class="card-footer-link">Les mer →</a>
+            </div>
+
+            <!-- Card 6: Multi-topic Hub -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="plager.html">Muskel og ledd</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="plager/skuldersmerter.html">Skuldersmerter</a></li>
+                <li><a href="plager/albue-arm.html">Albue og arm</a></li>
+                <li><a href="plager/hofte-og-bekkensmerter.html">Hofte og bekken</a></li>
+                <li><a href="plager/knesmerter.html">Knesmerter</a></li>
+                <li><a href="plager/fotsmerte.html">Fotsmerter</a></li>
+              </ul>
+              <a href="plager.html" class="card-footer-link">Se alle plager →</a>
+            </div>
+          </div>
+          <div class="problems__cta">
+            <a href="plager.html" class="problems__button button button--accent">Se alle plager</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__klinisk-hjorne">
+        <div class="klinisk-hjorne__container">
+          <h2 class="klinisk-hjorne__title">Blogg</h2>
+          <p class="klinisk-hjorne__description">
+            Utforsk våre faglige artikler og få innsikt i ulike helsetemaer, behandlingsmetoder og forskningsbaserte
+            råd.
+          </p>
+          <div class="blog-scroll-wrapper">
+            <button class="blog-scroll-btn blog-scroll-prev" aria-label="Forrige">‹</button>
+            <button class="blog-scroll-btn blog-scroll-next" aria-label="Neste">›</button>
+            <div class="blog-grid" id="blog-scroll-container">
+              <article class="blog-card">
+                <div class="card-image-container">
+                  <img src="pictures.final/plager korsryggsmerter/korsrygg-optimized.webp"
+                    class="img-organic-squircle img-fit"
+                    alt="Medisinsk illustrasjon av isjias med prolaps og nervekompresjon i korsryggen" width="800"
+                    height="974" loading="lazy" decoding="async">
                 </div>
-                <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
-              </div>
-            </div>
-          </article>
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="pictures.final/plager kjevesmerter/kjeve-optimized.webp"
-                alt="Anatomisk modell av kjeve og tenner som viser kjeveledd og TMD" width="800" height="533"
-                loading="lazy" decoding="async">
-            </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Kjevesmerter og TMD</h3>
-              <p class="klinisk-hjorne__text">
-                Håndtering av kjeveleddsdysfunksjon og relaterte plager.
-              </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Kjeve</span>
-                  <span class="klinisk-hjorne__date">20. feb 2026</span>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Forstå dine ryggsmerter</h3>
+                  <p class="klinisk-hjorne__text">
+                    Lær mer om årsaker til ryggsmerter og hvordan du kan håndtere dem i hverdagen.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Rygg</span>
+                      <span class="klinisk-hjorne__date">15. jan 2026</span>
+                    </div>
+                    <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
+                  </div>
                 </div>
-                <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
-              </div>
-            </div>
-          </article>
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="pictures.final/plager hodepine-og-migrene/hodepine-optimized.webp"
-                alt="Kvinne med hodepine og mental utmattelse hviler hodet på bøker" width="800" height="533"
-                loading="lazy" decoding="async">
-            </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Hodepine og migrene</h3>
-              <p class="klinisk-hjorne__text">
-                Forebygging og behandling av ulike typer hodepine.
-              </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Hodepine</span>
-                  <span class="klinisk-hjorne__date">1. mar 2026</span>
+              </article>
+              <article class="blog-card">
+                <div class="card-image-container">
+                  <img src="pictures.final/plager nakkesmerter/nakkesmerte-optimized.webp"
+                    class="img-organic-squircle img-fit" alt="Mann med nakkesmerter masserer stiv nakke bakfra"
+                    width="800" height="450" loading="lazy" decoding="async">
                 </div>
-                <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
-              </div>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Nakkesmerter og hodepine</h3>
+                  <p class="klinisk-hjorne__text">
+                    Utforsk sammenhengen mellom nakkesmerter og hodepine, og finn effektive behandlingsmetoder.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Nakke</span>
+                      <span class="klinisk-hjorne__date">22. jan 2026</span>
+                    </div>
+                    <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
+                  </div>
+                </div>
+              </article>
+              <article class="blog-card">
+                <div class="card-image-container">
+                  <img src="pictures.final/Tjenester Rehabilitering/aktiv-optimized.webp"
+                    class="img-organic-squircle img-fit"
+                    alt="Aktiv mann klatrer på innendørs klatrevegg som del av rehabilitering og trening" width="800"
+                    height="1200" loading="lazy" decoding="async">
+                </div>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Riktig treningsform</h3>
+                  <p class="klinisk-hjorne__text">
+                    Finn den beste treningsformen for din kropp og dine mål.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Trening</span>
+                      <span class="klinisk-hjorne__date">5. feb 2026</span>
+                    </div>
+                    <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
+                  </div>
+                </div>
+              </article>
+              <article class="klinisk-hjorne__item">
+                <div class="klinisk-hjorne__image">
+                  <img src="pictures.final/plager svimmelhet/bppv.gif" class="img-organic-squircle img-fit"
+                    alt="Animasjon som viser BPPV krystallsyke og løse krystaller i det indre øret" width="442"
+                    height="356" loading="lazy" decoding="async">
+                </div>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Håndtering av svimmelhet</h3>
+                  <p class="klinisk-hjorne__text">
+                    Opplever du svimmelhet? Lær om ulike årsaker og behandlingsmuligheter.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Helse</span>
+                      <span class="klinisk-hjorne__date">12. feb 2026</span>
+                    </div>
+                    <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
+                  </div>
+                </div>
+              </article>
+              <article class="blog-card">
+                <div class="card-image-container">
+                  <img src="pictures.final/plager kjevesmerter/kjeve-optimized.webp"
+                    class="img-organic-squircle img-fit"
+                    alt="Anatomisk modell av kjeve og tenner som viser kjeveledd og TMD" width="800" height="533"
+                    loading="lazy" decoding="async">
+                </div>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Kjevesmerter og TMD</h3>
+                  <p class="klinisk-hjorne__text">
+                    Håndtering av kjeveleddsdysfunksjon og relaterte plager.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Kjeve</span>
+                      <span class="klinisk-hjorne__date">20. feb 2026</span>
+                    </div>
+                    <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
+                  </div>
+                </div>
+              </article>
+              <article class="blog-card">
+                <div class="card-image-container">
+                  <img src="pictures.final/plager hodepine-og-migrene/hodepine-optimized.webp"
+                    class="img-organic-squircle img-fit"
+                    alt="Kvinne med hodepine og mental utmattelse hviler hodet på bøker" width="800" height="533"
+                    loading="lazy" decoding="async">
+                </div>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Hodepine og migrene</h3>
+                  <p class="klinisk-hjorne__text">
+                    Forebygging og behandling av ulike typer hodepine.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Hodepine</span>
+                      <span class="klinisk-hjorne__date">1. mar 2026</span>
+                    </div>
+                    <a href="blogg/index.html" class="klinisk-hjorne__link">Les mer →</a>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
+            <!-- Next button removed -->
+          </div>
+          <div class="klinisk-hjorne__footer">
+            <a href="blogg/index.html" class="klinisk-hjorne__more">Se alle artikler →</a>
+          </div>
         </div>
-        <button class="blog-scroll-btn blog-scroll-next" aria-label="Bla til neste blogginnlegg">
-          <i class="fas fa-chevron-right" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div class="klinisk-hjorne__footer">
-        <a href="blogg/index.html" class="klinisk-hjorne__more">Se alle artikler →</a>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="trust-section">
+      <section class="trust-section">
 
-    <!-- Overskrift -->
-    <h2 class="trust-section__title">Din trygghet – Min kompetanse</h2>
+        <!-- Overskrift -->
+        <h2 class="trust-section__title">Din trygghet – Min kompetanse</h2>
 
-    <p class="trust-section__description">
-      Jeg er opptatt av faglige oppdateringer for å gi deg best mulig behandling.
-      Som pasient hos meg møter du en offentlig godkjent kiropraktor med solid utdanning og videreutdanning innen
-      klinisk nevrologi og bevegelse.
-      <br><br>
-      <a href="about.html" class="trust-section__link">
-        Les mer om min utdanning og CV &rarr;
-      </a>
-    </p>
-
-    <!-- Logo-grid med 4 elementer -->
-    <div class="logo-grid">
-
-      <!-- 1. Helsedirektoratet -->
-      <div class="trust-item">
-        <img src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/Hdir-symbol.png"
-          alt="Helsedirektoratet logo - Autorisert Helsepersonell" loading="lazy" decoding="async">
-      </div>
-
-      <!-- 2. Carrick Institute -->
-      <div class="trust-item">
-        <img
-          src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/CI-Logo-No-BG-6.png"
-          alt="Carrick Institute logo - Klinisk nevrologi sertifisering" loading="lazy" decoding="async">
-      </div>
-
-      <!-- 3. Motion Palpation Institute -->
-      <div class="trust-item">
-        <img src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/MPI logo.png"
-          alt="Motion Palpation Institute logo" loading="lazy" decoding="async">
-      </div>
-
-      <!-- 4. AECC University College -->
-      <div class="trust-item">
-        <img
-          src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/aecc colored-logo.png"
-          alt="AECC University College logo - Kiropraktor utdanning" loading="lazy" decoding="async">
-      </div>
-
-    </div>
-  </section>
-
-  <section class="page__outro outro outro_home outro--overlay outro--home-bg">
-    <div class="outro__container">
-      <h2 class="outro__title outro__title--white">Ta det første steget mot bedre helse</h2>
-      <div class="outro__text outro__text--white">
-        Ikke vent med å ta vare på din helse. Bestill time i dag og la meg hjelpe deg med å nå dine helsemål.
-      </div>
-      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
-        class="outro__button button button--accent" aria-label="Bestill time nå">Bestill time</a>
-    </div>
-  </section>
-
-
-
-
-
-
-
-  </main>
-  <footer class="footer">
-    <div class="footer__container">
-      <!-- Left Column -->
-      <div class="footer__left">
-        <div class="footer__social">
-          <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
-            aria-label="Besøk oss på Facebook">
-            <img src="pictures.final/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
-              width="512" height="512" loading="lazy" decoding="async" />
+        <p class="trust-section__description">
+          Jeg er opptatt av faglige oppdateringer for å gi deg best mulig behandling.
+          Som pasient hos meg møter du en offentlig godkjent kiropraktor med solid utdanning og videreutdanning innen
+          klinisk nevrologi og bevegelse.
+          <br><br>
+          <a href="about.html" class="trust-section__link">
+            Les mer om meg &rarr;
           </a>
-          <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
-            aria-label="Følg oss på Instagram">
-            <img src="pictures.final/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
-              height="512" loading="lazy" decoding="async" />
-          </a>
-          <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
-            aria-label="Se våre videoer på YouTube">
-            <img src="pictures.final/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
-              width="512" height="512" loading="lazy" decoding="async" />
-          </a>
-          <a href="contact.html" class="footer__social-link" aria-label="Send oss en e-post">
-            <img src="pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM" loading="lazy"
-              decoding="async" />
-          </a>
+        </p>
+
+        <!-- Logo-grid med 4 elementer -->
+        <div class="logo-grid">
+
+          <!-- 1. Helsedirektoratet -->
+          <div class="trust-item">
+            <img
+              src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/Hdir-symbol.png"
+              alt="Helsedirektoratet logo - Autorisert Helsepersonell" loading="lazy" decoding="async">
+          </div>
+
+          <!-- 2. Carrick Institute -->
+          <div class="trust-item">
+            <img
+              src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/CI-Logo-No-BG-6.png"
+              alt="Carrick Institute logo - Klinisk nevrologi sertifisering" loading="lazy" decoding="async">
+          </div>
+
+          <!-- 3. Motion Palpation Institute -->
+          <div class="trust-item">
+            <img src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/MPI logo.png"
+              alt="Motion Palpation Institute logo" loading="lazy" decoding="async">
+          </div>
+
+          <!-- 4. AECC University College -->
+          <div class="trust-item">
+            <img
+              src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/aecc colored-logo.png"
+              alt="AECC University College logo - Kiropraktor utdanning" loading="lazy" decoding="async">
+          </div>
+
+        </div>
+      </section>
+
+      <section class="page__outro outro outro_home outro--overlay outro--home-bg">
+        <div class="outro__container">
+          <h2 class="outro__title outro__title--white">Ta det første steget mot bedre helse</h2>
+          <div class="outro__text outro__text--white">
+            Ikke vent med å ta vare på din helse. Bestill time i dag og la meg hjelpe deg med å nå dine helsemål.
+          </div>
+          <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+            class="outro__button button button--accent" aria-label="Bestill time nå">Bestill time</a>
+        </div>
+      </section>
+
+
+
+
+
+
+
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Left Column -->
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="pictures.final/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="pictures.final/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="pictures.final/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Column -->
+        <div class="footer__center">
+          <div class="footer__logo">
+            <img src="pictures.final/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Åpningstider</h3>
+            <p>Mandag - Fredag: 08:00 - 19:00</p>
+            <p>Lørdag: 10:00 - 16:00</p>
+            <p>Søndag: Stengt</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Kontaktinformasjon</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>E-post: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
         </div>
       </div>
 
-      <!-- Center Column -->
-      <div class="footer__center">
-        <div class="footer__logo">
-          <img src="pictures.final/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
-            height="229" loading="lazy" decoding="async" />
-        </div>
-        <div class="back-to-top-wrapper">
-          <p class="text--muted-small">Tilbake til start</p>
-          <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
-            <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
-          </a>
-        </div>
+      <div class="footer__bottom">
+        <a href="personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 TheBackROM – Alle rettigheter reservert</p>
       </div>
-
-      <!-- Right Column -->
-      <div class="footer__right">
-        <div class="footer__hours">
-          <h3>Åpningstider</h3>
-          <p>Mandag - Fredag: 08:00 - 19:00</p>
-          <p>Lørdag: 10:00 - 16:00</p>
-          <p>Søndag: Stengt</p>
-        </div>
-        <div class="footer__contact">
-          <h3>Kontaktinformasjon</h3>
-          <p>Gardeveien 17<br>0363 Oslo</p>
-          <p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p>
-          <p>E-post: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer__bottom">
-      <a href="personvern.html" class="footer__link--muted">Personvernerklæring</a>
-      <p class="footer__copyright">© 2025 TheBackROM – Alle rettigheter reservert</p>
-    </div>
-  </footer>
+    </footer>
   </div>
 
   <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
-     class="mobile-sticky-cta"
-     aria-label="Bestill time hos kiropraktor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="mobile-sticky-cta"
+    aria-label="Bestill time hos kiropraktor">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
       <line x1="16" y1="2" x2="16" y2="6"></line>
       <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -731,6 +912,7 @@
   <script src="js/modern-enhancements.min.js" defer></script>
   <script src="js/language-toggle.min.js" defer></script>
   <script src="js/blog-scroll.min.js" defer></script>
+  <script src="js/blog-carousel.js" defer></script>
 </body>
 
 </html>

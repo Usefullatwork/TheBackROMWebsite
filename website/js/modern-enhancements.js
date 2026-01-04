@@ -1,71 +1,119 @@
-// Modern Website Enhancements
-document.addEventListener('DOMContentLoaded', function () {
-    // Check if user prefers reduced motion
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+/**
+ * MODERN ENHANCEMENTS - THE "VISION" UPDATE
+ * Handles Scroll Animations, Glassmorphism Header, Parallax, and Magnetic Interactions.
+ */
 
-    // Create scroll progress indicator (skip if reduced motion preferred)
-    if (!prefersReducedMotion) {
-        createScrollProgressIndicator();
-    }
-
-    // Add intersection observer for animations (skip if reduced motion preferred)
-    if (!prefersReducedMotion) {
-        addScrollAnimations();
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    initScrollAnimations();
+    initGlassHeader();
+    initParallax();
+    initMagneticButtons();
+    initFloatingAnimation();
 });
 
-// Scroll Progress Indicator - Optimized with requestAnimationFrame
-function createScrollProgressIndicator() {
-    const scrollIndicator = document.createElement('div');
-    scrollIndicator.className = 'scroll-indicator';
 
-    const scrollProgress = document.createElement('div');
-    scrollProgress.className = 'scroll-progress';
-
-    scrollIndicator.appendChild(scrollProgress);
-    document.body.appendChild(scrollIndicator);
-
-    let ticking = false;
-
-    function updateProgress() {
-        const scrollTop = window.pageYOffset;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollPercent = (scrollTop / docHeight) * 100;
-
-        scrollProgress.style.width = scrollPercent + '%';
-        ticking = false;
-    }
-
-    window.addEventListener('scroll', function () {
-        if (!ticking) {
-            window.requestAnimationFrame(updateProgress);
-            ticking = true;
-        }
-    }, { passive: true });
-}
-
-// Scroll Animations - Optimized
-function addScrollAnimations() {
+/**
+ * 1. SCROLL ANIMATIONS (Fade In Up)
+ * Uses IntersectionObserver for performance.
+ */
+function initScrollAnimations() {
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
     };
 
-    const observer = new IntersectionObserver(function (entries) {
+    const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate-fade-in');
-                observer.unobserve(entry.target); // Stop observing once animated
+                entry.target.classList.remove('js-scroll-hidden');
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Observe cards and sections
-    const elementsToAnimate = document.querySelectorAll(
-        '.item-services, .services-grid__item, .testimonial__item, .klinisk-hjorne__item, .about__container, .problems__item, .card, .about__content'
+    const animatedElements = document.querySelectorAll(
+        '.item-services, .problems__item, .klinisk-hjorne__item, .title-section__content, .main__title, .main__button'
     );
 
-    elementsToAnimate.forEach(el => {
+    animatedElements.forEach(el => {
+        el.classList.add('js-scroll-hidden');
         observer.observe(el);
+    });
+}
+
+/**
+ * 2. GLASSMORPHISM HEADER
+ * Adds background blur when scrolling down.
+ */
+function initGlassHeader() {
+    const header = document.querySelector('.header') || document.querySelector('header');
+    if (!header) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('glass-active');
+        } else {
+            header.classList.remove('glass-active');
+        }
+    });
+}
+
+/**
+ * 3. PARALLAX EFFECT
+ * Low-cost parallax for Hero section background.
+ */
+function initParallax() {
+    const hero = document.querySelector('.main_home');
+    if (!hero) return;
+
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        // Move background at 50% speed of scroll
+        if (scrolled < window.innerHeight) {
+            hero.style.backgroundPositionY = `${scrolled * 0.5}px`;
+        }
+    });
+}
+
+/**
+ * 4. MAGNETIC BUTTONS (Micro-interaction)
+ * Buttons "stick" to the mouse slightly.
+ */
+function initMagneticButtons() {
+    const buttons = document.querySelectorAll('.main__button, .button--accent, .btn-cta');
+
+    buttons.forEach(btn => {
+        btn.classList.add('magnetic-btn'); // Ensure CSS transition class is added
+
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            // Move button slightly (divided by 5 for resistance)
+            btn.style.transform = `translate(${x / 5}px, ${y / 5}px)`;
+        });
+
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = 'translate(0, 0)';
+        });
+    });
+}
+
+/**
+ * 5. FLOATING "BREATHING" ANIMATION
+ * Adds a subtle organic float to cards with random delays.
+ */
+function initFloatingAnimation() {
+    // Select all floating cards
+    const cards = document.querySelectorAll('.item-services, .problems__item, .klinisk-hjorne__item');
+
+    cards.forEach(card => {
+        card.classList.add('float-animation');
+        // Add random negative delay so they start at different positions in the cycle
+        // ensuring they feel distinct and organic, not robotic.
+        card.style.animationDelay = `-${Math.random() * 5}s`;
     });
 }

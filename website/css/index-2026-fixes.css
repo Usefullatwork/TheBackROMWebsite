@@ -1,0 +1,1840 @@
+/* =========================================
+   THEBACKROM.COM - 2026 DESIGN UPDATE
+   
+   FIXES:
+   1. Text contrast (darker body text)
+   2. Services: 5-card row layout
+   3. Blog: Horizontal scroll carousel (3 visible)
+   4. Footer: White text readability
+   5. Overall polish and depth
+   
+   IMPORTANT: Load this AFTER index-design.css
+   ========================================= */
+
+/* =========================================
+   1. GLOBAL TEXT & COLOR FIXES
+   Darker text for better WCAG contrast
+   ========================================= */
+
+:root {
+    /* Override text colors for better readability */
+    --color-text-body: #2D3748;
+    /* Darker body text - AA compliant */
+    --color-text-heading: #1A202C;
+    /* Near-black headings */
+    --color-text-muted: #4A5568;
+    /* Muted but still readable */
+
+    /* Keep your brand colors */
+    --color-primary: #1A5F7A;
+    --color-accent: #F26522;
+
+    /* Enhanced shadows for 2026 depth */
+    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-card-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-elevated: 0 25px 50px -12px rgba(26, 95, 122, 0.25);
+}
+
+/* Body text reset - remove dot pattern, improve readability */
+body {
+    color: var(--color-text-body) !important;
+    background-color: #FAFBFC !important;
+    background-image: none !important;
+    /* Remove the dot pattern - too busy */
+}
+
+/* All paragraph text darker */
+p,
+li,
+span,
+a {
+    color: var(--color-text-body);
+}
+
+/* Card text specifically */
+.service-card p,
+.blog-card p,
+.klinisk-hjorne__text,
+.item-services__content p,
+.floating-card p {
+    color: var(--color-text-body) !important;
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+}
+
+/* Headings - ensure they're dark teal, not grey */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.service-card h3,
+.blog-card h3,
+.klinisk-hjorne__item-title,
+.item-services__content h3 {
+    color: var(--color-primary) !important;
+}
+
+
+/* =========================================
+   2. SERVICES SECTION - 5 CARDS IN A ROW
+   Clean flex layout, no stagger
+   ========================================= */
+
+/* =========================================
+   2. SERVICES SECTION - MADS-STIL CARDS
+   Clean, roomy, premium look
+   ========================================= */
+
+.page__services.services {
+    padding: 50px 0 60px !important;
+    background: #FFFFFF !important;
+}
+
+/* Grid - 4 columns with proper spacing (index.html only) */
+.page__services .services-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    /* Remove flex properties */
+    flex-wrap: nowrap !important;
+    overflow-x: visible !important;
+    scroll-snap-type: none !important;
+}
+
+/* Card - Mads style matching */
+.service-card {
+    background: #FFFFFF !important;
+    border-radius: 0 12px 12px 12px !important;
+    /* Same as Mads card */
+    border-left: 4px solid #F26522 !important;
+    /* Orange accent */
+
+    padding: 0 !important;
+    overflow: hidden !important;
+
+    box-shadow: 0 8px 30px rgba(26, 95, 122, 0.1) !important;
+    border: none !important;
+    /* Remove old border */
+
+    display: flex !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+
+    transition: all 0.3s ease !important;
+
+    min-width: auto !important;
+    width: auto !important;
+}
+
+.service-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 16px 40px rgba(26, 95, 122, 0.18) !important;
+}
+
+/* Image container */
+.service-image-header {
+    height: 100px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+.service-image-header img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.3s ease !important;
+}
+
+.service-card:hover .service-image-header img {
+    transform: scale(1.05) !important;
+}
+
+/* Content */
+.service-card .item-services__content,
+.item-services__content {
+    padding: 16px 14px 18px !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background: transparent !important;
+}
+
+.service-card h3,
+.item-services__content h3 {
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+    color: #1A5F7A !important;
+    margin-bottom: 6px !important;
+    line-height: 1.25 !important;
+}
+
+.service-card p,
+.item-services__content p {
+    font-size: 0.8rem !important;
+    line-height: 1.45 !important;
+    color: #4b5563 !important;
+    margin: 0 !important;
+}
+
+/* CTA */
+.services__cta {
+    text-align: center !important;
+    margin-top: 32px !important;
+}
+
+/* Responsive - keep original mobile behavior (index.html only) */
+@media (max-width: 900px) {
+    .page__services .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        max-width: 500px !important;
+        gap: 16px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    /* Body padding for sticky CTA */
+    body {
+        padding-bottom: 70px !important;
+    }
+
+    /* Sticky CTA at bottom */
+    .sticky-mobile-cta,
+    .services__cta .button--accent,
+    .outro .button--accent {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        z-index: 1000 !important;
+        border-radius: 0 !important;
+        padding: 16px 20px !important;
+        margin: 0 !important;
+        text-align: center !important;
+        font-size: 1rem !important;
+        font-weight: 700 !important;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    /* Hide original CTA container on mobile */
+    .services__cta {
+        display: none !important;
+    }
+
+    /* Services grid - full width, single column (index.html only) */
+    .page__services .services-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        gap: 16px !important;
+        padding: 0 16px !important;
+    }
+
+    .service-card {
+        display: block !important;
+        height: auto !important;
+        min-height: 0 !important;
+        width: 100% !important;
+    }
+
+    .service-card .item-services__content {
+        flex: none !important;
+        padding: 14px 20px 16px !important;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    /* 160px image height on mobile */
+    .service-image-header {
+        height: 160px !important;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem !important;
+        white-space: normal !important;
+        overflow: visible !important;
+        margin-bottom: 6px !important;
+    }
+
+    .service-card p {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+    }
+}
+
+
+/* =========================================
+   3. BLOG SECTION - HORIZONTAL CAROUSEL
+   3 cards visible, with scroll navigation
+   ========================================= */
+
+.page__klinisk-hjorne {
+    background: var(--color-bg-light, #F7FAFB) !important;
+    padding: 100px 0 120px !important;
+}
+
+.klinisk-hjorne__container {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+}
+
+.klinisk-hjorne__title {
+    text-align: center !important;
+    color: var(--color-primary) !important;
+    font-size: clamp(2rem, 4vw, 2.5rem) !important;
+    margin-bottom: 12px !important;
+}
+
+.klinisk-hjorne__description {
+    text-align: center !important;
+    color: var(--color-text-muted) !important;
+    max-width: 600px !important;
+    margin: 0 auto 48px !important;
+    line-height: 1.7 !important;
+}
+
+/* Scroll wrapper with navigation */
+.blog-scroll-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    overflow: visible !important;
+    padding: 0 48px !important;
+    /* Space for nav arrows */
+}
+
+/* The carousel track - HORIZONTAL SCROLL */
+.blog-grid,
+#blog-scroll-container,
+.klinisk-hjorne__scroll {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;  /* Start from left, not center */
+    gap: 32px !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    padding: 16px 4px 32px !important;
+    /* Space for shadow/hover */
+
+    /* Smooth scroll snapping */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    /* Hide default scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.blog-grid::-webkit-scrollbar,
+#blog-scroll-container::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Blog cards - fixed width for 3-visible */
+.blog-card,
+.klinisk-hjorne__item {
+    flex: 0 0 auto !important;
+    width: calc((100% - 64px) / 3) !important;
+    /* 3 cards visible with gaps */
+    min-width: 320px !important;
+    max-width: 400px !important;
+
+    background: #FFFFFF !important;
+    border-radius: 20px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+
+    box-shadow: var(--shadow-card) !important;
+    border: 1px solid rgba(26, 95, 122, 0.06) !important;
+
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.blog-card:hover,
+.klinisk-hjorne__item:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: var(--shadow-elevated) !important;
+}
+
+/* Blog card image */
+.blog-card .card-image-container,
+.klinisk-hjorne__image {
+    height: 200px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+}
+
+.blog-card .card-image-container img,
+.klinisk-hjorne__image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 0 !important;
+    transition: transform 0.4s ease !important;
+}
+
+.blog-card:hover .card-image-container img,
+.klinisk-hjorne__item:hover .klinisk-hjorne__image img {
+    transform: scale(1.05) !important;
+}
+
+/* Blog card content */
+.blog-card .klinisk-hjorne__content,
+.klinisk-hjorne__item .klinisk-hjorne__content {
+    padding: 24px !important;
+}
+
+.klinisk-hjorne__item-title {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: var(--color-primary) !important;
+    margin-bottom: 12px !important;
+    line-height: 1.3 !important;
+}
+
+.klinisk-hjorne__text {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    color: var(--color-text-body) !important;
+    margin-bottom: 16px !important;
+}
+
+.klinisk-hjorne__meta {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-top: 12px !important;
+    border-top: 1px solid rgba(26, 95, 122, 0.08) !important;
+}
+
+.klinisk-hjorne__category {
+    background: rgba(26, 95, 122, 0.08) !important;
+    color: var(--color-primary) !important;
+    padding: 4px 12px !important;
+    border-radius: 20px !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.klinisk-hjorne__date {
+    color: var(--color-text-muted) !important;
+    font-size: 0.8rem !important;
+}
+
+.klinisk-hjorne__link {
+    color: var(--color-accent) !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.klinisk-hjorne__link:hover {
+    color: #d95a1c !important;
+    text-decoration: underline !important;
+}
+
+/* Carousel navigation arrows */
+.blog-scroll-btn {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    background: #FFFFFF !important;
+    border: 2px solid var(--color-primary) !important;
+    border-radius: 50% !important;
+
+    color: var(--color-primary) !important;
+    font-size: 1.25rem !important;
+
+    cursor: pointer !important;
+    z-index: 10 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    transition: all 0.3s ease !important;
+}
+
+.blog-scroll-btn:hover {
+    background: var(--color-primary) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-50%) scale(1.1) !important;
+}
+
+.blog-scroll-prev {
+    left: 0 !important;
+}
+
+.blog-scroll-next {
+    right: 0 !important;
+}
+
+/* Blog footer */
+.klinisk-hjorne__footer {
+    text-align: center !important;
+    margin-top: 48px !important;
+}
+
+.klinisk-hjorne__more {
+    color: var(--color-primary) !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    text-decoration: none !important;
+    padding: 12px 24px !important;
+    border: 2px solid var(--color-primary) !important;
+    border-radius: 50px !important;
+    display: inline-block !important;
+    transition: all 0.3s ease !important;
+}
+
+.klinisk-hjorne__more:hover {
+    background: var(--color-primary) !important;
+    color: #FFFFFF !important;
+}
+
+/* Tablet: 2 visible */
+@media (max-width: 1024px) {
+
+    .blog-card,
+    .klinisk-hjorne__item {
+        width: calc((100% - 32px) / 2) !important;
+        min-width: 280px !important;
+    }
+
+    .blog-scroll-wrapper {
+        padding: 0 40px !important;
+    }
+}
+
+/* Mobile: compact cards like services */
+@media (max-width: 640px) {
+    .page__klinisk-hjorne {
+        padding: 40px 0 !important;
+    }
+
+    .blog-scroll-wrapper {
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .blog-scroll-wrapper::before,
+    .blog-scroll-wrapper::after {
+        display: none !important;
+    }
+
+    .blog-grid,
+    #blog-scroll-container,
+    .klinisk-hjorne__scroll {
+        gap: 16px !important;
+        padding: 10px 40px !important;
+        scroll-snap-type: x mandatory !important;
+    }
+
+    .blog-card,
+    .klinisk-hjorne__item {
+        width: 300px !important;
+        min-width: 300px !important;
+        max-width: 300px !important;
+        border-radius: 12px !important;
+        scroll-snap-align: center !important;
+    }
+
+    .blog-card .card-image-container,
+    .klinisk-hjorne__image {
+        height: 80px !important;
+    }
+
+    .blog-card .klinisk-hjorne__content,
+    .klinisk-hjorne__item .klinisk-hjorne__content {
+        padding: 10px 16px 12px !important;
+    }
+
+    .klinisk-hjorne__item-title {
+        font-size: 1rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    .klinisk-hjorne__text {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .klinisk-hjorne__meta {
+        padding-top: 8px !important;
+    }
+
+    .klinisk-hjorne__category {
+        font-size: 0.65rem !important;
+        padding: 3px 8px !important;
+    }
+
+    .blog-scroll-btn {
+        display: none !important;
+    }
+}
+
+
+/* =========================================
+   4. FOOTER - WHITE TEXT READABILITY
+   ========================================= */
+
+footer,
+.footer,
+.footer-section {
+    background: #111827 !important;
+    /* Very dark blue-grey */
+    color: #FFFFFF !important;
+}
+
+/* All footer text white */
+footer *,
+.footer * {
+    color: #FFFFFF !important;
+}
+
+/* Specific footer elements */
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6 {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+footer p,
+footer li,
+footer span,
+footer a,
+.footer p,
+.footer li,
+.footer span,
+.footer a {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+footer a:hover,
+.footer a:hover {
+    color: var(--color-accent) !important;
+    opacity: 1 !important;
+}
+
+/* Footer social icons */
+.footer__social-icon,
+.footer-social-icon {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 50% !important;
+    width: 44px !important;
+    height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+}
+
+.footer__social-icon:hover,
+.footer-social-icon:hover {
+    background: var(--color-accent) !important;
+    border-color: var(--color-accent) !important;
+    transform: translateY(-3px) !important;
+}
+
+/* Muted text in footer */
+.text--muted-small,
+.footer__link--muted,
+.footer__contact a {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+
+/* =========================================
+   5. CTA BUTTONS - PREMIUM ORANGE GLOW
+   ========================================= */
+
+.btn-cta,
+.button--accent,
+.item-services__button,
+button[type="submit"],
+.main_home .main__button {
+    background: linear-gradient(135deg, #F26522 0%, #E55A1B 100%) !important;
+    color: #FFFFFF !important;
+
+    padding: 14px 32px !important;
+    border-radius: 50px !important;
+    border: none !important;
+
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.3px !important;
+
+    box-shadow: 0 8px 24px rgba(242, 101, 34, 0.35) !important;
+
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.btn-cta:hover,
+.button--accent:hover,
+.item-services__button:hover,
+button[type="submit"]:hover,
+.main_home .main__button:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 32px rgba(242, 101, 34, 0.5) !important;
+    background: linear-gradient(135deg, #E55A1B 0%, #D54A0B 100%) !important;
+}
+
+
+/* =========================================
+   6. MADS FINSTAD SECTION - TIGHTER OVERLAP
+   ========================================= */
+
+/* =========================================
+   6. MADS SECTION - KOMPAKT
+   ========================================= */
+
+.title-section {
+    padding: 40px 0 50px !important;
+    background: #F7FAFB !important;
+}
+
+.title-section__content {
+    display: grid !important;
+    grid-template-columns: minmax(280px, 450px) minmax(250px, 350px) !important;
+    gap: 20px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+}
+
+/* Text card - kompakt */
+.title-section__text,
+.mads-text-card {
+    background: #FFFFFF !important;
+    padding: 28px 32px !important;
+    border-radius: 0 12px 12px 12px !important;
+    box-shadow: 0 8px 30px rgba(26, 95, 122, 0.1) !important;
+    border-left: 4px solid #F26522 !important;
+
+    position: relative !important;
+    z-index: 10 !important;
+    margin-right: -30px !important;
+}
+
+.title-section__name {
+    font-size: 1.5rem !important;
+    margin-bottom: 2px !important;
+}
+
+.title-section__subtitle {
+    font-size: 0.9rem !important;
+    margin-bottom: 12px !important;
+}
+
+.title-section__text p,
+.text--primary-highlight,
+.bio-teaser__text {
+    font-size: 0.9rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 10px !important;
+}
+
+.title-section .button {
+    padding: 10px 20px !important;
+    font-size: 0.85rem !important;
+    margin-top: 12px !important;
+}
+
+/* Mobile responsive - Text first, image below */
+@media (max-width: 800px) {
+    .title-section__content {
+        grid-template-columns: 1fr !important;
+        max-width: 450px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Text card comes FIRST on mobile */
+    .title-section__text {
+        order: 1 !important;
+        margin-right: 0 !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Image comes AFTER text on mobile */
+    .title-section__image {
+        order: 2 !important;
+    }
+
+    .title-section__image img {
+        max-width: 220px !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+}
+
+
+/* =========================================
+   7. PROBLEMS/PLAGER SECTION - CLICKABLE HUB GATEWAY
+   Premium 3x2 grid linking to hub articles
+   ========================================= */
+
+.page__problems.problems,
+.problems {
+    padding: 60px 0 70px !important;
+    background: linear-gradient(145deg, #1A5F7A 0%, #134B5F 100%) !important;
+}
+
+.problems__container {
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+}
+
+.problems__title {
+    color: #FFFFFF !important;
+    font-size: 1.5rem !important;
+    text-align: center !important;
+    margin-bottom: 36px !important;
+    font-weight: 600 !important;
+}
+
+/* 3x2 Grid */
+.problems-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px !important;
+}
+
+/* =========================================
+   INDIVIDUAL CARDS - Clickable Style
+   ========================================= */
+
+.problem-card {
+    background: #FFFFFF !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+
+    /* Shadow for depth */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12) !important;
+
+    /* Structure */
+    display: flex !important;
+    flex-direction: column !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+/* Hover - lift, scale, and orange border glow */
+.problem-card:hover {
+    transform: translateY(-8px) scale(1.02) !important;
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.2),
+        0 0 0 3px #F26522 !important;
+}
+
+/* =========================================
+   CARD HEADER (Title) - OVERLAP FIX & LINK STYLE
+   ========================================= */
+
+.problem-card .problems__item-title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    /* Increased gap */
+
+    padding: 18px 20px !important;
+    margin: 0 !important;
+
+    background: linear-gradient(135deg, #1A5F7A 0%, #155263 100%) !important;
+    color: #FFFFFF !important;
+
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+
+    /* Border accent */
+    border-bottom: 3px solid #F26522 !important;
+
+    /* Ensure title text doesn't overlap checkmark */
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Link in title if present */
+.problem-card .problems__item-title a {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    flex: 1 !important;
+}
+
+.problem-card .problems__item-title a:hover {
+    text-decoration: underline !important;
+}
+
+/* Add checkmark icon before title */
+.problem-card .problems__item-title::before {
+    content: "✓" !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    /* Fixed dimensions and no shrinking */
+    width: 26px !important;
+    height: 26px !important;
+    min-width: 26px !important;
+    flex-shrink: 0 !important;
+    /* Critical fix */
+
+    background: #F26522 !important;
+    color: #FFFFFF !important;
+    border-radius: 50% !important;
+
+    font-size: 0.85rem !important;
+    font-weight: bold !important;
+
+    /* Positioning fix */
+    position: static !important;
+    margin-right: 0 !important;
+    /* Handled by gap on parent */
+    transform: none !important;
+}
+
+/* =========================================
+   CARD BODY (List)
+   ========================================= */
+
+.problem-card .problem-list {
+    list-style: none !important;
+    padding: 16px 20px !important;
+    margin: 0 !important;
+    flex: 1 !important;
+    background: #FFFFFF !important;
+}
+
+.problem-card .problem-list li {
+    padding: 0 !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    position: relative !important;
+    transition: all 0.2s ease !important;
+}
+
+.problem-card .problem-list li:last-child {
+    border-bottom: none !important;
+}
+
+/* Links inside the list */
+.problem-card .problem-list li a {
+    display: block !important;
+    padding: 10px 0 10px 20px !important;
+    color: #4b5563 !important;
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+/* Orange bullet pseudo-element ON THE LINK (so it's clickable area) */
+.problem-card .problem-list li a::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 6px !important;
+    height: 6px !important;
+    background: #F26522 !important;
+    border-radius: 50% !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Hover - darken text */
+.problem-card .problem-list li a:hover {
+    color: #1A5F7A !important;
+    background-color: rgba(26, 95, 122, 0.03) !important;
+    padding-left: 24px !important;
+    /* Slight shift */
+}
+
+.problem-card .problem-list li a:hover::before {
+    transform: translateY(-50%) scale(1.4) !important;
+}
+
+/* =========================================
+   CARD FOOTER - "Les mer" indicator
+   ========================================= */
+
+.problem-card .card-footer-link {
+    display: block !important;
+
+    padding: 14px 20px !important;
+    background: #f8f9fa !important;
+
+    color: #1A5F7A !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    text-align: center !important;
+    text-decoration: none !important;
+
+    border-top: 1px solid #e5e7eb !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Hover - orange highlight */
+.problem-card .card-footer-link:hover {
+    background: #F26522 !important;
+    color: #FFFFFF !important;
+}
+
+/* =========================================
+   CTA BUTTON
+   ========================================= */
+
+.problems__cta {
+    text-align: center !important;
+    margin-top: 36px !important;
+}
+
+.problems__button,
+.problems__cta .button {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+    padding: 14px 32px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+}
+
+.problems__button:hover,
+.problems__cta .button:hover {
+    background: #F26522 !important;
+    border-color: #F26522 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(242, 101, 34, 0.4) !important;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+    .problems-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+    }
+
+    .problem-card .problems__item-title {
+        font-size: 1rem !important;
+        padding: 16px 18px !important;
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+    .page__problems.problems {
+        padding: 50px 0 60px !important;
+    }
+
+    .problems-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .problem-card {
+        max-width: 400px !important;
+        margin: 0 auto !important;
+    }
+}
+
+
+/* =========================================
+   8. HERO SECTION - REFINED GRADIENT
+   ========================================= */
+
+.main_home {
+    min-height: 55vh !important;
+    max-height: 65vh !important;
+    background:
+        linear-gradient(100deg,
+            rgba(26, 95, 122, 0.92) 0%,
+            rgba(26, 95, 122, 0.75) 45%,
+            rgba(26, 95, 122, 0.2) 100%),
+        url('../pictures.final/pages/home/kiropraktor-ryggbehandling-hero.jpeg') center/cover no-repeat !important;
+}
+
+.main_home .main__title {
+    color: #FFFFFF !important;
+    font-size: clamp(2.5rem, 5vw, 4rem) !important;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3) !important;
+    max-width: 650px !important;
+}
+
+/* =========================================
+   8B. SERVICES/PLAGER HERO SECTION
+   For pages using .main_services class
+   ========================================= */
+
+.main_services {
+    background:
+        linear-gradient(100deg,
+            rgba(26, 95, 122, 0.92) 0%,
+            rgba(26, 95, 122, 0.75) 45%,
+            rgba(26, 95, 122, 0.4) 100%),
+        url('../pictures.final/pages/home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat !important;
+    min-height: 45vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.main_services .main__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    text-align: center !important;
+}
+
+.main_services .main__title {
+    color: #FFFFFF !important;
+    font-size: clamp(2rem, 4vw, 3rem) !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+    margin-bottom: 16px !important;
+}
+
+.main_services .main__text,
+.main_services .main__text p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+    max-width: 700px !important;
+    margin: 0 auto !important;
+}
+
+/* =========================================
+   8C. PLAGER PAGE GRID (4 columns)
+   Target .services-grid__row specifically
+   ========================================= */
+
+.services-grid__row {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px !important;
+}
+
+/* Override span 2 from main.css - make items span 1 column */
+.services-grid__row .services-grid__item {
+    grid-column: span 1 !important;
+}
+
+/* Les mer - plain text link style (no button) */
+.services-grid__button {
+    display: inline-block !important;
+    background: none !important;
+    color: #FFFFFF !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    margin-top: 12px !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+}
+
+/* Title buttons - same size as header "Bestill Time" button */
+.services-grid__title {
+    background: #F26522 !important;
+    color: #FFFFFF !important;
+    padding: 12px 28px !important;
+    border-radius: 8px !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+    display: inline-block !important;
+    text-shadow: none !important;
+    margin-bottom: 8px !important;
+}
+
+.services-grid__overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.4) 40%, transparent 70%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    padding: 16px !important;
+    text-align: center !important;
+}
+
+/* Remove hero background from breadcrumb sections (main_pages without main_services) */
+.page__main.main.main_pages:not(.main_services) {
+    background: #f8f9fa !important;
+    min-height: auto !important;
+    padding: 20px 0 !important;
+}
+
+.page__main.main.main_pages:not(.main_services) .main__title {
+    color: #1A5F7A !important;
+    text-shadow: none !important;
+}
+
+.page__main.main.main_pages:not(.main_services) .main__text_pages {
+    color: #4a5568 !important;
+}
+
+.page__main.main.main_pages:not(.main_services) .breadcrumb__link,
+.page__main.main.main_pages:not(.main_services) .breadcrumb__current {
+    color: #1A5F7A !important;
+}
+
+@media (max-width: 1100px) {
+    .services-grid__row {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid__row {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .services-grid__row {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+/* =========================================
+   9. UTILITY: SMOOTH SCROLL BEHAVIOR
+   ========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for whole page */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #134B5F;
+}
+
+/* =========================================
+   GENERAL SPACING REDUCTION
+   ========================================= */
+
+section {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.page__problems.problems {
+    padding: 50px 0 !important;
+}
+
+.page__klinisk-hjorne {
+    padding: 50px 0 !important;
+}
+
+.trust-section {
+    padding: 40px 0 !important;
+}
+
+
+/* =========================================
+   10. TRUST SECTION REFINEMENT
+   ========================================= */
+
+.trust-section {
+    background: #FFFFFF !important;
+    padding: 80px 0 !important;
+}
+
+.trust-section__title {
+    color: var(--color-primary) !important;
+}
+
+.trust-section__description {
+    color: var(--color-text-body) !important;
+}
+
+.logo-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 48px !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+}
+
+.logo-grid img {
+    max-height: 60px !important;
+    width: auto !important;
+    filter: grayscale(20%) !important;
+    opacity: 0.85 !important;
+    transition: all 0.3s ease !important;
+}
+
+.logo-grid img:hover {
+    filter: grayscale(0%) !important;
+    opacity: 1 !important;
+    transform: scale(1.05) !important;
+}
+
+
+/* =========================================
+   THEBACKROM - FINAL POLISH
+
+   1. Buttons - less aggressive
+   2. Gap between Mads & Tjenester - reduced
+   3. Tjenester text - larger
+   4. Blog carousel - proper start position
+   ========================================= */
+
+
+/* =========================================
+   1. BUTTONS - SOFTER, LESS "VIOLENT"
+   Global button reset with high specificity
+   ========================================= */
+
+/* PRIMARY BUTTONS - Solid orange */
+.btn-cta,
+.button--accent,
+a.button--accent,
+.item-services__button,
+.services__cta .button,
+.services__cta .button--accent,
+.problems__cta .button--accent,
+button[type="submit"],
+.main_home .main__button,
+.main_home .button--accent,
+.outro .button--accent,
+.outro__button,
+section .button--accent,
+.actions-header__button,
+.header .actions-header__button {
+    background: #F26522 !important;
+    background-image: none !important;
+    color: #FFFFFF !important;
+    padding: 12px 28px !important;
+    border-radius: 8px !important;
+    border: none !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+    transition: all 0.25s ease !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.btn-cta:hover,
+.button--accent:hover,
+a.button--accent:hover,
+.item-services__button:hover,
+.services__cta .button:hover,
+.services__cta .button--accent:hover,
+.problems__cta .button--accent:hover,
+button[type="submit"]:hover,
+.main_home .main__button:hover,
+.main_home .button--accent:hover,
+.outro .button--accent:hover,
+.outro__button:hover,
+section .button--accent:hover,
+.actions-header__button:hover,
+.header .actions-header__button:hover {
+    background: #e05a1a !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* SECONDARY BUTTONS - Outline style on dark backgrounds */
+.problems__cta .button,
+.problems__button,
+.page__problems .button {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    padding: 12px 28px !important;
+}
+
+.problems__cta .button:hover,
+.problems__button:hover,
+.page__problems .button:hover {
+    background: #F26522 !important;
+    border-color: #F26522 !important;
+    color: #FFFFFF !important;
+}
+
+/* TERTIARY BUTTONS - Outline on light backgrounds */
+.klinisk-hjorne__more {
+    background: transparent !important;
+    color: #1A5F7A !important;
+    border: 2px solid #1A5F7A !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    padding: 12px 28px !important;
+}
+
+.klinisk-hjorne__more:hover {
+    background: #1A5F7A !important;
+    color: #FFFFFF !important;
+}
+
+
+/* =========================================
+   2. REDUCE GAP BETWEEN MADS & TJENESTER
+   ========================================= */
+
+.title-section {
+    padding: 30px 0 20px !important;  /* Reduced bottom padding */
+    margin-bottom: 0 !important;
+}
+
+.page__services.services,
+.services {
+    padding: 20px 0 50px !important;  /* Reduced top padding */
+    margin-top: 0 !important;
+}
+
+/* General section spacing tightening */
+section + section {
+    margin-top: 0 !important;
+}
+
+
+/* =========================================
+   3. TJENESTER - BIGGER CARDS (DESKTOP)
+   4 columns, 140px image, larger text
+   ========================================= */
+
+/* Grid - 4 columns, wider max-width for bigger cards (index.html only) */
+.page__services .services-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px !important;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+}
+
+/* Image - 140px height for desktop */
+.service-image-header {
+    height: 140px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Card content - more padding, larger text */
+.service-card .item-services__content,
+.item-services__content {
+    padding: 16px 18px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+}
+
+/* Titles - larger */
+.service-card h3,
+.item-services__content h3 {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    color: #1A5F7A !important;
+    margin-bottom: 8px !important;
+    line-height: 1.25 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+/* Description - larger */
+.service-card p,
+.item-services__content p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    color: #4b5563 !important;
+    margin: 0 !important;
+}
+
+/* Ensure cards have equal height and content aligns */
+.service-card {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.service-card .item-services__content {
+    flex: 1 !important;
+}
+
+
+/* =========================================
+   4. BLOG CAROUSEL - PROPER START & LOOP FEEL
+   ========================================= */
+
+/* Container padding so first card shows fully */
+.blog-scroll-wrapper {
+    padding: 0 60px !important;
+    position: relative !important;
+}
+
+.blog-grid,
+#blog-scroll-container,
+.klinisk-hjorne__scroll {
+    /* Start aligned to show first card fully */
+    padding-left: 0 !important;
+    padding-right: 40px !important;  /* Extra space at end */
+
+    scroll-padding-left: 0 !important;
+    scroll-snap-type: x mandatory !important;
+
+    /* Smooth scrolling */
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+/* Cards snap properly */
+.blog-card,
+.klinisk-hjorne__item {
+    scroll-snap-align: start !important;
+}
+
+/* First card - no extra margin */
+.blog-card:first-child,
+.klinisk-hjorne__item:first-child {
+    margin-left: 0 !important;
+}
+
+/* Last card - extra padding so it can scroll fully into view */
+.blog-card:last-child,
+.klinisk-hjorne__item:last-child {
+    margin-right: 20px !important;
+}
+
+/* Navigation arrows - better positioned */
+.blog-scroll-btn {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 20 !important;
+
+    width: 40px !important;
+    height: 40px !important;
+
+    background: #FFFFFF !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 50% !important;
+
+    color: #1A5F7A !important;
+    font-size: 1.1rem !important;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    cursor: pointer !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    transition: all 0.2s ease !important;
+}
+
+.blog-scroll-btn:hover {
+    background: #1A5F7A !important;
+    color: #FFFFFF !important;
+    border-color: #1A5F7A !important;
+}
+
+.blog-scroll-prev {
+    left: 10px !important;
+}
+
+.blog-scroll-next {
+    right: 10px !important;
+}
+
+/* Fade effect at edges to indicate more content */
+.blog-scroll-wrapper::before,
+.blog-scroll-wrapper::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 40px !important;
+    z-index: 5 !important;
+    pointer-events: none !important;
+}
+
+.blog-scroll-wrapper::before {
+    left: 50px !important;
+    background: linear-gradient(to right, #F7FAFB, transparent) !important;
+}
+
+.blog-scroll-wrapper::after {
+    right: 50px !important;
+    background: linear-gradient(to left, #F7FAFB, transparent) !important;
+}
+
+
+/* =========================================
+   5. FINE-TUNING OTHER ELEMENTS
+   ========================================= */
+
+/* Mads section - ensure compact */
+.title-section__content {
+    gap: 20px !important;
+    max-width: 850px !important;
+}
+
+.title-section__text {
+    padding: 24px 28px !important;
+}
+
+/* Problems section - consistent with rest */
+.page__problems.problems {
+    padding: 40px 0 50px !important;
+}
+
+/* Trust section */
+.trust-section {
+    padding: 35px 0 !important;
+}
+
+/* Footer CTA banner */
+.cta-banner,
+[class*="outro"] {
+    padding: 40px 24px !important;
+}
+
+
+/* =========================================
+   MOBILE OVERRIDE - FINAL (max specificity)
+   Must be at END of file to override all above
+   ========================================= */
+
+@media (max-width: 550px) {
+    /* Body padding for sticky CTA */
+    body {
+        padding-bottom: 70px !important;
+    }
+
+    /* Services - SINGLE COLUMN, CENTERED (index.html only) */
+    .page__services .services-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        max-width: 340px !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        gap: 16px !important;
+        padding: 0 16px !important;
+    }
+
+    .service-card {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    /* 160px image on mobile */
+    .service-image-header {
+        height: 160px !important;
+    }
+
+    .service-card .item-services__content {
+        padding: 14px 20px 16px !important;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem !important;
+        white-space: normal !important;
+    }
+
+    .service-card p {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+    }
+
+    /* Mads section - Text FIRST, image BELOW */
+    .title-section__content {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .title-section__text {
+        order: 1 !important;
+    }
+
+    .title-section__image {
+        order: 2 !important;
+    }
+
+    /* Blog carousel - first card fully visible */
+    .blog-scroll-wrapper {
+        padding: 0 !important;
+        margin: 0 16px !important;
+    }
+
+    .blog-grid,
+    #blog-scroll-container,
+    .klinisk-hjorne__scroll {
+        padding: 10px 0 !important;
+        gap: 16px !important;
+        scroll-padding-left: 0 !important;
+    }
+
+    .blog-card,
+    .klinisk-hjorne__item {
+        width: calc(100vw - 48px) !important;
+        min-width: calc(100vw - 48px) !important;
+        max-width: none !important;
+        flex-shrink: 0 !important;
+    }
+
+    .blog-card:first-child,
+    .klinisk-hjorne__item:first-child {
+        margin-left: 0 !important;
+    }
+
+    /* Sticky CTA at bottom */
+    .outro .button--accent,
+    .services__cta .button--accent {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        z-index: 1000 !important;
+        border-radius: 0 !important;
+        padding: 16px 20px !important;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15) !important;
+    }
+}
+
+/* =========================================
+   BLOG INDEX PAGE - VERTICAL 3-COLUMN GRID
+   Override horizontal scroll for blog listing
+   ========================================= */
+
+#blog-posts-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    flex-wrap: wrap !important;
+    gap: 24px !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    scroll-snap-type: none !important;
+    padding: 24px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+#blog-posts-container .klinisk-hjorne__link {
+    display: block !important;
+    width: 100% !important;
+}
+
+#blog-posts-container .klinisk-hjorne__item {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: unset !important;
+    flex: none !important;
+}
+
+#blog-posts-container .klinisk-hjorne__image {
+    height: 180px !important;
+}
+
+#blog-posts-container .klinisk-hjorne__content {
+    padding: 16px !important;
+}
+
+#blog-posts-container .klinisk-hjorne__item-title {
+    font-size: 1rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 8px !important;
+}
+
+#blog-posts-container .klinisk-hjorne__excerpt {
+    font-size: 0.85rem !important;
+    line-height: 1.4 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+    #blog-posts-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+        padding: 20px !important;
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+    #blog-posts-container {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        padding: 16px !important;
+    }
+
+    #blog-posts-container .klinisk-hjorne__image {
+        height: 160px !important;
+    }
+}

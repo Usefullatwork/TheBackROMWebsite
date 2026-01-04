@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nb">
 
 <head>
@@ -23,7 +23,7 @@
   <meta property="og:title" content="Brystryggsmerter: Årsaker, Symptomer og Behandling | Kiropraktor Majorstua">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thebackrom.com/plager/brystryggsmerter.html">
-  <meta property="og:image" content="https://thebackrom.com/pictures.final/Plager/Ryggsmerte.webp">
+  <meta property="og:image" content="https://thebackrom.com/pictures.final/conditions/general/Ryggsmerte.webp">
   <meta property="og:site_name" content="TheBackROM - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/brystryggsmerter.html">
@@ -47,7 +47,7 @@
       "alternateName": ["Thorakale smerter", "Smerter mellom skulderbladene", "Øvre ryggsmerter"]
     },
     "specialty": "Kiropraktikk",
-    "lastReviewed": "2025-12-01"
+    "lastReviewed": "2026-12-01"
   }
   </script>
 
@@ -125,6 +125,7 @@
       src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="" /></noscript>
 
   <link rel="stylesheet" href="../css/main.min.css?v=20260101">
+  <link rel="stylesheet" href="../css/index-2026-fixes.css">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
@@ -207,7 +208,7 @@
     .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
     .faq-item p { color: #4b5563; margin: 0; line-height: 1.6; }
     .hub-cta { background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%); color: white; border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
-    .hub-cta h3 { color: white; font-size: 1.5rem; margin-bottom: 12px; }
+    .hub-cta h3 { color: white !important; font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; }
     .hub-cta p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
     .hub-cta .button { background: white; color: var(--hub-primary); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s ease; }
     .hub-cta .button:hover { transform: translateY(-2px); }
@@ -231,6 +232,13 @@
     .sources-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
     .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; }
     .sources-section p { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
+    /* Blog Carousel Styles */
+    .blog-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .blog-grid::-webkit-scrollbar { display: none; }
+    .blog-scroll-btn:hover { background: var(--hub-dark); }
+    .section-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-heading .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+    .section-heading .section-title { font-size: 1.6rem; color: var(--hub-dark); margin: 0; }
   </style>
 </head>
 
@@ -285,7 +293,7 @@
             </div>
 
             <div class="intro-text">
-              <img src="../pictures.final/Plager/Ryggsmerte.webp" alt="Brystryggsmerter - illustrasjon av smerte i øvre rygg" class="hub-featured-image" />
+              <img src="../pictures.final/conditions/general/Ryggsmerte.webp" alt="Brystryggsmerter - illustrasjon av smerte i øvre rygg" class="hub-featured-image" />
               <p>Brystryggen – den midtre delen av ryggsøylen mellom nakken og korsryggen – består av 12 virvler som alle er koblet til ribbeina. Dette området er naturlig mer stabilt enn nakke og korsrygg, men nettopp denne stabiliteten kan også gjøre det sårbart for stivhet og funksjonsproblemer.</p>
               <p>Når det oppstår funksjonsfeil i samspillet mellom jegrvler, ribbein og muskulatur her, opplever mange det som en "låsning" eller en konstant verkende smerte. Dette skiller seg fra nakke- og korsryggsmerter ved at smerten ofte kan stråle frem mot brystet langs ribbeina – noe som kan være skremmende, men som oftest har en harmløs forklaring i muskel- og skjelettsystemet.</p>
             </div>
@@ -526,6 +534,80 @@
             </div>
           </section>
 
+          <!-- Blog Carousel - Related articles -->
+          <section class="hub-section" id="blog-carousel">
+            <div class="section-heading">
+              <span class="section-number">📝</span>
+              <h2 class="section-title">Fra bloggen</h2>
+            </div>
+            <p style="margin-bottom: 20px;">Utforsk våre artikler om brystryggsmerter:</p>
+
+            <div class="blog-scroll-wrapper" style="position: relative; padding: 0 40px;">
+              <button class="blog-scroll-btn blog-scroll-prev" aria-label="Forrige" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); z-index: 10; width: 36px; height: 36px; border-radius: 50%; background: var(--hub-primary); border: none; cursor: pointer; font-size: 20px; color: white;">‹</button>
+              <button class="blog-scroll-btn blog-scroll-next" aria-label="Neste" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); z-index: 10; width: 36px; height: 36px; border-radius: 50%; background: var(--hub-primary); border: none; cursor: pointer; font-size: 20px; color: white;">›</button>
+              <div class="blog-grid" style="display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 10px 0; scrollbar-width: none;">
+
+                <!-- Blog Card 1: Smerter mellom skulderbladene -->
+                <a href="../blogg/smerter-mellom-skulderbladene-facettledd.html" class="blog-card" style="flex: 0 0 280px; scroll-snap-align: start; background: white; border-radius: 12px; overflow: hidden; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                  <img src="../pictures.final/conditions/general/Ryggsmerte.webp" alt="Smerter mellom skulderbladene" style="width: 100%; height: 160px; object-fit: cover;" loading="lazy">
+                  <div style="padding: 16px;">
+                    <h3 style="font-size: 1rem; color: var(--hub-dark); margin-bottom: 8px; line-height: 1.3;">Smerter mellom skulderbladene</h3>
+                    <p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">I 42% av tilfellene kommer smerten fra facettledd i nakken (C5-C7).</p>
+                  </div>
+                </a>
+
+                <!-- Blog Card 2: Røde flagg ved ryggsmerter -->
+                <a href="../blogg/rode-flagg-ryggsmerter.html" class="blog-card" style="flex: 0 0 280px; scroll-snap-align: start; background: white; border-radius: 12px; overflow: hidden; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                  <img src="../pictures.final/conditions/back/korsrygg smerte (1).webp" alt="Røde flagg ved ryggsmerter" style="width: 100%; height: 160px; object-fit: cover;" loading="lazy">
+                  <div style="padding: 16px;">
+                    <h3 style="font-size: 1rem; color: var(--hub-dark); margin-bottom: 8px; line-height: 1.3;">Røde flagg ved ryggsmerter</h3>
+                    <p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">Når bør du søke akutt hjelp? Symptomer som krever rask vurdering.</p>
+                  </div>
+                </a>
+
+                <!-- Blog Card 3: Stressnakke og triggerpunkter -->
+                <a href="../blogg/stressnakke-triggerpunkter.html" class="blog-card" style="flex: 0 0 280px; scroll-snap-align: start; background: white; border-radius: 12px; overflow: hidden; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                  <img src="../pictures.final/conditions/neck/nakkesmerte.webp" alt="Stressnakke og triggerpunkter" style="width: 100%; height: 160px; object-fit: cover;" loading="lazy">
+                  <div style="padding: 16px;">
+                    <h3 style="font-size: 1rem; color: var(--hub-dark); margin-bottom: 8px; line-height: 1.3;">Stressnakke og triggerpunkter</h3>
+                    <p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">Stress gir nakkesmerter hos 42-63% av kontorarbeidere.</p>
+                  </div>
+                </a>
+
+                <!-- Blog Card 4: Trenger du MR? -->
+                <a href="../blogg/mr-bildediagnostikk-ryggsmerte.html" class="blog-card" style="flex: 0 0 280px; scroll-snap-align: start; background: white; border-radius: 12px; overflow: hidden; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                  <img src="../pictures.final/conditions/back/korsrygg smerte (2).webp" alt="MR og bildediagnostikk" style="width: 100%; height: 160px; object-fit: cover;" loading="lazy">
+                  <div style="padding: 16px;">
+                    <h3 style="font-size: 1rem; color: var(--hub-dark); margin-bottom: 8px; line-height: 1.3;">Trenger du MR for ryggsmerte?</h3>
+                    <p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">Når bildediagnostikk faktisk er nødvendig - og når det ikke er det.</p>
+                  </div>
+                </a>
+
+                <!-- Blog Card 5: Facettleddssyndrom -->
+                <a href="../blogg/facettleddssyndrom.html" class="blog-card" style="flex: 0 0 280px; scroll-snap-align: start; background: white; border-radius: 12px; overflow: hidden; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                  <img src="../pictures.final/conditions/back/korsrygg smerte (3).webp" alt="Facettleddssyndrom" style="width: 100%; height: 160px; object-fit: cover;" loading="lazy">
+                  <div style="padding: 16px;">
+                    <h3 style="font-size: 1rem; color: var(--hub-dark); margin-bottom: 8px; line-height: 1.3;">Facettleddssyndrom</h3>
+                    <p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">Smerter fra ryggvirvlenes småledd - utgjør 15-45% av kroniske ryggsmerter.</p>
+                  </div>
+                </a>
+
+                <!-- Blog Card 6: Akutt ryggsmerte selvhjelp -->
+                <a href="../blogg/akutt-ryggsmerte-selvhjelp.html" class="blog-card" style="flex: 0 0 280px; scroll-snap-align: start; background: white; border-radius: 12px; overflow: hidden; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                  <img src="../pictures.final/conditions/back/korsryggplager.webp" alt="Akutt ryggsmerte selvhjelp" style="width: 100%; height: 160px; object-fit: cover;" loading="lazy">
+                  <div style="padding: 16px;">
+                    <h3 style="font-size: 1rem; color: var(--hub-dark); margin-bottom: 8px; line-height: 1.3;">Akutt ryggsmerte - selvhjelp</h3>
+                    <p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">Hva du bør gjøre de første timene og dagene ved akutt ryggsmerte.</p>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+            <div style="text-align: center; margin-top: 16px;">
+              <a href="../blogg/index.html?tag=rygg" style="color: var(--hub-primary); font-weight: 600; text-decoration: none;">Se alle artikler om rygg →</a>
+            </div>
+          </section>
+
           <!-- Section 6: FAQ -->
           <section id="faq" class="hub-section">
             <div class="section-header">
@@ -658,9 +740,9 @@
       <div class="footer__container">
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"><img loading="lazy" decoding="async" src="../pictures.final/Media iconer/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook" /></a>
-            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"><img src="../pictures.final/Media iconer/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram" loading="lazy" decoding="async" /></a>
-            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"><img src="../pictures.final/Media iconer/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube" loading="lazy" decoding="async" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"><img loading="lazy" decoding="async" src="../pictures.final/branding/icons/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook" /></a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"><img src="../pictures.final/branding/icons/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram" loading="lazy" decoding="async" /></a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"><img src="../pictures.final/branding/icons/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube" loading="lazy" decoding="async" /></a>
             <a href="../contact.html" class="footer__social-link"><img loading="lazy" decoding="async" src="../pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM" /></a>
           </div>
         </div>
@@ -688,7 +770,7 @@
       </div>
       <div class="footer__bottom">
         <a href="../personvern.html" class="footer__policy">Personvernerklæring</a>
-        <p class="footer__copyright">© 2025 TheBackROM – Alle rettigheter reserveret</p>
+        <p class="footer__copyright">© 2026 TheBackROM – Alle rettigheter reserveret</p>
       </div>
     </footer>
   </div>
@@ -696,6 +778,7 @@
   <script src="../js/script.min.js" defer></script>
   <script src="../js/language-toggle.min.js" defer></script>
   <script src="../js/modern-enhancements.min.js" defer></script>
+  <script src="../js/blog-carousel.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('.hub-section');
