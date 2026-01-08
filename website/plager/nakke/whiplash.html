@@ -11,9 +11,9 @@
   <meta name="view-transition" content="same-origin" />
 
   <link rel="manifest" href="../../manifest.json" />
-  <link rel="apple-touch-icon" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
   <link rel="preload" as="style" href="../../css/main.min.css" />
-  <link rel="icon" type="image/png" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Whiplash (Nakkesleng) - Behandling hos Kiropraktor | Majorstua Oslo</title>
 
   <meta name="description" content="Whiplash etter bilulykke? Kiropraktor på Majorstua behandler nakkesleng. Tidlig mobilisering gir best resultat - ~50% blir bra innen 3 mnd. TheBackROM.">
@@ -56,7 +56,7 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Hvor lang tid tar det før whiplash går over?",
+        "name": "Hvor lang tid tar det for whiplash går over?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "De fleste opplever betydelig bedring innen 2-3 måneder. Omtrent halvparten blir helt bra, mens ca. 50% har noe vedvarende symptomer etter ett år."
@@ -67,7 +67,7 @@
         "name": "Bør jeg bruke nakkekrage?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nei, nakkekrage frarådes ved vanlig whiplash (Grad A-evidens mot). Forskning viser at tidlig bevegelse og aktivitet gir bedre resultater enn immobilisering."
+          "text": "Nei, nakkekrage frarades ved vanlig whiplash (Grad A-evidens mot). Forskning viser at tidlig bevegelse og aktivitet gir bedre resultater enn immobilisering."
         }
       },
       {
@@ -111,117 +111,88 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="" /></noscript>
 
   <link rel="stylesheet" href="../../css/main.min.css?v=20260101">
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css">
+  <link rel="stylesheet" href="../../css/hub-article.css">
+
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
   <link rel="preload" as="style" href="../../css/font-awesome-minimal.css">
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
   <style>
-    :root { --hub-primary: #e8a838; --hub-primary-dark: #d4922e; --hub-dark: #1a1a2e; --hub-dark-light: #16213e; --hub-red: #ef4444; --hub-green: #22c55e; --hub-blue: #3b82f6; }
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-    .hub-wrapper { display: flex; align-items: stretch; max-width: 1400px; margin: 0 auto; padding: 0 40px 20px 40px; gap: 40px; }
-    @media (min-width: 1600px) { .hub-wrapper { max-width: 1600px; padding: 0 60px 20px 60px; } }
-    .hub-main { flex: 1; min-width: 0; max-width: 1000px; background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
-    @media (min-width: 1200px) { .hub-main { max-width: 1100px; } }
-    .hub-sidenav { width: 220px; flex-shrink: 0; position: relative; align-self: stretch; }
-    .hub-sidenav .sidenav-inner { position: sticky; top: calc(var(--header-height, 80px) + 20px); }
-    @media (min-width: 1400px) { .hub-sidenav { width: 260px; } }
-    @media (max-width: 1000px) { .hub-sidenav { display: none; } .hub-wrapper { padding: 0 16px; } .hub-main { max-width: 100%; } }
-    .sidenav-inner { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-    .sidenav-title { font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
-    .sidenav-link { display: block; padding: 8px 10px; margin: 3px 0; color: #6b7280; text-decoration: none; font-size: 13px; border-radius: 6px; transition: all 0.2s; border-left: 2px solid transparent; }
-    .sidenav-link:hover { background: #f3f4f6; color: var(--hub-dark); }
-    .sidenav-link.active { background: #fff9e6; color: var(--hub-primary-dark); border-left-color: var(--hub-primary); font-weight: 600; }
-    .sidenav-cta { display: block; background: var(--hub-primary); color: var(--hub-dark); padding: 12px 14px; border-radius: 8px; font-weight: 700; text-decoration: none; text-align: center; font-size: 13px; margin-top: 16px; transition: background 0.2s; }
-    .sidenav-cta:hover { background: var(--hub-primary-dark); }
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-dark-light) 100%); color: #fff; padding: 40px 32px; padding-top: calc(var(--header-height, 80px) + 40px); border-radius: 12px 12px 0 0; }
-    @media (max-width: 600px) { .hub-hero { padding: 28px 20px; padding-top: calc(var(--header-height, 80px) + 28px); } }
-    .hub-hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 12px; line-height: 1.2; }
-    @media (max-width: 600px) { .hub-hero h1 { font-size: 26px; } }
-    .hub-hero .author { font-style: italic; color: rgba(255,255,255,0.6); font-size: 14px; margin-top: 8px; }
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-    .tldr-box { background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%); border-left: 4px solid var(--hub-primary); border-radius: 0 10px 10px 0; padding: 20px; margin-bottom: 28px; }
-    .tldr-box h3 { font-size: 15px; color: var(--hub-dark); margin-bottom: 12px; }
-    .tldr-box ul { list-style: none; padding: 0; margin: 0; }
-    .tldr-box li { padding: 5px 0 5px 22px; position: relative; font-size: 14px; line-height: 1.5; }
-    .tldr-box li::before { content: '✓'; position: absolute; left: 0; color: var(--hub-green); font-weight: bold; }
-    .tldr-box li.warning::before { content: '⚠'; color: var(--hub-red); }
-    .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; scroll-margin-top: 100px; }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-    .section-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-    .section-number { width: 32px; height: 32px; background: var(--hub-dark); color: var(--hub-primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; flex-shrink: 0; }
-    .section-title { font-size: 20px; font-weight: 700; color: var(--hub-dark); margin: 0; }
-    @media (max-width: 600px) { .section-title { font-size: 18px; } }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
-    .hub-section h3 { font-size: 17px; font-weight: 600; color: var(--hub-dark); margin: 24px 0 12px; }
-    .condition-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 14px 0; }
-    .condition-card h4 { font-size: 15px; font-weight: 600; color: var(--hub-dark); margin-bottom: 10px; }
-    .condition-card p { font-size: 14px; margin-bottom: 10px; }
-    .condition-card ul { margin: 10px 0; padding-left: 20px; }
-    .condition-card li { font-size: 14px; margin-bottom: 6px; color: #4b5563; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 10px; font-size: 15px; }
-    .info-box p { font-size: 14px; color: #1e40af; margin: 0; }
-    .warning-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 10px; padding: 20px; margin: 20px 0; }
-    .warning-box h4 { color: var(--hub-red); margin-bottom: 12px; font-size: 16px; }
-    .warning-box ul { margin: 0; padding-left: 20px; }
-    .warning-box li { color: #991b1b; margin-bottom: 8px; font-weight: 500; }
-    .treatment-box { background: #f0fdf4; border: 1px solid #86efac; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 10px; }
-    .treatment-box ul { margin: 0; padding-left: 20px; }
-    .treatment-box li { color: #166534; margin-bottom: 6px; font-size: 14px; }
-    .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+    .hub-intro { margin-bottom: 40px; }
+    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
+    .intro-text p { margin-bottom: 14px; }
+    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
+    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
+    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
+    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
     .comparison-table th, .comparison-table td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
     .comparison-table th { background: #f8fafc; color: var(--hub-dark); font-weight: 600; }
-    .comparison-table tr:hover { background: #f8fafc; }
-    .prognosis-box { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid var(--hub-green); border-radius: 0 10px 10px 0; padding: 18px; margin: 20px 0; }
+    .prognosis-box { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-left: 4px solid var(--hub-green); border-radius: 0 12px 12px 0; padding: 20px; margin: 20px 0; }
     .prognosis-box h4 { color: #166534; margin-bottom: 10px; }
-    .prognosis-box p { color: #166534; margin: 0; font-size: 14px; }
-    .faq-section { margin-top: 32px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 18px 0; }
+    .prognosis-box p { color: #166534; margin: 0; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
     .faq-item:last-child { border-bottom: none; }
-    .faq-item h4 { color: var(--hub-dark); margin-bottom: 10px; font-size: 15px; }
-    .faq-item p { color: #4b5563; margin: 0; font-size: 14px; line-height: 1.6; }
-    .cta-box { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-dark-light) 100%); color: #fff; border-radius: 12px; padding: 28px; text-align: center; margin: 32px 0; }
-    .cta-box h3 { color: #fff; font-size: 22px; margin-bottom: 12px; }
-    .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 18px; font-size: 15px; }
-    .cta-box .btn { display: inline-block; background: var(--hub-primary); color: var(--hub-dark); padding: 14px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: background 0.2s; }
-    .cta-box .btn:hover { background: var(--hub-primary-dark); }
-    .sources-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 16px; }
-    .sources-section p { font-size: 13px; color: #6b7280; margin-bottom: 6px; }
-    .related-links { background: #f8fafc; border-radius: 10px; padding: 20px; margin-top: 24px; }
-    .related-links h3 { color: var(--hub-dark); margin-bottom: 14px; font-size: 16px; }
-    .related-links a { display: block; padding: 10px 0; color: var(--hub-primary-dark); text-decoration: none; border-bottom: 1px solid #e5e7eb; font-size: 14px; transition: padding-left 0.2s; }
-    .related-links a:last-child { border-bottom: none; }
-    .related-links a:hover { padding-left: 8px; }
-    .breadcrumb { padding: 12px 0; font-size: 13px; color: #6b7280; }
-    .breadcrumb a { color: var(--hub-primary-dark); text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .mobile-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-dark); padding: 12px 16px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
-    .mobile-cta a { display: block; background: var(--hub-primary); color: var(--hub-dark); text-align: center; padding: 14px; border-radius: 8px; font-weight: 700; text-decoration: none; }
-    @media (max-width: 768px) { .mobile-cta { display: block; } .hub-content { padding-bottom: 100px; } }
-    .disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 24px; font-size: 13px; color: #6b7280; }
+    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
+    .faq-answer { color: #4b5563; line-height: 1.6; }
+    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
+    .sources-section ul { font-size: 0.85rem; color: #64748b; }
+    .sources-section li { margin-bottom: 6px; }
+    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 12px 16px; z-index: 100; }
+    .mobile-sticky-cta å { display: inline-block; background: white; color: var(--hub-primary); padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
+    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
   </style>
 </head>
 
 <body id="top">
   <div class="wrapper">
-    <header class="header">
+        <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+            alt="TheBackROM Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
-            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
-            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk" aria-pressed="false">EN</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
-          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false"><span></span><span></span><span></span></button>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="menu__body">
             <ul class="menu__list">
               <li class="menu__item"><a href="../../index.html" class="menu__link">Hjem</a></li>
@@ -231,369 +202,494 @@
               <li class="menu__item"><a href="../../priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="../../faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="../../contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="../../fagartikler/index.html" class="menu__link">Fagartikler</a></li>
               <li class="menu__item"><a href="../../blogg/index.html" class="menu__link">Blogg</a></li>
-              <li class="menu__item"><a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Bestill Time</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="page">
+    <main class="page" id="main">
+      <!-- Hero Section - OUTSIDE hub-wrapper like hub page -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <h1>Whiplash (Nakkesleng)</h1>
+          <p class="hub-hero__subtitle">Symptomer, behandling og prognose | Kiropraktor Mads Finstad, Majorstua</p>
+        </div>
+      </section>
+
       <div class="hub-wrapper">
         <article class="hub-main">
-          <div class="hub-hero">
-            <nav class="breadcrumb">
-              <a href="../../plager.html">Plager</a> / <a href="../nakkesmerter.html">Nakkesmerter</a> / Whiplash
-            </nav>
-            <h1>Whiplash (Nakkesleng) - Komplett Guide</h1>
-            <p class="author">Av Kiropraktor Mads Finstad, TheBackROM, Majorstua</p>
-          </div>
 
-          <div class="hub-content">
-            <div class="tldr-box">
-              <h3>TL;DR - Kort oppsummert</h3>
-              <ul>
-                <li><strong>Hva det er:</strong> Whiplash-assosierte lidelser (WAD) er symptomer etter akselerasjons-/deselerasjonsskade i nakken</li>
-                <li><strong>Vanligste symptomer:</strong> Nakkesmerter (62-100%), hodepine (60-88%), stivhet (72%), svimmelhet (25-50%)</li>
-                <li><strong>Kiropraktisk behandling:</strong> Moderat evidens for multimodal behandling (manuell terapi + øvelser)</li>
-                <li><strong>Viktig:</strong> Tidlig mobilisering gir bedre resultater enn hvile - nakkekrage frarådes</li>
-                <li class="warning"><strong>Røde flagg:</strong> Nevrologiske utfall, kraftig hodepine, synsforstyrrelser, svakhet i armer/ben</li>
-              </ul>
-            </div>
-
-            <section id="hva-er" class="hub-section">
-              <div class="section-heading">
-                <span class="section-number">1</span>
-                <h2 class="section-title">Hva er whiplash?</h2>
-              </div>
-
+          <section class="hub-intro">
+            <div class="intro-text">
               <p>Whiplash - eller nakkesleng på norsk - beskriver en skademekanisme der hodet plutselig kastes fremover og bakover. Begrepet "whiplash-assosierte lidelser" (WAD) brukes om symptomene som oppstår etter en slik skade. Det er altså ikke en diagnose i seg selv, men en beskrivelse av hvordan skaden oppsto.</p>
 
-              <p>Påkjørsel bakfra i bil er den vanligste årsaken, men whiplash kan også oppstå ved sportsulykker, fall eller andre situasjoner med brå bevegelse av nakken. <strong>83% av personer involvert i bilulykker får en viss grad av whiplash-skade</strong> (PMC, 2009).</p>
-
-              <div class="info-box">
-                <h4>Nakkeforstuving, nakkestrekk og whiplash - samme tilstand</h4>
-                <p>Begrepene "nakkeforstuving" (sprain) og "nakkestrekk" (strain) brukes ofte om hverandre. Quebec Task Force erkjente allerede i 1995 at disse tilstandene ikke kan skilles gjennom klinisk undersøkelse eller vanlig bildediagnostikk. Teoretisk refererer "forstuving" til skade på leddbånd, mens "strekk" beskriver skade på muskel-sene-enheter. I praksis har denne inndelingen ingen betydning for behandlingen.</p>
-              </div>
-
-              <h3>Forekomst</h3>
-              <p>Norge har verdens høyeste forekomst av nakkesmerter, med 6 151 tilfeller per 100 000 innbyggere ifølge Global Burden of Disease-studien. I Norden rammes omtrent 235-383 personer per 100 000 årlig av whiplash spesifikt. Kvinner har omtrent dobbelt så høy risiko som menn for å utvikle symptomer etter påkjørsel bakfra.</p>
-            </section>
-
-            <section id="wad-gradering" class="hub-section">
-              <div class="section-heading">
-                <span class="section-number">2</span>
-                <h2 class="section-title">WAD-gradering (Quebec Task Force)</h2>
-              </div>
-
-              <table class="comparison-table">
-                <thead>
-                  <tr>
-                    <th>Grad</th>
-                    <th>Beskrivelse</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>WAD 0</strong></td>
-                    <td>Ingen nakkeplager eller kliniske funn</td>
-                  </tr>
-                  <tr>
-                    <td><strong>WAD I</strong></td>
-                    <td>Nakkeplager (smerte, stivhet, ømhet) uten kliniske funn</td>
-                  </tr>
-                  <tr>
-                    <td><strong>WAD II</strong></td>
-                    <td>Nakkeplager med muskuloskeletale funn (nedsatt bevegelighet, punktømhet) - vanligst (~82%)</td>
-                  </tr>
-                  <tr>
-                    <td><strong>WAD III</strong></td>
-                    <td>Nakkeplager med nevrologiske funn (nedsatte reflekser, svakhet, sensibilitetsutfall)</td>
-                  </tr>
-                  <tr>
-                    <td><strong>WAD IV</strong></td>
-                    <td>Fraktur eller luksasjon - krever øyeblikkelig legevurdering</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <p>De aller fleste har WAD grad II. Hodepine, svimmelhet, tinnitus og kjeveproblemer kan forekomme ved alle grader.</p>
-            </section>
-
-            <section id="årsaker" class="hub-section">
-              <div class="section-heading">
-                <span class="section-number">3</span>
-                <h2 class="section-title">Årsaker og risikofaktorer</h2>
-              </div>
-
-              <h3>Vanligste årsaker</h3>
-              <div class="condition-card">
-                <h4>Bilulykker (whiplash)</h4>
-                <p>Den klassiske årsaken. Ved påkjørsel bakfra utsettes nakken for en rask akselerasjon-deselerasjon som kan skade bløtdelene.</p>
-              </div>
-
-              <div class="condition-card">
-                <h4>Idrettsskader</h4>
-                <p>Kontaktidretter som fotball, rugby og kampsport gir økt risiko gjennom direkte slag eller fall.</p>
-              </div>
-
-              <div class="condition-card">
-                <h4>Fall og ulykker</h4>
-                <p>Fall fra høyde eller plutselige bevegelser kan forårsake bløtdelsskader.</p>
-              </div>
-
-              <h3>Risikofaktorer for langvarige plager</h3>
-              <p>Forskning har identifisert flere faktorer som øker risikoen for kroniske plager (Walton et al., 2013):</p>
-              <ul>
-                <li>Høy smerteintensitet fra start (over 5,5/10)</li>
-                <li>Høy funksjonsnedsettelse fra start</li>
-                <li>Katastrofetanker (overdreven bekymring for symptomene)</li>
-                <li>Frykt for bevegelse</li>
-                <li>Tidligere nakkeproblemer</li>
-                <li>Posttraumatiske stressymptomer</li>
-              </ul>
-
-              <div class="info-box">
-                <h4>Interessant funn</h4>
-                <p>Forskning viser at selve kollisjonen (retning, hastighet, hodestøttetype) ikke påvirker prognosen nevneverdig. Bildediagnostiske funn forutsier heller ikke prognosen - psykososiale faktorer betyr langt mer.</p>
-              </div>
-            </section>
-
-            <section id="symptomer" class="hub-section">
-              <div class="section-heading">
-                <span class="section-number">4</span>
-                <h2 class="section-title">Symptomer</h2>
-              </div>
-
-              <h3>Hovedsymptomer</h3>
-              <ul>
-                <li><strong>Nakkesmerter og stivhet</strong> - 62-100% (det vanligste symptomet)</li>
-                <li><strong>Hodepine</strong> - 60-88%, ofte med utgangspunkt i nakken</li>
-                <li><strong>Stivhet i skulder og øvre rygg</strong> - ca. 72%</li>
-                <li><strong>Utmattelse/fatigue</strong> - 70-80%</li>
-                <li><strong>Svimmelhet</strong> - 25-50% (opptil 85% i noen studier)</li>
-                <li><strong>Konsentrasjonsvansker</strong> - ca. 41%</li>
-              </ul>
-
-              <div class="info-box">
-                <h4>Forsinket symptomdebut er vanlig</h4>
-                <p>Symptomene trenger ikke å komme umiddelbart. Mange opplever forsinket debut fra 12 timer til flere dager etter ulykken. Denne forsinkelsen på 12-72 timer er karakteristisk og skyldes blant annet at adrenalin og endorfiner maskerer smerte i den akutte fasen.</p>
-              </div>
-            </section>
-
-            <section id="behandling" class="hub-section">
-              <div class="section-heading">
-                <span class="section-number">5</span>
-                <h2 class="section-title">Behandling</h2>
-              </div>
-
-              <h3>Hva kan kiropraktoren gjøre?</h3>
-              <p>Systematiske oversikter viser at multimodal behandling - kombinasjonen av manuell terapi og øvelser - gir bedre resultater enn enkeltintervensjoner alene (Hidalgo et al., 2017).</p>
-
-              <div class="treatment-box">
-                <h4>Behandlingen kan inkludere:</h4>
-                <ul>
-                  <li><strong>Manuell behandling:</strong> Skånsom mobilisering av nakkeledd og muskulatur</li>
-                  <li><strong>Bløtvevsbehandling:</strong> Trigger-punkt-terapi, muskeltøyning og fasciell behandling</li>
-                  <li><strong>Aktiv rehabilitering:</strong> Spesifikke øvelser for styrke, stabilitet og bevegelighet</li>
-                  <li><strong>Råd og veiledning:</strong> Informasjon om tilstanden og hva du kan gjøre selv</li>
-                </ul>
-              </div>
-
-              <h3>Tidlig mobilisering - ikke hvile</h3>
-              <p>Et av de viktigste funnene fra whiplash-forskning er at <strong>tidlig aktivitet gir bedre resultater enn hvile og nakkekrage</strong>. En studie av McKinney (1989) viste at 46% av de som fikk beskjed om å hvile med nakkekrage fortsatt hadde symptomer etter to år, sammenlignet med bare 23% av de som fikk råd om tidlig mobilisering.</p>
-
-              <div class="prognosis-box">
-                <h4>Nakkekrage frarådes</h4>
-                <p>Nakkekrage og langvarig hvile frarådes i moderne retningslinjer. Internasjonale retningslinjer gir Grad A-anbefaling mot bruk av nakkekrage.</p>
-              </div>
-
-              <h3>Hva kan du gjøre selv?</h3>
-              <ul>
-                <li><strong>Hold deg aktiv:</strong> Unngå langvarig hvile og sengeleie - gradvis tilbakevending til normale aktiviteter fremmer heling</li>
-                <li><strong>Beveg nakken forsiktig:</strong> Rolige bevegelser i alle retninger flere ganger daglig, innenfor komfortsonen</li>
-                <li><strong>Unngå nakkekrage:</strong> Med mindre lege har ordinert det spesifikt</li>
-                <li><strong>Hjemmeøvelser:</strong> Kiropraktoren gir deg tilpassede øvelser som en del av behandlingen</li>
-              </ul>
-
-              <h3>Behandlingsforløp</h3>
-              <p>For akutt whiplash (WAD I-II) anbefaler OPTIMa-retningslinjene:</p>
-              <ul>
-                <li><strong>Akutt fase:</strong> 2-3 behandlinger per uke i 2-4 uker (6-12 behandlinger totalt)</li>
-                <li><strong>Evaluering:</strong> Vurdering av respons etter 6-12 behandlinger</li>
-                <li><strong>Vedvarende plager:</strong> 1-2 behandlinger per uke med gradvis nedtrapping, økende fokus på egentrening</li>
-              </ul>
-            </section>
-
-            <section id="rodeflagg" class="hub-section">
-              <div class="section-heading">
-                <span class="section-number">6</span>
-                <h2 class="section-title">Røde flagg - Når du må søke lege</h2>
-              </div>
-
-              <div class="warning-box">
-                <h4>KONTAKT LEGE ELLER LEGEVAKT UMIDDELBART VED:</h4>
-                <ul>
-                  <li>Kraftig hodepine som ikke gir seg, spesielt i bakhodet</li>
-                  <li>Plutselig intens hodepine ("thunderclap")</li>
-                  <li>Dobbeltsyn, synstap eller andre synsforstyrrelser</li>
-                  <li>Svakhet, nummenhet eller prikking i armer eller ben som tiltar</li>
-                  <li>Problemer med balanse eller gange</li>
-                  <li>Talevansker eller svelgevansker</li>
-                  <li>Problemer med vannlating eller avføring</li>
-                  <li>Feber kombinert med nakkestivhet</li>
-                </ul>
-                <p style="margin-top: 12px;">Disse symptomene kan indikere fraktur, arterieskade, ryggmargspåvirkning eller andre alvorlige tilstander som krever umiddelbar utredning.</p>
-              </div>
-            </section>
-
-            <section id="prognose" class="hub-section">
-              <div class="section-heading">
-                <span class="section-number">7</span>
-                <h2 class="section-title">Prognose - Hva kan du forvente?</h2>
-              </div>
-
-              <h3>Tre typiske forløp (Sterling et al., Pain, 2010)</h3>
-              <div class="condition-card">
-                <h4>Mildt forløp (~45-50%)</h4>
-                <p>Full bedring innen 2-3 måneder med minimale restsymptomer.</p>
-              </div>
-
-              <div class="condition-card">
-                <h4>Moderat forløp (~30-40%)</h4>
-                <p>Delvis bedring med vedvarende milde til moderate symptomer.</p>
-              </div>
-
-              <div class="condition-card">
-                <h4>Alvorlig forløp (~15-20%)</h4>
-                <p>Dårlig bedring med kroniske moderate til alvorlige plager.</p>
-              </div>
-
-              <div class="prognosis-box">
-                <h4>De første tre månedene er avgjørende</h4>
-                <p>Et viktig funn er at de første tre månedene er avgjørende for langtidsprognosen. En studie viste at 93% av de som var symptomfrie ved tre måneder forble symptomfrie etter to år. Motsatt hadde 86% av de med symptomer ved tre måneder fortsatt symptomer etter to år.</p>
-              </div>
-
-              <h3>Forebygging av tilbakefall</h3>
-              <p><strong>Trening reduserer risikoen for nye episoder med 53%</strong> (RR 0,47) ifølge en meta-analyse fra 2023 (Campos, JOSPT, 2023). Dette er den viktigste forebyggende faktoren. Regelmessig trening - særlig nakke- og skulderstabiliserende øvelser - anbefales på det sterkeste.</p>
-            </section>
-
-            <section id="faq" class="hub-section faq-section">
-              <div class="section-heading">
-                <span class="section-number">8</span>
-                <h2 class="section-title">Ofte stilte spørsmål</h2>
-              </div>
-
-              <div class="faq-item">
-                <h4>Hvor lang tid tar det før whiplash går over?</h4>
-                <p>De fleste opplever betydelig bedring innen 2-3 måneder. Omtrent halvparten blir helt bra, mens ca. 50% har noe vedvarende symptomer etter ett år.</p>
-              </div>
-
-              <div class="faq-item">
-                <h4>Bør jeg bruke nakkekrage?</h4>
-                <p>Nei, nakkekrage frarådes ved vanlig whiplash (Grad A-evidens mot). Forskning viser at tidlig bevegelse og aktivitet gir bedre resultater enn immobilisering.</p>
-              </div>
-
-              <div class="faq-item">
-                <h4>Hva er forskjellen på nakkeforstuving, nakkestrekk og whiplash?</h4>
-                <p>I praksis ingen. Teoretisk involverer "forstuving" leddbånd og "strekk" muskler/sener, men de kan ikke skilles gjennom undersøkelse eller bilder. Quebec Task Force erkjente dette allerede i 1995. Behandlingen er identisk.</p>
-              </div>
-
-              <div class="faq-item">
-                <h4>Kan symptomene komme flere dager etter ulykken?</h4>
-                <p>Ja, dette er vanlig. Symptomer kan oppstå fra 12 timer til flere dager (typisk 12-72 timer) etter skaden.</p>
-              </div>
-
-              <div class="faq-item">
-                <h4>Hvordan kan jeg forebygge nye episoder?</h4>
-                <p>Regelmessig trening - særlig nakke- og skulderstabiliserende øvelser - reduserer risikoen for tilbakefall med over 50%.</p>
-              </div>
-            </section>
-
-            <div class="cta-box">
-              <h3>Trenger du hjelp med whiplash?</h3>
-              <p>Kiropraktor Mads Finstad tilbyr behandling av whiplash og nakkesleng hos TheBackROM på Majorstua. Jeg tilbyr grundig undersøkelse, behandling tilpasset din situasjon, og konkrete råd for veien videre.</p>
-              <p style="margin-bottom: 16px;">Priser: Nytt problem 1105 kr | Oppfølging 780 kr</p>
-              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn">Bestill time online</a>
+              <p>Pakjorsel bakfra i bil er den vanligste årsaken, men whiplash kan også oppstå ved sportsulykker, fall eller andre situasjoner med bra bevegelse av nakken. <strong>83% av personer involvert i bilulykker får en viss grad av whiplash-skade</strong> (PMC, 2009).</p>
             </div>
 
-            <div class="related-links">
+            <div class="premium-summary-card">
+              <h3>Kort oppsummert</h3>
+              <ul>
+                <li><strong>Hva det er:</strong> Whiplash-assosierte lidelser (WAD) er symptomer etter akselerasjons-/deselerasjonsskade i nakken</li>
+                <li><strong>Vanligste symptomer:</strong> <a href="../nakkesmerter.html">Nakkesmerter</a> (62-100%), <a href="cervikogen-hodepine.html">hodepine</a> (60-88%), stivhet (72%), <a href="../svimmelhet/nakkesvimmelhet.html">svimmelhet</a> (25-50%)</li>
+                <li><strong>Kiropraktisk behandling:</strong> Moderat evidens for multimodal behandling (manuell terapi + øvelser)</li>
+                <li><strong>Viktig:</strong> Tidlig mobilisering gir bedre resultater enn hvile - nakkekrage frarades</li>
+              </ul>
+            </div>
+
+            <!-- Related sub-articles - directly under intro -->
+            <nav class="hub-subnav">
               <h3>Relaterte artikler</h3>
-              <a href="../nakkesmerter.html">← Tilbake til Nakkesmerter - Komplett guide</a>
-              <a href="nakkeprolaps.html">Nakkeprolaps og Nerve i Klem</a>
-              <a href="torticollis.html">Akutt torticollis (Kink i nakken)</a>
-              <a href="cervikogen-hodepine.html">Cervikogen hodepine</a>
+              <p style="margin-bottom: 16px; color: #64748b;">Utforsk mer om nakkeproblemer og relaterte tilstander:</p>
+              <div class="hub-subnav__grid hub-subnav__grid--detailed">
+                <a href="../nakkesmerter.html" class="hub-subnav__card">
+                  <strong>Nakkesmerter</strong>
+                  <span>Hovedartikkel om nakkeproblemer</span>
+                </a>
+                <a href="nakkesleng-hodepine.html" class="hub-subnav__card">
+                  <strong>Nakkesleng og hodepine</strong>
+                  <span>Hodepine etter whiplash</span>
+                </a>
+                <a href="torticollis.html" class="hub-subnav__card">
+                  <strong>Torticollis</strong>
+                  <span>Skjev nakke</span>
+                </a>
+                <a href="rode-flagg-nakkesmerter.html" class="hub-subnav__card">
+                  <strong>Røde flagg</strong>
+                  <span>Når du må søke hjelp</span>
+                </a>
+              </div>
+            </nav>
+
+            <!-- Red Flag Alert -->
+            <div class="red-flag-alert">
+              <h4>Når må du søke hjelp umiddelbart?</h4>
+              <p>Ved nevrologiske utfall, kraftig hodepine, synsforstyrrelser, eller svakhet i armer/ben - ring 113 eller dra til legevakt.</p>
+              <a href="rode-flagg-nakkesmerter.html">Les mer om røde flagg</a>
+            </div>
+          </section>
+
+          <!-- SECTION 1: Hva er whiplash -->
+          <section class="hub-section" id="s1">
+            <div class="section-header">
+              <span class="section-number">1</span>
+              <h2>Hva er whiplash?</h2>
             </div>
 
-            <div class="sources-section">
-              <h3>Kilder</h3>
-              <p>Spitzer WO et al. Quebec Task Force on WAD. Spine 1995.</p>
-              <p>Carroll LJ et al. Bone and Joint Decade Task Force. Spine 2008.</p>
-              <p>Sterling M et al. Pain 2010.</p>
-              <p>McKinney LA et al. BMJ 1989.</p>
-              <p>Bussières AE et al. JMPT 2016.</p>
-              <p>Walton DM et al. JOSPT 2013.</p>
-              <p>Campos TF et al. JOSPT 2023.</p>
-              <p>Hidalgo B et al. J Man Manip Ther 2017.</p>
+            <div class="info-box">
+              <h4>Nakkeforstuving, nakkestrekk og whiplash - samme tilstand</h4>
+              <p>Begrepene "nakkeforstuving" (sprain) og "nakkestrekk" (strain) brukes ofte om hverandre. Quebec Task Force erkjente allerede i 1995 at disse tilstandene ikke kan skilles gjennom klinisk undersøkelse eller vanlig bildediagnostikk. Teoretisk refererer "forstuving" til skade på leddbånd, mens "strekk" beskriver skade på muskel-sene-enheter. I praksis har denne inndelingen ingen betydning for behandlingen.</p>
             </div>
 
-            <!-- Relaterte Fagartikler -->
-            <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0;">
-              <h3 style="color: #0369a1; margin-top: 0; margin-bottom: 16px;">Relaterte fagartikler</h3>
-              <p style="color: #334155; margin-bottom: 16px;">Vil du lære mer om sjeldne årsaker til hals- og nakkesmerter?</p>
-              <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="margin-bottom: 10px;"><a href="../../fagartikler/eagle-syndrom.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Eagle syndrom</a> - Forlenget styloidutløper som årsak til hals- og kjevesmerter</li>
-                <li style="margin-bottom: 10px;"><a href="../../fagartikler/glossopharyngeal-nevralgi.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Glossopharyngeal nevralgi</a> - Intense smerter i hals, tunge og øre</li>
-                <li style="margin-bottom: 0;"><a href="../../fagartikler/icr-intern-carotis.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Carotidyni og carotisdisseksjon</a> - Vaskulære årsaker til hals- og ansiktssmerte</li>
+            <h3>Forekomst</h3>
+            <p>Norge har verdens høyeste forekomst av nakkesmerter, med 6 151 tilfeller per 100 000 innbyggere ifolge Global Burden of Disease-studien. I Norden rammes omtrent 235-383 personer per 100 000 årlig av whiplash spesifikt. Kvinner har omtrent dobbelt så hoy risiko som menn for å utvikle symptomer etter pakjorsel bakfra.</p>
+
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="stat-number">83%</span>
+                <span class="stat-label">får whiplash-skade ved bilulykke</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">235-383</span>
+                <span class="stat-label">tilfeller per 100 000 i Norden</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2x</span>
+                <span class="stat-label">hoyere risiko for kvinner</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 2: WAD-gradering -->
+          <section class="hub-section" id="s2">
+            <div class="section-header">
+              <span class="section-number">2</span>
+              <h2>WAD-gradering (Quebec Task Force)</h2>
+            </div>
+
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Grad</th>
+                  <th>Beskrivelse</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>WAD 0</strong></td>
+                  <td>Ingen nakkeplager eller kliniske funn</td>
+                </tr>
+                <tr>
+                  <td><strong>WAD I</strong></td>
+                  <td>Nakkeplager (smerte, stivhet, omhet) uten kliniske funn</td>
+                </tr>
+                <tr>
+                  <td><strong>WAD II</strong></td>
+                  <td>Nakkeplager med muskuloskeletale funn (nedsatt bevegelighet, punktomhet) - vanligst (~82%)</td>
+                </tr>
+                <tr>
+                  <td><strong>WAD III</strong></td>
+                  <td>Nakkeplager med nevrologiske funn (nedsatte reflekser, svakhet, sensibilitetsutfall)</td>
+                </tr>
+                <tr>
+                  <td><strong>WAD IV</strong></td>
+                  <td>Fraktur eller luksasjon - krever øyeblikkelig legevurdering</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>De aller fleste har WAD grad II. Hodepine, svimmelhet, tinnitus og kjeveproblemer kan forekomme ved alle grader.</p>
+          </section>
+
+          <!-- SECTION 3: Årsaker og risikofaktorer -->
+          <section class="hub-section" id="s3">
+            <div class="section-header">
+              <span class="section-number">3</span>
+              <h2>Årsaker og risikofaktorer</h2>
+            </div>
+
+            <h3>Vanligste årsaker</h3>
+            <div class="condition-card">
+              <h4>Bilulykker (whiplash)</h4>
+              <p>Den klassiske årsaken. Ved pakjorsel bakfra utsettes nakken for en rask akselerasjon-deselerasjon som kan skade blotdelene.</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Idrettsskader</h4>
+              <p>Kontaktidretter som fotball, rugby og kampsport gir økt risiko gjennom direkte slag eller fall.</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Fall og ulykker</h4>
+              <p>Fall fra hoyde eller plutselige bevegelser kan forårsake blotdelsskader.</p>
+            </div>
+
+            <h3>Risikofaktorer for langvarige plager</h3>
+            <p>Forskning har identifisert flere faktorer som oker risikoen for kroniske plager (Walton et al., 2013):</p>
+            <ul>
+              <li>Hoy smerteintensitet fra start (over 5,5/10)</li>
+              <li>Hoy funksjonsnedsettelse fra start</li>
+              <li>Katastrofetanker (overdreven bekymring for symptomene)</li>
+              <li>Frykt for bevegelse</li>
+              <li>Tidligere nakkeproblemer</li>
+              <li>Posttraumatiske stressymptomer</li>
+            </ul>
+
+            <div class="info-box">
+              <h4>Interessant funn</h4>
+              <p>Forskning viser at selve kollisjonen (retning, hastighet, hodestottetype) ikke pavirker prognosen nevneverdig. Bildediagnostiske funn forutsier heller ikke prognosen - psykososiale faktorer betyr langt mer.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 4: Symptomer -->
+          <section class="hub-section" id="s4">
+            <div class="section-header">
+              <span class="section-number">4</span>
+              <h2>Symptomer</h2>
+            </div>
+
+            <h3>Hovedsymptomer</h3>
+            <ul>
+              <li><strong>Nakkesmerter og stivhet</strong> - 62-100% (det vanligste symptomet)</li>
+              <li><strong>Hodepine</strong> - 60-88%, ofte med utgangspunkt i nakken</li>
+              <li><strong>Stivhet i skulder og ovre rygg</strong> - ca. 72%</li>
+              <li><strong>Utmattelse/fatigue</strong> - 70-80%</li>
+              <li><strong>Svimmelhet</strong> - 25-50% (opptil 85% i noen studier)</li>
+              <li><strong>Konsentrasjonsvansker</strong> - ca. 41%</li>
+            </ul>
+
+            <div class="info-box">
+              <h4>Forsinket symptomdebut er vanlig</h4>
+              <p>Symptomene trenger ikke å komme umiddelbart. Mange opplever forsinket debut fra 12 timer til flere dager etter ulykken. Denne forsinkelsen på 12-72 timer er karakteristisk og skyldes blant annet at adrenalin og endorfiner maskerer smerte i den akutte fasen.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 5: Behandling -->
+          <section class="hub-section" id="s5">
+            <div class="section-header">
+              <span class="section-number">5</span>
+              <h2>Behandling</h2>
+            </div>
+
+            <h3>Hva kan kiropraktoren gjøre?</h3>
+            <p>Systematiske oversikter viser at multimodal behandling - kombinasjonen av manuell terapi og øvelser - gir bedre resultater enn enkeltintervensjoner alene (Hidalgo et al., 2017).</p>
+
+            <div class="treatment-box">
+              <h4>Behandlingen kan inkludere:</h4>
+              <ul>
+                <li><strong>Manuell behandling:</strong> Skansom mobilisering av nakkeledd og muskulatur</li>
+                <li><strong>Bløtvevsbehandling:</strong> <a href="triggerpunkter-nakke.html">Triggerpunkt</a>-terapi, muskeltoying og fasciell behandling</li>
+                <li><strong>Aktiv rehabilitering:</strong> Spesifikke øvelser for styrke, stabilitet og bevegelighet</li>
+                <li><strong>Rad og veiledning:</strong> Informasjon om tilstanden og hva du kan gjøre selv</li>
               </ul>
             </div>
 
-            <div class="disclaimer">
-              <strong>Medisinsk ansvarsfraskrivelse:</strong> Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon.
+            <h3>Tidlig mobilisering - ikke hvile</h3>
+            <p>Et av de viktigste funnene fra whiplash-forskning er at <strong>tidlig aktivitet gir bedre resultater enn hvile og nakkekrage</strong>. En studie av McKinney (1989) viste at 46% av de som fikk beskjed om å hvile med nakkekrage fortsatt hadde symptomer etter to år, sammenlignet med bare 23% av de som fikk rad om tidlig mobilisering.</p>
+
+            <div class="prognosis-box">
+              <h4>Nakkekrage frarades</h4>
+              <p>Nakkekrage og langvarig hvile frarades i moderne retningslinjer. Internasjonale retningslinjer gir Grad A-anbefaling mot bruk av nakkekrage.</p>
             </div>
+
+            <h3>Hva kan du gjøre selv?</h3>
+            <ul>
+              <li><strong>Hold deg aktiv:</strong> Unnga langvarig hvile og sengeleie - gradvis tilbakevending til normale aktiviteter fremmer heling</li>
+              <li><strong>Beveg nakken forsiktig:</strong> Rolige bevegelser i alle retninger flere ganger daglig, innenfor komfortsonen</li>
+              <li><strong>Unnga nakkekrage:</strong> Med mindre lege har ordinert det spesifikt</li>
+              <li><strong>Hjemmeøvelser:</strong> Kiropraktoren gir deg tilpassede øvelser som en del av behandlingen</li>
+            </ul>
+
+            <h3>Behandlingsforløp</h3>
+            <p>For akutt whiplash (WAD I-II) anbefaler OPTIMa-retningslinjene:</p>
+            <ul>
+              <li><strong>Akutt fase:</strong> 2-3 behandlinger per uke i 2-4 uker (6-12 behandlinger totalt)</li>
+              <li><strong>Evaluering:</strong> Vurdering av respons etter 6-12 behandlinger</li>
+              <li><strong>Vedvarende plager:</strong> 1-2 behandlinger per uke med gradvis nedtrapping, økende fokus på egentrening</li>
+            </ul>
+          </section>
+
+          <!-- SECTION 6: Røde flagg -->
+          <section class="hub-section" id="s6">
+            <div class="section-header">
+              <span class="section-number">6</span>
+              <h2>Røde flagg - Når du må søke lege</h2>
+            </div>
+
+            <div class="red-flag-box">
+              <h3>KONTAKT LEGE ELLER LEGEVAKT UMIDDELBART VED:</h3>
+              <ul>
+                <li>Kraftig hodepine som ikke gir seg, spesielt i bakhodet</li>
+                <li>Plutselig intens hodepine ("thunderclap")</li>
+                <li>Dobbeltsyn, synstap eller andre synsforstyrrelser</li>
+                <li>Svakhet, nummenhet eller prikking i armer eller ben som tiltar</li>
+                <li>Problemer med balanse eller gange</li>
+                <li>Talevansker eller svelgevansker</li>
+                <li>Problemer med vannlating eller avforing</li>
+                <li>Feber kombinert med nakkestivhet</li>
+              </ul>
+              <p style="margin-top: 12px;">Disse symptomene kan indikere fraktur, arterieskade, ryggmargspåvirkning eller andre alvorlige tilstander som krever umiddelbar utredning.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 7: Prognose -->
+          <section class="hub-section" id="s7">
+            <div class="section-header">
+              <span class="section-number">7</span>
+              <h2>Prognose - Hva kan du forvente?</h2>
+            </div>
+
+            <h3>Tre typiske forløp (Sterling et al., Pain, 2010)</h3>
+            <div class="condition-card">
+              <h4>Mildt forløp (~45-50%)</h4>
+              <p>Full bedring innen 2-3 måneder med minimale restsymptomer.</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Moderat forløp (~30-40%)</h4>
+              <p>Delvis bedring med vedvarende milde til moderate symptomer.</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Alvorlig forløp (~15-20%)</h4>
+              <p>Darlig bedring med kroniske moderate til alvorlige plager.</p>
+            </div>
+
+            <div class="prognosis-box">
+              <h4>De første tre månedene er avgjørende</h4>
+              <p>Et viktig funn er at de første tre månedene er avgjørende for langtidsprognosen. En studie viste at 93% av de som var symptomfrie ved tre måneder forble symptomfrie etter to år. Motsatt hadde 86% av de med symptomer ved tre måneder fortsatt symptomer etter to år.</p>
+            </div>
+
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="stat-number">~50%</span>
+                <span class="stat-label">blir bra innen 3 mnd</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">53%</span>
+                <span class="stat-label">redusert tilbakefallsrisiko med trening</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">93%</span>
+                <span class="stat-label">symptomfrie ved 3 mnd forblir bra</span>
+              </div>
+            </div>
+
+            <h3>Forebygging av tilbakefall</h3>
+            <p><strong>Trening reduserer risikoen for nye episoder med 53%</strong> (RR 0,47) ifolge en meta-analyse fra 2023 (Campos, JOSPT, 2023). Dette er den viktigste forebyggende faktoren. Regelmessig trening - særlig nakke- og skulderstabiliserende øvelser - anbefales på det sterkeste.</p>
+          </section>
+
+          <!-- SECTION 8: FAQ -->
+          <section class="hub-section" id="s8">
+            <div class="section-header">
+              <span class="section-number">8</span>
+              <h2>Ofte stilte spørsmål</h2>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Hvor lang tid tar det for whiplash går over?</div>
+              <div class="faq-answer">De fleste opplever betydelig bedring innen 2-3 måneder. Omtrent halvparten blir helt bra, mens ca. 50% har noe vedvarende symptomer etter ett år.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Bør jeg bruke nakkekrage?</div>
+              <div class="faq-answer">Nei, nakkekrage frarades ved vanlig whiplash (Grad A-evidens mot). Forskning viser at tidlig bevegelse og aktivitet gir bedre resultater enn immobilisering.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Hva er forskjellen på nakkeforstuving, nakkestrekk og whiplash?</div>
+              <div class="faq-answer">I praksis ingen. Teoretisk involverer "forstuving" leddbånd og "strekk" muskler/sener, men de kan ikke skilles gjennom undersøkelse eller bilder. Quebec Task Force erkjente dette allerede i 1995. Behandlingen er identisk.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Kan symptomene komme flere dager etter ulykken?</div>
+              <div class="faq-answer">Ja, dette er vanlig. Symptomer kan oppstå fra 12 timer til flere dager (typisk 12-72 timer) etter skaden.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Hvordan kan jeg forebygge nye episoder?</div>
+              <div class="faq-answer">Regelmessig trening - særlig nakke- og skulderstabiliserende øvelser - reduserer risikoen for tilbakefall med over 50%.</div>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <div class="hub-cta">
+            <h3>Trenger du hjelp med whiplash?</h3>
+
+            <p>Kiropraktor Mads Finstad tilbyr behandling av whiplash og nakkesleng hos TheBackROM på Majorstua. Jeg tilbyr grundig undersøkelse, behandling tilpasset din situasjon, og konkrete rad for veien videre.</p>
+
+            <p><strong>Priser:</strong> Nytt problem 1105 kr | Oppfølg 780 kr</p>
+
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn">Bestill time</a>
           </div>
+
+          <!-- Related articles -->
+          <div class="related-box">
+            <h3>Relaterte artikler</h3>
+            <a href="../nakkesmerter.html">Nakkesmerter - Hovedartikkel</a>
+            <a href="nakkesleng-hodepine.html">Nakkesleng og hodepine</a>
+            <a href="torticollis.html">Torticollis (skjev nakke)</a>
+            <a href="rode-flagg-nakkesmerter.html">Røde flagg</a>
+          </div>
+
+          <!-- Relaterte Fagartikler -->
+          <div class="info-box">
+            <h4>Relaterte fagartikler</h4>
+            <p style="margin-bottom: 12px;">Vil du lære mer om sjeldne årsaker til hals- og nakkesmerter?</p>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 10px;"><a href="../kjeve/eagle-syndrom.html" style="color: var(--hub-blue); text-decoration: none; font-weight: 500;">Eagle syndrom</a> - Forlenget styloidutloper som årsak til hals- og kjevesmerter</li>
+              <li style="margin-bottom: 10px;"><a href="../kjeve/glossopharyngeal-nevralgi.html" style="color: var(--hub-blue); text-decoration: none; font-weight: 500;">Glossopharyngeal nevralgi</a> - Intense smerter i hals, tunge og ore</li>
+              <li style="margin-bottom: 0;"><a href="../kjeve/icr-intern-carotis.html" style="color: var(--hub-blue); text-decoration: none; font-weight: 500;">Carotidyni og carotisdisseksjon</a> - Vaskulære årsaker til hals- og ansiktssmerte</li>
+            </ul>
+          </div>
+
+          <!-- Disclaimer -->
+          <p class="disclaimer"><strong>Medisinsk ansvarsfraskrivelse:</strong> Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsok helsepersonell dersom du er usikker på din situasjon.</p>
+
+          <!-- Sources -->
+          <section class="sources-section">
+            <h3>Kilder</h3>
+            <ul>
+              <li>Spitzer WO et al. Quebec Task Force on WAD. Spine 1995.</li>
+              <li>Carroll LJ et al. Bone and Joint Decade Task Force. Spine 2008.</li>
+              <li>Sterling M et al. Pain 2010.</li>
+              <li>McKinney LA et al. BMJ 1989.</li>
+              <li>Bussieres AE et al. JMPT 2016.</li>
+              <li>Walton DM et al. JOSPT 2013.</li>
+              <li>Campos TF et al. JOSPT 2023.</li>
+              <li>Hidalgo B et al. J Man Manip Ther 2017.</li>
+            </ul>
+          </section>
+
+          <p class="updated">Sist oppdatert: Januar 2026</p>
+
         </article>
 
-        <nav class="hub-sidenav" aria-label="Innholdsnavigasjon">
-          <div class="sidenav-inner">
-            <div class="sidenav-title">Innhold</div>
-            <a href="#hva-er" class="sidenav-link">Hva er whiplash?</a>
-            <a href="#wad-gradering" class="sidenav-link">WAD-gradering</a>
-            <a href="#årsaker" class="sidenav-link">Årsaker</a>
-            <a href="#symptomer" class="sidenav-link">Symptomer</a>
-            <a href="#behandling" class="sidenav-link">Behandling</a>
-            <a href="#rodeflagg" class="sidenav-link">Røde flagg</a>
-            <a href="#prognose" class="sidenav-link">Prognose</a>
-            <a href="#faq" class="sidenav-link">FAQ</a>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="sidenav-cta">Bestill time</a>
+        <!-- Sidebar (desktop only) -->
+        <aside class="hub-sidebar">
+          <!-- Conversion Card -->
+          <div class="hub-conversion-card">
+            <img src="../../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
+            <h3>Har du whiplash?</h3>
+            <p>Jeg hjelper deg med å finne riktig behandling og lindring.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+            </div>
           </div>
-        </nav>
-      </div>
 
-      <div class="mobile-cta">
-        <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available">Bestill time</a>
+          <!-- Table of Contents -->
+          <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
+            <h3>Innhold</h3>
+            <ul>
+              <li><a href="#s1">Hva er whiplash?</a></li>
+              <li><a href="#s2">WAD-gradering</a></li>
+              <li><a href="#s3">Årsaker</a></li>
+              <li><a href="#s4">Symptomer</a></li>
+              <li><a href="#s5">Behandling</a></li>
+              <li><a href="#s6">Røde flagg</a></li>
+              <li><a href="#s7">Prognose</a></li>
+              <li><a href="#s8">FAQ</a></li>
+            </ul>
+          </nav>
+        </aside>
+
       </div>
     </main>
 
-    <footer class="footer">
+    <!-- Mobile sticky CTA -->
+    <div class="mobile-sticky-cta">
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn-primary">Bestill time</a>
+      <a href="tel:+4793043062" class="btn btn-outline">Ring</a>
+    </div>
+
+        <footer class="footer">
       <div class="footer__container">
+        <!-- Left Column -->
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"><img loading="lazy" decoding="async" src="../../pictures.final/branding/icons/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook" /></a>
-            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"><img src="../../pictures.final/branding/icons/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram" loading="lazy" decoding="async" /></a>
-            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"><img src="../../pictures.final/branding/icons/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube" loading="lazy" decoding="async" /></a>
-            <a href="../../contact.html" class="footer__social-link"><img loading="lazy" decoding="async" src="../../pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../../images/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
           </div>
         </div>
+
+        <!-- Center Column -->
         <div class="footer__center">
-          <div class="footer__logo"><a href="../../index.html" class="logo"><img src="../../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a></div>
+          <div class="footer__logo">
+            <img src="../../images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
           <div class="back-to-top-wrapper">
-            <p class="back-to-top-text">Tilbake til start</p>
-            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden"><i class="fas fa-arrow-up" aria-hidden="true"></i> Opp</a>
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
           </div>
         </div>
+
+        <!-- Right Column -->
         <div class="footer__right">
           <div class="footer__hours">
             <h3>Åpningstider</h3>
@@ -609,52 +705,52 @@
           </div>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <a href="../../personvern.html" class="footer__policy">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 TheBackROM - Alle rettigheter reservert</p>
+        <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 TheBackROM – Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
-     class="mobile-sticky-cta"
-     aria-label="Bestill time hos kiropraktor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Bestill time
-  </a>
-
-
 
   <script src="../../js/script.min.js" defer></script>
   <script src="../../js/language-toggle.min.js" defer></script>
   <script src="../../js/modern-enhancements.min.js" defer></script>
+
+  <!-- TOC scroll tracking -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('.hub-section');
-      const navLinks = document.querySelectorAll('.sidenav-link');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+
+      if (sections.length === 0 || navLinks.length === 0) return;
+
       function updateActiveLink() {
-        let currentSection = '';
+        let current = 's1';
+        const scrollPos = window.scrollY + 200;
+
         sections.forEach(section => {
           const sectionTop = section.offsetTop;
-          if (window.scrollY >= sectionTop - 150) {
-            currentSection = section.getAttribute('id');
+          if (scrollPos >= sectionTop) {
+            current = section.getAttribute('id');
           }
         });
+
         navLinks.forEach(link => {
           link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + currentSection) {
+          const href = link.getAttribute('href');
+          if (href && href === '#' + current) {
             link.classList.add('active');
           }
         });
       }
+
       window.addEventListener('scroll', updateActiveLink);
       updateActiveLink();
     });
   </script>
 </body>
+
 </html>
+
+

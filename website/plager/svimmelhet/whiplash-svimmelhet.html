@@ -11,9 +11,9 @@
   <meta name="view-transition" content="same-origin" />
 
   <link rel="manifest" href="../../manifest.json" />
-  <link rel="apple-touch-icon" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
   <link rel="preload" as="style" href="../../css/main.min.css" />
-  <link rel="icon" type="image/png" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Nakkesleng (Whiplash) og Svimmelhet - Årsaker og Behandling | Kiropraktor Oslo</title>
 
   <meta name="description" content="Opplever du svimmelhet etter nakkesleng? 40-70% får dette symptomet. Kiropraktor Mads Finstad på Majorstua hjelper deg med grundig utredning og behandling.">
@@ -70,27 +70,83 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="" /></noscript>
 
   <link rel="stylesheet" href="../../css/main.min.css?v=20260101">
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css">
+  <link rel="stylesheet" href="../../css/hub-article.css">
+
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
   <link rel="preload" as="style" href="../../css/font-awesome-minimal.css">
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
+
+  <style>
+    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+    .hub-intro { margin-bottom: 40px; }
+    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
+    .intro-text p { margin-bottom: 14px; }
+    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
+    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
+    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
+    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
+    .faq-answer { color: #4b5563; line-height: 1.6; }
+    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
+    .sources-section ul { font-size: 0.85rem; color: #64748b; }
+    .sources-section li { margin-bottom: 6px; }
+    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 12px 16px; z-index: 100; }
+    .mobile-sticky-cta å { display: inline-block; background: white; color: var(--hub-primary); padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
+    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
+  </style>
 </head>
 
 <body id="top">
   <div class="wrapper">
-    <header class="header">
+        <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+            alt="TheBackROM Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
-            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
-            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk" aria-pressed="false">EN</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
-          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false"><span></span><span></span><span></span></button>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="menu__body">
             <ul class="menu__list">
               <li class="menu__item"><a href="../../index.html" class="menu__link">Hjem</a></li>
@@ -100,81 +156,194 @@
               <li class="menu__item"><a href="../../priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="../../faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="../../contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="../../fagartikler/index.html" class="menu__link">Fagartikler</a></li>
               <li class="menu__item"><a href="../../blogg/index.html" class="menu__link">Blogg</a></li>
-              <li class="menu__item"><a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Bestill Time</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-    <main class="page">
-      <article class="blog-post">
-        <div class="blog-post__container">
-          <header class="blog-post__header">
-            <nav class="breadcrumb" style="margin-bottom: 12px; font-size: 13px;">
-              <a href="../svimmelhet.html" style="color: rgba(255,255,255,0.7);">Svimmelhet</a>
-              <span style="color: rgba(255,255,255,0.5);"> / </span>
-              <span style="color: rgba(255,255,255,0.9);">Whiplash og svimmelhet</span>
-            </nav>
-            <span class="blog-post__category">Diagnose</span>
-            <h1 class="blog-post__title">Nakkesleng (Whiplash) og Svimmelhet</h1>
-            <p style="color: rgba(255,255,255,0.8); font-size: 16px; margin-top: 8px;">Når nakken er årsaken til at verden gynger</p>
-            <div class="blog-post__meta">
-              <span><i class="fas fa-calendar" aria-hidden="true"></i> Januar 2026</span>
-              <span><i class="fas fa-user" aria-hidden="true"></i> Mads Finstad</span>
-              <span><i class="fas fa-clock" aria-hidden="true"></i> 12 min lesing</span>
-            </div>
-          </header>
 
-          <div class="blog-post__content">
-            <div class="tldr-box" style="background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%); border-left: 4px solid #e8a838; border-radius: 0 10px 10px 0; padding: 20px; margin-bottom: 28px;">
-              <h3 style="font-size: 15px; color: #1a1a2e; margin-bottom: 12px;">TL;DR - Kort oppsummert</h3>
-              <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Hva det er:</strong> Nakkesleng er en bløtdelsskade i nakken som oppstår ved rask akselerasjon-deselerasjon, oftest ved bilulykker</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Svimmelhet:</strong> 40-70% av de med vedvarende nakkeslengplager opplever svimmelhet</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Behandling:</strong> Multimodal tilnærming (manuell terapi + øvelser + informasjon) har sterk evidens</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Prognose:</strong> 50% bedres innen 3-6 måneder. 25-40% har vedvarende plager etter ett år</li>
+    <main class="page" id="main">
+      <!-- Hero Section - OUTSIDE hub-wrapper like hub page -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <h1>Nakkesleng (Whiplash) og Svimmelhet</h1>
+          <p class="hub-hero__subtitle">Når nakken er årsaken til at verden gynger | Kiropraktor Mads Finstad, Majorstua</p>
+        </div>
+      </section>
+
+      <div class="hub-wrapper">
+        <article class="hub-main">
+
+          <section class="hub-intro">
+            <div class="intro-text">
+              <p>Nakkesleng (whiplash) beskriver skademekanismen - ikke diagnosen i seg selv. Hodet kastes raskt fremover og bakover (eller omvendt) i en "piskebevegelse". Dette skjer så fort at musklene ikke rekker å beskytte nakken.</p>
+
+              <p>I Norge rammes omtrent <strong>30 000 personer årlig</strong> av nakkesleng. Skandinaviske studier viser en insidens på 235 per 100 000 innbyggere. Kvinner utgjør nesten to tredjedeler av de rammede, trolig på grunn av anatomiske forskjeller i nakkemuskulatur.</p>
+            </div>
+
+            <div class="premium-summary-card">
+              <h3>Kort oppsummert</h3>
+              <ul>
+                <li><strong>Hva det er:</strong> Bløtdelsskade i nakken ved rask akselerasjon-deselerasjon, oftest ved bilulykker</li>
+                <li><strong>Svimmelhet:</strong> 40-70% av de med vedvarende nakkeslengplager opplever svimmelhet</li>
+                <li><strong>Behandling:</strong> Multimodal tilnærming (manuell terapi + øvelser + informasjon) har sterk evidens</li>
+                <li><strong>Prognose:</strong> 50% bedres innen 3-6 måneder. 25-40% har vedvarende plager etter ett år</li>
               </ul>
             </div>
 
-            <h2>Hva er nakkesleng?</h2>
-            <p>Nakkesleng (whiplash) beskriver skademekanismen - ikke diagnosen i seg selv. Hodet kastes raskt fremover og bakover (eller omvendt) i en "piskebevegelse". Dette skjer så fort at musklene ikke rekker å beskytte nakken.</p>
-            <p>I Norge rammes omtrent <strong>30 000 personer årlig</strong> av nakkesleng. Skandinaviske studier viser en insidens på 235 per 100 000 innbyggere. Kvinner utgjør nesten to tredjedeler av de rammede, trolig på grunn av anatomiske forskjeller i nakkemuskulatur.</p>
+            <!-- Related sub-articles - directly under intro -->
+            <nav class="hub-subnav">
+              <h3>Relaterte svimmelhetsdiagnoser</h3>
+              <p style="margin-bottom: 16px; color: #64748b;">Utforsk andre typer svimmelhet og relaterte tilstander:</p>
+              <div class="hub-subnav__grid hub-subnav__grid--detailed">
+                <a href="nakkesvimmelhet.html" class="hub-subnav__card">
+                  <strong>Nakkesvimmelhet</strong>
+                  <span>Cervikogen svimmelhet</span>
+                </a>
+                <a href="krystallsyke-bppv.html" class="hub-subnav__card">
+                  <strong>Krystallsyke (BPPV)</strong>
+                  <span>Vanligste svimmelhetsårsak</span>
+                </a>
+                <a href="post-hjernerystelse.html" class="hub-subnav__card">
+                  <strong>Post-hjernerystelse</strong>
+                  <span>Svimmelhet etter hodeskade</span>
+                </a>
+                <a href="pppd-kronisk-svimmelhet.html" class="hub-subnav__card">
+                  <strong>PPPD</strong>
+                  <span>Kronisk funksjonell svimmelhet</span>
+                </a>
+              </div>
+            </nav>
+
+            <!-- Red Flag Alert -->
+            <div class="red-flag-alert">
+              <h4>Når må du søke hjelp umiddelbart?</h4>
+              <p>Ved nevrologiske utfall, endret bevissthet, kraftig hodepine eller blære-/tarmforstyrrelser etter nakkesleng - ring 113 eller dra til legevakt.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 1: WAD-klassifisering -->
+          <section class="hub-section" id="s1">
+            <div class="section-header">
+              <span class="section-number">1</span>
+              <h2>WAD-klassifisering (Whiplash Associated Disorders)</h2>
+            </div>
+
             <p>90% av nakkeslengskader klassifiseres som WAD grad I-II, altså nakkeplager med eller uten muskuloskeletale funn, men uten nevrologiske tegn.</p>
 
-            <h3>WAD-klassifisering (Whiplash Associated Disorders)</h3>
-            <ul>
-              <li><strong>Grad 0:</strong> Ingen plager, ingen funn</li>
-              <li><strong>Grad I:</strong> Nakkesmerter/stivhet, men normale funn ved undersøkelse</li>
-              <li><strong>Grad II:</strong> Nakkesmerter OG nedsatt bevegelighet/ømme punkter. De fleste ligger her</li>
-              <li><strong>Grad III:</strong> Nakkesmerter OG nevrologiske utfall (svekkede reflekser, nummenhet i armen)</li>
-              <li><strong>Grad IV:</strong> Brudd eller dislokasjon - krever sykehusbehandling</li>
-            </ul>
+            <div class="condition-card">
+              <h4>Grad 0</h4>
+              <p>Ingen plager, ingen funn</p>
+            </div>
 
-            <h2>Årsaker og risikofaktorer</h2>
+            <div class="condition-card">
+              <h4>Grad I</h4>
+              <p>Nakkesmerter/stivhet, men normale funn ved undersøkelse</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Grad II (vanligst)</h4>
+              <p>Nakkesmerter OG nedsatt bevegelighet/ømme punkter. De fleste ligger her.</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Grad III</h4>
+              <p>Nakkesmerter OG nevrologiske utfall (svekkede reflekser, nummenhet i armen)</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Grad IV</h4>
+              <p>Brudd eller dislokasjon - krever sykehusbehandling</p>
+            </div>
+          </section>
+
+          <!-- SECTION 2: Årsaker -->
+          <section class="hub-section" id="s2">
+            <div class="section-header">
+              <span class="section-number">2</span>
+              <h2>Årsaker og risikofaktorer</h2>
+            </div>
+
             <p><strong>Fra vanligst til sjeldnest:</strong></p>
-            <ol>
-              <li><strong>Bilulykker</strong> - særlig påkjørsler bakfra</li>
-              <li><strong>Idrettsskader</strong> - ishockey, bryting, kontaktidretter</li>
-              <li><strong>Fall</strong> - fra høyde eller på glatt underlag</li>
-              <li><strong>Vold/overfall</strong></li>
-              <li><strong>Fritidsaktiviteter</strong> - sjeldne tilfeller fra berg-og-dal-baner o.l.</li>
-            </ol>
 
-            <h2>Hvorfor gir nakkesleng svimmelhet?</h2>
-            <p>Sammenhengen mellom nakkesleng og svimmelhet er sterkere enn mange forventer. Studier viser at <strong>40-70% av de med vedvarende nakkeslengplager rapporterer svimmelhet</strong>.</p>
+            <div class="condition-card">
+              <h4>1. Bilulykker</h4>
+              <p>Særlig påkjørsler bakfra - den vanligste årsaken</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>2. Idrettsskader</h4>
+              <p>Ishockey, bryting, kontaktidretter</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>3. Fall</h4>
+              <p>Fra høyde eller på glatt underlag</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>4. Vold/overfall</h4>
+              <p>Direkte traumer mot nakken</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>5. Fritidsaktiviteter</h4>
+              <p>Sjeldne tilfeller fra berg-og-dal-baner o.l.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 3: Hvorfor svimmelhet -->
+          <section class="hub-section" id="s3">
+            <div class="section-header">
+              <span class="section-number">3</span>
+              <h2>Hvorfor gir nakkesleng svimmelhet?</h2>
+            </div>
+
+            <p>Sammenhengen mellom nakkesleng og <a href="../svimmelhet.html">svimmelhet</a> er sterkere enn mange forventer. Studier viser at <strong>40-70% av de med vedvarende nakkeslengplager rapporterer svimmelhet</strong>.</p>
+
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="stat-number">40-70%</span>
+                <span class="stat-label">opplever svimmelhet</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">242</span>
+                <span class="stat-label">muskelspoldel/gram i suboccipital</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">C1-C3</span>
+                <span class="stat-label">mest proprioseptive sensorer</span>
+              </div>
+            </div>
+
             <p>For å holde balansen er hjernen avhengig av tre systemer: øynene (syn), det indre øret (vestibulærsystemet) og propriosepsjon (kroppssans). Nakken - spesielt øvre del (C1-C3) - er proppfull av proprioseptive sensorer som forteller hjernen hvor hodet befinner seg.</p>
-            <p>Ved nakkesleng kan disse sensorene bli skadet. Suboccipitalmusklene har ekstremt høy muskelspoltetthet - 242 spoler per gram sammenlignet med kun 2,2 per gram i trapezius. Når disse skades, sender nakken feilsignaler til hjernen.</p>
-            <p>Resultatet er det man kaller <strong>sensorisk mismatch</strong>: Øynene sier "man står stille", øret sier "man står stille", men nakken sier "hodet beveger seg!". Hjernen tolker dette som svimmelhet - som å være sjøsyk på land.</p>
 
-            <h2>Er det nakken, øret eller hjernen?</h2>
+            <p>Ved nakkesleng kan disse sensorene bli skadet. Suboccipitalmusklene har ekstremt høy muskelspoltethet - 242 spoler per gram sammenlignet med kun 2,2 per gram i trapezius. Når disse skades, sender nakken feilsignaler til hjernen.</p>
+
+            <div class="info-box">
+              <h4>Sensorisk mismatch</h4>
+              <p>Øynene sier "man står stille", øret sier "man står stille", men nakken sier "hodet beveger seg!". Hjernen tolker dette som svimmelhet - som å være sjøsyk på land.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 4: Differensialdiagnoser -->
+          <section class="hub-section" id="s4">
+            <div class="section-header">
+              <span class="section-number">4</span>
+              <h2>Er det nakken, øret eller hjernen?</h2>
+            </div>
+
             <p>Dette er kanskje det viktigste spørsmålet man må besvare. <a href="nakkesvimmelhet.html">Cervikogen svimmelhet</a> (nakkesvimmelhet) er en eksklusjonsdiagnose - man må først utelukke andre årsaker.</p>
 
-            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 16px 0;">
-              <h4 style="color: #1a1a2e; margin: 0 0 12px;">Tegn på cervikogen svimmelhet (nakken)</h4>
-              <ul style="margin: 0; font-size: 14px;">
-                <li>Svimmelheten øker ved nakkebevegelser eller når du sitter stille lenge</li>
+            <div class="condition-card">
+              <h4>Tegn på cervikogen svimmelhet (nakken)</h4>
+              <ul>
+                <li>Svimmelheten øker ved nakkebevegelser eller nær du sitter stille lenge</li>
                 <li>Føles som "gynging" eller "ustøhet" - ikke roterende</li>
                 <li>Du har samtidig nakkesmerter</li>
                 <li>Svimmelheten varer i minutter til timer (ikke sekunder)</li>
@@ -182,9 +351,9 @@
               </ul>
             </div>
 
-            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 16px 0;">
-              <h4 style="color: #1a1a2e; margin: 0 0 12px;">Tegn på BPPV (krystallsyke)</h4>
-              <ul style="margin: 0; font-size: 14px;">
+            <div class="condition-card">
+              <h4>Tegn på <a href="krystallsyke-bppv.html">BPPV (krystallsyke)</a></h4>
+              <ul>
                 <li>Roterende vertigo som varer sekunder til under ett minutt</li>
                 <li>Utløses av spesifikke hodestillinger (snu seg i sengen, se opp)</li>
                 <li>Positiv Dix-Hallpike test</li>
@@ -192,9 +361,9 @@
               </ul>
             </div>
 
-            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 16px 0;">
-              <h4 style="color: #1a1a2e; margin: 0 0 12px;">Tegn på hjernerystelse</h4>
-              <ul style="margin: 0; font-size: 14px;">
+            <div class="condition-card">
+              <h4>Tegn på <a href="post-hjernerystelse.html">hjernerystelse</a></h4>
+              <ul>
                 <li>Problemer med hukommelse eller konsentrasjon</li>
                 <li>Lys- eller lydsensitivitet</li>
                 <li>"Tåkefølelse" i hodet</li>
@@ -202,62 +371,110 @@
               </ul>
             </div>
 
-            <p><strong>Viktig:</strong> Ved bilulykker kan opptil 40% ha både nakkesleng og <a href="post-hjernerystelse.html">hjernerystelse</a> samtidig. Da må begge behandles.</p>
+            <div class="info-box">
+              <h4>Viktig</h4>
+              <p>Ved bilulykker kan opptil 40% ha både nakkesleng og <a href="post-hjernerystelse.html">hjernerystelse</a> samtidig. Da må begge behandles.</p>
+            </div>
+          </section>
 
-            <div class="red-flag-box" style="background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%); border-left: 4px solid #e53e3e; border-radius: 0 10px 10px 0; padding: 20px; margin: 28px 0;">
-              <h3 style="font-size: 15px; color: #c53030; margin-bottom: 12px;">Røde flagg - når du bør søke lege</h3>
-              <p style="font-size: 14px; margin-bottom: 12px;"><strong>Oppsøk legevakt eller sykehus ved:</strong></p>
-              <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="padding: 5px 0; font-size: 14px;">Midtlinje ømhet i nakken kombinert med fare for fraktur</li>
-                <li style="padding: 5px 0; font-size: 14px;">Nevrologiske utfall: Kraftsvikt, nummenhet i armer/ben, gangvansker</li>
-                <li style="padding: 5px 0; font-size: 14px;">Endret bevissthetsnivå eller forvirring</li>
-                <li style="padding: 5px 0; font-size: 14px;">Kraftig, plutselig hodepine - spesielt dager etter skaden</li>
-                <li style="padding: 5px 0; font-size: 14px;">Synsforstyrrelser, talevansker eller koordinasjonsproblemer</li>
-                <li style="padding: 5px 0; font-size: 14px;">Blære- eller tarmforstyrrelser</li>
-              </ul>
-              <p style="font-size: 13px; margin-top: 12px; color: #742a2a;">Vertebralisdisseksjon kan oppstå dager til uker etter skaden. Vær oppmerksom på plutselig sterk hodepine med nevrologiske symptomer.</p>
+          <!-- SECTION 5: Røde flagg -->
+          <section class="hub-section" id="s5">
+            <div class="section-header">
+              <span class="section-number">5</span>
+              <h2>Røde flagg - nær du bør søke lege</h2>
             </div>
 
-            <h2>Behandling</h2>
+            <div class="red-flag-box">
+              <h3>Oppsøk legevakt eller sykehus ved:</h3>
+              <ul>
+                <li>Midtlinje ømhet i nakken kombinert med fare for fraktur</li>
+                <li>Nevrologiske utfall: Kraftsvikt, nummenhet i armer/ben, gangvansker</li>
+                <li>Endret bevissthetsnivå eller forvirring</li>
+                <li>Kraftig, plutselig hodepine - spesielt dager etter skaden</li>
+                <li>Synsforstyrrelser, talevansker eller koordinasjonsproblemer</li>
+                <li>Blære- eller tarmforstyrrelser</li>
+              </ul>
+              <p style="font-size: 0.9rem; margin-top: 12px;"><strong>Vertebralisdisseksjon</strong> kan oppstå dager til uker etter skaden. Vær oppmerksom på plutselig sterk hodepine med nevrologiske symptomer.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 6: Behandling -->
+          <section class="hub-section" id="s6">
+            <div class="section-header">
+              <span class="section-number">6</span>
+              <h2>Behandling</h2>
+            </div>
+
             <h3>Hva kan kiropraktoren gjøre?</h3>
             <p>Systematiske oversikter viser at <strong>multimodal behandling</strong> - kombinasjonen av manuell terapi, øvelser og pasientinformasjon - har sterkest evidensgrunnlag.</p>
-            <ul>
-              <li><strong>Manuell terapi:</strong> Forsiktig mobilisering av ledd, mykvevsbehandling av stramme muskler. En metaanalyse fant signifikant smertelindring på mellomlang sikt.</li>
-              <li><strong>Trening av dype nakkemuskler:</strong> De små musklene som stabiliserer nakken "skrur seg ofte av" etter skade. Motorisk kontrolltrening har sterk evidens.</li>
-              <li><strong>Sensorimotorisk trening:</strong> Øvelser som trener samspillet mellom øyne og nakke. Omtrent 75% forbedres med denne tilnærmingen.</li>
-              <li><strong>Informasjon og beroligelse:</strong> Forklaring av tilstanden og realistiske forventninger til bedring.</li>
-            </ul>
+
+            <div class="treatment-box">
+              <h4>Behandlingsmetoder</h4>
+              <ul>
+                <li><strong>Manuell terapi:</strong> Forsiktig mobilisering av ledd, mykvevsbehandling av stramme muskler. En metaanalyse fant signifikant smertelindring på mellomlang sikt.</li>
+                <li><strong>Trening av dype nakkemuskler:</strong> De små musklene som stabiliserer nakken "skrur seg ofte av" etter skade. Motorisk kontrolltrening har sterk evidens.</li>
+                <li><strong>Sensorimotorisk trening:</strong> Øvelser som trener samspillet mellom øyne og nakke. Omtrent 75% forbedres med denne tilnærmingen.</li>
+                <li><strong>Informasjon og beroligelse:</strong> Forklaring av tilstanden og realistiske forventninger til bedring.</li>
+              </ul>
+            </div>
 
             <h3>Hva kan du gjøre selv?</h3>
-            <ul>
-              <li><strong>Hold deg i bevegelse:</strong> Tidlig mobilisering er viktig. Gå turer - armene svinger naturlig og løser opp nakken.</li>
-              <li><strong>Unngå statiske stillinger:</strong> Ikke sitt med mobilen i fanget i lange perioder, spesielt de første ukene.</li>
-              <li><strong>Beveg nakken forsiktig:</strong> Beveg nakken innenfor smertefritt område flere ganger daglig.</li>
-              <li><strong>Unngå nakkekrage:</strong> Studier viser at nakkekrage ikke bare er ineffektiv, men kan hemme bedring. Helsenorge anbefaler mot bruk.</li>
-            </ul>
+
+            <div class="condition-card">
+              <h4>Selvhjelp</h4>
+              <ul>
+                <li><strong>Hold deg i bevegelse:</strong> Tidlig mobilisering er viktig. Gå turer - armene svinger naturlig og løser opp nakken.</li>
+                <li><strong>Unngå statiske stillinger:</strong> Ikke sitt med mobilen i fanget i lange perioder, spesielt de første ukene.</li>
+                <li><strong>Beveg nakken forsiktig:</strong> Beveg nakken innenfor smertefritt område flere ganger daglig.</li>
+                <li><strong>Unngå nakkekrage:</strong> Studier viser at nakkekrage ikke bare er ineffektiv, men kan hemme bedring. Helsenorge anbefaler mot bruk.</li>
+              </ul>
+            </div>
 
             <h3>Behandlingsforløp</h3>
             <p>I akuttfasen (0-2 uker) kan hyppigere behandling være nyttig, med fokus på tidlig mobilisering. I subakutt fase (2-12 uker) trappes det gjerne ned til 1-2 behandlinger per uke. Forbedring bør sees innen 4 uker; uten bedring bør diagnose og behandling revurderes.</p>
 
-            <h3>Når kiropraktikk hjelper - og når det ikke gjør det</h3>
-            <p>Kiropraktisk behandling er ofte effektiv for mekanisk nakkesvimmelhet - når svimmelheten kommer fordi leddene i nakken ikke beveger seg som de skal, eller når muskelsmerter trigger symptomene.</p>
-            <p><strong>Kiropraktikk alene er ikke tilstrekkelig hvis:</strong></p>
-            <ul>
-              <li>Du har en aktiv hjernerystelse (trenger hvile/pacing først)</li>
-              <li>Du har <a href="krystallsyke-bppv.html">BPPV/krystallsyke</a> (trenger Epley-manøver, ikke nakkebehandling)</li>
-              <li>Du har <a href="pppd-kronisk-svimmelhet.html">PPPD</a> (trenger kognitiv tilnærming og gradvis eksponering)</li>
-            </ul>
-            <p>Derfor er en grundig undersøkelse avgjørende før jeg starter behandling.</p>
+            <h3>Når kiropraktikk hjelper - og nær det ikke gjør det</h3>
+            <p>Kiropraktisk behandling er ofte effektiv for mekanisk nakkesvimmelhet - nær svimmelheten kommer fordi leddene i nakken ikke beveger seg som de skal, eller nær muskelsmerter trigger symptomene.</p>
 
-            <h2>Prognose</h2>
+            <div class="info-box">
+              <h4>Kiropraktikk alene er ikke tilstrekkelig hvis:</h4>
+              <ul>
+                <li>Du har en aktiv hjernerystelse (trenger hvile/pacing først)</li>
+                <li>Du har BPPV/krystallsyke (trenger Epley-manøver, ikke nakkebehandling)</li>
+                <li>Du har PPPD (trenger kognitiv tilnærming og gradvis eksponering)</li>
+              </ul>
+              <p>Derfor er en grundig undersøkelse avgjørende før jeg starter behandling.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 7: Prognose -->
+          <section class="hub-section" id="s7">
+            <div class="section-header">
+              <span class="section-number">7</span>
+              <h2>Prognose</h2>
+            </div>
+
             <p>De første tre månedene er kritiske. De fleste som skal bli friske, bedres i denne perioden - deretter flater bedringskurven ut.</p>
-            <p><strong>Tilhelingsrater:</strong></p>
-            <ul>
-              <li>50% bedres innen 3-6 måneder</li>
-              <li>64% rapporterer bedring ved 1 år</li>
-              <li>25-40% har vedvarende symptomer ved 1 år</li>
-            </ul>
-            <p><strong>Viktig å vite:</strong> En studie viste at 86% av pasienter som fortsatt hadde symptomer ved 3 måneder, fortsatt hadde plager ved 2 år - mens 93% av de symptomfrie ved 3 måneder forble friske. Dette understreker betydningen av tidlig og effektiv behandling.</p>
+
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="stat-number">50%</span>
+                <span class="stat-label">bedres innen 3-6 mnd</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">64%</span>
+                <span class="stat-label">rapporterer bedring ved 1 år</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">25-40%</span>
+                <span class="stat-label">vedvarende symptomer ved 1 år</span>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <h4>Viktig å vite</h4>
+              <p>En studie viste at 86% av pasienter som fortsatt hadde symptomer ved 3 måneder, fortsatt hadde plager ved 2 år - mens 93% av de symptomfrie ved 3 måneder forble friske. Dette understreker betydningen av tidlig og effektiv behandling.</p>
+            </div>
 
             <h3>Risikofaktorer for kroniske plager:</h3>
             <ul>
@@ -266,92 +483,175 @@
               <li>Post-traumatiske stressymptomer</li>
               <li>Katastrofetanker og passive mestringsstrategier</li>
               <li>Dårlige forventninger til bedring</li>
-              <li>Tilstedeværelse av svimmelhet</li>
+              <li>Tilstedeværelse av svimmelhet - som kan utvikle seg til <a href="pppd-kronisk-svimmelhet.html">PPPD</a> eller <a href="vestibulær-hypofunksjon.html">vestibulær hypofunksjon</a></li>
             </ul>
+          </section>
 
-            <h2>Ofte stilte spørsmål</h2>
-            <h3>Bør jeg bruke nakkekrage?</h3>
-            <p>Nei. Systematiske oversikter konkluderer at nakkekrage ikke bare er ineffektiv, men kan faktisk hemme bedring. Både norske og nordiske retningslinjer anbefaler mot bruk.</p>
-
-            <h3>Hvor lang tid tar det før svimmelheten forsvinner?</h3>
-            <p>Dette varierer betydelig. Mange opplever bedring innen 6-12 uker med riktig behandling. Ved cervikogen svimmelhet forbedres omtrent 75% med konservativ nakkebehandling. Hos noen kan det ta lengre tid å gjenoppbygge den finmotoriske kontrollen i nakken.</p>
-
-            <h3>Kan jeg ha både nakkesleng og hjernerystelse?</h3>
-            <p>Ja, og dette er faktisk ganske vanlig. Ved bilulykker kan opptil 40% ha begge deler samtidig. Behandlingen må da tilpasses begge tilstandene.</p>
-
-            <h3>Trenger jeg røntgen eller MR?</h3>
-            <p>Ikke nødvendigvis. Ved de fleste nakkeslengskader (grad I-II) er bildediagnostikk ikke nødvendig. Klinisk undersøkelse er ofte viktigere. MR kan være aktuelt ved nevrologiske utfall eller manglende bedring.</p>
-
-            <h3>Kan jeg trene med nakkesleng?</h3>
-            <p>Ja, bevegelse er medisin - men det må være riktig bevegelse. Start med smertefrie bevegelser og øk gradvis. Unngå aktiviteter som forverrer symptomene. Spaserturer er ofte et godt utgangspunkt.</p>
-
-            <div class="cta-box" style="background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%); border-radius: 12px; padding: 28px; margin: 32px 0; text-align: center;">
-              <h3 style="color: #fff; margin-bottom: 12px; font-size: 18px;">Trenger du hjelp med nakkesleng eller svimmelhet?</h3>
-              <p style="color: rgba(255,255,255,0.85); margin-bottom: 16px; font-size: 14px;">Kiropraktor Mads Finstad har spesialkompetanse på svimmelhet og nakkeproblemer, med avansert diagnostisk utstyr (VNG-testing og TRV-stol) for å kartlegge årsaken til plagene dine.</p>
-              <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-bottom: 16px;"><strong>Priser:</strong> Nytt problem 1105 kr (45 min) | Oppfølging 780 kr (30 min)</p>
-              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary" style="display: inline-block; background: #e8a838; color: #1a1a2e; padding: 12px 28px; border-radius: 6px; text-decoration: none; font-weight: 600;">Bestill time</a>
+          <!-- SECTION 8: FAQ -->
+          <section class="hub-section" id="s8">
+            <div class="section-header">
+              <span class="section-number">8</span>
+              <h2>Ofte stilte spørsmål</h2>
             </div>
 
-            <h2>Kilder</h2>
-            <ol style="font-size: 13px; line-height: 1.8;">
+            <div class="faq-item">
+              <div class="faq-question">Bør jeg bruke nakkekrage?</div>
+              <div class="faq-answer">Nei. Systematiske oversikter konkluderer at nakkekrage ikke bare er ineffektiv, men kan faktisk hemme bedring. Både norske og nordiske retningslinjer anbefaler mot bruk.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Hvor lang tid tar det før svimmelheten forsvinner?</div>
+              <div class="faq-answer">Dette varierer betydelig. Mange opplever bedring innen 6-12 uker med riktig behandling. Ved <a href="nakkesvimmelhet.html">cervikogen svimmelhet</a> forbedres omtrent 75% med konservativ nakkebehandling. Hos noen kan det ta lengre tid å gjenoppbygge den finmotoriske kontrollen i nakken.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Kan jeg ha både nakkesleng og hjernerystelse?</div>
+              <div class="faq-answer">Ja, og dette er faktisk ganske vanlig. Ved bilulykker kan opptil 40% ha begge deler samtidig. Behandlingen må da tilpasses begge tilstandene.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Trenger jeg røntgen eller MR?</div>
+              <div class="faq-answer">Ikke nødvendigvis. Ved de fleste nakkeslengskader (grad I-II) er bildediagnostikk ikke nødvendig. Klinisk undersøkelse er ofte viktigere. MR kan være aktuelt ved nevrologiske utfall eller manglende bedring.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Kan jeg trene med nakkesleng?</div>
+              <div class="faq-answer">Ja, bevegelse er medisin - men det må være riktig bevegelse. Start med smertefrie bevegelser og øk gradvis. Unngå aktiviteter som forverrer symptomene. Spaserturer er ofte et godt utgangspunkt.</div>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <div class="hub-cta">
+            <h3>Trenger du hjelp med nakkesleng eller svimmelhet?</h3>
+
+            <p>Kiropraktor Mads Finstad har spesialkompetanse på svimmelhet og nakkeproblemer, med avansert diagnostisk utstyr (VNG-testing og TRV-stol) for å kartlegge årsaken til plagene dine.</p>
+
+            <p><strong>Priser:</strong> Nytt problem 1105 kr (45 min) | Oppfølging 780 kr (30 min)</p>
+
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn">Bestill time</a>
+          </div>
+
+          <!-- Related articles -->
+          <div class="related-box">
+            <h3>Relaterte artikler</h3>
+            <a href="../svimmelhet.html">Svimmelhet - Hovedoversikt</a>
+            <a href="nakkesvimmelhet.html">Nakkesvimmelhet (Cervikogen svimmelhet)</a>
+            <a href="krystallsyke-bppv.html">Krystallsyke (BPPV)</a>
+            <a href="vestibulær-migrene.html">Vestibulær migrene</a>
+            <a href="menieres-sykdom.html">Ménières sykdom</a>
+            <a href="vestibularisnevritt.html">Vestibularisnevritt</a>
+            <a href="pppd-kronisk-svimmelhet.html">PPPD - Kronisk funksjonell svimmelhet</a>
+            <a href="vestibulær-hypofunksjon.html">Vestibulær hypofunksjon</a>
+            <a href="post-hjernerystelse.html">Post-hjernerystelse</a>
+          </div>
+
+          <!-- Related Fagartikler -->
+          <div class="related-box" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);">
+            <h3 style="color: #0369a1;">Relaterte fagartikler</h3>
+            <a href="../../tjeneste/svimmelhet/vng-undersøkelse.html">VNG-undersøkelse - Diagnostisk test for svimmelhet</a>
+            <a href="../../tjeneste/svimmelhet/vestibular-rehabilitering.html">Vestibulær rehabilitering - Behandling av svimmelhet</a>
+            <a href="../../tjeneste/svimmelhet/balansesystemet.html">Balansesystemets anatomi - Forstå hvordan balansen fungerer</a>
+          </div>
+
+          <!-- Disclaimer -->
+          <p class="disclaimer">Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon eller opplever røde flagg-symptomer.</p>
+
+          <!-- Sources -->
+          <section class="sources-section">
+            <h3>Kilder</h3>
+            <ul>
               <li>CCGI Clinical Practice Guideline (2016). Treatment of Neck Pain-Associated Disorders and Whiplash-Associated Disorders. J Manipulative Physiol Ther.</li>
               <li>Li Y, Peng B (2022). Proprioceptive Cervicogenic Dizziness: A Narrative Review. J Clin Med.</li>
               <li>Treleaven J (2011). Dizziness, unsteadiness, visual disturbances, and sensorimotor control in traumatic neck pain. Spine.</li>
               <li>Wong JJ et al. (2016). OPTIMa systematic review. Spine J.</li>
               <li>Sterling M et al. (2011). Course and prognosis of whiplash. Spine.</li>
-            </ol>
-          </div>          <!-- Relaterte Fagartikler -->
-          <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0;">
-            <h3 style="color: #0369a1; margin-top: 0; margin-bottom: 16px;">Relaterte fagartikler</h3>
-            <p style="color: #334155; margin-bottom: 16px;">Vil du lære mer om svimmelhet, diagnostikk og behandling?</p>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="margin-bottom: 10px;"><a href="../../fagartikler/vng-undersokelse.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">VNG-undersøkelse</a> - Diagnostisk test for svimmelhet</li>
-              <li style="margin-bottom: 10px;"><a href="../../fagartikler/vestibular-rehabilitering.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Vestibulær rehabilitering</a> - Behandling av svimmelhet</li>
-              <li style="margin-bottom: 0;"><a href="../../fagartikler/balansesystemet.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Balansesystemets anatomi</a> - Forstå hvordan balansen fungerer</li>
             </ul>
+          </section>
+
+          <p class="updated">Sist oppdatert: Januar 2026</p>
+
+        </article>
+
+        <!-- Sidebar (desktop only) -->
+        <aside class="hub-sidebar">
+          <!-- Conversion Card -->
+          <div class="hub-conversion-card">
+            <img src="../../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
+            <h3>Svimmel etter nakkesleng?</h3>
+            <p>Jeg hjelper deg med å finne årsaken og riktig behandling.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+            </div>
           </div>
 
-
-          <div class="blog-post__tags">
-            <span class="tag">Whiplash</span>
-            <span class="tag">Nakkesleng</span>
-            <span class="tag">Cervikogen svimmelhet</span>
-            <span class="tag">Nakkesvimmelhet</span>
-            <span class="tag">Bilulykke</span>
-          </div>
-
-          <nav class="blog-post__navigation">
-            <a href="../svimmelhet.html" class="blog-post__nav-link blog-post__nav-link--prev">
-              <span class="blog-post__nav-label">Tilbake til</span>
-              <span class="blog-post__nav-title">Svimmelhet oversikt</span>
-            </a>
-            <a href="nakkesvimmelhet.html" class="blog-post__nav-link blog-post__nav-link--next">
-              <span class="blog-post__nav-label">Les også</span>
-              <span class="blog-post__nav-title">Nakkesvimmelhet</span>
-            </a>
+          <!-- Table of Contents -->
+          <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
+            <h3>Innhold</h3>
+            <ul>
+              <li><a href="#s1">WAD-klassifisering</a></li>
+              <li><a href="#s2">Årsaker</a></li>
+              <li><a href="#s3">Hvorfor svimmelhet?</a></li>
+              <li><a href="#s4">Differensialdiagnoser</a></li>
+              <li><a href="#s5">Røde flagg</a></li>
+              <li><a href="#s6">Behandling</a></li>
+              <li><a href="#s7">Prognose</a></li>
+              <li><a href="#s8">FAQ</a></li>
+            </ul>
           </nav>
-        </div>
-      </article>
-    </main>
-  </div>
+        </aside>
 
-    <footer class="footer">
+      </div>
+    </main>
+
+    <!-- Mobile sticky CTA -->
+    <div class="mobile-sticky-cta">
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn-primary">Bestill time</a>
+      <a href="tel:+4793043062" class="btn btn-outline">Ring</a>
+    </div>
+
+        <footer class="footer">
       <div class="footer__container">
+        <!-- Left Column -->
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"><img loading="lazy" decoding="async" src="../../pictures.final/branding/icons/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook" /></a>
-            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"><img src="../../pictures.final/branding/icons/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram" loading="lazy" decoding="async" /></a>
-            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"><img src="../../pictures.final/branding/icons/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube" loading="lazy" decoding="async" /></a>
-            <a href="../../contact.html" class="footer__social-link"><img loading="lazy" decoding="async" src="../../pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../../images/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
           </div>
         </div>
+
+        <!-- Center Column -->
         <div class="footer__center">
-          <div class="footer__logo"><a href="../../index.html" class="logo"><img src="../../pictures.final/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a></div>
+          <div class="footer__logo">
+            <img src="../../images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
           <div class="back-to-top-wrapper">
-            <p class="back-to-top-text">Tilbake til start</p>
-            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden"><i class="fas fa-arrow-up" aria-hidden="true"></i> Opp</a>
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
           </div>
         </div>
+
+        <!-- Right Column -->
         <div class="footer__right">
           <div class="footer__hours">
             <h3>Åpningstider</h3>
@@ -367,28 +667,52 @@
           </div>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <a href="../../personvern.html" class="footer__policy">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 TheBackROM - Alle rettigheter reservert</p>
+        <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 TheBackROM – Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
-     class="mobile-sticky-cta"
-     aria-label="Bestill time hos kiropraktor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Bestill time
-  </a>
-
 
   <script src="../../js/script.min.js" defer></script>
   <script src="../../js/language-toggle.min.js" defer></script>
   <script src="../../js/modern-enhancements.min.js" defer></script>
+
+  <!-- TOC scroll tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+
+      if (sections.length === 0 || navLinks.length === 0) return;
+
+      function updateActiveLink() {
+        let current = 's1';
+        const scrollPos = window.scrollY + 200;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (scrollPos >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          const href = link.getAttribute('href');
+          if (href && href === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
 </body>
+
 </html>
+
+

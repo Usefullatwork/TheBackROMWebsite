@@ -11,12 +11,12 @@
   <meta name="view-transition" content="same-origin" />
 
   <link rel="manifest" href="../../manifest.json" />
-  <link rel="apple-touch-icon" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
   <link rel="preload" as="style" href="../../css/main.min.css" />
-  <link rel="icon" type="image/png" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Klasehodepine - Den Mest Intense Smerten | Kiropraktor Majorstua</title>
 
-  <meta name="description" content="Klasehodepine rammer ca. 1 av 1000 nordmenn. Lær om symptomer, behandling med oksygen og triptaner, og når du bør søke lege. Kiropraktor Majorstua Oslo.">
+  <meta name="description" content="Klasehodepine rammer ca. 1 av 1000 nordmenn. Lær om symptomer, behandling med oksygen og triptaner, og nær du bør søke lege. Kiropraktor Majorstua Oslo.">
   <meta name="keywords" content="klasehodepine, cluster headache, selvmordshodepine, hodepine behandling, oksygenbehandling hodepine, kiropraktor Oslo">
   <meta name="author" content="Mads Finstad">
   <meta name="robots" content="index, follow">
@@ -123,7 +123,7 @@
   /></noscript>
 
   <link rel="stylesheet" href="../../css/main.min.css?v=20260101">
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css">
+  <link rel="stylesheet" href="../../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
@@ -136,441 +136,32 @@
 
   <style>
     :root {
-      --hub-primary: #a855f7;
-      --hub-primary-dark: #9333ea;
-      --hub-dark: #1a1a2e;
-      --hub-dark-light: #16213e;
-      --hub-red: #ef4444;
-      --hub-red-light: #fef2f2;
-      --hub-green: #22c55e;
-      --hub-green-light: #f0fdf4;
-      --hub-purple: #8b5cf6;
-      --hub-purple-light: #f5f3ff;
-      --hub-blue: #3b82f6;
-      --hub-pink: #ec4899;
-      --hub-orange: #f97316;
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
     }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-wrapper {
-      display: flex;
-      align-items: stretch;
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 40px 20px 40px;
-      gap: 40px;
-    }
-
-    @media (min-width: 1600px) {
-      .hub-wrapper { max-width: 1600px; padding: 0 60px 20px 60px; }
-    }
-
-    .hub-main {
-      flex: 1;
-      min-width: 0;
-      max-width: 1000px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      overflow: hidden;
-    }
-
-    @media (min-width: 1200px) { .hub-main { max-width: 1100px; } }
-
-    .hub-sidenav {
-      width: 220px;
-      flex-shrink: 0;
-      position: relative;
-      align-self: stretch;
-    }
-
-    .hub-sidenav .sidenav-inner {
-      position: sticky;
-      top: calc(var(--header-height, 80px) + 20px);
-    }
-
-    @media (min-width: 1400px) { .hub-sidenav { width: 260px; } }
-
-    @media (max-width: 1000px) {
-      .hub-sidenav { display: none; }
-      .hub-wrapper { padding: 0 16px; }
-      .hub-main { max-width: 100%; }
-    }
-
-    .sidenav-inner {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    }
-
-    .sidenav-title {
-      font-size: 11px;
-      font-weight: 700;
-      color: #6b7280;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 12px;
-    }
-
-    .sidenav-link {
-      display: block;
-      padding: 8px 10px;
-      margin: 3px 0;
-      color: #6b7280;
-      text-decoration: none;
-      font-size: 13px;
-      border-radius: 6px;
-      transition: all 0.2s;
-      border-left: 2px solid transparent;
-    }
-
-    .sidenav-link:hover { background: #f3f4f6; color: var(--hub-dark); }
-
-    .sidenav-link.active {
-      background: #faf5ff;
-      color: var(--hub-primary-dark);
-      border-left-color: var(--hub-primary);
-      font-weight: 600;
-    }
-
-    .sidenav-cta {
-      display: block;
-      background: var(--hub-primary);
-      color: #fff;
-      padding: 12px 14px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      text-align: center;
-      font-size: 13px;
-      margin-top: 16px;
-      transition: background 0.2s;
-    }
-
-    .sidenav-cta:hover { background: var(--hub-primary-dark); }
-
-    .hub-hero {
-      background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-dark-light) 100%);
-      color: #fff;
-      padding: 40px 32px 40px 32px;
-      padding-top: calc(var(--header-height, 80px) + 40px);
-      border-radius: 12px 12px 0 0;
-    }
-
-    @media (max-width: 600px) {
-      .hub-hero { padding: 28px 20px 28px 20px; padding-top: calc(var(--header-height, 80px) + 28px); }
-    }
-
-    .hub-hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 12px; line-height: 1.2; }
-    @media (max-width: 600px) { .hub-hero h1 { font-size: 26px; } }
-
-    .hub-hero .subtitle { font-size: 18px; color: rgba(255,255,255,0.8); margin-bottom: 8px; }
-    .hub-hero .author { font-style: italic; color: rgba(255,255,255,0.6); font-size: 14px; margin-top: 8px; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .tldr-sidebar {
-      background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
-      border-left: 4px solid var(--hub-primary);
-      border-radius: 0 10px 10px 0;
-      padding: 18px;
-      align-self: start;
-    }
-
-    .tldr-sidebar h3 { font-size: 15px; color: var(--hub-dark); margin-bottom: 12px; }
-    .tldr-sidebar ul { list-style: none; padding: 0; margin: 0; }
-
-    .tldr-sidebar li {
-      padding: 5px 0 5px 22px;
-      position: relative;
-      font-size: 13px;
-      line-height: 1.5;
-    }
-
-    .tldr-sidebar li::before {
-      content: attr(data-icon);
-      position: absolute;
-      left: 0;
-      font-size: 12px;
-    }
-
-    .tldr-sidebar .btn-small {
-      display: block;
-      background: var(--hub-primary);
-      color: #fff;
-      padding: 10px 14px;
-      border-radius: 6px;
-      font-weight: 700;
-      text-decoration: none;
-      text-align: center;
-      font-size: 13px;
-      margin-top: 14px;
-    }
-
-    .tldr-sidebar .btn-small:hover { background: var(--hub-primary-dark); }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .section-heading {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    .section-number {
-      width: 32px;
-      height: 32px;
-      background: var(--hub-dark);
-      color: var(--hub-primary);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 15px;
-      flex-shrink: 0;
-    }
-
-    .section-title { font-size: 20px; font-weight: 700; color: var(--hub-dark); margin: 0; }
-    @media (max-width: 600px) { .section-title { font-size: 18px; } }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, var(--hub-red-light) 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box h4 { color: #dc2626; margin: 16px 0 8px; font-size: 14px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-    .red-flag-box .note { font-style: italic; margin-top: 12px; color: #991b1b; font-size: 13px; }
-
-    .treatment-box {
-      background: var(--hub-green-light);
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p { font-size: 14px; margin: 0 0 8px; color: #166534; }
-    .treatment-box ul { margin: 8px 0 0 0; padding-left: 20px; }
-    .treatment-box li { font-size: 14px; margin-bottom: 4px; color: #166534; }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p { font-size: 14px; margin: 0; color: #1e3a8a; }
-    .info-box ul { margin: 8px 0 0 0; padding-left: 20px; color: #1e3a8a; }
-    .info-box li { font-size: 14px; margin-bottom: 4px; }
-
-    .warning-box {
-      background: #fef3c7;
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .warning-box h4 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
-    .warning-box p { font-size: 14px; margin: 0 0 8px; color: #78350f; }
-    .warning-box ul { margin: 8px 0 0 0; padding-left: 20px; color: #78350f; }
-    .warning-box li { font-size: 14px; margin-bottom: 4px; }
-
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      margin: 20px 0;
-    }
-
-    .stat-card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .stat-number { font-size: 28px; font-weight: 700; color: var(--hub-primary-dark); display: block; }
-    .stat-label { font-size: 12px; color: #6b7280; margin-top: 4px; }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .hub-cta {
-      background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-dark-light) 100%);
-      color: #fff;
-      padding: 28px;
-      border-radius: 12px;
-      margin: 28px 0;
-    }
-
-    .hub-cta h3 { font-size: 18px; margin: 0 0 12px; color: #fff !important; font-weight: 700; }
-    .hub-cta p { color: rgba(255,255,255,0.85); font-size: 14px; margin-bottom: 8px; }
-
-    .hub-cta .btn {
-      display: inline-block;
-      background: var(--hub-primary);
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-      margin-top: 16px;
-    }
-
-    .hub-cta .btn:hover { background: var(--hub-primary-dark); }
-
-    .related-box {
-      background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
-      border: 2px solid var(--hub-pink);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 24px 0;
-    }
-
-    .related-box h3 { color: #be185d; font-size: 15px; margin: 0 0 14px; }
-
-    .related-box a {
-      display: block;
-      padding: 10px 0;
-      color: #be185d;
-      text-decoration: none;
-      border-bottom: 1px solid #fbcfe8;
-      font-size: 14px;
-      transition: all 0.2s;
-    }
-
-    .related-box a:last-child { border-bottom: none; }
-    .related-box a:hover { color: var(--hub-pink); padding-left: 8px; }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-
-    @media (max-width: 900px) {
-      .mobile-sticky-cta { display: flex; }
-      .hub-main { margin-bottom: 80px; }
-    }
-
-    .mobile-sticky-cta .btn {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .mobile-sticky-cta .btn-primary { background: var(--hub-primary); color: #fff; }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid var(--hub-primary); color: var(--hub-dark); }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    .breadcrumb {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      color: rgba(255,255,255,0.7);
-      margin-bottom: 16px;
-    }
-
-    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
-    .breadcrumb a:hover { color: var(--hub-primary); }
-    .breadcrumb span { color: rgba(255,255,255,0.5); }
   </style>
 </head>
 
 <body id="top">
   <div class="wrapper">
-    <header class="header">
+        <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+            alt="TheBackROM Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
-          <div class="language-toggle" role="group" aria-label="Sprakvalg">
-            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
-            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk" aria-pressed="false">EN</button>
+          <div class="language-toggle" role="group" aria-label="Språkvalg">
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
-          <button type="button" class="icon-menu" aria-label="Apne navigasjonsmeny" aria-expanded="false">
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -584,10 +175,10 @@
               <li class="menu__item"><a href="../../priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="../../faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="../../contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="../../fagartikler/index.html" class="menu__link">Fagartikler</a></li>
               <li class="menu__item"><a href="../../blogg/index.html" class="menu__link">Blogg</a></li>
               <li class="menu__item">
-                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Bestill Time</a>
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                  class="actions-header__button">Bestill Time</a>
               </li>
             </ul>
           </div>
@@ -595,37 +186,37 @@
       </div>
     </header>
 
-    <main class="page">
+    <main class="page" id="main">
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <nav class="breadcrumb" aria-label="Brodsmuler">
+            <a href="../../plager.html">Plager</a>
+            <span>/</span>
+            <a href="../hodepine.html">Hodepine</a>
+            <span>/</span>
+            <span>Klasehodepine</span>
+          </nav>
+          <h1>Klasehodepine: Den mest intense smerten</h1>
+          <p class="hub-hero__subtitle">Symptomer, behandling og hva kiropraktoren kan bidra med</p>
+          <p class="hub-hero__author">Kiropraktor Mads Finstad, TheBackROM Majorstua</p>
+        </div>
+      </section>
+
       <div class="hub-wrapper">
-
         <article class="hub-main">
-
-          <header class="hub-hero">
-            <nav class="breadcrumb" aria-label="Brodsmuler">
-              <a href="../../plager.html">Plager</a>
-              <span>/</span>
-              <a href="../hodepine.html">Hodepine</a>
-              <span>/</span>
-              <span>Klasehodepine</span>
-            </nav>
-            <h1>Klasehodepine: Den mest intense smerten</h1>
-            <p class="subtitle">Symptomer, behandling og hva kiropraktoren kan bidra med</p>
-            <p class="author">Kiropraktor Mads Finstad, TheBackROM Majorstua</p>
-          </header>
-
           <div class="hub-content">
 
             <div class="intro-tldr-grid">
 
               <div class="intro-text">
-                <p>Klasehodepine beskrives som den <strong>verste kjente smerten et menneske kan oppleve</strong>. på en smerteskala fra 1-10 rapporterer de fleste pasienter 10+ under anfall. Enkelte sammenligner det med en glodende kniv gjennom oyet.</p>
+                <p>Klasehodepine beskrives som den <strong>verste kjente smerten et menneske kan oppleve</strong>. Pa en smerteskala fra 1-10 rapporterer de fleste pasienter 10+ under anfall. Enkelte sammenligner det med en glodende kniv gjennom oyet.</p>
 
-                <p>Tilstanden rammer ca. <strong>1 av 1000 nordmenn</strong> - omtrent 5 500 personer. Navnet kommer av at anfallene typisk kommer i "klaser" - intensive perioder pa uker eller måneder, etterfulgt av smertefrie perioder.</p>
+                <p>Tilstanden rammer ca. <strong>1 av 1000 nordmenn</strong> - omtrent 5 500 personer. Navnet kommer av at anfallene typisk kommer i "klaser" - intensive perioder på uker eller måneder, etterfulgt av smertefrie perioder. Dette skiller seg fra andre <a href="../hodepine.html">hodepinetyper</a>.</p>
 
-                <p>Med en gjennomsnittlig diagnostisk forsinkelse pa 5-7 år for mange blir dette en tilstand som krever bevissthet fra alle helsearbeidere.</p>
+                <p>Med en gjennomsnittlig diagnostisk forsinkelse på 5-7 år for mange blir dette en tilstand som krever bevissthet fra alle helsearbeidere.</p>
               </div>
 
-              <aside class="tldr-sidebar">
+              <aside class="premium-summary-card">
                 <h3>TL;DR - Kort oppsummert</h3>
                 <ul>
                   <li data-icon="&#128165;"><strong>Ekstrem smerte</strong> rundt ett oye, 15-180 min</li>
@@ -634,19 +225,19 @@
                   <li data-icon="&#9888;">Kiropraktisk rolle: <strong>Gjenkjenne og henvise</strong></li>
                   <li data-icon="&#128336;">Diagnostisk forsinkelse: <strong>5-7 ar</strong></li>
                 </ul>
-                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn-small">Bestill vurdering</a>
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="button">Bestill vurdering</a>
               </aside>
 
             </div>
 
             <!-- SECTION 1: Hva er klasehodepine -->
             <section class="hub-section" id="s1">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">1</span>
                 <h2 class="section-title">Hva er klasehodepine?</h2>
               </div>
 
-              <p>Klasehodepine (engelsk: cluster headache) tilhorer en gruppe hodepiner kalt <strong>trigeminal autonome cefalalgier (TACs)</strong>. Tilstanden ble forst beskrevet av den norske nevrologen Ottar Sjaastad ved St. Olavs Hospital i Trondheim.</p>
+              <p>Klasehodepine (engelsk: cluster headache) tilhorer en gruppe hodepiner kalt <strong>trigeminal autonome cefalalgier (TACs)</strong>. Tilstanden ble først beskrevet av den norske nevrologen Ottar Sjaastad ved St. Olavs Hospital i Trondheim.</p>
 
               <p>Smerten er alltid på en side (strengt unilateral) og lokalisert rundt eller bak oyet, i tinningen eller pannen. Den beskrives som borende, brennende eller skjarende.</p>
 
@@ -671,19 +262,19 @@
 
               <div class="info-box">
                 <h4>Kjonnsfordeling</h4>
-                <p>En norsk registerstudie fra 2024 viste en kvinne:mann-ratio pa 1,2:1. Dette avviker fra eldre studier som viste 4:1 overvekt av menn. Forskjellen skyldes trolig at kvinner tidligere ble feildiagnostisert med migrene.</p>
+                <p>En norsk registerstudie fra 2024 viste en kvinne:mann-ratio på 1,2:1. Dette avviker fra eldre studier som viste 4:1 overvekt av menn. Forskjellen skyldes trolig at kvinner tidligere ble feildiagnostisert med migrene.</p>
               </div>
             </section>
 
             <!-- SECTION 2: Symptomer -->
             <section class="hub-section" id="s2">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">2</span>
                 <h2 class="section-title">Symptomer</h2>
               </div>
 
               <h3>Hovedsymptomet: Ensidig, ekstrem smerte</h3>
-              <p>Anfallene varer typisk 15-180 minutter hvis ubehandlet, med et gjennomsnitt pa 45-90 minutter (ICHD-3, 2018).</p>
+              <p>Anfallene varer typisk 15-180 minutter hvis ubehandlet, med et gjennomsnitt på 45-90 minutter (ICHD-3, 2018).</p>
 
               <h3>Autonome tilleggssymptomer</h3>
               <p>Under anfall vil du nesten alltid se ett eller flere av disse tegnene på samme side som smerten:</p>
@@ -698,7 +289,7 @@
 
               <div class="warning-box">
                 <h4>Det viktigste kjennetegnet: Uro og agitasjon</h4>
-                <p>Her skiller klasehodepine seg dramatisk fra migrene. Mens migrenepasientene søker morke og ro, blir klasehodepinepasienter <strong>ekstremt urolige</strong> under anfall.</p>
+                <p>Her skiller klasehodepine seg dramatisk fra <a href="migrene.html">migrene</a>. Mens migrenepasientene søker morke og ro, blir klasehodepinepasienter <strong>ekstremt urolige</strong> under anfall.</p>
                 <p>De vandrer hvilelost rundt, vugger frem og tilbake, holder seg for oyet, eller banker hodet i veggen. Denne agitasjonen ses hos opptil 90% av pasientene.</p>
               </div>
 
@@ -709,12 +300,12 @@
 
             <!-- SECTION 3: Episodisk vs kronisk -->
             <section class="hub-section" id="s3">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">3</span>
                 <h2 class="section-title">Episodisk vs. kronisk form</h2>
               </div>
 
-              <p><strong>Episodisk klasehodepine (80-90% av tilfellene):</strong> Anfallene kommer i perioder ("klaser") pa 2 uker til 3 måneder, etterfulgt av minst 3 maneders smertefri remisjon.</p>
+              <p><strong>Episodisk klasehodepine (80-90% av tilfellene):</strong> Anfallene kommer i perioder ("klaser") på 2 uker til 3 måneder, etterfulgt av minst 3 måneders smertefri remisjon.</p>
 
               <p><strong>Kronisk klasehodepine (10-20% av tilfellene):</strong> Anfallene vedvarer i over ett år uten tilstrekkelige pauser, eller med remisjoner under 3 måneder.</p>
 
@@ -726,25 +317,25 @@
 
             <!-- SECTION 4: Årsaker -->
             <section class="hub-section" id="s4">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">4</span>
-                <h2 class="section-title">Hvorfor oppstar klasehodepine?</h2>
+                <h2 class="section-title">Hvorfor oppstår klasehodepine?</h2>
               </div>
 
-              <p>Forskningen peker mot <strong>hypothalamus</strong> - hjernens biologiske klokke - som hovedarsak. En banebrytende PET-studie fra 1998 (May et al., The Lancet) viste aktivering av hypothalamus under anfall. Dette forklarer hvorfor anfallene folger dogn- og sesongmonstre sa presist.</p>
+              <p>Forskningen peker mot <strong>hypothalamus</strong> - hjernens biologiske klokke - som hovedårsak. En banebrytende PET-studie fra 1998 (May et al., The Lancet) viste aktivering av hypothalamus under anfall. Dette forklarer hvorfor anfallene folger dogn- og sesongmonstre så presist.</p>
 
-              <p>Under et anfall aktiveres det trigeminovaskulare systemet, og det frigjores store mengder <strong>CGRP</strong> (calcitonin gene-related peptide) - et smertesignalstoff.</p>
+              <p>Under et anfall aktiveres det trigeminovaskulare systemet, og det frigjøres store mengder <strong>CGRP</strong> (calcitonin gene-related peptide) - et smertesignalstoff.</p>
 
               <div class="warning-box">
                 <h4>Hvorfor virker ikke vanlige smertestillende?</h4>
-                <p>Anfallene når maksimal intensitet pa 5-10 minutter og varer bare 15-180 minutter. Paracetamol og ibuprofen trenger 30-60 minutter for å virke. Innen de kunne hatt effekt, er anfallet ofte over av seg selv.</p>
+                <p>Anfallene nær maksimal intensitet på 5-10 minutter og varer bare 15-180 minutter. Paracetamol og ibuprofen trenger 30-60 minutter for å virke. Innen de kunne hatt effekt, er anfallet ofte over av seg selv.</p>
                 <p><strong>Selv morfin har ingen effekt.</strong> Derfor kreves spesifikke, hurtigvirkende behandlinger.</p>
               </div>
             </section>
 
             <!-- SECTION 5: Diagnostikk -->
             <section class="hub-section" id="s5">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">5</span>
                 <h2 class="section-title">Diagnostikk</h2>
               </div>
@@ -763,9 +354,9 @@
               <div class="info-box">
                 <h4>Vanlige feildiagnoser</h4>
                 <ul>
-                  <li>Trigeminusnevralgi - 22%</li>
-                  <li>Migrene - 19%</li>
-                  <li>Bihulebetennelse - 15%</li>
+                  <li>Trigeminusnevralgi - 22% - se <a href="occipital-nevralgi.html">occipital nevralgi</a> for lignende nevralgi</li>
+                  <li><a href="migrene.html">Migrene</a> - 19%</li>
+                  <li>Bihulebetennelse - 15% - se <a href="bihule-migrene.html">bihulemigrene</a></li>
                   <li>Tannproblemer - betydelig andel</li>
                 </ul>
               </div>
@@ -773,7 +364,7 @@
 
             <!-- SECTION 6: Behandling -->
             <section class="hub-section" id="s6">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">6</span>
                 <h2 class="section-title">Behandling</h2>
               </div>
@@ -782,7 +373,7 @@
 
               <div class="treatment-box">
                 <h4>1. Hoyflow oksygen (gullstandarden)</h4>
-                <p>100% ren oksygen pa minst 12-15 liter/minutt gjennom en ikke-gjenpustingsmaske i 15-20 minutter.</p>
+                <p>100% ren oksygen på minst 12-15 liter/minutt gjennom en ikke-gjenpustingsmaske i 15-20 minutter.</p>
                 <ul>
                   <li>78% ble smertefrie etter 15 minutter (vs 20% med placebo)</li>
                   <li>Ingen bivirkninger eller kardiovaskulare kontraindikasjoner</li>
@@ -795,21 +386,21 @@
                 <p>En injeksjon (6 mg) i laret gir raskest medikamentell lindring.</p>
                 <ul>
                   <li>75% oppnadde ingen eller mild smerte</li>
-                  <li>Virkning pa 5-10 minutter</li>
+                  <li>Virkning på 5-10 minutter</li>
                   <li>Tabletter virker for sakte ved klasehodepine</li>
                 </ul>
               </div>
 
               <h3>Forebyggende behandling</h3>
-              <p><strong>Verapamil (hjertemedisin)</strong> er forstevalg for å forhindre anfall, med responsrater pa 70-80%. EKG-overvaking er nodvendig.</p>
+              <p><strong>Verapamil (hjertemedisin)</strong> er førstevalg for å forhindre anfall, med responsrater på 70-80%. EKG-overvaking er nødvendig.</p>
               <p><strong>Galcanezumab (Emgality)</strong> - en CGRP-hemmer - ble FDA-godkjent i 2019 for episodisk klasehodepine. Pasienter fikk 8,7 farre anfall per uke mot 5,2 med placebo.</p>
             </section>
 
             <!-- SECTION 7: Kiropraktorens rolle -->
             <section class="hub-section" id="s7">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">7</span>
-                <h2 class="section-title">Hva kan kiropraktoren gjore?</h2>
+                <h2 class="section-title">Hva kan kiropraktoren gjøre?</h2>
               </div>
 
               <p>La meg vare arlig: <strong>Kiropraktikk behandler ikke klasehodepine.</strong> Dette er en nevrologisk sykdom i hypothalamus som krever spesifikk medisinsk behandling.</p>
@@ -817,7 +408,7 @@
               <p>Men kiropraktorer har to viktige roller:</p>
 
               <h3>1. Gjenkjenne og henvise</h3>
-              <p>Med en gjennomsnittlig diagnostisk forsinkelse pa 5-7 år kan rask gjenkjenning vare livsforandrende. Når du ser en pasient med:</p>
+              <p>Med en gjennomsnittlig diagnostisk forsinkelse på 5-7 år kan rask gjenkjenning vare livsforandrende. Når du ser en pasient med:</p>
               <ul>
                 <li>Korte, intense smerteanfall rundt ett oye</li>
                 <li>Rodt oye og tareflod under anfall</li>
@@ -829,24 +420,24 @@
               <h3>2. Avlaste sekundare muskelsmerter</h3>
               <p>En studie av Solomon og Lipton (Headache Journal, 1990) fant at blant 100 klasehodepinepasienter opplevde:</p>
               <ul>
-                <li>47% smerter i eller stralende til nakken</li>
+                <li>47% smerter i eller strålende til nakken - se <a href="nakkehodepine.html">nakkehodepine</a></li>
                 <li>40% nakkestivhet under anfall</li>
                 <li>29% omhet i nakken</li>
               </ul>
-              <p>Mange pasienter utvikler sekundare muskelspenninger fra a spenne seg gjennom brutale smerteanfall. Disse tilleggsplagende kan kiropraktoren hjelpe med - <strong>men kun som supplement til nevrologisk behandling, aldri som erstatning.</strong></p>
+              <p>Mange pasienter utvikler sekundare muskelspenninger fra å spenne seg gjennom brutale smerteanfall, med <a href="triggerpunkter-hodepine.html">triggerpunkter</a> som førsterker hodepinen. Disse tilleggsplagende kan kiropraktoren hjelpe med - <strong>men kun som supplement til nevrologisk behandling, aldri som erstatning.</strong></p>
             </section>
 
-            <!-- SECTION 8: Rode flagg -->
+            <!-- SECTION 8: Røde flagg -->
             <section class="hub-section" id="s8">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">8</span>
-                <h2 class="section-title">Rode flagg - når du ma søke lege</h2>
+                <h2 class="section-title">Røde flagg - nær du må søke lege</h2>
               </div>
 
               <div class="red-flag-box">
                 <h3>KONTAKT LEGE/LEGEVAKT UMIDDELBART VED:</h3>
                 <ul>
-                  <li><strong>Plutselig, voldsom hodepine</strong> som når maksimal intensitet innen sekunder ("tordenskyhodepine")</li>
+                  <li><strong>Plutselig, voldsom hodepine</strong> som nær maksimal intensitet innen sekunder ("tordenskyhodepine")</li>
                   <li><strong>Hodepine med feber og nakkestivhet</strong></li>
                   <li><strong>Nevrologiske utfall</strong> - kraftsvikt, talevansker, synsforstyrrelser</li>
                   <li><strong>Hodepine etter hodeskade</strong></li>
@@ -857,19 +448,19 @@
 
             <!-- SECTION 9: FAQ -->
             <section class="hub-section" id="s9">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">9</span>
-                <h2 class="section-title">Ofte stilte sporsmal</h2>
+                <h2 class="section-title">Ofte stilte spørsmål</h2>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">Kan klasehodepine forveksles med migrene?</div>
-                <div class="faq-answer">Ja, 19% får forst feildiagnosen migrene. Hovedforskjellen er atferden: migrenepasientene søker ro i morke rom, mens klasehodepinepasienter vandrer urolig rundt under anfall.</div>
+                <div class="faq-answer">Ja, 19% får først feildiagnosen <a href="migrene.html">migrene</a>. Hovedforskjellen er atferden: migrenepasientene søker ro i morke rom, mens klasehodepinepasienter vandrer urolig rundt under anfall.</div>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">Kan stress utlose anfall?</div>
-                <div class="faq-answer">Nei, stress er ikke en trigger for klasehodepine. Derimot kan alkohol utlose anfall pa minutter under en aktiv klaseperiode - men ikke i remisjonsfasen.</div>
+                <div class="faq-answer">Nei, stress er ikke en trigger for klasehodepine. Derimot kan alkohol utlose anfall på minutter under en aktiv klaseperiode - men ikke i remisjonsfasen.</div>
               </div>
 
               <div class="faq-item">
@@ -884,11 +475,11 @@
 
               <div class="faq-item">
                 <div class="faq-question">Hjelper massasje eller kiropraktikk?</div>
-                <div class="faq-answer">Ingen studier dokumenterer effekt av manuell terapi pa selve klasehodepinen. Slike behandlinger kan kun hjelpe med sekundare muskelspenninger, ikke erstatte medisinsk behandling.</div>
+                <div class="faq-answer">Ingen studier dokumenterer effekt av manuell terapi på selve klasehodepinen. Slike behandlinger kan kun hjelpe med sekundare muskelspenninger, ikke erstatte medisinsk behandling.</div>
               </div>
 
               <div class="faq-item">
-                <div class="faq-question">Kan klasehodepine ga over av seg selv?</div>
+                <div class="faq-question">Kan klasehodepine gå over av seg selv?</div>
                 <div class="faq-answer">Sjelden permanent, men remisjonsperiodene kan bli lengre med arene. Noen fa opplever spontan langvarig remisjon. Ca. 80% av episodiske pasienter beholder den formen over 10 år.</div>
               </div>
             </section>
@@ -896,18 +487,23 @@
             <!-- CTA -->
             <div class="hub-cta">
               <h3>Mistenker du klasehodepine?</h3>
-              <p>Det viktigste er a fa riktig diagnose. Hos TheBackROM pa Majorstua kan jeg hjelpe deg med vurdering av hodepinesymptomer, henvisning til nevrolog ved mistanke om klasehodepine, og behandling av sekundare nakke- og muskelplager.</p>
-              <p>Priser: Nytt problem 1105 kr | Oppfolging 780 kr</p>
-              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn">Bestill vurdering</a>
+              <p>Det viktigste er å fa riktig diagnose. Hos TheBackROM på Majorstua kan jeg hjelpe deg med vurdering av hodepinesymptomer, henvisning til nevrolog ved mistanke om klasehodepine, og behandling av sekundare nakke- og muskelplager.</p>
+              <p>Priser: Nytt problem 1105 kr | Oppfølg 780 kr</p>
+              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="button">Bestill vurdering</a>
             </div>
 
             <!-- Related -->
             <div class="related-box">
               <h3>Relaterte artikler</h3>
+              <a href="../hodepine.html">Hodepine - komplett oversikt</a>
               <a href="migrene.html">Migrene - typer, triggere og behandling</a>
-              <a href="spenningshodepine.html">Spenningshodepine - triggerpunkter og behandling</a>
-              <a href="../nakke/cervikogen-hodepine.html">Cervikogen hodepine - hodepine fra nakken</a>
-              <a href="../hodepine.html">Tilbake til hodepine-oversikten</a>
+              <a href="spenningshodepine.html">Spenningshodepine</a>
+              <a href="nakkehodepine.html">Nakkehodepine (cervikogen hodepine)</a>
+              <a href="triggerpunkter-hodepine.html">Triggerpunkter og hodepine</a>
+              <a href="occipital-nevralgi.html">Occipital nevralgi</a>
+              <a href="bihule-migrene.html">Bihulemigrene</a>
+              <a href="hodepine-tinningen.html">Hodepine i tinningen</a>
+              <a href="kronisk-daglig-hodepine.html">Kronisk daglig hodepine</a>
             </div>
 
             <!-- Sources -->
@@ -920,7 +516,7 @@
                 <li>ICHD-3. The International Classification of Headache Disorders, 3rd edition. Cephalalgia. 2018</li>
                 <li>Voiticovschi-Iosob C et al. Diagnostic delay and misdiagnosis of cluster headache. J Headache Pain. 2014</li>
                 <li>May A et al. Hypothalamic activation in cluster headache attacks. The Lancet. 1998</li>
-                <li>Cohen AS et al. High-flow oxygen for treatment of cluster headache: a randomized trial. JAMA. 2009</li>
+                <li>Cohen AS et al. High-flow oxygen for treatment of cluster headache: å randomized trial. JAMA. 2009</li>
                 <li>Goadsby PJ et al. Trial of Galcanezumab in Prevention of Episodic Cluster Headache. N Engl J Med. 2019</li>
                 <li>Solomon S, Lipton RB. Cluster headache and the neck. Headache. 1990</li>
                 <li>StatPearls. Cluster Headache. 2024. NCBI Bookshelf</li>
@@ -934,19 +530,19 @@
           </div>
         </article>
 
-        <aside class="hub-sidenav">
-          <div class="sidenav-inner">
-            <div class="sidenav-title">Innhold</div>
-            <a href="#s1" class="sidenav-link">Hva er klasehodepine?</a>
-            <a href="#s2" class="sidenav-link">Symptomer</a>
-            <a href="#s3" class="sidenav-link">Episodisk vs. kronisk</a>
-            <a href="#s4" class="sidenav-link">Årsaker</a>
-            <a href="#s5" class="sidenav-link">Diagnostikk</a>
-            <a href="#s6" class="sidenav-link">Behandling</a>
-            <a href="#s7" class="sidenav-link">Kiropraktorens rolle</a>
-            <a href="#s8" class="sidenav-link">Rode flagg</a>
-            <a href="#s9" class="sidenav-link">FAQ</a>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="sidenav-cta">Bestill time</a>
+        <aside class="hub-sidebar">
+          <div class="hub-toc-card">
+            <div class="hub-toc-card__title">Innhold</div>
+            <a href="#s1" class="hub-toc-card__link">Hva er klasehodepine?</a>
+            <a href="#s2" class="hub-toc-card__link">Symptomer</a>
+            <a href="#s3" class="hub-toc-card__link">Episodisk vs. kronisk</a>
+            <a href="#s4" class="hub-toc-card__link">Årsaker</a>
+            <a href="#s5" class="hub-toc-card__link">Diagnostikk</a>
+            <a href="#s6" class="hub-toc-card__link">Behandling</a>
+            <a href="#s7" class="hub-toc-card__link">Kiropraktorens rolle</a>
+            <a href="#s8" class="hub-toc-card__link">Røde flagg</a>
+            <a href="#s9" class="hub-toc-card__link">FAQ</a>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="hub-toc-card__cta">Bestill time</a>
           </div>
         </aside>
 
@@ -958,40 +554,67 @@
       <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn-primary">Bestill time</a>
     </div>
 
-    <footer class="footer">
+        <footer class="footer">
       <div class="footer__container">
-        <div class="footer__grid">
-          <div class="footer__column footer__about">
-            <img src="../../pictures.final/Final Transparent Logo.png" alt="TheBackROM Logo" class="footer__logo-img" loading="lazy" decoding="async" width="150" height="auto">
-            <p class="footer__text">Kiropraktor Mads Finstad hos TheBackROM pa Majorstua.</p>
-            <div class="footer__social">
-              <a href="https://www.facebook.com/profile.php?id=61571895498436" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social-link"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-              <a href="https://www.instagram.com/thebackrom/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div class="footer__column">
-            <h3 class="footer__heading">Kontakt</h3>
-            <ul class="footer__list">
-              <li class="footer__list-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Gardeveien 17, 0363 Oslo</li>
-              <li class="footer__list-item"><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+4740440444">404 40 444</a></li>
-              <li class="footer__list-item"><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:madsfinstad@gmail.com">madsfinstad@gmail.com</a></li>
-            </ul>
-          </div>
-          <div class="footer__column">
-            <h3 class="footer__heading">Apningstider</h3>
-            <ul class="footer__list">
-              <li class="footer__list-item">Mandag: 08:00 - 18:00</li>
-              <li class="footer__list-item">Tirsdag: 10:00 - 18:00</li>
-              <li class="footer__list-item">Onsdag: 08:00 - 18:00</li>
-              <li class="footer__list-item">Torsdag: 10:00 - 18:00</li>
-              <li class="footer__list-item">Fredag: 08:00 - 15:00</li>
-            </ul>
+        <!-- Left Column -->
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../../images/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
           </div>
         </div>
-        <div class="footer__bottom">
-          <p class="footer__copyright">Copyright &copy; 2026 TheBackROM. All rights reserved.</p>
-          <a href="../../personvern.html" class="footer__privacy">Personvern</a>
+
+        <!-- Center Column -->
+        <div class="footer__center">
+          <div class="footer__logo">
+            <img src="../../images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
+          </div>
         </div>
+
+        <!-- Right Column -->
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Åpningstider</h3>
+            <p>Mandag - Fredag: 08:00 - 19:00</p>
+            <p>Lørdag: 10:00 - 16:00</p>
+            <p>Søndag: Stengt</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Kontaktinformasjon</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>E-post: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 TheBackROM – Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
@@ -999,7 +622,7 @@
   <script src="../../js/script.min.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const sidenavLinks = document.querySelectorAll('.sidenav-link[href^="#"]');
+      const sidenavLinks = document.querySelectorAll('.hub-toc-card__link[href^="#"]');
       const sections = document.querySelectorAll('.hub-section[id]');
 
       if (sidenavLinks.length && sections.length) {
@@ -1007,7 +630,7 @@
           entries.forEach(entry => {
             if (entry.isIntersecting) {
               sidenavLinks.forEach(link => link.classList.remove('active'));
-              const activeLink = document.querySelector('.sidenav-link[href="#' + entry.target.id + '"]');
+              const activeLink = document.querySelector('.hub-toc-card__link[href="#' + entry.target.id + '"]');
               if (activeLink) activeLink.classList.add('active');
             }
           });
@@ -1019,3 +642,5 @@
   </script>
 </body>
 </html>
+
+

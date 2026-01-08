@@ -11,9 +11,9 @@
   <meta name="view-transition" content="same-origin" />
 
   <link rel="manifest" href="../../manifest.json" />
-  <link rel="apple-touch-icon" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
   <link rel="preload" as="style" href="../../css/main.min.css" />
-  <link rel="icon" type="image/png" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Superior Kanal Dehiscens Syndrom (SCDS) - Symptomer og Behandling | Kiropraktor Oslo</title>
 
   <meta name="description" content="Superior kanal dehiscens syndrom (SCDS) gir lydinduert svimmelhet og autofoni. Sjelden tilstand der hull i benet over øvre buegang forstyrrer balansen.">
@@ -70,27 +70,75 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="" /></noscript>
 
   <link rel="stylesheet" href="../../css/main.min.css?v=20260101">
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css">
+  <link rel="stylesheet" href="../../css/hub-article.css">
+
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
   <link rel="preload" as="style" href="../../css/font-awesome-minimal.css">
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
+
+  <style>
+    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+    .hub-intro { margin-bottom: 40px; }
+    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
+    .intro-text p { margin-bottom: 14px; }
+    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
+    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
+    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
+    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
+    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
+    .sources-section ul { font-size: 0.85rem; color: #64748b; }
+    .sources-section li { margin-bottom: 6px; }
+    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
+  </style>
 </head>
 
 <body id="top">
   <div class="wrapper">
-    <header class="header">
+        <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+            alt="TheBackROM Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
-            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
-            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk" aria-pressed="false">EN</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
-          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false"><span></span><span></span><span></span></button>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="menu__body">
             <ul class="menu__list">
               <li class="menu__item"><a href="../../index.html" class="menu__link">Hjem</a></li>
@@ -100,229 +148,450 @@
               <li class="menu__item"><a href="../../priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="../../faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="../../contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="../../fagartikler/index.html" class="menu__link">Fagartikler</a></li>
               <li class="menu__item"><a href="../../blogg/index.html" class="menu__link">Blogg</a></li>
-              <li class="menu__item"><a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Bestill Time</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-    <main class="page">
-      <article class="blog-post">
-        <div class="blog-post__container">
-          <header class="blog-post__header">
-            <nav class="breadcrumb" style="margin-bottom: 12px; font-size: 13px;">
-              <a href="../svimmelhet.html" style="color: rgba(255,255,255,0.7);">Svimmelhet</a>
-              <span style="color: rgba(255,255,255,0.5);"> / </span>
-              <span style="color: rgba(255,255,255,0.9);">SCDS</span>
-            </nav>
-            <span class="blog-post__category">Diagnose</span>
-            <h1 class="blog-post__title">Superior Kanal Dehiscens Syndrom (SCDS)</h1>
-            <div class="blog-post__meta">
-              <span><i class="fas fa-calendar" aria-hidden="true"></i> Januar 2026</span>
-              <span><i class="fas fa-user" aria-hidden="true"></i> Mads Finstad</span>
-              <span><i class="fas fa-clock" aria-hidden="true"></i> 12 min lesing</span>
-            </div>
-          </header>
 
-          <div class="blog-post__content">
-            <div class="tldr-box" style="background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%); border-left: 4px solid #e8a838; border-radius: 0 10px 10px 0; padding: 20px; margin-bottom: 28px;">
-              <h3 style="font-size: 15px; color: #1a1a2e; margin-bottom: 12px;">TL;DR - Kort oppsummert</h3>
-              <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Hva det er:</strong> En sjelden tilstand der et hull i benet over den øvre buegangen forårsaker svimmelhet og hørselsforstyrrelser</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Vanligste symptomer:</strong> Autofoni (hører egen stemme/hjerteslag unormalt høyt), lydinduert svimmelhet, trykkutløst svimmelhet</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Kiropraktorens rolle:</strong> Identifisere tilstanden og henvise til ØNH-spesialist - vestibulær rehabilitering kan hjelpe etter kirurgi</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Røde flagg:</strong> Svimmelhet utløst av høye lyder, hører egne øyebevegelser, pulserende øresus</li>
+    <main class="page" id="main">
+      <!-- Hero Section - OUTSIDE hub-wrapper like hub page -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <nav class="breadcrumb" aria-label="Brødsmuler">
+            <a href="../svimmelhet.html">Svimmelhet</a>
+            <span> / </span>
+            <span>SCDS</span>
+          </nav>
+          <h1>Superior Kanal Dehiscens Syndrom (SCDS)</h1>
+          <p class="hub-hero__subtitle">Symptomer, diagnose og behandling | Kiropraktor Mads Finstad, Majorstua</p>
+        </div>
+      </section>
+
+      <div class="hub-wrapper">
+        <article class="hub-main">
+
+          <section class="hub-intro">
+            <div class="intro-text">
+              <p>Superior kanal dehiscens syndrom (SCDS) er en sjelden tilstand i det indre oret som først ble beskrevet av Lloyd Minor og kolleger i 1998. Tilstanden oppstår nær benet som dekker den ovre buegangen (canalis semicircularis superior) har et hull eller er unormalt tynt. SCDS er en av flere tilstander som kan gi <a href="../svimmelhet.html">svimmelhet</a>, men skiller seg fra andre diagnoser ved sine karakteristiske lyd- og trykkutloste symptomer.</p>
+              <p>Anatomiske studier viser at ca. 0,5% av befolkningen har komplett dehiscens (hull), mens ytterligere 1,4% har svært tynt ben (≤0,1 mm) over kanalen. Langt fra alle med anatomisk dehiscens utvikler symptomer - mange lever hele livet uten plager.</p>
+            </div>
+
+            <div class="premium-summary-card">
+              <h3>Kort oppsummert</h3>
+              <ul>
+                <li><strong>Hva det er:</strong> En sjelden tilstand der et hull i benet over den ovre buegangen forårsaker svimmelhet og horselsforstyrrelser</li>
+                <li><strong>Vanligste symptomer:</strong> Autofoni (horer egen stemme/hjerteslag unormalt hoyt), lydinduert svimmelhet, trykkutlost svimmelhet</li>
+                <li><strong>Kiropraktorens rolle:</strong> Identifisere tilstanden og henvise til ONH-spesialist - vestibular rehabilitering kan hjelpe etter kirurgi</li>
+                <li><strong>Røde flagg:</strong> Svimmelhet utlost av hoye lyder, horer egne oyebevegelser, pulserende oresus</li>
               </ul>
             </div>
 
-            <h2>Hva er superior kanal dehiscens syndrom?</h2>
-            <p>Superior kanal dehiscens syndrom (SCDS) er en sjelden tilstand i det indre øret som først ble beskrevet av Lloyd Minor og kolleger i 1998. Tilstanden oppstår når benet som dekker den øvre buegangen (canalis semicircularis superior) har et hull eller er unormalt tynt.</p>
-            <p>Anatomiske studier viser at ca. 0,5% av befolkningen har komplett dehiscens (hull), mens ytterligere 1,4% har svært tynt ben (≤0,1 mm) over kanalen. Langt fra alle med anatomisk dehiscens utvikler symptomer - mange lever hele livet uten plager.</p>
-            <p>På CT-bilder ser man dehiscens hos ca. 4% av befolkningen, men dette tallet er kunstig høyt fordi bildediagnostikk overestimerer tilstanden. Kun en brøkdel av disse har faktisk symptomgivende SCDS.</p>
+            <!-- Related sub-articles - directly under intro -->
+            <nav class="hub-subnav">
+              <h3>Relaterte svimmelhetstilstander</h3>
+              <p style="margin-bottom: 16px; color: #64748b;">SCDS er en av flere tilstander som kan gi svimmelhet. Les mer om andre diagnoser:</p>
+              <div class="hub-subnav__grid hub-subnav__grid--detailed">
+                <a href="../svimmelhet.html" class="hub-subnav__card">
+                  <strong>Svimmelhet - Hovedside</strong>
+                  <span>Oversikt over alle svimmelhetstilstander</span>
+                </a>
+                <a href="menieres-sykdom.html" class="hub-subnav__card">
+                  <strong>Menieres sykdom</strong>
+                  <span>Anfall med svimmelhet og horselstap</span>
+                </a>
+                <a href="krystallsyke-bppv.html" class="hub-subnav__card">
+                  <strong>Krystallsyke (BPPV)</strong>
+                  <span>Stillingsbetinget svimmelhet</span>
+                </a>
+                <a href="vestibulær-hypofunksjon.html" class="hub-subnav__card">
+                  <strong>Vestibular hypofunksjon</strong>
+                  <span>Nedsatt balansefunksjon</span>
+                </a>
+              </div>
+            </nav>
 
-            <h2>Hvorfor gir hullet symptomer?</h2>
-            <p>Det indre øret har normalt to "vinduer" - det ovale vindu der lyd kommer inn, og det runde vindu som gir trykkutligning. Når det oppstår et hull i buegangen, skapes et unormalt "tredje vindu" som endrer hvordan lyd og trykk påvirker balanseorganet.</p>
+            <!-- Red Flag Alert -->
+            <div class="red-flag-alert">
+              <h4>Når bør du kontakte ONH-spesialist?</h4>
+              <p>Svimmelhet utlost av hoye lyder, du horer egne oyebevegelser, fottrinn eller hjerteslag unormalt tydelig, svimmelhet ved pressing, hosting eller nesepussing.</p>
+              <a href="vestibulær-hypofunksjon.html">Les mer om vestibulare tilstander</a>
+            </div>
+          </section>
+
+          <!-- SECTION 1: Hvorfor gir hullet symptomer -->
+          <section class="hub-section" id="s1">
+            <div class="section-header">
+              <span class="section-number">1</span>
+              <h2>Hvorfor gir hullet symptomer?</h2>
+            </div>
+
+            <p>Det indre oret har normalt to "vinduer" - det ovale vindu der lyd kommer inn, og det runde vindu som gir trykkutligning. Når det oppstår et hull i buegangen, skapes et unormalt "tredje vindu" som endrer hvordan lyd og trykk pavirker balanseorganet.</p>
+
             <p>Dette tredje vinduet gjør at:</p>
             <ul>
-              <li>Luftledet lyd omdirigeres bort fra sneglehuset, noe som gir hørselstap i lave frekvenser</li>
-              <li>Benledet lyd får forsterket tilgang til væsken i det indre øret, noe som forklarer overfølsomhet for indre kroppslyder</li>
-              <li>Lyd og trykkendringer skaper unormal væskebevegelse som stimulerer balansecellene</li>
+              <li>Luftledet lyd omdirigeres bort fra sneglehuset, noe som gir horselstap i lave frekvenser</li>
+              <li>Benledet lyd får førsterket tilgang til vasken i det indre oret, noe som forklarer overfølsomhet for indre kroppslyder</li>
+              <li>Lyd og trykkendringer skaper unormal vaskebevegelse som stimulerer balansecellene</li>
             </ul>
+          </section>
 
-            <h2>Hvem rammes?</h2>
-            <p>SCDS debuterer typisk i 40-60 års alder (gjennomsnitt 50 år) og rammer kvinner litt oftere enn menn med et forhold på ca. 1,2:1. Anatomisk dehiscens er bilateral (begge sider) hos opptil 50% av pasientene, men vanligvis er ett øre mer symptomatisk enn det andre.</p>
-            <p>Hos omtrent halvparten av pasientene som opereres, rapporteres det om en utløsende traume eller trykkøkende hendelse før symptomene startet - med gjennomsnittlig 5,6 år mellom hendelsen og symptomdebut.</p>
-
-            <h2>Symptomer</h2>
-            <h3>Vestibulære symptomer (balanseforstyrrelser)</h3>
-            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 16px 0;">
-              <h4 style="color: #1a1a2e; margin: 0 0 12px;">Lydinduert svimmelhet (Tullio-fenomen)</h4>
-              <p style="margin: 0; font-size: 14px;">Forekommer hos 42-43% av pasientene. Høye lyder (typisk 500 Hz-2 kHz ved 100-110 dB) utløser roterende svimmelhet eller ustøhet. Eksempler kan være høy musikk, hunder som bjeffer, eller støy fra byggearbeid.</p>
+          <!-- SECTION 2: Hvem rammes -->
+          <section class="hub-section" id="s2">
+            <div class="section-header">
+              <span class="section-number">2</span>
+              <h2>Hvem rammes?</h2>
             </div>
 
-            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 16px 0;">
-              <h4 style="color: #1a1a2e; margin: 0 0 12px;">Trykkutløst svimmelhet (Hennebert-tegn)</h4>
-              <p style="margin: 0; font-size: 14px;">Rammer 37% og utløses av Valsalva-manøver (pressing), hosting, nysing, tunge løft eller nesepussing.</p>
+            <p>SCDS debuterer typisk i 40-60 års alder (gjennomsnitt 50 ar) og rammer kvinner litt oftere enn menn med et forhold på ca. 1,2:1. Anatomisk dehiscens er bilateral (begge sider) hos opptil 50% av pasientene, men vanligvis er ett ore mer symptomatisk enn det andre.</p>
+
+            <p>Hos omtrent halvparten av pasientene som opereres, rapporteres det om en utløsende traume eller trykkovende hendelse for symptomene startet - med gjennomsnittlig 5,6 ar mellom hendelsen og symptomdebut.</p>
+
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="stat-number">0.5%</span>
+                <span class="stat-label">av befolkningen har dehiscens</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">40-60 år</span>
+                <span class="stat-label">typisk debutalder</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">50%</span>
+                <span class="stat-label">har bilateral dehiscens</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 3: Symptomer -->
+          <section class="hub-section" id="s3">
+            <div class="section-header">
+              <span class="section-number">3</span>
+              <h2>Symptomer</h2>
             </div>
 
-            <p>Kronisk ustøhet og balanseproblemer plager mange, og opptil 50% rapporterer mental utmattelse og hjernetåke.</p>
+            <h3>Vestibulare symptomer (balanseforstyrrelser)</h3>
 
-            <h3>Auditive symptomer (hørselsforstyrrelser)</h3>
-            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 16px 0;">
-              <h4 style="color: #1a1a2e; margin: 0 0 12px;">Autofoni</h4>
-              <p style="margin: 0; font-size: 14px;">Det mest karakteristiske symptomet og rammer 42-60% av pasientene. Pasienter beskriver at egen stemme låter forvrengt eller "metallisk", og mange hører egne kroppslyder unormalt høyt - som øyebevegelser, fottrinn, hjerteslag og til og med tarmlyder. Dette er nærmest diagnostisk for SCDS når det er til stede.</p>
+            <div class="condition-card">
+              <h4>Lydinduert svimmelhet (Tullio-fenomen)</h4>
+              <p>Forekommer hos 42-43% av pasientene. Hoye lyder (typisk 500 Hz-2 kHz ved 100-110 dB) utloser roterende svimmelhet eller ustohet. Eksempler kan vare hoy musikk, hunder som bjeffer, eller stoy fra byggearbeid.</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Trykkutlost svimmelhet (Hennebert-tegn)</h4>
+              <p>Rammer 37% og utloses av Valsalva-manover (pressing), hosting, nysing, tunge løft eller nesepussing.</p>
+            </div>
+
+            <p>Kronisk ustohet og balanseproblemer plager mange, og opptil 50% rapporterer mental utmattelse og hjernetake.</p>
+
+            <h3>Auditive symptomer (horselsforstyrrelser)</h3>
+
+            <div class="condition-card">
+              <h4>Autofoni</h4>
+              <p>Det mest karakteristiske symptomet og rammer 42-60% av pasientene. Pasienter beskriver at egen stemme later forvrengt eller "metallisk", og mange horer egne kroppslyder unormalt hoyt - som oyebevegelser, fottrinn, hjerteslag og til og med tarmlyder. Dette er narmest diagnostisk for SCDS nær det er til stede.</p>
             </div>
 
             <ul>
-              <li><strong>Pulserende øresus (tinnitus):</strong> Forekommer hos 20-50% og oppleves som en "susende" lyd synkron med pulsen</li>
-              <li><strong>Hørselstap i lave frekvenser:</strong> Rammer ca. 40%, typisk i området 250-1000 Hz</li>
-              <li><strong>Fyldefornemmelse i øret:</strong> Rapporteres av over 60%</li>
+              <li><strong>Pulserende oresus (tinnitus):</strong> Forekommer hos 20-50% og oppleves som en "susende" lyd synkron med pulsen</li>
+              <li><strong>Horselstap i lave frekvenser:</strong> Rammer ca. 40%, typisk i området 250-1000 Hz</li>
+              <li><strong>Fyldefornemmelse i oret:</strong> Rapporteres av over 60%</li>
             </ul>
+          </section>
 
-            <h2>Differensialdiagnoser - hva kan ligne?</h2>
-            <p>SCDS kalles "ørets store etterligner" fordi symptomene kan ligne flere andre tilstander:</p>
-            <ul>
-              <li><strong>Ménières sykdom:</strong> Gir også hørselstap og svimmelhet, men anfallene kommer spontant og varer 20 minutter til flere timer. Ved SCDS er symptomene tidsrelatert til spesifikke lyd- eller trykkutløsere.</li>
-              <li><strong>BPPV (krystallsyke):</strong> Utløses av hodebevegelser og gir kortvarig roterende svimmelhet som avtar ved gjentatte bevegelser. SCDS utløses av lyd og trykk, ikke hodestilling.</li>
-              <li><strong>Otosklerose:</strong> Gir også hørselstap i lave frekvenser, men ved otosklerose er stapediusrefleksen borte - ved SCDS er den normal. Denne forskjellen er viktig fordi stapedektomi (operasjon for otosklerose) er kontraindisert ved SCDS.</li>
-            </ul>
+          <!-- SECTION 4: Differensialdiagnoser -->
+          <section class="hub-section" id="s4">
+            <div class="section-header">
+              <span class="section-number">4</span>
+              <h2>Differensialdiagnoser - hva kan ligne?</h2>
+            </div>
 
-            <h2>Diagnostikk</h2>
-            <h3>Kliniske spørsmål som kan avsløre SCDS</h3>
-            <p>Ved mistanke om SCDS kan følgende spørsmål være avslørende:</p>
+            <p>SCDS kalles "orets store etterligner" fordi symptomene kan ligne flere andre tilstander:</p>
+
+            <div class="condition-card">
+              <h4><a href="menieres-sykdom.html">Menieres sykdom</a></h4>
+              <p>Gir også horselstap og svimmelhet, men anfallene kommer spontant og varer 20 minutter til flere timer. Ved SCDS er symptomene tidsrelatert til spesifikke lyd- eller trykkutlosere.</p>
+            </div>
+
+            <div class="condition-card">
+              <h4><a href="krystallsyke-bppv.html">BPPV (krystallsyke)</a></h4>
+              <p>Utloses av hodebevegelser og gir kortvarig roterende svimmelhet som avtar ved gjentatte bevegelser. SCDS utloses av lyd og trykk, ikke hodestilling.</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Otosklerose</h4>
+              <p>Gir også horselstap i lave frekvenser, men ved otosklerose er stapediusrefleksen borte - ved SCDS er den normal. Denne forskjellen er viktig fordi stapedektomi (operasjon for otosklerose) er kontraindisert ved SCDS.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 5: Diagnostikk -->
+          <section class="hub-section" id="s5">
+            <div class="section-header">
+              <span class="section-number">5</span>
+              <h2>Diagnostikk</h2>
+            </div>
+
+            <h3>Kliniske spørsmål som kan avslore SCDS</h3>
+            <p>Ved mistanke om SCDS kan folgende spørsmål vare avslorende:</p>
             <ul>
-              <li>"Kan du høre øynene dine bevege seg?"</li>
-              <li>"Blir du svimmel når du presser eller har avføring?"</li>
+              <li>"Kan du hore oynene dine bevege seg?"</li>
+              <li>"Blir du svimmel nær du presser eller har avforing?"</li>
               <li>"Gir nesepussing deg følelse av å snurre rundt?"</li>
-              <li>"Hører du din egen stemme unormalt høyt i ett øre?"</li>
+              <li>"Horer du din egen stemme unormalt hoyt i ett ore?"</li>
             </ul>
 
-            <h3>Diagnostiske kriterier (Bárány Society, 2021)</h3>
-            <p>For diagnosen SCDS kreves alle tre følgende:</p>
-            <ol>
-              <li><strong>A. Minst ett karakteristisk symptom:</strong> Benledningsoverfølsomhet (autofoni for indre kroppslyder), lydinduert svimmelhet/oscillopsi, trykkutløst svimmelhet/oscillopsi, eller pulserende tinnitus.</li>
-              <li><strong>B. Minst ett fysiologisk funn:</strong> Nystagmus i den øvre buegangens plan utløst av lyd eller trykk, negative benledningsskriftsverdier på audiometri i lave frekvenser, eller forsterkede VEMP-responser.</li>
-              <li><strong>C. Høyoppløselig CT:</strong> Som viser dehiscens med ≤0,5-0,63 mm snitttykkelse og reformaterte bilder i Pöschl- og Stenvers-plan.</li>
-            </ol>
+            <h3>Diagnostiske kriterier (Barany Society, 2021)</h3>
+            <p>For diagnosen SCDS kreves alle tre folgende:</p>
 
-            <div class="red-flag-box" style="background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%); border-left: 4px solid #e53e3e; border-radius: 0 10px 10px 0; padding: 20px; margin: 28px 0;">
-              <h3 style="font-size: 15px; color: #c53030; margin-bottom: 12px;">Røde flagg - når du bør kontakte ØNH-spesialist</h3>
-              <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="padding: 5px 0; font-size: 14px;">Svimmelhet utløst av høye lyder</li>
-                <li style="padding: 5px 0; font-size: 14px;">Du hører egne øyebevegelser, fottrinn eller hjerteslag unormalt tydelig</li>
-                <li style="padding: 5px 0; font-size: 14px;">Svimmelhet ved pressing, hosting eller nesepussing</li>
-                <li style="padding: 5px 0; font-size: 14px;">Pulserende øresus kombinert med balanseproblemer</li>
-                <li style="padding: 5px 0; font-size: 14px;">Hørselstap med bevarte akustiske reflekser</li>
-                <li style="padding: 5px 0; font-size: 14px;">Posisjonsutløst svimmelhet som ikke responderer på Epley-manøver</li>
+            <div class="info-box">
+              <h4>A. Minst ett karakteristisk symptom</h4>
+              <p>Benledningsoverfølsomhet (autofoni for indre kroppslyder), lydinduert svimmelhet/oscillopsi, trykkutlost svimmelhet/oscillopsi, eller pulserende tinnitus.</p>
+            </div>
+
+            <div class="info-box">
+              <h4>B. Minst ett fysiologisk funn</h4>
+              <p>Nystagmus i den ovre buegangens plan utlost av lyd eller trykk, negative benledningsskriftsverdier på audiometri i lave frekvenser, eller førsterkede VEMP-responser.</p>
+            </div>
+
+            <div class="info-box">
+              <h4>C. Hoyopploselig CT</h4>
+              <p>Som viser dehiscens med ≤0,5-0,63 mm snitttykkelse og reformaterte bilder i Poschl- og Stenvers-plan.</p>
+            </div>
+
+            <div class="red-flag-box">
+              <h3>Røde flagg - nær du bør kontakte ONH-spesialist</h3>
+              <ul>
+                <li>Svimmelhet utlost av hoye lyder</li>
+                <li>Du horer egne oyebevegelser, fottrinn eller hjerteslag unormalt tydelig</li>
+                <li>Svimmelhet ved pressing, hosting eller nesepussing</li>
+                <li>Pulserende oresus kombinert med balanseproblemer</li>
+                <li>Horselstap med bevarte akustiske reflekser</li>
+                <li>Posisjonsutlost svimmelhet som ikke responderer på Epley-manover</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- SECTION 6: Behandling -->
+          <section class="hub-section" id="s6">
+            <div class="section-header">
+              <span class="section-number">6</span>
+              <h2>Behandling</h2>
+            </div>
+
+            <h3>Konservativ behandling</h3>
+            <p>For pasienter med milde til moderate symptomer er konservativ behandling ofte førstevalg. Ca. 80% av diagnostiserte pasienter gjennomgår ikke kirurgi. Konservative tiltak inkluderer:</p>
+
+            <div class="treatment-box">
+              <h4>Konservative tiltak</h4>
+              <ul>
+                <li>Unnga utløsende faktorer (hoye lyder, pressing, tunge løft)</li>
+                <li>Horselvern i stoyende miljoer</li>
+                <li>Redusert salt- og koffeininntak</li>
+                <li>Acetazolamid (vanndrivende) som viste 78% symptomreduksjon i en studie</li>
               </ul>
             </div>
 
-            <h2>Behandling</h2>
-            <h3>Konservativ behandling</h3>
-            <p>For pasienter med milde til moderate symptomer er konservativ behandling ofte førstevalg. Ca. 80% av diagnostiserte pasienter gjennomgår ikke kirurgi. Konservative tiltak inkluderer:</p>
-            <ul>
-              <li>Unngå utløsende faktorer (høye lyder, pressing, tunge løft)</li>
-              <li>Hørselvern i støyende miljøer</li>
-              <li>Redusert salt- og koffeininntak</li>
-              <li>Acetazolamid (vanndrivende) som viste 78% symptomreduksjon i en studie</li>
-            </ul>
-
             <h3>Kirurgisk behandling</h3>
-            <p>Ved invalidiserende symptomer som vesentlig påvirker livskvalitet, kan kirurgi vurderes. Transmastoid tilgang (TMA) har betydelig lavere revisjonsrate (3,8% vs 33,3%), kortere sykehusopphold og bedre resultater for autofoni (95% vs 80%) sammenlignet med mellomfossa kraniotomi.</p>
-            <p>Total kirurgisk suksessrate er 94%. Ved langtidsoppfølging (gjennomsnitt 5,3 år) rapporterte 95% av pasientene bedring.</p>
+            <p>Ved invalidiserende symptomer som vesentlig pavirker livskvalitet, kan kirurgi vurderes. Transmastoid tilgang (TMA) har betydelig lavere revisjonsrate (3,8% vs 33,3%), kortere sykehusopphold og bedre resultater for autofoni (95% vs 80%) sammenlignet med mellomfosså kraniotomi.</p>
 
-            <h2>Kiropraktorens rolle ved SCDS</h2>
-            <p>SCDS er en strukturell tilstand som krever spesialistvurdering og eventuelt kirurgisk behandling. Kiropraktoren kan ikke behandle selve tilstanden, men har en viktig rolle i identifisering og henvisning til ØNH-spesialist.</p>
-            <p>Etter SCDS-kirurgi utvikler 39-80% forbigående vestibulær svekkelse, og 4,5-24% får BPPV. Her kan kiropraktor med vestibulær kompetanse bidra med:</p>
-            <ul>
-              <li>Gaze-stabiliseringsøvelser</li>
-              <li>Balansetrening</li>
-              <li>Epley-manøver ved postoperativ BPPV</li>
-            </ul>
+            <p>Total kirurgisk suksessrate er 94%. Ved langtidsoppfølg (gjennomsnitt 5,3 ar) rapporterte 95% av pasientene bedring.</p>
+          </section>
+
+          <!-- SECTION 7: Kiropraktorens rolle -->
+          <section class="hub-section" id="s7">
+            <div class="section-header">
+              <span class="section-number">7</span>
+              <h2>Kiropraktorens rolle ved SCDS</h2>
+            </div>
+
+            <p>SCDS er en strukturell tilstand som krever spesialistvurdering og eventuelt kirurgisk behandling. Kiropraktoren kan ikke behandle selve tilstanden, men har en viktig rolle i identifisering og henvisning til ONH-spesialist.</p>
+
+            <p>Etter SCDS-kirurgi utvikler 39-80% forbigaende <a href="vestibulær-hypofunksjon.html">vestibular svekkelse</a>, og 4,5-24% får BPPV. Her kan kiropraktor med vestibular kompetanse bidra med:</p>
+
+            <div class="treatment-box">
+              <h4>Vestibular rehabilitering etter kirurgi</h4>
+              <ul>
+                <li>Gaze-stabiliseringsøvelser</li>
+                <li>Balansetrening</li>
+                <li>Epley-manover ved postoperativ BPPV</li>
+              </ul>
+            </div>
 
             <h3>Viktige forholdsregler</h3>
-            <p>Ved mistanke om SCDS bør man unngå eller utvise forsiktighet med:</p>
+            <p>Ved mistanke om SCDS bør man unnga eller utvise forsiktighet med:</p>
             <ul>
-              <li>Valsalva-manøvrer</li>
+              <li>Valsalva-manovrer</li>
               <li>Tunge løft eller presseøvelser</li>
               <li>Cervikalmanipulasjon med thrust</li>
               <li>Pusteøvelser med tilbakeholdt pust</li>
               <li>Inverterte stillinger</li>
             </ul>
+          </section>
 
-            <h2>Prognose og livskvalitet</h2>
-            <p>Livskvaliteten ved SCDS er betydelig redusert før behandling. Health Utility Values hos preoperative pasienter er 0,68 mot 0,80 i normalbefolkningen. Dizziness Handicap Inventory viser gjennomsnitt 44 poeng, tilsvarende moderat handikap.</p>
-            <p>Kirurgisk behandling gir varig bedring hos de fleste. Ved langtidsoppfølging rapporterer 95% av opererte pasienter vedvarende forbedring. Noen symptomer, særlig hjernetåke og mental utmattelse, viser mindre bedring.</p>
-
-            <div class="cta-box" style="background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%); border-radius: 12px; padding: 28px; margin: 32px 0; text-align: center;">
-              <h3 style="color: #fff; margin-bottom: 12px; font-size: 18px;">Trenger du hjelp med svimmelhet?</h3>
-              <p style="color: rgba(255,255,255,0.85); margin-bottom: 16px; font-size: 14px;">Kiropraktor Mads Finstad har spesialkompetanse på svimmelhet og vestibulære tilstander. Hos TheBackROM på Majorstua tilbys grundig utredning av svimmelhetsproblematikk, inkludert VNG-undersøkelse.</p>
-              <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-bottom: 16px;"><strong>Priser:</strong> Nytt problem 1105 kr | Oppfølging 780 kr</p>
-              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary" style="display: inline-block; background: #e8a838; color: #1a1a2e; padding: 12px 28px; border-radius: 6px; text-decoration: none; font-weight: 600;">Bestill time</a>
+          <!-- SECTION 8: Prognose -->
+          <section class="hub-section" id="s8">
+            <div class="section-header">
+              <span class="section-number">8</span>
+              <h2>Prognose og livskvalitet</h2>
             </div>
 
-            <h2>Kilder</h2>
-            <ol style="font-size: 13px; line-height: 1.8;">
-              <li>Carey JP, Minor LB, Nager GT (2000). Dehiscence or thinning of bone overlying the superior semicircular canal in a temporal bone survey. Arch Otolaryngol Head Neck Surg 126:137-147</li>
-              <li>Gioacchini FM, et al. (2016). Outcomes in SCDS surgery: Systematic review. Laryngoscope 126:1218-1224</li>
-              <li>Schwartz SR, et al. (2019). Comparison of TMA and MFC for SCDS Repair. Otolaryngol Head Neck Surg 161:130-136</li>
-              <li>Ward BK, et al. (2021). SCDS: Bárány Society Diagnostic Criteria. J Vestib Res 31:131-141</li>
-              <li>Ward BK, Carey JP, Minor LB (2017). SCDS: Lessons from 20 Years. Front Neurol 8:177</li>
-            </ol>
-          </div>          <!-- Relaterte Fagartikler -->
-          <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0;">
-            <h3 style="color: #0369a1; margin-top: 0; margin-bottom: 16px;">Relaterte fagartikler</h3>
-            <p style="color: #334155; margin-bottom: 16px;">Vil du lære mer om svimmelhet, diagnostikk og behandling?</p>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="margin-bottom: 10px;"><a href="../../fagartikler/vng-undersokelse.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">VNG-undersøkelse</a> - Diagnostisk test for svimmelhet</li>
-              <li style="margin-bottom: 10px;"><a href="../../fagartikler/vestibular-rehabilitering.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Vestibulær rehabilitering</a> - Behandling av svimmelhet</li>
-              <li style="margin-bottom: 0;"><a href="../../fagartikler/balansesystemet.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Balansesystemets anatomi</a> - Forstå hvordan balansen fungerer</li>
+            <p>Livskvaliteten ved SCDS er betydelig redusert for behandling. Health Utility Values hos preoperative pasienter er 0,68 mot 0,80 i normalbefolkningen. Dizziness Handicap Inventory viser gjennomsnitt 44 poeng, tilsvarende moderat handikap.</p>
+
+            <p>Kirurgisk behandling gir varig bedring hos de fleste. Ved langtidsoppfølg rapporterer 95% av opererte pasienter vedvarende forbedring. Noen symptomer, sarlig hjernetake og mental utmattelse, viser mindre bedring.</p>
+
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="stat-number">94%</span>
+                <span class="stat-label">kirurgisk suksessrate</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">95%</span>
+                <span class="stat-label">vedvarende bedring</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">80%</span>
+                <span class="stat-label">velger ikke kirurgi</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <div class="hub-cta">
+            <h3>Trenger du hjelp med svimmelhet?</h3>
+            <p>Kiropraktor Mads Finstad har spesialkompetanse på svimmelhet og vestibulare tilstander. Hos TheBackROM på Majorstua tilbys grundig utredning av svimmelhetsproblematikk, inkludert VNG-undersøkelse.</p>
+            <p><strong>Priser:</strong> Nytt problem 1105 kr | Oppfølg 780 kr</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="button">Bestill time</a>
+          </div>
+
+          <!-- Related articles -->
+          <div class="related-box">
+            <h3>Relaterte artikler</h3>
+            <a href="../svimmelhet.html">Svimmelhet - Hovedside</a>
+            <a href="menieres-sykdom.html">Menieres sykdom</a>
+            <a href="krystallsyke-bppv.html">Krystallsyke (BPPV)</a>
+            <a href="vestibulær-hypofunksjon.html">Vestibular hypofunksjon</a>
+            <a href="vestibularisnevritt.html">Vestibularisnevritt</a>
+            <a href="vestibulær-migrene.html">Vestibular migrene</a>
+            <a href="pppd-kronisk-svimmelhet.html">PPPD (kronisk svimmelhet)</a>
+            <a href="nakkesvimmelhet.html">Nakkesvimmelhet</a>
+            <a href="whiplash-svimmelhet.html">Whiplash-svimmelhet</a>
+            <a href="mdds.html">MdDS (landgangssyke)</a>
+          </div>
+
+          <!-- Fagartikler -->
+          <div class="info-box" style="margin-top: 24px;">
+            <h4>Relaterte fagartikler</h4>
+            <p>Vil du lare mer om svimmelhet, diagnostikk og behandling?</p>
+            <ul>
+              <li><a href="../../tjeneste/svimmelhet/vng-undersøkelse.html">VNG-undersøkelse</a> - Diagnostisk test for svimmelhet</li>
+              <li><a href="../../tjeneste/svimmelhet/vestibular-rehabilitering.html">Vestibular rehabilitering</a> - Behandling av svimmelhet</li>
+              <li><a href="../../tjeneste/svimmelhet/balansesystemet.html">Balansesystemets anatomi</a> - Forsta hvordan balansen fungerer</li>
             </ul>
           </div>
 
+          <!-- Disclaimer -->
+          <p class="disclaimer">Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsok helsepersonell dersom du er usikker på din situasjon eller opplever røde flagg-symptomer.</p>
 
-          <div class="blog-post__tags">
-            <span class="tag">SCDS</span>
-            <span class="tag">Superior kanal dehiscens</span>
-            <span class="tag">Lydinduert svimmelhet</span>
-            <span class="tag">Autofoni</span>
-            <span class="tag">Vestibulær</span>
+          <!-- Sources -->
+          <section class="sources-section">
+            <h3>Kilder</h3>
+            <ul>
+              <li>Carey JP, Minor LB, Nager GT (2000). Dehiscence or thinning of bone overlying the superior semicircular canal in å temporal bone survey. Arch Otolaryngol Head Neck Surg 126:137-147</li>
+              <li>Gioacchini FM, et al. (2016). Outcomes in SCDS surgery: Systematic review. Laryngoscope 126:1218-1224</li>
+              <li>Schwartz SR, et al. (2019). Comparison of TMA and MFC for SCDS Repair. Otolaryngol Head Neck Surg 161:130-136</li>
+              <li>Ward BK, et al. (2021). SCDS: Barany Society Diagnostic Criteria. J Vestib Res 31:131-141</li>
+              <li>Ward BK, Carey JP, Minor LB (2017). SCDS: Lessons from 20 Years. Front Neurol 8:177</li>
+            </ul>
+          </section>
+
+          <p class="updated">Sist oppdatert: Januar 2026</p>
+
+        </article>
+
+        <!-- Sidebar (desktop only) -->
+        <aside class="hub-sidebar">
+          <!-- Conversion Card -->
+          <div class="hub-conversion-card">
+            <img src="../../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
+            <h3>Har du svimmelhet?</h3>
+            <p>Jeg hjelper deg med å finne riktig behandling og lindring.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+            </div>
           </div>
 
-          <nav class="blog-post__navigation">
-            <a href="../svimmelhet.html" class="blog-post__nav-link blog-post__nav-link--prev">
-              <span class="blog-post__nav-label">Tilbake til</span>
-              <span class="blog-post__nav-title">Svimmelhet oversikt</span>
-            </a>
-            <a href="vestibulaer-hypofunksjon.html" class="blog-post__nav-link blog-post__nav-link--next">
-              <span class="blog-post__nav-label">Les også</span>
-              <span class="blog-post__nav-title">Vestibulær hypofunksjon</span>
-            </a>
+          <!-- Table of Contents -->
+          <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
+            <h3>Innhold</h3>
+            <ul>
+              <li><a href="#s1">Hvorfor gir hullet symptomer?</a></li>
+              <li><a href="#s2">Hvem rammes?</a></li>
+              <li><a href="#s3">Symptomer</a></li>
+              <li><a href="#s4">Differensialdiagnoser</a></li>
+              <li><a href="#s5">Diagnostikk</a></li>
+              <li><a href="#s6">Behandling</a></li>
+              <li><a href="#s7">Kiropraktorens rolle</a></li>
+              <li><a href="#s8">Prognose</a></li>
+            </ul>
           </nav>
-        </div>
-      </article>
-    </main>
-  </div>
+        </aside>
 
-    <footer class="footer">
+      </div>
+    </main>
+
+    <!-- Mobile sticky CTA -->
+    <div class="mobile-sticky-cta">
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="button btn-primary">Bestill time</a>
+      <a href="tel:+4793043062" class="button btn-outline">Ring</a>
+    </div>
+
+        <footer class="footer">
       <div class="footer__container">
+        <!-- Left Column -->
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"><img loading="lazy" decoding="async" src="../../pictures.final/branding/icons/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook" /></a>
-            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"><img src="../../pictures.final/branding/icons/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram" loading="lazy" decoding="async" /></a>
-            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"><img src="../../pictures.final/branding/icons/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube" loading="lazy" decoding="async" /></a>
-            <a href="../../contact.html" class="footer__social-link"><img loading="lazy" decoding="async" src="../../pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../../images/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
           </div>
         </div>
+
+        <!-- Center Column -->
         <div class="footer__center">
-          <div class="footer__logo"><a href="../../index.html" class="logo"><img src="../../pictures.final/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a></div>
+          <div class="footer__logo">
+            <img src="../../images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
           <div class="back-to-top-wrapper">
-            <p class="back-to-top-text">Tilbake til start</p>
-            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden"><i class="fas fa-arrow-up" aria-hidden="true"></i> Opp</a>
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
           </div>
         </div>
+
+        <!-- Right Column -->
         <div class="footer__right">
           <div class="footer__hours">
             <h3>Åpningstider</h3>
@@ -338,28 +607,52 @@
           </div>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <a href="../../personvern.html" class="footer__policy">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 TheBackROM - Alle rettigheter reservert</p>
+        <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 TheBackROM – Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
-     class="mobile-sticky-cta"
-     aria-label="Bestill time hos kiropraktor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Bestill time
-  </a>
-
 
   <script src="../../js/script.min.js" defer></script>
   <script src="../../js/language-toggle.min.js" defer></script>
   <script src="../../js/modern-enhancements.min.js" defer></script>
+
+  <!-- TOC scroll tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+
+      if (sections.length === 0 || navLinks.length === 0) return;
+
+      function updateActiveLink() {
+        let current = 's1';
+        const scrollPos = window.scrollY + 200;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (scrollPos >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          const href = link.getAttribute('href');
+          if (href && href === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
 </body>
+
 </html>
+
+

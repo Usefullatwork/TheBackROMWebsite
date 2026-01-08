@@ -11,17 +11,17 @@
   <meta name="view-transition" content="same-origin" />
 
   <link rel="manifest" href="../../manifest.json" />
-  <link rel="apple-touch-icon" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
   <link rel="preload" as="style" href="../../css/main.min.css" />
-  <link rel="icon" type="image/png" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>POTS og Ortostatisk Svimmelhet - Symptomer og Behandling | Kiropraktor Oslo</title>
 
-  <meta name="description" content="POTS gir svimmelhet og racing puls når du reiser deg. 53% oppnår bedring med Levine-protokollen. Kiropraktor Mads Finstad, Majorstua Oslo.">
+  <meta name="description" content="POTS gir svimmelhet og racing puls nær du reiser deg. 53% oppnær bedring med Levine-protokollen. Kiropraktor Mads Finstad, Majorstua Oslo.">
   <meta name="keywords" content="POTS, postural ortostatisk takykardi syndrom, ortostatisk svimmelhet, dysautonomi, kiropraktor Oslo">
   <meta name="author" content="Mads Finstad">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="POTS og Ortostatisk Svimmelhet - Symptomer og Behandling">
-  <meta property="og:description" content="POTS gir svimmelhet og racing puls når du reiser deg. Strukturert trening er førstlinjebehandling.">
+  <meta property="og:description" content="POTS gir svimmelhet og racing puls nær du reiser deg. Strukturert trening er førstlinjebehandling.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://thebackrom.com/plager/svimmelhet/pots-syndrom.html">
   <meta property="og:site_name" content="TheBackROM">
@@ -33,7 +33,7 @@
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "headline": "POTS og Ortostatisk Svimmelhet",
-    "description": "POTS gir svimmelhet og racing puls når du reiser deg. Strukturert trening er førstlinjebehandling.",
+    "description": "POTS gir svimmelhet og racing puls nær du reiser deg. Strukturert trening er førstlinjebehandling.",
     "author": {
       "@type": "Person",
       "name": "Mads Finstad",
@@ -70,27 +70,76 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="" /></noscript>
 
   <link rel="stylesheet" href="../../css/main.min.css?v=20260101">
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css">
+  <link rel="stylesheet" href="../../css/hub-article.css">
+
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
   <link rel="preload" as="style" href="../../css/font-awesome-minimal.css">
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
+
+  <style>
+    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+    .hub-intro { margin-bottom: 40px; }
+    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
+    .intro-text p { margin-bottom: 14px; }
+    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
+    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
+    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
+    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
+    .faq-answer { color: #4b5563; line-height: 1.6; }
+    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
+  </style>
 </head>
 
 <body id="top">
   <div class="wrapper">
-    <header class="header">
+        <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+            alt="TheBackROM Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
-            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
-            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk" aria-pressed="false">EN</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
-          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false"><span></span><span></span><span></span></button>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="menu__body">
             <ul class="menu__list">
               <li class="menu__item"><a href="../../index.html" class="menu__link">Hjem</a></li>
@@ -100,111 +149,198 @@
               <li class="menu__item"><a href="../../priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="../../faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="../../contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="../../fagartikler/index.html" class="menu__link">Fagartikler</a></li>
               <li class="menu__item"><a href="../../blogg/index.html" class="menu__link">Blogg</a></li>
-              <li class="menu__item"><a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Bestill Time</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-    <main class="page">
-      <article class="blog-post">
-        <div class="blog-post__container">
-          <header class="blog-post__header">
-            <nav class="breadcrumb" style="margin-bottom: 12px; font-size: 13px;">
-              <a href="../svimmelhet.html" style="color: rgba(255,255,255,0.7);">Svimmelhet</a>
-              <span style="color: rgba(255,255,255,0.5);"> / </span>
-              <span style="color: rgba(255,255,255,0.9);">POTS</span>
-            </nav>
-            <span class="blog-post__category">Diagnose</span>
-            <h1 class="blog-post__title">POTS og Ortostatisk Svimmelhet: Når Pulsen Løper Løpsk</h1>
-            <div class="blog-post__meta">
-              <span><i class="fas fa-calendar" aria-hidden="true"></i> Januar 2026</span>
-              <span><i class="fas fa-user" aria-hidden="true"></i> Mads Finstad</span>
-              <span><i class="fas fa-clock" aria-hidden="true"></i> 12 min lesing</span>
-            </div>
-          </header>
 
-          <div class="blog-post__content">
-            <div class="tldr-box" style="background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%); border-left: 4px solid #e8a838; border-radius: 0 10px 10px 0; padding: 20px; margin-bottom: 28px;">
-              <h3 style="font-size: 15px; color: #1a1a2e; margin-bottom: 12px;">TL;DR - Kort oppsummert</h3>
-              <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Hva det er:</strong> POTS er en tilstand der pulsen øker unormalt mye når du reiser deg - uten at blodtrykket faller</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Hvem rammes:</strong> Primært kvinner 15-50 år (75-80%), ofte etter virusinfeksjon</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Forekomst:</strong> Estimert 0,2-1% av befolkningen</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Behandling:</strong> Strukturert trening (Levine-protokollen), væske, salt og kompresjon - ca. 53% oppnår bedring</li>
+    <main class="page" id="main">
+      <!-- Hero Section - OUTSIDE hub-wrapper like hub page -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <h1>POTS og Ortostatisk Svimmelhet</h1>
+          <p class="hub-hero__subtitle">Når pulsen loper lopsk - symptomer, behandling og prognose | Kiropraktor Mads Finstad, Majorstua</p>
+        </div>
+      </section>
+
+      <div class="hub-wrapper">
+        <article class="hub-main">
+
+          <section class="hub-intro">
+            <div class="intro-text">
+              <p>POTS står for Postural Ortostatisk Takykardi Syndrom - en tilstand der hjertet banker unormalt raskt nær du reiser deg fra liggende eller sittende stilling. POTS er en av mange årsaker til <a href="../svimmelhet.html">svimmelhet</a>, men skiller seg fra vestibulare tilstander ved at symptomene primert skyldes forstyrret blodtrykksregulering.</p>
+
+              <p>Normalt vil pulsen oke med 10-15 slag per minutt nær du reiser deg. Ved POTS oker pulsen med 30 slag eller mer (40 slag for ungdom 12-19 ar) innen 10 minutter etter at du har reist deg - uten at blodtrykket faller betydelig.</p>
+            </div>
+
+            <div class="premium-summary-card">
+              <h3>Kort oppsummert</h3>
+              <ul>
+                <li><strong>Hva det er:</strong> POTS er en tilstand der pulsen oker unormalt mye nær du reiser deg - uten at blodtrykket faller</li>
+                <li><strong>Hvem rammes:</strong> Primert kvinner 15-50 ar (75-80%), ofte etter virusinfeksjon</li>
+                <li><strong>Forekomst:</strong> Estimert 0,2-1% av befolkningen</li>
+                <li><strong>Behandling:</strong> Strukturert trening (Levine-protokollen), veske, salt og kompresjon - ca. 53% oppnær bedring</li>
               </ul>
             </div>
 
-            <h2>Hva er POTS?</h2>
-            <p>POTS står for Postural Ortostatisk Takykardi Syndrom - et komplisert navn på en tilstand der hjertet banker unormalt raskt når du reiser deg fra liggende eller sittende stilling.</p>
-            <p>Normalt vil pulsen øke med 10-15 slag per minutt når du reiser deg. Ved POTS øker pulsen med 30 slag eller mer (40 slag for ungdom 12-19 år) innen 10 minutter etter at du har reist deg - uten at blodtrykket faller betydelig.</p>
-            <p>POTS tilhører gruppen dysautonomier - tilstander der det autonome nervesystemet ikke fungerer som det skal. Det autonome nervesystemet styrer funksjoner man normalt ikke tenker over: puls, blodtrykk, svette, fordøyelse og temperaturregulering.</p>
-            <p>Forekomsten av POTS er estimert til 0,2-1% i utviklede land. Etter COVID-19-pandemien har forekomsten økt betydelig, med en studie som viste at insidens-raten steg fra 1,42 til 20,3 per million personår.</p>
+            <!-- Related sub-articles - directly under intro -->
+            <nav class="hub-subnav">
+              <h3>Relaterte svimmelhetstilstander</h3>
+              <p style="margin-bottom: 16px; color: #64748b;">POTS er en av flere tilstander som kan gi svimmelhet:</p>
+              <div class="hub-subnav__grid hub-subnav__grid--detailed">
+                <a href="../svimmelhet.html" class="hub-subnav__card">
+                  <strong>Svimmelhet - Hovedside</strong>
+                  <span>Oversikt over alle tilstander</span>
+                </a>
+                <a href="post-hjernerystelse.html" class="hub-subnav__card">
+                  <strong>Post-hjernerystelse</strong>
+                  <span>Svimmelhet etter hodeskade</span>
+                </a>
+                <a href="whiplash-svimmelhet.html" class="hub-subnav__card">
+                  <strong>Whiplash-svimmelhet</strong>
+                  <span>Nakkerelatert svimmelhet</span>
+                </a>
+                <a href="vestibulær-migrene.html" class="hub-subnav__card">
+                  <strong>Vestibuler migrene</strong>
+                  <span>Migrene med svimmelhet</span>
+                </a>
+              </div>
+            </nav>
 
-            <h2>Årsaker og utløsende faktorer</h2>
-            <p>POTS har ingen enkelt årsak, men utløses ofte av en "immunologisk stressor". De vanligste utløsende faktorene er:</p>
+            <!-- Red Flag Alert -->
+            <div class="red-flag-alert">
+              <h4>Når må du søke hjelp umiddelbart?</h4>
+              <p>Ved brystsmerter, alvorlig kortpustethet, gjentatte besvimelser eller uregelmessig hjerterytme - kontakt lege eller ring 113.</p>
+            </div>
+          </section>
 
-            <h3>Virusinfeksjon (vanligst)</h3>
-            <p>Omtrent 50% av POTS-tilfeller starter etter en virusinfeksjon - spesielt mononukleose (kyssesyke), influensa og COVID-19. Blant pasienter med langvarig COVID rapporterer 2-14% POTS-symptomer.</p>
+          <!-- SECTION 1: Hva er POTS -->
+          <section class="hub-section" id="s1">
+            <div class="section-header">
+              <span class="section-number">1</span>
+              <h2>Hva er POTS?</h2>
+            </div>
 
-            <h3>Fysisk traume</h3>
-            <p>Whiplash-skader, hjernerystelse og andre traumer mot hode og nakke er kjente utløsere. Det er en dokumentert sammenheng mellom nakkeskader og POTS-utvikling.</p>
+            <p>POTS tilhorer gruppen dysautonomier - tilstander der det autonome nervesystemet ikke fungerer som det skal. Det autonome nervesystemet styrer funksjoner man normalt ikke tenker over: puls, blodtrykk, svette, fordoyelse og temperaturregulering.</p>
 
-            <h3>Tilknyttede tilstander</h3>
-            <p>POTS opptrer ofte sammen med andre tilstander: Hypermobilt Ehlers-Danlos syndrom (25% av POTS-pasienter), mastcelleaktiveringssyndrom (MCAS), migrene (40%), irritabel tarm (30%), og ME/CFS (21%).</p>
+            <p>Når du reiser deg, trekker tyngdekraften 500-800 ml blod ned mot bena og magen. Normalt oppdager sensorer i halspulsaren dette og sender signal til hjernen om å oke pulsen litt og stramme blodårene i bena. Ved POTS fungerer ikke denne mekanismen som den skal.</p>
 
-            <h3>Hvorfor skjer det?</h3>
-            <p>Når du reiser deg, trekker tyngdekraften 500-800 ml blod ned mot bena og magen. Normalt oppdager sensorer i halspulsåren dette og sender signal til hjernen om å øke pulsen litt og stramme blodårene i bena.</p>
-            <p>Ved POTS fungerer ikke denne mekanismen som den skal. Kroppen klarer ikke å stramme blodårene tilstrekkelig, og hjertet må kompensere med å slå mye raskere for å opprettholde blodtilførsel til hjernen.</p>
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="stat-number">0,2-1%</span>
+                <span class="stat-label">av befolkningen</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">75-80%</span>
+                <span class="stat-label">er kvinner</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">15-50 ar</span>
+                <span class="stat-label">vanligst aldersgruppe</span>
+              </div>
+            </div>
 
-            <h2>Symptomer</h2>
+            <div class="info-box">
+              <h4>Okt forekomst etter COVID-19</h4>
+              <p>Etter COVID-19-pandemien har forekomsten økt betydelig. En studie viste at insidens-raten steg fra 1,42 til 20,3 per million personar.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 2: Årsaker -->
+          <section class="hub-section" id="s2">
+            <div class="section-header">
+              <span class="section-number">2</span>
+              <h2>Årsaker og utløsende faktorer</h2>
+            </div>
+
+            <p>POTS har ingen enkelt årsak, men utloses ofte av en "immunologisk stressor". De vanligste utløsende faktorene er:</p>
+
+            <div class="condition-card">
+              <h4>Virusinfeksjon (vanligst)</h4>
+              <p>Omtrent 50% av POTS-tilfeller starter etter en virusinfeksjon - spesielt mononukleose (kyssesyke), influenså og COVID-19. Blant pasienter med langvarig COVID rapporterer 2-14% POTS-symptomer.</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Fysisk traume</h4>
+              <p><a href="whiplash-svimmelhet.html">Whiplash-skader</a>, <a href="post-hjernerystelse.html">hjernerystelse</a> og andre traumer mot hode og nakke er kjente utlosere. Det er en dokumentert sammenheng mellom nakkeskader og POTS-utvikling.</p>
+            </div>
+
+            <div class="condition-card">
+              <h4>Tilknyttede tilstander</h4>
+              <p>POTS opptrer ofte sammen med andre tilstander: Hypermobilt Ehlers-Danlos syndrom (25% av POTS-pasienter), mastcelleaktiveringssyndrom (MCAS), <a href="vestibulær-migrene.html">migrene</a> (40%), irritabel tarm (30%), og ME/CFS (21%).</p>
+            </div>
+          </section>
+
+          <!-- SECTION 3: Symptomer -->
+          <section class="hub-section" id="s3">
+            <div class="section-header">
+              <span class="section-number">3</span>
+              <h2>Symptomer</h2>
+            </div>
+
             <p>POTS gir et bredt spekter av symptomer som varierer fra person til person.</p>
 
-            <h3>Kardiovaskulære symptomer:</h3>
+            <h3>Kardiovaskulere symptomer</h3>
             <ul>
               <li>Hjertebank og racing puls</li>
-              <li>Svimmelhet og ørhet ved å stå</li>
+              <li>Svimmelhet og orhet ved å sta</li>
               <li>Følelse av å skulle besvime (presyncope)</li>
               <li>Faktisk besvimelse hos noen</li>
             </ul>
 
-            <h3>Nevrologiske symptomer:</h3>
+            <h3>Nevrologiske symptomer</h3>
             <ul>
-              <li>"Hjernetåke" (brain fog) - problemer med konsentrasjon og hukommelse</li>
+              <li>"Hjernetake" (brain fog) - problemer med konsentrasjon og hukommelse</li>
               <li>Hodepine</li>
               <li>Skjelving</li>
               <li>Synsforstyrrelser</li>
             </ul>
 
-            <h3>Andre symptomer:</h3>
+            <h3>Andre symptomer</h3>
             <ul>
               <li>Ekstrem utmattelse (fatigue)</li>
               <li>Kvalme og mageproblemer</li>
-              <li>Lilla/rød misfarging av føtter ved standing</li>
+              <li>Lilla/rod misfarging av fotter ved standing</li>
               <li>Treningsintoleranse</li>
             </ul>
 
-            <p>Symptomene forverres typisk ved å stå lenge i ro, varmt vær, store måltider, om morgenen, og under menstruasjon.</p>
+            <div class="info-box">
+              <h4>Symptomforverring</h4>
+              <p>Symptomene forverres typisk ved å sta lenge i ro, varmt ver, store maltider, om morgenen, og under menstruasjon.</p>
+            </div>
+          </section>
 
-            <h2>Diagnostikk</h2>
+          <!-- SECTION 4: Diagnostikk -->
+          <section class="hub-section" id="s4">
+            <div class="section-header">
+              <span class="section-number">4</span>
+              <h2>Diagnostikk</h2>
+            </div>
+
             <h3>Diagnosekriterier (Heart Rhythm Society 2015)</h3>
-            <p>For å få diagnosen POTS må du oppfylle:</p>
+            <p>For å fa diagnosen POTS må du oppfylle:</p>
             <ol>
-              <li>Pulsøkning på ≥30 slag/min (≥40 for 12-19 år) innen 10 minutter etter å ha reist deg</li>
+              <li>Pulsokning på >=30 slag/min (>=40 for 12-19 ar) innen 10 minutter etter å ha reist deg</li>
               <li>Eller puls over 120 slag/min ved standing</li>
-              <li>Fravær av ortostatisk hypotensjon (blodtrykksfall ≥20 mmHg)</li>
+              <li>Fraver av ortostatisk hypotensjon (blodtrykksfall >=20 mmHg)</li>
               <li>Symptomer har vart i mer enn 3 måneder</li>
               <li>Ingen annen tilstand som forklarer symptomene</li>
             </ol>
 
-            <h3>Aktiv ståtest (kan gjøres på klinikk)</h3>
-            <p>En enkel test: Du ligger flatt i 5-10 minutter, puls og blodtrykk måles, du reiser deg og står rolig, og målinger gjøres etter 1, 3, 5 og 10 minutter. Pulsøkning ≥30 uten blodtrykksfall tyder på POTS.</p>
+            <div class="condition-card">
+              <h4>Aktiv statest (kan gjøres på klinikk)</h4>
+              <p>En enkel test: Du ligger flatt i 5-10 minutter, puls og blodtrykk males, du reiser deg og står rolig, og malinger gjøres etter 1, 3, 5 og 10 minutter. Pulsokning >=30 uten blodtrykksfall tyder på POTS.</p>
+            </div>
 
-            <div style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left: 4px solid #ef4444; border-radius: 0 10px 10px 0; padding: 20px; margin: 20px 0;">
-              <h4 style="color: #dc2626; margin-bottom: 10px;">Røde flagg - søk lege umiddelbart ved:</h4>
-              <ul style="color: #7f1d1d;">
+            <div class="red-flag-box">
+              <h3>Røde flagg - sok lege umiddelbart ved:</h3>
+              <ul>
                 <li>Brystsmerter eller trykk i brystet</li>
                 <li>Alvorlig kortpustethet</li>
                 <li>Gjentatte besvimelser</li>
@@ -212,123 +348,226 @@
                 <li>Symptomer som forverres raskt</li>
                 <li>Nevrologiske symptomer (synstap, talevansker, ensidig svakhet)</li>
               </ul>
-              <p style="color: #7f1d1d; margin-top: 10px; font-size: 13px;">POTS i seg selv er ikke farlig, men symptomene kan ligne andre tilstander som krever akutt behandling.</p>
+              <p style="margin-top: 10px; font-size: 0.9rem;">POTS i seg selv er ikke farlig, men symptomene kan ligne andre tilstander som krever akutt behandling.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 5: Behandling -->
+          <section class="hub-section" id="s5">
+            <div class="section-header">
+              <span class="section-number">5</span>
+              <h2>Behandling</h2>
             </div>
 
-            <h2>Behandling</h2>
-            <p>Det finnes ingen kur for POTS, men de fleste får betydelig bedring med riktig behandling. Ikke-medikamentelle tiltak er førstlinjebehandling.</p>
+            <p>Det finnes ingen kur for POTS, men de fleste får betydelig bedring med riktig behandling. Ikke-medikamentelle tiltak er førstelinjebehandling.</p>
 
             <h3>Ikke-medikamentell behandling</h3>
             <ul>
-              <li><strong>Væske og salt:</strong> Drikk 2-3 liter vann daglig, start dagen med 5 dl vann FØR du står opp. Ved POTS (uten høyt blodtrykk) anbefales ofte økt saltinntak (6-10 gram daglig). Konferer alltid med lege</li>
-              <li><strong>Kompresjon:</strong> Kompresjonsstrømper klasse 2, best effekt med strømper som går til livet</li>
-              <li><strong>Kosthold:</strong> Spis små, hyppige måltider. Unngå store karbohydratrike måltider</li>
+              <li><strong>Veske og salt:</strong> Drikk 2-3 liter vann daglig, start dagen med 5 dl vann FOR du står opp. Ved POTS (uten hoyt blodtrykk) anbefales ofte økt saltinntak (6-10 gram daglig). Konferer alltid med lege</li>
+              <li><strong>Kompresjon:</strong> Kompresjonsstromper klasse 2, best effekt med stromper som går til livet</li>
+              <li><strong>Kosthold:</strong> Spis sma, hyppige maltider. Unnga store karbohydratrike maltider</li>
             </ul>
 
-            <h3>Levine-protokollen: Trening som medisin</h3>
-            <p>Trening er den mest effektive behandlingen for POTS, men må gjøres riktig:</p>
-            <ul>
-              <li><strong>Fase 1 (måned 1-2):</strong> Horisontal trening: romaskin, liggesykkel, svømming</li>
-              <li><strong>Fase 2:</strong> Gradvis introduksjon av oppreist trening</li>
-              <li><strong>Fase 3:</strong> Vedlikehold med kombinert trening</li>
-            </ul>
+            <div class="treatment-box">
+              <h4>Levine-protokollen: Trening som medisin</h4>
+              <p>Trening er den mest effektive behandlingen for POTS, men må gjøres riktig:</p>
+              <ul>
+                <li><strong>Fase 1 (måned 1-2):</strong> Horisontal trening: romaskin, liggesykkel, svomming</li>
+                <li><strong>Fase 2:</strong> Gradvis introduksjon av oppreist trening</li>
+                <li><strong>Fase 3:</strong> Vedlikehold med kombinert trening</li>
+              </ul>
+            </div>
 
-            <div style="background: #f0fdf4; border: 1px solid #86efac; border-radius: 10px; padding: 18px; margin: 16px 0;">
-              <h4 style="color: #166534; margin: 0 0 8px;">Resultater fra forskningen</h4>
-              <p style="margin: 0; font-size: 14px; color: #166534;">I Fu og Levines studie fra 2011 viste 3 måneders trening at 53% av deltakerne ikke lenger oppfylte POTS-kriteriene. Trening var mer effektivt enn betablokker for å redusere puls og bedre livskvalitet.</p>
+            <div class="info-box">
+              <h4>Resultater fra forskningen</h4>
+              <p>I Fu og Levines studie fra 2011 viste 3 måneders trening at 53% av deltakerne ikke lenger oppfylte POTS-kriteriene. Trening var mer effektivt enn betablokker for å redusere puls og bedre livskvalitet.</p>
             </div>
 
             <h3>Hva kan kiropraktoren gjøre?</h3>
-            <p>POTS er primært en medisinsk tilstand som krever utredning hos lege. Men kiropraktoren kan spille en rolle på flere områder:</p>
+            <p>POTS er primert en medisinsk tilstand som krever utredning hos lege. Men kiropraktoren kan spille en rolle på flere områder:</p>
             <ul>
-              <li><strong>Diagnostisk bidrag:</strong> Jeg kan utføre aktiv ståtest og identifisere om svimmelheten din kan skyldes POTS - heller enn problemer i balanseorganet. Ved mistanke henviser jeg til videre utredning hos lege</li>
-              <li><strong>Nakkebehandling ved traumeutløst POTS:</strong> Det finnes kasuistikker om bedring av autonome symptomer etter nakkebehandling, men evidensen er foreløpig begrenset. Nakkebehandling erstatter ikke medisinsk utredning</li>
+              <li><strong>Diagnostisk bidrag:</strong> Jeg kan utfore aktiv statest og identifisere om svimmelheten din kan skyldes POTS - heller enn problemer i balanseorganet. Ved mistanke henviser jeg til videre utredning hos lege</li>
+              <li><strong>Nakkebehandling ved traumeutlost POTS:</strong> Det finnes kasuistikker om bedring av autonome symptomer etter nakkebehandling, men evidensen er forelopig begrenset. Ved samtidig <a href="nakkesvimmelhet.html">nakkesvimmelhet</a> kan behandling vere nyttig, men erstatter ikke medisinsk utredning</li>
               <li><strong>Treningsveiledning:</strong> Jeg kan veilede deg i Levine-protokollen og tilpasse øvelser til dine symptomer</li>
             </ul>
+          </section>
 
-            <h2>Prognose</h2>
+          <!-- SECTION 6: Prognose -->
+          <section class="hub-section" id="s6">
+            <div class="section-header">
+              <span class="section-number">6</span>
+              <h2>Prognose</h2>
+            </div>
+
             <p>Prognosen ved POTS varierer betydelig:</p>
-            <ul>
-              <li>Ca. 80% av pasienter opplever symptomforbedring med behandling</li>
-              <li>Omtrent 50% med post-viral POTS har spontan bedring innen 1-3 år</li>
-              <li>90% responderer på kombinasjon av livsstilstiltak og medisiner</li>
-              <li>POTS påvirker ikke forventet levetid</li>
-            </ul>
 
-            <h3>Realistiske forventninger:</h3>
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="stat-number">80%</span>
+                <span class="stat-label">opplever symptomforbedring</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">50%</span>
+                <span class="stat-label">spontan bedring (post-viral)</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">90%</span>
+                <span class="stat-label">responderer på behandling</span>
+              </div>
+            </div>
+
+            <h3>Realistiske forventninger</h3>
             <ul>
               <li>Full helbredelse er ikke alltid realistisk - mange lever med vedvarende milde symptomer</li>
               <li>Tilbakefall er vanlig</li>
-              <li>De fleste lærer å håndtere tilstanden og oppnår betydelig forbedring i livskvalitet over tid</li>
+              <li>De fleste lerer å handtere tilstanden og oppnær betydelig forbedring i livskvalitet over tid</li>
+              <li>POTS pavirker ikke forventet levetid</li>
             </ul>
+          </section>
 
-            <h2>Ofte stilte spørsmål</h2>
-            <h3>Er POTS en psykisk lidelse?</h3>
-            <p>Nei. POTS er en fysisk tilstand i det autonome nervesystemet. Symptomene kan ligne angst, og mange blir feilaktig diagnostisert med angst før de får POTS-diagnosen.</p>
-
-            <h3>Kan jeg trene med POTS?</h3>
-            <p>Ja - trening er faktisk en av de viktigste behandlingene. Men det må gjøres riktig: start med liggende/sittende øvelser og øk gradvis.</p>
-
-            <h3>Hva er forskjellen på POTS og ortostatisk hypotensjon?</h3>
-            <p>Ved ortostatisk hypotensjon faller blodtrykket. Ved POTS holder blodtrykket seg stabilt, men pulsen øker kraftig.</p>
-
-            <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 28px; margin: 32px 0; text-align: center; color: #fff;">
-              <h3 style="font-size: 20px; margin-bottom: 10px;">Trenger du hjelp med svimmelhet?</h3>
-              <p style="font-size: 14px; opacity: 0.9; margin-bottom: 18px;">Hos TheBackROM på Majorstua har jeg spesialkompetanse på svimmelhetsutredning og kan hjelpe deg finne ut hva som forårsaker dine plager.</p>
-              <p style="margin-bottom: 18px; font-size: 13px;"><strong>Priser:</strong> Nytt problem 1105 kr | Oppfølging 780 kr</p>
-              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" style="display: inline-block; background: #e8a838; color: #1a1a2e; padding: 14px 32px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 15px;" target="_blank" rel="noopener">Book time online</a>
+          <!-- SECTION 7: FAQ -->
+          <section class="hub-section" id="s7">
+            <div class="section-header">
+              <span class="section-number">7</span>
+              <h2>Ofte stilte spørsmål</h2>
             </div>
 
-            <p style="font-size: 12px; color: #666; margin-top: 24px;"><em>Juridisk ansvarsfraskrivelse: Denne artikkelen er generell informasjon og erstatter ikke medisinsk vurdering. POTS skal alltid utredes av lege for å utelukke hjertesykdom og andre alvorlige tilstander.</em></p>
-          </div>          <!-- Relaterte Fagartikler -->
-          <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0;">
-            <h3 style="color: #0369a1; margin-top: 0; margin-bottom: 16px;">Relaterte fagartikler</h3>
-            <p style="color: #334155; margin-bottom: 16px;">Vil du laere mer om svimmelhet, diagnostikk og behandling?</p>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="margin-bottom: 10px;"><a href="../../fagartikler/vng-undersokelse.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">VNG-undersokelse</a> - Diagnostisk test for svimmelhet</li>
-              <li style="margin-bottom: 10px;"><a href="../../fagartikler/vestibular-rehabilitering.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Vestibular rehabilitering</a> - Behandling av svimmelhet</li>
-              <li style="margin-bottom: 0;"><a href="../../fagartikler/balansesystemet.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Balansesystemets anatomi</a> - Forsta hvordan balansen fungerer</li>
+            <div class="faq-item">
+              <div class="faq-question">Er POTS en psykisk lidelse?</div>
+              <div class="faq-answer">Nei. POTS er en fysisk tilstand i det autonome nervesystemet. Symptomene kan ligne angst, og mange blir feilaktig diagnostisert med angst for de får POTS-diagnosen.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Kan jeg trene med POTS?</div>
+              <div class="faq-answer">Ja - trening er faktisk en av de viktigste behandlingene. Men det må gjøres riktig: start med liggende/sittende øvelser og ok gradvis.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Hva er forskjellen på POTS og ortostatisk hypotensjon?</div>
+              <div class="faq-answer">Ved ortostatisk hypotensjon faller blodtrykket. Ved POTS holder blodtrykket seg stabilt, men pulsen oker kraftig.</div>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <div class="hub-cta">
+            <h3>Trenger du hjelp med svimmelhet?</h3>
+            <p>Hos TheBackROM på Majorstua har jeg spesialkompetanse på svimmelhetsutredning og kan hjelpe deg finne ut hva som forårsaker dine plager.</p>
+            <p><strong>Priser:</strong> Nytt problem 1105 kr | Oppfølg 780 kr</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn">Bestill time</a>
+          </div>
+
+          <!-- Related articles -->
+          <div class="related-box">
+            <h3>Relaterte artikler</h3>
+            <a href="../svimmelhet.html">-> Svimmelhet - Hovedside</a>
+            <a href="post-hjernerystelse.html">-> Post-hjernerystelse</a>
+            <a href="whiplash-svimmelhet.html">-> Whiplash-svimmelhet</a>
+            <a href="nakkesvimmelhet.html">-> Nakkesvimmelhet</a>
+            <a href="vestibulær-migrene.html">-> Vestibuler migrene</a>
+            <a href="krystallsyke-bppv.html">-> Krystallsyke (BPPV)</a>
+            <a href="menieres-sykdom.html">-> Menieres sykdom</a>
+            <a href="vestibularisnevritt.html">-> Vestibularisnevritt</a>
+            <a href="pppd-kronisk-svimmelhet.html">-> PPPD (kronisk svimmelhet)</a>
+            <a href="mdds.html">-> MdDS (landgangssyke)</a>
+          </div>
+
+          <!-- Fagartikler box -->
+          <div class="info-box" style="margin-top: 24px;">
+            <h4>Relaterte fagartikler</h4>
+            <p>Vil du lere mer om svimmelhet, diagnostikk og behandling?</p>
+            <ul>
+              <li><a href="../../tjeneste/svimmelhet/vng-undersøkelse.html">VNG-undersøkelse</a> - Diagnostisk test for svimmelhet</li>
+              <li><a href="../../tjeneste/svimmelhet/vestibular-rehabilitering.html">Vestibuler rehabilitering</a> - Behandling av svimmelhet</li>
+              <li><a href="../../tjeneste/svimmelhet/balansesystemet.html">Balansesystemets anatomi</a> - Forsta hvordan balansen fungerer</li>
             </ul>
           </div>
 
+          <!-- Disclaimer -->
+          <p class="disclaimer">Juridisk ansvarsfraskrivelse: Denne artikkelen er generell informasjon og erstatter ikke medisinsk vurdering. POTS skal alltid utredes av lege for å utelukke hjertesykdom og andre alvorlige tilstander.</p>
 
-          <div class="blog-post__tags">
-            <span class="tag">POTS</span>
-            <span class="tag">Dysautonomi</span>
-            <span class="tag">Ortostatisk svimmelhet</span>
-            <span class="tag">Kiropraktor Oslo</span>
+          <p class="updated">Sist oppdatert: Januar 2026</p>
+
+        </article>
+
+        <!-- Sidebar (desktop only) -->
+        <aside class="hub-sidebar">
+          <!-- Conversion Card -->
+          <div class="hub-conversion-card">
+            <img src="../../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
+            <h3>Svimmel nær du reiser deg?</h3>
+            <p>Jeg hjelper deg med å finne årsaken og riktig behandling.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+            </div>
           </div>
 
-          <nav class="blog-post__navigation">
-            <a href="menieres-sykdom.html" class="blog-post__nav-link">
-              <i class="fas fa-arrow-left" aria-hidden="true"></i> Ménières sykdom
-            </a>
-            <a href="../svimmelhet.html" class="blog-post__nav-link">
-              Tilbake til svimmelhet <i class="fas fa-arrow-right" aria-hidden="true"></i>
-            </a>
+          <!-- Table of Contents -->
+          <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
+            <h3>Innhold</h3>
+            <ul>
+              <li><a href="#s1">Hva er POTS?</a></li>
+              <li><a href="#s2">Årsaker</a></li>
+              <li><a href="#s3">Symptomer</a></li>
+              <li><a href="#s4">Diagnostikk</a></li>
+              <li><a href="#s5">Behandling</a></li>
+              <li><a href="#s6">Prognose</a></li>
+              <li><a href="#s7">FAQ</a></li>
+            </ul>
           </nav>
-        </div>
-      </article>
-    </main>
-  </div>
+        </aside>
 
-    <footer class="footer">
+      </div>
+    </main>
+
+    <!-- Mobile sticky CTA -->
+    <div class="mobile-sticky-cta">
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn-primary">Bestill time</a>
+      <a href="tel:+4793043062" class="btn btn-outline">Ring</a>
+    </div>
+
+        <footer class="footer">
       <div class="footer__container">
+        <!-- Left Column -->
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"><img loading="lazy" decoding="async" src="../../pictures.final/branding/icons/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook" /></a>
-            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"><img src="../../pictures.final/branding/icons/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram" loading="lazy" decoding="async" /></a>
-            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"><img src="../../pictures.final/branding/icons/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube" loading="lazy" decoding="async" /></a>
-            <a href="../../contact.html" class="footer__social-link"><img loading="lazy" decoding="async" src="../../pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../../images/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
           </div>
         </div>
+
+        <!-- Center Column -->
         <div class="footer__center">
-          <div class="footer__logo"><a href="../../index.html" class="logo"><img src="../../pictures.final/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a></div>
+          <div class="footer__logo">
+            <img src="../../images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
           <div class="back-to-top-wrapper">
-            <p class="back-to-top-text">Tilbake til start</p>
-            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden"><i class="fas fa-arrow-up" aria-hidden="true"></i> Opp</a>
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
           </div>
         </div>
+
+        <!-- Right Column -->
         <div class="footer__right">
           <div class="footer__hours">
             <h3>Åpningstider</h3>
@@ -344,28 +583,52 @@
           </div>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <a href="../../personvern.html" class="footer__policy">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 TheBackROM - Alle rettigheter reservert</p>
+        <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 TheBackROM – Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
-     class="mobile-sticky-cta"
-     aria-label="Bestill time hos kiropraktor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Bestill time
-  </a>
-
 
   <script src="../../js/script.min.js" defer></script>
   <script src="../../js/language-toggle.min.js" defer></script>
   <script src="../../js/modern-enhancements.min.js" defer></script>
+
+  <!-- TOC scroll tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+
+      if (sections.length === 0 || navLinks.length === 0) return;
+
+      function updateActiveLink() {
+        let current = 's1';
+        const scrollPos = window.scrollY + 200;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (scrollPos >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          const href = link.getAttribute('href');
+          if (href && href === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
 </body>
+
 </html>
+
+

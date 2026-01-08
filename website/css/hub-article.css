@@ -1,0 +1,1396 @@
+/* ============================================
+   Hub Article 2026 Premium Design System
+   ============================================
+
+   DESIGN GUIDE - Apply to ALL Hub & Sub-Article Pages
+   ====================================================
+
+   STEP 1: LINK THIS CSS FILE
+   --------------------------
+   Add in <head> section:
+   <link rel="stylesheet" href="../../css/hub-article.css">
+
+   STEP 2: UPDATE EMBEDDED CSS COLORS
+   ----------------------------------
+   In sub-articles with embedded <style>, update :root variables:
+   --hub-primary: #1a5f7a        (teal)
+   --hub-primary-dark: #0f4f68   (darker teal)
+   --hub-dark: #0d3d4d           (darkest teal)
+   --hub-dark-light: #1a5f7a     (same as primary)
+
+   Update .hub-hero gradient to:
+   background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%);
+
+   STEP 3: HUB PAGE LAYOUT (IN THIS EXACT ORDER)
+   ---------------------------------------------
+   1. Hero section (.hub-hero) - teal gradient, centered text
+   2. SEO intro text (.intro-text) - 2-3 paragraphs explaining the topic
+   3. Sub-navigation cards (.hub-subnav) - links to sub-articles WITH descriptions
+      ⚠️ MUST be directly under intro text!
+   4. Red flag alert (.red-flag-alert) - safety warning
+   5. Decision helper (.decision-helper) - "Usikker?" box linking to comparison article
+   6. Main content sections (symptoms, causes, treatment, etc.)
+   7. FAQ section - MOVE to /faq/[topic]-faq.html (unless SEO value to keep inline)
+   8. Blog carousel - related blog posts at bottom
+
+   SIDEBAR (sticky, right side):
+   - Conversion card (.hub-conversion-card) - photo + CTA
+   - Table of contents (.hub-toc-card) - anchor links to sections
+
+   STEP 4: SUB-ARTICLE LAYOUT (IN THIS EXACT ORDER)
+   ------------------------------------------------
+   1. Hero section (.hub-hero) - same teal gradient as hub
+      ⛔ NO BREADCRUMBS IN HERO - keep hero clean with only h1, subtitle, author
+   2. Intro paragraph - brief overview of the condition
+   3. Related sub-articles (.hub-subnav) - internal links to:
+      ⚠️ MUST be directly under intro!
+      - Sibling sub-articles (other conditions in same category)
+      - Specific blog posts (e.g., L4-L5, L5-S1 for skiveprolaps)
+   4. ⛔ ONLY ONE red flag section - MERGE all red flag content into ONE box!
+   5. Main content sections with ANCHOR LINKS (see Step 7)
+   6. Back to hub link - "← Tilbake til [hub name]"
+   7. FAQ section with FAQPage schema markup
+
+   SIDEBAR - MUST MATCH HUB PATTERN:
+   --------------------------------
+   1. Conversion card FIRST (.hub-conversion-card):
+      - Photo of Mads (sidebar-image)
+      - Headline related to the condition
+      - Short text
+      - CTA button (Bestill time)
+      - Small info text (name, title)
+   2. Table of contents SECOND (.hub-toc-card):
+      - Section links with anchors
+      ⛔ NO "Bestill time" button in TOC - it's already in conversion card!
+
+   STEP 7: INTERNAL ANCHOR LINKS IN CONTENT
+   ----------------------------------------
+   When text mentions another section, LINK TO IT:
+   - "L5-S1 symptomer" → link to #l5-s1 section
+   - "røde flagg" → link to red flag alert or article
+   - "behandling" → link to #behandling section
+   - "prognose" → link to #prognose section
+
+   Example: "Ved <a href="#l5-s1">L5-S1 prolaps</a> ser vi..."
+
+   STEP 5: INTERNAL LINKING CHECKLIST
+   ----------------------------------
+   □ Hub → All sub-articles (detailed cards with descriptions)
+   □ Sub-articles → Parent hub
+   □ Sub-articles → Related siblings
+   □ Sub-articles → Specific blog posts (e.g., prolaps levels)
+   □ All pages → FAQ site or relevant body part FAQ
+   □ All pages → Booking CTA
+
+   STEP 6: SCHEMA MARKUP
+   ---------------------
+   □ MedicalWebPage schema on all pages
+   □ FAQPage schema with Q&A pairs
+   □ datePublished and dateModified (keep updated)
+
+   ============================================
+   STEP 8: COMPREHENSIVE INTERLINKING RULES
+   ============================================
+
+   A. HUB PAGE LINKING (e.g., korsryggsmerte.html)
+   -----------------------------------------------
+   MUST LINK TO:
+   □ All sub-articles in hub-subnav cards (with descriptions)
+   □ FAQ page for the topic (/faq/korsryggsmerter-faq.html)
+   □ Related hub pages in related-box (e.g., hofte, nakke)
+   □ Blog posts in carousel section
+   □ Booking page (sidebar + CTA section)
+
+   IN-TEXT LINKS (contextual):
+   □ When mentioning a condition → link to its sub-article
+   □ When mentioning "røde flagg" → link to red flag article
+   □ When mentioning statistics → link to source if available
+   □ When mentioning treatment → link to #behandling or behandlinger page
+
+   B. SUB-ARTICLE LINKING (e.g., skiveprolaps.html)
+   ------------------------------------------------
+   MUST LINK TO:
+   □ Parent hub in related-box ("← Tilbake til Korsryggsmerter")
+   □ Sibling sub-articles in hub-subnav (isjias, hekseskudd, etc.)
+   □ Specific blog posts related to topic (L4-L5, L5-S1 for prolaps)
+   □ Red flag article (in red-flag-alert box)
+   □ FAQ page or inline FAQ section
+   □ Booking page (sidebar + hub-cta)
+
+   IN-TEXT LINKS (contextual):
+   □ Medical terms → link to glossary or explanation
+   □ Related conditions → link to their sub-articles
+   □ "Les mer om X" → always include link
+   □ Anchor links within page (#s1, #s2, etc.)
+
+   C. KORSRYGG SPECIFIC LINKING MAP
+   --------------------------------
+
+   korsryggsmerte.html (HUB) links to:
+   ├── korsrygg/hekseskudd.html
+   ├── korsrygg/isjias.html
+   ├── korsrygg/skiveprolaps.html
+   ├── korsrygg/si-ledd.html
+   ├── korsrygg/spinal-stenose.html
+   ├── korsrygg/graviditet.html
+   ├── plager/korsrygg/rode-flagg-ryggsmerter.html
+   ├── blogg/isjias-prolaps-hekseskudd-forskjell.html
+   ├── faq/korsryggsmerter-faq.html
+   └── Related hubs: hofte, nakke, brystrygg
+
+   skiveprolaps.html links to:
+   ├── PARENT: ../korsryggsmerte.html
+   ├── SIBLINGS: isjias.html, hekseskudd.html, si-ledd.html, spinal-stenose.html
+   ├── BLOG: blogg/l4-l5-prolaps.html, blogg/l5-s1-prolaps.html
+   ├── BLOG: plager/korsrygg/rode-flagg-ryggsmerter.html
+   ├── IN-TEXT: Link "isjias" mentions to isjias.html
+   ├── IN-TEXT: Link "røde flagg" to red flag article
+   └── IN-TEXT: Link nerve levels (L4-L5, L5-S1) to blog posts
+
+   isjias.html links to:
+   ├── PARENT: ../korsryggsmerte.html
+   ├── SIBLINGS: skiveprolaps.html, hekseskudd.html, si-ledd.html
+   ├── BLOG: blogg/piriformissyndrom-falsk-isjias.html
+   ├── BLOG: blogg/ovelser-isjias.html
+   ├── IN-TEXT: Link "prolaps" mentions to skiveprolaps.html
+   ├── IN-TEXT: Link "piriformis" to piriformissyndrom blog
+   └── IN-TEXT: Link "stenose" to spinal-stenose.html
+
+   hekseskudd.html links to:
+   ├── PARENT: ../korsryggsmerte.html
+   ├── SIBLINGS: isjias.html, skiveprolaps.html, si-ledd.html
+   ├── BLOG: blogg/akutt-ryggsmerte-selvhjelp.html
+   ├── IN-TEXT: Link "isjias" to isjias.html (differentiation)
+   └── IN-TEXT: Link "prolaps" to skiveprolaps.html (differentiation)
+
+   D. LINKING PATTERNS IN HTML
+   ---------------------------
+
+   1. Hub-subnav cards (top of page, under intro):
+   <nav class="hub-subnav">
+     <h3>Relaterte artikler</h3>
+     <div class="hub-subnav__grid hub-subnav__grid--detailed">
+       <a href="blogg/l4-l5-prolaps.html" class="hub-subnav__card">
+         <strong>L4-L5 Prolaps</strong>
+         <span>Symptomer mot stortå og fotrygg</span>
+       </a>
+     </div>
+   </nav>
+
+   2. Related-box (bottom of article):
+   <div class="related-box">
+     <h3>Relaterte artikler</h3>
+     <a href="../korsryggsmerte.html">→ Korsryggsmerter - Hovedartikkel</a>
+     <a href="isjias.html">→ Isjias: Symptomer og behandling</a>
+   </div>
+
+   3. In-text contextual links:
+   <p>Ved <a href="isjias.html">isjias</a> stråler smerten ned i benet...</p>
+   <p>Les mer om <a href="../../blogg/l4-l5-prolaps.html">L4-L5 prolaps</a>.</p>
+
+   4. Red flag alert link:
+   <div class="red-flag-alert">
+     <h4>Når må du søke hjelp?</h4>
+     <p>Ved nummenhet i skrittet...</p>
+     <a href="../../plager/korsrygg/rode-flagg-ryggsmerter.html">Les mer om røde flagg →</a>
+   </div>
+
+   E. BLOG POST LINKING
+   --------------------
+   Blog posts should link back to:
+   □ Relevant hub page
+   □ Relevant sub-articles
+   □ Related blog posts
+   □ FAQ pages
+
+   F. FAQ PAGE LINKING
+   -------------------
+   Each FAQ answer should include:
+   □ Link to detailed article about the topic
+   □ Link to booking if relevant
+   □ Link to related FAQ questions
+
+   G. ANCHOR ID CONVENTIONS
+   ------------------------
+   Use consistent IDs across all pages:
+   - #s1, #s2, #s3... for numbered sections
+   - #symptomer, #arsaker, #behandling for semantic sections
+   - #faq for FAQ section
+   - #kontakt for contact/CTA section
+
+   ============================================ */
+
+:root {
+  /* Primary Colors - Teal Theme */
+  --hub-primary: #1a5f7a;        /* Main teal - used for gradients, links, accents */
+  --hub-primary-dark: #0f4f68;   /* Darker teal - for hover states */
+  --hub-dark: #0d3d4d;           /* Darkest teal - gradient start, headings */
+  --hub-dark-light: #1a5f7a;     /* Same as primary - for gradient consistency */
+
+  /* Accent Colors */
+  --hub-accent: #F26522;         /* Orange CTA buttons */
+  --hub-accent-hover: #e05a1a;   /* Orange hover state */
+
+  /* Alert Colors */
+  --hub-red: #ef4444;            /* Red flag alerts, warnings */
+  --hub-red-light: #fef2f2;      /* Red flag background */
+  --hub-green: #22c55e;          /* Success, positive indicators */
+  --hub-green-light: #f0fdf4;    /* Success background */
+  --hub-blue: #3b82f6;           /* Info, decision helpers */
+  --hub-blue-light: #eff6ff;     /* Info background */
+  --hub-purple: #8b5cf6;         /* Special highlights */
+  --hub-purple-light: #f5f3ff;   /* Purple background */
+  --hub-orange: #f97316;         /* Secondary accent */
+  --hub-pink: #ec4899;           /* Tertiary accent */
+
+  /* Neutral Colors */
+  --hub-light-bg: #f8fafc;       /* Page background, section backgrounds */
+  --hub-border: #e2e8f0;         /* Card borders, dividers */
+  --hub-text: #1e293b;           /* Body text */
+  --hub-text-muted: #64748b;     /* Secondary text, descriptions */
+
+  /* Effects */
+  --hub-card-shadow: 0 15px 40px rgba(26, 95, 122, 0.08);
+  --hub-card-shadow-hover: 0 20px 50px rgba(26, 95, 122, 0.12);
+  --hub-card-radius: 20px;
+  --hub-card-radius-sm: 12px;
+}
+
+/* ============================================
+   Hub Hero Section
+   ============================================ */
+
+.hub-hero {
+  background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%);
+  color: #ffffff !important;
+  padding-top: 150px !important;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.hub-hero__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hub-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: #ffffff !important;
+}
+
+.hub-hero__subtitle {
+  font-size: 1.1rem;
+  color: #ffffff !important;
+  opacity: 0.95;
+  margin-bottom: 16px;
+}
+
+.hub-hero__cta {
+  display: inline-block;
+  background: var(--hub-accent);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hub-hero__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   Sub-Article Hero - Override embedded styles
+   ============================================ */
+
+/* Override sub-article hero colors to match hub */
+.hub-main .hub-hero,
+article.hub-main .hub-hero,
+.hub-main > .hub-hero {
+  background: linear-gradient(135deg, var(--hub-dark, #0d3d4d) 0%, var(--hub-primary, #1a5f7a) 100%) !important;
+}
+
+/* Breadcrumb styling */
+.hub-hero .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.hub-hero .breadcrumb a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.hub-hero .breadcrumb a:hover {
+  color: #ffffff;
+}
+
+.hub-hero .breadcrumb span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Author line */
+.hub-hero .author {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 0.95rem;
+  margin-top: 12px;
+}
+
+/* ============================================
+   Sub-Article Navigation Buttons
+   ============================================ */
+
+.hub-subnav {
+  margin: 32px 0;
+}
+
+.hub-subnav h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.hub-subnav__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.hub-subnav__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  background: white;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  color: var(--hub-dark);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.hub-subnav__btn:hover {
+  background: var(--hub-primary);
+  border-color: var(--hub-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 95, 122, 0.2);
+}
+
+/* Detailed sub-article cards with descriptions */
+.hub-subnav__grid--detailed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.hub-subnav__card {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px;
+  background: white;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  color: var(--hub-dark);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.hub-subnav__card strong {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--hub-dark);
+  margin-bottom: 4px;
+}
+
+.hub-subnav__card span {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.hub-subnav__card:hover {
+  background: var(--hub-primary);
+  border-color: var(--hub-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(26, 95, 122, 0.25);
+}
+
+.hub-subnav__card:hover strong,
+.hub-subnav__card:hover span {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .hub-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hub-subnav__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .hub-subnav__btn {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .hub-subnav__grid--detailed {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .hub-subnav__card {
+    padding: 14px 16px;
+  }
+}
+
+/* ============================================
+   Red Flag Alert Box - High Visibility
+   ============================================ */
+
+.red-flag-alert {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  border: 2px solid #ef4444;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 24px 0;
+  position: relative;
+}
+
+.red-flag-alert::before {
+  content: '⚠️';
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: white;
+  padding: 0 8px;
+  font-size: 1.2rem;
+}
+
+.red-flag-alert h4 {
+  color: #dc2626;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.red-flag-alert p {
+  color: #7f1d1d;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.red-flag-alert a {
+  color: #dc2626;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.red-flag-alert a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   Decision Helper Box
+   ============================================ */
+
+.decision-helper {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 1.5px solid #38bdf8;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 24px 0;
+}
+
+.decision-helper h4 {
+  color: var(--hub-dark);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.decision-helper p {
+  color: #475569;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.decision-helper__link {
+  display: inline-block;
+  color: var(--hub-primary);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 16px;
+  background: white;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.decision-helper__link:hover {
+  background: var(--hub-primary);
+  color: white;
+}
+
+/* ============================================
+   FIX: Override wrapper overflow for sticky to work
+   ============================================ */
+
+.wrapper {
+  overflow: visible !important;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   STEP 1: Split Layout with Sticky Sidebar
+   ============================================ */
+
+.hub-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 20px 40px 20px;
+  position: relative;
+  align-items: start;
+}
+
+.hub-main {
+  min-width: 0; /* Prevents content from expanding grid cell */
+  max-width: none;
+  overflow: hidden; /* Contains wide content */
+}
+
+/* Sticky Sidebar Container */
+.hub-sidebar {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: calc(100vh - 110px);
+}
+
+/* Table of Contents Card */
+.hub-toc-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 4px 20px rgba(26, 95, 122, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hub-toc-card h3 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #64748b;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.hub-toc-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hub-toc-card li {
+  margin-bottom: 2px;
+}
+
+.hub-toc-card a {
+  display: block;
+  padding: 7px 10px;
+  color: #475569;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  border-left: 2px solid transparent;
+}
+
+.hub-toc-card a:hover {
+  background: var(--hub-light-bg);
+  color: var(--hub-primary);
+  border-left-color: var(--hub-accent);
+}
+
+.hub-toc-card a.active {
+  background: #e0f2fe;
+  color: var(--hub-primary);
+  border-left-color: var(--hub-primary);
+  font-weight: 500;
+}
+
+/* Conversion Card (The Money Card) */
+.hub-conversion-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 16px;
+  box-shadow: 0 4px 20px rgba(26, 95, 122, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.hub-conversion-card .sidebar-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 12px;
+  border: 3px solid var(--hub-light-bg);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hub-conversion-card h3 {
+  color: var(--hub-dark);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.hub-conversion-card p {
+  color: #64748b;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.hub-conversion-card .btn-cta {
+  display: block;
+  background: linear-gradient(135deg, var(--hub-accent) 0%, #e85a10 100%);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(242, 101, 34, 0.25);
+}
+
+.hub-conversion-card .btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 16px rgba(242, 101, 34, 0.35);
+}
+
+.hub-conversion-card .sidebar-info {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.hub-conversion-card .sidebar-info small {
+  color: #64748b;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.hub-conversion-card .sidebar-info strong {
+  color: var(--hub-dark);
+}
+
+/* ============================================
+   STEP 2: Premium Summary Card
+   ============================================ */
+
+.premium-summary-card {
+  background: #ffffff;
+  border-radius: var(--hub-card-radius);
+  padding: 36px 40px;
+  margin-bottom: 40px;
+  box-shadow: var(--hub-card-shadow);
+  border-left: 6px solid var(--hub-accent);
+  position: relative;
+}
+
+.premium-summary-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, rgba(26, 95, 122, 0.03) 0%, transparent 100%);
+  border-radius: 0 var(--hub-card-radius) 0 100%;
+}
+
+.premium-summary-card h3 {
+  color: var(--hub-dark);
+  font-size: 1.2rem;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.premium-summary-card h3::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--hub-accent);
+  border-radius: 50%;
+}
+
+.premium-summary-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.premium-summary-card li {
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 28px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.premium-summary-card li::before {
+  content: '\2713';
+  color: var(--hub-accent);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.premium-summary-card li:last-child {
+  margin-bottom: 0;
+}
+
+.premium-summary-card li strong {
+  color: var(--hub-dark);
+  font-weight: 700;
+}
+
+/* ============================================
+   Related Articles Box
+   ============================================ */
+
+.related-box {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 32px;
+}
+
+.related-box h3 {
+  color: var(--hub-dark);
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.related-box a {
+  display: block;
+  padding: 12px 0;
+  color: var(--hub-primary);
+  text-decoration: none;
+  border-bottom: 1px solid #e5e7eb;
+  transition: padding-left 0.2s ease;
+}
+
+.related-box a:last-child {
+  border-bottom: none;
+}
+
+.related-box a:hover {
+  padding-left: 8px;
+  color: var(--hub-dark);
+}
+
+/* ============================================
+   STEP 3: Modern Tables
+   ============================================ */
+
+.hub-main table,
+.article-content table,
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: none;
+}
+
+.hub-main th,
+.article-content th,
+.comparison-table th {
+  background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%);
+  color: white;
+  padding: 18px 20px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  border: none;
+}
+
+.hub-main td,
+.article-content td,
+.comparison-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #4A4A4A;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border: none;
+}
+
+.hub-main tr:nth-child(even),
+.article-content tr:nth-child(even),
+.comparison-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.hub-main tr:last-child td,
+.article-content tr:last-child td,
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.hub-main tr:hover,
+.article-content tr:hover,
+.comparison-table tr:hover {
+  background-color: #f0f9ff;
+}
+
+/* ============================================
+   Enhanced Section Headers
+   ============================================ */
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.section-number {
+  background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%);
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(26, 95, 122, 0.25);
+}
+
+.hub-section h2 {
+  font-size: 1.7rem;
+  color: var(--hub-dark);
+  margin: 0;
+  font-weight: 700;
+}
+
+/* ============================================
+   Enhanced Intro Section
+   ============================================ */
+
+.hub-intro {
+  padding-top: 0;
+  margin-bottom: 24px;
+}
+
+.hub-intro h1 {
+  font-size: 2.4rem;
+  color: var(--hub-dark);
+  margin-bottom: 12px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.hub-intro .author-line {
+  color: #64748b;
+  margin-bottom: 32px;
+  font-size: 0.95rem;
+}
+
+.hub-featured-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin: 32px 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Full-width infographic style */
+.hub-infographic {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 12px;
+  margin: 24px 0 48px 0;
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.12);
+  display: block;
+  object-fit: contain;
+  /* Smooth rendering for detailed infographics with text */
+  image-rendering: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* ============================================
+   Enhanced Stat Grid
+   ============================================ */
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 32px 0;
+}
+
+.stat-item {
+  background: white;
+  border-radius: 16px;
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* ============================================
+   Enhanced Condition Cards
+   ============================================ */
+
+.condition-card {
+  background: white;
+  border: none;
+  border-radius: 16px;
+  padding: 28px;
+  margin: 24px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.condition-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.condition-card h4 {
+  color: var(--hub-primary);
+  margin-bottom: 16px;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+/* ============================================
+   Enhanced CTA Box
+   ============================================ */
+
+.hub-cta {
+  background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%);
+  color: white;
+  border-radius: 24px;
+  padding: 48px 40px;
+  text-align: center;
+  margin: 48px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hub-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hub-cta h3 {
+  color: white !important;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  position: relative;
+}
+
+.hub-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 28px;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.hub-cta .button {
+  background: white;
+  color: var(--hub-primary);
+  padding: 18px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.hub-cta .button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
+   Blog Carousel Section
+   ============================================ */
+
+.blog-section-hub {
+  margin: 48px 0;
+  padding: 40px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.blog-section-hub h2 {
+  color: var(--hub-dark);
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.blog-section-hub > p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+/* ============================================
+   Mobile Responsive
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .hub-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .hub-sidebar {
+    position: static;
+    order: -1;
+  }
+
+  .hub-toc-card {
+    display: none;
+  }
+
+  .hub-conversion-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .hub-intro h1 {
+    font-size: 1.9rem;
+  }
+
+  .premium-summary-card {
+    padding: 28px 24px;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .stat-item {
+    padding: 20px 16px;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .hub-cta {
+    padding: 36px 24px;
+    border-radius: 16px;
+  }
+
+  .hub-cta h3 {
+    font-size: 1.4rem;
+  }
+
+  .section-number {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .hub-section h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+
+@media print {
+  .hub-sidebar,
+  .mobile-sticky-cta {
+    display: none !important;
+  }
+
+  .hub-wrapper {
+    display: block;
+  }
+
+  .hub-main {
+    max-width: 100%;
+  }
+}
+
+/* ============================================
+   ARTICLE CONTENT STYLING - INSIGHT CARDS
+   ============================================ */
+
+/* 1. Base Style for All Info Boxes */
+.insight-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  margin: 40px 0;
+  box-shadow: 0 10px 30px rgba(26, 95, 122, 0.08);
+  position: relative;
+  border-left: 6px solid #ccc;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* 2. Specific Colors */
+/* The "Yellow" Summary Box -> Now Warm & Professional */
+.insight-card.summary {
+  border-left-color: #F26522;
+  background: linear-gradient(to right, #fff, #fffaf5);
+}
+
+/* The "Red" Warning Box -> Now Urgent but Clean */
+.insight-card.warning {
+  border-left-color: #D32F2F;
+  background: #FFF5F5;
+}
+
+/* The "Blue" Tip Box -> Now Trustworthy */
+.insight-card.tip {
+  border-left-color: #1A5F7A;
+  background: #F0F7FA;
+}
+
+/* 3. Make the lists inside these boxes look premium */
+.insight-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.insight-card li {
+  margin-bottom: 10px;
+  color: #4A4A4A;
+}
+
+/* ============================================
+   ORGANIC FLOATING IMAGES
+   ============================================ */
+
+/* Class to float image to the RIGHT */
+.img-float-right {
+  float: right;
+  width: 320px;
+  height: 220px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border-radius: 30px 60px 30px 60px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Class to float image to the LEFT */
+.img-float-left {
+  float: left;
+  width: 320px;
+  height: 220px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border-radius: 60px 30px 60px 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile: Disable float so they stack nicely */
+@media (max-width: 768px) {
+  .img-float-right,
+  .img-float-left {
+    float: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    border-radius: 16px;
+  }
+}
+
+/* ============================================
+   MODERN DATA TABLES (Article Content)
+   ============================================ */
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Row */
+.article-content th {
+  background-color: #1A5F7A;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Data Rows */
+.article-content td {
+  padding: 18px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #4A4A4A;
+}
+
+/* Zebra Striping */
+.article-content tr:nth-child(even) {
+  background-color: #F9FAFB;
+}
+
+/* ============================================
+   BUTTON COLOR OVERRIDES - Match Index Style
+   Orange #F26522 for consistency across site
+   ============================================ */
+
+/* Header "Bestill Time" button */
+.actions-header__button {
+  background: #F26522 !important;
+  background-image: none !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.actions-header__button:hover {
+  background: #e05a1a !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Sidebar CTA button */
+.hub-conversion-card .btn-cta {
+  background: #F26522 !important;
+  background-image: none !important;
+}
+
+.hub-conversion-card .btn-cta:hover {
+  background: #e05a1a !important;
+}
+
+/* Main CTA section button - Override to orange */
+.hub-cta .button {
+  background: #F26522 !important;
+  color: #FFFFFF !important;
+}
+
+.hub-cta .button:hover {
+  background: #e05a1a !important;
+}
+
+/* Mobile sticky CTA */
+.mobile-sticky-cta {
+  background: #F26522 !important;
+}
+
+.mobile-sticky-cta a {
+  background: #FFFFFF !important;
+  color: #F26522 !important;
+}
+
+.mobile-sticky-cta a:hover {
+  background: #fff8f5 !important;
+}
+
+/* Language toggle slider - Match index dark color */
+.language-toggle__slider,
+.language-toggle::before {
+  background: #1a202c !important;
+}
+

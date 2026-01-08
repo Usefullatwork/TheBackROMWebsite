@@ -11,9 +11,9 @@
   <meta name="view-transition" content="same-origin" />
 
   <link rel="manifest" href="../../manifest.json" />
-  <link rel="apple-touch-icon" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
   <link rel="preload" as="style" href="../../css/main.min.css" />
-  <link rel="icon" type="image/png" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Cervikal Foraminal Stenose - Trang Nervekanal i Nakken | Kiropraktor Oslo</title>
 
   <meta name="description" content="Cervikal foraminal stenose gir innsnevring av nerveåpningene i nakken. Kiropraktor på Majorstua behandler med mobilisering og øvelser. Få lindring uten kirurgi.">
@@ -111,7 +111,7 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="" /></noscript>
 
   <link rel="stylesheet" href="../../css/main.min.css?v=20260101">
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css">
+  <link rel="stylesheet" href="../../css/hub-article.css">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
@@ -120,45 +120,25 @@
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
   <style>
-    :root { --hub-primary: #e8a838; --hub-primary-dark: #d4922e; --hub-dark: #1a1a2e; --hub-dark-light: #16213e; --hub-red: #ef4444; --hub-green: #22c55e; --hub-blue: #3b82f6; }
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
     .wrapper { overflow: visible !important; }
     .page { padding-top: 0 !important; }
-    .hub-wrapper { display: flex; align-items: stretch; max-width: 1400px; margin: 0 auto; padding: 0 40px 20px 40px; gap: 40px; }
-    @media (min-width: 1600px) { .hub-wrapper { max-width: 1600px; padding: 0 60px 20px 60px; } }
-    .hub-main { flex: 1; min-width: 0; max-width: 1000px; background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
-    @media (min-width: 1200px) { .hub-main { max-width: 1100px; } }
-    .hub-sidenav { width: 220px; flex-shrink: 0; position: relative; align-self: stretch; }
-    .hub-sidenav .sidenav-inner { position: sticky; top: calc(var(--header-height, 80px) + 20px); }
-    @media (min-width: 1400px) { .hub-sidenav { width: 260px; } }
-    @media (max-width: 1000px) { .hub-sidenav { display: none; } .hub-wrapper { padding: 0 16px; } .hub-main { max-width: 100%; } }
-    .sidenav-inner { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-    .sidenav-title { font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
-    .sidenav-link { display: block; padding: 8px 10px; margin: 3px 0; color: #6b7280; text-decoration: none; font-size: 13px; border-radius: 6px; transition: all 0.2s; border-left: 2px solid transparent; }
-    .sidenav-link:hover { background: #f3f4f6; color: var(--hub-dark); }
-    .sidenav-link.active { background: #fff9e6; color: var(--hub-primary-dark); border-left-color: var(--hub-primary); font-weight: 600; }
-    .sidenav-cta { display: block; background: var(--hub-primary); color: var(--hub-dark); padding: 12px 14px; border-radius: 8px; font-weight: 700; text-decoration: none; text-align: center; font-size: 13px; margin-top: 16px; transition: background 0.2s; }
-    .sidenav-cta:hover { background: var(--hub-primary-dark); }
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-dark-light) 100%); color: #fff; padding: 40px 32px; padding-top: calc(var(--header-height, 80px) + 40px); border-radius: 12px 12px 0 0; }
-    @media (max-width: 600px) { .hub-hero { padding: 28px 20px; padding-top: calc(var(--header-height, 80px) + 28px); } }
-    .hub-hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 12px; line-height: 1.2; }
-    @media (max-width: 600px) { .hub-hero h1 { font-size: 26px; } }
-    .hub-hero .author { font-style: italic; color: rgba(255,255,255,0.6); font-size: 14px; margin-top: 8px; }
     .hub-content { padding: 32px; }
     @media (max-width: 600px) { .hub-content { padding: 20px; } }
-    .tldr-box { background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%); border-left: 4px solid var(--hub-primary); border-radius: 0 10px 10px 0; padding: 20px; margin-bottom: 28px; }
-    .tldr-box h3 { font-size: 15px; color: var(--hub-dark); margin-bottom: 12px; }
-    .tldr-box ul { list-style: none; padding: 0; margin: 0; }
-    .tldr-box li { padding: 5px 0 5px 22px; position: relative; font-size: 14px; line-height: 1.5; }
-    .tldr-box li::before { content: '✓'; position: absolute; left: 0; color: var(--hub-green); font-weight: bold; }
-    .tldr-box li.warning::before { content: '⚠'; color: var(--hub-red); }
     .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; scroll-margin-top: 100px; }
     .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-    .section-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-    .section-number { width: 32px; height: 32px; background: var(--hub-dark); color: var(--hub-primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; flex-shrink: 0; }
-    .section-title { font-size: 20px; font-weight: 700; color: var(--hub-dark); margin: 0; }
-    @media (max-width: 600px) { .section-title { font-size: 18px; } }
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
     .hub-section h3 { font-size: 17px; font-weight: 600; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section ul { margin: 10px 0; padding-left: 20px; }
+    .hub-section li { font-size: 14px; margin-bottom: 6px; color: #4b5563; }
     .condition-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 14px 0; }
     .condition-card h4 { font-size: 15px; font-weight: 600; color: var(--hub-dark); margin-bottom: 10px; }
     .condition-card p { font-size: 14px; margin-bottom: 10px; }
@@ -188,41 +168,33 @@
     .faq-item:last-child { border-bottom: none; }
     .faq-item h4 { color: var(--hub-dark); margin-bottom: 10px; font-size: 15px; }
     .faq-item p { color: #4b5563; margin: 0; font-size: 14px; line-height: 1.6; }
-    .cta-box { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-dark-light) 100%); color: #fff; border-radius: 12px; padding: 28px; text-align: center; margin: 32px 0; }
-    .cta-box h3 { color: #fff; font-size: 22px; margin-bottom: 12px; }
-    .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 18px; font-size: 15px; }
-    .cta-box .btn { display: inline-block; background: var(--hub-primary); color: var(--hub-dark); padding: 14px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: background 0.2s; }
-    .cta-box .btn:hover { background: var(--hub-primary-dark); }
     .sources-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
     .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 16px; }
     .sources-section p { font-size: 13px; color: #6b7280; margin-bottom: 6px; }
-    .related-links { background: #f8fafc; border-radius: 10px; padding: 20px; margin-top: 24px; }
-    .related-links h3 { color: var(--hub-dark); margin-bottom: 14px; font-size: 16px; }
-    .related-links a { display: block; padding: 10px 0; color: var(--hub-primary-dark); text-decoration: none; border-bottom: 1px solid #e5e7eb; font-size: 14px; transition: padding-left 0.2s; }
-    .related-links a:last-child { border-bottom: none; }
-    .related-links a:hover { padding-left: 8px; }
-    .breadcrumb { padding: 12px 0; font-size: 13px; color: #6b7280; }
-    .breadcrumb a { color: var(--hub-primary-dark); text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .mobile-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-dark); padding: 12px 16px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
-    .mobile-cta a { display: block; background: var(--hub-primary); color: var(--hub-dark); text-align: center; padding: 14px; border-radius: 8px; font-weight: 700; text-decoration: none; }
-    @media (max-width: 768px) { .mobile-cta { display: block; } .hub-content { padding-bottom: 100px; } }
     .disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 24px; font-size: 13px; color: #6b7280; }
+    @media (max-width: 768px) { .hub-content { padding-bottom: 100px; } }
   </style>
 </head>
 
 <body id="top">
   <div class="wrapper">
-    <header class="header">
+        <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+            alt="TheBackROM Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
-            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
-            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk" aria-pressed="false">EN</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
-          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false"><span></span><span></span><span></span></button>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="menu__body">
             <ul class="menu__list">
               <li class="menu__item"><a href="../../index.html" class="menu__link">Hjem</a></li>
@@ -232,50 +204,51 @@
               <li class="menu__item"><a href="../../priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="../../faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="../../contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="../../fagartikler/index.html" class="menu__link">Fagartikler</a></li>
               <li class="menu__item"><a href="../../blogg/index.html" class="menu__link">Blogg</a></li>
-              <li class="menu__item"><a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Bestill Time</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="page">
+    <main class="page" id="main">
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <h1>Cervikal Foraminal Stenose - Trang Nervekanal i Nakken</h1>
+          <p class="hub-hero__subtitle">Innsnevring av nerveapningene i nakken som kan gi utstrålende smerter og symptomer til arm og hand</p>
+        </div>
+      </section>
+
       <div class="hub-wrapper">
         <article class="hub-main">
-          <div class="hub-hero">
-            <nav class="breadcrumb">
-              <a href="../../plager.html">Plager</a> / <a href="../nakkesmerter.html">Nakkesmerter</a> / Foraminal stenose
-            </nav>
-            <h1>Cervikal Foraminal Stenose - Trang Nervekanal i Nakken</h1>
-            <p class="author">Av Kiropraktor Mads Finstad, TheBackROM, Majorstua</p>
-          </div>
-
           <div class="hub-content">
-            <div class="tldr-box">
-              <h3>TL;DR - Kort oppsummert</h3>
+            <div class="premium-summary-card">
+              <h3>Kort oppsummert</h3>
               <ul>
-                <li><strong>Hva det er:</strong> Innsnevring av nerveåpningene (foramen) i nakkevirvlene som klemmer på nervene</li>
-                <li><strong>Vanligste symptomer:</strong> Utstråling til arm/hånd, nummenhet, prikking, svakhet - ofte på én side</li>
+                <li><strong>Hva det er:</strong> Innsnevring av nerveapningene (foramen) i nakkevirvlene som klemmer på nervene</li>
+                <li><strong>Vanligste symptomer:</strong> Utstaling til arm/hand, <a href="nummenhet-fingre.html">nummenhet</a>, prikking, svakhet - ofte på en side</li>
                 <li><strong>Konservativ behandling:</strong> 75-90% får god lindring uten kirurgi</li>
-                <li><strong>Kiropraktisk tilnærming:</strong> Mobilisering, traksjonsøvelser, holdningskorrigering og styrketrening</li>
-                <li class="warning"><strong>Røde flagg:</strong> Progressiv svakhet, muskelsvinn, gangforstyrrelser, blære-/tarmproblemer</li>
+                <li><strong>Kiropraktisk tilnarming:</strong> Mobilisering, traksjonsøvelser, holdningskorrigering og styrketrening</li>
+                <li class="warning"><strong><a href="rode-flagg-nakkesmerter.html">Røde flagg</a>:</strong> Progressiv svakhet, muskelsvinn, gangforstyrrelser, blare-/tarmproblemer</li>
               </ul>
             </div>
 
             <section id="hva-er" class="hub-section">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">1</span>
-                <h2 class="section-title">Hva er cervikal foraminal stenose?</h2>
+                <h2>Hva er cervikal foraminal stenose?</h2>
               </div>
 
-              <p>Cervikal foraminal stenose betyr at nerveåpningene på siden av nakkevirvlene har blitt trangere. Disse åpningene kalles "foramen" (flertall: foramina) og er der spinalnervene forlater ryggsøylen for å forsyne armer og hender med følelse og bevegelse.</p>
+              <p>Cervikal foraminal stenose betyr at nerveapningene på siden av nakkevirvlene har blitt trangere. Disse apningene kalles "foramen" (flertall: foramina) og er der spinalnervene forlater ryggsoylen for å forsyne armer og hender med følelse og bevegelse.</p>
 
-              <p>Når foramen blir trangere - enten på grunn av slitasje, skiveutbuling eller beinpåleiring - kan nerven som passerer gjennom bli irritert eller komprimert. Dette gir symptomer som stråler ut fra nakken og ned i skulder, arm eller hånd.</p>
+              <p>Når foramen blir trangere - enten på grunn av slitasje, skiveutbuling eller beinpaleiring - kan nerven som passerer gjennom bli irritert eller komprimert. Dette gir symptomer som stråler ut fra nakken og ned i skulder, arm eller hand.</p>
 
               <div class="anatomy-box">
-                <h4>Forstå anatomien</h4>
+                <h4>Forsta anatomien</h4>
                 <p>Tenk på foramen som en tunnel der nerven reiser gjennom. Tunnelen dannes av:</p>
                 <ul>
                   <li><strong>Virvelbuen over og under</strong> - danner tak og gulv</li>
@@ -285,71 +258,71 @@
                 <p>Forandringer i noen av disse strukturene kan gjøre tunnelen trangere og irritere nerven.</p>
               </div>
 
-              <h3>Vanligste nivåer</h3>
-              <p>Foraminal stenose er vanligst på følgende nivåer i nakken:</p>
+              <h3>Vanligste nivaer</h3>
+              <p>Foraminal stenose er vanligst på folgende nivaer i nakken:</p>
               <ul>
-                <li><strong>C5-C6:</strong> Påvirker C6-nerven - symptomer til tommel og pekefinger</li>
-                <li><strong>C6-C7:</strong> Påvirker C7-nerven - symptomer til langfinger og ringfinger</li>
-                <li><strong>C4-C5:</strong> Påvirker C5-nerven - symptomer til skulder og overarm</li>
+                <li><strong><a href="c5-c6-prolaps.html">C5-C6</a>:</strong> Pavirker C6-nerven - symptomer til tommel og pekefinger</li>
+                <li><strong><a href="c6-c7-prolaps.html">C6-C7</a>:</strong> Pavirker C7-nerven - symptomer til langfinger og ringfinger</li>
+                <li><strong>C4-C5:</strong> Pavirker C5-nerven - symptomer til skulder og overarm</li>
               </ul>
             </section>
 
             <section id="årsaker" class="hub-section">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">2</span>
-                <h2 class="section-title">Årsaker til foraminal stenose</h2>
+                <h2>Årsaker til foraminal stenose</h2>
               </div>
 
               <div class="condition-card">
                 <h4>Spondylose (slitasje)</h4>
-                <p>Den vanligste årsaken. Over tid kan virvlene utvikle beinpåleiring (osteofytter) som vokser inn i foramen og gjør åpningen trangere.</p>
+                <p>Den vanligste årsaken. Over tid kan virvlene utvikle beinpaleiring (osteofytter) som vokser inn i foramen og gjør apningen trangere.</p>
               </div>
 
               <div class="condition-card">
                 <h4>Skiveforandringer</h4>
-                <p>Diskusutbuling eller -prolaps kan presse på nerveroten. En "hard" herniering med beinpåleiring er vanligere ved stenose enn "myk" diskusprolaps.</p>
+                <p>Diskusutbuling eller <a href="nakkeprolaps.html">prolaps</a> kan presse på nerveroten. En "hard" herniering med beinpaleiring er vanligere ved stenose enn "myk" diskusprolaps.</p>
               </div>
 
               <div class="condition-card">
                 <h4>Fasettleddsartrose</h4>
-                <p>Slitasje i fasettleddene fører til fortykkelse av leddkapselen og beinpåleiring som reduserer plassen i foramen.</p>
+                <p>Slitasje i fasettleddene forer til fortykkelse av leddkapselen og beinpaleiring som reduserer plassen i foramen.</p>
               </div>
 
               <div class="condition-card">
                 <h4>Ligamentum flavum-fortykkelse</h4>
-                <p>Det gule leddbåndet kan bli tykkere med alderen og bidra til innsnevring.</p>
+                <p>Det gule leddbandet kan bli tykkere med alderen og bidra til innsnevring.</p>
               </div>
 
               <h3>Risikofaktorer</h3>
               <ul>
-                <li><strong>Alder:</strong> Risikoen øker betydelig etter 50 år</li>
+                <li><strong>Alder:</strong> Risikoen oker betydelig etter 50 ar</li>
                 <li><strong>Tidligere nakkeskade:</strong> Whiplash eller andre traumer</li>
                 <li><strong>Arbeid med nakkebelastning:</strong> Langvarig arbeid med hodet fremover eller i rotasjon</li>
                 <li><strong>Genetikk:</strong> Noen har naturlig mindre foramen</li>
-                <li><strong>Røyking:</strong> Akselererer degenerative forandringer i ryggsøylen</li>
+                <li><strong>Royking:</strong> Akselererer degenerative forandringer i ryggsoylen</li>
               </ul>
             </section>
 
             <section id="symptomer" class="hub-section">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">3</span>
-                <h2 class="section-title">Symptomer</h2>
+                <h2>Symptomer</h2>
               </div>
 
               <h3>Typiske symptomer</h3>
               <ul>
-                <li><strong>Radikulær smerte:</strong> Skarp, brennende eller elektrisk smerte som stråler fra nakke til arm</li>
-                <li><strong>Nummenhet og prikking:</strong> Ofte i spesifikke fingre avhengig av hvilken nerve som er påvirket</li>
-                <li><strong>Svakhet:</strong> Redusert kraft i spesifikke muskler i arm eller hånd</li>
+                <li><strong>Radikular smerte:</strong> Skarp, brennende eller elektrisk smerte som stråler fra nakke til arm</li>
+                <li><strong>Nummenhet og prikking:</strong> Ofte i spesifikke fingre avhengig av hvilken nerve som er pavirket</li>
+                <li><strong>Svakhet:</strong> Redusert kraft i spesifikke muskler i arm eller hand</li>
                 <li><strong>Nakkestivhet:</strong> Spesielt ved bevegelser som lukker foramen (ekstensjon + rotasjon til smertefull side)</li>
               </ul>
 
               <div class="info-box">
                 <h4>Spurlings test</h4>
-                <p>En klassisk test for foraminal stenose: Hodet bøyes bakover og roteres mot smertefull side, deretter trykkes lett ned. Positiv test reproduserer utstråling til armen. Dette "lukker" foramen og provoserer symptomene.</p>
+                <p>En klassisk test for foraminal stenose: Hodet boyes bakover og roteres mot smertefull side, deretter trykkes lett ned. Positiv test reproduserer utstaling til armen. Dette "lukker" foramen og provoserer symptomene.</p>
               </div>
 
-              <h3>Symptomfordeling etter nivå</h3>
+              <h3>Symptomfordeling etter niva</h3>
               <div class="condition-card">
                 <h4>C5-nerven (C4-C5 stenose)</h4>
                 <ul>
@@ -363,7 +336,7 @@
                 <h4>C6-nerven (C5-C6 stenose)</h4>
                 <ul>
                   <li>Smerte: Underarm, tommel og pekefinger</li>
-                  <li>Svakhet: Håndleddsekstensjon, biceps</li>
+                  <li>Svakhet: Handleddsekstensjon, biceps</li>
                   <li>Nummenhet: Tommel og pekefinger</li>
                 </ul>
               </div>
@@ -372,75 +345,75 @@
                 <h4>C7-nerven (C6-C7 stenose)</h4>
                 <ul>
                   <li>Smerte: Bakside av arm, langfinger</li>
-                  <li>Svakhet: Triceps, håndleddsfleksjon</li>
+                  <li>Svakhet: Triceps, handleddsfleksjon</li>
                   <li>Nummenhet: Langfinger</li>
                 </ul>
               </div>
             </section>
 
             <section id="behandling" class="hub-section">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">4</span>
-                <h2 class="section-title">Behandling</h2>
+                <h2>Behandling</h2>
               </div>
 
-              <p>De fleste med cervikal foraminal stenose responderer godt på konservativ behandling. Studier viser at 75-90% oppnår god symptomkontroll uten kirurgi.</p>
+              <p>De fleste med cervikal foraminal stenose responderer godt på konservativ behandling. Studier viser at 75-90% oppnær god symptomkontroll uten kirurgi.</p>
 
               <div class="treatment-box">
                 <h4>Kiropraktisk behandling kan inkludere:</h4>
                 <ul>
                   <li><strong>Manuell mobilisering:</strong> Forsiktig mobilisering av nakkeledd for å bedre bevegelighet</li>
-                  <li><strong>Manuell traksjon:</strong> "Strekk" av nakken som åpner foramen og gir nerveavlastning</li>
+                  <li><strong>Manuell traksjon:</strong> "Strekk" av nakken som apner foramen og gir nerveavlastning</li>
                   <li><strong>Bløtvevsbehandling:</strong> Behandling av stram muskulatur rundt nakke og skulder</li>
                   <li><strong>Nevromobilisering:</strong> Forsiktige teknikker for å bedre nervens glideevne</li>
-                  <li><strong>Holdningskorrigering:</strong> Rådgivning om ergonomi og stillingsforandring</li>
+                  <li><strong>Holdningskorrigering:</strong> Radgivning om ergonomi og stillingsforandring</li>
                 </ul>
               </div>
 
-              <h3>Øvelser som ofte hjelper</h3>
+              <h3>Ovelser som ofte hjelper</h3>
               <div class="condition-card">
                 <h4>Cervikale retraksjoner (hakefremtrekk)</h4>
-                <p>Trekk haken rett bakover som om du lager "dobbelthake". Hold 5 sekunder. Denne øvelsen sentraliserer nakkeskivene og kan åpne foramen.</p>
+                <p>Trekk haken rett bakover som om du lager "dobbelthake". Hold 5 sekunder. Denne ovelsen sentraliserer nakkeskivene og kan åpne foramen.</p>
               </div>
 
               <div class="condition-card">
                 <h4>Sidebøy bort fra smertefull side</h4>
-                <p>Bøy hodet forsiktig mot skulderen på den friske siden. Dette åpner foramen på den smertefulle siden og kan gi umiddelbar lindring.</p>
+                <p>Boy hodet forsiktig mot skulderen på den friske siden. Dette apner foramen på den smertefulle siden og kan gi umiddelbar lindring.</p>
               </div>
 
               <div class="condition-card">
                 <h4>Skulderbladsstabilisering</h4>
-                <p>Trekk skulderbladene sammen og ned. Hold 10 sekunder. Styrker muskulaturen som støtter god nakkeholdning.</p>
+                <p>Trekk skulderbladene sammen og ned. Hold 10 sekunder. Styrker muskulaturen som stotter god nakkeholdning.</p>
               </div>
 
-              <h3>Hva bør du unngå?</h3>
+              <h3>Hva bør du unnga?</h3>
               <ul>
                 <li>Ekstensjon + rotasjon mot smertefull side (lukker foramen)</li>
                 <li>Langvarig arbeid med hodet fremover (tekstnakke-stilling)</li>
-                <li>Bæring av tung veske på smertefull side</li>
-                <li>Sove med høy pute som bøyer nakken</li>
+                <li>Baring av tung veske på smertefull side</li>
+                <li>Sove med hoy pute som boyer nakken</li>
               </ul>
 
               <div class="prognosis-box">
                 <h4>Prognose</h4>
-                <p>Med riktig behandling og øvelser oppnår de fleste betydelig bedring innen 6-12 uker. Noen opplever perioder med forverring, men langtidsprognosen er generelt god ved konservativ behandling.</p>
+                <p>Med riktig behandling og øvelser oppnær de fleste betydelig bedring innen 6-12 uker. Noen opplever perioder med forverring, men langtidsprognosen er generelt god ved konservativ behandling.</p>
               </div>
             </section>
 
             <section id="rodeflagg" class="hub-section">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">5</span>
-                <h2 class="section-title">Røde flagg - Når må du søke lege?</h2>
+                <h2>Røde flagg - Når må du søke lege?</h2>
               </div>
 
               <div class="warning-box">
                 <h4>KONTAKT LEGE UMIDDELBART VED:</h4>
                 <ul>
-                  <li>Progressiv svakhet i arm eller hånd som forverres</li>
+                  <li>Progressiv svakhet i arm eller hand som forverres</li>
                   <li>Synlig muskelsvinn (atrofi)</li>
-                  <li>Gangforstyrrelser eller ustøhet</li>
-                  <li>Problemer med vannlating eller avføring</li>
-                  <li>Nummenhet i begge hender eller føtter</li>
+                  <li>Gangforstyrrelser eller ustohet</li>
+                  <li>Problemer med vannlating eller avforing</li>
+                  <li>Nummenhet i begge hender eller fotter</li>
                   <li>Symptomer i begge armer samtidig</li>
                   <li>Feber kombinert med nakkesmerter</li>
                 </ul>
@@ -448,24 +421,24 @@
               </div>
 
               <h3>Når vurderes kirurgi?</h3>
-              <p>Kirurgi vurderes vanligvis kun når:</p>
+              <p>Kirurgi vurderes vanligvis kun nar:</p>
               <ul>
                 <li>Konservativ behandling i 6-12 uker ikke gir bedring</li>
                 <li>Det er progressiv nevrologisk forverring</li>
                 <li>Det er tegn til myelopati (ryggmargspåvirkning)</li>
-                <li>Smertene er uutholdelige og påvirker livskvaliteten betydelig</li>
+                <li>Smertene er uutholdelige og pavirker livskvaliteten betydelig</li>
               </ul>
             </section>
 
             <section id="faq" class="hub-section faq-section">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">6</span>
-                <h2 class="section-title">Ofte stilte spørsmål</h2>
+                <h2>Ofte stilte spørsmål</h2>
               </div>
 
               <div class="faq-item">
                 <h4>Hva er forskjellen på foraminal stenose og sentral stenose?</h4>
-                <p>Foraminal stenose påvirker nerveåpningene på siden av virvelsøylen der nervene går ut, og gir symptomer i arm/hånd. Sentral stenose påvirker selve spinalkanalen og kan gi symptomer i både armer og ben, samt gangforstyrrelser.</p>
+                <p>Foraminal stenose pavirker nerveapningene på siden av virvelsoylen der nervene går ut, og gir symptomer i arm/hand. Sentral stenose pavirker selve spinalkanalen og kan gi symptomer i bade armer og ben, samt gangforstyrrelser.</p>
               </div>
 
               <div class="faq-item">
@@ -475,12 +448,12 @@
 
               <div class="faq-item">
                 <h4>Hvilke øvelser hjelper ved foraminal stenose i nakken?</h4>
-                <p>Cervikale retraksjonsøvelser (hakefremtrekk), nakketraksjonsøvelser og skulderbladstabilisering er ofte effektive. Øvelser som åpner foramen (lett sidebøy bort fra smertefull side) kan gi umiddelbar lindring.</p>
+                <p>Cervikale retraksjonsøvelser (hakefremtrekk), nakketraksjonsøvelser og skulderbladstabilisering er ofte effektive. Ovelser som apner foramen (lett sideboy bort fra smertefull side) kan gi umiddelbar lindring.</p>
               </div>
 
               <div class="faq-item">
                 <h4>Er det farlig å ha cervikal foraminal stenose?</h4>
-                <p>Foraminal stenose i seg selv er ikke farlig, men ubehandlet kan den føre til progressiv nerveskade. Søk lege ved økende svakhet, muskelsvinn eller problemer med finmotorikk.</p>
+                <p>Foraminal stenose i seg selv er ikke farlig, men ubehandlet kan den fore til progressiv nerveskade. Sok lege ved økende svakhet, muskelsvinn eller problemer med finmotorikk.</p>
               </div>
 
               <div class="faq-item">
@@ -489,19 +462,22 @@
               </div>
             </section>
 
-            <div class="cta-box">
+            <div class="hub-cta">
               <h3>Har du symptomer på foraminal stenose?</h3>
               <p>Kiropraktor Mads Finstad hos TheBackROM på Majorstua har erfaring med diagnostisering og behandling av foraminal stenose. Jeg tilbyr grundig undersøkelse og individuelt tilpasset behandlingsplan.</p>
-              <p style="margin-bottom: 16px;">Priser: Nytt problem 1105 kr | Oppfølging 780 kr</p>
-              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn">Bestill time online</a>
+              <p style="margin-bottom: 16px;">Priser: Nytt problem 1105 kr | Oppfølg 780 kr</p>
+              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="button">Bestill time online</a>
             </div>
 
-            <div class="related-links">
+            <div class="related-box">
               <h3>Relaterte artikler</h3>
-              <a href="../nakkesmerter.html">← Tilbake til Nakkesmerter - Komplett guide</a>
-              <a href="nakkeprolaps.html">Nakkeprolaps og Nerve i Klem</a>
-              <a href="c5-c6-prolaps.html">C5-C6 Diskprolaps</a>
-              <a href="c6-c7-prolaps.html">C6-C7 Diskprolaps</a>
+              <a href="../nakkesmerter.html">&#8594; Nakkesmerter - Hovedartikkel</a>
+              <a href="nakkeprolaps.html">&#8594; Nakkeprolaps</a>
+              <a href="nummenhet-fingre.html">&#8594; Nummenhet i fingrene</a>
+              <a href="thoracic-outlet-syndrom.html">&#8594; Thoracic outlet syndrom</a>
+              <a href="c5-c6-prolaps.html">&#8594; C5-C6 prolaps</a>
+              <a href="c6-c7-prolaps.html">&#8594; C6-C7 prolaps</a>
+              <a href="rode-flagg-nakkesmerter.html">&#8594; Røde flagg</a>
             </div>
 
             <div class="sources-section">
@@ -513,47 +489,79 @@
             </div>
 
             <div class="disclaimer">
-              <strong>Medisinsk ansvarsfraskrivelse:</strong> Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon.
+              <strong>Medisinsk ansvarsfraskrivelse:</strong> Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsok helsepersonell dersom du er usikker på din situasjon.
             </div>
           </div>
         </article>
 
-        <nav class="hub-sidenav" aria-label="Innholdsnavigasjon">
-          <div class="sidenav-inner">
-            <div class="sidenav-title">Innhold</div>
-            <a href="#hva-er" class="sidenav-link">Hva er foraminal stenose?</a>
-            <a href="#årsaker" class="sidenav-link">Årsaker</a>
-            <a href="#symptomer" class="sidenav-link">Symptomer</a>
-            <a href="#behandling" class="sidenav-link">Behandling</a>
-            <a href="#rodeflagg" class="sidenav-link">Røde flagg</a>
-            <a href="#faq" class="sidenav-link">FAQ</a>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="sidenav-cta">Bestill time</a>
+        <aside class="hub-sidebar" aria-label="Innholdsnavigasjon">
+          <div class="hub-conversion-card">
+            <img src="../../images/about/mads-profile.webp" alt="Kiropraktor Mads Finstad" class="sidebar-image" loading="lazy">
+            <h3>Fa hjelp med foraminal stenose</h3>
+            <p>Jeg tilbyr grundig undersøkelse og individuelt tilpasset behandling.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM Majorstua</small>
+            </div>
           </div>
-        </nav>
-      </div>
 
-      <div class="mobile-cta">
-        <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available">Bestill time</a>
+          <nav class="hub-toc-card">
+            <h3>Innhold</h3>
+            <ul>
+              <li><a href="#hva-er">Hva er foraminal stenose?</a></li>
+              <li><a href="#årsaker">Årsaker</a></li>
+              <li><a href="#symptomer">Symptomer</a></li>
+              <li><a href="#behandling">Behandling</a></li>
+              <li><a href="#rodeflagg">Røde flagg</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+        </aside>
       </div>
     </main>
 
-    <footer class="footer">
+        <footer class="footer">
       <div class="footer__container">
+        <!-- Left Column -->
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"><img loading="lazy" decoding="async" src="../../pictures.final/branding/icons/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook" /></a>
-            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"><img src="../../pictures.final/branding/icons/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram" loading="lazy" decoding="async" /></a>
-            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"><img src="../../pictures.final/branding/icons/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube" loading="lazy" decoding="async" /></a>
-            <a href="../../contact.html" class="footer__social-link"><img loading="lazy" decoding="async" src="../../pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../../images/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
           </div>
         </div>
+
+        <!-- Center Column -->
         <div class="footer__center">
-          <div class="footer__logo"><a href="../../index.html" class="logo"><img src="../../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a></div>
+          <div class="footer__logo">
+            <img src="../../images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
           <div class="back-to-top-wrapper">
-            <p class="back-to-top-text">Tilbake til start</p>
-            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden"><i class="fas fa-arrow-up" aria-hidden="true"></i> Opp</a>
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
           </div>
         </div>
+
+        <!-- Right Column -->
         <div class="footer__right">
           <div class="footer__hours">
             <h3>Åpningstider</h3>
@@ -569,9 +577,10 @@
           </div>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <a href="../../personvern.html" class="footer__policy">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 TheBackROM - Alle rettigheter reservert</p>
+        <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 TheBackROM – Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
@@ -594,7 +603,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('.hub-section');
-      const navLinks = document.querySelectorAll('.sidenav-link');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
       function updateActiveLink() {
         let currentSection = '';
         sections.forEach(section => {
@@ -616,3 +625,5 @@
   </script>
 </body>
 </html>
+
+

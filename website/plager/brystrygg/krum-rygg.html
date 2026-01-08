@@ -11,11 +11,9 @@
   <meta name="view-transition" content="same-origin" />
 
   <link rel="manifest" href="../../manifest.json" />
-  <link rel="apple-touch-icon" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
   <link rel="preload" as="style" href="../../css/main.min.css" />
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101">
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css">
-  <link rel="icon" type="image/png" href="../../pictures.final/Final Transparent Logo.png" />
+  <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
 
   <title>Krum Rygg og Dårlig Holdning – Behandling hos Kiropraktor på Majorstua</title>
   <meta name="description" content="Krum rygg? Funksjonell kyfose kan bedres med 5-13 grader på 8-12 uker. Kiropraktor på Majorstua – ingen henvisning. TheBackROM.">
@@ -25,7 +23,7 @@
   <meta property="og:title" content="Krum Rygg og Dårlig Holdning – Behandling hos Kiropraktor på Majorstua">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thebackrom.com/plager/brystrygg/krum-rygg.html">
-  <meta property="og:image" content="https://thebackrom.com/pictures.final/conditions/general/krum-rygg.webp">
+  <meta property="og:image" content="https://thebackrom.com/images/conditions/general/krum-rygg.webp">
   <meta property="og:site_name" content="TheBackROM - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/brystrygg/krum-rygg.html">
@@ -135,6 +133,8 @@
       src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="" /></noscript>
 
   <link rel="stylesheet" href="../../css/main.min.css?v=20260101">
+  <link rel="stylesheet" href="../../css/hub-article.css">
+
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
@@ -143,6 +143,7 @@
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
   <style>
+    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
     :root {
       --hub-primary: #1a5f7a;
       --hub-dark: #0d3d4d;
@@ -152,105 +153,64 @@
       --hub-purple: #7c3aed;
       --hub-orange: #ea580c;
     }
-    .hub-wrapper { display: flex; gap: 40px; max-width: 1200px; margin: 0 auto; padding: 40px 20px; align-items: flex-start; }
-    .hub-main { flex: 1; max-width: 800px; overflow: visible; }
-    .hub-sidenav { width: 280px; flex-shrink: 0; position: sticky; top: calc(var(--header-height, 80px) + 20px); align-self: start; background: #f8fafc; border-radius: 12px; padding: 24px; border: 1px solid #e2e8f0; max-height: calc(100vh - 140px); overflow-y: auto; }
-    .hub-sidenav h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: #64748b; margin-bottom: 16px; font-weight: 600; }
-    .hub-sidenav ul { list-style: none; padding: 0; margin: 0; }
-    .hub-sidenav li { margin-bottom: 8px; }
-    .hub-sidenav a { display: block; padding: 10px 14px; color: #475569; text-decoration: none; border-radius: 8px; font-size: 14px; transition: all 0.2s ease; border-left: 3px solid transparent; }
-    .hub-sidenav a:hover { background: #e2e8f0; color: var(--hub-primary); }
-    .hub-sidenav a.active { background: #e0f2fe; color: var(--hub-primary); border-left-color: var(--hub-primary); font-weight: 500; }
-    .hub-intro { margin-bottom: 48px; }
-    .hub-intro h1 { font-size: 2.5rem; color: var(--hub-dark); margin-bottom: 24px; line-height: 1.2; }
-    .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
-    .intro-text p { margin-bottom: 16px; }
-    .key-points { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--hub-primary); }
-    .key-points h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 1.1rem; }
-    .key-points ul { margin: 0; padding-left: 20px; }
-    .key-points li { margin-bottom: 10px; color: #334155; line-height: 1.5; }
-    .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
+    .hub-intro { margin-bottom: 40px; }
+    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
+    .intro-text p { margin-bottom: 14px; }
+    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
     .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
     .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { font-size: 1.6rem; color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
-    .condition-card ul { margin: 12px 0; padding-left: 20px; }
-    .condition-card li { margin-bottom: 6px; color: #4b5563; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
+    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
     .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
     .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .treatment-box ul { margin: 0; padding-left: 20px; }
-    .treatment-box li { margin-bottom: 8px; color: #065f46; }
     .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
     .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .info-box p { margin: 0; color: #1e40af; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
-    .red-flag-box ul { margin: 0; padding-left: 20px; }
-    .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
-    .symptom-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin: 16px 0; list-style: none; padding: 0; }
-    .symptom-list li { background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--hub-primary); color: #334155; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 2rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.9rem; margin-top: 4px; }
-    .prognosis-highlight { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid var(--hub-green); }
-    .prognosis-highlight p { color: #065f46; font-weight: 500; margin: 0; }
-    .exercise-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-    .exercise-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
-    .exercise-card p { margin-bottom: 12px; color: #4b5563; }
+    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
+    .exercise-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
+    .exercise-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
     .exercise-card .exercise-detail { background: #f8fafc; padding: 12px 16px; border-radius: 8px; font-size: 0.95rem; color: #374151; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
     .faq-item:last-child { border-bottom: none; }
-    .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
-    .faq-item p { color: #4b5563; margin: 0; line-height: 1.6; }
-    .hub-cta { background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%); color: white; border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
-    .hub-cta h3 { color: white !important; font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; }
-    .hub-cta p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
-    .hub-cta .button { background: white; color: var(--hub-primary); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s ease; }
-    .hub-cta .button:hover { transform: translateY(-2px); }
-    .related-box { background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 32px; }
-    .related-box h3 { color: var(--hub-dark); margin-bottom: 16px; }
-    .related-box a { display: block; padding: 12px 0; color: var(--hub-primary); text-decoration: none; border-bottom: 1px solid #e5e7eb; transition: padding-left 0.2s ease; }
-    .related-box a:last-child { border-bottom: none; }
-    .related-box a:hover { padding-left: 8px; }
-    .source-list { background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 32px; }
-    .source-list h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 1.1rem; }
-    .source-list ol { margin: 0; padding-left: 24px; }
-    .source-list li { margin-bottom: 10px; color: #4b5563; font-size: 0.9rem; line-height: 1.5; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
-    .mobile-sticky-cta a { display: block; background: white; color: var(--hub-primary); text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; }
-    .breadcrumb { margin-bottom: 24px; font-size: 0.9rem; }
-    .breadcrumb a { color: var(--hub-primary); text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb span { color: #64748b; margin: 0 8px; }
-    @media (max-width: 900px) {
-      .hub-wrapper { flex-direction: column; padding: 20px 16px; }
-      .hub-sidenav { display: none; }
-      .hub-main { max-width: 100%; }
-      .hub-intro h1 { font-size: 2rem; }
-      .mobile-sticky-cta { display: block; }
-      .hub-main { padding-bottom: 100px; }
-      .stat-grid { grid-template-columns: repeat(2, 1fr); }
-      .symptom-list { grid-template-columns: 1fr; }
-    }
+    .faq-item h4 { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
+    .faq-item p { color: #4b5563; line-height: 1.6; margin: 0; }
+    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
+    .sources-section ol { font-size: 0.85rem; color: #64748b; padding-left: 24px; }
+    .sources-section li { margin-bottom: 6px; }
+    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 12px 16px; z-index: 100; }
+    .mobile-sticky-cta å { display: inline-block; background: white; color: var(--hub-primary); padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
+    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
   </style>
 </head>
 
 <body id="top">
   <div class="wrapper">
-    <header class="header">
+        <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../pictures.final/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+            alt="TheBackROM Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
-            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
-            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk" aria-pressed="false">EN</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
-          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false"><span></span><span></span><span></span></button>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="menu__body">
             <ul class="menu__list">
               <li class="menu__item"><a href="../../index.html" class="menu__link">Hjem</a></li>
@@ -260,404 +220,480 @@
               <li class="menu__item"><a href="../../priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="../../faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="../../contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="../../fagartikler/index.html" class="menu__link">Fagartikler</a></li>
               <li class="menu__item"><a href="../../blogg/index.html" class="menu__link">Blogg</a></li>
-              <li class="menu__item"><a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Bestill Time</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="page">
-    <div class="hub-wrapper">
-      <!-- Sidebar Navigation -->
-      <aside class="hub-sidenav">
-        <h3>Innhold</h3>
-        <ul>
-          <li><a href="#intro">Om krum rygg</a></li>
-          <li><a href="#årsaker">Årsaker</a></li>
-          <li><a href="#symptomer">Symptomer</a></li>
-          <li><a href="#diagnostikk">Diagnostikk</a></li>
-          <li><a href="#behandling">Behandling</a></li>
-          <li><a href="#ovelser">Øvelser du kan gjøre selv</a></li>
-          <li><a href="#rodeflagg">Røde flagg</a></li>
-          <li><a href="#prognose">Prognose</a></li>
-          <li><a href="#faq">Ofte stilte spørsmål</a></li>
-        </ul>
-        <div class="related-box" style="margin-top: 24px; padding: 16px; background: transparent;">
-          <h3 style="font-size: 13px;">Relaterte artikler</h3>
-          <a href="../brystryggsmerter.html">Brystryggsmerter oversikt</a>
-          <a href="scheuermanns-sykdom.html">Scheuermanns sykdom</a>
-          <a href="flat-rygg.html">Flat rygg (hypokyfose)</a>
-        </div>
-      </aside>
-
-      <!-- Main Content -->
-      <article class="hub-main">
-        <nav class="breadcrumb">
-          <a href="../../index.html">Hjem</a>
-          <span>›</span>
-          <a href="../brystryggsmerter.html">Plager</a>
-          <span>›</span>
-          <a href="../brystryggsmerter.html">Brystryggsmerter</a>
-          <span>›</span>
-          <strong>Krum rygg</strong>
-        </nav>
-
-        <!-- Intro Section -->
-        <section class="hub-intro" id="intro">
+    <main class="page" id="main">
+      <!-- Hero Section - OUTSIDE hub-wrapper like hub page -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
           <h1>Krum Rygg og Dårlig Holdning</h1>
-          <p class="intro-subtitle" style="font-size: 1.2rem; color: #64748b; margin-bottom: 24px;">Kiropraktor i Oslo</p>
+          <p class="hub-hero__subtitle">Årsaker, symptomer, behandling og øvelser | Kiropraktor Mads Finstad, Majorstua</p>
+        </div>
+      </section>
 
-          <p class="intro-text">Sitter du mye foran skjerm og kjenner at ryggen blir rundere? Du er ikke alene. Mange opplever at holdningen forverres over tid, men den gode nyheten er at funksjonell krum rygg ofte kan forbedres betydelig med riktig tilnærming.</p>
+      <div class="hub-wrapper">
+        <article class="hub-main">
 
-          <div class="key-points">
-            <h3>TL;DR – Kort oppsummert</h3>
-            <ul>
-              <li><strong>Hva det er:</strong> Økt krumning i øvre rygg (&gt;50°) som ofte skyldes muskulær ubalanse og stillinger – ikke strukturelle forandringer.</li>
-              <li><strong>Vanligste årsaker:</strong> Langvarig stillesitting (&gt;4 timer/dag øker risiko 2,5x), smarttelefonbruk, svak ryggmuskulatur.</li>
-              <li><strong>Kiropraktisk behandling:</strong> Moderat evidens – kombinert manuell terapi og øvelser gir 5-13° forbedring over 8-12 uker.</li>
-              <li><strong>Røde flagg:</strong> Rigid kurve som ikke rettes opp, nevrologiske symptomer, rask forverring, nattsmerte.</li>
-              <li><strong>Konsultasjon:</strong> 45 min første gang, 30 min oppfølging.</li>
-            </ul>
-          </div>
+          <section class="hub-intro">
+            <div class="intro-text">
+              <p>Sitter du mye foran skjerm og kjenner at ryggen blir rundere? Du er ikke alene. Mange opplever at holdningen forverres over tid, men den gode nyheten er at funksjonell krum rygg ofte kan forbedres betydelig med riktig tilnærming.</p>
 
-          <h3>Hva er krum rygg (funksjonell hyperkyfose)?</h3>
-          <div class="intro-text">
-            <p>Brystkassen din har naturlig en bakoverbuet kurve – dette kalles torakal kyfose og er helt normalt. Problemet oppstår når denne kurven blir for stor, noe man kaller hyperkyfose. Normal kyfosevinkel ligger mellom 20-45 grader målt på røntgen, mens hyperkyfose defineres som over 50 grader (Katzman et al., 2010).</p>
-
-            <p>Det finnes to hovedtyper: <strong>Funksjonell (postural) hyperkyfose</strong> skyldes muskulære ubalanser og dårlige vaner – kurven retter seg opp når du ligger flatt eller bevisst retter deg opp. <strong>Strukturell hyperkyfose</strong> (som Scheuermanns sykdom) innebærer faktiske forandringer i virvlene og er rigid.</p>
-
-            <p>Den funksjonelle typen er langt vanligst og den jeg fokuserer på her – og den gode nyheten er at denne ofte kan påvirkes betydelig med riktig behandling og egeninnsats.</p>
-          </div>
-
-          <div class="stat-grid">
-            <div class="stat-item">
-              <div class="stat-number">2,5x</div>
-              <div class="stat-label">Økt risiko ved &gt;4t sitting</div>
+              <p>Brystkassen din har naturlig en bakoverbuet kurve – dette kalles torakal kyfose og er helt normalt. Problemet oppstår nær denne kurven blir for stor, noe man kaller hyperkyfose. Normal kyfosevinkel ligger mellom 20-45 grader målt på røntgen, mens hyperkyfose defineres som over 50 grader (Katzman et al., 2010).</p>
             </div>
-            <div class="stat-item">
-              <div class="stat-number">35-67%</div>
-              <div class="stat-label">Kontorarbeidere med UCS</div>
+
+            <div class="premium-summary-card">
+              <h3>Kort oppsummert</h3>
+              <ul>
+                <li><strong>Hva det er:</strong> Økt krumning i øvre rygg (&gt;50 grader) som ofte skyldes muskulær ubalanse og stillinger – ikke strukturelle forandringer.</li>
+                <li><strong>Vanligste årsaker:</strong> Langvarig stillesitting (&gt;4 timer/dag øker risiko 2,5x), smarttelefonbruk, svak ryggmuskulatur.</li>
+                <li><strong>Kiropraktisk behandling:</strong> Moderat evidens – kombinert manuell terapi og øvelser gir 5-13 grader forbedring over 8-12 uker.</li>
+                <li><strong>Røde flagg:</strong> Rigid kurve som ikke rettes opp, nevrologiske symptomer, rask forverring, nattsmerte.</li>
+                <li><strong>Konsultasjon:</strong> 45 min første gang, 30 min oppfølging.</li>
+              </ul>
             </div>
-            <div class="stat-item">
-              <div class="stat-number">5-13°</div>
-              <div class="stat-label">Mulig forbedring</div>
+
+            <!-- Related sub-articles - directly under intro -->
+            <nav class="hub-subnav">
+              <h3>Relaterte artikler</h3>
+              <p style="margin-bottom: 16px; color: #64748b;">Utforsk mer om brystrygg og relaterte tilstander:</p>
+              <div class="hub-subnav__grid hub-subnav__grid--detailed">
+                <a href="../brystrygg.html" class="hub-subnav__card">
+                  <strong>Brystrygg – Hovedside</strong>
+                  <span>Oversikt over brystryggplager</span>
+                </a>
+                <a href="scheuermanns-sykdom.html" class="hub-subnav__card">
+                  <strong>Scheuermanns sykdom</strong>
+                  <span>Strukturell kyfose hos ungdom</span>
+                </a>
+                <a href="flat-rygg.html" class="hub-subnav__card">
+                  <strong>Flat rygg (hypokyfose)</strong>
+                  <span>For lite krumning i brystrygg</span>
+                </a>
+                <a href="mellom-skulderbladene.html" class="hub-subnav__card">
+                  <strong>Smerter mellom skulderbladene</strong>
+                  <span>Vanlig følgeplage ved krum rygg</span>
+                </a>
+              </div>
+            </nav>
+          </section>
+
+          <!-- SECTION 1: Årsaker -->
+          <section class="hub-section" id="s1">
+            <div class="section-header">
+              <span class="section-number">1</span>
+              <h2>Årsaker og risikofaktorer</h2>
             </div>
-            <div class="stat-item">
-              <div class="stat-number">20-40%</div>
-              <div class="stat-label">Over 60 med hyperkyfose</div>
+
+            <p>Det finnes to hovedtyper: <strong>Funksjonell (postural) hyperkyfose</strong> skyldes muskulære ubalanser og dårlige vaner – kurven retter seg opp nær du ligger flatt eller bevisst retter deg opp. <strong>Strukturell hyperkyfose</strong> (som <a href="scheuermanns-sykdom.html">Scheuermanns sykdom</a>) innebærer faktiske forandringer i virvlene og er rigid.</p>
+
+            <p>Fra vanligst til sjeldnest:</p>
+
+            <h3>1. Langvarig stillesitting (vanligst)</h3>
+            <p>En thailandsk studie fra 2022 viste at kontorarbeidere som sitter mer enn 4 timer daglig har <strong>2,5 ganger høyere risiko</strong> for muskel- og skjelettplager sammenlignet med de som sitter mindre (Jalayondeja et al., BMC Public Health 2022). EU-OSHA anbefaler maksimalt 2 timer sammenhengende sitting før pause.</p>
+
+            <h3>2. Smarttelefonbruk ("Tech Neck")</h3>
+            <p>Når du ser ned på mobilen, bøyes hodet fremover og øker belastningen på nakken dramatisk. Hansraj (2014) beregnet at for hver 15 grader hodet bøyes, øker den opplevde hodevekten fra ca. 5 kg til 12 kg – og ved 60 graders bøyning hele <strong>27 kg</strong>. En studie fra 2023 viste at tohendig smarttelefonbruk økte brystkurvene akutt med ca. 12 grader.</p>
+
+            <h3>3. Svak ryggmuskulatur</h3>
+            <p>Katzman et al. (2017) fant i SHEAF-studien at personer med hyperkyfose hadde 19% redusert styrke i ryggens strekkemuskler sammenlignet med kontrollgruppen. Svak muskulatur gjør det vanskeligere å opprettholde god holdning over tid.</p>
+
+            <h3>4. Alder</h3>
+            <p>Kyfosevinkelen øker naturlig med ca. 3 grader per tiår etter 40-årsalderen. Kvinner viser raskere progresjon enn menn, særlig etter overgangsalderen (Fon et al., 1980). Blant voksne over 60 år har 20-40% hyperkyfose (Katzman et al., 2010).</p>
+
+            <h3>5. Strukturelle årsaker (sjeldnest)</h3>
+            <p><a href="scheuermanns-sykdom.html">Scheuermanns sykdom</a> rammer 0,4-8% av befolkningen og gir rigid, strukturell kyfose med kileformede virvler. <a href="osteoporose.html">Osteoporose</a> med kompresjonsbrudd er en annen strukturell årsak – hvert brudd øker kyfosen med gjennomsnittlig 3,8 grader (Kado et al., 2013). Disse krever annen tilnærming enn funksjonell kyfose.</p>
+
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="stat-number">2,5x</span>
+                <span class="stat-label">Økt risiko ved &gt;4t sitting</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">35-67%</span>
+                <span class="stat-label">Kontorarbeidere med UCS</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5-13 grader</span>
+                <span class="stat-label">Mulig forbedring</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">20-40%</span>
+                <span class="stat-label">Over 60 med hyperkyfose</span>
+              </div>
             </div>
-          </div>
 
-          <div class="info-box">
-            <h4>Øvre kryss-syndrom (Upper Crossed Syndrome)</h4>
-            <p>Den tsjekkiske legen Vladimir Janda beskrev et mønster han kalte "øvre kryss-syndrom" – et samspill mellom stramme og svake muskler som ofte ses ved dårlig holdning. Typisk ser man stramme brystmuskler og nakkestrekkere kombinert med svake dype nakkefleksorer og muskler mellom skulderbladene. Dette mønsteret finnes hos anslagsvis 35-67% av kontorarbeidere (Xu, 2024; Dey & Musale, 2022).</p>
-          </div>
-        </section>
-
-        <!-- Årsaker Section -->
-        <section class="hub-section" id="årsaker">
-          <div class="section-header">
-            <div class="section-number">1</div>
-            <h2>Årsaker og risikofaktorer</h2>
-          </div>
-
-          <p>Fra vanligst til sjeldnest:</p>
-
-          <h3>1. Langvarig stillesitting (vanligst)</h3>
-          <p>En thailandsk studie fra 2022 viste at kontorarbeidere som sitter mer enn 4 timer daglig har <strong>2,5 ganger høyere risiko</strong> for muskel- og skjelettplager sammenlignet med de som sitter mindre (Jalayondeja et al., BMC Public Health 2022). EU-OSHA anbefaler maksimalt 2 timer sammenhengende sitting før pause.</p>
-
-          <h3>2. Smarttelefonbruk ("Tech Neck")</h3>
-          <p>Når du ser ned på mobilen, bøyes hodet fremover og øker belastningen på nakken dramatisk. Hansraj (2014) beregnet at for hver 15 grader hodet bøyes, øker den opplevde hodevekten fra ca. 5 kg til 12 kg – og ved 60 graders bøyning hele <strong>27 kg</strong>. En studie fra 2023 viste at tohendig smarttelefonbruk økte brystkurvene akutt med ca. 12 grader.</p>
-
-          <h3>3. Svak ryggmuskulatur</h3>
-          <p>Katzman et al. (2017) fant i SHEAF-studien at personer med hyperkyfose hadde 19% redusert styrke i ryggens strekkemuskler sammenlignet med kontrollgruppen. Svak muskulatur gjør det vanskeligere å opprettholde god holdning over tid.</p>
-
-          <h3>4. Alder</h3>
-          <p>Kyfosevinkelen øker naturlig med ca. 3 grader per tiår etter 40-årsalderen. Kvinner viser raskere progresjon enn menn, særlig etter overgangsalderen (Fon et al., 1980). Blant voksne over 60 år har 20-40% hyperkyfose (Katzman et al., 2010).</p>
-
-          <h3>5. Strukturelle årsaker (sjeldnest)</h3>
-          <p>Scheuermanns sykdom rammer 0,4-8% av befolkningen og gir rigid, strukturell kyfose med kileformede virvler. Osteoporose med kompresjonsbrudd er en annen strukturell årsak – hvert brudd øker kyfosen med gjennomsnittlig 3,8 grader (Kado et al., 2013). Disse krever annen tilnærming enn funksjonell kyfose.</p>
-        </section>
-
-        <!-- Symptomer Section -->
-        <section class="hub-section" id="symptomer">
-          <div class="section-header">
-            <div class="section-number">2</div>
-            <h2>Symptomer – mer enn bare utseende</h2>
-          </div>
-
-          <p>Krum rygg handler ikke bare om hvordan du ser ut. Mange opplever en rekke plager som de ikke kobler til holdningen:</p>
-
-          <h3>Nakke- og skulderproblemer</h3>
-          <p>Økt brystkrumning tvinger hodet fremover for å opprettholde horisontalt blikk. Dette overbelaster nakkemuskler og ledd. Forskning viser at forward head posture medierer forholdet mellom brystkyfose og nedsatt nakkebevegelighet. Granito et al. (2012) dokumenterte at redusert brystmobilitet korrelerte med 23% redusert skulderbevegelighet.</p>
-
-          <h3>Hodepine</h3>
-          <p>Watson og Trott (1993) fant at 83% av pasienter med cervikogen hodepine hadde økt brystkyfose (&gt;40°). En studie fra 2023 på migrenepasienter viste signifikant høyere kyfosevinkel (57° vs 38°) sammenlignet med friske kontroller. Hodepinen kommer ofte fra overbelastede nakkestrukturer som kompenserer for brystkrumningen.</p>
-
-          <h3>Armsmerter og nummenhet</h3>
-          <p>Stiv brystrygg kan påvirke skulderbladsposisjon og nervefunksjon. En studie fant at 78% av tilfeller med tennisalbue eller golfalbue hadde samtidig stiv brystrygg. Nummenhet og prikking i hendene kan skyldes kompresjon eller strekk av nerver i den kinetiske kjeden.</p>
-
-          <h3>Tretthet og nedsatt funksjon</h3>
-          <p>Å holde kroppen oppreist mot en krum rygg krever konstant muskelarbeid. Mange opplever uforklarlig tretthet. Ved alvorlig kyfose kan lungefunksjonen påvirkes fordi brystkassen komprimeres.</p>
-        </section>
-
-        <!-- Diagnostikk Section -->
-        <section class="hub-section" id="diagnostikk">
-          <div class="section-header">
-            <div class="section-number">3</div>
-            <h2>Diagnostikk</h2>
-          </div>
-
-          <h3>Klinisk undersøkelse</h3>
-          <p>En grundig klinisk undersøkelse er ofte viktigere enn bilder. Kiropraktoren vurderer holdning fra siden, sjekker om kurven retter seg når du ligger flatt (fleksibilitetstest), tester nakke- og skulderbevegelighet, og undersøker muskelstyrke og -balanse.</p>
-
-          <div class="condition-card">
-            <h4>Vegg-test</h4>
-            <p>En enkel vegg-test kan avdekke fremoverlent hode: stå med hælene mot veggen og mål avstanden fra bakhodet til veggen.</p>
-          </div>
-
-          <h3>Når er bildediagnostikk nødvendig?</h3>
-          <p>Røntgen eller MR er sjelden nødvendig ved typisk funksjonell kyfose. Bilder kan være aktuelle ved mistanke om strukturell årsak (rigid kurve), etter traume, ved mistanke om osteoporose eller brudd, eller ved nevrologiske symptomer. Husk at mange funn på bilder, som aldersrelaterte forandringer, ikke nødvendigvis forklarer plagene dine.</p>
-        </section>
-
-        <!-- Behandling Section -->
-        <section class="hub-section" id="behandling">
-          <div class="section-header">
-            <div class="section-number">4</div>
-            <h2>Behandling</h2>
-          </div>
-
-          <h3>Hva kan kiropraktoren gjøre?</h3>
-          <p>Kiropraktisk behandling av funksjonell kyfose fokuserer på å øke bevegelighet, redusere muskelspenninger og styrke svak muskulatur. En metaanalyse fra González-Gálvez et al. (2019) viste stor effekt av treningsprogrammer på kyfosevinkel. Kamali et al. (2016) fant at manuell terapi ga tilsvarende forbedring som trening alene – men kombinasjonen er ofte mest effektiv.</p>
-
-          <div class="treatment-box">
-            <h4>Typiske behandlingsmetoder inkluderer</h4>
-            <ul>
-              <li>Leddmobilisering og manipulasjon av stive brystvirvler</li>
-              <li>Bløtvevsbehandling av stramme bryst- og nakkemuskulatur</li>
-              <li>Spesifikke øvelser for å styrke ryggstrekkere og skulderbladstabilisatorer</li>
-              <li>Holdningsveiledning og ergonomiske råd</li>
-            </ul>
-          </div>
-
-          <h3>Behandlingsforløp</h3>
-          <p>Forskning indikerer at 8-12 ukers behandling med 2-3 økter per uke gir best resultater. Forventet forbedring er <strong>5-13 grader reduksjon i kyfosevinkel</strong> (González-Gálvez et al., 2019; Ponzano et al., 2021). Yngre pasienter responderer generelt bedre enn eldre. SHEAF-studien viste at forbedringer fra et 3-måneders treningsprogram var opprettholdt ved 3-års oppfølging – forutsatt vedlikeholdstrening.</p>
-
-          <div class="prognosis-highlight">
-            <p><strong>Viktig:</strong> Behandling bør startes tidlig. Det er ingen grunn til å "vente og se" – jo raskere du starter, jo bedre er utsiktene for forbedring.</p>
-          </div>
-        </section>
-
-        <!-- Øvelser Section -->
-        <section class="hub-section" id="ovelser">
-          <div class="section-header">
-            <div class="section-number">5</div>
-            <h2>Hva kan du gjøre selv?</h2>
-          </div>
-
-          <p>Egeninnsats er avgjørende for varig forbedring. Her er tre øvelser med dokumentert effekt:</p>
-
-          <div class="exercise-card">
-            <h4>1. Thorakal ekstensjon på rulle</h4>
-            <p>Yoo (2018) dokumenterte 5,8° reduksjon i kyfosevinkel over bare 12 dager med denne øvelsen.</p>
-            <div class="exercise-detail">
-              Legg deg på ryggen med en foam roller på tvers under øvre rygg. Støtt hodet med hendene og len deg forsiktig bakover over rullen. Hold i 5-10 sekunder, gjenta 5-10 ganger. Flytt rullen litt opp eller ned for å treffe ulike nivåer.
+            <div class="info-box">
+              <h4>Øvre kryss-syndrom (Upper Crossed Syndrome)</h4>
+              <p>Den tsjekkiske legen Vladimir Janda beskrev et mønster han kalte "øvre kryss-syndrom" – et samspill mellom stramme og svake muskler som ofte ses ved dårlig holdning. Typisk ser man stramme brystmuskler og nakkestrekkere kombinert med svake dype nakkefleksorer og muskler mellom skulderbladene. Dette mønsteret finnes hos anslagsvis 35-67% av kontorarbeidere (Xu, 2024; Dey & Musale, 2022).</p>
             </div>
-          </div>
+          </section>
 
-          <div class="exercise-card">
-            <h4>2. Wall Angels</h4>
-            <p>Aktiverer de svake musklene mellom skulderbladene.</p>
-            <div class="exercise-detail">
-              Stå med ryggen mot veggen, bakhode, skulderblad og korsrygg i kontakt med veggen. Hold armene i 90 graders vinkel ("hendene opp"-posisjon) mot veggen. Skyv armene langsomt opp og ned langs veggen mens du holder kontakten. 3 sett x 10 repetisjoner.
+          <!-- SECTION 2: Symptomer -->
+          <section class="hub-section" id="s2">
+            <div class="section-header">
+              <span class="section-number">2</span>
+              <h2>Symptomer – mer enn bare utseende</h2>
             </div>
-          </div>
 
-          <div class="exercise-card">
-            <h4>3. Dørkarm-tøyning for brystmuskulatur</h4>
-            <p>Tokita et al. (2021) viste at denne tøyningen signifikant økte brystmuskelens lengde og forbedret skulderposisjon.</p>
-            <div class="exercise-detail">
-              Stå i en døråpning med underarmene mot karmene, albuer i skulderhøyde. Ta et lite skritt frem og len brystet gjennom åpningen til du kjenner strekk foran i skuldrene. Hold 15-30 sekunder, gjenta 3-5 ganger.
+            <p>Krum rygg handler ikke bare om hvordan du ser ut. Mange opplever en rekke plager som de ikke kobler til holdningen:</p>
+
+            <h3>Nakke- og skulderproblemer</h3>
+            <p>Økt brystkrumning tvinger hodet fremover for å opprettholde horisontalt blikk. Dette overbelaster nakkemuskler og ledd, noe som kan føre til <a href="mellom-skulderbladene.html">smerter mellom skulderbladene</a>. Forskning viser at forward head posture medierer forholdet mellom brystkyfose og nedsatt nakkebevegelighet. Granito et al. (2012) dokumenterte at redusert brystmobilitet korrelerte med 23% redusert skulderbevegelighet.</p>
+
+            <h3>Hodepine</h3>
+            <p>Watson og Trott (1993) fant at 83% av pasienter med cervikogen hodepine hadde økt brystkyfose (&gt;40 grader). En studie fra 2023 på migrenepasienter viste signifikant høyere kyfosevinkel (57 grader vs 38 grader) sammenlignet med friske kontroller. Hodepinen kommer ofte fra overbelastede nakkestrukturer som kompenserer for brystkrumningen.</p>
+
+            <h3>Armsmerter og nummenhet</h3>
+            <p>Stiv brystrygg kan påvirke skulderbladsposisjon og nervefunksjon. En studie fant at 78% av tilfeller med tennisalbue eller golfalbue hadde samtidig stiv brystrygg. Nummenhet og prikking i hendene kan skyldes kompresjon eller strekk av nerver i den kinetiske kjeden.</p>
+
+            <h3>Tretthet og nedsatt funksjon</h3>
+            <p>Å holde kroppen oppreist mot en krum rygg krever konstant muskelarbeid. Mange opplever uforklarlig tretthet. Ved alvorlig kyfose kan lungefunksjonen påvirkes fordi brystkassen komprimeres. For mer om sammenhengen mellom pust og rygg, se <a href="pust-stress-rygg.html">pust, stress og rygg</a>.</p>
+          </section>
+
+          <!-- SECTION 3: Diagnostikk -->
+          <section class="hub-section" id="s3">
+            <div class="section-header">
+              <span class="section-number">3</span>
+              <h2>Diagnostikk</h2>
             </div>
-          </div>
-        </section>
 
-        <!-- Røde flagg Section -->
-        <section class="hub-section" id="rodeflagg">
-          <div class="section-header">
-            <div class="section-number">6</div>
-            <h2>Røde flagg – når du bør søke lege</h2>
-          </div>
+            <h3>Klinisk undersøkelse</h3>
+            <p>En grundig klinisk undersøkelse er ofte viktigere enn bilder. Kiropraktoren vurderer holdning fra siden, sjekker om kurven retter seg nær du ligger flatt (fleksibilitetstest), tester nakke- og skulderbevegelighet, og undersøker muskelstyrke og -balanse.</p>
 
-          <div class="red-flag-box">
-            <h3>Kontakt lege hvis du opplever:</h3>
-            <ul>
-              <li>Rigid kurve som ikke retter seg opp når du ligger flatt</li>
-              <li>Nevrologiske symptomer: Nummenhet, svakhet, gangvansker, urin-/avføringsproblemer</li>
-              <li>Rask forverring av krumningen</li>
-              <li>Nattsmerte som vekker deg</li>
-              <li>Pustevansker</li>
-              <li>Uforklart vekttap eller feber</li>
-              <li>Traume/skade som utløste plagene</li>
-            </ul>
-          </div>
-        </section>
+            <div class="condition-card">
+              <h4>Vegg-test</h4>
+              <p>En enkel vegg-test kan avdekke fremoverlent hode: stå med hælene mot veggen og mål avstanden fra bakhodet til veggen.</p>
+            </div>
 
-        <!-- Prognose Section -->
-        <section class="hub-section" id="prognose">
-          <div class="section-header">
-            <div class="section-number">7</div>
-            <h2>Prognose</h2>
-          </div>
+            <h3>Når er bildediagnostikk nødvendig?</h3>
+            <p>Røntgen eller MR er sjelden nødvendig ved typisk funksjonell kyfose. Bilder kan være aktuelle ved mistanke om strukturell årsak (rigid kurve), etter traume, ved mistanke om osteoporose eller brudd, eller ved nevrologiske symptomer. Husk at mange funn på bilder, som aldersrelaterte forandringer, ikke nødvendigvis forklarer plagene dine.</p>
+          </section>
 
-          <div class="prognosis-highlight">
+          <!-- SECTION 4: Behandling -->
+          <section class="hub-section" id="s4">
+            <div class="section-header">
+              <span class="section-number">4</span>
+              <h2>Behandling</h2>
+            </div>
+
+            <h3>Hva kan kiropraktoren gjøre?</h3>
+            <p>Kiropraktisk behandling av funksjonell kyfose fokuserer på å øke bevegelighet, redusere muskelspenninger og styrke svak muskulatur. En metaanalyse fra Gonzalez-Galvez et al. (2019) viste stor effekt av treningsprogrammer på kyfosevinkel. Kamali et al. (2016) fant at manuell terapi gå tilsvarende forbedring som trening alene – men kombinasjonen er ofte mest effektiv.</p>
+
+            <div class="treatment-box">
+              <h4>Typiske behandlingsmetoder inkluderer</h4>
+              <ul>
+                <li>Leddmobilisering og manipulasjon av stive brystvirvler</li>
+                <li>Bløtvevsbehandling av stramme bryst- og nakkemuskulatur</li>
+                <li>Spesifikke øvelser for å styrke ryggstrekkere og skulderbladstabilisatorer</li>
+                <li>Holdningsveiledning og ergonomiske råd</li>
+              </ul>
+            </div>
+
+            <h3>Behandlingsforløp</h3>
+            <p>Forskning indikerer at 8-12 ukers behandling med 2-3 økter per uke gir best resultater. Forventet forbedring er <strong>5-13 grader reduksjon i kyfosevinkel</strong> (Gonzalez-Galvez et al., 2019; Ponzano et al., 2021). Yngre pasienter responderer generelt bedre enn eldre. SHEAF-studien viste at forbedringer fra et 3-måneders treningsprogram var opprettholdt ved 3-års oppfølging – forutsatt vedlikeholdstrening.</p>
+
+            <div class="info-box">
+              <h4>Viktig om behandlingstidspunkt</h4>
+              <p>Behandling bør startes tidlig. Det er ingen grunn til å "vente og se" – jo raskere du starter, jo bedre er utsiktene for forbedring.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 5: Øvelser -->
+          <section class="hub-section" id="s5">
+            <div class="section-header">
+              <span class="section-number">5</span>
+              <h2>Hva kan du gjøre selv?</h2>
+            </div>
+
+            <p>Egeninnsats er avgjørende for varig forbedring. Her er tre øvelser med dokumentert effekt:</p>
+
+            <div class="exercise-card">
+              <h4>1. Thorakal ekstensjon på rulle</h4>
+              <p>Yoo (2018) dokumenterte 5,8 grader reduksjon i kyfosevinkel over bare 12 dager med denne øvelsen.</p>
+              <div class="exercise-detail">
+                Legg deg på ryggen med en foam roller på tvers under øvre rygg. Støtt hodet med hendene og len deg forsiktig bakover over rullen. Hold i 5-10 sekunder, gjenta 5-10 ganger. Flytt rullen litt opp eller ned for å treffe ulike nivåer.
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <h4>2. Wall Angels</h4>
+              <p>Aktiverer de svake musklene mellom skulderbladene.</p>
+              <div class="exercise-detail">
+                Stå med ryggen mot veggen, bakhode, skulderblad og korsrygg i kontakt med veggen. Hold armene i 90 graders vinkel ("hendene opp"-posisjon) mot veggen. Skyv armene langsomt opp og ned langs veggen mens du holder kontakten. 3 sett x 10 repetisjoner.
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <h4>3. Dørkarm-tøyning for brystmuskulatur</h4>
+              <p>Tokita et al. (2021) viste at denne tøyningen signifikant økte brystmuskelens lengde og forbedret skulderposisjon.</p>
+              <div class="exercise-detail">
+                Stå i en døråpning med underarmene mot karmene, albuer i skulderhøyde. Ta et lite skritt frem og len brystet gjennom åpningen til du kjenner strekk foran i skuldrene. Hold 15-30 sekunder, gjenta 3-5 ganger.
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 6: Røde flagg -->
+          <section class="hub-section" id="s6">
+            <div class="section-header">
+              <span class="section-number">6</span>
+              <h2>Røde flagg – nær du bør søke lege</h2>
+            </div>
+
+            <div class="red-flag-box">
+              <h3>Kontakt lege hvis du opplever:</h3>
+              <ul>
+                <li>Rigid kurve som ikke retter seg opp nær du ligger flatt</li>
+                <li>Nevrologiske symptomer: Nummenhet, svakhet, gangvansker, urin-/avføringsproblemer</li>
+                <li>Rask forverring av krumningen</li>
+                <li>Nattsmerte som vekker deg</li>
+                <li>Pustevansker</li>
+                <li>Uforklart vekttap eller feber</li>
+                <li>Traume/skade som utløste plagene</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- SECTION 7: Prognose -->
+          <section class="hub-section" id="s7">
+            <div class="section-header">
+              <span class="section-number">7</span>
+              <h2>Prognose</h2>
+            </div>
+
             <p>Prognosen for funksjonell kyfose er generelt god med aktiv behandling. Metaanalyser viser at strukturerte treningsprogrammer kan redusere kyfosevinkelen med 5-13 grader over 8-12 uker. Yngre pasienter viser bedre respons enn eldre.</p>
+
+            <p><strong>Viktig å vite:</strong> Forbedringer krever vedlikehold. Uten fortsatt trening vil de fleste gradvis vende tilbake til tidligere holdningsmønster. Derfor er egenøvelser og bevissthet rundt daglige vaner avgjørende for langsiktig resultat.</p>
+
+            <p>Ved strukturell kyfose (<a href="scheuermanns-sykdom.html">Scheuermanns sykdom</a>, <a href="osteoporose.html">osteoporose</a>) er prognosen mer variabel og avhenger av alvorlighetsgrad. Disse tilstandene kan ikke reverseres, men funksjon og livskvalitet kan ofte bedres betydelig.</p>
+          </section>
+
+          <!-- SECTION 8: FAQ -->
+          <section class="hub-section" id="s8">
+            <div class="section-header">
+              <span class="section-number">8</span>
+              <h2>Ofte stilte spørsmål</h2>
+            </div>
+
+            <div class="faq-item">
+              <h4>Kan krum rygg rettes helt opp?</h4>
+              <p>Ved funksjonell kyfose kan krumningen ofte reduseres betydelig (5-13 grader), men "perfekt" holdning er et uoppnåelig mål for de fleste. Fokuser heller på bedre funksjon og mindre plager. Strukturell kyfose kan ikke reverseres, men symptomene kan lindres.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Hvor lang tid tar det å se resultater?</h4>
+              <p>De fleste merker bedring i symptomer etter 4-6 uker med konsekvent behandling og egenøvelser. Målbar endring i kyfosevinkel tar typisk 8-12 uker. Varige holdningsendringer krever 12+ uker med vedlikeholdstrening.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Er det farlig å ha krum rygg?</h4>
+              <p>Mild til moderat funksjonell kyfose er vanligvis ikke farlig, men kan gi plager som nakke-/hodesmerter og redusert funksjon. Ved alvorlig kyfose (&gt;70 grader) kan lungefunksjon påvirkes. Kontakt lege ved nevrologiske symptomer eller rask forverring.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Hjelper holdningsstøtter/korsetter?</h4>
+              <p>Forskning på holdningsstøtter viser blandede resultater. De kan gi kortvarig bevissthet om holdning, men passiv støtte kan også svekke muskulaturen over tid. Aktiv trening er mer effektivt for varig endring. Korsett kan være aktuelt ved strukturell kyfose hos ungdom.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Bør jeg ta røntgen?</h4>
+              <p>Ikke nødvendigvis. Ved typisk funksjonell kyfose uten røde flagg er klinisk undersøkelse tilstrekkelig. Røntgen er aktuelt ved mistanke om strukturell årsak, brudd eller hvis behandling ikke gir forventet effekt.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Kan barn og ungdom få krum rygg?</h4>
+              <p>Ja, både postural kyfose og <a href="scheuermanns-sykdom.html">Scheuermanns sykdom</a> kan oppstå i ungdomsårene. Scheuermanns rammer 0,4-8% og er vanligere hos gutter. Tidlig intervensjon er viktig, særlig ved strukturell kyfose. Ved bekymring bør barnet undersøkes.</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <div class="hub-cta">
+            <h3>Trenger du hjelp med krum rygg?</h3>
+            <p>Kiropraktor Mads Finstad tilbyr grundig undersøkelse og individuelt tilpasset behandling hos TheBackROM på Majorstua. Du trenger ingen henvisning – bestill time direkte.</p>
+            <p><strong>Priser:</strong> Nytt problem 1105 kr | Oppfølging 780 kr</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn">Bestill time</a>
           </div>
 
-          <p><strong>Viktig å vite:</strong> Forbedringer krever vedlikehold. Uten fortsatt trening vil de fleste gradvis vende tilbake til tidligere holdningsmønster. Derfor er egenøvelser og bevissthet rundt daglige vaner avgjørende for langsiktig resultat.</p>
-
-          <p>Ved strukturell kyfose (Scheuermanns sykdom, osteoporose) er prognosen mer variabel og avhenger av alvorlighetsgrad. Disse tilstandene kan ikke reverseres, men funksjon og livskvalitet kan ofte bedres betydelig.</p>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="hub-section" id="faq">
-          <div class="section-header">
-            <div class="section-number">8</div>
-            <h2>Ofte stilte spørsmål</h2>
+          <!-- Related articles -->
+          <div class="related-box">
+            <h3>Relaterte artikler</h3>
+            <a href="../brystrygg.html">Brystrygg – Hovedside</a>
+            <a href="brystryggsmerter.html">Brystryggsmerter – Komplett oversikt</a>
+            <a href="scheuermanns-sykdom.html">Scheuermanns sykdom</a>
+            <a href="flat-rygg.html">Flat rygg (hypokyfose)</a>
+            <a href="mellom-skulderbladene.html">Smerter mellom skulderbladene</a>
+            <a href="thorakalt-prolaps.html">Thorakalt prolaps</a>
+            <a href="t4-syndrom.html">T4-syndrom</a>
+            <a href="osteoporose.html">Osteoporose og rygg</a>
+            <a href="pust-stress-rygg.html">Pust, stress og rygg</a>
+            <a href="stiv-rygg-idrett.html">Stiv rygg ved idrett</a>
           </div>
 
-          <div class="faq-item">
-            <h4>Kan krum rygg rettes helt opp?</h4>
-            <p>Ved funksjonell kyfose kan krumningen ofte reduseres betydelig (5-13 grader), men "perfekt" holdning er et uoppnåelig mål for de fleste. Fokuser heller på bedre funksjon og mindre plager. Strukturell kyfose kan ikke reverseres, men symptomene kan lindres.</p>
+          <!-- Disclaimer -->
+          <p class="disclaimer">Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon eller opplever røde flagg-symptomer.</p>
+
+          <!-- Sources -->
+          <section class="sources-section">
+            <h3>Kilder</h3>
+            <ol>
+              <li>Katzman WB et al. (2010). Age-Related Hyperkyphosis: Its Causes, Consequences, and Management. J Orthop Sports Phys Ther.</li>
+              <li>Gonzalez-Galvez N et al. (2019). Effects of exercise programs on kyphosis and lordosis angle: A systematic review and meta-analysis. PLOS One.</li>
+              <li>Hansraj KK (2014). Assessment of stresses in the cervical spine caused by posture and position of the head. Surg Technol Int.</li>
+              <li>Jalayondeja W et al. (2022). Prevalence of musculoskeletal symptoms and associated risk factors. BMC Public Health.</li>
+              <li>Kamali F et al. (2016). Comparison of manual therapy and exercise therapy for postural hyperkyphosis: A randomized clinical trial. Physiother Theory Pract.</li>
+              <li>Katzman WB et al. (2017). SHEAF Trial: Targeted spine strengthening exercise and posture training program. Osteoporos Int.</li>
+              <li>Watson DH & Trott PH (1993). Cervical headache: An investigation of natural head posture and upper cervical flexor muscle performance. Cephalalgia.</li>
+              <li>Granito RN et al. (2012). Thoracic mobility and shoulder function. Manual Therapy.</li>
+              <li>Yoo WG (2018). Effects of thoracic extension exercises on thoracic kyphosis. J Phys Ther Sci.</li>
+              <li>Tokita K et al. (2021). Effects of pectoralis minor stretching on scapular position. PMC8568813.</li>
+              <li>Xu (2024). Prevalence of upper crossed syndrome: å systematic review and meta-analysis. J Clin Technol Theory.</li>
+              <li>Ponzano M et al. (2021). Decreasing thoracic hyperkyphosis – Which treatments are most effective? Arch Osteoporos.</li>
+              <li>StatPearls (2023). Kyphosis. NCBI Bookshelf NBK558945.</li>
+            </ol>
+          </section>
+
+          <p class="updated">Sist oppdatert: Januar 2026</p>
+
+        </article>
+
+        <!-- Sidebar (desktop only) -->
+        <aside class="hub-sidebar">
+          <!-- Conversion Card -->
+          <div class="hub-conversion-card">
+            <img src="../../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
+            <h3>Har du krum rygg?</h3>
+            <p>Jeg hjelper deg med å finne riktig behandling og bedre holdning.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+            </div>
           </div>
 
-          <div class="faq-item">
-            <h4>Hvor lang tid tar det å se resultater?</h4>
-            <p>De fleste merker bedring i symptomer etter 4-6 uker med konsekvent behandling og egenøvelser. Målbar endring i kyfosevinkel tar typisk 8-12 uker. Varige holdningsendringer krever 12+ uker med vedlikeholdstrening.</p>
-          </div>
+          <!-- Table of Contents -->
+          <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
+            <h3>Innhold</h3>
+            <ul>
+              <li><a href="#s1">Årsaker</a></li>
+              <li><a href="#s2">Symptomer</a></li>
+              <li><a href="#s3">Diagnostikk</a></li>
+              <li><a href="#s4">Behandling</a></li>
+              <li><a href="#s5">Øvelser</a></li>
+              <li><a href="#s6">Røde flagg</a></li>
+              <li><a href="#s7">Prognose</a></li>
+              <li><a href="#s8">FAQ</a></li>
+            </ul>
+          </nav>
+        </aside>
 
-          <div class="faq-item">
-            <h4>Er det farlig å ha krum rygg?</h4>
-            <p>Mild til moderat funksjonell kyfose er vanligvis ikke farlig, men kan gi plager som nakke-/hodesmerter og redusert funksjon. Ved alvorlig kyfose (&gt;70 grader) kan lungefunksjon påvirkes. Kontakt lege ved nevrologiske symptomer eller rask forverring.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>Hjelper holdningsstøtter/korsetter?</h4>
-            <p>Forskning på holdningsstøtter viser blandede resultater. De kan gi kortvarig bevissthet om holdning, men passiv støtte kan også svekke muskulaturen over tid. Aktiv trening er mer effektivt for varig endring. Korsett kan være aktuelt ved strukturell kyfose hos ungdom.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>Bør jeg ta røntgen?</h4>
-            <p>Ikke nødvendigvis. Ved typisk funksjonell kyfose uten røde flagg er klinisk undersøkelse tilstrekkelig. Røntgen er aktuelt ved mistanke om strukturell årsak, brudd eller hvis behandling ikke gir forventet effekt.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>Kan barn og ungdom få krum rygg?</h4>
-            <p>Ja, både postural kyfose og Scheuermanns sykdom kan oppstå i ungdomsårene. Scheuermanns rammer 0,4-8% og er vanligere hos gutter. Tidlig intervensjon er viktig, særlig ved strukturell kyfose. Ved bekymring bør barnet undersøkes.</p>
-          </div>
-        </section>
-
-        <!-- CTA Section -->
-        <div class="hub-cta">
-          <h3>Trenger du hjelp med krum rygg?</h3>
-          <p>Kiropraktor Mads Finstad tilbyr grundig undersøkelse og individuelt tilpasset behandling hos TheBackROM på Majorstua. Du trenger ingen henvisning – bestill time direkte.</p>
-          <p style="font-size: 0.95rem; margin-bottom: 20px;">Priser: Nytt problem 1105 kr | Oppfølging 780 kr</p>
-          <a href="https://www.444telefonlegen.no/mads-finstad" class="button" target="_blank" rel="noopener">Bestill time online</a>
-        </div>
-
-        <!-- Sources -->
-        <div class="source-list">
-          <h3>Kilder</h3>
-          <ol>
-            <li>Katzman WB et al. (2010). Age-Related Hyperkyphosis: Its Causes, Consequences, and Management. J Orthop Sports Phys Ther.</li>
-            <li>González-Gálvez N et al. (2019). Effects of exercise programs on kyphosis and lordosis angle: A systematic review and meta-analysis. PLOS One.</li>
-            <li>Hansraj KK (2014). Assessment of stresses in the cervical spine caused by posture and position of the head. Surg Technol Int.</li>
-            <li>Jalayondeja W et al. (2022). Prevalence of musculoskeletal symptoms and associated risk factors. BMC Public Health.</li>
-            <li>Kamali F et al. (2016). Comparison of manual therapy and exercise therapy for postural hyperkyphosis: A randomized clinical trial. Physiother Theory Pract.</li>
-            <li>Katzman WB et al. (2017). SHEAF Trial: Targeted spine strengthening exercise and posture training program. Osteoporos Int.</li>
-            <li>Watson DH & Trott PH (1993). Cervical headache: An investigation of natural head posture and upper cervical flexor muscle performance. Cephalalgia.</li>
-            <li>Granito RN et al. (2012). Thoracic mobility and shoulder function. Manual Therapy.</li>
-            <li>Yoo WG (2018). Effects of thoracic extension exercises on thoracic kyphosis. J Phys Ther Sci.</li>
-            <li>Tokita K et al. (2021). Effects of pectoralis minor stretching on scapular position. PMC8568813.</li>
-            <li>Xu (2024). Prevalence of upper crossed syndrome: a systematic review and meta-analysis. J Clin Technol Theory.</li>
-            <li>Ponzano M et al. (2021). Decreasing thoracic hyperkyphosis – Which treatments are most effective? Arch Osteoporos.</li>
-            <li>StatPearls (2023). Kyphosis. NCBI Bookshelf NBK558945.</li>
-          </ol>
-        </div>
-
-        <!-- Related Articles -->
-        <div class="related-box">
-          <h3>Relaterte artikler</h3>
-          <a href="../brystryggsmerter.html">Brystryggsmerter – Komplett oversikt</a>
-          <a href="scheuermanns-sykdom.html">Scheuermanns sykdom</a>
-          <a href="flat-rygg.html">Flat rygg (hypokyfose)</a>
-          <a href="mellom-skulderbladene.html">Smerter mellom skulderbladene</a>
-        </div>
-      </article>
-    </div>
-
-    <!-- Mobile Sticky CTA -->
-    <div class="mobile-sticky-cta">
-      <a href="https://www.444telefonlegen.no/mads-finstad" target="_blank" rel="noopener">Bestill time – TheBackROM</a>
-    </div>
+      </div>
     </main>
 
-    <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-col">
-          <h4>Om Klinikken</h4>
-          <p>Kiropraktor Mads Finstad tilbyr moderne, evidensbasert behandling på Majorstua i Oslo.</p>
+    <!-- Mobile sticky CTA -->
+    <div class="mobile-sticky-cta">
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn-primary">Bestill time</a>
+      <a href="tel:+4793043062" class="btn btn-outline">Ring</a>
+    </div>
+
+        <footer class="footer">
+      <div class="footer__container">
+        <!-- Left Column -->
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../../images/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
+          </div>
         </div>
-        <div class="footer-col">
-          <h4>Kontakt</h4>
-          <p>TheBackROM<br>
-            Gardeveien 17<br>
-            0352 Oslo</p>
+
+        <!-- Center Column -->
+        <div class="footer__center">
+          <div class="footer__logo">
+            <img src="../../images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
+          </div>
         </div>
-        <div class="footer-col">
-          <h4>Åpningstider</h4>
-          <p>Man-Fre: 08:00-17:00<br>
-            Lør-Søn: Stengt</p>
-        </div>
-        <div class="footer-col">
-          <h4>Lenker</h4>
-          <ul>
-            <li><a href="../../index.html">Hjem</a></li>
-            <li><a href="../../services.html">Behandlinger</a></li>
-            <li><a href="../../about.html">Om Meg</a></li>
-            <li><a href="../../contact.html">Kontakt</a></li>
-          </ul>
+
+        <!-- Right Column -->
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Åpningstider</h3>
+            <p>Mandag - Fredag: 08:00 - 19:00</p>
+            <p>Lørdag: 10:00 - 16:00</p>
+            <p>Søndag: Stengt</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Kontaktinformasjon</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>E-post: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Mads Finstad Kiropraktor. Alle rettigheter reservert.</p>
+
+      <div class="footer__bottom">
+        <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 TheBackROM – Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
 
   <script src="../../js/script.min.js" defer></script>
+  <script src="../../js/language-toggle.min.js" defer></script>
+  <script src="../../js/modern-enhancements.min.js" defer></script>
+
+  <!-- TOC scroll tracking -->
   <script>
-    // Scroll spy for sidebar navigation
     document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('.hub-section, .hub-intro');
-      const navLinks = document.querySelectorAll('.hub-sidenav a');
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+
+      if (sections.length === 0 || navLinks.length === 0) return;
 
       function updateActiveLink() {
-        let current = '';
+        let current = 's1';
+        const scrollPos = window.scrollY + 200;
+
         sections.forEach(section => {
           const sectionTop = section.offsetTop;
-          if (scrollY >= sectionTop - 150) {
+          if (scrollPos >= sectionTop) {
             current = section.getAttribute('id');
           }
         });
 
         navLinks.forEach(link => {
           link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + current) {
+          const href = link.getAttribute('href');
+          if (href && href === '#' + current) {
             link.classList.add('active');
           }
         });
@@ -669,3 +705,5 @@
   </script>
 </body>
 </html>
+
+
