@@ -11,6 +11,7 @@ Sitemap: https://thebackrom.com/sitemap.xml
 Disallow: /test-improvements.html
 Disallow: /css/archive/
 Disallow: /404.html
+Disallow: /docs/reports/
 
 # Disallow template and documentation files
 Disallow: /docs/

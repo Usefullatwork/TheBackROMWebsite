@@ -13,13 +13,17 @@
 
   <!-- PWA Support -->
   <link rel="manifest" href="manifest.json" />
-  <link rel="apple-touch-icon" href="pictures.final/Final Transparent Logo.png" />
+  <link rel="apple-touch-icon" href="images/Final Transparent Logo.png" />
 
   <!-- Preload Critical Resources -->
   <link rel="preload" as="style" href="css/main.min.css" />
-  <link rel="stylesheet" href="css/main.min.css?v=20260101">
-  <link rel="stylesheet" href="css/index-2026-fixes.css">
-  <link rel="icon" type="image/png" href="pictures.final/Final Transparent Logo.png" />
+  <link rel="stylesheet" href="css/main.min.css?v=20260101_v5">
+  <link rel="stylesheet" href="css/index-design.css?v=1" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/index-design.css?v=1"></noscript>
+  <link rel="stylesheet" href="css/index-2026-fixes.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="css/hub-article.css">
+  <link rel="icon" type="image/png" href="images/Final Transparent Logo.png" />
   <title>Plager - Mads Finstad Kiropraktor | Behandling av ulike smertetilstander</title>
 
   <meta name="description"
@@ -32,7 +36,7 @@
     content="Mads Finstad Kiropraktor behandler alle typer plager og smertetilstander på Majorstua Oslo. Ryggsmerter, nakkesmerter, skulderproblemer, hodepine og mer." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Plager - Mads Finstad Kiropraktor | Behandling av ulike smertetilstander" />
-  <meta property="og:image" content="https://thebackrom.com/pictures.final/pages/home/home-hero.jpg" />
+  <meta property="og:image" content="https://thebackrom.com/images/Home/kiropraktor-ryggbehandling-hero.jpeg" />
   <meta property="og:url" content="https://thebackrom.com/plager.html" />
   <meta property="og:site_name" content="TheBackROM - Mads Finstad Kiropraktor" />
   <meta property="og:locale" content="nb_NO" />
@@ -40,7 +44,7 @@
     content="Mads Finstad Kiropraktor behandler alle typer plager og smertetilstander på Majorstua Oslo. Ryggsmerter, nakkesmerter, skulderproblemer, hodepine og mer." />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Plager - Mads Finstad Kiropraktor | Behandling av ulike smertetilstander" />
-  <meta name="twitter:image" content="https://thebackrom.com/pictures.final/pages/home/home-hero.jpg" />
+  <meta name="twitter:image" content="https://thebackrom.com/images/Home/kiropraktor-ryggbehandling-hero.jpeg" />
   <link rel="canonical" href="https://thebackrom.com/plager.html" />
   <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager.html" />
   <link rel="alternate" hreflang="en" href="https://thebackrom.com/plager-en.html" />
@@ -86,7 +90,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="index.html" class="header__logo logo"><img src="pictures.final/logo-header.webp"
+        <a href="index.html" class="header__logo logo"><img src="images/logo-header.webp"
             alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -110,7 +114,6 @@
               <li class="menu__item"><a href="priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="fagartikler/index.html" class="menu__link">Fagartikler</a></li>
               <li class="menu__item"><a href="blogg/index.html" class="menu__link">Blogg</a></li>
               <li class="menu__item">
                 <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
@@ -121,7 +124,7 @@
         </div>
       </div>
     </header>
-    <main class="page">
+    <main class="page" id="main">
 
 
 
@@ -145,7 +148,7 @@
             <!-- Ailment Box 1 - Korsryggsmerte -->
             <a href="plager/korsryggsmerte.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/korsrygg-smerte-2-optimized.webp"
+                <img src="images/Plager og tilstander/korsryggsmerte-1.webp"
                   alt="Illustrasjon av korsryggsmerter og isjias med smerte i nedre rygg" loading="lazy"
                   decoding="async" />
                 <div class="services-grid__overlay">
@@ -158,7 +161,7 @@
             <!-- Ailment Box 2 - Nakkesmerte -->
             <a href="plager/nakkesmerter.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/nakkesmerte.webp"
+                <img src="images/plager nakkesmerter/nakkesmerte-optimized.webp"
                   alt="Mann med nakkesmerter og stiv nakke holder seg bak på nakken" loading="lazy" decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Nakkesmerte</h3>
@@ -170,7 +173,7 @@
             <!-- Ailment Box 3 - Kjevesmerte -->
             <a href="plager/kjevesmerte.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/Kjeve.jpg" alt="Kvinne med kjevesmerter og TMD kjeveleddsdysfunksjon"
+                <img src="images/Plager og tilstander/kjevesmerter-1.webp" alt="Kvinne med kjevesmerter og TMD kjeveleddsdysfunksjon"
                   loading="lazy" decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Kjevesmerte</h3>
@@ -182,7 +185,7 @@
             <!-- Ailment Box 4 - Svimmelhet -->
             <a href="plager/svimmelhet.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/svimmelhet.jpg"
+                <img src="images/plager svimmelhet/svimmelhet-optimized.webp"
                   alt="Kvinne med svimmelhet og vertigo der omgivelsene snurrer" loading="lazy" decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Svimmelhet</h3>
@@ -194,7 +197,7 @@
             <!-- Ailment Box 5 - Hodepine og migrene -->
             <a href="plager/hodepine.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/hodepine.jpg" alt="Hodepine og migrene" loading="lazy"
+                <img src="images/plager hodepine/hodepine-optimized.webp" alt="Hodepine og migrene" loading="lazy"
                   decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Hodepine og migrene</h3>
@@ -206,7 +209,7 @@
             <!-- Ailment Box 6 - Skuldersmerte -->
             <a href="plager/skuldersmerter.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/skulder smerter.png"
+                <img src="images/Plager og tilstander/skuldersmerter-1.webp"
                   alt="Illustrasjon av skuldersmerter og skulderproblemer" loading="lazy" decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Skuldersmerte</h3>
@@ -218,7 +221,7 @@
             <!-- Ailment Box 7 - Hofte- og bekkensmerte -->
             <a href="plager/hofte-og-bekkensmerter.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/korsryggplager-optimized.webp" alt="Hofte- og bekkensmerte"
+                <img src="images/Plager og tilstander/hofte-og-bekkensmerter-1.webp" alt="Hofte- og bekkensmerte"
                   loading="lazy" decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Hofte- og bekkensmerte</h3>
@@ -230,7 +233,7 @@
             <!-- Ailment Box 8 - Ryggsmerte -->
             <a href="plager/ryggsmerter.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/Ryggsmerte.jpg" alt="Person med ryggsmerter holder seg på nedre rygg"
+                <img src="images/Plager og tilstander/ryggsmerter-1.webp" alt="Person med ryggsmerter holder seg på nedre rygg"
                   loading="lazy" decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Ryggsmerte</h3>
@@ -242,7 +245,7 @@
             <!-- Ailment Box 9 - Armsmerte -->
             <a href="plager/albue-arm.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/hånledd-optimized.webp" alt="Håndledd og arm med smerter og betennelse"
+                <img src="images/Plager og tilstander/albue-og-armsmerter-1.webp" alt="Håndledd og arm med smerter og betennelse"
                   loading="lazy" decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Armsmerte</h3>
@@ -254,7 +257,7 @@
             <!-- Ailment Box 10 - Fotsmerte -->
             <a href="plager/fotsmerte.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/ankel fot.jpg" alt="Ankel og fot med smerter og hevelse" loading="lazy"
+                <img src="images/Plager og tilstander/fotsmerter-1.webp" alt="Ankel og fot med smerter og hevelse" loading="lazy"
                   decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Fotsmerte</h3>
@@ -266,7 +269,7 @@
             <!-- Ailment Box 11 - Knesmerte -->
             <a href="plager/knesmerter.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/knee smerte.png"
+                <img src="images/Plager og tilstander/knesmerter-1.webp"
                   alt="Illustrasjon av knesmerter med smerteområde rundt kneet" loading="lazy" decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Knesmerte</h3>
@@ -278,7 +281,7 @@
             <!-- Ailment Box 12 - Brystryggsmerter -->
             <a href="plager/brystryggsmerter.html" class="services-grid__item">
               <div class="services-grid__image">
-                <img src="pictures.final/conditions/general/Ryggsmerte.webp"
+                <img src="images/Plager og tilstander/brystryggsmerter-1.webp"
                   alt="Illustrasjon av brystryggsmerter og thorakale plager mellom skulderbladene" loading="lazy" decoding="async" />
                 <div class="services-grid__overlay">
                   <h3 class="services-grid__title">Brystryggsmerter</h3>
@@ -291,7 +294,7 @@
       </section>
 
       <section class="page__outro outro outro_home"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pictures.final/pages/home/ryggmassasje-klinikk.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/pages/home/ryggmassasje-klinikk.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <div class="outro__container">
           <h2 class="outro__title" style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">Ta det første
             steget mot bedre helse</h2>
@@ -316,19 +319,19 @@
         <div class="footer__left">
           <div class="footer__social">
             <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link">
-              <img src="pictures.final/branding/icons/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook"
+              <img src="images/Media iconer/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook"
                 loading="lazy" decoding="async" />
             </a>
             <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link">
-              <img src="pictures.final/branding/icons/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram"
+              <img src="images/Media iconer/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram"
                 loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link">
-              <img src="pictures.final/branding/icons/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube"
+              <img src="images/Media iconer/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube"
                 loading="lazy" decoding="async" />
             </a>
             <a href="contact.html" class="footer__social-link">
-              <img src="pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+              <img src="images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
                 loading="lazy" decoding="async" />
             </a>
           </div>
@@ -337,7 +340,7 @@
         <!-- Center Column -->
         <div class="footer__center">
           <div class="footer__logo">
-            <img src="pictures.final/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy"
+            <img src="images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy"
               decoding="async" />
           </div>
           <div class="back-to-top-wrapper">
@@ -391,6 +394,9 @@
   <script src="js/script.min.js" defer></script>
   <script src="js/modern-enhancements.min.js" defer></script>
   <script src="js/language-toggle.min.js" defer></script>
+  <script src="js/breadcrumbs.js" defer></script>
 </body>
 
 </html>
+
+

@@ -11,25 +11,25 @@
   "lang": "nb-NO",
   "icons": [
     {
-      "src": "pictures.final/Final Transparent Logo.png",
+      "src": "images/Final Transparent Logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "pictures.final/Final Transparent Logo.png",
+      "src": "images/Final Transparent Logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "pictures.final/Final Transparent Logo.png",
+      "src": "images/Final Transparent Logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "pictures.final/Final Transparent Logo.png",
+      "src": "images/Final Transparent Logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -42,14 +42,16 @@
       "short_name": "Bestill",
       "description": "Bestill en time hos kiropraktor",
       "url": "https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available",
-      "icons": [{ "src": "pictures.final/Final Transparent Logo.png", "sizes": "96x96" }]
+      "icons": [{ "src": "images/Final Transparent Logo.png", "sizes": "96x96" }]
     },
     {
       "name": "Kontakt",
       "short_name": "Kontakt",
       "description": "Kontakt oss",
       "url": "/contact.html",
-      "icons": [{ "src": "pictures.final/Final Transparent Logo.png", "sizes": "96x96" }]
+      "icons": [{ "src": "images/Final Transparent Logo.png", "sizes": "96x96" }]
     }
   ]
 }
+
+

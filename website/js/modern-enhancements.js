@@ -117,3 +117,4 @@ function initFloatingAnimation() {
         card.style.animationDelay = `-${Math.random() * 5}s`;
     });
 }
+

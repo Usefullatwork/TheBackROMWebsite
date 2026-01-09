@@ -429,3 +429,4 @@ All design issues identified in the comprehensive audit have been successfully r
 *Project: TheBackROM Kiropraktor Website*  
 *Developer: AI Assistant (Claude Sonnet 4.5)*
 
+

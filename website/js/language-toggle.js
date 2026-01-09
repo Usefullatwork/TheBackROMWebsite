@@ -373,3 +373,4 @@ function initLanguageToggle() {
 // Export for use in other scripts if needed
 window.initLanguageToggle = initLanguageToggle;
 window.showToast = showToast;
+

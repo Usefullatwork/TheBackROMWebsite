@@ -213,7 +213,7 @@
             rgba(26, 95, 122, 0.95) 0%,
             rgba(26, 95, 122, 0.8) 40%,
             rgba(26, 95, 122, 0.1) 100%),
-        url('../pictures.final/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;
+        url('../images/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;
 
     padding-top: 100px;
 }
@@ -1021,7 +1021,7 @@ section.title-section .title-section__image img,
             linear-gradient(180deg,
                 rgba(26, 95, 122, 0.88) 0%,
                 rgba(26, 95, 122, 0.75) 100%),
-            url('../pictures.final/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;
+            url('../images/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;
     }
 
     .main_home .main__container {
@@ -1578,3 +1578,4 @@ button[type="submit"] {
     box-shadow: 0 15px 30px rgba(242, 101, 34, 0.6) !important;
     /* Stronger glow on hover */
 }
+

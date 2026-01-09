@@ -871,7 +871,7 @@
             "entity": "localhost"
           },
           {
-            "url": "http://localhost:8080/pictures.final/Om/meg.webp",
+            "url": "http://localhost:8080/images/Om/meg.webp",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 320.37199999950826,
@@ -1026,7 +1026,7 @@
             "entity": "localhost"
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/home%201.jpeg",
+            "url": "http://localhost:8080/images/Home/home%201.jpeg",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 413.7199999988079,
@@ -1043,7 +1043,7 @@
             "entity": "localhost"
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/Home%206%20(3).jpg",
+            "url": "http://localhost:8080/images/Home/Home%206%20(3).jpg",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 414.3430000003427,
@@ -1111,7 +1111,7 @@
             "entity": "Cloudflare CDN"
           },
           {
-            "url": "http://localhost:8080/pictures.final/logo-header.webp",
+            "url": "http://localhost:8080/images/logo-header.webp",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 451.73599999956787,
@@ -1128,7 +1128,7 @@
             "entity": "localhost"
           },
           {
-            "url": "http://localhost:8080/pictures.final/Plager/nakkesmerte-thumb-optimized.webp",
+            "url": "http://localhost:8080/images/Plager/nakkesmerte-thumb-optimized.webp",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 451.8090000003576,
@@ -1145,7 +1145,7 @@
             "entity": "localhost"
           },
           {
-            "url": "http://localhost:8080/pictures.final/Tjenester%20Svimmelhet/svimmelhet-optimized.webp",
+            "url": "http://localhost:8080/images/Tjenester%20Svimmelhet/svimmelhet-optimized.webp",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 451.843999998644,
@@ -1162,7 +1162,7 @@
             "entity": "localhost"
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/trv-optimized.webp",
+            "url": "http://localhost:8080/images/Home/trv-optimized.webp",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 451.8739999998361,
@@ -1179,7 +1179,7 @@
             "entity": "localhost"
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/forste-time-optimized.webp",
+            "url": "http://localhost:8080/images/Home/forste-time-optimized.webp",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 451.9069999977946,
@@ -1196,7 +1196,7 @@
             "entity": "localhost"
           },
           {
-            "url": "http://localhost:8080/pictures.final/Tjenester%20Kiroprakikk/behandling-optimized.webp",
+            "url": "http://localhost:8080/images/Tjenester%20Kiroprakikk/behandling-optimized.webp",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 451.93899999931455,
@@ -1230,7 +1230,7 @@
             "entity": "localhost"
           },
           {
-            "url": "http://localhost:8080/pictures.final/Final%20Transparent%20Logo.png",
+            "url": "http://localhost:8080/images/Final%20Transparent%20Logo.png",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 518.2829999998212,
@@ -1247,7 +1247,7 @@
             "entity": "localhost"
           },
           {
-            "url": "http://localhost:8080/pictures.final/Final%20Transparent%20Logo.png",
+            "url": "http://localhost:8080/images/Final%20Transparent%20Logo.png",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "rendererStartTime": 831.9799999985844,
@@ -2444,7 +2444,7 @@
               "snippet": "<section class=\"page__main main main_home\">",
               "nodeLabel": "Kiropraktor på Majorstua | Mads Finstad – Klinikk for Alle Oslo\n\nVondt i ryggen…"
             },
-            "url": "http://localhost:8080/pictures.final/Home/home%201.jpeg",
+            "url": "http://localhost:8080/images/Home/home%201.jpeg",
             "wastedMs": 30
           }
         ],
@@ -2456,7 +2456,7 @@
           "type": "debugdata",
           "initiatorPath": [
             {
-              "url": "http://localhost:8080/pictures.final/Home/home%201.jpeg",
+              "url": "http://localhost:8080/images/Home/home%201.jpeg",
               "initiatorType": "parser"
             },
             {
@@ -4157,7 +4157,7 @@
             "wastedBytes": 31446.666666666664
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/home%201.jpeg",
+            "url": "http://localhost:8080/images/Home/home%201.jpeg",
             "debugData": {
               "type": "debugdata",
               "max-age": 3600
@@ -4190,7 +4190,7 @@
             "wastedBytes": 150911.2
           },
           {
-            "url": "http://localhost:8080/pictures.final/Tjenester%20Kiroprakikk/behandling-optimized.webp",
+            "url": "http://localhost:8080/images/Tjenester%20Kiroprakikk/behandling-optimized.webp",
             "debugData": {
               "type": "debugdata",
               "max-age": 3600
@@ -4201,7 +4201,7 @@
             "wastedBytes": 51941.600000000006
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/trv-optimized.webp",
+            "url": "http://localhost:8080/images/Home/trv-optimized.webp",
             "debugData": {
               "type": "debugdata",
               "max-age": 3600
@@ -4212,7 +4212,7 @@
             "wastedBytes": 44799.200000000004
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/Home%206%20(3).jpg",
+            "url": "http://localhost:8080/images/Home/Home%206%20(3).jpg",
             "debugData": {
               "type": "debugdata",
               "max-age": 3600
@@ -4223,7 +4223,7 @@
             "wastedBytes": 43823.200000000004
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/forste-time-optimized.webp",
+            "url": "http://localhost:8080/images/Home/forste-time-optimized.webp",
             "debugData": {
               "type": "debugdata",
               "max-age": 3600
@@ -4234,7 +4234,7 @@
             "wastedBytes": 32159.2
           },
           {
-            "url": "http://localhost:8080/pictures.final/Tjenester%20Svimmelhet/svimmelhet-optimized.webp",
+            "url": "http://localhost:8080/images/Tjenester%20Svimmelhet/svimmelhet-optimized.webp",
             "debugData": {
               "type": "debugdata",
               "max-age": 3600
@@ -4245,7 +4245,7 @@
             "wastedBytes": 21576.800000000003
           },
           {
-            "url": "http://localhost:8080/pictures.final/Om/meg.webp",
+            "url": "http://localhost:8080/images/Om/meg.webp",
             "debugData": {
               "type": "debugdata",
               "max-age": 3600
@@ -4256,7 +4256,7 @@
             "wastedBytes": 17612
           },
           {
-            "url": "http://localhost:8080/pictures.final/logo-header.webp",
+            "url": "http://localhost:8080/images/logo-header.webp",
             "debugData": {
               "type": "debugdata",
               "max-age": 3600
@@ -4278,7 +4278,7 @@
             "wastedBytes": 8651.2
           },
           {
-            "url": "http://localhost:8080/pictures.final/Plager/nakkesmerte-thumb-optimized.webp",
+            "url": "http://localhost:8080/images/Plager/nakkesmerte-thumb-optimized.webp",
             "debugData": {
               "type": "debugdata",
               "max-age": 3600
@@ -4359,11 +4359,11 @@
         ],
         "items": [
           {
-            "url": "http://localhost:8080/pictures.final/Home/home%201.jpeg",
+            "url": "http://localhost:8080/images/Home/home%201.jpeg",
             "totalBytes": 814942
           },
           {
-            "url": "http://localhost:8080/pictures.final/Final%20Transparent%20Logo.png",
+            "url": "http://localhost:8080/images/Final%20Transparent%20Logo.png",
             "totalBytes": 311608
           },
           {
@@ -4383,15 +4383,15 @@
             "totalBytes": 92704
           },
           {
-            "url": "http://localhost:8080/pictures.final/Tjenester%20Kiroprakikk/behandling-optimized.webp",
+            "url": "http://localhost:8080/images/Tjenester%20Kiroprakikk/behandling-optimized.webp",
             "totalBytes": 64927
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/trv-optimized.webp",
+            "url": "http://localhost:8080/images/Home/trv-optimized.webp",
             "totalBytes": 55999
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/Home%206%20(3).jpg",
+            "url": "http://localhost:8080/images/Home/Home%206%20(3).jpg",
             "totalBytes": 54779
           },
           {
@@ -4790,7 +4790,7 @@
               "snippet": "<section class=\"page__main main main_home\">",
               "nodeLabel": "Kiropraktor på Majorstua | Mads Finstad – Klinikk for Alle Oslo\n\nVondt i ryggen…"
             },
-            "url": "http://localhost:8080/pictures.final/Home/home%201.jpeg",
+            "url": "http://localhost:8080/images/Home/home%201.jpeg",
             "fromProtocol": true,
             "isCrossOrigin": false,
             "totalBytes": 814637,
@@ -4798,7 +4798,7 @@
             "wastedWebpBytes": 734955
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/Home%206%20(3).jpg",
+            "url": "http://localhost:8080/images/Home/Home%206%20(3).jpg",
             "fromProtocol": true,
             "isCrossOrigin": false,
             "totalBytes": 54476,
@@ -4877,7 +4877,7 @@
               "snippet": "<section class=\"page__main main main_home\">",
               "nodeLabel": "Kiropraktor på Majorstua | Mads Finstad – Klinikk for Alle Oslo\n\nVondt i ryggen…"
             },
-            "url": "http://localhost:8080/pictures.final/Home/home%201.jpeg",
+            "url": "http://localhost:8080/images/Home/home%201.jpeg",
             "fromProtocol": true,
             "isCrossOrigin": false,
             "totalBytes": 814637,
@@ -5030,10 +5030,10 @@
                 "width": 378,
                 "height": 348
               },
-              "snippet": "<img src=\"pictures.final/Tjenester Kiroprakikk/behandling-optimized.webp\" alt=\"Kiropraktor utfører manuell ryggbehandling på kvinnelig pasient\" width=\"800\" height=\"1198\" loading=\"lazy\" decoding=\"async\">",
+              "snippet": "<img src=\"images/Tjenester Kiroprakikk/behandling-optimized.webp\" alt=\"Kiropraktor utfører manuell ryggbehandling på kvinnelig pasient\" width=\"800\" height=\"1198\" loading=\"lazy\" decoding=\"async\">",
               "nodeLabel": "Kiropraktor utfører manuell ryggbehandling på kvinnelig pasient"
             },
-            "url": "http://localhost:8080/pictures.final/Tjenester%20Kiroprakikk/behandling-optimized.webp",
+            "url": "http://localhost:8080/images/Tjenester%20Kiroprakikk/behandling-optimized.webp",
             "totalBytes": 64624,
             "wastedBytes": 37460,
             "wastedPercent": 57.96603714524207
@@ -5052,10 +5052,10 @@
                 "width": 378,
                 "height": 348
               },
-              "snippet": "<img src=\"pictures.final/Home/forste-time-optimized.webp\" alt=\"Kiropraktor undersøker pasientens nakke under første konsultasjon\" width=\"800\" height=\"1200\" loading=\"lazy\" decoding=\"async\">",
+              "snippet": "<img src=\"images/Home/forste-time-optimized.webp\" alt=\"Kiropraktor undersøker pasientens nakke under første konsultasjon\" width=\"800\" height=\"1200\" loading=\"lazy\" decoding=\"async\">",
               "nodeLabel": "Kiropraktor undersøker pasientens nakke under første konsultasjon"
             },
-            "url": "http://localhost:8080/pictures.final/Home/forste-time-optimized.webp",
+            "url": "http://localhost:8080/images/Home/forste-time-optimized.webp",
             "totalBytes": 39896,
             "wastedBytes": 23154,
             "wastedPercent": 58.036093750000006
@@ -5074,10 +5074,10 @@
                 "width": 378,
                 "height": 348
               },
-              "snippet": "<img src=\"pictures.final/Home/trv-optimized.webp\" alt=\"TRV roterende stol for diagnostisering og behandling av svimmelhet og BPPV…\" width=\"739\" height=\"842\" loading=\"lazy\" decoding=\"async\">",
+              "snippet": "<img src=\"images/Home/trv-optimized.webp\" alt=\"TRV roterende stol for diagnostisering og behandling av svimmelhet og BPPV…\" width=\"739\" height=\"842\" loading=\"lazy\" decoding=\"async\">",
               "nodeLabel": "TRV roterende stol for diagnostisering og behandling av svimmelhet og BPPV krys…"
             },
-            "url": "http://localhost:8080/pictures.final/Home/trv-optimized.webp",
+            "url": "http://localhost:8080/images/Home/trv-optimized.webp",
             "totalBytes": 55696,
             "wastedBytes": 19637,
             "wastedPercent": 35.257329189152706
@@ -5096,10 +5096,10 @@
                 "width": 250,
                 "height": 332
               },
-              "snippet": "<img src=\"pictures.final/Om/meg.webp\" alt=\"Mads Finstad kiropraktor i hvit skjorte med Klinikk for Alle logo, Majorst…\" width=\"768\" height=\"1019\">",
+              "snippet": "<img src=\"images/Om/meg.webp\" alt=\"Mads Finstad kiropraktor i hvit skjorte med Klinikk for Alle logo, Majorst…\" width=\"768\" height=\"1019\">",
               "nodeLabel": "Mads Finstad kiropraktor i hvit skjorte med Klinikk for Alle logo, Majorstua Os…"
             },
-            "url": "http://localhost:8080/pictures.final/Om/meg.webp",
+            "url": "http://localhost:8080/images/Om/meg.webp",
             "totalBytes": 21712,
             "wastedBytes": 14660,
             "wastedPercent": 67.51979320003272
@@ -5118,10 +5118,10 @@
                 "width": 79,
                 "height": 60
               },
-              "snippet": "<img src=\"pictures.final/logo-header.webp\" alt=\"TheBackROM Kiropraktor Mads Finstad\" width=\"300\" height=\"229\" loading=\"lazy\" decoding=\"async\">",
+              "snippet": "<img src=\"images/logo-header.webp\" alt=\"TheBackROM Kiropraktor Mads Finstad\" width=\"300\" height=\"229\" loading=\"lazy\" decoding=\"async\">",
               "nodeLabel": "TheBackROM Kiropraktor Mads Finstad"
             },
-            "url": "http://localhost:8080/pictures.final/logo-header.webp",
+            "url": "http://localhost:8080/images/logo-header.webp",
             "totalBytes": 14896,
             "wastedBytes": 11748,
             "wastedPercent": 78.87008733624454
@@ -5941,7 +5941,7 @@
         ],
         "items": [
           {
-            "url": "http://localhost:8080/pictures.final/Home/home%201.jpeg",
+            "url": "http://localhost:8080/images/Home/home%201.jpeg",
             "cacheLifetimeMs": 3600000,
             "totalBytes": 814942,
             "wastedBytes": 651953.6000000001
@@ -5965,25 +5965,25 @@
             "wastedBytes": 81888.53333333333
           },
           {
-            "url": "http://localhost:8080/pictures.final/Tjenester%20Kiroprakikk/behandling-optimized.webp",
+            "url": "http://localhost:8080/images/Tjenester%20Kiroprakikk/behandling-optimized.webp",
             "cacheLifetimeMs": 3600000,
             "totalBytes": 64927,
             "wastedBytes": 51941.600000000006
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/trv-optimized.webp",
+            "url": "http://localhost:8080/images/Home/trv-optimized.webp",
             "cacheLifetimeMs": 3600000,
             "totalBytes": 55999,
             "wastedBytes": 44799.200000000004
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/Home%206%20(3).jpg",
+            "url": "http://localhost:8080/images/Home/Home%206%20(3).jpg",
             "cacheLifetimeMs": 3600000,
             "totalBytes": 54779,
             "wastedBytes": 43823.200000000004
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/forste-time-optimized.webp",
+            "url": "http://localhost:8080/images/Home/forste-time-optimized.webp",
             "cacheLifetimeMs": 3600000,
             "totalBytes": 40199,
             "wastedBytes": 32159.2
@@ -5995,19 +5995,19 @@
             "wastedBytes": 31446.666666666664
           },
           {
-            "url": "http://localhost:8080/pictures.final/Tjenester%20Svimmelhet/svimmelhet-optimized.webp",
+            "url": "http://localhost:8080/images/Tjenester%20Svimmelhet/svimmelhet-optimized.webp",
             "cacheLifetimeMs": 3600000,
             "totalBytes": 26971,
             "wastedBytes": 21576.800000000003
           },
           {
-            "url": "http://localhost:8080/pictures.final/Om/meg.webp",
+            "url": "http://localhost:8080/images/Om/meg.webp",
             "cacheLifetimeMs": 3600000,
             "totalBytes": 22015,
             "wastedBytes": 17612
           },
           {
-            "url": "http://localhost:8080/pictures.final/logo-header.webp",
+            "url": "http://localhost:8080/images/logo-header.webp",
             "cacheLifetimeMs": 3600000,
             "totalBytes": 15199,
             "wastedBytes": 12159.2
@@ -6019,7 +6019,7 @@
             "wastedBytes": 8651.2
           },
           {
-            "url": "http://localhost:8080/pictures.final/Plager/nakkesmerte-thumb-optimized.webp",
+            "url": "http://localhost:8080/images/Plager/nakkesmerte-thumb-optimized.webp",
             "cacheLifetimeMs": 3600000,
             "totalBytes": 9987,
             "wastedBytes": 7989.6
@@ -6476,7 +6476,7 @@
         ],
         "items": [
           {
-            "url": "http://localhost:8080/pictures.final/Home/home%201.jpeg",
+            "url": "http://localhost:8080/images/Home/home%201.jpeg",
             "totalBytes": 814637,
             "wastedBytes": 606637,
             "subItems": {
@@ -6490,7 +6490,7 @@
             }
           },
           {
-            "url": "http://localhost:8080/pictures.final/Tjenester%20Kiroprakikk/behandling-optimized.webp",
+            "url": "http://localhost:8080/images/Tjenester%20Kiroprakikk/behandling-optimized.webp",
             "totalBytes": 64624,
             "wastedBytes": 41159,
             "subItems": {
@@ -6504,7 +6504,7 @@
             }
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/trv-optimized.webp",
+            "url": "http://localhost:8080/images/Home/trv-optimized.webp",
             "totalBytes": 55696,
             "wastedBytes": 37649,
             "subItems": {
@@ -6518,7 +6518,7 @@
             }
           },
           {
-            "url": "http://localhost:8080/pictures.final/Home/forste-time-optimized.webp",
+            "url": "http://localhost:8080/images/Home/forste-time-optimized.webp",
             "totalBytes": 39896,
             "wastedBytes": 25384,
             "subItems": {
@@ -6532,7 +6532,7 @@
             }
           },
           {
-            "url": "http://localhost:8080/pictures.final/Om/meg.webp",
+            "url": "http://localhost:8080/images/Om/meg.webp",
             "totalBytes": 21712,
             "wastedBytes": 19411,
             "subItems": {
@@ -6546,7 +6546,7 @@
             }
           },
           {
-            "url": "http://localhost:8080/pictures.final/logo-header.webp",
+            "url": "http://localhost:8080/images/logo-header.webp",
             "totalBytes": 14896,
             "wastedBytes": 14110,
             "subItems": {
@@ -13649,3 +13649,4 @@
     }
   }
 }
+

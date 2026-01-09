@@ -139,11 +139,11 @@ To make your post appear in the main blog sections, add an entry to `blogg/js/bl
 ## Image Guidelines
 
 ### Image Paths
-- Use existing images from `pictures.final/` folders
-- Reference with: `../../pictures.final/[folder]/[image-file]`
+- Use existing images from `images/` folders
+- Reference with: `../../images/[folder]/[image-file]`
 - Examples:
-  - `../../pictures.final/plager nakkesmerter/Nakkesmerte 2.jpg`
-  - `../../pictures.final/Tjenester/Dry needle.jpg`
+  - `../../images/plager nakkesmerter/Nakkesmerte 2.jpg`
+  - `../../images/Tjenester/Dry needle.jpg`
 
 ### Image Requirements
 - **Featured image**: 1200x600px recommended
@@ -210,3 +210,4 @@ If you need assistance with:
 - Image handling
 
 Refer back to your `create-post-template.html` tool or consult this guide for reference! 🚀 
+

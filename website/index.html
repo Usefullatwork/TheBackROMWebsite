@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nb">
 
 <head>
@@ -14,10 +14,10 @@
 
   <!-- PWA Support -->
   <link rel="manifest" href="manifest.json" />
-  <link rel="apple-touch-icon" href="pictures.final/Final Transparent Logo.png" />
+  <link rel="apple-touch-icon" href="images/Final Transparent Logo.png" />
 
   <!-- Preload Critical Resources for LCP -->
-  <link rel="preload" as="image" href="pictures.final/Om/meg.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="images/pages/home/kiropraktor-ryggbehandling-hero.webp" fetchpriority="high" />
 
   <!-- Critical CSS inlined for faster FCP -->
   <style>
@@ -34,7 +34,7 @@
     :root {
       --color-primary: #1a202c;
       --color-primary-light: #2d3748;
-      --color-accent: #f59e0b;
+      --color-accent: var(--color-amber);
       --color-accent-dark: #d97706;
       --color-white: #fff;
       --color-text: #1a202c;
@@ -68,7 +68,7 @@
       display: block
     }
 
-    a {
+    å {
       text-decoration: none;
       color: inherit
     }
@@ -114,7 +114,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url('pictures.final/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url('images/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;
       padding-top: var(--header-height)
     }
 
@@ -207,10 +207,12 @@
   <noscript>
     <link rel="stylesheet" href="css/main.min.css?v=20260101_v5">
   </noscript>
-  <!-- Design experiments - Norwegian index only -->
-  <link rel="stylesheet" href="css/index-design.css?v=1">
-  <link rel="stylesheet" href="css/index-2026-fixes.css">
-  <link rel="icon" type="image/png" href="pictures.final/Final Transparent Logo.png" />
+  <!-- Design experiments - Norwegian index only (non-blocking) -->
+  <link rel="stylesheet" href="css/index-design.css?v=1" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/index-design.css?v=1"></noscript>
+  <link rel="stylesheet" href="css/index-2026-fixes.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/index-2026-fixes.css"></noscript>
+  <link rel="icon" type="image/png" href="images/Final Transparent Logo.png" />
   <title>Kiropraktor Majorstua Oslo | Mads Finstad - TheBackROM</title>
 
   <meta name="description"
@@ -223,7 +225,7 @@
     content="Mads Finstad Kiropraktor på Majorstua Oslo. Erfaren kiropraktor for ryggsmerter, nakkesmerter, svimmelhet og skulderproblemer. Bestill time i dag. Gardeveien 17." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Kiropraktor Majorstua Oslo | Mads Finstad - TheBackROM" />
-  <meta property="og:image" content="https://thebackrom.com/pictures.final/Home/home-hero.jpg" />
+  <meta property="og:image" content="https://thebackrom.com/images/Home/kiropraktor-ryggbehandling-hero.jpeg" />
   <meta property="og:url" content="https://thebackrom.com/" />
   <meta property="og:site_name" content="TheBackROM - Mads Finstad Kiropraktor" />
   <meta property="og:locale" content="nb_NO" />
@@ -231,7 +233,7 @@
     content="Mads Finstad Kiropraktor på Majorstua Oslo. Erfaren kiropraktor for ryggsmerter, nakkesmerter, svimmelhet og skulderproblemer. Bestill time i dag. Gardeveien 17." />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mads Finstad Kiropraktor | Majorstua Oslo - Erfaren kiropraktor Gardeveien 17" />
-  <meta name="twitter:image" content="https://thebackrom.com/pictures.final/Home/home-hero.jpg" />
+  <meta name="twitter:image" content="https://thebackrom.com/images/Home/kiropraktor-ryggbehandling-hero.jpeg" />
   <link rel="canonical" href="https://thebackrom.com/" />
   <link rel="alternate" hreflang="nb" href="https://thebackrom.com/" />
   <link rel="alternate" hreflang="en" href="https://thebackrom.com/index-en.html" />
@@ -244,8 +246,8 @@
     "name": "TheBackROM - Mads Finstad Kiropraktor",
     "alternateName": "TheBackROM Majorstua",
     "description": "Erfaren kiropraktor på Majorstua Oslo. Behandling av ryggsmerter, nakkesmerter, svimmelhet, skulderproblemer og hodepine. Spesialist på dry needling og håndbehandling.",
-    "image": "https://thebackrom.com/pictures.final/Home/ryggmassasje-klinikk.png",
-    "logo": "https://thebackrom.com/pictures.final/Home/ryggmassasje-klinikk.png",
+    "image": "https://thebackrom.com/images/Home/ryggmassasje-klinikk.png",
+    "logo": "https://thebackrom.com/images/Home/ryggmassasje-klinikk.png",
     "url": "https://thebackrom.com",
     "telephone": "+4793043062",
     "email": "Mads.finstad@hotmail.com",
@@ -388,8 +390,8 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="index.html" class="header__logo logo"><img src="pictures.final/logo-header.webp"
-            alt="TheBackROM Kiropraktor Mads Finstad" width="300" height="229" loading="lazy" decoding="async" /></a>
+        <a href="index.html" class="header__logo logo"><img src="images/logo-header.webp"
+            alt="TheBackROM Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
             <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
@@ -412,7 +414,6 @@
               <li class="menu__item"><a href="priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="contact.html" class="menu__link">Kontakt</a></li>
-              <a href="fagartikler/index.html" class="menu__link">Fagartikler</a>
               <li class="menu__item"><a href="blogg/index.html" class="menu__link">Blogg</a></li>
               <li class="menu__item">
                 <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
@@ -445,7 +446,7 @@
 
             <div class="bio-teaser">
               <p class="bio-teaser__text">
-                Hei, jeg er Mads Finstad. Mange kommer til meg når de føler de har "prøvd alt".
+                Hei, jeg er Mads Finstad. Mange kommer til meg nær de føler de har "prøvd alt".
                 Som kiropraktor med videreutdanning innen svimmelhet og rehabilitering,
                 graver jeg dypere for å forstå <em>hvorfor</em> du har vondt – ikke bare hvor det gjør vondt.
               </p>
@@ -454,7 +455,9 @@
           </div>
 
           <div class="mads-image-container">
-            <img src="pictures.final/pages/about/meg.webp"
+            <img src="images/Om/meg.webp"
+              srcset="images/Om/meg-480w.webp 480w, images/Om/meg.webp 768w"
+              sizes="(max-width: 480px) 480px, 768px"
               alt="Mads Finstad kiropraktor i hvit skjorte med TheBackROM logo, Majorstua Oslo" width="768"
               height="1019" />
           </div>
@@ -469,21 +472,25 @@
           <a href="akutt-behandling.html" class="service-card">
             <!-- 1. Image at the TOP -->
             <div class="service-image-header">
-              <img src="pictures.final/conditions/general/nakkesmerte-thumb-optimized.webp"
+              <img src="images/plager nakkesmerter/nakkesmerte-optimized.webp"
+                srcset="images/plager nakkesmerter/nakkesmerte-optimized-480w.webp 480w, images/plager nakkesmerter/nakkesmerte-optimized-768w.webp 768w, images/plager nakkesmerter/nakkesmerte-optimized.webp 800w"
+                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 800px"
                 alt="Mann med akutte nakkesmerter holder seg på nakken, trenger akutt kiropraktorbehandling" width="768"
                 height="511" loading="lazy" decoding="async">
             </div>
             <!-- 2. Text Content Below -->
             <div class="item-services__content">
               <h3>Akutt Behandling helg</h3>
-              <p>Har du akutte smerter i helgene? Muligheter for akutt behandling når du trenger det mest.</p>
+              <p>Har du akutte smerter i helgene? Muligheter for akutt behandling nær du trenger det mest.</p>
             </div>
           </a>
 
           <!-- CARD 2 -->
           <a href="akutt-svimmelhet-helg.html" class="service-card">
             <div class="service-image-header">
-              <img src="pictures.final/Tjenester Svimmelhet/svimmelhet-optimized.webp"
+              <img src="images/Tjenester Svimmelhet/svimmelhet-optimized.webp"
+                srcset="images/Tjenester Svimmelhet/svimmelhet-optimized-480w.webp 480w, images/Tjenester Svimmelhet/svimmelhet-optimized-768w.webp 768w, images/Tjenester Svimmelhet/svimmelhet-optimized.webp 800w"
+                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 800px"
                 alt="Kvinne med svimmelhet og vertigo holder seg på hodet, omgivelsene snurrer rundt" width="800"
                 height="417" loading="lazy" decoding="async">
             </div>
@@ -496,7 +503,9 @@
           <!-- CARD 3 -->
           <a href="tjeneste/svimmelhet.html" class="service-card">
             <div class="service-image-header">
-              <img src="pictures.final/Home/trv-optimized.webp"
+              <img src="images/Home/trv-optimized.webp"
+                srcset="images/Home/trv-optimized-480w.webp 480w, images/Home/trv-optimized.webp 739w"
+                sizes="(max-width: 480px) 480px, 739px"
                 alt="TRV roterende stol for diagnostisering og behandling av svimmelhet og BPPV krystallsyke"
                 width="739" height="842" loading="lazy" decoding="async">
             </div>
@@ -509,7 +518,9 @@
           <!-- CARD 4 -->
           <a href="tjeneste/kiropraktikk.html" class="service-card">
             <div class="service-image-header">
-              <img src="pictures.final/Tjenester Kiroprakikk/behandling-optimized.webp"
+              <img src="images/Tjenester Kiroprakikk/behandling-optimized.webp"
+                srcset="images/Tjenester Kiroprakikk/behandling-optimized-480w.webp 480w, images/Tjenester Kiroprakikk/behandling-optimized-768w.webp 768w, images/Tjenester Kiroprakikk/behandling-optimized.webp 800w"
+                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 800px"
                 alt="Kiropraktor utfører manuell ryggbehandling på kvinnelig pasient" width="800" height="1198"
                 loading="lazy" decoding="async">
             </div>
@@ -633,7 +644,9 @@
             <div class="blog-grid" id="blog-scroll-container">
               <article class="blog-card">
                 <div class="card-image-container">
-                  <img src="pictures.final/plager korsryggsmerter/korsrygg-optimized.webp"
+                  <img src="images/plager korsryggsmerter/korsrygg-optimized.webp"
+                    srcset="images/plager korsryggsmerter/korsrygg-optimized-480w.webp 480w, images/plager korsryggsmerter/korsrygg-optimized-768w.webp 768w, images/plager korsryggsmerter/korsrygg-optimized.webp 800w"
+                    sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 800px"
                     class="img-organic-squircle img-fit"
                     alt="Medisinsk illustrasjon av isjias med prolaps og nervekompresjon i korsryggen" width="800"
                     height="974" loading="lazy" decoding="async">
@@ -654,7 +667,9 @@
               </article>
               <article class="blog-card">
                 <div class="card-image-container">
-                  <img src="pictures.final/plager nakkesmerter/nakkesmerte-optimized.webp"
+                  <img src="images/plager nakkesmerter/nakkesmerte-optimized.webp"
+                    srcset="images/plager nakkesmerter/nakkesmerte-optimized-480w.webp 480w, images/plager nakkesmerter/nakkesmerte-optimized-768w.webp 768w, images/plager nakkesmerter/nakkesmerte-optimized.webp 800w"
+                    sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 800px"
                     class="img-organic-squircle img-fit" alt="Mann med nakkesmerter masserer stiv nakke bakfra"
                     width="800" height="450" loading="lazy" decoding="async">
                 </div>
@@ -674,7 +689,9 @@
               </article>
               <article class="blog-card">
                 <div class="card-image-container">
-                  <img src="pictures.final/Tjenester Rehabilitering/aktiv-optimized.webp"
+                  <img src="images/Tjenester Rehabilitering/aktiv-optimized.webp"
+                    srcset="images/Tjenester Rehabilitering/aktiv-optimized-480w.webp 480w, images/Tjenester Rehabilitering/aktiv-optimized-768w.webp 768w, images/Tjenester Rehabilitering/aktiv-optimized.webp 1200w"
+                    sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1200px"
                     class="img-organic-squircle img-fit"
                     alt="Aktiv mann klatrer på innendørs klatrevegg som del av rehabilitering og trening" width="800"
                     height="1200" loading="lazy" decoding="async">
@@ -695,7 +712,7 @@
               </article>
               <article class="klinisk-hjorne__item">
                 <div class="klinisk-hjorne__image">
-                  <img src="pictures.final/plager svimmelhet/bppv.gif" class="img-organic-squircle img-fit"
+                  <img src="images/plager svimmelhet/bppv.gif" class="img-organic-squircle img-fit"
                     alt="Animasjon som viser BPPV krystallsyke og løse krystaller i det indre øret" width="442"
                     height="356" loading="lazy" decoding="async">
                 </div>
@@ -715,7 +732,9 @@
               </article>
               <article class="blog-card">
                 <div class="card-image-container">
-                  <img src="pictures.final/plager kjevesmerter/kjeve-optimized.webp"
+                  <img src="images/plager kjevesmerter/kjeve-optimized.webp"
+                    srcset="images/plager kjevesmerter/kjeve-optimized-480w.webp 480w, images/plager kjevesmerter/kjeve-optimized-768w.webp 768w, images/plager kjevesmerter/kjeve-optimized.webp 800w"
+                    sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 800px"
                     class="img-organic-squircle img-fit"
                     alt="Anatomisk modell av kjeve og tenner som viser kjeveledd og TMD" width="800" height="533"
                     loading="lazy" decoding="async">
@@ -736,7 +755,9 @@
               </article>
               <article class="blog-card">
                 <div class="card-image-container">
-                  <img src="pictures.final/plager hodepine-og-migrene/hodepine-optimized.webp"
+                  <img src="images/plager hodepine-og-migrene/hodepine-optimized.webp"
+                    srcset="images/plager hodepine-og-migrene/hodepine-optimized-480w.webp 480w, images/plager hodepine-og-migrene/hodepine-optimized-768w.webp 768w, images/plager hodepine-og-migrene/hodepine-optimized.webp 800w"
+                    sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 800px"
                     class="img-organic-squircle img-fit"
                     alt="Kvinne med hodepine og mental utmattelse hviler hodet på bøker" width="800" height="533"
                     loading="lazy" decoding="async">
@@ -785,28 +806,28 @@
           <!-- 1. Helsedirektoratet -->
           <div class="trust-item">
             <img
-              src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/Hdir-symbol.png"
-              alt="Helsedirektoratet logo - Autorisert Helsepersonell" loading="lazy" decoding="async">
+              src="images/Logo og identitet/Hdir-symbol.png"
+              alt="Helsedirektoratet logo - Autorisert Helsepersonell" width="120" height="120" loading="lazy" decoding="async">
           </div>
 
           <!-- 2. Carrick Institute -->
           <div class="trust-item">
             <img
-              src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/CI-Logo-No-BG-6.png"
-              alt="Carrick Institute logo - Klinisk nevrologi sertifisering" loading="lazy" decoding="async">
+              src="images/Logo og identitet/CI-Logo-No-BG-6.png"
+              alt="Carrick Institute logo - Klinisk nevrologi sertifisering" width="120" height="120" loading="lazy" decoding="async">
           </div>
 
           <!-- 3. Motion Palpation Institute -->
           <div class="trust-item">
-            <img src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/MPI logo.png"
-              alt="Motion Palpation Institute logo" loading="lazy" decoding="async">
+            <img src="images/Logo og identitet/MPI logo.png"
+              alt="Motion Palpation Institute logo" width="120" height="120" loading="lazy" decoding="async">
           </div>
 
           <!-- 4. AECC University College -->
           <div class="trust-item">
             <img
-              src="pictures.final/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/aecc colored-logo.png"
-              alt="AECC University College logo - Kiropraktor utdanning" loading="lazy" decoding="async">
+              src="images/Logo og identitet/aecc colored-logo.png"
+              alt="AECC University College logo - Kiropraktor utdanning" width="120" height="120" loading="lazy" decoding="async">
           </div>
 
         </div>
@@ -837,21 +858,21 @@
           <div class="footer__social">
             <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
               aria-label="Besøk oss på Facebook">
-              <img src="pictures.final/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+              <img src="images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
               aria-label="Følg oss på Instagram">
-              <img src="pictures.final/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+              <img src="images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
               aria-label="Se våre videoer på YouTube">
-              <img src="pictures.final/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+              <img src="images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
             <a href="contact.html" class="footer__social-link" aria-label="Send oss en e-post">
-              <img src="pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+              <img src="images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
                 loading="lazy" decoding="async" />
             </a>
           </div>
@@ -860,7 +881,7 @@
         <!-- Center Column -->
         <div class="footer__center">
           <div class="footer__logo">
-            <img src="pictures.final/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
+            <img src="images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" width="300"
               height="229" loading="lazy" decoding="async" />
           </div>
           <div class="back-to-top-wrapper">
@@ -912,7 +933,9 @@
   <script src="js/modern-enhancements.min.js" defer></script>
   <script src="js/language-toggle.min.js" defer></script>
   <script src="js/blog-scroll.min.js" defer></script>
-  <script src="js/blog-carousel.js" defer></script>
+  <script src="js/blog-carousel.min.js" defer></script>
 </body>
 
 </html>
+
+

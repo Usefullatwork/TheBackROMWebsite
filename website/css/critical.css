@@ -1,4 +1,4 @@
-﻿/* ===============================
+/* ===============================
    CRITICAL ABOVE-THE-FOLD CSS
    =============================== */
 
@@ -338,7 +338,7 @@ p {
    =============================== */
 
 .main {
-  background: url("../pictures.final/pages/home/kiropraktor-ryggbehandling-hero.jpeg") center / cover no-repeat;
+  background: url("../images/pages/home/kiropraktor-ryggbehandling-hero.jpeg") center / cover no-repeat;
   min-height: 50vh;
   max-height: 70vh;
   position: relative;
@@ -583,3 +583,4 @@ button:focus {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+

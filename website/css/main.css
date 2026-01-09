@@ -1,4 +1,4 @@
-﻿/* ===============================
+/* ===============================
    MAIN COMBINED CSS FILE
    Generated from: reset.css + base.css + components.css + pages.css + utilities.css + design-fixes.css
    =============================== */
@@ -137,6 +137,10 @@ nav {
   --color-shadow-lg: rgba(0, 0, 0, 0.15);
   --color-shadow-xl: rgba(0, 0, 0, 0.25);
   --color-overlay: rgba(0, 0, 0, 0.6);
+
+  /* Amber Colors - Highlights and CTAs */
+  --color-amber: #f59e0b;
+  --color-amber-light: #fef3c7;
 
   /* Enhanced Gradient Colors */
   --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
@@ -2197,7 +2201,7 @@ select:focus-visible {
    =============================== */
 
 .main {
-  background: url("../pictures.final/pages/home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
+  background: url("../images/pages/home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
   min-height: 50vh;
   max-height: 70vh;
   position: relative;
@@ -2278,14 +2282,14 @@ select:focus-visible {
 }
 
 .main_about {
-  background: url("../pictures.final/pages/home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
+  background: url("../images/pages/home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
 }
 
 .main_services,
 .main_contact,
 .main_faq,
 .main_pages {
-  background: url("../pictures.final/pages/home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
+  background: url("../images/pages/home/kiropraktor-ryggbehandling-hero.webp") center / cover no-repeat;
 }
 
 .main__container_pages {
@@ -2320,7 +2324,7 @@ section.page__main.main.main_pages.blog-hero,
 
 /* Hero section for specific pages */
 .plager-hero-mobile {
-  background: url("../pictures.final/conditions/general/nakkesmerte.webp") center / cover no-repeat;
+  background: url("../images/plager nakkesmerter/nakkesmerte-optimized.webp") center / cover no-repeat;
 }
 
 /* ===============================
@@ -2837,7 +2841,7 @@ section.page__main.main.main_pages.blog-hero,
 }
 
 /* ===============================
-   BLOG/KLINISK HJØRNE SECTIONS
+   BLOG/KLINISK HJ�RNE SECTIONS
    =============================== */
 
 .page__klinisk-hjorne {
@@ -4652,7 +4656,7 @@ img.full-size-image {
   object-position: center;
 }
 
-/* Blog/Klinisk hjørne improvements */
+/* Blog/Klinisk hj�rne improvements */
 .klinisk-hjorne__image {
   height: 140px !important;
 }
@@ -6451,7 +6455,7 @@ textarea:valid:not(:placeholder-shown) {
 
 .caution-section {
   background: #fffbeb;
-  border-left: 4px solid #f59e0b;
+  border-left: 4px solid var(--color-amber);
 }
 
 .warning-section h3,
@@ -7167,7 +7171,7 @@ textarea:valid:not(:placeholder-shown) {
 }
 
 .page__about.qualifications-section .certification-box li::before {
-  content: '✓';
+  content: '?';
   position: absolute;
   left: 0;
   color: var(--color-accent);
@@ -7228,7 +7232,7 @@ textarea:valid:not(:placeholder-shown) {
 }
 
 .page__about.qualifications-section .course-box li::before {
-  content: '▸';
+  content: '?';
   position: absolute;
   left: 0;
   color: var(--color-accent);
@@ -7631,7 +7635,7 @@ textarea:valid:not(:placeholder-shown) {
 
 /* Scroll Indicator */
 .main__container::after {
-  content: '↓';
+  content: '?';
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -7747,7 +7751,7 @@ textarea:valid:not(:placeholder-shown) {
 }
 
 .problems__item-title::before {
-  content: '✓';
+  content: '?';
   position: absolute;
   left: 0;
   top: 50%;
@@ -7870,7 +7874,7 @@ textarea:valid:not(:placeholder-shown) {
 }
 
 .klinisk-hjorne__link::after {
-  content: '→';
+  content: '?';
   margin-left: 5px;
   transition: margin-left 0.3s ease;
 }
@@ -8090,7 +8094,7 @@ textarea:valid:not(:placeholder-shown) {
 }
 
 .outro--home-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../pictures.final/pages/home/ryggmassasje-klinikk.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/pages/home/ryggmassasje-klinikk.jpg');
 }
 
 .outro__title--white {
@@ -8225,7 +8229,7 @@ textarea:valid:not(:placeholder-shown) {
 }
 
 .klinisk-hjorne__date::before {
-  content: '•';
+  content: '�';
   margin-right: var(--spacing-sm);
   color: var(--color-border);
 }
@@ -8987,3 +8991,4 @@ textarea:valid:not(:placeholder-shown) {
     display: none !important;
   }
 }
+

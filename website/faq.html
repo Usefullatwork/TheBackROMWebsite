@@ -13,13 +13,17 @@
 
   <!-- PWA Support -->
   <link rel="manifest" href="manifest.json" />
-  <link rel="apple-touch-icon" href="pictures.final/Final Transparent Logo.png" />
+  <link rel="apple-touch-icon" href="images/Final Transparent Logo.png" />
 
   <!-- Preload Critical Resources -->
   <link rel="preload" as="style" href="css/main.min.css" />
-  <link rel="stylesheet" href="css/main.min.css?v=20260101">
-  <link rel="stylesheet" href="css/index-2026-fixes.css">
-  <link rel="icon" type="image/png" href="pictures.final/Final Transparent Logo.png" />
+  <link rel="stylesheet" href="css/main.min.css?v=20260101_v5">
+  <link rel="stylesheet" href="css/index-design.css?v=1" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/index-design.css?v=1"></noscript>
+  <link rel="stylesheet" href="css/index-2026-fixes.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="css/hub-article.css">
+  <link rel="icon" type="image/png" href="images/Final Transparent Logo.png" />
   <title>FAQ - Ofte Stilte Spørsmål til Mads Finstad Kiropraktor Majorstua Oslo</title>
 
   <meta name="description"
@@ -33,14 +37,14 @@
     content="FAQ - Ofte stilte spørsmål til Mads Finstad Kiropraktor på Majorstua Oslo. Svar på vanlige spørsmål om kiropraktisk behandling og priser. Gardeveien 17.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thebackrom.com/faq.html">
-  <meta property="og:image" content="https://thebackrom.com/pictures.final/pages/faq/faq-kiropraktor-behandling.jpg">
+  <meta property="og:image" content="https://thebackrom.com/images/pages/faq/faq-kiropraktor-behandling.jpg">
   <meta property="og:site_name" content="TheBackROM - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="FAQ - Ofte Stilte Spørsmål til Mads Finstad Kiropraktor Majorstua Oslo">
   <meta name="twitter:description"
     content="FAQ - Ofte stilte spørsmål til Mads Finstad Kiropraktor på Majorstua Oslo. Svar på vanlige spørsmål om kiropraktisk behandling og priser. Gardeveien 17.">
-  <meta name="twitter:image" content="https://thebackrom.com/pictures.final/pages/faq/faq-image.jpg">
+  <meta name="twitter:image" content="https://thebackrom.com/images/pages/faq/faq-image.jpg">
   <link rel="canonical" href="https://thebackrom.com/faq.html">
   <link rel="alternate" hreflang="nb" href="https://thebackrom.com/faq.html" />
   <link rel="alternate" hreflang="en" href="https://thebackrom.com/faq-en.html" />
@@ -152,7 +156,7 @@
         "name": "Er det farlig å knekke nakken?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nei. Lyden du hører er gassbobler som frigjøres i leddvæsken (kavitasjon) når trykket endres. Det er ikke bein som gnisser. Teknikken er trygg og effektiv for å gjenopprette normal bevegelse."
+          "text": "Nei. Lyden du hører er gassbobler som frigjøres i leddvæsken (kavitasjon) nær trykket endres. Det er ikke bein som gnisser. Teknikken er trygg og effektiv for å gjenopprette normal bevegelse."
         }
       },
       {
@@ -160,7 +164,7 @@
         "name": "Hva er knekkelyden?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Lyden kommer fra gassbobler som frigjøres i leddvæsken når leddet mobiliseres. Det samme skjer når du knekker fingrene. Lyden er ikke nødvendig for at behandlingen skal virke."
+          "text": "Lyden kommer fra gassbobler som frigjøres i leddvæsken nær leddet mobiliseres. Det samme skjer nær du knekker fingrene. Lyden er ikke nødvendig for at behandlingen skal virke."
         }
       },
       {
@@ -232,7 +236,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="index.html" class="header__logo logo"><img src="pictures.final/logo-header.webp"
+        <a href="index.html" class="header__logo logo"><img src="images/logo-header.webp"
             alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -256,7 +260,6 @@
               <li class="menu__item"><a href="priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="fagartikler/index.html" class="menu__link">Fagartikler</a></li>
               <li class="menu__item"><a href="blogg/index.html" class="menu__link">Blogg</a></li>
               <li class="menu__item">
                 <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
@@ -267,7 +270,7 @@
         </div>
       </div>
     </header>
-    <main class="page">
+    <main class="page" id="main">
 
 
 
@@ -365,7 +368,7 @@
               gap: 6px !important;
             }
 
-            .condition-faqs__grid a.button {
+            .condition-faqs__grid å.button {
               padding: 4px 8px !important;
               font-size: 0.8rem !important;
               min-height: 32px !important;
@@ -377,7 +380,7 @@
               grid-template-columns: repeat(3, 1fr) !important;
             }
 
-            .condition-faqs__grid a.button {
+            .condition-faqs__grid å.button {
               padding: 4px 6px !important;
               font-size: 0.75rem !important;
               min-height: 30px !important;
@@ -512,7 +515,7 @@
                 <div class="faq__item">
                   <h3 class="faq__question about__title title">Er det farlig å knekke nakken?</h3>
                   <div class="faq__answer about__text">
-                    <p>Nei. Lyden du hører er gassbobler som frigjøres i leddvæsken (kavitasjon) når trykket endres. Det
+                    <p>Nei. Lyden du hører er gassbobler som frigjøres i leddvæsken (kavitasjon) nær trykket endres. Det
                       er ikke bein som gnisser. Teknikken er trygg og effektiv for å gjenopprette normal bevegelse.</p>
                   </div>
                 </div>
@@ -520,8 +523,8 @@
                 <div class="faq__item">
                   <h3 class="faq__question about__title title">Hva er knekkelyden?</h3>
                   <div class="faq__answer about__text">
-                    <p>Lyden kommer fra gassbobler som frigjøres i leddvæsken når leddet mobiliseres. Det samme skjer
-                      når du knekker fingrene. Lyden er ikke nødvendig for at behandlingen skal virke.</p>
+                    <p>Lyden kommer fra gassbobler som frigjøres i leddvæsken nær leddet mobiliseres. Det samme skjer
+                      nær du knekker fingrene. Lyden er ikke nødvendig for at behandlingen skal virke.</p>
                   </div>
                 </div>
 
@@ -556,7 +559,7 @@
       </section>
 
       <section class="page__outro outro outro_services"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pictures.final/pages/home/ryggmassasje-klinikk.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/pages/home/ryggmassasje-klinikk.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <div class="outro__container">
           <h2 class="outro__title title" style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">Har du flere
             spørsmål?</h2>
@@ -581,19 +584,19 @@
         <div class="footer__left">
           <div class="footer__social">
             <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link">
-              <img src="pictures.final/branding/icons/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook"
+              <img src="images/Media iconer/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook"
                 loading="lazy" decoding="async" />
             </a>
             <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link">
-              <img src="pictures.final/branding/icons/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram"
+              <img src="images/Media iconer/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram"
                 loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link">
-              <img src="pictures.final/branding/icons/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube"
+              <img src="images/Media iconer/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube"
                 loading="lazy" decoding="async" />
             </a>
             <a href="contact.html" class="footer__social-link">
-              <img src="pictures.final/Footer/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+              <img src="images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
                 loading="lazy" decoding="async" />
             </a>
           </div>
@@ -602,7 +605,7 @@
         <!-- Center Column -->
         <div class="footer__center">
           <div class="footer__logo">
-            <img src="pictures.final/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy"
+            <img src="images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy"
               decoding="async" />
           </div>
           <div class="back-to-top-wrapper">
@@ -656,6 +659,8 @@
   <script src="js/script.min.js" defer></script>
   <script src="js/modern-enhancements.min.js" defer></script>
   <script src="js/language-toggle.min.js" defer></script>
+  <script src="js/breadcrumbs.js" defer></script>
 </body>
 
 </html>
+

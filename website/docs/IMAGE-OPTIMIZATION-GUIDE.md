@@ -6,7 +6,7 @@
 ## 🚨 KRITISK: 15MB BILDE MÅ FIKSES FØRST!
 
 ### Problem:
-- **Fil:** `pictures.final/kunnskapshjørnet/behbadling model.jpg`
+- **Fil:** `images/kunnskapshjørnet/behbadling model.jpg`
 - **Størrelse:** 15MB (ekstrem!)
 - **Duplikat:** `Final pics/kunnskapshjørnet/behbadling model.jpg` (også 15MB)
 - **Impact:** Nettsiden laster 5-8 sekunder lenger enn nødvendig
@@ -128,12 +128,12 @@ magick convert input.jpg -quality 85 -strip output.jpg
 **Batch-komprimering (alle JPG i mappe):**
 ```bash
 # Windows PowerShell
-Get-ChildItem -Path "E:\...\pictures.final" -Recurse -Filter *.jpg | ForEach-Object {
+Get-ChildItem -Path "E:\...\images" -Recurse -Filter *.jpg | ForEach-Object {
     magick convert $_.FullName -quality 85 -strip $_.FullName
 }
 
 # Mac/Linux Bash
-find "pictures.final" -name "*.jpg" -exec magick convert {} -quality 85 -strip {} \;
+find "images" -name "*.jpg" -exec magick convert {} -quality 85 -strip {} \;
 ```
 
 **Konverter til WebP:**
@@ -149,7 +149,7 @@ magick convert input.jpg -quality 85 output.webp
 
 #### 1. Komprimer 15MB bildet
 ```bash
-cd "E:\1- Tottal mappe Web-  Combinned - 95% - Finished material - Publish ready - Folder pr Site with pictures and sortments\0 - 0 - Nettside code – Kopi\website\pictures.final\kunnskapshjørnet"
+cd "E:\1- Tottal mappe Web-  Combinned - 95% - Finished material - Publish ready - Folder pr Site with pictures and sortments\0 - 0 - Nettside code – Kopi\website\images\kunnskapshjørnet"
 
 # Metode 1: TinyJPG
 # Last opp til tinyjpg.com, last ned, erstatt
@@ -162,7 +162,7 @@ magick convert "behbadling model.jpg" -quality 80 -resize 2000x -strip "behbadli
 
 #### 2. Slett Duplikater
 ```bash
-# Slett hele "Final pics" mappen (duplikat av pictures.final)
+# Slett hele "Final pics" mappen (duplikat av images)
 rmdir /s "E:\...\Final pics"
 ```
 
@@ -180,7 +180,7 @@ rmdir /s "E:\...\Final pics"
 cd "E:\1- Tottal mappe Web-  Combinned - 95% - Finished material - Publish ready - Folder pr Site with pictures and sortments\0 - 0 - Nettside code – Kopi\website"
 
 # Finn og komprimer alle JPG over 1MB
-Get-ChildItem -Path "pictures.final" -Recurse -Filter *.jpg | Where-Object {$_.Length -gt 1MB} | ForEach-Object {
+Get-ChildItem -Path "images" -Recurse -Filter *.jpg | Where-Object {$_.Length -gt 1MB} | ForEach-Object {
     Write-Host "Komprimerer: $($_.Name) ($([math]::Round($_.Length/1MB, 2))MB)"
     magick convert $_.FullName -quality 85 -strip $_.FullName
     Write-Host "Ferdig! Ny størrelse: $([math]::Round((Get-Item $_.FullName).Length/1KB, 0))KB"
@@ -205,7 +205,7 @@ Get-ChildItem -Path "pictures.final" -Recurse -Filter *.jpg | Where-Object {$_.L
 1. **Konverter bilder:**
 ```bash
 # Konverter alle JPG til WebP
-Get-ChildItem -Path "pictures.final" -Recurse -Filter *.jpg | ForEach-Object {
+Get-ChildItem -Path "images" -Recurse -Filter *.jpg | ForEach-Object {
     $webpPath = $_.FullName -replace '\.jpg$', '.webp'
     magick convert $_.FullName -quality 85 $webpPath
 }
@@ -214,12 +214,12 @@ Get-ChildItem -Path "pictures.final" -Recurse -Filter *.jpg | ForEach-Object {
 2. **Oppdater HTML:**
 ```html
 <!-- Gammelt -->
-<img src="pictures.final/Home/home-hero.jpg" alt="Hero">
+<img src="images/Home/home-hero.jpg" alt="Hero">
 
 <!-- Nytt - med fallback -->
 <picture>
-  <source srcset="pictures.final/Home/home-hero.webp" type="image/webp">
-  <img src="pictures.final/Home/home-hero.jpg" alt="Hero">
+  <source srcset="images/Home/home-hero.webp" type="image/webp">
+  <img src="images/Home/home-hero.jpg" alt="Hero">
 </picture>
 ```
 
@@ -415,3 +415,5 @@ magick convert original.jpg -resize 1600x -quality 85 bilde-1600w.webp
 **Sist oppdatert:** 2025-01-24
 **Versjon:** 1.0
 **Status:** Klar for implementering
+
+
