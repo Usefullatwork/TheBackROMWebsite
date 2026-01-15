@@ -1,4 +1,4 @@
-# Robots.txt for TheBackROM - Mads Finstad Kiropraktor
+# Robots.txt for TheBackROM - Mads Finstad Chiropractor
 # https://thebackrom.com
 
 User-agent: *
@@ -10,7 +10,6 @@ Sitemap: https://thebackrom.com/sitemap.xml
 # Disallow admin/test pages
 Disallow: /test-improvements.html
 Disallow: /css/archive/
-Disallow: /404.html
 Disallow: /docs/reports/
 
 # Disallow template and documentation files
@@ -19,6 +18,7 @@ Disallow: /blogg/create-post-template.html
 Disallow: /blogg/post-template.html
 
 # Allow all important directories
+Allow: /en/
 Allow: /pictures.final/
 Allow: /css/
 Allow: /js/

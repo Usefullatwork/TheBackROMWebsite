@@ -2681,12 +2681,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thebackrom.com/plager/hofte/piriformis-syndrom.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thebackrom.com/plager/hofte/proksimal-hamstringtendinopati.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -2729,43 +2723,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thebackrom.com/plager/kjeve/adhd-autisme-tmd.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thebackrom.com/plager/kjeve/barn-ungdom-tmd.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thebackrom.com/plager/kjeve/bittfeil-myter.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thebackrom.com/plager/kjeve/botox-vs-manuell-behandling.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thebackrom.com/plager/kjeve/graviditet-kjevesmerter.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thebackrom.com/plager/kjeve/hypermobilitet-eds-tmd.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thebackrom.com/plager/kjeve/ibs-mage-kjeve.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2777,31 +2735,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thebackrom.com/plager/kjeve/kampsport-tmd.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thebackrom.com/plager/kjeve/musikere-tmd.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thebackrom.com/plager/kjeve/ovelser-tmd.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thebackrom.com/plager/kjeve/stress-og-kjevesmerter.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thebackrom.com/plager/kjeve/tekstnakke-kjeve.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2879,12 +2813,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thebackrom.com/plager/nakke/nakkesmerter-gravid.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thebackrom.com/plager/nakke/nummenhet-fingre.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -2925,5 +2853,18 @@
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://thebackrom.com/en/emergency-treatment.html</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thebackrom.com/en/emergency-dizziness.html</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

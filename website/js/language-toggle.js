@@ -233,8 +233,19 @@ function initLanguageToggle() {
                             'personvern.html': 'en/privacy-policy.html'
                         };
 
+                        // Dizziness sub-service mappings (Norwegian → English)
+                        const dizzinessNoToEn = {
+                            'balansesystemet.html': 'vestibular-system.html',
+                            'vestibular-rehabilitering.html': 'vestibular-rehabilitation.html',
+                            'vng-undersokelse.html': 'vng-examination.html'
+                        };
+
                         // Check folder-specific paths FIRST, before generic page mappings
-                        if (currentPath.includes('/tjeneste/')) {
+                        if (currentPath.includes('/tjeneste/svimmelhet/')) {
+                            // From /tjeneste/svimmelhet/file.html to /en/services/dizziness/file.html
+                            const englishFileName = dizzinessNoToEn[fileName] || fileName;
+                            targetUrl = '../../en/services/dizziness/' + englishFileName;
+                        } else if (currentPath.includes('/tjeneste/')) {
                             // From /tjeneste/file.html to /en/services/file.html
                             const englishFileName = serviceNoToEn[fileName] || fileName;
                             targetUrl = '../en/services/' + englishFileName;
@@ -268,7 +279,18 @@ function initLanguageToggle() {
                             'privacy-policy.html': '../privacy-policy.html'
                         };
 
-                        if (currentPath.includes('/en/services/')) {
+                        // Dizziness sub-service mappings (English → Norwegian)
+                        const dizzinessEnToNo = {
+                            'vestibular-system.html': 'balansesystemet.html',
+                            'vestibular-rehabilitation.html': 'vestibular-rehabilitering.html',
+                            'vng-examination.html': 'vng-undersokelse.html'
+                        };
+
+                        if (currentPath.includes('/en/services/dizziness/')) {
+                            // From /en/services/dizziness/file.html to /tjeneste/svimmelhet/file.html
+                            const norwegianFileName = dizzinessEnToNo[fileName] || fileName;
+                            targetUrl = '../../../tjeneste/svimmelhet/' + norwegianFileName;
+                        } else if (currentPath.includes('/en/services/')) {
                             // From /en/services/file.html to /tjeneste/file.html
                             const norwegianFileName = serviceEnToNo[fileName] || fileName;
                             targetUrl = '../../tjeneste/' + norwegianFileName;

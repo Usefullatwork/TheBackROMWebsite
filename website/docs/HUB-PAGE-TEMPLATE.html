@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a202c" />
+  <meta name="color-scheme" content="light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="view-transition" content="same-origin" />
+
+  <link rel="manifest" href="../../manifest.json" />
+  <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
+  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
+
+  <!-- TODO: Update these -->
+  <title>{{CONDITION}} - Treatment at Chiropractor Oslo | Klinikk for alle</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="keywords" content="{{KEYWORDS}}, chiropractor Oslo">
+  <meta name="author" content="Mads Finstad">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="{{CONDITION}} - Treatment at Chiropractor Oslo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thebackrom.com/en/conditions/{{FILENAME}}.html">
+  <meta property="og:image" content="https://thebackrom.com/images/{{IMAGE_PATH}}">
+  <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Chiropractor">
+  <meta property="og:locale" content="en_US">
+  <link rel="canonical" href="https://thebackrom.com/en/conditions/{{FILENAME}}.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/{{NO_FILENAME}}.html">
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/{{FILENAME}}.html">
+
+  <!-- MedicalWebPage Schema - TODO: Update -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "{{CONDITION}} - Treatment at Chiropractor",
+    "description": "{{DESCRIPTION}}",
+    "url": "https://thebackrom.com/en/conditions/{{FILENAME}}.html",
+    "author": {
+      "@type": "Person",
+      "name": "Mads Finstad",
+      "jobTitle": "Chiropractor",
+      "worksFor": {
+        "@type": "MedicalClinic",
+        "name": "Klinikk for alle Majorstua",
+        "address": { "@type": "PostalAddress", "streetAddress": "Gardeveien 17", "addressLocality": "Oslo", "postalCode": "0363", "addressCountry": "NO" }
+      }
+    },
+    "specialty": "Chiropractic",
+    "lastReviewed": "2026-01-13"
+  }
+  </script>
+
+  <!-- FAQPage Schema - TODO: Add questions -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": []
+  }
+  </script>
+
+  <!-- Meta Pixel -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540166625752174'); fbq('track', 'PageView');
+      }, 2000);
+    });
+  </script>
+  <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
+
+  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
+  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
+  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/hub-article.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="style" href="../../css/font-awesome-minimal.css">
+  <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
+
+  <style>
+    :root { --hub-primary: #1a5f7a; --hub-dark: #0d3d4d; --hub-red: #dc2626; --hub-green: #059669; --hub-blue: #2563eb; --hub-purple: #7c3aed; --hub-orange: #ea580c; }
+    .hub-toc-card a { display: block; padding: 10px 14px; color: #475569; text-decoration: none; border-radius: 8px; font-size: 14px; transition: all 0.2s ease; border-left: 3px solid transparent; }
+    .hub-toc-card a:hover { background: #e2e8f0; color: var(--hub-primary); }
+    .hub-toc-card a.active { background: #e0f2fe; color: var(--hub-primary); border-left-color: var(--hub-primary); font-weight: 500; }
+    .hub-intro { margin-bottom: 48px; }
+    .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
+    .intro-text p { margin-bottom: 16px; }
+    .hub-featured-image { width: 100%; max-width: 500px; height: auto; border-radius: 12px; margin: 24px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
+    .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
+    .condition-card ul { margin: 12px 0; padding-left: 20px; }
+    .condition-card li { margin-bottom: 6px; color: #4b5563; }
+    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
+    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
+    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
+    .red-flag-box ul { margin: 0; padding-left: 20px; }
+    .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 2rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.9rem; margin-top: 4px; }
+    .prognosis-highlight { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid var(--hub-green); }
+    .prognosis-highlight p { color: #065f46; font-weight: 500; margin: 0; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
+    .faq-item p { color: #4b5563; margin: 0; line-height: 1.6; }
+    .hub-cta { background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%); color: white; border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
+    .hub-cta h3 { color: white !important; font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; }
+    .hub-cta p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
+    .hub-cta .button { background: white; color: var(--hub-primary); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s ease; }
+    .hub-cta .button:hover { transform: translateY(-2px); }
+    .related-box { background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 32px; }
+    .related-box h3 { color: var(--hub-dark); margin-bottom: 16px; }
+    .related-box a { display: block; padding: 12px 0; color: var(--hub-primary); text-decoration: none; border-bottom: 1px solid #e5e7eb; transition: padding-left 0.2s ease; }
+    .related-box a:last-child { border-bottom: none; }
+    .related-box a:hover { padding-left: 8px; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
+    .mobile-sticky-cta a { display: block; background: white; color: var(--hub-primary); text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; }
+    @media (max-width: 900px) {
+      .hub-wrapper { flex-direction: column; padding: 20px; }
+      .hub-sidebar { display: none; }
+      .hub-main { max-width: 100%; padding-bottom: 100px; }
+      .mobile-sticky-cta { display: block; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .medical-disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 32px; font-size: 0.85rem; color: #64748b; }
+    .sources-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
+    .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; }
+    .sources-section p { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
+  </style>
+</head>
+
+<body id="top">
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="../index.html" class="header__logo logo"><img src="../../images/logo-header.webp" alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
+        <div class="header__navigation">
+          <div class="language-toggle" role="group" aria-label="Language selection">
+            <button class="language-toggle__button" data-lang="no" aria-label="Switch to Norwegian" aria-pressed="false">NO</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="en" aria-label="English" aria-pressed="true">EN</button>
+            <div class="language-toggle__slider"></div>
+          </div>
+          <button type="button" class="icon-menu" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="../index.html" class="menu__link">Home</a></li>
+              <li class="menu__item"><a href="../about.html" class="menu__link">About Me</a></li>
+              <li class="menu__item"><a href="../services.html" class="menu__link">Services</a></li>
+              <li class="menu__item"><a href="../conditions.html" class="menu__link">Conditions</a></li>
+              <li class="menu__item"><a href="../prices.html" class="menu__link">Prices</a></li>
+              <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+              <li class="menu__item"><a href="../contact.html" class="menu__link">Contact</a></li>
+              <li class="menu__item"><a href="../blog/index.html" class="menu__link">Blog</a></li>
+              <li class="menu__item"><a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="actions-header__button">Book Appointment</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page" id="main">
+      <!-- Hero Section -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <h1>{{CONDITION}} - Complete Guide</h1>
+          <p class="hub-hero__subtitle">Everything you need to know about causes, symptoms and treatment | Chiropractor Mads Finstad, Oslo</p>
+        </div>
+      </section>
+
+      <div class="hub-wrapper">
+        <article class="hub-main">
+
+          <section class="hub-intro">
+            <div class="intro-text">
+              <!-- TODO: Add intro paragraphs -->
+            </div>
+
+            <div class="premium-summary-card">
+              <h3>Quick Summary</h3>
+              <ul>
+                <!-- TODO: Add 5-6 key bullet points -->
+              </ul>
+            </div>
+
+            <!-- Video Summary (Optional - add YouTube ID when available) -->
+            <div class="hub-video-summary">
+              <div class="hub-video-summary__header">
+                <div class="hub-video-summary__icon">
+                  <i class="fas fa-play"></i>
+                </div>
+                <h3 class="hub-video-summary__title">Watch & Listen</h3>
+              </div>
+              <p class="hub-video-summary__subtitle">Prefer listening? Here's a quick audio summary of this guide.</p>
+              <div class="hub-video-summary__wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/{{YOUTUBE_VIDEO_ID}}"
+                  title="{{CONDITION}} - Quick Guide Summary"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Sub-article navigation -->
+            <nav class="hub-subnav">
+              <h3>Choose Your Condition</h3>
+              <p style="margin-bottom: 16px; color: #64748b;">Click on the condition that best fits you:</p>
+              <div class="hub-subnav__grid hub-subnav__grid--detailed">
+                <!-- TODO: Add sub-article links -->
+              </div>
+            </nav>
+
+            <!-- Red Flag Alert -->
+            <div class="red-flag-alert">
+              <h4>When should you seek emergency care?</h4>
+              <p><!-- TODO: Add red flag summary --></p>
+              <a href="#redflags">Read more about red flags</a>
+            </div>
+
+            <img src="../../images/{{IMAGE_PATH}}" alt="{{CONDITION}} - anatomy and treatment" class="hub-featured-image" loading="lazy" decoding="async" />
+
+            <div class="stat-grid">
+              <!-- TODO: Add 4 statistics -->
+              <div class="stat-item"><div class="stat-number">XX%</div><div class="stat-label">Label</div></div>
+              <div class="stat-item"><div class="stat-number">XX%</div><div class="stat-label">Label</div></div>
+              <div class="stat-item"><div class="stat-number">XX%</div><div class="stat-label">Label</div></div>
+              <div class="stat-item"><div class="stat-number">XX%</div><div class="stat-label">Label</div></div>
+            </div>
+          </section>
+
+          <!-- TODO: Add numbered sections -->
+          <section id="section1" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">1</span>
+              <h2>Section Title</h2>
+            </div>
+            <p>Content...</p>
+          </section>
+
+          <!-- Red Flags Section -->
+          <section id="redflags" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">X</span>
+              <h2>Red Flags</h2>
+            </div>
+            <div class="red-flag-box">
+              <h3>Seek Emergency Care For:</h3>
+              <ul>
+                <!-- TODO: Add red flags -->
+              </ul>
+            </div>
+          </section>
+
+          <!-- FAQ Section -->
+          <section id="faq" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">X</span>
+              <h2>Frequently Asked Questions</h2>
+            </div>
+            <!-- TODO: Add FAQ items -->
+            <div class="faq-item">
+              <h4>Question?</h4>
+              <p>Answer.</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section id="contact" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">X</span>
+              <h2>Need Help with {{CONDITION}}?</h2>
+            </div>
+            <div class="hub-cta">
+              <h3>Book an Appointment Today</h3>
+              <p>First consultation: 45 minutes with thorough examination and treatment plan</p>
+              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="button">Book Online</a>
+              <p style="margin-top: 16px; font-size: 0.9rem;">Or call: <a href="tel:+4793043062" style="color: white;">+47 93 04 30 62</a></p>
+            </div>
+            <p style="margin-top: 20px;"><strong>Mads Finstad</strong><br>Licensed Chiropractor, Klinikk for alle, Oslo</p>
+          </section>
+
+          <div class="related-box">
+            <h3>Related Articles</h3>
+            <!-- TODO: Add related links -->
+          </div>
+
+          <div class="sources-section">
+            <h3>References</h3>
+            <!-- TODO: Add sources -->
+          </div>
+
+          <div class="medical-disclaimer">
+            <strong>Medical Information:</strong> This is general information and does not replace individual medical advice. Treatment response varies between individuals. Always contact qualified healthcare professionals for personal evaluation.
+          </div>
+
+        </article>
+
+        <aside class="hub-sidebar">
+          <div class="hub-conversion-card">
+            <img src="../../images/Om/meg.webp" alt="Mads Finstad Chiropractor" class="sidebar-image">
+            <h3>{{CONDITION}}?</h3>
+            <p>I'll help you find the cause and the right treatment.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Book Appointment</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Chiropractor, TheBackROM</small>
+            </div>
+          </div>
+
+          <nav class="hub-toc-card" aria-label="Content navigation">
+            <h3>Contents</h3>
+            <ul>
+              <!-- TODO: Add TOC links matching sections -->
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+      <div class="mobile-sticky-cta">
+        <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer">Book Appointment</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook"><img src="../../images/Media iconer/facebook_media_social_icon.png" alt="Facebook" width="512" height="512" loading="lazy" decoding="async" /></a>
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram"><img src="../../images/Media iconer/instagramlogo.png" alt="Instagram" width="512" height="512" loading="lazy" decoding="async" /></a>
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link" aria-label="YouTube"><img src="../../images/Media iconer/youtube_icon.png" alt="YouTube" width="512" height="512" loading="lazy" decoding="async" /></a>
+            <a href="../contact.html" class="footer__social-link" aria-label="Email"><img src="../../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Email" loading="lazy" decoding="async" /></a>
+          </div>
+        </div>
+        <div class="footer__center">
+          <div class="footer__logo"><img src="../../images/logo-footer.webp" alt="Klinikk for alle" width="300" height="229" loading="lazy" decoding="async" /></div>
+          <div class="back-to-top-wrapper">
+            <p class="text--muted-small">Back to top</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Go to top"><i class="fas fa-arrow-up" aria-hidden="true"></i> Up</a>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__hours"><h3>Opening Hours</h3><p>Monday - Friday: 08:00 - 19:00</p><p>Saturday: 10:00 - 16:00</p><p>Sunday: Closed</p></div>
+          <div class="footer__contact"><h3>Contact Information</h3><p>Gardeveien 17<br>0363 Oslo</p><p>Phone: <a href="tel:+4793043062">+47 93043062</a></p><p>Email: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a href="../privacy-policy.html" class="footer__link--muted">Privacy Policy</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Chiropractor - All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../../js/script.min.js" defer></script>
+  <script src="../../js/language-toggle.min.js" defer></script>
+  <script src="../../js/modern-enhancements.min.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+      function updateActiveLink() {
+        let currentSection = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 150) { currentSection = section.getAttribute('id'); }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + currentSection) { link.classList.add('active'); }
+        });
+      }
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
+  <script src="../../js/breadcrumbs.js" defer></script>
+</body>
+</html>

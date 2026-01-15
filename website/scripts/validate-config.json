@@ -1,0 +1,119 @@
+{
+  "profiles": {
+    "hub-article": {
+      "description": "Hub article pages with full design",
+      "structure": [
+        { "name": "lang=\"en\"", "pattern": "lang=\"en\"", "required": true },
+        { "name": "hub-article.css", "pattern": "hub-article.css", "required": true },
+        { "name": "hub-hero section", "pattern": "class=\"hub-hero\"", "required": true },
+        { "name": "hub-wrapper", "pattern": "class=\"hub-wrapper\"", "required": true },
+        { "name": "hub-main article", "pattern": "class=\"hub-main\"", "required": true },
+        { "name": "hub-sidebar", "pattern": "class=\"hub-sidebar\"", "required": true },
+        { "name": "hub-intro section", "pattern": "class=\"hub-intro\"", "required": true },
+        { "name": "premium-summary-card", "pattern": "premium-summary-card", "required": true },
+        { "name": "hub-subnav", "pattern": "hub-subnav", "required": true },
+        { "name": "red-flag-alert", "pattern": "red-flag-alert", "required": true },
+        { "name": "stat-grid", "pattern": "stat-grid", "required": true },
+        { "name": "hub-cta", "pattern": "hub-cta", "required": true },
+        { "name": "mobile-sticky-cta", "pattern": "mobile-sticky-cta", "required": true },
+        { "name": "hub-toc-card", "pattern": "hub-toc-card", "required": true },
+        { "name": "hub-conversion-card", "pattern": "hub-conversion-card", "required": true }
+      ],
+      "seo": [
+        { "name": "title tag", "pattern": "<title>", "required": true },
+        { "name": "meta description", "pattern": "name=\"description\"", "required": true },
+        { "name": "canonical URL", "pattern": "rel=\"canonical\"", "required": true },
+        { "name": "hreflang nb", "pattern": "hreflang=\"nb\"", "required": true },
+        { "name": "hreflang en", "pattern": "hreflang=\"en\"", "required": true },
+        { "name": "og:title", "pattern": "og:title", "required": true },
+        { "name": "og:description", "pattern": "og:description", "required": false },
+        { "name": "MedicalWebPage schema", "pattern": "\"MedicalWebPage\"", "required": true },
+        { "name": "FAQPage schema", "pattern": "\"FAQPage\"", "required": true }
+      ],
+      "content": {
+        "minSections": 6,
+        "minFaqItems": 4,
+        "exactStatItems": 4,
+        "requireSources": true,
+        "requireDisclaimer": true,
+        "requireRelatedBox": true
+      },
+      "images": {
+        "requireFeaturedImage": true,
+        "requireProfileImage": true,
+        "requireLazyLoading": true,
+        "requireAsyncDecoding": true
+      },
+      "fileSize": {
+        "minKB": 20,
+        "maxKB": 50
+      }
+    },
+    "sub-article": {
+      "description": "Sub-article pages (simpler structure)",
+      "structure": [
+        { "name": "lang=\"en\"", "pattern": "lang=\"en\"", "required": true },
+        { "name": "main.min.css", "pattern": "main.min.css", "required": true },
+        { "name": "article tag", "pattern": "<article", "required": true }
+      ],
+      "seo": [
+        { "name": "title tag", "pattern": "<title>", "required": true },
+        { "name": "meta description", "pattern": "name=\"description\"", "required": true },
+        { "name": "canonical URL", "pattern": "rel=\"canonical\"", "required": true }
+      ],
+      "content": {
+        "minSections": 2,
+        "minFaqItems": 0,
+        "exactStatItems": null,
+        "requireSources": false,
+        "requireDisclaimer": true,
+        "requireRelatedBox": false
+      },
+      "images": {
+        "requireFeaturedImage": false,
+        "requireProfileImage": false,
+        "requireLazyLoading": true,
+        "requireAsyncDecoding": true
+      },
+      "fileSize": {
+        "minKB": 5,
+        "maxKB": 30
+      }
+    },
+    "basic-page": {
+      "description": "Basic HTML page (contact, about, etc)",
+      "structure": [
+        { "name": "lang attribute", "pattern": "lang=\"", "required": true },
+        { "name": "main.min.css", "pattern": "main.min.css", "required": true }
+      ],
+      "seo": [
+        { "name": "title tag", "pattern": "<title>", "required": true },
+        { "name": "meta description", "pattern": "name=\"description\"", "required": true }
+      ],
+      "content": {
+        "minSections": 0,
+        "minFaqItems": 0,
+        "exactStatItems": null,
+        "requireSources": false,
+        "requireDisclaimer": false,
+        "requireRelatedBox": false
+      },
+      "images": {
+        "requireFeaturedImage": false,
+        "requireProfileImage": false,
+        "requireLazyLoading": true,
+        "requireAsyncDecoding": false
+      },
+      "fileSize": {
+        "minKB": 2,
+        "maxKB": 100
+      }
+    }
+  },
+  "norwegianWords": [
+    "og", "det", "av", "til", "som", "på", "med", "kan", "har",
+    "denne", "disse", "eller", "hos", "ved", "din", "dine",
+    "smerter", "smerte", "vondt", "behandling", "undersøkelse",
+    "øvelser", "muskler", "ledd", "kiropraktor", "flere", "ofte"
+  ]
+}

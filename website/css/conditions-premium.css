@@ -1,0 +1,224 @@
+/* Premium design override for Conditions page */
+
+:root {
+  --premium-card-height: 360px;
+  --premium-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --premium-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --premium-hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  --hub-primary: #2A7B9B;
+}
+
+/* 1. Hero Section Upgrade */
+.main_services {
+  position: relative;
+  background-image: linear-gradient(135deg, #102a36 0%, #1a4c5e 100%) !important;
+  /* Deep Teal/Dark */
+  overflow: hidden;
+  padding: 8rem 1rem 6rem !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Add a dynamic gradient overlay */
+.main_services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(42, 123, 155, 0.4) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(220, 38, 38, 0.1) 0%, transparent 40%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.main__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main__title {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 4rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem !important;
+  color: white !important;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  line-height: 1.1;
+}
+
+.main__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.35rem !important;
+  color: #cbd5e0 !important;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* 2. Grid Layout Polish */
+.services-grid__container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+.services-grid__row {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 2rem !important;
+  padding: 2rem 0 4rem !important;
+}
+
+/* 3. Card Design Overhaul */
+.services-grid__item {
+  display: block;
+  position: relative;
+  height: var(--premium-card-height);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--premium-shadow);
+  transition: var(--premium-transition);
+  background: #0f172a;
+  /* Dark background behind image */
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.services-grid__item:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--premium-hover-shadow);
+  border-color: rgba(42, 123, 155, 0.3);
+  z-index: 2;
+}
+
+/* Image handling */
+.services-grid__image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.services-grid__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+  filter: brightness(0.85);
+}
+
+.services-grid__item:hover .services-grid__image img {
+  transform: scale(1.1);
+  filter: brightness(1);
+}
+
+/* Overlay - Glassmorphism Bottom */
+.services-grid__overlay {
+  position: absolute;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: auto !important;
+  /* Override sticky positioning */
+  padding: 2rem !important;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 50%, transparent 100%) !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start !important;
+  /* Left align everything */
+  pointer-events: none;
+  height: 100% !important;
+  /* Fill card but content is at bottom */
+  max-height: none !important;
+  transition: all 0.3s ease;
+  transform: none !important;
+  /* Remove centering transforms */
+  border-radius: 0 !important;
+  /* Remove any rounding on overlay */
+}
+
+/* Typography Overrides - Aggressive Reset */
+.services-grid__title {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  margin: auto 0 0.5rem 0 !important;
+  /* Push to bottom */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+
+  /* Resetting potential orange box styles */
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  text-align: left !important;
+  position: static !important;
+}
+
+/* "Read More" Button */
+.services-grid__button {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem !important;
+  font-weight: 500;
+  color: #38bdf8 !important;
+  /* Light blue accent */
+  background: transparent !important;
+  padding: 0 !important;
+  margin-top: 0.25rem;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  position: static !important;
+}
+
+/* Add arrow visual via CSS */
+.services-grid__button::after {
+  content: '→';
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.services-grid__item:hover .services-grid__button {
+  color: white !important;
+  opacity: 1;
+}
+
+.services-grid__item:hover .services-grid__button::after {
+  transform: translateX(6px);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .main__title {
+    font-size: 2.5rem !important;
+  }
+
+  .services-grid__item {
+    height: 300px;
+  }
+
+  .main_services {
+    padding: 6rem 1rem 4rem !important;
+  }
+}

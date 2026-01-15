@@ -4,45 +4,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  
-  
-  
+  <!-- 2026 Modern Meta Tags -->
+  <meta name="theme-color" content="#1a202c" />
+  <meta name="color-scheme" content="light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="view-transition" content="same-origin" />
+
+  <!-- PWA Support -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="images/Final Transparent Logo.png" />
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" as="style" href="css/main.min.css" />
   <link rel="stylesheet" href="css/main.min.css?v=20260101_v5">
   <link rel="stylesheet" href="css/index-design.css?v=1" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="css/index-design.css?v=1"></noscript>
   <link rel="stylesheet" href="css/index-2026-fixes.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="css/hub-article.css">
   <link rel="icon" type="image/png" href="images/Final Transparent Logo.png" />
   <title>Første gang hos kiropraktor? - Mads Finstad Kiropraktor Majorstua Oslo</title>
-  
-<meta name="description" content="Første gang hos Mads Finstad Kiropraktor på Majorstua Oslo? Les om første gangs besøk, hva du kan forvente og forberedelser. Velkommen! Gardeveien 17.">
+
+  <meta name="description" content="Første gang hos Mads Finstad Kiropraktor på Majorstua Oslo? Les om første gangs besøk, hva du kan forvente og forberedelser. Velkommen! Gardeveien 17.">
   <meta name="keywords" content="Mads Finstad kiropraktor nye pasienter, første besøk kiropraktor Oslo, ny pasient Majorstua, kiropraktor første gang, hva kan forvente kiropraktor">
   <meta name="author" content="Mads Finstad">
-  <meta name="robots" content="index, follow"><meta property="og:title" content="Første gang hos kiropraktor? - Mads Finstad Kiropraktor Majorstua Oslo"><meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Første gang hos kiropraktor? - Mads Finstad Kiropraktor Majorstua Oslo">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://thebackrom.com/nye-pasienter.html">
   <meta property="og:image" content="https://thebackrom.com/images/pages/new-patients/new-patient.jpg">
-  <meta property="og:site_name" content="TheBackROM - Mads Finstad Kiropraktor">
-  <meta property="og:locale" content="nb_NO"><meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Første gang hos kiropraktor? - Mads Finstad Kiropraktor Majorstua Oslo"><meta name="twitter:image" content="https://thebackrom.com/images/pages/new-patients/new-patient.jpg">
+  <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
+  <meta property="og:locale" content="nb_NO">
+  <meta property="og:description" content="Første gang hos kiropraktor? Les om hva du kan forvente ved første besøk, forberedelser og behandlingsforløp hos Mads Finstad Kiropraktor på Majorstua.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Første gang hos kiropraktor? - Mads Finstad Kiropraktor Majorstua Oslo">
+  <meta name="twitter:image" content="https://thebackrom.com/images/pages/new-patients/new-patient.jpg">
   <link rel="canonical" href="https://thebackrom.com/nye-pasienter.html">
-  
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/nye-pasienter.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/nye-pasienter-en.html" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Hva skjer ved første besøk hos kiropraktor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ved første besøk gjennomfører vi en grundig samtale om dine plager og sykehistorie, etterfulgt av en klinisk undersøkelse. Basert på funnene får du diagnose, behandling og en plan for videre oppfølging."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hvor lang tid tar første konsultasjon?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Første konsultasjon tar ca. 45 minutter. Dette inkluderer samtale, undersøkelse og behandling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Må jeg ha henvisning fra lege?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nei, du trenger ikke henvisning for å gå til kiropraktor. Du kan bestille time direkte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hva koster det hos kiropraktor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Første konsultasjon koster 1 140 kr (45 min). Oppfølgingsbehandlinger koster 795 kr (30 min). De fleste helseforsikringer dekker kiropraktorbehandling."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '540166625752174');
-  fbq('track', 'PageView');
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540166625752174');
+        fbq('track', 'PageView');
+      }, 2000);
+    });
   </script>
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
-  /></noscript>
+      src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
   <!-- End Meta Pixel Code -->
   
   <!-- Modular CSS Loading -->
@@ -57,10 +122,12 @@
   </head>
 
 <body id="top">
+  <!-- Skip-link for tilgjengelighet -->
+  <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="index.html" class="header__logo logo"><img src="images/logo-header.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="index.html" class="header__logo logo"><img src="images/logo-header.webp" alt="Klinikk for alle Kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
         <div class="header__navigation">
                     <div class="language-toggle" role="group" aria-label="Språkvalg">
             <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
@@ -83,7 +150,7 @@
               <li class="menu__item"><a href="contact.html" class="menu__link">Kontakt</a></li>
               <li class="menu__item"><a href="blogg/index.html" class="menu__link">Blogg</a></li>
               <li class="menu__item">
-                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Bestill Time</a>
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="actions-header__button">Bestill Time</a>
               </li>
             </ul>
           </div>
@@ -136,7 +203,7 @@
       <section class="page__about about qualifications-section">
         <div class="about__container">
           <div class="about__image">
-            <img src="images/Home/forste-time-optimized.webp" alt="Forberedelser til behandling"  loading="lazy" decoding="async"/>
+            <img src="images/Home/Første-time-optimized.webp" alt="Forberedelser til behandling"  loading="lazy" decoding="async"/>
           </div>
           <div class="about__content">
             <h2 class="about__title">Hvordan forberede seg til besøket</h2>
@@ -152,7 +219,7 @@
               
               <p><strong>Før besøket:</strong></p>
               <ul class="about__list">
-                <li>Tenk gjennom nær plagene startet</li>
+                <li>Tenk gjennom når plagene startet</li>
                 <li>Noter hva som gjør plagene bedre eller verre</li>
                 <li>Skriv ned spørsmål du ønsker å stille</li>
                 <li>Kom 10 minutter før avtalt tid</li>
@@ -256,7 +323,7 @@
             <div class="faq__item">
               <h3 class="faq__question">Hvor mange behandlinger trenger jeg?</h3>
               <div class="faq__answer">
-                <p>Dette varierer fra person til person og avhenger av din tilstand. Acute problemer kan ofte løses på 2-4 behandlinger, mens kroniske tilstander kan kreve lengre behandlingsforløp. Jeg diskuterer dette grundig på første konsultasjon.</p>
+                <p>Dette varierer fra person til person og avhenger av din tilstand. Akutte problemer kan ofte løses på 2-4 behandlinger, mens kroniske tilstander kan kreve lengre behandlingsforløp. Jeg diskuterer dette grundig på første konsultasjon.</p>
               </div>
             </div>
             
@@ -306,7 +373,7 @@
               </div>
               
               <p style="margin-top: 2rem;">
-                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="about__button button button--accent">Bestill din første konsultasjon</a>
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="about__button button button--accent">Bestill din første konsultasjon</a>
               </p>
             </div>
           </div>
@@ -330,7 +397,7 @@
           <div class="outro__text">
             Jeg ser frem til å møte deg og hjelpe deg på veien mot bedre helse og livskvalitet.
           </div>
-          <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="outro__button button button--accent">Bestill Time Nå</a>
+          <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="outro__button button button--accent">Bestill Time Nå</a>
         </div>
       </section>
     
@@ -346,13 +413,13 @@
         <!-- Left Column -->
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link">
               <img src="images/Media iconer/facebook_media_social_icon.png" alt="Følg TheBackROM på Facebook" loading="lazy" decoding="async" />
             </a>
-            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link">
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link">
               <img src="images/Media iconer/instagramlogo.png" alt="Følg kiropraktor Mads Finstad på Instagram" loading="lazy" decoding="async" />
             </a>
-            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link">
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link">
               <img src="images/Media iconer/youtube_icon.png" alt="Se videoer fra TheBackROM på YouTube" loading="lazy" decoding="async" />
             </a>
             <a href="contact.html" class="footer__social-link">
@@ -364,7 +431,7 @@
         <!-- Center Column -->
         <div class="footer__center">
           <div class="footer__logo">
-            <img src="images/logo-footer.webp" alt="TheBackROM kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" />
+            <img src="images/logo-footer.webp" alt="Klinikk for alle Kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" />
           </div>
           <div class="back-to-top-wrapper">
             <p style="margin-bottom: 0.5rem; color: var(--color-text-muted);">Tilbake til start</p>
@@ -393,12 +460,12 @@
 
       <div style="text-align: center; padding-top: var(--spacing-lg); margin-top: var(--spacing-lg); border-top: 1px solid rgba(255,255,255,0.1);">
         <a href="personvern.html" style="color: var(--color-text-muted); text-decoration: none; margin-right: var(--spacing-md);">Personvernerklæring</a>
-        <p style="margin-top: var(--spacing-sm); opacity: 0.8; color: var(--color-text-muted);">© 2026 TheBackROM – Alle rettigheter reservert</p>
+        <p style="margin-top: var(--spacing-sm); opacity: 0.8; color: var(--color-text-muted);">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
   <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
      class="mobile-sticky-cta"
      aria-label="Bestill time hos kiropraktor">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

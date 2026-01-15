@@ -93,6 +93,22 @@ function getCurrentPathParts() {
     let currentPath = getRelativePath();
     let absolutePath = '/';
 
+    // Mapping of subfolders to their parent hub pages
+    const subfolderToHub = {
+        'nakke': 'nakkesmerter.html',
+        'korsrygg': 'korsryggsmerte.html',
+        'hodepine': 'hodepine.html',
+        'hofte': 'hofte-og-bekkensmerter.html',
+        'bekken': 'hofte-og-bekkensmerter.html',
+        'skulder': 'skuldersmerter.html',
+        'kne': 'knesmerter.html',
+        'fot': 'fotsmerte.html',
+        'kjeve': 'kjevesmerte.html',
+        'brystrygg': 'brystryggsmerter.html',
+        'albue': 'albue-arm.html',
+        'svimmelhet': 'svimmelhet.html'
+    };
+
     for (let i = 0; i < parts.length; i++) {
         const part = parts[i];
 
@@ -107,14 +123,55 @@ function getCurrentPathParts() {
                 absolutePath: absolutePath + part
             });
         } else {
-            // This is a directory
+            // This is a directory - check if it maps to a hub page
+            const parentFolder = parts[i - 1]; // Check if we're in plager or tjeneste
+
+            if (parentFolder === 'plager' && subfolderToHub[part]) {
+                // Link to the hub page instead of the folder
+                pathParts.push({
+                    name: part,
+                    url: currentPath + subfolderToHub[part],
+                    absolutePath: absolutePath + subfolderToHub[part]
+                });
+            } else if (parentFolder === 'tjeneste' && part === 'svimmelhet') {
+                // Special case for tjeneste/svimmelhet subfolder
+                pathParts.push({
+                    name: part,
+                    url: currentPath + 'svimmelhet.html',
+                    absolutePath: absolutePath + 'svimmelhet.html'
+                });
+            } else if (part === 'plager') {
+                // Link to plager.html instead of the folder
+                pathParts.push({
+                    name: part,
+                    url: currentPath + 'plager.html',
+                    absolutePath: absolutePath + 'plager.html'
+                });
+            } else if (part === 'tjeneste') {
+                // Link to services.html instead of the folder
+                pathParts.push({
+                    name: part,
+                    url: currentPath + 'services.html',
+                    absolutePath: absolutePath + 'services.html'
+                });
+            } else if (part === 'blogg') {
+                // Link to blogg/index.html instead of the folder
+                pathParts.push({
+                    name: part,
+                    url: currentPath + 'blogg/index.html',
+                    absolutePath: absolutePath + 'blogg/index.html'
+                });
+            } else {
+                // Default: link to the folder
+                pathParts.push({
+                    name: part,
+                    url: currentPath,
+                    absolutePath: absolutePath
+                });
+            }
+
             currentPath += part + '/';
             absolutePath += part + '/';
-            pathParts.push({
-                name: part,
-                url: currentPath,
-                absolutePath: absolutePath
-            });
         }
     }
 
@@ -253,7 +310,16 @@ function capitalizeWords(str) {
 }
 
 function getRelativePath() {
-    const path = window.location.pathname;
+    let path = window.location.pathname;
+
+    // Handle local file paths - extract only the website-relative portion
+    if (window.location.protocol === 'file:') {
+        const websiteIndex = path.toLowerCase().indexOf('/website/');
+        if (websiteIndex !== -1) {
+            path = path.substring(websiteIndex + '/website'.length);
+        }
+    }
+
     const depth = (path.split('/').length - 1) - (path.endsWith('/') ? 1 : 0);
 
     if (depth <= 1) return './';

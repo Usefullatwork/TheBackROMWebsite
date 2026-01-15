@@ -1099,7 +1099,7 @@ button[type="submit"]:hover,
             rgba(26, 95, 122, 0.92) 0%,
             rgba(26, 95, 122, 0.75) 45%,
             rgba(26, 95, 122, 0.2) 100%),
-        url('../images/pages/home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat !important;
+        url('../images/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat !important;
 }
 
 .main_home .main__title {
@@ -1120,7 +1120,7 @@ button[type="submit"]:hover,
             rgba(26, 95, 122, 0.92) 0%,
             rgba(26, 95, 122, 0.75) 45%,
             rgba(26, 95, 122, 0.2) 100%),
-        url('../images/pages/home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat !important;
+        url('../images/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat !important;
     min-height: 45vh !important;
     display: flex !important;
     align-items: center !important;
@@ -1141,7 +1141,7 @@ button[type="submit"]:hover,
             rgba(26, 95, 122, 0.92) 0%,
             rgba(26, 95, 122, 0.75) 45%,
             rgba(26, 95, 122, 0.2) 100%),
-        url('../images/pages/home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat !important;
+        url('../images/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat !important;
     min-height: 35vh !important;
     display: flex !important;
     align-items: center !important;
@@ -1155,7 +1155,7 @@ button[type="submit"]:hover,
             rgba(26, 95, 122, 0.92) 0%,
             rgba(26, 95, 122, 0.75) 45%,
             rgba(26, 95, 122, 0.2) 100%),
-        url('../images/pages/home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat !important;
+        url('../images/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat !important;
     min-height: 35vh !important;
     display: flex !important;
     align-items: center !important;
@@ -1189,6 +1189,11 @@ button[type="submit"]:hover,
    8C. PLAGER PAGE GRID (4 columns)
    Target .services-grid__row specifically
    ========================================= */
+
+/* Fix container width when parent is flex */
+.services-grid__container {
+    width: 100% !important;
+}
 
 .services-grid__row {
     display: grid !important;
@@ -1238,25 +1243,48 @@ button[type="submit"]:hover,
     text-align: center !important;
 }
 
-/* Remove hero background from breadcrumb sections (main_pages without main_services) */
-.page__main.main.main_pages:not(.main_services) {
-    background: #f8f9fa !important;
-    min-height: auto !important;
-    padding: 20px 0 !important;
+/* Hero background for all article pages (plager, tjeneste, blog) */
+.page__main.main.main_pages {
+    background:
+        linear-gradient(100deg,
+            rgba(26, 95, 122, 0.92) 0%,
+            rgba(26, 95, 122, 0.75) 100%),
+        url('../images/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat !important;
+    min-height: 25vh !important;
+    padding: 80px 0 40px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
-.page__main.main.main_pages:not(.main_services) .main__title {
-    color: #1A5F7A !important;
-    text-shadow: none !important;
+.page__main.main.main_pages .main__container_pages {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    text-align: center !important;
 }
 
-.page__main.main.main_pages:not(.main_services) .main__text_pages {
-    color: #4a5568 !important;
+.page__main.main.main_pages .main__title {
+    color: #FFFFFF !important;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem) !important;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 12px !important;
 }
 
-.page__main.main.main_pages:not(.main_services) .breadcrumb__link,
-.page__main.main.main_pages:not(.main_services) .breadcrumb__current {
-    color: #1A5F7A !important;
+.page__main.main.main_pages .main__text_pages {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-size: 1.05rem !important;
+    max-width: 700px !important;
+    margin: 0 auto !important;
+}
+
+.page__main.main.main_pages .breadcrumb__link,
+.page__main.main.main_pages .breadcrumb__current {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.page__main.main.main_pages .breadcrumb__separator {
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
 @media (max-width: 1100px) {
@@ -1694,6 +1722,45 @@ section + section {
     padding: 40px 24px !important;
 }
 
+/* Add spacing between content and footer CTA on plager/tjenester pages */
+.page__outro.outro_home {
+    margin-top: 60px !important;
+}
+
+/* Services grid container - add bottom margin for spacing */
+.services-grid__container {
+    width: 100% !important;
+    margin-bottom: 40px !important;
+}
+
+/* =========================================
+   LANGUAGE TOGGLE FIX
+   Ensure button text is visible above slider
+   Use accent color (orange) for the slider
+   ========================================= */
+.language-toggle .language-toggle__button {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.header .language-toggle .language-toggle__slider,
+.language-toggle .language-toggle__slider {
+    z-index: 1 !important;
+    background: #E07A5F !important;
+    background-color: #E07A5F !important;
+}
+
+.header .language-toggle::before,
+.language-toggle::before {
+    background: #E07A5F !important;
+    background-color: #E07A5F !important;
+}
+
+.language-toggle .language-toggle__button--active,
+.language-toggle__button--active {
+    color: #FFFFFF !important;
+}
+
 
 /* =========================================
    MOBILE OVERRIDE - FINAL (max specificity)
@@ -1872,5 +1939,19 @@ section + section {
     #blog-posts-container .klinisk-hjorne__image {
         height: 160px !important;
     }
+}
+
+/* =========================================
+   GLOBAL HERO FIXES
+   ========================================= */
+
+/* Hide the bouncing "?" scroll indicator on all hero sections */
+.main__container::after {
+    display: none !important;
+}
+
+/* Add spacing between hero and plager grid (2x the gap between boxes) */
+.page__services-grid.services-grid {
+    margin-top: 48px !important;
 }
 

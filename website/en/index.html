@@ -17,46 +17,206 @@
   <link rel="apple-touch-icon" href="../images/Final Transparent Logo.png" />
 
   <!-- Preload Critical Resources for LCP -->
-  <link rel="preload" as="image" href="../images/pages/about/meg.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="../images/Om/meg.webp" fetchpriority="high" />
 
   <!-- Critical CSS inlined for faster FCP -->
   <style>
     /* Critical CSS - Above the fold styles */
-    *,*::before,*::after{padding:0;margin:0;border:0;box-sizing:border-box}
-    :root{--color-primary:#1a202c;--color-primary-light:#2d3748;--color-accent:#f59e0b;--color-accent-dark:#d97706;--color-white:#fff;--color-text:#1a202c;--font-family-header:'Oswald',sans-serif;--font-family-body:'Inter',sans-serif;--h1-size:clamp(2.25rem,4vw,3.25rem);--h2-size:clamp(1.75rem,3vw,2.5rem);--body-size:clamp(1rem,0.5vw,1.125rem);--spacing-md:clamp(0.75rem,1vw + 0.25rem,1.25rem);--spacing-lg:clamp(1rem,1.5vw + 0.5rem,2rem);--container-padding:clamp(1rem,3vw,2rem);--header-height:70px}
-    html{font-size:16px;scroll-behavior:smooth}
-    body{font-family:var(--font-family-body);font-size:var(--body-size);color:var(--color-text);margin:0;line-height:1.6}
-    img{max-width:100%;height:auto;display:block}
-    a{text-decoration:none;color:inherit}
-    .wrapper{min-height:100vh;display:flex;flex-direction:column}
-    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--color-white);box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
-    .header__container{max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding);display:flex;align-items:center;justify-content:space-between;height:100%}
-    .header__logo img{height:clamp(3rem,4vw + 1.5rem,4.5rem);width:auto}
-    .page{flex:1}
-    .main_home{min-height:60vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)),url('../images/pages/home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;padding-top:var(--header-height)}
-    .main__container{text-align:center;padding:var(--spacing-lg)}
-    .main__title{font-family:var(--font-family-header);font-size:var(--h1-size);color:var(--color-white);margin-bottom:var(--spacing-lg);text-shadow:0 2px 4px rgba(0,0,0,.3)}
-    .button{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border:2px solid var(--color-primary);background:var(--color-primary);color:var(--color-white);border-radius:8px;font-weight:600;font-size:clamp(1rem,1vw,1.125rem);cursor:pointer;min-height:48px}
-    .button--accent{background:var(--color-accent);border-color:var(--color-accent);color:var(--color-primary)}
-    .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    .skip-link{position:absolute;top:-40px;left:8px;background:var(--color-primary);color:var(--color-white);padding:8px 16px;z-index:10000}
-    .skip-link:focus{top:8px}
-    .icon-menu{display:none}
-    @media(max-width:991.98px){.icon-menu{display:flex;flex-direction:column;gap:5px;width:30px;height:20px;cursor:pointer}.icon-menu span{width:100%;height:3px;background:var(--color-primary);transition:.3s}}
+    *,
+    *::before,
+    *::after {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      box-sizing: border-box
+    }
+
+    :root {
+      --color-primary: #1a202c;
+      --color-primary-light: #2d3748;
+      --color-accent: #f59e0b;
+      --color-accent-dark: #d97706;
+      --color-white: #fff;
+      --color-text: #1a202c;
+      --font-family-header: 'Oswald', sans-serif;
+      --font-family-body: 'Inter', sans-serif;
+      --h1-size: clamp(2.25rem, 4vw, 3.25rem);
+      --h2-size: clamp(1.75rem, 3vw, 2.5rem);
+      --body-size: clamp(1rem, 0.5vw, 1.125rem);
+      --spacing-md: clamp(0.75rem, 1vw + 0.25rem, 1.25rem);
+      --spacing-lg: clamp(1rem, 1.5vw + 0.5rem, 2rem);
+      --container-padding: clamp(1rem, 3vw, 2rem);
+      --header-height: 70px
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: var(--font-family-body);
+      font-size: var(--body-size);
+      color: var(--color-text);
+      margin: 0;
+      line-height: 1.6
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--color-white);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+      height: var(--header-height)
+    }
+
+    .header__container {
+      max-width: 87.5rem;
+      margin: 0 auto;
+      padding: 0 var(--container-padding);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%
+    }
+
+    .header__logo img {
+      height: clamp(3rem, 4vw + 1.5rem, 4.5rem);
+      width: auto
+    }
+
+    .page {
+      flex: 1
+    }
+
+    .main_home {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url('../images/Home/kiropraktor-ryggbehandling-hero.webp') center/cover no-repeat;
+      padding-top: var(--header-height)
+    }
+
+    .main__container {
+      text-align: center;
+      padding: var(--spacing-lg)
+    }
+
+    .main__title {
+      font-family: var(--font-family-header);
+      font-size: var(--h1-size);
+      color: var(--color-white);
+      margin-bottom: var(--spacing-lg);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, .3)
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border: 2px solid var(--color-primary);
+      background: var(--color-primary);
+      color: var(--color-white);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: clamp(1rem, 1vw, 1.125rem);
+      cursor: pointer;
+      min-height: 48px
+    }
+
+    .button--accent {
+      background: var(--color-accent);
+      border-color: var(--color-accent);
+      color: var(--color-primary)
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 8px;
+      background: var(--color-primary);
+      color: var(--color-white);
+      padding: 8px 16px;
+      z-index: 10000
+    }
+
+    .skip-link:focus {
+      top: 8px
+    }
+
+    .icon-menu {
+      display: none
+    }
+
+    @media(max-width:991.98px) {
+      .icon-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 30px;
+        height: 20px;
+        cursor: pointer
+      }
+
+      .icon-menu span {
+        width: 100%;
+        height: 3px;
+        background: var(--color-primary);
+        transition: .3s
+      }
+    }
   </style>
 
   <!-- Non-blocking main CSS -->
   <link rel="preload" as="style" href="../css/main.min.css?v=20260101_v5" />
   <link rel="stylesheet" href="../css/main.min.css?v=20260101_v5" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/main.min.css?v=20260101_v5"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="../css/main.min.css?v=20260101_v5">
+  </noscript>
   <link rel="stylesheet" href="../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-design.css?v=1"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="../css/index-design.css?v=1">
+  </noscript>
   <link rel="stylesheet" href="../css/index-2026-fixes.css">
   <link rel="icon" type="image/png" href="../images/Final Transparent Logo.png" />
-  <title>Mads Finstad Chiropractor | Majorstua Oslo - Experienced chiropractor Gardeveien 17</title>
+  <title>Mads Finstad Chiropractor | Chiro Oslo</title>
 
   <meta name="description"
-    content="Mads Finstad Chiropractor at Majorstua Oslo. Experienced chiropractor for back pain, neck pain, dizziness and shoulder problems. Book appointment today. Gardeveien 17." />
+    content="Mads Finstad Chiropractor at Majorstua Oslo. Experienced chiropractor for back pain, neck pain, dizziness and shoulder problems. Book appointment today." />
   <meta name="keywords"
     content="Mads Finstad chiropractor, chiropractor Oslo, chiropractor Majorstua, back pain treatment, neck pain, dizziness treatment, dry needling, shockwave therapy, chiropractic Oslo" />
   <meta name="author" content="Mads Finstad" />
@@ -68,7 +228,7 @@
     content="Mads Finstad Chiropractor | Majorstua Oslo - Experienced chiropractor Gardeveien 17" />
   <meta property="og:image" content="https://thebackrom.com/images/Home/kiropraktor-ryggbehandling-hero.jpeg" />
   <meta property="og:url" content="https://thebackrom.com/en/index.html" />
-  <meta property="og:site_name" content="TheBackROM - Mads Finstad Chiropractor" />
+  <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Chiropractor" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:description"
     content="Mads Finstad Chiropractor at Majorstua Oslo. Experienced chiropractor for back pain, neck pain, dizziness and shoulder problems. Book appointment today. Gardeveien 17." />
@@ -86,11 +246,11 @@
   {
     "@context": "https://schema.org",
     "@type": "ChiropracticOffice",
-    "name": "TheBackROM - Mads Finstad Chiropractor",
+    "name": "Klinikk for alle - Mads Finstad Chiropractor",
     "alternateName": "Clinic for All Majorstua",
     "description": "Experienced chiropractor at Majorstua Oslo. Treatment of back pain, neck pain, dizziness, shoulder problems and headaches. Specialist in dry needling and manual therapy.",
-    "image": "https://thebackrom.com/images/pages/home/ryggmassasje-klinikk.png",
-    "logo": "https://thebackrom.com/images/pages/home/ryggmassasje-klinikk.png",
+    "image": "https://thebackrom.com/images/Home/ryggmassasje-klinikk.png",
+    "logo": "https://thebackrom.com/images/Home/ryggmassasje-klinikk.png",
     "url": "https://thebackrom.com/index.html",
     "telephone": "+4793043062",
     "email": "Mads.finstad@hotmail.com",
@@ -207,14 +367,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Modular CSS Loading -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
 
   <link rel="preload" as="style" href="../css/font-awesome-minimal.css">
   <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="../css/font-awesome-minimal.css">
+  </noscript>
 </head>
 
 <body id="top">
@@ -224,7 +392,8 @@
     <header class="header">
       <div class="header__container">
         <a href="index.html" class="header__logo logo"><img src="../images/logo-header.webp"
-            alt="TheBackROM Chiropractor Mads Finstad" width="300" height="229" loading="lazy" decoding="async" /></a>
+            alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" loading="lazy"
+            decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Language selection">
             <button class="language-toggle__button" data-lang="no" aria-label="Switch to Norwegian"
@@ -249,7 +418,7 @@
               <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
               <li class="menu__item"><a href="blog/index.html" class="menu__link">Blog</a></li>
               <li class="menu__item">
-                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
                   class="actions-header__button">Book Appointment</a>
               </li>
             </ul>
@@ -269,460 +438,479 @@
         <div class="main__container">
           <h1 class="visually-hidden">Chiropractor at Majorstua | Mads Finstad � Clinic for All Oslo</h1>
           <p class="main__title">Back pain? Dizzy? Stiff neck?</p>
-          <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
-            class="main__button button button--accent" aria-label="Book appointment with chiropractor">Book appointment</a>
+          <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
+            class="main__button button button--accent" aria-label="Book appointment with chiropractor">Book
+            appointment</a>
         </div>
       </section>
 
-  <section class="title-section">
-    <div class="container">
-      <div class="title-section__heading">
-        <h2 class="title-section__name">Mads Finstad</h2>
-        <p class="title-section__subtitle">Chiropractor | Clinic for All Majorstua</p>
-      </div>
-
-      <div class="title-section__content">
-        <div class="title-section__text">
-          <p class="text--primary-highlight">
-            Back pain, acute dizziness, or a troublesome neck? I help you find out why. If we find the cause, we
-            find the solution.
-          </p>
-
-          <div class="bio-teaser">
-
-            <!-- Short, precise text -->
-            <p class="bio-teaser__text">
-              Hi, I'm Mads Finstad. Many come to me when they feel they've "tried everything".
-              As a chiropractor with further education in dizziness and rehabilitation,
-              I dig deeper to understand <em>why</em> you are in pain � not just where it hurts.
+      <section class="title-section">
+        <div class="mads-section-container">
+          <div class="mads-text-card">
+            <h2 class="title-section__name">Mads Finstad</h2>
+            <p class="title-section__subtitle">Chiropractor | Clinic for All Majorstua</p>
+            <p class="text--primary-highlight">
+              Back pain, acute dizziness, or a troublesome neck? I help you find out why. If we find the cause, we
+              find the solution.
             </p>
 
-            <!-- Button leading to the long text on the "About me" page -->
-            <a href="about.html" class="button button--accent">Read more about my background &rarr;</a>
-          </div>
-        </div>
-
-        <div class="title-section__image">
-          <img src="../images/pages/about/meg.webp"
-            alt="Mads Finstad chiropractor in white shirt with Clinic for All logo, Majorstua Oslo" width="768"
-            height="1019" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page__services services">
-    <div class="services__container">
-      <div class="services__row">
-        <a href="emergency.html" class="item-services">
-          <div class="item-services__content">
-            <h3 class="item-services__title">Emergency weekends</h3>
-            <div class="item-services__text">
-              Do you have acute pain on weekends? Options for emergency treatment when you need it most.
-            </div>
-          </div>
-          <div class="item-services__image">
-            <img src="../images/plager nakkesmerter/nakkesmerte-optimized.webp"
-              alt="Man with acute neck pain holding his neck, needs emergency chiropractic treatment" width="768"
-              height="511" loading="lazy" decoding="async">
-          </div>
-        </a>
-        <a href="conditions/dizziness.html" class="item-services">
-          <div class="item-services__content">
-            <h3 class="item-services__title">Acute dizziness treatment weekend</h3>
-            <div class="item-services__text">
-              Acute help for dizziness on weekends. We have the equipment and expertise to help you.
-            </div>
-          </div>
-          <div class="item-services__image">
-            <img src="../images/Tjenester Svimmelhet/svimmelhet-optimized.webp"
-              alt="Woman experiencing dizziness and vertigo holding her head, surroundings spinning" width="800"
-              height="417" loading="lazy" decoding="async">
-          </div>
-        </a>
-        <a href="conditions/dizziness.html" class="item-services">
-          <div class="item-services__content">
-            <h3 class="item-services__title">Dizziness Treatment</h3>
-            <div class="item-services__text">
-              Specialized treatment for dizziness, including BPPV and neck-related dizziness.
-            </div>
-          </div>
-          <div class="item-services__image">
-            <img src="../images/pages/home/trv-optimized.webp"
-              alt="TRV rotating chair for diagnosis and treatment of dizziness and BPPV vertigo" width="739"
-              height="842" loading="lazy" decoding="async">
-          </div>
-        </a>
-        <a href="new-patients.html" class="item-services">
-          <div class="item-services__content">
-            <h3 class="item-services__title">First time at a chiropractor?</h3>
-            <div class="item-services__text">
-              Are you unsure about what happens the first time you visit a chiropractor?
-            </div>
-          </div>
-          <div class="item-services__image">
-            <img src="../images/pages/home/første-time-optimized.webp"
-              alt="Chiropractor examining patient's neck during first consultation" width="800" height="1200"
-              loading="lazy" decoding="async">
-          </div>
-        </a>
-        <a href="services.html" class="item-services">
-          <div class="item-services__content">
-            <h3 class="item-services__title">Chiropractic Treatment</h3>
-            <div class="item-services__text">
-              Learn more about how chiropractic treatment can help you with your complaints and pain.
-            </div>
-          </div>
-          <div class="item-services__image">
-            <img src="../images/Tjenester Kiroprakikk/behandling-optimized.webp"
-              alt="Chiropractor performing manual back treatment on female patient" width="800" height="1198"
-              loading="lazy" decoding="async">
-          </div>
-        </a>
-      </div>
-      <div class="services__cta">
-        <a href="services.html" class="item-services__button button button--accent">See all Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="page__problems problems">
-    <div class="problems__container">
-      <h2 class="problems__title">Problems I often see in the clinic, and treat:</h2>
-      <div class="problems__content">
-        <div class="problems__item">
-          <h3 class="problems__item-title">Back and neck pain</h3>
-          <ul class="problem-list">
-            <li>Acute lumbago / kink</li>
-            <li>Stiff neck / torticollis</li>
-            <li>Sciatica and radiation</li>
-            <li>Chronic pain</li>
-          </ul>
-        </div>
-        <div class="problems__item">
-          <h3 class="problems__item-title">Dizziness</h3>
-          <ul class="problem-list">
-            <li>Crystal sickness (BPPV)</li>
-            <li>Virus on the balance nerve</li>
-            <li>Neck dizziness</li>
-            <li>Unexplained unsteadiness</li>
-          </ul>
-        </div>
-        <div class="problems__item">
-          <h3 class="problems__item-title">Jaw pain</h3>
-          <ul class="problem-list">
-            <li>Clicking and locking</li>
-            <li>Pain when chewing</li>
-            <li>Teeth grinding</li>
-            <li>Jaw-related headache</li>
-          </ul>
-        </div>
-        <div class="problems__item">
-          <h3 class="problems__item-title">Headache and migraine</h3>
-          <ul class="problem-list">
-            <li>Tension headache</li>
-            <li>Migraine</li>
-            <li>Neck headache</li>
-            <li>Jaw headache</li>
-          </ul>
-        </div>
-        <div class="problems__item">
-          <h3 class="problems__item-title">Lower back pain</h3>
-          <ul class="problem-list">
-            <li>Lumbago / witch's shot</li>
-            <li>Prolapse</li>
-            <li>Pelvic girdle pain</li>
-            <li>Wear and tear / osteoarthritis</li>
-          </ul>
-        </div>
-        <div class="problems__item">
-          <h3 class="problems__item-title">Pain in shoulder, knee, hip and elbow</h3>
-          <ul class="problem-list">
-            <li>Tennis elbow / golf elbow</li>
-            <li>Jumper's knee / runner's knee</li>
-            <li>Bursitis</li>
-            <li>Frozen shoulder</li>
-          </ul>
-        </div>
-      </div>
-      <div class="problems__cta">
-        <a href="conditions.html" class="problems__button button button--accent">See all conditions</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="page__klinisk-hjorne">
-    <div class="klinisk-hjorne__container">
-      <h2 class="klinisk-hjorne__title">Blog</h2>
-      <p class="klinisk-hjorne__description">
-        Explore our professional articles and gain insight into various health topics, treatment methods, and
-        evidence-based advice.
-      </p>
-      <div class="blog-scroll-wrapper">
-        <button class="blog-scroll-btn blog-scroll-prev" aria-label="Scroll to previous blog post">
-          <i class="fas fa-chevron-left" aria-hidden="true"></i>
-        </button>
-        <div class="klinisk-hjorne__scroll" id="blog-scroll-container">
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="../images/plager korsryggsmerter/korsrygg-optimized.webp"
-                alt="Medical illustration of sciatica with disc herniation and nerve compression in lower back"
-                width="800" height="974" loading="lazy" decoding="async">
-            </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Understanding your back pain</h3>
-              <p class="klinisk-hjorne__text">
-                Learn more about the causes of back pain and how you can manage them in everyday life.
+            <div class="bio-teaser">
+              <p class="bio-teaser__text">
+                Hi, I'm Mads Finstad. Many come to me when they feel they've "tried everything".
+                As a chiropractor with further education in dizziness and rehabilitation,
+                I dig deeper to understand <em>why</em> you are in pain – not just where it hurts.
               </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Back</span>
-                  <span class="klinisk-hjorne__date">Jan 15, 2026</span>
-                </div>
-                <a href="blog/index.html" class="klinisk-hjorne__link">Read more ?</a>
-              </div>
+              <a href="about.html" class="button button--accent">Read more about my background &rarr;</a>
             </div>
-          </article>
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
+          </div>
+
+          <div class="mads-image-container">
+            <img src="../images/Om/meg.webp" srcset="../images/Om/meg-480w.webp 480w, ../images/Om/meg.webp 768w"
+              sizes="(max-width: 480px) 480px, 768px"
+              alt="Mads Finstad chiropractor in white shirt with TheBackROM logo, Majorstua Oslo" width="768"
+              height="1019" />
+          </div>
+        </div>
+      </section>
+
+      <section class="page__services services">
+        <!-- The Grid Container -->
+        <div class="services-grid">
+
+          <!-- CARD 1 -->
+          <a href="emergency-treatment.html" class="service-card">
+            <!-- 1. Image at the TOP -->
+            <div class="service-image-header">
               <img src="../images/plager nakkesmerter/nakkesmerte-optimized.webp"
-                alt="Man with neck pain massaging stiff neck from behind" width="800" height="450" loading="lazy"
-                decoding="async">
+                srcset="../images/plager%20nakkesmerter/nakkesmerte-optimized-480w.webp 480w, ../images/plager%20nakkesmerter/nakkesmerte-optimized-768w.webp 768w, ../images/plager%20nakkesmerter/nakkesmerte-optimized.webp 800w"
+                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 800px"
+                alt="Man with acute neck pain holding his neck, needs emergency chiropractic treatment" width="768"
+                height="511" loading="lazy" decoding="async">
             </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Neck pain and headaches</h3>
-              <p class="klinisk-hjorne__text">
-                Explore the connection between neck pain and headaches, and find effective treatment methods.
-              </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Neck</span>
-                  <span class="klinisk-hjorne__date">Jan 22, 2026</span>
-                </div>
-                <a href="blog/index.html" class="klinisk-hjorne__link">Read more ?</a>
-              </div>
+            <!-- 2. Text Content Below -->
+            <div class="item-services__content">
+              <h3>Emergency Treatment Weekend</h3>
+              <p>Do you have acute pain on weekends? Options for emergency treatment when you need it most.</p>
             </div>
-          </article>
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="../images/Tjenester Rehabilitering/aktiv-optimized.webp"
-                alt="Active man climbing indoor climbing wall as part of rehabilitation and training" width="800"
-                height="1200" loading="lazy" decoding="async">
+          </a>
+
+          <!-- CARD 2 -->
+          <a href="emergency-dizziness.html" class="service-card">
+            <div class="service-image-header">
+              <img src="../images/Tjenester Svimmelhet/svimmelhet-optimized.webp"
+                srcset="../images/Tjenester%20Svimmelhet/svimmelhet-optimized-480w.webp 480w, ../images/Tjenester%20Svimmelhet/svimmelhet-optimized-768w.webp 768w, ../images/Tjenester%20Svimmelhet/svimmelhet-optimized.webp 800w"
+                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 800px"
+                alt="Woman experiencing dizziness and vertigo holding her head, surroundings spinning" width="800"
+                height="417" loading="lazy" decoding="async">
             </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Proper exercise form</h3>
-              <p class="klinisk-hjorne__text">
-                Find the best exercise form for your body and your goals.
-              </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Exercise</span>
-                  <span class="klinisk-hjorne__date">Feb 5, 2026</span>
-                </div>
-                <a href="blog/index.html" class="klinisk-hjorne__link">Read more ?</a>
-              </div>
+            <div class="item-services__content">
+              <h3>Acute Dizziness Weekend</h3>
+              <p>Acute help for dizziness on weekends. I have the equipment and expertise to help you.</p>
             </div>
-          </article>
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="../images/plager svimmelhet/bppv.gif"
-                alt="Animation showing BPPV vertigo and loose crystals in the inner ear" width="442" height="356"
+          </a>
+
+          <!-- CARD 3 -->
+          <a href="services/dizziness.html" class="service-card">
+            <div class="service-image-header">
+              <img src="../images/Home/trv-optimized.webp"
+                srcset="../images/Home/trv-optimized-480w.webp 480w, ../images/Home/trv-optimized.webp 739w"
+                sizes="(max-width: 480px) 480px, 739px"
+                alt="TRV rotating chair for diagnosis and treatment of dizziness and BPPV vertigo" width="739"
+                height="842" loading="lazy" decoding="async">
+            </div>
+            <div class="item-services__content">
+              <h3>Dizziness Treatment</h3>
+              <p>Specialized treatment for dizziness, including BPPV and neck-related dizziness.</p>
+            </div>
+          </a>
+
+          <!-- CARD 4 -->
+          <a href="services/chiropractic.html" class="service-card">
+            <div class="service-image-header">
+              <img src="../images/Tjenester Kiroprakikk/behandling-optimized.webp"
+                srcset="../images/Tjenester%20Kiroprakikk/behandling-optimized-480w.webp 480w, ../images/Tjenester%20Kiroprakikk/behandling-optimized-768w.webp 768w, ../images/Tjenester%20Kiroprakikk/behandling-optimized.webp 800w"
+                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 800px"
+                alt="Chiropractor performing manual back treatment on female patient" width="800" height="1198"
                 loading="lazy" decoding="async">
             </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Managing dizziness</h3>
-              <p class="klinisk-hjorne__text">
-                Are you experiencing dizziness? Learn about various causes and treatment options.
-              </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Health</span>
-                  <span class="klinisk-hjorne__date">Feb 12, 2026</span>
+            <div class="item-services__content">
+              <h3>Chiropractic Treatment</h3>
+              <p>Learn more about how chiropractic treatment can help you with your complaints and pain.</p>
+            </div>
+          </a>
+
+        </div>
+        <div class="services__cta">
+          <a href="services.html" class="item-services__button button button--accent">See all Services</a>
+        </div>
+      </section>
+
+      <section class="page__problems problems">
+        <div class="problems__container">
+          <h2 class="problems__title">Problems I often see in the clinic, and treat:</h2>
+          <div class="problems-grid">
+            <!-- Card 1: Back and neck pain -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="conditions/neck-pain.html">Back and neck pain</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="conditions/lower-back/acute-back-pain.html">Acute lumbago / kink</a></li>
+                <li><a href="conditions/neck/torticollis.html">Stiff neck / torticollis</a></li>
+                <li><a href="conditions/lower-back/sciatica.html">Sciatica and radiation</a></li>
+                <li><a href="conditions/lower-back/chronic-pain.html">Chronic pain</a></li>
+              </ul>
+              <a href="conditions/neck-pain.html" class="card-footer-link">Read more →</a>
+            </div>
+
+            <!-- Card 2: Dizziness -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="conditions/dizziness.html">Dizziness</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="conditions/dizziness/bppv.html">Crystal sickness (BPPV)</a></li>
+                <li><a href="conditions/dizziness/vestibular-neuritis.html">Virus on the balance nerve</a></li>
+                <li><a href="conditions/dizziness/cervicogenic-dizziness.html">Neck dizziness</a></li>
+                <li><a href="conditions/dizziness/pppd.html">Unexplained unsteadiness</a></li>
+              </ul>
+              <a href="conditions/dizziness.html" class="card-footer-link">Read more →</a>
+            </div>
+
+            <!-- Card 3: Jaw pain -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="conditions/jaw-pain.html">Jaw pain</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="conditions/jaw/clicking-locking.html">Clicking and locking</a></li>
+                <li><a href="conditions/jaw/chewing-pain.html">Pain when chewing</a></li>
+                <li><a href="conditions/jaw/teeth-grinding.html">Teeth grinding</a></li>
+                <li><a href="conditions/jaw/jaw-headache.html">Jaw-related headache</a></li>
+              </ul>
+              <a href="conditions/jaw-pain.html" class="card-footer-link">Read more →</a>
+            </div>
+
+            <!-- Card 4: Headache and migraine -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="conditions/headache.html">Headache and migraine</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="conditions/headache/tension-headache.html">Tension headache</a></li>
+                <li><a href="conditions/headache/migraine.html">Migraine</a></li>
+                <li><a href="conditions/headache/cervicogenic-headache.html">Neck headache</a></li>
+                <li><a href="conditions/jaw/jaw-headache.html">Jaw headache</a></li>
+              </ul>
+              <a href="conditions/headache.html" class="card-footer-link">Read more →</a>
+            </div>
+
+            <!-- Card 5: Lower back pain -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="conditions/lower-back-pain.html">Lower back pain</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="conditions/lower-back/acute-back-pain.html">Lumbago / witch's shot</a></li>
+                <li><a href="conditions/lower-back/disc-herniation.html">Prolapse</a></li>
+                <li><a href="conditions/hip/pelvic-girdle-pain.html">Pelvic girdle pain</a></li>
+                <li><a href="conditions/lower-back/spinal-stenosis.html">Wear and tear / osteoarthritis</a></li>
+              </ul>
+              <a href="conditions/lower-back-pain.html" class="card-footer-link">Read more →</a>
+            </div>
+
+            <!-- Card 6: Multi-topic Hub -->
+            <div class="problem-card">
+              <h3 class="problems__item-title">
+                <a href="conditions.html">Muscle and joints</a>
+              </h3>
+              <ul class="problem-list">
+                <li><a href="conditions/shoulder-pain.html">Shoulder pain</a></li>
+                <li><a href="conditions/arm-pain.html">Elbow and arm</a></li>
+                <li><a href="conditions/hip-pain.html">Hip and pelvis</a></li>
+                <li><a href="conditions/knee-pain.html">Knee pain</a></li>
+                <li><a href="conditions/foot-pain.html">Foot pain</a></li>
+              </ul>
+              <a href="conditions.html" class="card-footer-link">See all conditions →</a>
+            </div>
+          </div>
+          <div class="problems__cta">
+            <a href="conditions.html" class="problems__button button button--accent">See all conditions</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__klinisk-hjørne">
+        <div class="klinisk-hjorne__container">
+          <h2 class="klinisk-hjorne__title">Blog</h2>
+          <p class="klinisk-hjorne__description">
+            Explore our professional articles and gain insight into various health topics, treatment methods, and
+            evidence-based advice.
+          </p>
+          <div class="blog-scroll-wrapper">
+            <button class="blog-scroll-btn blog-scroll-prev" aria-label="Scroll to previous blog post">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="klinisk-hjorne__scroll" id="blog-scroll-container">
+              <article class="klinisk-hjorne__item">
+                <div class="klinisk-hjorne__image">
+                  <img src="../images/plager korsryggsmerter/korsrygg-optimized.webp"
+                    alt="Medical illustration of sciatica with disc herniation and nerve compression in lower back"
+                    width="800" height="974" loading="lazy" decoding="async">
                 </div>
-                <a href="blog/index.html" class="klinisk-hjorne__link">Read more ?</a>
-              </div>
-            </div>
-          </article>
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="../images/plager kjevesmerter/kjeve-optimized.webp"
-                alt="Anatomical model of jaw and teeth showing TMJ joint and TMD" width="800" height="533"
-                loading="lazy" decoding="async">
-            </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Jaw pain and TMD</h3>
-              <p class="klinisk-hjorne__text">
-                Management of temporomandibular joint dysfunction and related complaints.
-              </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Jaw</span>
-                  <span class="klinisk-hjorne__date">Feb 20, 2026</span>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Understanding your back pain</h3>
+                  <p class="klinisk-hjorne__text">
+                    Learn more about the causes of back pain and how you can manage them in everyday life.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Back</span>
+                      <span class="klinisk-hjorne__date">Jan 15, 2026</span>
+                    </div>
+                    <a href="blog/index.html" class="klinisk-hjorne__link">Read more ?</a>
+                  </div>
                 </div>
-                <a href="blog/index.html" class="klinisk-hjorne__link">Read more ?</a>
-              </div>
-            </div>
-          </article>
-          <article class="klinisk-hjorne__item">
-            <div class="klinisk-hjorne__image">
-              <img src="../images/plager hodepine-og-migrene/hodepine-optimized.webp"
-                alt="Woman with headache and mental exhaustion resting head on books" width="800" height="533"
-                loading="lazy" decoding="async">
-            </div>
-            <div class="klinisk-hjorne__content">
-              <h3 class="klinisk-hjorne__item-title">Headache and migraine</h3>
-              <p class="klinisk-hjorne__text">
-                Prevention and treatment of various types of headaches.
-              </p>
-              <div class="klinisk-hjorne__meta">
-                <div class="klinisk-hjorne__tags">
-                  <span class="klinisk-hjorne__category">Headache</span>
-                  <span class="klinisk-hjorne__date">Mar 1, 2026</span>
+              </article>
+              <article class="klinisk-hjorne__item">
+                <div class="klinisk-hjorne__image">
+                  <img src="../images/plager nakkesmerter/nakkesmerte-optimized.webp"
+                    alt="Man with neck pain massaging stiff neck from behind" width="800" height="450" loading="lazy"
+                    decoding="async">
                 </div>
-                <a href="blog/index.html" class="klinisk-hjorne__link">Read more ?</a>
-              </div>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Neck pain and headaches</h3>
+                  <p class="klinisk-hjorne__text">
+                    Explore the connection between neck pain and headaches, and find effective treatment methods.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Neck</span>
+                      <span class="klinisk-hjorne__date">Jan 22, 2026</span>
+                    </div>
+                    <a href="blog/index.html" class="klinisk-hjorne__link">Read more ?</a>
+                  </div>
+                </div>
+              </article>
+              <article class="klinisk-hjorne__item">
+                <div class="klinisk-hjorne__image">
+                  <img src="../images/Tjenester Rehabilitering/aktiv-optimized.webp"
+                    alt="Active man climbing indoor climbing wall as part of rehabilitation and training" width="800"
+                    height="1200" loading="lazy" decoding="async">
+                </div>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Proper exercise form</h3>
+                  <p class="klinisk-hjorne__text">
+                    Find the best exercise form for your body and your goals.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Exercise</span>
+                      <span class="klinisk-hjorne__date">Feb 5, 2026</span>
+                    </div>
+                    <a href="blog/index.html" class="klinisk-hjorne__link">Read more &rarr;</a>
+                  </div>
+                </div>
+              </article>
+              <article class="klinisk-hjorne__item">
+                <div class="klinisk-hjorne__image">
+                  <img src="../images/plager svimmelhet/bppv.gif"
+                    alt="Animation showing BPPV vertigo and loose crystals in the inner ear" width="442" height="356"
+                    loading="lazy" decoding="async">
+                </div>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Managing dizziness</h3>
+                  <p class="klinisk-hjorne__text">
+                    Are you experiencing dizziness? Learn about various causes and treatment options.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Health</span>
+                      <span class="klinisk-hjorne__date">Feb 12, 2026</span>
+                    </div>
+                    <a href="blog/index.html" class="klinisk-hjorne__link">Read more &rarr;</a>
+                  </div>
+                </div>
+              </article>
+              <article class="klinisk-hjorne__item">
+                <div class="klinisk-hjorne__image">
+                  <img src="../images/plager kjevesmerter/kjeve-optimized.webp"
+                    alt="Anatomical model of jaw and teeth showing TMJ joint and TMD" width="800" height="533"
+                    loading="lazy" decoding="async">
+                </div>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Jaw pain and TMD</h3>
+                  <p class="klinisk-hjorne__text">
+                    Management of temporomandibular joint dysfunction and related complaints.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Jaw</span>
+                      <span class="klinisk-hjorne__date">Feb 20, 2026</span>
+                    </div>
+                    <a href="blog/index.html" class="klinisk-hjorne__link">Read more &rarr;</a>
+                  </div>
+                </div>
+              </article>
+              <article class="klinisk-hjorne__item">
+                <div class="klinisk-hjorne__image">
+                  <img src="../images/plager hodepine-og-migrene/hodepine-optimized.webp"
+                    alt="Woman with headache and mental exhaustion resting head on books" width="800" height="533"
+                    loading="lazy" decoding="async">
+                </div>
+                <div class="klinisk-hjorne__content">
+                  <h3 class="klinisk-hjorne__item-title">Headache and migraine</h3>
+                  <p class="klinisk-hjorne__text">
+                    Prevention and treatment of various types of headaches.
+                  </p>
+                  <div class="klinisk-hjorne__meta">
+                    <div class="klinisk-hjorne__tags">
+                      <span class="klinisk-hjorne__category">Headache</span>
+                      <span class="klinisk-hjorne__date">Mar 1, 2026</span>
+                    </div>
+                    <a href="blog/index.html" class="klinisk-hjorne__link">Read more &rarr;</a>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
+            <button class="blog-scroll-btn blog-scroll-next" aria-label="Scroll to next blog post">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="klinisk-hjorne__footer">
+            <a href="blog/index.html" class="klinisk-hjorne__more">See all articles &rarr;</a>
+          </div>
         </div>
-        <button class="blog-scroll-btn blog-scroll-next" aria-label="Scroll to next blog post">
-          <i class="fas fa-chevron-right" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div class="klinisk-hjorne__footer">
-        <a href="blog/index.html" class="klinisk-hjorne__more">See all articles ?</a>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="trust-section">
+      <section class="trust-section">
 
-    <!-- Heading -->
-    <h2 class="trust-section__title">Your Safety � My Competence</h2>
+        <!-- Heading -->
+        <h2 class="trust-section__title">Your Safety ◆ My Competence</h2>
 
-    <p class="trust-section__description">
-      I am committed to professional updates to provide you with the best possible treatment.
-      As a patient with me, you meet a publicly authorized chiropractor with solid education and further education
-      in clinical neurology and movement.
-      <br><br>
-      <a href="about.html" class="trust-section__link">
-        Read more about my education and CV &rarr;
-      </a>
-    </p>
-
-    <!-- Logo-grid with 4 elements -->
-    <div class="logo-grid">
-
-      <!-- 1. Helsedirektoratet -->
-      <div class="trust-item">
-        <img src="../images/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/Hdir-symbol.png"
-          alt="Authorized Healthcare Personnel - Norwegian Health Authority" loading="lazy" decoding="async">
-      </div>
-
-      <!-- 2. Carrick Institute -->
-      <div class="trust-item">
-        <img
-          src="../images/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/CI-Logo-No-BG-6.png"
-          alt="Carrick Institute logo - Clinical neurology certification" loading="lazy" decoding="async">
-      </div>
-
-      <!-- 3. Motion Palpation Institute -->
-      <div class="trust-item">
-        <img src="../images/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/MPI logo.png"
-          alt="Motion Palpation Institute logo" loading="lazy" decoding="async">
-      </div>
-
-      <!-- 4. AECC University College -->
-      <div class="trust-item">
-        <img
-          src="../images/des 2025 genererte bilder og nye stock filer/XX - Logo og identitet/aecc colored-logo.png"
-          alt="AECC University College logo - Chiropractic education" loading="lazy" decoding="async">
-      </div>
-
-    </div>
-  </section>
-
-  <section class="page__outro outro outro_home outro--overlay outro--home-bg">
-    <div class="outro__container">
-      <h2 class="outro__title outro__title--white">Take the first step towards better health</h2>
-      <div class="outro__text outro__text--white">
-        Don't wait to take care of your health. Book an appointment today and let us help you reach your health
-        goals.
-      </div>
-      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
-        class="outro__button button button--accent" aria-label="Book appointment now">Book appointment</a>
-    </div>
-  </section>
-
-
-
-
-
-
-
-  </main>
-  <footer class="footer">
-    <div class="footer__container">
-      <!-- Left Column -->
-      <div class="footer__left">
-        <div class="footer__social">
-          <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
-            aria-label="Visit us on Facebook">
-            <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Visit TheBackROM on Facebook"
-              width="512" height="512" loading="lazy" decoding="async" />
+        <p class="trust-section__description">
+          I am committed to professional updates to provide you with the best possible treatment.
+          As a patient with me, you meet a publicly authorized chiropractor with solid education and further education
+          in clinical neurology and movement.
+          <br><br>
+          <a href="about.html" class="trust-section__link">
+            Read more about my education and CV &rarr;
           </a>
-          <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
-            aria-label="Follow us on Instagram">
-            <img src="../images/Media iconer/instagramlogo.png" alt="Follow @chiro_mads on Instagram" width="512"
-              height="512" loading="lazy" decoding="async" />
-          </a>
-          <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
-            aria-label="Watch our videos on YouTube">
-            <img src="../images/Media iconer/youtube_icon.png" alt="Subscribe to TheBackROM YouTube channel"
-              width="512" height="512" loading="lazy" decoding="async" />
-          </a>
-          <a href="contact.html" class="footer__social-link" aria-label="Send us an email">
-            <img src="../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Email TheBackROM" loading="lazy"
-              decoding="async" />
-          </a>
+        </p>
+
+        <!-- Logo-grid with 4 elements -->
+        <div class="logo-grid">
+
+          <!-- 1. Helsedirektoratet -->
+          <div class="trust-item">
+            <img src="../images/Logo og identitet/Hdir-symbol.png"
+              alt="Authorized Healthcare Personnel - Norwegian Health Authority" loading="lazy" decoding="async">
+          </div>
+
+          <!-- 2. Carrick Institute -->
+          <div class="trust-item">
+            <img src="../images/Logo og identitet/CI-Logo-No-BG-6.png"
+              alt="Carrick Institute logo - Clinical neurology certification" loading="lazy" decoding="async">
+          </div>
+
+          <!-- 3. Motion Palpation Institute -->
+          <div class="trust-item">
+            <img src="../images/Logo og identitet/MPI logo.png"
+              alt="Motion Palpation Institute logo" loading="lazy" decoding="async">
+          </div>
+
+          <!-- 4. AECC University College -->
+          <div class="trust-item">
+            <img
+              src="../images/Logo og identitet/aecc colored-logo.png"
+              alt="AECC University College logo - Chiropractic education" loading="lazy" decoding="async">
+          </div>
+
+        </div>
+      </section>
+
+      <section class="page__outro outro outro_home outro--overlay outro--home-bg">
+        <div class="outro__container">
+          <h2 class="outro__title outro__title--white">Take the first step towards better health</h2>
+          <div class="outro__text outro__text--white">
+            Don't wait to take care of your health. Book an appointment today and let us help you reach your health
+            goals.
+          </div>
+          <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
+            class="outro__button button button--accent" aria-label="Book appointment now">Book appointment</a>
+        </div>
+      </section>
+
+
+
+
+
+
+
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Left Column -->
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Visit us on Facebook">
+              <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Visit TheBackROM on Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Follow us on Instagram">
+              <img src="../images/Media iconer/instagramlogo.png" alt="Follow @chiro_mads on Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Watch our videos on YouTube">
+              <img src="../images/Media iconer/youtube_icon.png" alt="Subscribe to TheBackROM YouTube channel"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="contact.html" class="footer__social-link" aria-label="Send us an email">
+              <img src="../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Email TheBackROM" loading="lazy"
+                decoding="async" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Column -->
+        <div class="footer__center">
+          <div class="footer__logo">
+            <img src="../images/logo-footer.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="text--muted-small">Back to start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Go to top of page">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Up
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 08:00 - 19:00</p>
+            <p>Saturday: 10:00 - 16:00</p>
+            <p>Sunday: Closed</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Contact Information</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Phone: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>Email: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
         </div>
       </div>
 
-      <!-- Center Column -->
-      <div class="footer__center">
-        <div class="footer__logo">
-          <img src="../images/logo-footer.webp" alt="TheBackROM Chiropractor Majorstua Oslo logo" width="300"
-            height="229" loading="lazy" decoding="async" />
-        </div>
-        <div class="back-to-top-wrapper">
-          <p class="text--muted-small">Back to start</p>
-          <a href="#top" class="back-to-top-btn" aria-label="Go to top of page">
-            <i class="fas fa-arrow-up" aria-hidden="true"></i> Up
-          </a>
-        </div>
+      <div class="footer__bottom">
+        <a href="privacy-policy.html" class="footer__link--muted">Privacy Policy</a>
+        <p class="footer__copyright">� 2026 Mads Finstad Chiropractor � All rights reserved</p>
       </div>
-
-      <!-- Right Column -->
-      <div class="footer__right">
-        <div class="footer__hours">
-          <h3>Opening Hours</h3>
-          <p>Monday - Friday: 08:00 - 19:00</p>
-          <p>Saturday: 10:00 - 16:00</p>
-          <p>Sunday: Closed</p>
-        </div>
-        <div class="footer__contact">
-          <h3>Contact Information</h3>
-          <p>Gardeveien 17<br>0363 Oslo</p>
-          <p>Phone: <a href="tel:+4793043062">+47 93043062</a></p>
-          <p>Email: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer__bottom">
-      <a href="privacy-policy.html" class="footer__link--muted">Privacy Policy</a>
-      <p class="footer__copyright">� 2026 TheBackROM � All rights reserved</p>
-    </div>
-  </footer>
+    </footer>
   </div>
   <script src="../js/script.min.js" defer></script>
   <script src="../js/modern-enhancements.min.js" defer></script>
@@ -731,5 +919,3 @@
 </body>
 
 </html>
-
-

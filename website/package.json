@@ -1,6 +1,41 @@
 {
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Klinikk for alle - Chiropractor website",
+  "main": "index.js",
+  "type": "commonjs",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "spellcheck": "cspell \"en/**/*.html\" --no-progress",
+    "spellcheck:hub": "cspell \"en/conditions/*.html\" --no-progress",
+    "spellcheck:fix": "cspell \"en/**/*.html\" --no-progress --show-suggestions",
+    "validate": "node scripts/validate-page.js",
+    "validate:hubs": "node scripts/validate-hubs.js",
+    "check-sitemap": "node scripts/check-sitemap.js",
+    "grammar": "node scripts/grammar-check.js",
+    "check-images": "node scripts/check-images.js",
+    "check-links": "node scripts/check-links.js",
+    "audit": "npm run spellcheck:hub && npm run validate:hubs && npm run check-sitemap && npm run check-images en/ && npm run check-links en/",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "keywords": [
+    "chiropractor",
+    "healthcare",
+    "oslo"
+  ],
+  "author": "Mads Finstad",
+  "license": "ISC",
   "devDependencies": {
+    "@cspell/dict-en-gb": "^5.0.21",
+    "@cspell/dict-nb-no": "^2.0.6",
+    "cspell": "^9.6.0",
+    "cspell-dict-medicalterms": "^1.1.3",
     "sharp": "^0.34.5"
+  },
+  "dependencies": {
+    "detect-libc": "^2.1.2",
+    "semver": "^7.7.3"
   }
 }
-
