@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a202c" />
+    <meta name="color-scheme" content="light" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="view-transition" content="same-origin" />
+
+    <link rel="manifest" href="../../../manifest.json" />
+    <link rel="apple-touch-icon" href="../../../images/Final Transparent Logo.png" />
+    <link rel="preload" as="style" href="../../../css/main.min.css?v=20260101_v5" />
+    <link rel="icon" type="image/png" href="../../../images/Final Transparent Logo.png" />
+    <title>Hip Pain Diagnosis Guide: Interactive Sympto... | Chiro Oslo</title>
+
+    <meta name="description"
+        content="Unsure if you have hip OA, bursitis, or sciatica? Use our hip pain diagnosis guide to compare symptoms, location, and tests.">
+    <meta name="keywords"
+        content="hip pain diagnosis, symptom checker, hip pain location, GTPS vs bursitis, sciatica vs piriformis, chiropractor Oslo">
+    <meta name="author" content="Mads Finstad">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Hip Pain Diagnosis Guide: What is causing your pain?">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thebackrom.com/en/conditions/hip/hip-diagnosis-guide.html">
+    <meta property="og:description"
+        content="Unsure if you have hip OA, bursitis, or sciatica? Use our hip pain diagnosis guide to compare symptoms.">
+    <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Chiropractor">
+    <meta property="og:locale" content="en_US">
+    <link rel="canonical" href="https://thebackrom.com/en/conditions/hip/hip-diagnosis-guide.html">
+
+    <!-- Schema.org MedicalWebPage -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "headline": "Hip Pain Diagnosis Guide",
+    "description": "Comprehensive guide to differentiating between common hip conditions based on pain location and symptoms.",
+    "author": {
+      "@type": "Person",
+      "name": "Mads Finstad",
+      "jobTitle": "Chiropractor"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Klinikk for alle - Mads Finstad Chiropractor",
+      "url": "https://thebackrom.com"
+    },
+    "datePublished": "2026-01-15",
+    "dateModified": "2026-01-15"
+  }
+  </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                !function (f, b, e, v, n, t, s) {
+                    if (f.fbq) return; n = f.fbq = function () {
+                        n.callMethod ?
+                            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                    n.queue = []; t = b.createElement(e); t.async = !0;
+                    t.src = v; s = b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s)
+                }(window, document, 'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '540166625752174');
+                fbq('track', 'PageView');
+            }, 2000);
+        });
+    </script>
+    <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1"
+            alt="Facebook Pixel" /></noscript>
+
+    <link rel="stylesheet" href="../../../css/main.min.css?v=20260101_v5">
+    <link rel="stylesheet" href="../../../css/index-design.css?v=1" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../../../css/index-design.css?v=1">
+    </noscript>
+    <link rel="stylesheet" href="../../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../../../css/index-2026-fixes.css">
+    </noscript>
+    <link rel="stylesheet" href="../../../css/hub-article.css">
+
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+    </noscript>
+    <link rel="preload" as="style" href="../../../css/font-awesome-minimal.css">
+    <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
+    </noscript>
+
+    <style>
+        :root {
+            --hub-primary: #1a5f7a;
+            --hub-primary-dark: #0f4f68;
+            --hub-dark: #0d3d4d;
+            --hub-red: #dc2626;
+            --hub-green: #059669;
+            --hub-blue: #2563eb;
+        }
+
+        /* Diagnosis specific styles */
+        .diagnosis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 24px 0;
+        }
+
+        .location-header {
+            background: var(--hub-dark);
+            color: #fff;
+            padding: 16px 24px;
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .location-header h3 {
+            margin: 0;
+            color: #fff !important;
+            font-size: 18px;
+        }
+
+        .location-section {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .comparison-card {
+            padding: 0;
+        }
+
+        .diagnosis-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .diagnosis-table th {
+            background: #f3f4f6;
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 14px;
+            color: var(--hub-dark);
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .diagnosis-table td {
+            padding: 16px;
+            border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
+            font-size: 14px;
+        }
+
+        .diagnosis-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .diagnosis-name {
+            font-weight: 700;
+            color: var(--hub-primary-dark);
+            display: block;
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        .diagnosis-likelihood {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .common {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .uncommon {
+            background: #f3f4f6;
+            color: #4b5563;
+        }
+
+        .rare {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .key-symptom {
+            font-weight: 600;
+            color: var(--hub-dark);
+        }
+
+        .diagnosis-link {
+            display: inline-block;
+            margin-top: 8px;
+            color: var(--hub-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .diagnosis-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+
+            .diagnosis-table,
+            .diagnosis-table tbody,
+            .diagnosis-table tr,
+            .diagnosis-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .diagnosis-table thead {
+                display: none;
+            }
+
+            .diagnosis-table tr {
+                margin-bottom: 16px;
+                border-bottom: 2px solid #e5e7eb;
+            }
+
+            .diagnosis-table td {
+                padding: 12px 16px;
+                border: none;
+            }
+
+            .diagnosis-table td::before {
+                content: attr(data-label);
+                font-weight: 700;
+                display: block;
+                margin-bottom: 4px;
+                color: #6b7280;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="../../../en/index.html" class="header__logo logo"><img src="../../../images/logo-header.webp"
+                        alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229"
+                        decoding="async" /></a>
+                <div class="header__navigation">
+                    <div class="language-toggle" role="group" aria-label="Language selection">
+                        <button class="language-toggle__button" data-lang="no" aria-label="Norwegian"
+                            aria-pressed="false">NO</button>
+                        <button class="language-toggle__button language-toggle__button--active" data-lang="en"
+                            aria-label="Switch to English" aria-pressed="true">EN</button>
+                        <div class="language-toggle__slider"></div>
+                    </div>
+                    <button type="button" class="icon-menu" aria-label="Open navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="../../../en/index.html" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="../../../en/about.html" class="menu__link">About</a></li>
+                            <li class="menu__item"><a href="../../../en/services.html" class="menu__link">Services</a>
+                            </li>
+                            <li class="menu__item"><a href="../../../en/conditions.html"
+                                    class="menu__link">Conditions</a></li>
+                            <li class="menu__item"><a href="../../../en/prices.html" class="menu__link">Prices</a></li>
+                            <li class="menu__item"><a href="../../../en/faq.html" class="menu__link">FAQ</a></li>
+                            <li class="menu__item"><a href="../../../en/contact.html" class="menu__link">Contact</a>
+                            </li>
+                            <li class="menu__item"><a href="../../../en/blog/index.html" class="menu__link">Blog</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                                    class="actions-header__button">Book Appointment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page" id="main">
+            <div class="hub-wrapper">
+
+                <!-- Main content -->
+                <article class="hub-main">
+
+                    <!-- Hero -->
+                    <header class="hub-hero">
+                        <h1>Hip Pain Diagnosis Guide</h1>
+                        <p class="subtitle">Where does it hurt? Use this guide to find the likely cause.</p>
+                        <p class="author">Chiropractor Mads Finstad, Klinikk for alle Majorstua</p>
+                    </header>
+
+                    <div class="hub-content">
+                        <div class="intro-text">
+                            <p>Hip pain can be confusing. Pain on the outside is often called "bursitis" (but rarely
+                                is). Pain in the buttock is often confused with back trouble. This guide helps you
+                                navigate the symptoms based on the most important clue: <strong>Location</strong>.</p>
+                        </div>
+
+                        <!-- SECTION 1: Lateral Hip -->
+                        <div class="location-section" id="lateral">
+                            <div class="location-header">
+                                <span class="section-number">1</span>
+                                <h3>Pain on the OUTSIDE (Lateral Hip)</h3>
+                            </div>
+                            <div class="comparison-card">
+                                <table class="diagnosis-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%">Condition</th>
+                                            <th style="width: 35%">Key Symptoms</th>
+                                            <th style="width: 35%">Tests & Differentiation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Condition">
+                                                <span class="diagnosis-name">GTPS (Gluteal Tendinopathy)</span>
+                                                <span class="diagnosis-likelihood common">Very Common</span>
+                                            </td>
+                                            <td data-label="Symptoms">
+                                                Pain lying on side at night.<br>
+                                                Pain with stairs, walking uphill.<br>
+                                                Tender to touch over the bony prominence (trochanter).
+                                            </td>
+                                            <td data-label="Differentiation">
+                                                <strong>Single Leg Stance:</strong> Standing on one leg for 30s
+                                                reproduces the familiar pain.<br>
+                                                <a href="gtps-gluteal-tendinopathy.html" class="diagnosis-link">Read
+                                                    more about GTPS →</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Condition">
+                                                <span class="diagnosis-name">Referred Back Pain</span>
+                                                <span class="diagnosis-likelihood uncommon">Common</span>
+                                            </td>
+                                            <td data-label="Symptoms">
+                                                Pain radiates from low back.<br>
+                                                Often goes <strong>past the knee</strong>.<br>
+                                                Variable pain pattern (good days/bad days).
+                                            </td>
+                                            <td data-label="Differentiation">
+                                                <strong>Slump Test:</strong> Stretching the nerve path reproduces
+                                                pain.<br>
+                                                Pain often triggered by bending back (not hip).<br>
+                                                <a href="back-hip-sciatica.html" class="diagnosis-link">Back vs Hip
+                                                    guide →</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Condition">
+                                                <span class="diagnosis-name">Trochanteric Bursitis</span>
+                                                <span class="diagnosis-likelihood rare">Rare (<10%)< /span>
+                                            </td>
+                                            <td data-label="Symptoms">
+                                                Acute swelling, redness, and warmth.<br>
+                                                Pain with ANY movement of the leg.
+                                            </td>
+                                            <td data-label="Differentiation">
+                                                Most "bursitis" diagnoses are actually tendon injuries (GTPS). True
+                                                bursitis shows signs of inflammation.<br>
+                                                <a href="bursitis-myth.html" class="diagnosis-link">Why it's rarely
+                                                    bursitis →</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 2: Groin Pain -->
+                        <div class="location-section" id="groin">
+                            <div class="location-header">
+                                <span class="section-number">2</span>
+                                <h3>Pain in the GROIN (Anterior Hip)</h3>
+                            </div>
+                            <div class="comparison-card">
+                                <table class="diagnosis-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%">Condition</th>
+                                            <th style="width: 35%">Key Symptoms</th>
+                                            <th style="width: 35%">Tests & Differentiation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Condition">
+                                                <span class="diagnosis-name">Hip Osteoarthritis (OA)</span>
+                                                <span class="diagnosis-likelihood common">Common (50+)</span>
+                                            </td>
+                                            <td data-label="Symptoms">
+                                                Morning stiffness.<br>
+                                                Deep ache in groin/front thigh.<br>
+                                                Difficulty putting on socks.
+                                            </td>
+                                            <td data-label="Differentiation">
+                                                <strong>Restricted Range:</strong> Loss of internal rotation.<br>
+                                                X-rays show joint space narrowing.<br>
+                                                <a href="hip-osteoarthritis.html" class="diagnosis-link">Read about Hip
+                                                    OA →</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Condition">
+                                                <span class="diagnosis-name">FAI (Impingement)</span>
+                                                <span class="diagnosis-likelihood common">Young/Active</span>
+                                            </td>
+                                            <td data-label="Symptoms">
+                                                Sharp pinching with deep squats/flexion.<br>
+                                                Clicking or catching.<br>
+                                                "C-Sign" (gripping hip with hand).
+                                            </td>
+                                            <td data-label="Differentiation">
+                                                <strong>FADIR Test:</strong> Deep flexion + internal rotation causes
+                                                sharp pain.<br>
+                                                Good range of motion otherwise.<br>
+                                                <a href="fai-hip-impingement.html" class="diagnosis-link">Read about FAI
+                                                    →</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Condition">
+                                                <span class="diagnosis-name">Athletic Pubalgia</span>
+                                                <span class="diagnosis-likelihood uncommon">Athletes</span>
+                                            </td>
+                                            <td data-label="Symptoms">
+                                                Sharp pain with twisting/sprinting.<br>
+                                                Pain localized to pubic bone.
+                                            </td>
+                                            <td data-label="Differentiation">
+                                                Pain with resisted sit-ups or squeezing legs together.<br>
+                                                Common in soccer/hockey.<br>
+                                                <a href="athletic-pubalgia.html" class="diagnosis-link">Sports Hernia
+                                                    guide →</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Condition">
+                                                <span class="diagnosis-name">Iliopsoas Tendinopathy</span>
+                                                <span class="diagnosis-likelihood uncommon">Runners/Dancers</span>
+                                            </td>
+                                            <td data-label="Symptoms">
+                                                Pain when lifting the knee (marching).<br>
+                                                Snapping sound in front of hip.
+                                            </td>
+                                            <td data-label="Differentiation">
+                                                Pain with resisted hip flexion.<br>
+                                                Tender deep in the abdomen/groin.<br>
+                                                <a href="iliopsoas-tendinopathy.html" class="diagnosis-link">Iliopsoas
+                                                    guide →</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 3: Buttock Pain -->
+                        <div class="location-section" id="buttock">
+                            <div class="location-header">
+                                <span class="section-number">3</span>
+                                <h3>Pain in the BUTTOCK (Posterior Hip)</h3>
+                            </div>
+                            <div class="comparison-card">
+                                <table class="diagnosis-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%">Condition</th>
+                                            <th style="width: 35%">Key Symptoms</th>
+                                            <th style="width: 35%">Tests & Differentiation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Condition">
+                                                <span class="diagnosis-name">Sciatica (Back Issue)</span>
+                                                <span class="diagnosis-likelihood common">Common</span>
+                                            </td>
+                                            <td data-label="Symptoms">
+                                                Electric/shooting pain.<br>
+                                                Radiates <strong>past the knee</strong> to foot.<br>
+                                                Numbness in toes/foot.
+                                            </td>
+                                            <td data-label="Differentiation">
+                                                <strong>Straight Leg Raise:</strong> Reproduces leg pain.<br>
+                                                Often worse with bending forward (slumping).<br>
+                                                <a href="back-hip-sciatica.html" class="diagnosis-link">Sciatica vs Hip
+                                                    →</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Condition">
+                                                <span class="diagnosis-name">Piriformis Syndrome</span>
+                                                <span class="diagnosis-likelihood uncommon">Uncommon</span>
+                                            </td>
+                                            <td data-label="Symptoms">
+                                                Deep ache in buttock.<br>
+                                                Worse with sitting (wallet in pocket).<br>
+                                                Radiates down thigh but <strong>stops at knee</strong>.
+                                            </td>
+                                            <td data-label="Differentiation">
+                                                <strong>FAIR Test:</strong> Stretching piriformis (knee to opposite
+                                                shoulder) causes pain.<br>
+                                                No back stiffness.<br>
+                                                <a href="piriformis-syndrome.html" class="diagnosis-link">Piriformis
+                                                    guide →</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Condition">
+                                                <span class="diagnosis-name">SI Joint Dysfunction</span>
+                                                <span class="diagnosis-likelihood common">Common</span>
+                                            </td>
+                                            <td data-label="Symptoms">
+                                                Sharp pain at the "dimple" (PSIS).<br>
+                                                Pain turning in bed.<br>
+                                                Pain standing on one leg.
+                                            </td>
+                                            <td data-label="Differentiation">
+                                                <strong>Pointing Test:</strong> Patient points to the specific "dimple"
+                                                with one finger.<br>
+                                                Pain rarely goes below the knee.<br>
+                                                <a href="si-joint-problems.html" class="diagnosis-link">SI Joint guide
+                                                    →</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="hub-cta">
+                            <h3>Still unsure?</h3>
+                            <p>Self-diagnosis is a good start, but a thorough clinical examination is the only way to be
+                                100% sure. At Klinikk for alle Majorstua, we perform ortopedic and neurological tests to
+                                pinpoint exactly where your pain comes from.</p>
+                            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                                class="btn">Book appointment</a>
+                        </div>
+
+                        <!-- Blog Carousel placeholder - standard structure will be populated by JS -->
+                        <div class="blog-carousel-compact">
+                            <div class="carousel-header-compact">
+                                <span class="carousel-label">Related Articles</span>
+                                <a href="../hip-pain.html" class="carousel-hub-link">Back to Hip Hub →</a>
+                            </div>
+                            <div class="carousel-wrapper-compact">
+                                <button class="carousel-btn-compact prev" aria-label="Previous"><i
+                                        class="fas fa-chevron-left"></i></button>
+                                <div class="carousel-track-compact" id="blog-carousel-track"></div>
+                                <button class="carousel-btn-compact next" aria-label="Next"><i
+                                        class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Sidebar -->
+                <aside class="hub-sidenav">
+                    <div class="sidenav-inner">
+                        <div class="sidenav-title">Hip Conditions</div>
+                        <a href="hip-pain.html" class="sidenav-link">Overview: Hip Pain</a>
+                        <a href="hip-diagnosis-guide.html" class="sidenav-link active">Diagnosis Guide</a>
+                        <div class="sidenav-title" style="margin-top:20px">Key Articles</div>
+                        <a href="gtps-gluteal-tendinopathy.html" class="sidenav-link">Lateral Hip Pain (GTPS)</a>
+                        <a href="hip-osteoarthritis.html" class="sidenav-link">Hip Osteoarthritis</a>
+                        <a href="fai-hip-impingement.html" class="sidenav-link">FAI / Impingement</a>
+                        <a href="back-hip-sciatica.html" class="sidenav-link">Back vs Hip Pain</a>
+
+                        <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                            class="sidenav-cta">Book Appointment</a>
+                    </div>
+                </aside>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__left">
+                    <div class="footer__social"><a href="https://www.facebook.com/profile.php?id=61551540184975"
+                            class="footer__social-link" aria-label="Visit us on Facebook"><img
+                                src="../../../images/Media iconer/facebook_media_social_icon.png"
+                                alt="Visit TheBackROM on Facebook" width="512" height="512" loading="lazy"
+                                decoding="async" /></a><a href="https://www.instagram.com/chiro_mads/"
+                            class="footer__social-link" aria-label="Follow us on Instagram"><img
+                                src="../../../images/Media iconer/instagramlogo.png"
+                                alt="Follow @chiro_mads on Instagram" width="512" height="512" loading="lazy"
+                                decoding="async" /></a><a href="https://www.youtube.com/@TheBackROM"
+                            class="footer__social-link" aria-label="Watch our videos on YouTube"><img
+                                src="../../../images/Media iconer/youtube_icon.png"
+                                alt="Subscribe to TheBackROM YouTube channel" width="512" height="512" loading="lazy"
+                                decoding="async" /></a><a href="../../../en/contact.html" class="footer__social-link"
+                            aria-label="Send us an email"><img
+                                src="../../../images/Logo og identitet/ms-outlook-svgrepo-com.svg"
+                                alt="Send email to TheBackROM" loading="lazy" decoding="async" /></a></div>
+                </div>
+                <div class="footer__center">
+                    <div class="footer__logo"><img src="../../../images/logo-footer.webp"
+                            alt="Klinikk for alle Chiropractor Majorstua Oslo logo" width="300" height="229"
+                            loading="lazy" decoding="async" /></div>
+                    <div class="back-to-top-wrapper">
+                        <p class="text--muted-small">Back to top</p><a href="#top" class="back-to-top-btn"
+                            aria-label="Go to top of page"><i class="fas fa-arrow-up" aria-hidden="true"></i> Up</a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__hours">
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Friday: 08:00 - 19:00</p>
+                        <p>Saturday: 10:00 - 16:00</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                    <div class="footer__contact">
+                        <h3>Contact Information</h3>
+                        <p>Gardeveien 17<br>0363 Oslo</p>
+                        <p>Phone: <a href="tel:+4793043062">+47 93043062</a></p>
+                        <p>Email: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom"><a href="../../../en/privacy.html" class="footer__link--muted">Privacy
+                    Policy</a>
+                <p class="footer__copyright">© 2026 Mads Finstad Chiropractor - All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../../../js/script.min.js" defer></script>
+    <script src="../../../js/language-toggle.min.js" defer></script>
+    <script src="../../../js/modern-enhancements.min.js" defer></script>
+    <script src="../../../js/blog-carousel.min.js" defer></script>
+    <script src="../../../js/breadcrumbs.js" defer></script>
+</body>
+
+</html>

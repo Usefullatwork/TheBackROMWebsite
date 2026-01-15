@@ -1,77 +1,235 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- 2026 Modern Meta Tags -->
   <meta name="theme-color" content="#1a202c" />
   <meta name="color-scheme" content="light" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="view-transition" content="same-origin" />
 
-  <!-- PWA Support -->
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-
-  <!-- Preload Critical Resources -->
-  <link rel="preload" as="style" href="../../css/main.min.css" />
-
+  <link rel="preload" as="style" href="../../css/main.min.css?v=20260101_v5" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
-  <title>Hip Pain - TheBackROM</title>
-  
+  <title>Hip Pain & Treatment | Chiro Oslo</title>
+
+  <meta name="description"
+    content="Hip pain affects 10% of adults. Find out where your pain comes from and what you can do. Klinikk for alle Majorstua.">
+  <meta name="keywords"
+    content="hip pain, hip osteoarthritis, GTPS, gluteal tendinopathy, FAI, labral tear, groin pain, chiropractor Oslo, Majorstua">
+  <meta name="author" content="Mads Finstad">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Hip Pain? Causes, Symptoms and Treatment | Chiropractor Majorstua">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://thebackrom.com/en/conditions/hip-pain.html">
+  <meta property="og:image" content="https://thebackrom.com/images/Plager hofte-og-bekkensmerter/hofte smerte.webp">
+  <meta property="og:description"
+    content="Hip pain affects 10% of adults. Find out where your pain comes from, home tests you can do, and when you should seek help.">
+  <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Chiropractor">
+  <meta property="og:locale" content="en_GB">
+  <link rel="canonical" href="https://thebackrom.com/en/conditions/hip-pain.html">
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/hip-pain.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/hofte-og-bekkensmerter.html">
+
+  <!-- Schema.org MedicalWebPage + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "name": "Hip Pain? Causes, Symptoms and Treatment",
+        "description": "Complete guide to hip pain: causes, symptoms, home tests, MRI findings and treatment by chiropractor.",
+        "url": "https://thebackrom.com/en/conditions/hip-pain.html",
+        "mainContentOfPage": {
+          "@type": "WebPageElement",
+          "cssSelector": ".hub-main"
+        },
+        "medicalAudience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Patient"
+        },
+        "specialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Chiropractic"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Mads Finstad",
+          "jobTitle": "Chiropractor",
+          "url": "https://thebackrom.com/en/about.html"
+        },
+        "publisher": {
+          "@type": "MedicalBusiness",
+          "name": "Klinikk for alle Majorstua",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Gardeveien 17",
+            "addressLocality": "Oslo",
+            "postalCode": "0363",
+            "addressCountry": "NO"
+          }
+        },
+        "lastReviewed": "2026-12-01"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is it dangerous if my hip 'clicks' or 'snaps'?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually not. 'Snapping hip' is very common - affecting 5-10% of the population - and is rarely dangerous as long as it doesn't hurt. The sound is usually caused by a tendon sliding over a bony prominence. It only becomes concerning if the clicking is accompanied by pain, locking, or a feeling that the hip 'gives way'."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does stretching the hip help?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Be careful. For tendon problems on the outside of the hip (GTPS) or high on the back of the thigh (proximal hamstring), aggressive stretching can actually make pain worse. Stretching compresses the tendon against the bone and increases compression. Focus instead on strength training and mobility within pain limits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does cortisone help for hip pain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Short-term yes, long-term doubtful. For GTPS, the LEAP study showed that cortisone gave rapid improvement in the first weeks, but after 1 year the results were no better than doing nothing. Systematic reviews have also shown potential negative effects on tendon tissue over time. I usually recommend trying exercise first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I exercise with hip pain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, and you should! Research shows that exercise is more effective than passive treatment for most hip and pelvic pain. But you must train smart: avoid activities that cause severe pain, and start with exercises that don't load the joint in extreme positions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need an MRI or X-ray?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not always - and often not initially. A thorough clinical examination often provides enough information to make a diagnosis and start treatment. Imaging is relevant if symptoms don't improve as expected. Remember: MRI often shows 'findings' that don't explain your pain - 69% of pain-free people have labral tears."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long until I get better?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This varies greatly. Acute muscle problems can improve in 2-4 weeks. GTPS (tendon problems on the outside) often takes 6-9 months with proper treatment. Hip osteoarthritis requires a long-term approach, but most notice good effects from exercise within 8-12 weeks."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <!-- Meta Pixel Code -->
   <script>
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '540166625752174');
-      fbq('track', 'PageView');
-    }, 2000);
-  });
-  
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+              n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540166625752174');
+        fbq('track', 'PageView');
+      }, 2000);
+    });
   </script>
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-  
+      src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
+
   <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
   <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="../../css/index-design.css?v=1">
+  </noscript>
   <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
-
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+  <noscript>
+    <link rel="stylesheet" href="../../css/index-2026-fixes.css">
+  </noscript>
+  <link rel="stylesheet" href="../../css/hub-article.css">
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
-  
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
   <link rel="preload" as="style" href="../../css/font-awesome-minimal.css">
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
-  </head>
+  <noscript>
+    <link rel="stylesheet" href="../../css/font-awesome-minimal.css">
+  </noscript>
+
+  <style>
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+
+    .hub-toc-card a {
+      display: block;
+      padding: 10px 14px;
+      color: #475569;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      border-left: 3px solid transparent;
+    }
+
+    .hub-toc-card a:hover {
+      background: #e2e8f0;
+      color: var(--hub-primary);
+    }
+
+    .hub-toc-card a.active {
+      background: #e0f2fe;
+      color: var(--hub-primary);
+      border-left-color: var(--hub-primary);
+      font-weight: 500;
+    }
+  </style>
+</head>
 
 <body id="top">
-  <!-- Skip-link for accessibility -->
   <a href="#main" class="skip-link">Skip to main content</a>
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img src="../../images/logo-header.webp" alt="TheBackROM Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../../en/index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+            alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
-                    <div class="language-toggle" role="group" aria-label="Language selection">
-            <button class="language-toggle__button" data-lang="no" aria-label="Switch to Norwegian" aria-pressed="false">NO</button>
-            <button class="language-toggle__button language-toggle__button--active" data-lang="en" aria-label="English" aria-pressed="true">EN</button>
+          <div class="language-toggle" role="group" aria-label="Language selection">
+            <button class="language-toggle__button" data-lang="no" aria-label="Norwegian"
+              aria-pressed="false">NO</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="en" aria-label="English"
+              aria-pressed="true">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
           <button type="button" class="icon-menu" aria-label="Open navigation menu" aria-expanded="false">
@@ -81,108 +239,748 @@
           </button>
           <div class="menu__body">
             <ul class="menu__list">
-              <li class="menu__item"><a href="../index.html" class="menu__link">Home</a></li>
-              <li class="menu__item"><a href="../about.html" class="menu__link">About Me</a></li>
-              <li class="menu__item"><a href="../services.html" class="menu__link">Services</a></li>
-              <li class="menu__item"><a href="../conditions.html" class="menu__link">Conditions</a></li>
-              <li class="menu__item"><a href="../prices.html" class="menu__link">Prices</a></li>
-              <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
-              <li class="menu__item"><a href="../contact.html" class="menu__link">Contact</a></li>
-                            <li class="menu__item"><a href="../blog/index.html" class="menu__link">Blog</a></li>
+              <li class="menu__item"><a href="../../en/index.html" class="menu__link">Home</a></li>
+              <li class="menu__item"><a href="../../en/about.html" class="menu__link">About me</a></li>
+              <li class="menu__item"><a href="../../en/services.html" class="menu__link">Services</a></li>
+              <li class="menu__item"><a href="../../en/conditions.html" class="menu__link">Conditions</a></li>
+              <li class="menu__item"><a href="../../en/prices.html" class="menu__link">Prices</a></li>
+              <li class="menu__item"><a href="../../en/faq.html" class="menu__link">FAQ</a></li>
+              <li class="menu__item"><a href="../../en/contact.html" class="menu__link">Contact</a></li>
+              <li class="menu__item"><a href="../../en/blog/index.html" class="menu__link">Blog</a></li>
               <li class="menu__item">
-                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Book Appointment</a>
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                  class="actions-header__button">Book Appointment</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
+
     <main class="page" id="main">
-
-
-
-
-
-
-
-      <section class="page__main main main_services main_pages">
-        <div class="main__container main__container_pages">
-          <h1 class="main__title">Hip Pain</h1>
-          <div class="main__text main__text_pages">
-            Effective treatment for hip pain and pelvic dysfunction
-          </div>
+      <!-- Hero Section -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <h1>Hip Pain? - Complete Guide</h1>
+          <p class="hub-hero__subtitle">Your complete guide to causes, symptoms and treatment | Chiropractor Mads
+            Finstad, Majorstua</p>
         </div>
       </section>
-      
-      <section class="page__about about">
-        <div class="about__container">
-          <div class="about__image"><img src="../../images/Plager hofte-og-bekkensmerter/hofte smerte.webp" alt="Illustration of hip pain and hip joint with pain area marked"  loading="lazy" decoding="async"/></div>
-          <div class="about__content">
-            <h2 class="about__title title">About hip pain</h2>
-            <div class="about__text">
-              <p>
-                Hip pain can significantly impact your mobility and quality of life, affecting your ability to walk, climb stairs, sit comfortably, or participate in physical activities. The hip is a large ball-and-socket joint that bears much of the body's weight and is essential for movement and stability. Pain can originate from the hip joint itself, surrounding muscles, ligaments, tendons, or nearby structures such as the lower back or pelvis.
+
+      <div class="hub-wrapper">
+        <article class="hub-main">
+
+          <section class="hub-intro">
+            <div class="intro-text">
+              <p>Hip pain is more common than many think. Around <strong>10% of adults</strong> experience it (Picavet
+                2003), and in people over 60, 14-19% report persistent problems. Women are affected more often than men,
+                especially after age 40.</p>
+
+              <p>But here's the important part: most have problems that come from muscles, tendons or joints -
+                <strong>not from serious injury or disease</strong>. And even more important: most get better without
+                surgery. The LEAP study from 2018 showed, for example, that 78% of patients with tendon pain on the
+                outside of the hip improved with exercise and guidance - better than with cortisone injection.
               </p>
-              <p>
-                Common causes of hip pain include osteoarthritis, hip impingement syndrome, bursitis, tendinitis, muscle strains, labral tears, and referred pain from the lower back or sacroiliac joint. Risk factors include age, previous injuries, overuse from sports or work activities, poor posture, and biomechanical imbalances. Symptoms may include pain in the hip, groin, buttock, or thigh, stiffness, reduced range of motion, and difficulty with weight-bearing activities.
-              </p>
-              <p>
-                At TheBackROM, we provide comprehensive hip pain treatment using evidence-based approaches. Our treatment may include gentle mobilization techniques to imprøve joint function, soft tissue therapy to address muscle tension and trigger points, specific exercises to strengthen the hip muscles and imprøve stability, biomechanical assessment to identify contributing factors, and postural correction. We take a holistic approach, often addressing related areas such as the lower back, pelvis, and knee to ensure optimal hip function and prevent future problems.
-              </p>
+
+              <p>The problem is that hip pain can be confusing. Groin pain can come from the hip joint, but also from
+                the groin muscles or an irritated nerve. Pain on the outside of the hip is often misdiagnosed as
+                "bursitis". And buttock pain? It can come from the hip, back and pelvis.</p>
+
+              <p><strong>This guide helps you sort it out.</strong></p>
             </div>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="about__button button">Book Appointment</a>
+
+            <div class="premium-summary-card">
+              <h3>Quick Summary</h3>
+              <ul>
+                <li>Hip pain affects <strong>10% of adults</strong> - most get better without surgery</li>
+                <li>Most common causes: Tendinopathy (GTPS), osteoarthritis, FAI - all treated well conservatively</li>
+                <li>MRI findings lie often: <strong>69% of pain-free people</strong> have labral tears, 37% have FAI
+                  morphology</li>
+                <li>Success rates: GTPS <strong>78% with exercise</strong>, FAI up to 82% avoid surgery</li>
+              </ul>
+            </div>
+
+            <!-- Sub-article navigation with descriptions -->
+            <nav class="hub-subnav">
+              <h3>Choose your condition</h3>
+              <p style="margin-bottom: 16px; color: #64748b;">Click on the condition that best fits you for complete
+                information:</p>
+              <div class="hub-subnav__grid hub-subnav__grid--detailed">
+                <a href="hip/gtps-gluteal-tendinopathy.html" class="hub-subnav__card">
+                  <strong>GTPS (pain on the outside)</strong>
+                  <span>Tendon problems on the outside of the hip</span>
+                </a>
+                <a href="hip/hip-osteoarthritis.html" class="hub-subnav__card">
+                  <strong>Hip Osteoarthritis</strong>
+                  <span>Wear and tear in the hip joint</span>
+                </a>
+                <a href="hip/fai-hip-impingement.html" class="hub-subnav__card">
+                  <strong>FAI (Hip Impingement)</strong>
+                  <span>Pinching in the hip joint</span>
+                </a>
+                <a href="hip/labral-tear.html" class="hub-subnav__card">
+                  <strong>Labral Tear</strong>
+                  <span>Damage to the cartilage ring in the hip</span>
+                </a>
+                <a href="hip/si-joint-pelvic-problems.html" class="hub-subnav__card">
+                  <strong>SI Joint & Pelvis</strong>
+                  <span>Pelvic dysfunction and SI joint pain</span>
+                </a>
+                <a href="hip/piriformis-syndrome.html" class="hub-subnav__card">
+                  <strong>Piriformis Syndrome</strong>
+                  <span>Deep buttock pain mimicking sciatica</span>
+                </a>
+              </div>
+            </nav>
+
+            <!-- Red Flag Alert Box - Immediately Visible -->
+            <div class="red-flag-alert">
+              <h4>When must you seek help quickly?</h4>
+              <p>With fever together with hip or back pain, severe swelling/redness, loss of bladder control, or sudden
+                weakness/numbness in the leg - seek help immediately.</p>
+              <a href="#s7">Read more about red flags</a>
+            </div>
+
+            <img src="../../images/Plager hofte-og-bekkensmerter/hofte smerte.webp"
+              alt="Illustration of hip pain and common pain points" class="hub-featured-image" loading="lazy"
+              decoding="async">
+
+            <div class="stat-grid">
+              <div class="stat-item">
+                <div class="stat-number">10%</div>
+                <div class="stat-label">Of adults have hip pain</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">78%</div>
+                <div class="stat-label">GTPS improves with exercise</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">69%</div>
+                <div class="stat-label">Pain-free have labral tear on MRI</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">82%</div>
+                <div class="stat-label">FAI avoid surgery</div>
+              </div>
+            </div>
+
+            <div class="insight-card tip">
+              <h4>What does "non-specific hip pain" mean?</h4>
+              <p>For most people, the pain comes from muscles, tendons or joints - not from serious injury. Conservative
+                treatment (exercise, manual therapy) is often as effective as surgery.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 1: Find your pain type -->
+          <section class="hub-section" id="s1">
+            <div class="section-header">
+              <span class="section-number">1</span>
+              <h2>Where Does It Hurt? Find Your Pain Type</h2>
+            </div>
+
+            <p>Instead of listing diagnoses, I'll start with what you actually notice: <strong>where is the pain
+                located?</strong> This often gives the best clue to what's wrong.</p>
+
+            <!-- Outside -->
+            <div class="condition-card">
+              <h4>Pain on the OUTSIDE of the hip</h4>
+              <p class="section-quick-link"><a href="hip/gtps-gluteal-tendinopathy.html">Go to full article on GTPS
+                  →</a></p>
+              <p><strong>Typical signs:</strong> Pain over the large bony prominence on the outside of the hip. Painful
+                to lie on your side at night. Worsens with stairs, longer walks or getting up from a chair. May radiate
+                down the outside of the thigh towards the knee.</p>
+
+              <div class="myth-box">
+                <h4>Myth: "It's bursitis"</h4>
+                <p>No, it almost never is. Studies show that less than 5% actually have inflammation in the bursa. In
+                  85-98%, the problem is in the tendons of the gluteal muscles - gluteus medius and minimus. This is
+                  called <strong>gluteal tendinopathy or GTPS</strong>, and requires completely different treatment than
+                  cortisone.</p>
+              </div>
+
+              <p><strong>Who is affected?</strong> GTPS occurs in 15% of women and 6-8% of men between 50-79 years.
+                Women are affected over 3 times as often. The condition accounts for 10-20% of all hip pain at the GP.
+              </p>
+              <p><strong>Prognosis:</strong> The LEAP study showed that exercise + education gave <strong>78.6% success
+                  rate</strong> after one year - better than cortisone (58%) and "wait and see" (52%). Improvement takes
+                time (6-9 months), but most get better without injections.</p>
+            </div>
+
+            <!-- Groin -->
+            <div class="condition-card">
+              <h4>Pain in the GROIN (front of the hip)</h4>
+              <p><strong>Typical signs:</strong> Deep pain in the front of the hip or groin. Worst when bending the hip
+                far (putting on shoes, sitting long, going up stairs). May feel stiff in the morning. Some experience
+                clicking or locking.</p>
+
+              <p>Groin pain can have several causes - and age and activity level give important clues:</p>
+              <ul>
+                <li><strong>Hip osteoarthritis:</strong> Most common in those over 55-60 years. 10-15% of people over 65
+                  have symptomatic hip osteoarthritis. Causes gradually increasing stiffness, especially with internal
+                  rotation. Exercise is first choice. <a href="hip/hip-osteoarthritis.html"
+                    style="color: var(--hub-primary); font-weight: 600; font-size: 0.9rem;">Read more →</a></li>
+                <li><strong>FAI (femoroacetabular impingement):</strong> Pinching in the hip joint due to bone shape.
+                  Common in young, active people. Causes pain with deep flexion + internal rotation. 37% of pain-free
+                  people have FAI morphology on MRI - so images must be interpreted with caution. <a
+                    href="hip/fai-hip-impingement.html"
+                    style="color: var(--hub-primary); font-weight: 600; font-size: 0.9rem;">Read more →</a></li>
+                <li><strong>Labral tear:</strong> Damage to the cartilage ring around the hip. Often causes clicking,
+                  locking or feeling that the hip "pops out". <strong>69% of pain-free adults have labral tears on
+                    MRI</strong> - so not all tears need treatment. <a href="hip/labral-tear.html"
+                    style="color: var(--hub-primary); font-weight: 600; font-size: 0.9rem;">Read more →</a></li>
+                <li><strong>Iliopsoas tendinopathy:</strong> Pain when lifting the leg, often with "snapping" in front
+                  of the hip. Common in runners, dancers and footballers. <a href="hip/iliopsoas-tendinopathy.html"
+                    style="color: var(--hub-primary); font-weight: 600; font-size: 0.9rem;">Read more →</a></li>
+              </ul>
+            </div>
+
+            <!-- Buttock -->
+            <div class="condition-card">
+              <h4>Pain in the BUTTOCK or back</h4>
+              <p><strong>Typical signs:</strong> Pain in the buttock, lower back or back of the hip. May radiate down
+                the thigh. Often worse when sitting, standing on one leg or turning in bed.</p>
+
+              <p>Buttock pain can come from the hip, back OR pelvis. Here are some clues:</p>
+              <ul>
+                <li><strong>SI joint ("pelvic dysfunction"):</strong> If you can point with one finger to where it hurts
+                  - right at the "dimple" at the top of the buttock - it's often the SI joint. SI joint problems account
+                  for 15-30% of all chronic low back pain. <a href="hip/si-joint-pelvic-problems.html"
+                    style="color: var(--hub-primary); font-weight: 600; font-size: 0.9rem;">Read more →</a></li>
+                <li><strong>Piriformis syndrome:</strong> Deep pain in the buttock that can radiate down the back of the
+                  thigh. Mimics sciatica, but comes from a tight muscle - not the back. <a
+                    href="hip/piriformis-syndrome.html"
+                    style="color: var(--hub-primary); font-weight: 600; font-size: 0.9rem;">Read more →</a></li>
+                <li><strong>Sitting bone (proximal hamstring):</strong> Painful to sit, especially on hard chairs? Pain
+                  where "bottom meets thigh"? This may be tendinopathy in the hamstring attachment. <strong>Important:
+                    don't stretch hamstrings - it makes pain worse.</strong> <a
+                    href="hip/proximal-hamstring-tendinopathy.html"
+                    style="color: var(--hub-primary); font-weight: 600; font-size: 0.9rem;">Read more →</a></li>
+                <li><strong>Referred pain from the back:</strong> Problems in the lower back can cause pain felt in the
+                  buttock or hip. Studies show that a full 71% of patients with hip problems actually have buttock pain
+                  as the dominant symptom.</li>
+              </ul>
+            </div>
+
+            <!-- Numbness -->
+            <div class="condition-card">
+              <h4>Numbness, tingling or burning pain</h4>
+              <p><strong>Typical signs:</strong> Burning, tingling or numb feeling. May be on the outside of the thigh,
+                or radiate from back/buttock down into the leg.</p>
+              <ul>
+                <li><strong>Meralgia paraesthetica:</strong> Compression of a nerve causing numbness or burning on the
+                  outside of the thigh. Common with overweight, pregnancy or tight trousers/belts. <strong>85% get
+                    better without surgery.</strong> <a href="hip/meralgia-paraesthetica.html"
+                    style="color: var(--hub-primary); font-weight: 600; font-size: 0.9rem;">Read more →</a></li>
+                <li><strong>Sciatica/lumbar radiculopathy:</strong> Radiation from back/buttock down the back or outside
+                  of the leg - often past the knee to the foot. Usually caused by an irritated nerve root in the back.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- SECTION 2: Home tests -->
+          <section class="hub-section" id="s2">
+            <div class="section-header">
+              <span class="section-number">2</span>
+              <h2>Do-It-Yourself Tests: Find Out More Before You Come</h2>
+            </div>
+
+            <p>Before you book an appointment, you can try these simple tests at home. They often give a good indication
+              of what's wrong - and help me get to the bottom of the problem faster.</p>
+
+            <div class="test-card">
+              <h4>Test 1: The sock test (checks the hip joint)</h4>
+              <p><strong>How to do it:</strong> Sit on a chair. Try to put on socks on the painful side without bending
+                your back much - by pulling your foot up towards you and rotating the hip outward.</p>
+              <p><strong>Result:</strong> Is it difficult or does it hurt deep in the groin? Studies show this is much
+                more common with hip osteoarthritis than with tendon problems on the outside. It indicates stiffness in
+                the hip joint itself.</p>
+            </div>
+
+            <div class="test-card">
+              <h4>Test 2: The single-leg test (checks gluteal tendons)</h4>
+              <p><strong>How to do it:</strong> Stand on the painful leg for 30 seconds. Hold lightly onto a wall for
+                balance if needed.</p>
+              <p><strong>Result:</strong> If this reproduces the familiar pain on the outside of the hip, it strongly
+                suggests GTPS (gluteal tendinopathy). A recent meta-analysis showed this test has <strong>94%
+                  sensitivity and 99% specificity</strong> for tendon problems on the outside of the hip.</p>
+            </div>
+
+            <div class="test-card">
+              <h4>Test 3: The pointing test (checks SI joint vs. hip)</h4>
+              <p><strong>How to do it:</strong> Where is the pain? Try to point to the most painful spot with one
+                finger.</p>
+              <p><strong>Result:</strong> Are you pointing right at the "dimple" or hollow at the lower back? Then the
+                pain probably comes from the SI joint (pelvic joint), not the hip. If you point to the groin (often
+                forming a C with your hand), it's more often the hip joint itself.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 3: Differentiation -->
+          <section class="hub-section" id="s3">
+            <div class="section-header">
+              <span class="section-number">3</span>
+              <h2>Hip, Back or Pelvis? How to Tell Them Apart</h2>
+            </div>
+
+            <p>Many who come to me think they have "hip problems" - but the pain actually comes from the back or pelvis.
+              And vice versa. Here are the rules of thumb:</p>
+
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Where?</th>
+                  <th>Typical pain pattern</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Hip</strong></td>
+                  <td>Pain in the groin or front of the thigh. May radiate to the knee, but rarely further. Stiffness
+                    with internal rotation. Patients with groin pain are <strong>7x more likely</strong> to have a hip
+                    problem.</td>
+                </tr>
+                <tr>
+                  <td><strong>Back</strong></td>
+                  <td>Pain radiating below the knee - often all the way to the foot. Numbness or tingling in specific
+                    areas. Burning, "electric" pain. Weakness in foot or toes.</td>
+                </tr>
+                <tr>
+                  <td><strong>Pelvis</strong></td>
+                  <td>Localised pain at the back/buttock junction (SI joint). Often sharp with quick movements: turning
+                    in bed, getting up, walking stairs. May radiate to buttock/back of thigh, but stops at the knee.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="info-box">
+              <h4>The important thing:</h4>
+              <p>This table is a simplification. Many have overlapping symptoms, and this is where a thorough clinical
+                examination becomes crucial.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 4: MRI trap -->
+          <section class="hub-section" id="s4">
+            <div class="section-header">
+              <span class="section-number">4</span>
+              <h2>The MRI Trap: Why the Image Doesn't Always Match</h2>
+            </div>
+
+            <p><em>"MRI shows I have a tear - do I need surgery?"</em></p>
+            <p><strong>Probably not.</strong> This is one of the most important things you can learn about hip pain.</p>
+
+            <p>MRI is fantastic technology. But it shows everything - including things that are completely normal
+              age-related changes. The problem is that many of the "findings" are found just as often in people without
+              pain.</p>
+
+            <div class="stat-grid">
+              <div class="stat-item">
+                <div class="stat-number">69%</div>
+                <div class="stat-label">of pain-free have labral tear on MRI</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">37%</div>
+                <div class="stat-label">have FAI morphology without symptoms</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">44-57%</div>
+                <div class="stat-label">have cartilage or labral defects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">50%+</div>
+                <div class="stat-label">of 60-year-olds have "degenerative changes"</div>
+              </div>
+            </div>
+
+            <div class="insight-card tip">
+              <h4>The point?</h4>
+              <p>A "tear" or "wear" on MRI doesn't necessarily mean it's the source of your pain. Images must be
+                interpreted in context with symptoms and examination findings. <strong>I treat people, not
+                  images.</strong></p>
+            </div>
+          </section>
+
+          <!-- SECTION 5: Acute self-help -->
+          <section class="hub-section" id="s5">
+            <div class="section-header">
+              <span class="section-number">5</span>
+              <h2>Acute Self-Help: What You Can Do Now</h2>
+            </div>
+
+            <p>While you wait for treatment, it's important not to irritate the tissue unnecessarily. Here are the
+              "fire-fighting measures" I recommend:</p>
+
+            <h3>How to sleep</h3>
+            <p>Night pain is very common with hip pain, especially with tendon problems on the outside (GTPS). When you
+              lie on your side, the tendons are compressed against the bone - like squeezing a tendon between two hard
+              surfaces.</p>
+            <ul class="symptom-list">
+              <li><strong>Avoid lying on the painful side:</strong> This increases compression on the tendons.</li>
+              <li><strong>Use a pillow between your knees:</strong> If lying on the healthy side, a thick pillow from
+                knee to ankle keeps the hip neutral.</li>
+              <li><strong>Lie on your back:</strong> Often the best position. Optionally with a pillow under the knees.
+              </li>
+            </ul>
+
+            <h3>How to sit and stand</h3>
+            <ul class="symptom-list">
+              <li><strong>Don't sit with legs crossed:</strong> This stretches the tendons on the outside of the hip.
+              </li>
+              <li><strong>Avoid "hanging" on the hip:</strong> When standing, distribute weight equally on both legs.
+              </li>
+              <li><strong>For groin pain:</strong> Lower the chair slightly or tilt the seat forward to open the hip
+                angle.</li>
+            </ul>
+          </section>
+
+          <!-- SECTION 6: Treatment -->
+          <section class="hub-section" id="s6">
+            <div class="section-header">
+              <span class="section-number">6</span>
+              <h2>Treatment: Conservative vs. Surgery</h2>
+            </div>
+
+            <p>Many think that "something must be done" - preferably quickly, preferably an injection or surgery. But
+              research tells a different story: <strong>for most hip and pelvic pain, exercise and manual treatment are
+                as good or better than invasive measures.</strong></p>
+
+            <h3>Success rates for conservative treatment</h3>
+            <div class="stat-grid">
+              <div class="stat-item">
+                <div class="stat-number">78.6%</div>
+                <div class="stat-label">GTPS success with exercise after 1 year</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">82%</div>
+                <div class="stat-label">FAI avoid surgery</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">63%</div>
+                <div class="stat-label">Snapping hip improvement without surgery</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">85%</div>
+                <div class="stat-label">Meralgia paraesthetica without surgery</div>
+              </div>
+            </div>
+
+            <div class="treatment-box">
+              <h4>What about FAI surgery?</h4>
+              <p>The UK FASHIoN study compared hip surgery with physiotherapy in 348 patients. Both groups improved
+                significantly. The physiotherapy group went from 35.6 to 49.7 points, the surgery group from 39.2 to
+                58.8 points. <strong>Conservative treatment should be tried first for most.</strong></p>
+            </div>
+
+            <div class="myth-box">
+              <h4>What about cortisone?</h4>
+              <p>Cortisone injections can provide short-term pain relief, but long-term effects are poorly documented.
+                The LEAP study showed that the cortisone group after 1 year was no better than the "wait and see" group.
+                Systematic reviews have also shown negative effects on tendon tissue.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 7: Red flags -->
+          <section class="hub-section" id="s7">
+            <div class="section-header">
+              <span class="section-number">7</span>
+              <h2>Red Flags: When You Must Seek Help Quickly</h2>
+            </div>
+
+            <div class="red-flag-box">
+              <h3>Contact emergency services IMMEDIATELY if:</h3>
+              <ul>
+                <li>Cannot bear weight on the leg after a fall or injury</li>
+                <li>Fever together with hip or back pain</li>
+                <li>Severe swelling, redness and warmth over the hip</li>
+                <li>Loss of control over bladder or bowel</li>
+                <li>Sudden, severe weakness or numbness in the leg</li>
+              </ul>
+            </div>
+
+            <div class="info-box">
+              <h4>Contact a doctor or chiropractor within a few days if:</h4>
+              <ul>
+                <li>Persistent night pain that wakes you repeatedly</li>
+                <li>Morning stiffness lasting over 60 minutes (may indicate inflammatory disease)</li>
+                <li>Unexplained weight loss combined with persistent pain</li>
+                <li>Runners with gradually increasing groin pain and night waking - may be femoral neck stress fracture
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Blog Carousel - Related articles -->
+          <section class="hub-section" id="blog-carousel">
+            <div class="section-header">
+              <span class="section-number">8</span>
+              <h2>From the Blog</h2>
+            </div>
+            <p style="margin-bottom: 20px;">Explore our articles on hip and pelvic pain:</p>
+
+            <div class="blog-scroll-wrapper" style="position: relative; padding: 0 40px;">
+              <button class="blog-scroll-btn blog-scroll-prev" aria-label="Previous"
+                style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); z-index: 10; width: 36px; height: 36px; border-radius: 50%; background: var(--hub-primary); border: none; cursor: pointer; font-size: 20px; color: white;">&#8249;</button>
+              <button class="blog-scroll-btn blog-scroll-next" aria-label="Next"
+                style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); z-index: 10; width: 36px; height: 36px; border-radius: 50%; background: var(--hub-primary); border: none; cursor: pointer; font-size: 20px; color: white;">&#8250;</button>
+              <div class="blog-grid"
+                style="display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 10px 0; scrollbar-width: none;">
+
+                <article class="blog-card"
+                  style="flex: 0 0 280px; scroll-snap-align: start; background: #f8fafc; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                  <div style="height: 160px; overflow: hidden;">
+                    <img src="../../images/Plager hofte-og-bekkensmerter/hip-pain.webp"
+                      alt="Piriformis syndrome and buttock pain" loading="lazy"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 16px;">
+                    <h3 style="font-size: 15px; margin: 0 0 8px; color: var(--hub-dark);">Piriformis Syndrome: When it
+                      feels like sciatica</h3>
+                    <p style="font-size: 13px; color: #6b7280; margin: 0 0 12px;">Deep buttock pain radiating down the
+                      thigh? It may be piriformis syndrome.</p>
+                    <a href="../../en/blog/piriformis-syndrome-false-sciatica.html"
+                      style="color: var(--hub-primary); font-weight: 600; font-size: 13px; text-decoration: none;">Read
+                      more</a>
+                  </div>
+                </article>
+
+                <article class="blog-card"
+                  style="flex: 0 0 280px; scroll-snap-align: start; background: #f8fafc; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                  <div style="height: 160px; overflow: hidden;">
+                    <img src="../../images/Plager hofte-og-bekkensmerter/bekken - symfyse.webp"
+                      alt="L5-S1 prolapse and sciatica" loading="lazy"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 16px;">
+                    <h3 style="font-size: 15px; margin: 0 0 8px; color: var(--hub-dark);">L5-S1 Disc Herniation:
+                      Symptoms and treatment</h3>
+                    <p style="font-size: 13px; color: #6b7280; margin: 0 0 12px;">Disc herniation in the lowest part of
+                      the back can cause pain in the hip and leg.</p>
+                    <a href="../../en/blog/l5-s1-disc-herniation.html"
+                      style="color: var(--hub-primary); font-weight: 600; font-size: 13px; text-decoration: none;">Read
+                      more</a>
+                  </div>
+                </article>
+
+                <article class="blog-card"
+                  style="flex: 0 0 280px; scroll-snap-align: start; background: #f8fafc; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                  <div style="height: 160px; overflow: hidden;">
+                    <img src="../../images/Plager hofte-og-bekkensmerter/hofte smerte.webp" alt="Sciatica and hip pain"
+                      loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 16px;">
+                    <h3 style="font-size: 15px; margin: 0 0 8px; color: var(--hub-dark);">Sciatica, disc herniation or
+                      lumbago?</h3>
+                    <p style="font-size: 13px; color: #6b7280; margin: 0 0 12px;">Learn the difference between these
+                      common causes of back and hip pain.</p>
+                    <a href="../../en/blog/sciatica-disc-lumbago-difference.html"
+                      style="color: var(--hub-primary); font-weight: 600; font-size: 13px; text-decoration: none;">Read
+                      more</a>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+            <div style="text-align: center; margin-top: 16px;">
+              <a href="../../en/blog/index.html?tag=hip-pain"
+                style="color: var(--hub-primary); font-weight: 600; text-decoration: none;">See all articles about
+                hip</a>
+            </div>
+          </section>
+
+          <!-- SECTION 9: FAQ -->
+          <section class="hub-section" id="s9">
+            <div class="section-header">
+              <span class="section-number">9</span>
+              <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-item">
+              <h4>Is it dangerous if my hip "clicks" or "snaps"?</h4>
+              <p>Usually not. "Snapping hip" is very common - affecting 5-10% of the population - and is rarely
+                dangerous as long as it doesn't hurt. The sound is usually caused by a tendon sliding over a bony
+                prominence. In ballet dancers, the prevalence is up to 90%. It only becomes concerning if the clicking
+                is accompanied by pain, locking, or a feeling that the hip "gives way".</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Does stretching the hip help?</h4>
+              <p>Be careful. For tendon problems on the outside of the hip (GTPS) or high on the back of the thigh
+                (proximal hamstring), aggressive stretching can actually make pain worse. Stretching compresses the
+                tendon against the bone and increases compression. Focus instead on strength training and mobility
+                within pain limits.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Does cortisone help?</h4>
+              <p>Short-term yes, long-term doubtful. For GTPS, the LEAP study showed that cortisone gave rapid
+                improvement in the first weeks, but after 1 year the results were no better than doing nothing.
+                Systematic reviews have also shown potential negative effects on tendon tissue over time. I usually
+                recommend trying exercise first.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Can I exercise with hip pain?</h4>
+              <p>Yes, and you should! Research shows that exercise is more effective than passive treatment for most hip
+                and pelvic pain. But you must train smart: avoid activities that cause severe pain, and start with
+                exercises that don't load the joint in extreme positions. A chiropractor or physiotherapist can guide
+                you to the right exercises.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Do I need an MRI or X-ray?</h4>
+              <p>Not always - and often not initially. A thorough clinical examination often provides enough information
+                to make a diagnosis and start treatment. Imaging is relevant if symptoms don't improve as expected.
+                Remember: MRI often shows "findings" that don't explain your pain.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>How long until I get better?</h4>
+              <p>This varies greatly. Acute muscle problems can improve in 2-4 weeks. GTPS (tendon problems on the
+                outside) often takes 6-9 months with proper treatment. Hip osteoarthritis requires a long-term approach,
+                but most notice good effects from exercise within 8-12 weeks. Relapses are common and don't mean
+                treatment has failed - it means your body needs maintenance.</p>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section id="contact" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">10</span>
+              <h2>Need Help with Hip Pain?</h2>
+            </div>
+
+            <p>At TheBackROM at Majorstua, I always start with the most important thing: a thorough examination. I find
+              out where your pain actually comes from - not just what an image shows. Then I create a plan tailored to
+              you.</p>
+
+            <p>I offer manual treatment, shockwave therapy and individual exercise guidance. Most notice improvement
+              within the first weeks, although full recovery can take time. The clinic is centrally located at Majorstua
+              - right by the metro.</p>
+
+            <div class="hub-cta">
+              <h3>Book appointment directly</h3>
+              <p>New problem: 1,140 NOK (45 min) | Follow-up: 795 NOK (30 min)</p>
+              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn">Book
+                appointment online</a>
+              <p style="margin-top: 16px; font-size: 0.9rem;">Or call: <a href="tel:+4793043062"
+                  style="color: white;">93 04 30 62</a></p>
+            </div>
+
+            <p style="margin-top: 20px;"><strong>Mads Finstad</strong><br>Authorised chiropractor, Klinikk for alle,
+              Majorstua</p>
+          </section>
+
+          <!-- Related articles box -->
+          <div class="related-box">
+            <h3>Deeper articles about hip</h3>
+            <a href="hip/gtps-gluteal-tendinopathy.html">→ GTPS - Gluteal Tendinopathy</a>
+            <a href="hip/hip-osteoarthritis.html">→ Hip Osteoarthritis</a>
+            <a href="hip/fai-hip-impingement.html">→ FAI - Hip Impingement</a>
+            <a href="hip/labral-tear.html">→ Labral Tear</a>
+            <a href="hip/si-joint-pelvic-problems.html">→ SI Joint & Pelvic Problems</a>
+            <a href="hip/piriformis-syndrome.html">→ Piriformis Syndrome</a>
           </div>
-        </div>
-      </section>
-      
-      <section class="page__outro outro outro_services">
-        <div class="outro__container">
-          <h2 class="outro__title title">Suffering from hip pain?</h2>
-          <div class="outro__text">
-            Don't let hip pain limit your mobility and independence. Our experienced practitioners can help identify the cause and provide effective treatment to restore your hip function. Contact us today.
+
+          <p class="medical-disclaimer">This article is intended as general information and does not replace individual
+            medical assessment. Seek a healthcare professional if you are unsure about your situation.</p>
+
+          <section class="sources-section">
+            <h3>Sources</h3>
+            <p>Mellor R, et al. Education plus exercise versus corticosteroid injection use versus a wait and see
+              approach on global outcome and pain from gluteal tendinopathy: prospective, single blinded, randomised
+              clinical trial. BMJ. 2018;361:k1662. (LEAP study)</p>
+            <p>Picavet HS, Schouten JS. Musculoskeletal pain in the Netherlands: prevalences, consequences and risk
+              groups, the DMC(3)-study. Pain. 2003;102(1-2):167-78.</p>
+            <p>Register B, et al. Prevalence of abnormal hip findings in asymptomatic participants: a prospective,
+              blinded study. Am J Sports Med. 2012;40(12):2720-4.</p>
+            <p>Palmer A, et al. Surgery for hip impingement syndrome compared with physiotherapy (FASHIoN): a
+              multicentre randomised controlled trial. Lancet. 2018;391(10136):2225-2235.</p>
+            <p>Lievense A, et al. Influence of hip dysplasia on the development of osteoarthritis of the hip. Ann Rheum
+              Dis. 2004;63(6):621-6.</p>
+          </section>
+
+          <p style="font-size: 12px; color: #6b7280; font-style: italic;">Last updated: January 2026</p>
+
+        </article>
+
+        <aside class="hub-sidebar">
+          <div class="hub-conversion-card">
+            <img src="../../images/Om/meg.webp" alt="Mads Finstad Chiropractor" class="sidebar-image">
+            <h3>Hip Pain?</h3>
+            <p>I can help assess your hip and create a plan to get you back to activity.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn-cta">Book
+              appointment</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Chiropractor, TheBackROM</small>
+            </div>
           </div>
-          <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="outro__button button">Book Appointment</a>
-        </div>
-      </section>
-    
-    
-    
-    
-    
-    
-    
+
+          <nav class="hub-toc-card" aria-label="Page navigation">
+            <h3>Contents</h3>
+            <ul>
+              <li><a href="#s1">1. Where does it hurt?</a></li>
+              <li><a href="#s2">2. Home tests</a></li>
+              <li><a href="#s3">3. Hip, back or pelvis?</a></li>
+              <li><a href="#s4">4. The MRI trap</a></li>
+              <li><a href="#s5">5. Acute self-help</a></li>
+              <li><a href="#s6">6. Treatment</a></li>
+              <li><a href="#s7">7. Red flags</a></li>
+              <li><a href="#blog-carousel">8. From the blog</a></li>
+              <li><a href="#s9">9. FAQ</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
     </main>
+
+    <div class="mobile-sticky-cta">
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn-primary">Book
+        appointment</a>
+      <a href="tel:+4793043062" class="btn btn-outline">Call</a>
+    </div>
+
     <footer class="footer">
       <div class="footer__container">
-        <!-- Left Column -->
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link">
-              <img loading="lazy" decoding="async" src="../../images/Media iconer/facebook_media_social_icon.png" alt="Follow TheBackROM on Facebook" />
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link"
+              aria-label="Visit us on Facebook">
+              <img src="../../images/Media iconer/facebook_media_social_icon.png" alt="Visit TheBackROM on Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
             </a>
-            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link">
-              <img src="../../images/Media iconer/instagramlogo.png" alt="Follow chiropractor Mads Finstad on Instagram" loading="lazy" decoding="async" />
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link"
+              aria-label="Follow us on Instagram">
+              <img src="../../images/Media iconer/instagramlogo.png" alt="Follow @chiro_mads on Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
             </a>
-            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link">
-              <img src="../../images/Media iconer/youtube_icon.png" alt="Watch videos from TheBackROM on YouTube"  loading="lazy" decoding="async"/>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link"
+              aria-label="Watch our videos on YouTube">
+              <img src="../../images/Media iconer/youtube_icon.png" alt="Subscribe to TheBackROM YouTube channel"
+                width="512" height="512" loading="lazy" decoding="async" />
             </a>
-            <a href="../contact.html" class="footer__social-link">
-              <img loading="lazy" decoding="async" src="../../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send email to TheBackROM" />
-            </a></div>
+            <a href="../../en/contact.html" class="footer__social-link" aria-label="Send us an email">
+              <img src="../../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Email TheBackROM" loading="lazy"
+                decoding="async" />
+            </a>
+          </div>
         </div>
 
-        <!-- Center Column -->
         <div class="footer__center">
           <div class="footer__logo">
-            <a href="../index.html" class="logo"><img src="../../images/logo-footer.webp" alt="TheBackROM Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+            <img src="../../images/logo-footer.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
           </div>
           <div class="back-to-top-wrapper">
-            <p class="back-to-top-text">Back to start</p>
-            <a href="#top" class="back-to-top-btn" aria-label="Go to top of page"><i class="fas fa-arrow-up" aria-hidden="true"></i> Up</a>
+            <p class="text--muted-small">Back to top</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Go to top of page">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Up
+            </a>
           </div>
         </div>
 
-        <!-- Right Column -->
         <div class="footer__right">
           <div class="footer__hours">
             <h3>Opening Hours</h3>
@@ -200,30 +998,47 @@
       </div>
 
       <div class="footer__bottom">
-        <a href="../privacy-policy.html" class="footer__policy">Privacy Policy</a>
-        <p class="footer__copyright">� 2026 TheBackROM ? Alle rettigheter reserveret</p>
+        <a href="../../en/privacy-policy.html" class="footer__link--muted">Privacy Policy</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Chiropractor - All rights reserved</p>
       </div>
     </footer>
   </div>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
-     class="mobile-sticky-cta"
-     aria-label="Book appointment with chiropractor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Book Now
-  </a>
-
 
   <script src="../../js/script.min.js" defer></script>
   <script src="../../js/language-toggle.min.js" defer></script>
   <script src="../../js/modern-enhancements.min.js" defer></script>
+  <script src="../../js/blog-carousel.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+      if (sections.length === 0 || navLinks.length === 0) return;
+      function updateActiveLink() {
+        let current = '';
+        const scrollPos = window.scrollY + 200;
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (scrollPos >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        // Default to first section if at top
+        if (!current && sections.length > 0) {
+          current = sections[0].getAttribute('id');
+        }
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          const href = link.getAttribute('href');
+          if (href && href === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
   <script src="../../js/breadcrumbs.js" defer></script>
 </body>
-</html> 
 
-
+</html>

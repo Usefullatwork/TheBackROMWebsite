@@ -1,77 +1,240 @@
-﻿
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- 2026 Modern Meta Tags -->
   <meta name="theme-color" content="#1a202c" />
   <meta name="color-scheme" content="light" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="view-transition" content="same-origin" />
 
-  <!-- PWA Support -->
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-
-  <!-- Preload Critical Resources -->
-  <link rel="preload" as="style" href="../../css/main.min.css" />
-
+  <link rel="preload" as="style" href="../../css/main.min.css?v=20260101_v5" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
-  <title>Lower Back Pain - TheBackROM</title>
-  
+
+  <title>Back Pain & Lower Back Pain Guide | Chiropractor Oslo</title>
+  <meta name="description" content="Complete guide to back pain and lower back pain: acute lumbago, sciatica, disc herniation, pelvic pain and stenosis. Causes, symptoms and treatment.">
+  <meta name="keywords" content="back pain, lower back pain, acute lumbago, sciatica, disc herniation, chiropractor Oslo, SI joint, pelvic pain, back pain treatment">
+  <meta name="author" content="Mads Finstad">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Back Pain & Lower Back Pain Guide | Chiropractor Oslo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thebackrom.com/en/conditions/lower-back-pain.html">
+  <meta property="og:image" content="https://thebackrom.com/images/plager korsryggsmerter/korsrygg smerte (1).webp">
+  <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Chiropractor">
+  <meta property="og:locale" content="en_US">
+  <link rel="canonical" href="https://thebackrom.com/en/conditions/lower-back-pain.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/korsryggsmerte.html">
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/lower-back-pain.html">
+
+  <!-- MedicalWebPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Lower Back Pain – Complete Guide",
+    "description": "Complete guide to lower back pain: acute lumbago, sciatica, disc herniation, SI joint and stenosis. Causes, symptoms and treatment by chiropractor.",
+    "url": "https://thebackrom.com/en/conditions/lower-back-pain.html",
+    "author": {
+      "@type": "Person",
+      "name": "Mads Finstad",
+      "jobTitle": "Chiropractor"
+    },
+    "mainEntity": {
+      "@type": "MedicalCondition",
+      "name": "Lower Back Pain",
+      "alternateName": ["Lumbago", "Acute Lumbago", "Sciatica"]
+    },
+    "specialty": "Chiropractic",
+    "lastReviewed": "2026-01-12"
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is non-specific lower back pain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non-specific lower back pain accounts for 85-95% of all cases. This means serious causes have been ruled out – the pain comes from muscles, joints or other structures that respond well to conservative treatment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does acute lumbago last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most people experience significant improvement within 1-2 weeks. About 70% are substantially better within one week. With proper treatment, many experience pain relief after the first session."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a disc herniation heal on its own?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! The body has a remarkable ability to reabsorb herniated disc material: 66-77% of herniations are spontaneously reabsorbed over time. The larger the herniation, the greater the chance of resorption."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between acute lumbago and sciatica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With acute lumbago, the pain stays in the back – it doesn't radiate down the legs. With sciatica, the pain radiates below the knee, often with tingling or numbness down the leg."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How common is recurrence of lower back pain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "69% experienced recurrence within 12 months. Lower back pain is therefore an episodic, long-term condition – prevention is important."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Meta Pixel Code -->
   <script>
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '540166625752174');
-      fbq('track', 'PageView');
-    }, 2000);
-  });
-  
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540166625752174');
+        fbq('track', 'PageView');
+      }, 2000);
+    });
   </script>
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-  
+      src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
+
   <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
   <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
   <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
-
+  <link rel="stylesheet" href="../../css/hub-article.css">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
-  
   <link rel="preload" as="style" href="../../css/font-awesome-minimal.css">
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
-  </head>
+
+  <style>
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+    .hub-toc-card a { display: block; padding: 10px 14px; color: #475569; text-decoration: none; border-radius: 8px; font-size: 14px; transition: all 0.2s ease; border-left: 3px solid transparent; }
+    .hub-toc-card a:hover { background: #e2e8f0; color: var(--hub-primary); }
+    .hub-toc-card a.active { background: #e0f2fe; color: var(--hub-primary); border-left-color: var(--hub-primary); font-weight: 500; }
+    .hub-intro { margin-bottom: 48px; }
+    .hub-intro h1 { font-size: 2.5rem; color: var(--hub-dark); margin-bottom: 24px; line-height: 1.2; }
+    .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
+    .intro-text p { margin-bottom: 16px; }
+    .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
+    .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
+    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
+    .treatment-box ul { margin: 0; padding-left: 20px; }
+    .treatment-box li { margin-bottom: 8px; color: #065f46; }
+    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
+    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
+    .red-flag-box ul { margin: 0; padding-left: 20px; }
+    .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
+    .symptom-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin: 16px 0; }
+    .symptom-list li { background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--hub-primary); list-style: none; color: #334155; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 2rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.9rem; margin-top: 4px; }
+    .nerve-box { background: #fffbeb; border: 1px solid #fbbf24; border-radius: 10px; padding: 18px; margin: 16px 0; }
+    .nerve-box h4 { color: #92400e; margin-bottom: 10px; }
+    .nerve-box ul { margin: 0; padding-left: 20px; }
+    .nerve-box li { color: #78350f; margin-bottom: 6px; }
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+    .comparison-table th, .comparison-table td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+    .comparison-table th { background: #f8fafc; color: var(--hub-dark); font-weight: 600; }
+    .comparison-table tr:hover { background: #f8fafc; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
+    .faq-item p { color: #4b5563; margin: 0; line-height: 1.6; }
+    .hub-cta { background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%); color: white; border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
+    .hub-cta h3 { color: white !important; font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; }
+    .hub-cta p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
+    .hub-cta .button { background: white; color: var(--hub-primary); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s ease; }
+    .hub-cta .button:hover { transform: translateY(-2px); }
+    .related-box { background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 32px; }
+    .related-box h3 { color: var(--hub-dark); margin-bottom: 16px; }
+    .related-box a { display: block; padding: 12px 0; color: var(--hub-primary); text-decoration: none; border-bottom: 1px solid #e5e7eb; transition: padding-left 0.2s ease; }
+    .related-box a:last-child { border-bottom: none; }
+    .related-box a:hover { padding-left: 8px; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
+    .mobile-sticky-cta a { display: block; background: white; color: var(--hub-primary); text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; }
+    @media (max-width: 900px) {
+      .hub-wrapper { flex-direction: column; padding: 20px; }
+      .hub-sidebar { display: none; }
+      .hub-main { max-width: 100%; padding-bottom: 100px; }
+      .hub-intro h1 { font-size: 1.8rem; }
+      .mobile-sticky-cta { display: block; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .medical-disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 32px; font-size: 0.85rem; color: #64748b; }
+    .section-quick-link { margin: 0 0 16px; }
+    .section-quick-link a { color: var(--hub-primary); font-weight: 600; font-size: 0.95rem; text-decoration: none; }
+    .section-quick-link a:hover { text-decoration: underline; }
+    .sources-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
+    .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; }
+    .sources-section p { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
+  </style>
+</head>
 
 <body id="top">
-  <!-- Skip-link for accessibility -->
   <a href="#main" class="skip-link">Skip to main content</a>
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img src="../../images/logo-header.webp" alt="TheBackROM Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+            alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
-                    <div class="language-toggle" role="group" aria-label="Language selection">
-            <button class="language-toggle__button" data-lang="no" aria-label="Switch to Norwegian" aria-pressed="false">NO</button>
-            <button class="language-toggle__button language-toggle__button--active" data-lang="en" aria-label="English" aria-pressed="true">EN</button>
+          <div class="language-toggle" role="group" aria-label="Language selection">
+            <button class="language-toggle__button" data-lang="no" aria-label="Switch to Norwegian"
+              aria-pressed="false">NO</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="en" aria-label="English"
+              aria-pressed="true">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
           <button type="button" class="icon-menu" aria-label="Open navigation menu" aria-expanded="false">
@@ -88,101 +251,618 @@
               <li class="menu__item"><a href="../prices.html" class="menu__link">Prices</a></li>
               <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="../contact.html" class="menu__link">Contact</a></li>
-                            <li class="menu__item"><a href="../blog/index.html" class="menu__link">Blog</a></li>
+              <li class="menu__item"><a href="../blog/index.html" class="menu__link">Blog</a></li>
               <li class="menu__item">
-                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="actions-header__button">Book Appointment</a>
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
+                  class="actions-header__button">Book Appointment</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
+
     <main class="page" id="main">
-
-
-
-
-
-
-
-      <section class="page__main main main_services main_pages">
-        <div class="main__container main__container_pages">
-          <h1 class="main__title">Lower Back Pain</h1>
-          <div class="main__text main__text_pages">
-            Effective treatment for acute and chronic lower back pain
-          </div>
+      <!-- Hero Section -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <h1>Lower Back Pain – Complete Guide</h1>
+          <p class="hub-hero__subtitle">Everything you need to know about causes, symptoms and treatment | Chiropractor Mads Finstad, Majorstua Oslo</p>
         </div>
       </section>
-      
-      <section class="page__about about">
-        <div class="about__container">
-          <div class="about__image"><img src="../../images/plager korsryggsmerter/korsrygg-smerte-akutt.jpg" alt="Man with lower back pain holding his back"  loading="lazy" decoding="async"/></div>
-          <div class="about__content">
-            <h2 class="about__title title">About lower back pain</h2>
-            <div class="about__text">
-              <p>
-                Lower back pain is one of the most common causes of sick leave and affects millions of people worldwide. It can manifest as acute pain that comes suddenly, often from improper lifting, twisting, or sudden movements, or as chronic pain that has persisted for months or years. The lower back, or lumbar spine, bears much of the body's weight and is subject to significant stress during daily activities.
-              </p>
-              <p>
-                Common causes of lower back pain include muscle strains, ligament sprains, herniated discs, degenerative disc disease, spinal stenosis, facet joint dysfunction, and sacroiliac joint problems. Risk factors include poor posture, sedentary lifestyle, weak core muscles, obesity, stress, and repetitive movements. Sometimes the pain can radiate down the leg (sciatica) if nerve roots become compressed or irritated.
-              </p>
-              <p>
-                At TheBackROM, we take a comprehensive approach to treating lower back pain. Our treatment begins with a thorough assessment to identify the specific cause and contributing factors. Treatment may include spinal adjustments to restore proper joint function, soft tissue therapy to reduce muscle tension and inflammation, specific exercises to strengthen the deep stabilizing muscles of the core and back, postural correction techniques, and education on proper body mechanics. Our goal is not just to relieve your current pain, but to address the underlying causes and prevent future episodes, helping you maintain a healthy, active lifestyle.
-              </p>
+
+      <div class="hub-wrapper">
+        <article class="hub-main">
+
+          <section class="hub-intro">
+            <div class="intro-text">
+              <p>Lower back pain – also called lumbago – is pain in the lower part of the back, between the ribs and the buttock muscles. This is one of the most common reasons for doctor visits and sick leave worldwide. According to the Global Burden of Disease Study (Lancet 2023), <strong>lower back pain is the #1 cause of disability globally</strong>, and approximately 4 in 10 people experience lower back pain in any given month.</p>
+
+              <p>This guide covers everything you need to know about lower back pain: from acute lumbago and sciatica to chronic complaints, disc herniation, pelvic pain and spinal stenosis. Each condition has its own detailed article – click through to what applies to you.</p>
             </div>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="about__button button">Book Appointment</a>
+
+            <div class="premium-summary-card">
+              <h3>Key Facts</h3>
+              <ul>
+                <li><strong>4 in 10</strong> people experience lower back pain each month</li>
+                <li><strong>85–95%</strong> are "non-specific" – no serious underlying cause (WHO, 2023)</li>
+                <li><strong>23%</strong> of adults have chronic lower back pain</li>
+                <li><strong>Recurrence is common</strong> (69% within 12 months) – prevention is key</li>
+              </ul>
+            </div>
+
+            <!-- Sub-article navigation with descriptions -->
+            <nav class="hub-subnav">
+              <h3>Select Your Condition</h3>
+              <p style="margin-bottom: 16px; color: #64748b;">Click on the condition that best fits you for complete information:</p>
+              <div class="hub-subnav__grid hub-subnav__grid--detailed">
+                <a href="lower-back/acute-acute-back-pain.html" class="hub-subnav__card">
+                  <strong>Acute Lumbago</strong>
+                  <span>Sudden, intense back pain – "throwing out your back"</span>
+                </a>
+                <a href="lower-back/sciatica.html" class="hub-subnav__card">
+                  <strong>Sciatica</strong>
+                  <span>Nerve pain that radiates down the leg</span>
+                </a>
+                <a href="lower-back/disc-herniation.html" class="hub-subnav__card">
+                  <strong>Disc Herniation</strong>
+                  <span>When the disc bulges out and presses on nerves</span>
+                </a>
+                <a href="lower-back/si-joint.html" class="hub-subnav__card">
+                  <strong>SI Joint & Pelvis</strong>
+                  <span>Pelvic dysfunction, SI joint pain and pelvic complaints</span>
+                </a>
+                <a href="lower-back/spinal-stenosis.html" class="hub-subnav__card">
+                  <strong>Spinal Stenosis</strong>
+                  <span>Narrowing of the spinal canal – most common after age 50</span>
+                </a>
+                <a href="lower-back/pregnancy.html" class="hub-subnav__card">
+                  <strong>Pregnancy</strong>
+                  <span>Back and pelvic pain during pregnancy</span>
+                </a>
+                <a href="lower-back/ankylosing-spondylitis.html" class="hub-subnav__card">
+                  <strong>Ankylosing Spondylitis</strong>
+                  <span>Inflammatory spinal disease in young adults</span>
+                </a>
+                <a href="lower-back/spondylolisthesis.html" class="hub-subnav__card">
+                  <strong>Spondylolisthesis</strong>
+                  <span>When a vertebra slips forward</span>
+                </a>
+              </div>
+            </nav>
+
+            <!-- Red Flag Alert Box -->
+            <div class="red-flag-alert">
+              <h4>When should you call emergency services or go to the ER?</h4>
+              <p>If you experience numbness in the groin area, problems with urination/bowel control, or increasing weakness in both legs – seek help immediately.</p>
+              <a href="lower-back/red-flags.html">Read more about red flags →</a>
+            </div>
+
+            <img src="../../images/plager korsryggsmerter/A Practical Guide to Lower Back Pain.png" alt="Lower back pain infographic - overview of causes, symptoms and treatment" class="hub-infographic" decoding="async" />
+
+            <!-- Quick Decision Helper -->
+            <div class="decision-helper">
+              <h4>Not sure what you have?</h4>
+              <p>Many people confuse acute lumbago, sciatica and disc herniation. This article helps you understand the difference.</p>
+              <a href="../blog/sciatica-disc-lumbago-difference.html" class="decision-helper__link">Sciatica, disc herniation or acute lumbago? How to tell the difference →</a>
+            </div>
+
+            <div class="stat-grid">
+              <div class="stat-item">
+                <div class="stat-number">40%</div>
+                <div class="stat-label">Had pain in the last month</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">85-95%</div>
+                <div class="stat-label">Non-specific pain</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">69%</div>
+                <div class="stat-label">Recurrence within 12 months</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">#1</div>
+                <div class="stat-label">Cause of disability worldwide</div>
+              </div>
+            </div>
+
+            <div class="insight-card tip">
+              <h4>What does "non-specific back pain" mean?</h4>
+              <p>Non-specific lower back pain accounts for 85–95% of all cases (WHO, 2023). This means serious causes have been ruled out – the pain comes from muscles, joints or other structures that respond well to conservative treatment.</p>
+            </div>
+          </section>
+
+          <!-- Section 1: Acute Lumbago -->
+          <section id="lumbago" class="hub-section">
+            <img src="../../images/plager korsryggsmerter/korsrygg smerte (1).webp" alt="Woman with lower back pain" class="img-float-right" decoding="async" />
+            <div class="section-header">
+              <span class="section-number">1</span>
+              <h2>Acute Lumbago ("Throwing Out Your Back")</h2>
+            </div>
+            <p class="section-quick-link"><a href="lower-back/acute-acute-back-pain.html">Go to full article on acute lumbago →</a></p>
+
+            <p>Acute lumbago is a sudden, intense pain in the lower back that makes it difficult to straighten up. With acute lumbago, there is usually an acute muscle spasm or joint locking.</p>
+
+            <div class="insight-card summary">
+              <h4>Common Triggers</h4>
+              <ul>
+                <li>Lifting with twisting – especially heavy objects</li>
+                <li>Sudden movements or stumbling</li>
+                <li>Prolonged sitting followed by quick movement</li>
+                <li>No clear cause (up to 50% of cases)</li>
+              </ul>
+            </div>
+
+            <h3>Symptoms of Acute Lumbago</h3>
+            <ul class="symptom-list">
+              <li>Sudden, intense pain – often described as "locking" or "stabbing"</li>
+              <li>Pronounced stiffness – difficult to straighten up, bend or rotate</li>
+              <li>Muscle spasms you can feel as hard "knots"</li>
+              <li>Pain relief at rest – often in fetal position</li>
+            </ul>
+
+            <div class="insight-card tip">
+              <h4>Acute Lumbago vs. Sciatica</h4>
+              <p>With acute lumbago, the pain stays in the back – it doesn't radiate down the legs. Radiating pain below the knee, tingling or numbness may indicate sciatica.</p>
+            </div>
+
+            <div class="insight-card tip">
+              <p><strong>Prognosis:</strong> Most people experience significant improvement within 1–2 weeks. About 70% are substantially better within one week. With proper treatment, many experience pain relief after the first session.</p>
+            </div>
+
+            <p style="margin-top: 16px;"><a href="lower-back/acute-acute-back-pain.html" style="color: var(--hub-primary); font-weight: 600;">→ Read complete article on acute lumbago</a></p>
+          </section>
+
+          <!-- Section 2: Sciatica -->
+          <section id="sciatica" class="hub-section">
+            <img src="../../images/plager korsryggsmerter/korsrygg-smerte-2-optimized.webp" alt="Sciatica nerve pain" class="img-float-left" decoding="async" />
+            <div class="section-header">
+              <span class="section-number">2</span>
+              <h2>Sciatica – Nerve Pain Down the Leg</h2>
+            </div>
+            <p class="section-quick-link"><a href="lower-back/sciatica.html">Go to full article on sciatica →</a></p>
+
+            <p>Sciatica – also called lumbar radiculopathy – is pain that radiates from the lower back down into the leg, caused by irritation of a nerve root. <strong>Only 3–5% of the population has lumbar radiculopathy</strong> (Medscape, 2024) – it's much less common than people think.</p>
+
+            <div class="insight-card summary">
+              <h4>Most Common Causes of Sciatica</h4>
+              <ul>
+                <li><strong>Disc herniation</strong> – most common cause (about 90%). The disc material presses on the nerve root.</li>
+                <li><strong>Spinal stenosis</strong> – narrowing of the spinal canal, more common in older adults</li>
+                <li><strong>Spondylolisthesis</strong> – vertebral slippage that can pinch the nerve</li>
+                <li><strong>Piriformis syndrome</strong> – muscle in the buttock that irritates the sciatic nerve</li>
+              </ul>
+            </div>
+
+            <h3>Symptoms of Sciatica</h3>
+            <ul class="symptom-list">
+              <li>Radiation below the knee – this distinguishes sciatica from regular back pain</li>
+              <li>Burning, stabbing or electric pain down the back of the thigh</li>
+              <li>Tingling and numbness in the leg or foot</li>
+              <li>Weakness – difficulty lifting the foot</li>
+              <li>Worse when sitting – the nerve is stretched in sitting position</li>
+            </ul>
+
+            <div class="nerve-box">
+              <h4>L4-L5 (L5 nerve root)</h4>
+              <ul>
+                <li>Pain on the outer thigh and calf, numbness on top of the foot</li>
+                <li>Weakness when lifting the big toe, difficulty walking on heels</li>
+              </ul>
+            </div>
+
+            <div class="nerve-box">
+              <h4>L5-S1 (S1 nerve root)</h4>
+              <ul>
+                <li>Pain in the back of the thigh and calf, down to the little toe</li>
+                <li>Weakness when walking on toes, reduced Achilles reflex</li>
+              </ul>
+            </div>
+
+            <div class="insight-card tip">
+              <p><strong>Prognosis:</strong> 50% experience significant improvement within 6 weeks. 75% are better within 12 weeks. 90% improve within 3–6 months without surgery (PMC, 2019).</p>
+            </div>
+
+            <p style="margin-top: 16px;"><a href="lower-back/sciatica.html" style="color: var(--hub-primary); font-weight: 600;">→ Read complete article on sciatica (true vs. false, duration and treatment)</a></p>
+          </section>
+
+          <!-- Section 3: Disc Herniation -->
+          <section id="disc" class="hub-section">
+            <img src="../../images/plager korsryggsmerter/korsrygg-optimized.webp" alt="Disc herniation in the spine" class="img-float-right" decoding="async" />
+            <div class="section-header">
+              <span class="section-number">3</span>
+              <h2>Disc Herniation – When the Disc Bulges Out</h2>
+            </div>
+            <p class="section-quick-link"><a href="lower-back/disc-herniation.html">Go to full article on disc herniation →</a></p>
+
+            <p>A disc herniation occurs when the soft core of the intervertebral disc pushes through the outer ring and can press on nerve roots. <strong>Only 5–15% of patients with lower back pain have lumbar disc herniation</strong> (OAMJMS, 2022).</p>
+
+            <div class="insight-card tip">
+              <h4>Important to Know About Disc Herniation</h4>
+              <p>Many people have disc herniations on MRI without symptoms – the finding alone doesn't mean you need treatment. 29% of 20-year-olds and 43% of 80-year-olds without pain have protrusion on MRI (Brinjikji, 2015).</p>
+            </div>
+
+            <div class="treatment-box">
+              <h4>Can a Disc Herniation Heal On Its Own?</h4>
+              <p>Yes! The body has a remarkable ability to reabsorb herniated disc material: <strong>66–77% of herniations are spontaneously reabsorbed over time</strong> (Zhong et al., 2017). The larger the herniation, the greater the chance of resorption.</p>
+            </div>
+
+            <h3>Treatment of Disc Herniation</h3>
+            <div class="insight-card summary">
+              <h4>Conservative Treatment (First Choice)</h4>
+              <ul>
+                <li>Manual therapy adapted to the condition</li>
+                <li>McKenzie approach for centralizing symptoms</li>
+                <li>Gradual increase in activity and exercises</li>
+              </ul>
+            </div>
+
+            <div class="insight-card summary">
+              <h4>Surgery is Considered For:</h4>
+              <ul>
+                <li>Cauda equina syndrome (emergency)</li>
+                <li>Progressive neurological deficit</li>
+                <li>Persistent symptoms after 6–12 weeks of conservative treatment</li>
+              </ul>
+            </div>
+
+            <p style="margin-top: 16px;"><a href="lower-back/disc-herniation.html" style="color: var(--hub-primary); font-weight: 600;">→ Read complete article on disc herniation (spontaneous resorption, treatment and prognosis)</a></p>
+          </section>
+
+          <!-- Section 4: SI Joint -->
+          <section id="sijoint" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">4</span>
+              <h2>SI Joint and Pelvic Pain</h2>
+            </div>
+            <p class="section-quick-link"><a href="lower-back/si-joint.html">Go to full article on SI joint →</a></p>
+
+            <p>The SI joint is the connection between the sacrum and the pelvic bone. <strong>The SI joint is the pain generator in 15–30% of patients with chronic lower back pain</strong> (Cohen et al., 2013).</p>
+
+            <div class="insight-card summary">
+              <h4>Who Gets SI Joint Problems?</h4>
+              <ul>
+                <li>After pregnancy and childbirth (very common)</li>
+                <li>With asymmetric loading (one leg shorter)</li>
+                <li>After trauma to the pelvis</li>
+                <li>With hypermobility</li>
+              </ul>
+            </div>
+
+            <h3>Symptoms</h3>
+            <ul class="symptom-list">
+              <li>One-sided pain in the lower back, over one buttock</li>
+              <li>Radiation to the groin, hip or back of the thigh – but rarely below the knee</li>
+              <li>Worse with asymmetric loading – standing on one leg, climbing stairs</li>
+              <li>Turning in bed often provokes the pain</li>
+            </ul>
+
+            <div class="insight-card tip">
+              <h4>"Pelvic Dysfunction" – What Is It?</h4>
+              <p>This term usually describes reduced mobility in the SI joint, muscle spasms in the pelvic musculature and asymmetry. SI joint problems often respond very well to manual treatment.</p>
+            </div>
+
+            <p style="margin-top: 16px;"><a href="lower-back/si-joint.html" style="color: var(--hub-primary); font-weight: 600;">→ Read complete article on SI joint pain and pelvic dysfunction</a></p>
+          </section>
+
+          <!-- Section 5: Spinal Stenosis -->
+          <section id="stenosis" class="hub-section">
+            <img src="../../images/plager korsryggsmerter/korsrygg-8-2-optimized.webp" alt="Spinal stenosis" class="img-float-left" decoding="async" />
+            <div class="section-header">
+              <span class="section-number">5</span>
+              <h2>Spinal Stenosis</h2>
+            </div>
+            <p class="section-quick-link"><a href="lower-back/spinal-stenosis.html">Go to full article on spinal stenosis →</a></p>
+
+            <p>Spinal stenosis means narrowing of the spinal canal. Most common in people over 50–60 years. Radiological stenosis is found in up to 47% of people over 60, but most are asymptomatic (Jensen et al., 2020).</p>
+
+            <div class="insight-card summary">
+              <h4>The Classic Symptom: Neurogenic Claudication</h4>
+              <ul>
+                <li>Pain and heaviness in the legs when walking that comes gradually</li>
+                <li>Symptoms ease when you sit down or bend forward</li>
+                <li>You can walk longer with a shopping cart – because you bend slightly forward</li>
+                <li>Cycling often works better than walking – the back is in flexion</li>
+              </ul>
+            </div>
+
+            <div class="treatment-box">
+              <h4>Treatment</h4>
+              <ul>
+                <li>Flexion-based exercises (bending forward – opens the canal)</li>
+                <li>Manual therapy to optimize function</li>
+                <li>Core muscle strengthening</li>
+              </ul>
+              <p style="margin-top: 12px;"><strong>Important:</strong> Conservative treatment and surgery yield similar long-term results for many patients.</p>
+            </div>
+
+            <p style="margin-top: 16px;"><a href="lower-back/spinal-stenosis.html" style="color: var(--hub-primary); font-weight: 600;">→ Read complete article on spinal stenosis</a></p>
+          </section>
+
+          <!-- Section 6: Pregnancy -->
+          <section id="pregnancy" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">6</span>
+              <h2>Pregnancy and Lower Back Pain</h2>
+            </div>
+            <p class="section-quick-link"><a href="lower-back/pregnancy.html">Go to full article on pregnancy and back pain →</a></p>
+
+            <p>Approximately <strong>50% of pregnant women experience lower back pain</strong> (Wu et al., European Spine Journal 2004). For some, the problems start early; for others, not until the last trimester.</p>
+
+            <div class="insight-card summary">
+              <h4>Why Do Pregnant Women Get Back Pain?</h4>
+              <p><strong>Hormonal changes:</strong></p>
+              <ul>
+                <li>Relaxin loosens ligaments and joints – provides less stability</li>
+                <li>Muscles have to work harder to compensate</li>
+              </ul>
+              <p style="margin-top: 12px;"><strong>Mechanical changes:</strong></p>
+              <ul>
+                <li>Center of gravity shifts forward</li>
+                <li>Increased curve in the lower back (hyperlordosis)</li>
+                <li>Weight gain of 10–15 kg</li>
+              </ul>
+            </div>
+
+            <h3>Types of Pain During Pregnancy</h3>
+            <ul class="symptom-list">
+              <li><strong>Lumbar pain:</strong> Central in the lower back, similar to regular lower back pain</li>
+              <li><strong>Pelvic pain:</strong> Four times more common. Over the SI joints and/or pubic symphysis.</li>
+              <li><strong>Symphysis dysfunction:</strong> Pronounced pain over the pubic symphysis, difficulty walking</li>
+            </ul>
+
+            <div class="treatment-box">
+              <h4>Treatment During Pregnancy</h4>
+              <p>Chiropractic treatment is safe during pregnancy:</p>
+              <ul>
+                <li>Adapted joint treatment</li>
+                <li>Soft tissue therapy</li>
+                <li>Pelvic belts for pelvic pain</li>
+                <li>Exercises and ergonomic advice</li>
+              </ul>
+            </div>
+
+            <p style="margin-top: 16px;"><a href="lower-back/pregnancy.html" style="color: var(--hub-primary); font-weight: 600;">→ Read complete article on pregnancy and back pain</a></p>
+          </section>
+
+          <!-- Section 7: MRI Findings -->
+          <section id="mri" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">7</span>
+              <h2>What Does an MRI Really Show?</h2>
+            </div>
+
+            <p>MRI findings often correlate poorly with pain. Brinjikji et al. (2015) analyzed 3100+ pain-free individuals:</p>
+
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Finding</th>
+                  <th>Age 20</th>
+                  <th>Age 40</th>
+                  <th>Age 60</th>
+                  <th>Age 80</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Disc degeneration</td>
+                  <td>37%</td>
+                  <td>68%</td>
+                  <td>88%</td>
+                  <td>96%</td>
+                </tr>
+                <tr>
+                  <td>Disc bulging</td>
+                  <td>30%</td>
+                  <td>50%</td>
+                  <td>69%</td>
+                  <td>84%</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="insight-card tip">
+              <h4>What Does This Mean?</h4>
+              <p>MRI findings are often a natural part of the aging process and don't necessarily explain the pain. A thorough clinical examination is more important than the image alone.</p>
+            </div>
+          </section>
+
+          <!-- Section 8: Red Flags -->
+          <section id="redflags" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">8</span>
+              <h2>Red Flags</h2>
+            </div>
+
+            <div class="insight-card warning">
+              <h3>Call Emergency Services or Go to the ER Immediately If You Experience:</h3>
+              <ul>
+                <li>Numbness in the groin or around the anus ("saddle anesthesia")</li>
+                <li>Problems urinating – especially if you can't feel that your bladder is full</li>
+                <li>Loss of bowel control</li>
+                <li>Increasing weakness in both legs</li>
+              </ul>
+              <p style="margin-top: 16px; color: #991b1b;"><strong>With treatment within 48 hours, the chances of full recovery are significantly better.</strong></p>
+            </div>
+          </section>
+
+          <!-- Section 9: Prognosis -->
+          <section id="prognosis" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">9</span>
+              <h2>Prognosis and Recurrence</h2>
+            </div>
+
+            <p>For acute lower back pain, 39% are pain-free after 6 weeks, 73% after 1 year (Henschke, BMJ 2008). For chronic pain, 67.2% had the same pain level after 4 years (Peng, 2012).</p>
+
+            <div class="insight-card tip">
+              <h4>Recurrence is Common</h4>
+              <p>69% experienced recurrence within 12 months (da Silva, 2019). Lower back pain is therefore an episodic, long-term condition – <strong>prevention is important</strong>.</p>
+            </div>
+
+            <div class="treatment-box">
+              <h4>What Does the Research Say About Treatment?</h4>
+              <ul>
+                <li>JAMA 2017: Manipulation provides ~10 points improvement on 100-point scale – equivalent to NSAIDs</li>
+                <li>BMJ 2019: High-quality evidence for effect in chronic pain</li>
+                <li>CCGPP (2016) recommends 6–12 treatments over 2–4 weeks as a starting point</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section 10: FAQ -->
+          <section id="faq" class="hub-section">
+            <div class="section-header"><span class="section-number">10</span><h2>Frequently Asked Questions</h2></div>
+            
+            <div class="faq-item">
+              <h4>What is non-specific lower back pain?</h4>
+              <p>Non-specific lower back pain accounts for 85-95% of all cases. This means serious causes have been ruled out – the pain comes from muscles, joints or other structures that respond well to conservative treatment.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>How long does acute lumbago last?</h4>
+              <p>Most people experience significant improvement within 1-2 weeks. About 70% are substantially better within one week. With proper treatment, many experience pain relief after the first session.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Can a disc herniation heal on its own?</h4>
+              <p>Yes! The body has a remarkable ability to reabsorb herniated disc material: 66-77% of herniations are spontaneously reabsorbed over time. The larger the herniation, the greater the chance of resorption.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>What is the difference between acute lumbago and sciatica?</h4>
+              <p>With acute lumbago, the pain stays in the back – it doesn't radiate down the legs. With sciatica, the pain radiates below the knee, often with tingling or numbness down the leg.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>How common is recurrence of lower back pain?</h4>
+              <p>69% experienced recurrence within 12 months. Lower back pain is therefore an episodic, long-term condition – prevention is important.</p>
+            </div>
+          </section>
+
+          <!-- Section 11: CTA -->
+          <section id="contact" class="hub-section">
+            <div class="section-header">
+              <span class="section-number">11</span>
+              <h2>Need Help With Lower Back Pain?</h2>
+            </div>
+
+            <p>At TheBackROM in Majorstua, I have experience with all types of lower back pain – from acute lumbago to long-term problems, from sciatica to pelvic pain.</p>
+
+            <div class="hub-cta">
+              <h3>Book an Appointment</h3>
+              <p>New problem: 1,140 NOK (45 min) | Follow-up: 795 NOK (30 min)</p>
+              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn">Book Online</a>
+              <p style="margin-top: 16px; font-size: 0.9rem;">Or call: <a href="tel:+4740035400" style="color: white;">400 35 400</a></p>
+            </div>
+
+            <p style="margin-top: 20px;"><strong>Mads Finstad</strong><br>Licensed Chiropractor, Klinikk for alle, Majorstua Oslo</p>
+          </section>
+
+          <div class="related-box">
+            <h3>In-Depth Articles on Lower Back</h3>
+            <a href="lower-back/red-flags.html" style="color: #dc2626;">→ Red Flags for Back Pain - When to Seek Emergency Help</a>
+            <a href="lower-back/acute-acute-back-pain.html">→ Acute Lumbago – Complete Guide</a>
+            <a href="lower-back/sciatica.html">→ Sciatica: True vs. False, Duration and Treatment</a>
+            <a href="lower-back/disc-herniation.html">→ Disc Herniation: Spontaneous Resorption, Treatment and Prognosis</a>
+            <a href="lower-back/si-joint.html">→ SI Joint Pain and Pelvic Dysfunction – Complete Guide</a>
+            <a href="lower-back/spinal-stenosis.html">→ Spinal Stenosis: Narrowing of the Spine</a>
+            <a href="lower-back/pregnancy.html">→ Pregnant with Back Pain? How the Chiropractor Can Help</a>
           </div>
-        </div>
-      </section>
-      
-      <section class="page__outro outro outro_services">
-        <div class="outro__container">
-          <h2 class="outro__title title">Suffering from lower back pain?</h2>
-          <div class="outro__text">
-            Don't let lower back pain limit your daily activities. Our experienced practitioners can help you find relief and get back to doing what you love. Contact us today for a comprehensive evaluation.
+
+          <div class="related-box" style="margin-top: 16px;">
+            <h3>Related Articles</h3>
+            <a href="hip-pain.html">→ Hip Pain – Causes and Treatment</a>
+            <a href="neck-pain.html">→ Neck Pain – Complete Guide</a>
+            <a href="thoracic-pain.html">→ Thoracic Pain – Causes and Treatment</a>
+            <a href="dizziness.html">→ Dizziness – Causes and Treatment</a>
           </div>
-          <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="outro__button button">Book Appointment</a>
-        </div>
-      </section>
-    
-    
-    
-    
-    
-    
-    
+
+          <div class="sources-section">
+            <h3>Sources</h3>
+            <p>WHO (2023). Low back pain guidelines.</p>
+            <p>Brinjikji W, et al. (2015). Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. AJNR.</p>
+            <p>Zhong M, et al. (2017). Incidence of spontaneous resorption of lumbar disc herniation. Medicine.</p>
+            <p>Henschke N, et al. (2008). Prognosis of acute low back pain. BMJ.</p>
+            <p>da Silva T, et al. (2019). Risk of recurrence of low back pain. JAMA Network Open.</p>
+            <p>GBD Study (2023). Global Burden of Disease. Lancet.</p>
+          </div>
+
+          <div class="medical-disclaimer">
+            <strong>Medical Information:</strong> This is general information and does not replace individual medical advice. Treatment response varies between individuals. Always contact qualified healthcare professionals for personal evaluation.
+          </div>
+
+        </article>
+
+        <aside class="hub-sidebar">
+          <!-- Conversion Card -->
+          <div class="hub-conversion-card">
+            <img src="../../images/Om/meg.webp" alt="Mads Finstad Chiropractor" class="sidebar-image" decoding="async">
+            <h3>Lower Back Pain?</h3>
+            <p>I help you find the cause and the right treatment.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn-cta">Book Appointment</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Chiropractor, TheBackROM</small>
+            </div>
+          </div>
+
+          <!-- Table of Contents -->
+          <nav class="hub-toc-card" aria-label="Content navigation">
+            <h3>Contents</h3>
+            <ul>
+              <li><a href="#lumbago">Acute Lumbago</a></li>
+              <li><a href="#sciatica">Sciatica</a></li>
+              <li><a href="#disc">Disc Herniation</a></li>
+              <li><a href="#sijoint">SI Joint & Pelvis</a></li>
+              <li><a href="#stenosis">Spinal Stenosis</a></li>
+              <li><a href="#pregnancy">Pregnancy</a></li>
+              <li><a href="#mri">MRI Findings</a></li>
+              <li><a href="#redflags">Red Flags</a></li>
+              <li><a href="#prognosis">Prognosis</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+      <div class="mobile-sticky-cta">
+        <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available">Book Appointment</a>
+      </div>
     </main>
+
     <footer class="footer">
       <div class="footer__container">
-        <!-- Left Column -->
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link">
-              <img loading="lazy" decoding="async" src="../../images/Media iconer/facebook_media_social_icon.png" alt="Follow TheBackROM on Facebook" />
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" class="footer__social-link" aria-label="Visit us on Facebook">
+              <img src="../../images/Media iconer/facebook_media_social_icon.png" alt="Visit TheBackROM on Facebook" width="512" height="512" loading="lazy" decoding="async" />
             </a>
-            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link">
-              <img src="../../images/Media iconer/instagramlogo.png" alt="Follow chiropractor Mads Finstad on Instagram" loading="lazy" decoding="async" />
+            <a href="https://www.instagram.com/chiro_mads/" class="footer__social-link" aria-label="Follow us on Instagram">
+              <img src="../../images/Media iconer/instagramlogo.png" alt="Follow @chiro_mads on Instagram" width="512" height="512" loading="lazy" decoding="async" />
             </a>
-            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link">
-              <img src="../../images/Media iconer/youtube_icon.png" alt="Watch videos from TheBackROM on YouTube"  loading="lazy" decoding="async"/>
+            <a href="https://www.youtube.com/@TheBackROM" class="footer__social-link" aria-label="Watch our videos on YouTube">
+              <img src="../../images/Media iconer/youtube_icon.png" alt="Subscribe to TheBackROM YouTube channel" width="512" height="512" loading="lazy" decoding="async" />
             </a>
-            <a href="../contact.html" class="footer__social-link">
-              <img loading="lazy" decoding="async" src="../../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send email to TheBackROM" />
-            </a></div>
+            <a href="../contact.html" class="footer__social-link" aria-label="Send us an email">
+              <img src="../../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send email to TheBackROM" loading="lazy" decoding="async" />
+            </a>
+          </div>
         </div>
 
-        <!-- Center Column -->
         <div class="footer__center">
           <div class="footer__logo">
-            <a href="../index.html" class="logo"><img src="../../images/logo-footer.webp" alt="TheBackROM Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+            <img src="../../images/logo-footer.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" width="300" height="229" loading="lazy" decoding="async" />
           </div>
           <div class="back-to-top-wrapper">
-            <p class="back-to-top-text">Back to start</p>
-            <a href="#top" class="back-to-top-btn" aria-label="Go to top of page"><i class="fas fa-arrow-up" aria-hidden="true"></i> Up</a>
+            <p class="text--muted-small">Back to top</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Go to top of page">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Up
+            </a>
           </div>
         </div>
 
-        <!-- Right Column -->
         <div class="footer__right">
           <div class="footer__hours">
             <h3>Opening Hours</h3>
@@ -200,30 +880,39 @@
       </div>
 
       <div class="footer__bottom">
-        <a href="../privacy-policy.html" class="footer__policy">Privacy Policy</a>
-        <p class="footer__copyright">� 2026 TheBackROM ? Alle rettigheter reserveret</p>
+        <a href="../privacy-policy.html" class="footer__link--muted">Privacy Policy</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Chiropractor – All rights reserved</p>
       </div>
     </footer>
   </div>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available"
-     class="mobile-sticky-cta"
-     aria-label="Book appointment with chiropractor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Book Now
-  </a>
-
 
   <script src="../../js/script.min.js" defer></script>
   <script src="../../js/language-toggle.min.js" defer></script>
   <script src="../../js/modern-enhancements.min.js" defer></script>
+  <script src="../../js/blog-carousel.min.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+      function updateActiveLink() {
+        let currentSection = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 150) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + currentSection) {
+            link.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
   <script src="../../js/breadcrumbs.js" defer></script>
 </body>
-</html> 
-
-
+</html>
