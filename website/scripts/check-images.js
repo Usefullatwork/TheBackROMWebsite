@@ -30,7 +30,7 @@ function findHtmlFiles(dir) {
     const fullPath = path.join(dir, item);
     const stat = fs.statSync(fullPath);
 
-    if (stat.isDirectory() && item !== 'node_modules') {
+    if (stat.isDirectory() && item !== 'node_modules' && item !== 'docs') {
       files = files.concat(findHtmlFiles(fullPath));
     } else if (item.endsWith('.html')) {
       files.push(fullPath);
