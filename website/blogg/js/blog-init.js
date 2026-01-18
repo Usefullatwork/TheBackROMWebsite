@@ -71,11 +71,11 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to filter posts by tag
 function filterPostsByTag(tag) {
     const allPosts = document.querySelectorAll('.klinisk-hjorne__item');
-    
+
     allPosts.forEach(post => {
         const postCategories = post.dataset.categories;
-        
-        if (tag === 'alle' || postCategories.includes(tag)) {
+
+        if (tag === 'alle' || (postCategories && postCategories.includes(tag))) {
             post.style.display = 'flex';
         } else {
             post.style.display = 'none';

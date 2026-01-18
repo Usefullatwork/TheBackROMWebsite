@@ -15,14 +15,8 @@
   <link rel="manifest" href="manifest.json" />
   <link rel="apple-touch-icon" href="images/Final Transparent Logo.png" />
 
-  <!-- Preload Critical Resources -->
-  <link rel="preload" as="style" href="css/main.min.css" />
-  <link rel="stylesheet" href="css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="css/index-2026-fixes.css"></noscript>
-  <link rel="stylesheet" href="css/hub-article.css">
+  <!-- Combined CSS - Single file for faster loading -->
+  <link rel="stylesheet" href="css/pages-combined.min.css?v=20260118">
   <link rel="icon" type="image/png" href="images/Final Transparent Logo.png" />
   <title>Priser Mads Finstad Kiropraktor - Kiropraktisk behandling Majorstua Oslo</title>
   
@@ -178,6 +172,7 @@
   <link rel="preload" as="style" href="css/font-awesome-minimal.css">
   <link rel="stylesheet" href="css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="css/font-awesome-minimal.css"></noscript>
+
   </head>
 
 <body id="top">
@@ -188,7 +183,7 @@
       <div class="header__container">
         <a href="index.html" class="header__logo logo"><img src="images/logo-header.webp" alt="Klinikk for alle Kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
         <div class="header__navigation">
-                    <div class="language-toggle" role="group" aria-label="Språkvalg">
+          <div class="language-toggle" role="group" aria-label="Språkvalg">
             <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
             <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk" aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
@@ -341,6 +336,33 @@
             <p>Jeg har HELFO-refusjon for kvalifiserte pasienter og samarbeider med flere forsikringsselskaper.</p>
             <p>Vennligst gi minst 24 timers varsel ved avbestilling for å unngå gebyr.</p>
           </div>
+
+          <!-- Forsikring og HELFO FAQ -->
+          <div class="pricing__faq" style="margin-top: var(--spacing-xl); background: var(--color-background-light); border-radius: var(--border-radius-lg); padding: var(--spacing-xl);">
+            <h3 class="pricing__faq-title" style="text-align: center; margin-bottom: var(--spacing-lg);">Ofte stilte spørsmål om betaling</h3>
+
+            <div class="pricing__faq-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg);">
+              <div class="pricing__faq-item">
+                <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-sm);">Dekker forsikringen kiropraktorbehandling?</h4>
+                <p style="color: var(--color-text-muted); line-height: 1.6;">Mange helseforsikringer dekker kiropraktorbehandling helt eller delvis. Sjekk med ditt forsikringsselskap om du har dekning. Jeg utsteder kvittering/faktura som du kan sende til forsikringsselskapet for refusjon.</p>
+              </div>
+
+              <div class="pricing__faq-item">
+                <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-sm);">Hva er HELFO-refusjon?</h4>
+                <p style="color: var(--color-text-muted); line-height: 1.6;">HELFO gir stønad til kiropraktorbehandling for visse tilstander. Per 2026 er stønaden kr 232 per behandling (maks 14 behandlinger/år). Jeg er registrert behandler og refusjonen trekkes automatisk fra prisen.</p>
+              </div>
+
+              <div class="pricing__faq-item">
+                <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-sm);">Trenger jeg henvisning fra lege?</h4>
+                <p style="color: var(--color-text-muted); line-height: 1.6;">Nei, du trenger ikke henvisning for å gå til kiropraktor. Du kan bestille time direkte. Kiropraktorer har selvstendig vurderingskompetanse og kan henvise videre ved behov.</p>
+              </div>
+
+              <div class="pricing__faq-item">
+                <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-sm);">Hva skjer ved avbestilling?</h4>
+                <p style="color: var(--color-text-muted); line-height: 1.6;">Gi beskjed minst 24 timer før timen. Ved senere avbestilling eller uteblivelse kan det påløpe et gebyr på kr 500. Dette gjelder ikke ved akutt sykdom.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       
@@ -387,7 +409,7 @@
             <img src="images/logo-footer.webp" alt="Klinikk for alle Kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" />
           </div>
           <div class="back-to-top-wrapper">
-            <p style="margin-bottom: 0.5rem; color: var(--color-text-muted);">Tilbake til start</p>
+            <p class="text--muted-small">Tilbake til start</p>
             <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
               <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
             </a>
@@ -411,9 +433,9 @@
         </div>
       </div>
 
-      <div style="text-align: center; padding-top: var(--spacing-lg); margin-top: var(--spacing-lg); border-top: 1px solid rgba(255,255,255,0.1);">
-        <a href="personvern.html" style="color: var(--color-text-muted); text-decoration: none; margin-right: var(--spacing-md);">Personvernerklæring</a>
-        <p style="margin-top: var(--spacing-sm); opacity: 0.8; color: var(--color-text-muted);">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+      <div class="footer__bottom">
+        <a href="personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

@@ -7,7 +7,7 @@
   <!-- 2026 Modern Meta Tags -->
   <meta name="theme-color" content="#1a202c" />
   <meta name="color-scheme" content="light" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="view-transition" content="same-origin" />
 
@@ -15,8 +15,8 @@
   <link rel="manifest" href="../manifest.json" />
   <link rel="apple-touch-icon" href="../images/Final Transparent Logo.png" />
 
-  <!-- Preload Critical Resources -->
-  <link rel="preload" as="style" href="../css/main.min.css?v=20260101_v5" />
+  <!-- Combined CSS - Single file for faster loading -->
+  <link rel="stylesheet" href="../css/pages-combined.min.css?v=20260118">
 
   <link rel="icon" type="image/png" href="../images/Final Transparent Logo.png" />
   <title>Blogg | Kiropraktor Majorstua Oslo - Klinikk for alle</title>
@@ -67,14 +67,7 @@
   <!-- End Meta Pixel Code -->
 
   <!-- Modular CSS Loading -->
-  <link rel="stylesheet" href="../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-2026-fixes.css"></noscript>
   <link rel="preload" as="style" href="../css/hub-article.css">
-  <link rel="stylesheet" href="../css/hub-article.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/hub-article.css"></noscript>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet" media="print" onload="this.media='all'">
@@ -136,10 +129,6 @@
 
           <!-- Blog Filter Section moved to hero -->
           <div class="blog-filters__hero-container" style="margin-top: var(--spacing-lg);">
-            <h2 class="blog-filters__title"
-              style="color: var(--color-white); margin-bottom: var(--spacing-lg); font-size: clamp(1.125rem, 2.5vw, 1.5rem); font-weight: 500;">
-              Filtrer blogginnlegg</h2>
-
             <!-- Compact tag buttons styled for hero background -->
             <div class="blog-tag-grid"
               style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; max-width: 900px; margin: 0 auto var(--spacing-lg);">
@@ -422,10 +411,10 @@
   <script src="../js/modern-enhancements.min.js" defer></script>
   <script src="../js/breadcrumbs.js" defer></script>
   <script src="../js/scroll-enhancements.min.js" defer></script>
-  <script src="js/blog-posts.js"></script>
-  <script src="js/blog-init.js"></script>
-  <script src="js/blog-filter.js"></script>
-  <script src="js/infinite-scroll.js"></script>
+  <script src="/blogg/js/blog-posts.js" defer></script>
+  <script src="/blogg/js/blog-init.js" defer></script>
+  <script src="/blogg/js/blog-filter.js" defer></script>
+  <script src="/blogg/js/infinite-scroll.js" defer></script>
   <script src="../js/language-toggle.min.js" defer></script>
 </body>
 

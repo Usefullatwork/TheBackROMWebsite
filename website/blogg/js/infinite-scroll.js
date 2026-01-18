@@ -225,17 +225,17 @@ class InfiniteScrollBlog {
         // Get all variations of the selected tag
         const tagVariations = this.categoryMappings[selectedTag] || [selectedTag];
 
-        // Check exact category match
-        const categoryMatch = post.categories.some(cat => tagVariations.some(variation => cat.includes(variation)));
+        // Check exact category match (use exact match, not substring)
+        const categoryMatch = post.categories.some(cat => tagVariations.includes(cat));
 
-        // Check clinical tags
+        // Check clinical tags (exact match)
         const clinicalMatch = post.clinicalTags && post.clinicalTags.some(tag =>
-            tagVariations.some(variation => tag.includes(variation))
+            tagVariations.includes(tag)
         );
 
-        // Check related conditions
+        // Check related conditions (exact match)
         const relationMatch = post.relatedConditions && post.relatedConditions.some(cond =>
-            tagVariations.some(variation => cond.includes(variation))
+            tagVariations.includes(cond)
         );
 
         return categoryMatch || clinicalMatch || relationMatch;
