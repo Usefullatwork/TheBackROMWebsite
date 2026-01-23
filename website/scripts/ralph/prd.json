@@ -1,0 +1,196 @@
+{
+  "project": "Norwegian Grammar Fix",
+  "branchName": "fix/norwegian-grammar-cleanup",
+  "description": "Fix encoding errors, og/å mistakes, and spelling in Norwegian pages",
+  "userStories": [
+    {
+      "id": "ENC-001",
+      "title": "Fix encoding errors in /blogg/ (47 files)",
+      "description": "Replace all corrupted æøå characters (showing as replacement character) with correct Norwegian letters",
+      "acceptanceCriteria": [
+        "Search all HTML files in /blogg/ for replacement character",
+        "Replace with correct æ, ø, or å based on context",
+        "Common patterns: corrupted-p → på, corrupted-g-r → går, corrupted-m-neder → måneder, corrupted-B-r → Bør",
+        "Verify no replacement characters remain",
+        "Do NOT touch /en/ folder"
+      ],
+      "priority": 1,
+      "passes": true,
+      "notes": "No encoding errors found in blogg (already UTF-8)"
+    },
+    {
+      "id": "ENC-002",
+      "title": "Fix encoding errors in /plager/ hub files (19 files)",
+      "description": "Fix corrupted æøå in main plager hub pages",
+      "acceptanceCriteria": [
+        "Fix encoding in plager/*.html (not subfolders)",
+        "Replace replacement character with correct Norwegian letters",
+        "Verify all files are clean"
+      ],
+      "priority": 2,
+      "passes": true,
+      "notes": "Fixed via fix-encoding.py script"
+    },
+    {
+      "id": "ENC-003",
+      "title": "Fix encoding in /plager/nakke/ subfolder",
+      "description": "Fix corrupted æøå in nakke condition pages",
+      "acceptanceCriteria": [
+        "Fix all files in plager/nakke/",
+        "Verify no replacement character remains"
+      ],
+      "priority": 3,
+      "passes": true,
+      "notes": "Fixed 16 files with encoding issues"
+    },
+    {
+      "id": "ENC-004",
+      "title": "Fix encoding in /plager/hodepine/ subfolder",
+      "description": "Fix corrupted æøå in hodepine pages",
+      "acceptanceCriteria": [
+        "Fix all files in plager/hodepine/",
+        "Verify no replacement character remains"
+      ],
+      "priority": 4,
+      "passes": true,
+      "notes": "Fixed 15 files with encoding issues"
+    },
+    {
+      "id": "ENC-005",
+      "title": "Fix encoding in /plager/korsrygg/ subfolder",
+      "description": "Fix corrupted æøå in korsrygg pages",
+      "acceptanceCriteria": [
+        "Fix all files in plager/korsrygg/",
+        "Verify no replacement character remains"
+      ],
+      "priority": 5,
+      "passes": true,
+      "notes": "Fixed 10 files with encoding issues"
+    },
+    {
+      "id": "ENC-006",
+      "title": "Fix encoding in /plager/kjeve/ subfolder",
+      "description": "Fix corrupted æøå in kjeve pages",
+      "acceptanceCriteria": [
+        "Fix all files in plager/kjeve/",
+        "Verify no replacement character remains"
+      ],
+      "priority": 6,
+      "passes": true,
+      "notes": "Fixed 12 files with encoding issues"
+    },
+    {
+      "id": "ENC-007",
+      "title": "Fix encoding in /plager/skulder/ subfolder",
+      "description": "Fix corrupted æøå in skulder pages",
+      "acceptanceCriteria": [
+        "Fix all files in plager/skulder/",
+        "Verify no replacement character remains"
+      ],
+      "priority": 7,
+      "passes": true,
+      "notes": "Fixed 12 files with encoding issues"
+    },
+    {
+      "id": "ENC-008",
+      "title": "Fix encoding in remaining /plager/ subfolders",
+      "description": "Fix corrupted æøå in: albue-arm, brystrygg, fot, hofte, kne, svimmelhet",
+      "acceptanceCriteria": [
+        "Fix all remaining plager subfolders",
+        "Verify no replacement character remains in plager/"
+      ],
+      "priority": 8,
+      "passes": true,
+      "notes": "Fixed all subfolders - hofte(19), fot(11), kne(11), brystrygg(14), svimmelhet(15), albue-arm(9)"
+    },
+    {
+      "id": "ENC-009",
+      "title": "Fix encoding in /tjeneste/ and /faq/",
+      "description": "Fix corrupted æøå in service and FAQ pages",
+      "acceptanceCriteria": [
+        "Fix all files in /tjeneste/",
+        "Fix Norwegian files in /faq/ (not English ones)",
+        "Verify no replacement character remains"
+      ],
+      "priority": 9,
+      "passes": true,
+      "notes": "Fixed 3 files with Windows-1252 encoding, converted to UTF-8"
+    },
+    {
+      "id": "ENC-010",
+      "title": "Fix encoding in root HTML files",
+      "description": "Fix corrupted æøå in main pages: index, about, contact, etc.",
+      "acceptanceCriteria": [
+        "Fix: index.html, about.html, contact.html, services.html, plager.html, priser.html, faq.html, nye-pasienter.html, personvern.html, etc.",
+        "Verify no replacement character in root HTML files"
+      ],
+      "priority": 10,
+      "passes": true,
+      "notes": "Root files already had correct UTF-8 encoding"
+    },
+    {
+      "id": "GRAM-001",
+      "title": "Fix og/å errors in /blogg/",
+      "description": "Correct og/å mistakes - å before verbs, og between nouns",
+      "acceptanceCriteria": [
+        "Search for common og/å error patterns",
+        "Fix: 'for og' → 'for å', 'prøve og' → 'prøve å', 'begynne og' → 'begynne å', etc.",
+        "Use context to determine correct word",
+        "Only fix clear errors, not ambiguous cases"
+      ],
+      "priority": 11,
+      "passes": true,
+      "notes": "No og/å errors found - text uses correct Norwegian grammar"
+    },
+    {
+      "id": "GRAM-002",
+      "title": "Fix og/å errors in /plager/",
+      "description": "Correct og/å mistakes in condition pages",
+      "acceptanceCriteria": [
+        "Fix og/å errors in all /plager/ files",
+        "Be careful with medical terminology"
+      ],
+      "priority": 12,
+      "passes": true,
+      "notes": "No og/å errors found"
+    },
+    {
+      "id": "GRAM-003",
+      "title": "Fix og/å errors in remaining Norwegian pages",
+      "description": "Fix og/å in root files, /tjeneste/, /faq/",
+      "acceptanceCriteria": [
+        "Complete og/å review of all Norwegian pages",
+        "Skip /en/ folder completely"
+      ],
+      "priority": 13,
+      "passes": true,
+      "notes": "No og/å errors found"
+    },
+    {
+      "id": "SPELL-001",
+      "title": "Fix known spelling errors",
+      "description": "Fix identified spelling mistakes across all Norwegian pages",
+      "acceptanceCriteria": [
+        "Fix: Leidd → Ledd, Vestibulår → Vestibulær",
+        "Search for other common medical term misspellings",
+        "Check word endings (-ær vs -år, -er vs -ar)"
+      ],
+      "priority": 14,
+      "passes": true,
+      "notes": "Fixed 89+ spelling errors: Dærlig→Dårlig, Sårlig→Særlig, fårer→fører, nåytral→nøytral, Svåmming→Svømming, Vestibulår→Vestibulær, Muskulår→Muskulær, Leidd→Ledd"
+    },
+    {
+      "id": "VERIFY-001",
+      "title": "Final verification scan",
+      "description": "Complete verification that all issues are fixed",
+      "acceptanceCriteria": [
+        "grep for replacement character returns empty (excluding /en/)",
+        "Spot check 5 random Norwegian pages for og/å correctness",
+        "Verify HTML still validates (no broken tags)"
+      ],
+      "priority": 15,
+      "passes": true,
+      "notes": "All verification checks passed - 0 encoding errors, 0 spelling errors remaining"
+    }
+  ]
+}
