@@ -4940,16 +4940,16 @@ html {
 
 /* Mobile sticky CTA */
 .mobile-sticky-cta {
-  background: #F26522 !important;
+  background: #1a1a2e !important;
 }
 
 .mobile-sticky-cta a {
-  background: #FFFFFF !important;
-  color: #F26522 !important;
+  background: #F26522 !important;
+  color: #FFFFFF !important;
 }
 
 .mobile-sticky-cta a:hover {
-  background: #fff8f5 !important;
+  background: #d9561d !important;
 }
 
 /* Language toggle slider - Use accent orange color */
@@ -5858,4 +5858,13 @@ a.condition-card--link:hover .condition-card__arrow {
         padding: 8px 16px;
         font-size: 0.85rem;
     }
+}
+
+/* CTA Background Image Override */
+.page__outro,
+.page__outro.outro_home,
+.outro_home {
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.7), rgba(42, 123, 155, 0.65)), url('../images/Home/home-2-optimized.webp') !important;
+    background-size: cover !important;
+    background-position: center !important;
 }

@@ -55,7 +55,7 @@
         "mainEntity": [
           { "@type": "Question", "name": "Is it dangerous if my hip 'clicks' or 'snaps'?", "acceptedAnswer": { "@type": "Answer", "text": "Usually not. 'Snapping hip' is very common - affecting 5-10% of the population - and is rarely dangerous as long as it doesn't hurt. The sound is usually caused by a tendon sliding over a bony prominence." } },
           { "@type": "Question", "name": "Does stretching the hip help?", "acceptedAnswer": { "@type": "Answer", "text": "Be careful. For tendon problems on the outside of the hip (GTPS), aggressive stretching can actually make pain worse. Stretching compresses the tendon against the bone. Focus instead on strength training." } },
-          { "@type": "Question", "name": "Does cortisone help for hip pain?", "acceptedAnswer": { "@type": "Answer", "text": "Short-term yes, long-term doubtful. For GTPS, the LEAP study showed that cortisone gave rapid improvement in the first weeks, but after 1 year the results were no better than doing nothing." } },
+          { "@type": "Question", "name": "Does cortisone help for hip pain?", "acceptedAnswer": { "@type": "Answer", "text": "Short-term relief yes, but long-term effect is poor. Exercise gives better results after 1 year." } },
           { "@type": "Question", "name": "Can I exercise with hip pain?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and you should! Research shows that exercise is more effective than passive treatment for most hip and pelvic pain. But you must train smart: avoid activities that cause severe pain." } },
           { "@type": "Question", "name": "Do I need an MRI or X-ray?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - and often not initially. A thorough clinical examination often provides enough information to make a diagnosis and start treatment. Remember: MRI often shows 'findings' that don't explain your pain." } },
           { "@type": "Question", "name": "How long until I get better?", "acceptedAnswer": { "@type": "Answer", "text": "This varies greatly. Acute muscle problems can improve in 2-4 weeks. GTPS often takes 6-9 months. Hip osteoarthritis requires a long-term approach, but most notice good effects from exercise within 8-12 weeks." } }
@@ -100,6 +100,31 @@
       --hub-blue: #2563eb;
       --hub-purple: #7c3aed;
       --hub-orange: #ea580c;
+    }
+    /* Diagnosis Guide Styles - Location Headers with Dark BG */
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .comparison-card { padding: 0; }
+    .diagnosis-table { width: 100%; border-collapse: collapse; }
+    .diagnosis-table th { background: #f3f4f6; padding: 12px 16px; text-align: left; font-size: 14px; color: var(--hub-dark); border-bottom: 2px solid #e5e7eb; }
+    .diagnosis-table td { padding: 16px; border-bottom: 1px solid #e5e7eb; vertical-align: top; font-size: 14px; }
+    .diagnosis-table tr:last-child td { border-bottom: none; }
+    .diagnosis-name { font-weight: 700; color: var(--hub-primary); display: block; margin-bottom: 4px; font-size: 16px; }
+    .diagnosis-likelihood { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+    .diagnosis-likelihood.common { background: #dcfce7; color: #166534; }
+    .diagnosis-likelihood.uncommon { background: #f3f4f6; color: #4b5563; }
+    .diagnosis-likelihood.rare { background: #fee2e2; color: #991b1b; }
+    .diagnosis-link { display: inline-block; margin-top: 8px; color: var(--hub-primary); text-decoration: none; font-weight: 600; font-size: 13px; }
+    .diagnosis-link:hover { text-decoration: underline; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+    @media (max-width: 768px) {
+      .diagnosis-table, .diagnosis-table tbody, .diagnosis-table tr, .diagnosis-table td { display: block; width: 100%; }
+      .diagnosis-table thead { display: none; }
+      .diagnosis-table tr { margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; }
+      .diagnosis-table td { padding: 12px 16px; border: none; }
+      .diagnosis-table td::before { content: attr(data-label); font-weight: 700; display: block; margin-bottom: 4px; color: #6b7280; font-size: 12px; }
     }
   </style>
 </head>
@@ -207,7 +232,7 @@
               <a href="#redflags">Read more about red flags</a>
             </div>
 
-            <img src="../../images/Plager hofte-og-bekkensmerter/hofte smerte.webp" alt="Illustration of hip pain and common pain points" class="hub-featured-image" loading="lazy" decoding="async">
+            <img src="../../images/Plager hofte-og-bekkensmerter/hofte smerte.webp" alt="Illustration of hip pain and common pain points" class="hub-infographic" loading="lazy" decoding="async" />
 
             <div class="stat-grid">
               <div class="stat-item">
@@ -243,30 +268,214 @@
 
             <p>Instead of listing diagnoses, I'll start with what you actually notice: <strong>where is the pain located?</strong> This often gives the best clue to what's wrong.</p>
 
-            <div class="condition-card">
-              <h4>Pain on the OUTSIDE of the hip</h4>
-              <p><strong>Typical signs:</strong> Pain over the large bony prominence on the outside of the hip. Painful to lie on your side at night. Worsens with stairs, longer walks or getting up from a chair.</p>
-              <p><strong>Who is affected?</strong> GTPS occurs in 15% of women and 6-8% of men between 50-79 years. Women are affected over 3 times as often.</p>
-              <p><strong>Prognosis:</strong> The LEAP study showed that exercise + education gave <strong>78.6% success rate</strong> after one year. <a href="hip/gtps-gluteal-tendinopathy.html" style="color: var(--hub-primary); font-weight: 600;">Read more about GTPS</a></p>
+            <!-- Outside -->
+            <div class="location-section" id="lateral">
+              <div class="location-header">
+                <span class="section-number" style="background: #059669;">1</span>
+                <h4>Pain on the OUTSIDE of the hip</h4>
+              </div>
+              <div class="comparison-card">
+                <table class="diagnosis-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 30%">Condition</th>
+                      <th style="width: 35%">Key Symptoms</th>
+                      <th style="width: 35%">Tests & Differentiation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Condition">
+                        <span class="diagnosis-name">GTPS (Gluteal Tendinopathy)</span>
+                        <span class="diagnosis-likelihood common">Very Common</span>
+                      </td>
+                      <td data-label="Symptoms">
+                        Pain when lying on side at night.<br>
+                        Pain with stairs, uphill walking.<br>
+                        Tender over the bony prominence (trochanter).
+                      </td>
+                      <td data-label="Differentiation">
+                        <strong>Single-leg stance test:</strong> Standing on one leg for 30 seconds reproduces the familiar pain.<br>
+                        <a href="hip/gtps-gluteal-tendinopathy.html" class="diagnosis-link">Read more about GTPS →</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Condition">
+                        <span class="diagnosis-name">Referred Back Pain</span>
+                        <span class="diagnosis-likelihood uncommon">Common</span>
+                      </td>
+                      <td data-label="Symptoms">
+                        Pain radiates from lower back.<br>
+                        Often goes <strong>past the knee</strong>.<br>
+                        Variable pain pattern (good/bad days).
+                      </td>
+                      <td data-label="Differentiation">
+                        <strong>Slump test:</strong> Stretching the nerve pathway reproduces the pain.<br>
+                        Pain often triggered by bending the back (not the hip).
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Condition">
+                        <span class="diagnosis-name">Trochanteric Bursitis</span>
+                        <span class="diagnosis-likelihood rare">Rare (<10%)</span>
+                      </td>
+                      <td data-label="Symptoms">
+                        Acute swelling, redness and warmth.<br>
+                        Pain with ANY movement of the leg.
+                      </td>
+                      <td data-label="Differentiation">
+                        Most "bursitis" diagnoses are actually tendon injuries (GTPS). True bursitis shows signs of inflammation.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="location-content">
+                <p><strong>Who is affected?</strong> GTPS occurs in 15% of women and 6-8% of men between 50-79 years. Women are affected over 3 times as often.</p>
+                <p><strong>Prognosis:</strong> Most improve significantly with proper exercise. <a href="#treatment">See treatment results</a>.</p>
+              </div>
             </div>
 
-            <div class="condition-card">
-              <h4>Pain in the GROIN (front of the hip)</h4>
-              <p><strong>Typical signs:</strong> Deep pain in the front of the hip or groin. Worst when bending the hip far (putting on shoes, sitting long, going up stairs). May feel stiff in the morning.</p>
-              <ul>
-                <li><strong>Hip osteoarthritis:</strong> Most common in those over 55-60 years. <a href="hip/hip-osteoarthritis.html" style="color: var(--hub-primary); font-weight: 600;">Read more</a></li>
-                <li><strong>FAI (hip impingement):</strong> Common in young, active people. <a href="hip/fai-hip-impingement.html" style="color: var(--hub-primary); font-weight: 600;">Read more</a></li>
-                <li><strong>Labral tear:</strong> 69% of pain-free adults have labral tears on MRI. <a href="hip/labral-tear.html" style="color: var(--hub-primary); font-weight: 600;">Read more</a></li>
-              </ul>
+            <!-- Groin -->
+            <div class="location-section" id="groin">
+              <div class="location-header">
+                <span class="section-number" style="background: #059669;">2</span>
+                <h4>Pain in the GROIN (front of hip)</h4>
+              </div>
+              <div class="comparison-card">
+                <table class="diagnosis-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 30%">Condition</th>
+                      <th style="width: 35%">Key Symptoms</th>
+                      <th style="width: 35%">Tests & Differentiation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Condition">
+                        <span class="diagnosis-name">Hip Osteoarthritis</span>
+                        <span class="diagnosis-likelihood common">Common (50+)</span>
+                      </td>
+                      <td data-label="Symptoms">
+                        Morning stiffness.<br>
+                        Deep, aching pain in groin/front of thigh.<br>
+                        Difficulty putting on socks.
+                      </td>
+                      <td data-label="Differentiation">
+                        <strong>Reduced mobility:</strong> Loss of internal rotation.<br>
+                        X-ray shows joint space narrowing.<br>
+                        <a href="hip/hip-osteoarthritis.html" class="diagnosis-link">Read about hip OA →</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Condition">
+                        <span class="diagnosis-name">FAI (Impingement)</span>
+                        <span class="diagnosis-likelihood common">Young/active</span>
+                      </td>
+                      <td data-label="Symptoms">
+                        Sharp pinching pain with deep squats/flexion.<br>
+                        Clicking or locking.<br>
+                        "C-sign" (gripping hip with hand).
+                      </td>
+                      <td data-label="Differentiation">
+                        <strong>FADIR test:</strong> Deep flexion + internal rotation causes sharp pain.<br>
+                        37% of pain-free people have FAI on MRI.<br>
+                        <a href="hip/fai-hip-impingement.html" class="diagnosis-link">Read about FAI →</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Condition">
+                        <span class="diagnosis-name">Labral Tear</span>
+                        <span class="diagnosis-likelihood uncommon">Young/active</span>
+                      </td>
+                      <td data-label="Symptoms">
+                        Clicking, locking.<br>
+                        Feeling that hip "pops out".<br>
+                        Sharp pain with twisting.
+                      </td>
+                      <td data-label="Differentiation">
+                        <strong>69% of pain-free people</strong> have labral tears on MRI - so not all tears need treatment.<br>
+                        <a href="hip/labral-tear.html" class="diagnosis-link">Read about labral tears →</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="location-content">
+                <p><strong>Typical signs:</strong> Deep pain in the front of the hip or groin. Worst when bending the hip far (putting on shoes, sitting long).</p>
+              </div>
             </div>
 
-            <div class="condition-card">
-              <h4>Pain in the BUTTOCK or back</h4>
-              <p><strong>Typical signs:</strong> Pain in the buttock, lower back or back of the hip. May radiate down the thigh. Often worse when sitting or standing on one leg.</p>
-              <ul>
-                <li><strong>SI joint:</strong> If you can point to the "dimple" at the top of the buttock. <a href="hip/si-joint-pelvic-problems.html" style="color: var(--hub-primary); font-weight: 600;">Read more</a></li>
-                <li><strong>Piriformis syndrome:</strong> Deep buttock pain mimicking sciatica. <a href="hip/piriformis-syndrome.html" style="color: var(--hub-primary); font-weight: 600;">Read more</a></li>
-              </ul>
+            <!-- Buttock -->
+            <div class="location-section" id="buttock">
+              <div class="location-header">
+                <span class="section-number" style="background: #059669;">3</span>
+                <h4>Pain in the BUTTOCK or back</h4>
+              </div>
+              <div class="comparison-card">
+                <table class="diagnosis-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 30%">Condition</th>
+                      <th style="width: 35%">Key Symptoms</th>
+                      <th style="width: 35%">Tests & Differentiation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Condition">
+                        <span class="diagnosis-name">Sciatica (back problem)</span>
+                        <span class="diagnosis-likelihood common">Common</span>
+                      </td>
+                      <td data-label="Symptoms">
+                        Electric/shooting pain.<br>
+                        Radiates <strong>past the knee</strong> to the foot.<br>
+                        Numbness in toes/foot.
+                      </td>
+                      <td data-label="Differentiation">
+                        <strong>Straight Leg Raise:</strong> Reproduces the leg pain.<br>
+                        Often worse with bending forward.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Condition">
+                        <span class="diagnosis-name">SI Joint Dysfunction</span>
+                        <span class="diagnosis-likelihood common">Common</span>
+                      </td>
+                      <td data-label="Symptoms">
+                        Sharp pain at the "dimple" (PSIS).<br>
+                        Pain turning in bed.<br>
+                        Pain standing on one leg.
+                      </td>
+                      <td data-label="Differentiation">
+                        <strong>Pointing test:</strong> Patient points to the specific "dimple" with one finger.<br>
+                        Pain rarely goes below the knee.<br>
+                        <a href="hip/si-joint-pelvic-problems.html" class="diagnosis-link">SI Joint guide →</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Condition">
+                        <span class="diagnosis-name">Piriformis Syndrome</span>
+                        <span class="diagnosis-likelihood uncommon">Uncommon</span>
+                      </td>
+                      <td data-label="Symptoms">
+                        Deep, aching buttock pain.<br>
+                        Worse with sitting.<br>
+                        Radiates down thigh but <strong>stops at knee</strong>.
+                      </td>
+                      <td data-label="Differentiation">
+                        <strong>FAIR test:</strong> Stretching piriformis causes pain.<br>
+                        No back stiffness.<br>
+                        <a href="hip/piriformis-syndrome.html" class="diagnosis-link">Piriformis guide →</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="location-content">
+                <p><strong>Typical signs:</strong> Pain in the buttock, lower back or back of the hip. May radiate down the thigh. Often worse when sitting or standing on one leg.</p>
+              </div>
             </div>
           </section>
 
@@ -277,19 +486,34 @@
               <h2>Common Causes of Hip Pain</h2>
             </div>
 
-            <div class="treatment-box">
-              <h4>GTPS (Gluteal Tendinopathy)</h4>
-              <p>Previously misdiagnosed as "bursitis" - studies show that less than 5% actually have inflammation in the bursa. In 85-98%, the problem is in the gluteal tendons. This is the most common cause of pain on the outside of the hip.</p>
+            <div class="location-section" id="cause-gtps">
+              <div class="location-header">
+                <span class="section-number" style="background: #059669;">1</span>
+                <h4>GTPS (Gluteal Tendinopathy)</h4>
+              </div>
+              <div class="location-content">
+                <p>Previously misdiagnosed as "bursitis" - studies show that less than 5% actually have inflammation in the bursa. In 85-98%, the problem is in the gluteal tendons. This is the most common cause of pain on the outside of the hip.</p>
+              </div>
             </div>
 
-            <div class="treatment-box">
-              <h4>Hip Osteoarthritis</h4>
-              <p>Wear and tear in the hip joint, most common after 55-60. Causes gradually increasing stiffness, especially with internal rotation. Exercise is the first-choice treatment.</p>
+            <div class="location-section" id="cause-oa">
+              <div class="location-header">
+                <span class="section-number" style="background: #059669;">2</span>
+                <h4>Hip Osteoarthritis</h4>
+              </div>
+              <div class="location-content">
+                <p>Wear and tear in the hip joint, most common after 55-60. Causes gradually increasing stiffness, especially with internal rotation. Exercise is the first-choice treatment.</p>
+              </div>
             </div>
 
-            <div class="treatment-box">
-              <h4>FAI (Femoroacetabular Impingement)</h4>
-              <p>Pinching in the hip joint due to bone shape. Common in young, active people. 37% of pain-free people have FAI morphology on MRI - so images must be interpreted with caution.</p>
+            <div class="location-section" id="cause-fai">
+              <div class="location-header">
+                <span class="section-number" style="background: #059669;">3</span>
+                <h4>FAI (Femoroacetabular Impingement)</h4>
+              </div>
+              <div class="location-content">
+                <p>Pinching in the hip joint due to bone shape. Common in young, active people. 37% of pain-free people have FAI morphology on MRI - so images must be interpreted with caution.</p>
+              </div>
             </div>
 
             <div class="info-box">
@@ -330,20 +554,34 @@
               <h2>Acute Self-Help</h2>
             </div>
 
-            <h3>How to sleep</h3>
-            <p>Night pain is very common with hip pain, especially with GTPS. When you lie on your side, the tendons are compressed against the bone.</p>
-            <ul class="symptom-list">
-              <li><strong>Avoid lying on the painful side</strong></li>
-              <li><strong>Use a pillow between your knees</strong> when lying on the healthy side</li>
-              <li><strong>Lie on your back</strong> - often the best position</li>
-            </ul>
+            <div class="location-section" id="sleep">
+              <div class="location-header">
+                <span class="section-number" style="background: #059669;">1</span>
+                <h4>How to sleep</h4>
+              </div>
+              <div class="location-content">
+                <p>Night pain is very common with hip pain, especially with GTPS. When you lie on your side, the tendons are compressed against the bone.</p>
+                <ul class="symptom-list">
+                  <li><strong>Avoid lying on the painful side</strong></li>
+                  <li><strong>Use a pillow between your knees</strong> when lying on the healthy side</li>
+                  <li><strong>Lie on your back</strong> - often the best position</li>
+                </ul>
+              </div>
+            </div>
 
-            <h3>How to sit and stand</h3>
-            <ul class="symptom-list">
-              <li><strong>Don't sit with legs crossed</strong> - stretches the tendons</li>
-              <li><strong>Avoid "hanging" on the hip</strong> when standing</li>
-              <li><strong>For groin pain:</strong> Lower the chair slightly to open the hip angle</li>
-            </ul>
+            <div class="location-section" id="sit-stand">
+              <div class="location-header">
+                <span class="section-number" style="background: #059669;">2</span>
+                <h4>How to sit and stand</h4>
+              </div>
+              <div class="location-content">
+                <ul class="symptom-list">
+                  <li><strong>Don't sit with legs crossed</strong> - stretches the tendons</li>
+                  <li><strong>Avoid "hanging" on the hip</strong> when standing</li>
+                  <li><strong>For groin pain:</strong> Lower the chair slightly to open the hip angle</li>
+                </ul>
+              </div>
+            </div>
           </section>
 
           <!-- SECTION 5: Red flags -->
@@ -393,7 +631,7 @@
 
             <div class="faq-item">
               <h4>Does cortisone help?</h4>
-              <p>Short-term yes, long-term doubtful. The LEAP study showed that after 1 year, cortisone results were no better than "wait and see". I usually recommend trying exercise first.</p>
+              <p>Short-term relief yes, but long-term effect is poor. Exercise gives better results after 1 year. <a href="#treatment">Read more about treatment</a>.</p>
             </div>
 
             <div class="faq-item">
@@ -465,12 +703,29 @@
           </div>
 
           <nav class="hub-toc-card" aria-label="Page navigation">
-            <h3>Contents</h3>
+            <h3>CONTENTS</h3>
             <ul>
-              <li><a href="#symptoms">1. Symptoms</a></li>
-              <li><a href="#causes">2. Causes</a></li>
+              <li><a href="#symptoms">1. Find Your Pain Type</a>
+                <ul style="margin-left: 16px; margin-top: 8px; font-size: 13px;">
+                  <li><a href="#lateral">→ Outside (lateral)</a></li>
+                  <li><a href="#groin">→ Groin (front)</a></li>
+                  <li><a href="#buttock">→ Buttock (back)</a></li>
+                </ul>
+              </li>
+              <li><a href="#causes">2. Causes</a>
+                <ul style="margin-left: 16px; margin-top: 8px; font-size: 13px;">
+                  <li><a href="#cause-gtps">→ GTPS</a></li>
+                  <li><a href="#cause-oa">→ Osteoarthritis</a></li>
+                  <li><a href="#cause-fai">→ FAI</a></li>
+                </ul>
+              </li>
               <li><a href="#treatment">3. Treatment</a></li>
-              <li><a href="#exercises">4. Self-Help</a></li>
+              <li><a href="#exercises">4. Self-Help</a>
+                <ul style="margin-left: 16px; margin-top: 8px; font-size: 13px;">
+                  <li><a href="#sleep">→ How to sleep</a></li>
+                  <li><a href="#sit-stand">→ Sit and stand</a></li>
+                </ul>
+              </li>
               <li><a href="#redflags">5. Red Flags</a></li>
               <li><a href="#faq">6. FAQ</a></li>
               <li><a href="#contact">7. Contact</a></li>

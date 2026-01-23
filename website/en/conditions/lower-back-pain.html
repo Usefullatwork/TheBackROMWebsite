@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
+  <link rel="preload" as="style" href="../../css/main.min.css?v=20260101" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
 
   <title>Back Pain & Lower Back Pain Guide | Chiropractor Oslo</title>
@@ -126,7 +126,8 @@
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
 
-  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
+  <link rel="stylesheet" href="../../css/main.min.css?v=20260101">
+  <link rel="stylesheet" href="../../css/index-2026-fixes.css">
   <link rel="stylesheet" href="../../css/hub-article.css">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -136,17 +137,15 @@
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
   <style>
-    .nerve-box{background:#fffbeb;border:1px solid #fbbf24;border-radius:10px;padding:18px;margin:16px 0}
-    .nerve-box h4{color:#92400e;margin-bottom:10px}
-    .nerve-box ul{margin:0;padding-left:20px}
-    .nerve-box li{color:#78350f;margin-bottom:6px}
-    .comparison-table{width:100%;border-collapse:collapse;margin:20px 0}
-    .comparison-table th,.comparison-table td{padding:12px;text-align:left;border-bottom:1px solid #e5e7eb}
-    .comparison-table th{background:#f8fafc;color:var(--hub-dark);font-weight:600}
-    .comparison-table tr:hover{background:#f8fafc}
-    .section-quick-link{margin:0 0 16px}
-    .section-quick-link a{color:var(--hub-primary);font-weight:600;font-size:.95rem;text-decoration:none}
-    .section-quick-link a:hover{text-decoration:underline}
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
   </style>
 </head>
 
@@ -263,10 +262,10 @@
             <div class="red-flag-alert">
               <h4>When should you call emergency services or go to the ER?</h4>
               <p>If you experience numbness in the groin area, problems with urination/bowel control, or increasing weakness in both legs – seek help immediately.</p>
-              <a href="lower-back/red-flags.html">Read more about red flags →</a>
+              <a href="#redflags">Read more about red flags →</a>
             </div>
 
-            <img src="../../images/plager korsryggsmerter/A Practical Guide to Lower Back Pain.png" alt="Lower back pain infographic - overview of causes, symptoms and treatment" class="hub-featured-image" decoding="async" />
+            <img src="../../images/infographics/korsrygg/back-pain-decoder-and-symptom-guide.webp" alt="Lower back pain infographic - overview of causes, symptoms and treatment" class="hub-infographic" loading="lazy" decoding="async" />
 
             <div class="stat-grid">
               <div class="stat-item"><div class="stat-number">40%</div><div class="stat-label">Had pain last month</div></div>
@@ -671,7 +670,7 @@
 
           <div class="related-box">
             <h3>In-Depth Articles on Lower Back</h3>
-            <a href="lower-back/red-flags.html" style="color: #dc2626;">→ Red Flags for Back Pain - When to Seek Emergency Help</a>
+            <a href="#redflags" style="color: #dc2626;">→ Red Flags for Back Pain - When to Seek Emergency Help</a>
             <a href="lower-back/acute-acute-back-pain.html">→ Acute Lumbago – Complete Guide</a>
             <a href="lower-back/sciatica.html">→ Sciatica: True vs. False, Duration and Treatment</a>
             <a href="lower-back/disc-herniation.html">→ Disc Herniation: Spontaneous Resorption, Treatment and Prognosis</a>

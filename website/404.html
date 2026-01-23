@@ -29,26 +29,31 @@
   <meta property="og:site_name" content="Klinikk for alle">
   <meta name="robots" content="noindex, follow">
 
-  <!-- Meta Pixel Code - Deferred for Performance -->
+  <!-- Meta Pixel Code - Lazy loaded on user interaction -->
   <script>
-    // Defer Facebook Pixel loading for better Core Web Vitals
-    window.addEventListener('load', function () {
-      setTimeout(function () {
+    (function() {
+      var fbLoaded = false;
+      function loadFacebookPixel() {
+        if (fbLoaded) return;
+        fbLoaded = true;
         !function (f, b, e, v, n, t, s) {
           if (f.fbq) return; n = f.fbq = function () {
-            n.callMethod ?
-              n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
           };
           if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
           n.queue = []; t = b.createElement(e); t.async = !0;
           t.src = v; s = b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '540166625752174');
         fbq('track', 'PageView');
-      }, 2000);
-    });
+      }
+      // Load on user interaction (scroll, click, touch) or after 5s fallback
+      ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'].forEach(function(evt) {
+        window.addEventListener(evt, loadFacebookPixel, { once: true, passive: true });
+      });
+      window.addEventListener('load', function() { setTimeout(loadFacebookPixel, 5000); });
+    })();
   </script>
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>

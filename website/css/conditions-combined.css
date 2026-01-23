@@ -6082,3 +6082,12 @@ a.condition-card--link:hover .condition-card__arrow {
         font-size: 0.85rem;
     }
 }
+
+/* CTA Background Image Override */
+.page__outro,
+.page__outro.outro_home,
+.outro_home {
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.7), rgba(42, 123, 155, 0.65)), url('../images/Home/home-2-optimized.webp') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}

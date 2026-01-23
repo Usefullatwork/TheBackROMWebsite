@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1a202c" />
+  <link rel="manifest" href="../../manifest.json" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
-  <style>
-    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
-    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
-    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
-    #main-content{padding-top:var(--header-height)}
-  </style>
-  <link rel="preload" as="style" href="../../css/pages-combined.min.css?v=20260118" />
   <title>Acute Back Pain | Chiro Oslo</title>
   <meta name="description" content="Got acute back pain? Here's what you should do in the first hours and days. Self-help, exercises, and when to seek treatment.">
   <meta property="og:title" content="Acute Back Pain - Self-Help and Early Treatment | Chiropractor Majorstua">
@@ -28,335 +23,510 @@
   <link rel="canonical" href="https://thebackrom.com/en/blog/acute-back-pain-self-help.html" />
   <link rel="alternate" hreflang="nb" href="https://thebackrom.com/blogg/akutt-ryggsmerte-selvhjelp.html" />
   <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/blog/acute-back-pain-self-help.html" />
-  <link rel="stylesheet" href="../../css/pages-combined.min.css?v=20260118" />
-  <link rel="stylesheet" href="../../css/hub-article.css">
-</head>
-<body>
-  <a href="#main" class="skip-link">Skip to main content</a>
-  <header class="header">
-    <div class="container header__container">
-      <a href="../index.html" class="header__logo" aria-label="To homepage">
-        <img src="../../images/Final Transparent Logo.webp" alt="TheBackROM logo" width="50" height="50" />
-      </a>
-      <nav class="header__nav" aria-label="Main menu">
-        <ul class="header__menu">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../services.html">Services</a></li>
-          <li><a href="../conditions.html">Conditions</a></li>
-          <li><a href="../prices.html">Prices</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="index.html" class="active">Blog</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary header__cta" target="_blank" rel="noopener">Book appointment</a>
-      <button class="header__menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
 
-  <main id="main-content">
-    <section class="page__main main main_services blog-hero">
-      <div class="main__container">
-        <span class="blog-post__category">Lower Back</span>
-        <h1 class="main__title">Acute Back Pain: What to Do in the First Hours and Days</h1>
-        <div class="blog-post__meta">
-          <time class="blog-post__date" datetime="2026-01-20">January 20, 2026</time>
-          <span class="blog-post__reading-time">10 min read</span>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Should I get an X-ray or MRI right away for acute back pain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, usually not. Imaging is rarely necessary for acute back pain without red flags - even if disc herniation is suspected. Most improve anyway within 6 weeks. MRI may be relevant if pain doesn't improve or with neurological symptoms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long should I be off work with acute back pain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As short as possible! Research shows that early return to (adapted) work gives better prognosis than prolonged sick leave. Discuss graded sick leave or workplace adaptations with your practitioner."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I exercise with acute back pain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Light activity like walking is good. Intense training should be postponed until the acute phase is over (typically 1-2 weeks). Heavy strength training and activities with lots of twisting/bending should wait until pain is under control."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a hard or soft mattress better for back pain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A moderately firm mattress is often best. Too hard causes pressure, too soft provides poor support. Most important is finding a position where you can sleep - sleep is important for healing!"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does chiropractic help with acute back pain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Chiropractors have good experience with acute back episodes and use adapted techniques in the acute phase. Often early treatment can shorten the course and give you concrete strategies for faster improvement."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
+  <link rel="stylesheet" href="../../css/hub-article.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/font-awesome-minimal.css">
+  <style>
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+    }
+    .hub-hero__meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .hub-hero__category {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+
+<body id="top">
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+            alt="Klinikk for alle Chiropractor" width="300" height="229" decoding="async" /></a>
+        <div class="header__navigation">
+          <div class="language-toggle english-active" role="group" aria-label="Language selection">
+            <button class="language-toggle__button" data-lang="no" aria-pressed="false">NO</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="en"
+              aria-pressed="true">EN</button>
+            <div class="language-toggle__slider"></div>
+          </div>
+          <button type="button" class="icon-menu" aria-label="Open navigation menu"
+            aria-expanded="false"><span></span><span></span><span></span></button>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="../index.html" class="menu__link">Home</a></li>
+              <li class="menu__item"><a href="../about.html" class="menu__link">About</a></li>
+              <li class="menu__item"><a href="../services.html" class="menu__link">Services</a></li>
+              <li class="menu__item"><a href="../conditions.html" class="menu__link">Conditions</a></li>
+              <li class="menu__item"><a href="../prices.html" class="menu__link">Prices</a></li>
+              <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+              <li class="menu__item"><a href="../contact.html" class="menu__link">Contact</a></li>
+              <li class="menu__item"><a href="index.html" class="menu__link">Blog</a></li>
+              <li class="menu__item"><a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
+                  class="actions-header__button">Book Appointment</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hub-hero">
+      <div class="hub-hero__container">
+        <span class="hub-hero__category">Lower Back</span>
+        <h1>Acute Back Pain: What to Do in the First Hours and Days</h1>
+        <p class="hub-hero__subtitle">Self-help, exercises, and when to seek treatment</p>
+        <div class="hub-hero__meta">
+          <time datetime="2026-01-20">January 20, 2026</time>
+          <span>10 min read</span>
         </div>
       </div>
     </section>
-    <article class="blog-post">
-      <div class="container container--narrow">
-        <nav class="breadcrumb" aria-label="Breadcrumbs">
-          <ol class="breadcrumb__list">
-            <li class="breadcrumb__item"><a href="../index.html">Home</a></li>
-            <li class="breadcrumb__item"><a href="index.html">Blog</a></li>
-            <li class="breadcrumb__item"><a href="../conditions/lower-back-pain.html">Lower Back</a></li>
-            <li class="breadcrumb__item" aria-current="page">Acute back pain self-help</li>
-          </ol>
-        </nav>
 
-        <figure class="article-featured-image">
-          <img src="../../images/plager korsryggsmerter/Guide to Acute Low Back Pain.webp"
-               alt="Guide to acute lower back pain"
-               width="1200" height="675" loading="eager" />
-        </figure>
+    <main class="page" id="main">
+      <div class="hub-wrapper">
+        <article class="hub-main">
+          <div class="hub-content">
+            <div class="intro-tldr-grid">
+              <div class="intro-text">
+                <p>When your back suddenly "gives out" - often called lumbago or a back spasm - it's natural to be scared. The pain can be so intense you can barely move. But remember: <strong>even though the pain is enormous, the cause is rarely dangerous.</strong></p>
+                <p>This guide will help you through the first hours and days with practical advice that works. Most people improve significantly within a few weeks with the right approach.</p>
+              </div>
 
-        <!-- TL;DR Box -->
-        <div class="highlight-box" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0284c7; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
-          <h3 style="margin-top: 0; color: #0369a1;">TL;DR - Acute Back Pain</h3>
-          <ul style="margin-bottom: 0;">
-            <li><strong>Don't panic:</strong> Acute back pain is rarely dangerous, even if it hurts intensely</li>
-            <li><strong>Movement over rest:</strong> Short walks and gentle movement are better than bed rest</li>
-            <li><strong>Ice/heat:</strong> Ice for the first 48 hours, then heat</li>
-            <li><strong>90% improve:</strong> Most acute back episodes significantly improve within 6 weeks</li>
-            <li><strong>Early treatment:</strong> Can shorten the course and prevent chronification</li>
-            <li><strong>Red flags:</strong> Seek medical help for numbness in the groin or loss of bladder/bowel control</li>
-            <li><strong>Consultation:</strong> 45 min first time, 30 min follow-up</li>
-          </ul>
-        </div>
+              <aside class="premium-summary-card">
+                <h3>TL;DR - Acute Back Pain</h3>
+                <ul>
+                  <li><strong>Don't panic:</strong> Rarely dangerous, even if intense</li>
+                  <li><strong>Movement over rest:</strong> Short walks beat bed rest</li>
+                  <li><strong>Ice then heat:</strong> Ice first 48h, then heat</li>
+                  <li><strong>90% improve:</strong> Within 6 weeks</li>
+                  <li><strong>Red flags:</strong> Groin numbness or bladder issues = seek help</li>
+                </ul>
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
+                  class="btn-small">Book appointment</a>
+              </aside>
+            </div>
 
-        <div class="blog-post__content">
-          <!-- Warning Box -->
-          <div class="warning-box" style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left: 4px solid #dc2626; padding: 20px; margin: 30px 0; border-radius: 8px;">
-            <h3 style="color: #dc2626; margin-top: 0;">Seek Emergency Care Immediately For:</h3>
-            <ul style="margin-bottom: 0;">
-              <li><strong>Saddle anesthesia:</strong> Numbness in buttocks, around genitals, or inner thighs</li>
-              <li><strong>Bladder/bowel problems:</strong> New difficulty urinating or incontinence</li>
-              <li><strong>Progressive weakness:</strong> Increasing weakness in one or both legs</li>
-              <li><strong>Fever + back pain:</strong> May indicate infection</li>
-            </ul>
-            <p style="margin-bottom: 0; margin-top: 16px;"><strong>These symptoms are rare but require urgent evaluation.</strong></p>
+            <figure class="article-featured-image">
+              <img src="../../images/plager korsryggsmerter/Guide to Acute Low Back Pain.webp"
+                   alt="Guide to acute lower back pain"
+                   width="1200" height="675" loading="eager" />
+            </figure>
+
+            <div class="red-flag-alert">
+              <h4>Seek Emergency Care Immediately For:</h4>
+              <ul>
+                <li><strong>Saddle anesthesia:</strong> Numbness in buttocks, around genitals, or inner thighs</li>
+                <li><strong>Bladder/bowel problems:</strong> New difficulty urinating or incontinence</li>
+                <li><strong>Progressive weakness:</strong> Increasing weakness in one or both legs</li>
+                <li><strong>Fever + back pain:</strong> May indicate infection</li>
+              </ul>
+              <p><strong>These symptoms are rare but require urgent evaluation.</strong></p>
+              <a href="../conditions/lower-back/red-flags-back-pain.html">Learn more about red flags</a>
+            </div>
+
+            <section class="hub-section" id="s1">
+              <div class="section-header"><span class="section-number">1</span>
+                <h2 class="section-title">The First Minutes: Don't Panic</h2>
+              </div>
+              <p>When your back suddenly "gives out", the pain can be so intense you can barely move. But remember:</p>
+              <ul>
+                <li><strong>Even though the pain is enormous, the cause is rarely dangerous</strong></li>
+                <li>Most acute back episodes are due to muscle or joint problems that resolve</li>
+                <li>The body's protective reaction (muscle tension) often amplifies the pain</li>
+              </ul>
+            </section>
+
+            <section class="hub-section" id="s2">
+              <div class="section-header"><span class="section-number">2</span>
+                <h2 class="section-title">The First 24-48 Hours</h2>
+              </div>
+
+              <h3>Find a Comfortable Position</h3>
+              <ul>
+                <li><strong>On your back:</strong> With a pillow under your knees to relieve the lower back</li>
+                <li><strong>Side lying:</strong> With a pillow between the knees</li>
+                <li><strong>Avoid:</strong> Positions that significantly worsen pain</li>
+              </ul>
+
+              <h3>Move Gently - Don't Just Lie There!</h3>
+              <div class="info-box">
+                <h4>Important</h4>
+                <p>Prolonged bed rest (more than 1-2 days) makes the situation worse! Research shows that short walks every hour are better than lying still.</p>
+              </div>
+              <ul>
+                <li>Gentle movements within pain limits promote healing</li>
+                <li>Total immobilization leads to stiffer muscles and longer illness</li>
+              </ul>
+
+              <h3>Ice or Heat?</h3>
+              <ul>
+                <li><strong>First 48 hours:</strong> Ice can reduce inflammation and relieve pain (15-20 min, always with cloth between)</li>
+                <li><strong>After 48 hours:</strong> Heat loosens muscle tension and increases blood circulation</li>
+                <li>Use what feels best - the body often gives good signals</li>
+              </ul>
+
+              <h3>Pain Relief</h3>
+              <ul>
+                <li><strong>Paracetamol:</strong> First choice for the first days</li>
+                <li><strong>Ibuprofen:</strong> If needed (follow package instructions, take with food)</li>
+                <li><strong>Avoid:</strong> Long-term use without medical evaluation</li>
+              </ul>
+            </section>
+
+            <section class="hub-section" id="s3">
+              <div class="section-header"><span class="section-number">3</span>
+                <h2 class="section-title">Days 2-7: Gradual Progression</h2>
+              </div>
+
+              <h3>Movement Is Medicine</h3>
+              <p>Research consistently shows that gradual increase in activity gives better results than rest:</p>
+              <ul>
+                <li>Increase walks gradually - start with 5-10 minutes, build up to 20-30</li>
+                <li>Simple movement exercises (see below)</li>
+                <li>Avoid heavy lifting and forceful twisting</li>
+                <li>Return to normal activities as soon as pain allows</li>
+              </ul>
+
+              <h3>Sleep and Rest</h3>
+              <ul>
+                <li>A firm mattress often provides better support</li>
+                <li>Side lying with a pillow between the knees relieves the back</li>
+                <li>Avoid stomach sleeping which increases the curve in the lower back</li>
+              </ul>
+            </section>
+
+            <section class="hub-section" id="s4">
+              <div class="section-header"><span class="section-number">4</span>
+                <h2 class="section-title">Exercises for the First Days</h2>
+              </div>
+
+              <div class="condition-card">
+                <h4>1. Pelvic Tilts (Lying)</h4>
+                <ol>
+                  <li>Lie on your back with bent knees and feet on the floor</li>
+                  <li>Gently roll your pelvis forward (lower back flattens against the surface)</li>
+                  <li>Roll your pelvis back (lower back gets a slight curve)</li>
+                  <li>10 repetitions, 3 times daily</li>
+                </ol>
+              </div>
+
+              <div class="condition-card">
+                <h4>2. Knee-to-Chest</h4>
+                <ol>
+                  <li>Lie on your back with bent knees</li>
+                  <li>Gently pull one knee toward your chest</li>
+                  <li>Hold for 20-30 seconds</li>
+                  <li>Switch sides. Repeat 3 times per side.</li>
+                </ol>
+              </div>
+
+              <div class="condition-card">
+                <h4>3. Cat-Camel</h4>
+                <ol>
+                  <li>Get on all fours with hands under shoulders and knees under hips</li>
+                  <li>Arch your back up toward the ceiling (cat) - let the head drop</li>
+                  <li>Sway your back down (camel) - lift the head</li>
+                  <li>Move gently through a pain-free range, 10 repetitions</li>
+                </ol>
+              </div>
+
+              <div class="condition-card">
+                <h4>4. Side-Lying Rotation</h4>
+                <ol>
+                  <li>Lie on your side with bent knees</li>
+                  <li>Gently rotate your upper body toward the ceiling</li>
+                  <li>Hold for 10 seconds</li>
+                  <li>Switch sides</li>
+                </ol>
+              </div>
+            </section>
+
+            <section class="hub-section" id="s5">
+              <div class="section-header"><span class="section-number">5</span>
+                <h2 class="section-title">When Should You Seek Treatment?</h2>
+              </div>
+
+              <h3>Seek Treatment Early If:</h3>
+              <ul>
+                <li>Pain is very intense and prevents daily activities</li>
+                <li>You have radiating pain to the leg or foot (possible <a href="../conditions/lower-back/sciatica.html">sciatica</a>)</li>
+                <li>You struggle to walk or stand upright</li>
+                <li>Pain prevents sleep multiple nights in a row</li>
+                <li>You've had similar episodes before</li>
+                <li>You're unsure about the cause</li>
+              </ul>
+
+              <h3>Benefits of Early Treatment</h3>
+              <p>Research suggests that early intervention can:</p>
+              <ul>
+                <li><strong>Reduce duration of problems</strong> - shorter illness course</li>
+                <li><strong>Prevent chronification</strong> - break the vicious cycle before it establishes</li>
+                <li><strong>Give you self-management tools</strong> - exercises and strategies you can use yourself</li>
+                <li><strong>Identify underlying cause</strong> - so treatment can be targeted</li>
+              </ul>
+            </section>
+
+            <section class="hub-section" id="s6">
+              <div class="section-header"><span class="section-number">6</span>
+                <h2 class="section-title">What Does a Chiropractor Do?</h2>
+              </div>
+              <ol>
+                <li><strong>Thorough examination</strong> to rule out serious causes</li>
+                <li><strong>Pain relief</strong> through gentle techniques adapted to the acute phase</li>
+                <li><strong>Mobilization</strong> of stiff joints and muscles</li>
+                <li><strong>Advice and exercises</strong> tailored to your situation</li>
+                <li><strong>Plan</strong> for gradual return to normal activities</li>
+              </ol>
+            </section>
+
+            <section class="hub-section" id="s7">
+              <div class="section-header"><span class="section-number">7</span>
+                <h2 class="section-title">Prognosis & Prevention</h2>
+              </div>
+
+              <h3>Typical Recovery Timeline</h3>
+              <ul>
+                <li><strong>1 week:</strong> Many notice significant improvement</li>
+                <li><strong>2-4 weeks:</strong> Most are much better</li>
+                <li><strong>6 weeks:</strong> About 90% are back to normal activities</li>
+              </ul>
+              <p><strong>But:</strong> Recurrence is common - 40-70% have new episodes within a year. That's why prevention is important!</p>
+
+              <h3>Prevention of Future Episodes</h3>
+              <ul>
+                <li><strong>Regular strength training</strong> for core muscles</li>
+                <li><strong>General physical activity</strong> - walking, swimming, cycling</li>
+                <li><strong>Good ergonomics</strong> at work and home</li>
+                <li><strong>Varied work positions</strong> - don't sit too long in the same position</li>
+                <li><strong>Healthy body weight</strong> - reduces load on the back</li>
+                <li><strong>Lifting technique</strong> - bend your knees, hold the load close to your body</li>
+              </ul>
+            </section>
+
+            <section class="hub-section" id="s8">
+              <div class="section-header"><span class="section-number">8</span>
+                <h2 class="section-title">FAQ</h2>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">Should I get an X-ray or MRI right away?</div>
+                <div class="faq-answer">No, usually not. Imaging is rarely necessary for acute back pain without red flags - even if disc herniation is suspected. Most improve anyway within 6 weeks. MRI may be relevant if pain doesn't improve or with neurological symptoms.</div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">How long should I be off work?</div>
+                <div class="faq-answer">As short as possible! Research shows that early return to (adapted) work gives better prognosis than prolonged sick leave. Discuss graded sick leave or workplace adaptations with your practitioner.</div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">Can I exercise with acute back pain?</div>
+                <div class="faq-answer">Light activity like walking is good. Intense training should be postponed until the acute phase is over (typically 1-2 weeks). Heavy strength training and activities with lots of twisting/bending should wait until pain is under control.</div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">Is a hard or soft mattress better?</div>
+                <div class="faq-answer">A moderately firm mattress is often best. Too hard causes pressure, too soft provides poor support. Most important is finding a position where you can sleep - sleep is important for healing!</div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">Does chiropractic help with acute back pain?</div>
+                <div class="faq-answer">Yes. Chiropractors have good experience with acute back episodes and use adapted techniques in the acute phase. Often early treatment can shorten the course and give you concrete strategies for faster improvement.</div>
+              </div>
+            </section>
+
+            <div class="hub-cta">
+              <h3>Do You Have Acute Back Pain?</h3>
+              <p>Chiropractor Mads Finstad often offers same-day or next-day appointments. Early treatment can shorten the course and give you concrete tools for faster improvement.</p>
+              <p><strong>Prices:</strong> New patient 1,140 kr | Follow-up 795 kr</p>
+              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn">Book appointment</a>
+            </div>
+
+            <div class="related-box">
+              <h3>Related Articles</h3>
+              <a href="../conditions/lower-back-pain.html">Lower Back Pain - Main Article</a>
+              <a href="sciatica-prolapse-lumbago-difference.html">Sciatica, Prolapse or Lumbago?</a>
+              <a href="strengthening-exercises-lower-back.html">Strengthening Exercises for Lower Back</a>
+            </div>
+
+            <p class="disclaimer">This article is intended as general information and does not replace individual medical assessment. Sources: Maher C et al. (Lancet 2017), Oliveira CB et al. (Eur Spine J 2018), Henschke N et al. (BMJ 2008).</p>
+            <p class="updated">Last updated: January 2026</p>
+          </div>
+        </article>
+
+        <aside class="hub-sidebar">
+          <div class="hub-conversion-card">
+            <img src="../../images/Om/meg.webp" alt="Mads Finstad Chiropractor" class="sidebar-image">
+            <h3>Acute Back Pain?</h3>
+            <p>Often same-day appointments available. Early treatment helps you recover faster.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Book appointment</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Chiropractor, TheBackROM</small>
+            </div>
           </div>
 
-          <h2>The First Minutes: Don't Panic</h2>
-          <p>When your back suddenly "gives out" - often called lumbago or a back spasm - it's natural to be scared. The pain can be so intense you can barely move. But remember:</p>
-          <ul>
-            <li><strong>Even though the pain is enormous, the cause is rarely dangerous</strong></li>
-            <li>Most acute back episodes are due to muscle or joint problems that resolve</li>
-            <li>The body's protective reaction (muscle tension) often amplifies the pain</li>
-          </ul>
-
-          <h2>The First 24-48 Hours</h2>
-
-          <h3>1. Find a Comfortable Position</h3>
-          <ul>
-            <li><strong>On your back:</strong> With a pillow under your knees to relieve the lower back</li>
-            <li><strong>Side lying:</strong> With a pillow between the knees</li>
-            <li><strong>Avoid:</strong> Positions that significantly worsen pain</li>
-          </ul>
-
-          <h3>2. Move Gently - Don't Just Lie There!</h3>
-          <p><strong>Important:</strong> Prolonged bed rest (more than 1-2 days) makes the situation worse! Research shows that:</p>
-          <ul>
-            <li>Short walks every hour are better than lying still</li>
-            <li>Gentle movements within pain limits promote healing</li>
-            <li>Total immobilization leads to stiffer muscles and longer illness</li>
-          </ul>
-
-          <h3>3. Ice or Heat?</h3>
-          <ul>
-            <li><strong>First 48 hours:</strong> Ice can reduce inflammation and relieve pain (15-20 min, always with cloth between)</li>
-            <li><strong>After 48 hours:</strong> Heat loosens muscle tension and increases blood circulation</li>
-            <li>Use what feels best - the body often gives good signals</li>
-          </ul>
-
-          <h3>4. Pain Relief</h3>
-          <ul>
-            <li><strong>Paracetamol:</strong> First choice for the first days</li>
-            <li><strong>Ibuprofen:</strong> If needed (follow package instructions, take with food)</li>
-            <li><strong>Avoid:</strong> Long-term use without medical evaluation</li>
-          </ul>
-
-          <h2>Days 2-7: Gradual Progression</h2>
-
-          <h3>Movement Is Medicine</h3>
-          <p>Research consistently shows that gradual increase in activity gives better results than rest:</p>
-          <ul>
-            <li>Increase walks gradually - start with 5-10 minutes, build up to 20-30</li>
-            <li>Simple movement exercises (see below)</li>
-            <li>Avoid heavy lifting and forceful twisting</li>
-            <li>Return to normal activities as soon as pain allows</li>
-          </ul>
-
-          <h3>Sleep and Rest</h3>
-          <ul>
-            <li>A firm mattress often provides better support</li>
-            <li>Side lying with a pillow between the knees relieves the back</li>
-            <li>Avoid stomach sleeping which increases the curve in the lower back</li>
-          </ul>
-
-          <h2>Exercises for the First Days</h2>
-
-          <h3>1. Pelvic Tilts (Lying)</h3>
-          <ol>
-            <li>Lie on your back with bent knees and feet on the floor</li>
-            <li>Gently roll your pelvis forward (lower back flattens against the surface)</li>
-            <li>Roll your pelvis back (lower back gets a slight curve)</li>
-            <li>10 repetitions, 3 times daily</li>
-          </ol>
-
-          <h3>2. Knee-to-Chest</h3>
-          <ol>
-            <li>Lie on your back with bent knees</li>
-            <li>Gently pull one knee toward your chest</li>
-            <li>Hold for 20-30 seconds</li>
-            <li>Switch sides. Repeat 3 times per side.</li>
-          </ol>
-
-          <h3>3. Cat-Camel</h3>
-          <ol>
-            <li>Get on all fours with hands under shoulders and knees under hips</li>
-            <li>Arch your back up toward the ceiling (cat) - let the head drop</li>
-            <li>Sway your back down (camel) - lift the head</li>
-            <li>Move gently through a pain-free range, 10 repetitions</li>
-          </ol>
-
-          <h3>4. Side-Lying Rotation</h3>
-          <ol>
-            <li>Lie on your side with bent knees</li>
-            <li>Gently rotate your upper body toward the ceiling</li>
-            <li>Hold for 10 seconds</li>
-            <li>Switch sides</li>
-          </ol>
-
-          <h2>When Should You Seek Treatment?</h2>
-
-          <h3>Seek Treatment Early If:</h3>
-          <ul>
-            <li>Pain is very intense and prevents daily activities</li>
-            <li>You have radiating pain to the leg or foot (possible sciatica)</li>
-            <li>You struggle to walk or stand upright</li>
-            <li>Pain prevents sleep multiple nights in a row</li>
-            <li>You've had similar episodes before</li>
-            <li>You're unsure about the cause</li>
-          </ul>
-
-          <h3>Benefits of Early Treatment</h3>
-          <p>Research suggests that early intervention can:</p>
-          <ul>
-            <li><strong>Reduce duration of problems</strong> - shorter illness course</li>
-            <li><strong>Prevent chronification</strong> - break the vicious cycle before it establishes</li>
-            <li><strong>Give you self-management tools</strong> - exercises and strategies you can use yourself</li>
-            <li><strong>Identify underlying cause</strong> - so treatment can be targeted</li>
-          </ul>
-
-          <h2>What Does a Chiropractor Do for Acute Back Pain?</h2>
-          <ol>
-            <li><strong>Thorough examination</strong> to rule out serious causes</li>
-            <li><strong>Pain relief</strong> through gentle techniques adapted to the acute phase</li>
-            <li><strong>Mobilization</strong> of stiff joints and muscles</li>
-            <li><strong>Advice and exercises</strong> tailored to your situation</li>
-            <li><strong>Plan</strong> for gradual return to normal activities</li>
-          </ol>
-
-          <h2>What You Should NOT Do</h2>
-          <ul>
-            <li><strong>Prolonged bed rest:</strong> Makes the situation worse - keep moving!</li>
-            <li><strong>Heavy lifting:</strong> Wait until pain is under control</li>
-            <li><strong>Intense exercises:</strong> Don't push through the pain</li>
-            <li><strong>Ignore symptoms:</strong> Early treatment gives better results</li>
-            <li><strong>Excessive fear:</strong> Catastrophic thoughts worsen pain</li>
-          </ul>
-
-          <h2>Prognosis</h2>
-          <ul>
-            <li><strong>1 week:</strong> Many notice significant improvement</li>
-            <li><strong>2-4 weeks:</strong> Most are much better</li>
-            <li><strong>6 weeks:</strong> About 90% are back to normal activities</li>
-          </ul>
-          <p><strong>But:</strong> Recurrence is common - 40-70% have new episodes within a year. That's why prevention is important!</p>
-
-          <h2>Prevention of Future Episodes</h2>
-          <ul>
-            <li><strong>Regular strength training</strong> for core muscles</li>
-            <li><strong>General physical activity</strong> - walking, swimming, cycling</li>
-            <li><strong>Good ergonomics</strong> at work and home</li>
-            <li><strong>Varied work positions</strong> - don't sit too long in the same position</li>
-            <li><strong>Healthy body weight</strong> - reduces load on the back</li>
-            <li><strong>Lifting technique</strong> - bend your knees, hold the load close to your body</li>
-          </ul>
-
-          <!-- FAQ Section -->
-          <div class="faq-section" style="background: #f8fafc; padding: 25px; border-radius: 12px; margin: 30px 0;">
-            <h2 style="margin-top: 0;">Frequently Asked Questions</h2>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Should I get an X-ray or MRI right away?</h4>
-              <p>No, usually not. Imaging is rarely necessary for acute back pain without red flags - even if disc herniation is suspected. Most improve anyway within 6 weeks. MRI may be relevant if pain doesn't improve or with neurological symptoms.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>How long should I be off work?</h4>
-              <p>As short as possible! Research shows that early return to (adapted) work gives better prognosis than prolonged sick leave. Discuss graded sick leave or workplace adaptations with your practitioner.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Can I exercise with acute back pain?</h4>
-              <p>Light activity like walking is good. Intense training should be postponed until the acute phase is over (typically 1-2 weeks). Heavy strength training and activities with lots of twisting/bending should wait until pain is under control.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Is a hard or soft mattress better?</h4>
-              <p>A moderately firm mattress is often best. Too hard causes pressure, too soft provides poor support. Most important is finding a position where you can sleep - sleep is important for healing!</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>When can I expect to be well again?</h4>
-              <p>Most acute back episodes improve significantly within 2-4 weeks and are better within 6 weeks. Some have residual symptoms for longer, but most can return to normal activities relatively quickly.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Does chiropractic help with acute back pain?</h4>
-              <p>Yes. Chiropractors have good experience with acute back episodes and use adapted techniques in the acute phase. Often early treatment can shorten the course and give you concrete strategies for faster improvement.</p>
-            </div>
-          </div>
-
-          <!-- Sources Section -->
-          <div class="sources-section" style="background: #f1f5f9; padding: 20px; border-radius: 8px; margin: 30px 0;">
-            <h3 style="margin-top: 0;">Sources</h3>
-            <ol style="font-size: 0.9rem; margin-bottom: 0;">
-              <li>Maher C, Underwood M, Buchbinder R. Non-specific low back pain. Lancet. 2017</li>
-              <li>Waddell G. The Back Pain Revolution. 2nd ed. Churchill Livingstone; 2004</li>
-              <li>Oliveira CB et al. Clinical practice guidelines for the management of non-specific low back pain. Eur Spine J. 2018</li>
-              <li>Henschke N et al. Prognosis in patients with recent onset low back pain. BMJ. 2008</li>
-            </ol>
-          </div>
-
-          <div class="blog-post__cta-box">
-            <h2>Do You Have Acute Back Pain?</h2>
-            <p>Chiropractor Mads Finstad often offers same-day or next-day appointments. Early treatment can shorten the course and give you concrete tools for faster improvement.</p>
-            <p><strong>Prices:</strong> New problem 1,140 NOK | Follow-up 795 NOK</p>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary" target="_blank" rel="noopener">Book appointment</a>
-          </div>
-
-          <div class="related-box">
-            <h2>Related Articles</h2>
+          <nav class="hub-toc-card" aria-label="Page navigation">
+            <h3>Contents</h3>
             <ul>
-              <li><a href="../conditions/lower-back-pain.html">Lower Back Pain - Main Article</a></li>
-              <li><a href="sciatica-prolapse-lumbago-difference.html">Sciatica, Prolapse or Lumbago?</a></li>
-              <li><a href="strengthening-exercises-lower-back.html">Strengthening Exercises for Lower Back</a></li>
+              <li><a href="#s1">1. Don't Panic</a></li>
+              <li><a href="#s2">2. First 24-48 Hours</a></li>
+              <li><a href="#s3">3. Days 2-7</a></li>
+              <li><a href="#s4">4. Exercises</a></li>
+              <li><a href="#s5">5. When to Seek Treatment</a></li>
+              <li><a href="#s6">6. What We Do</a></li>
+              <li><a href="#s7">7. Prognosis</a></li>
+              <li><a href="#s8">8. FAQ</a></li>
             </ul>
+          </nav>
+        </aside>
+      </div>
+    </main>
+
+    <div class="mobile-sticky-cta">
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn btn-primary">Book appointment</a>
+      <a href="tel:+4793043062" class="btn btn-outline">Call</a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left">
+          <div class="footer__social"><a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer"
+              class="footer__social-link"><img src="../../images/Media iconer/facebook_media_social_icon.png"
+                alt="Facebook" width="512" height="512" loading="lazy" /></a><a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"><img
+                src="../../images/Media iconer/instagramlogo.png" alt="Instagram" width="512" height="512"
+                loading="lazy" /></a></div>
+        </div>
+        <div class="footer__center">
+          <div class="footer__logo"><img src="../../images/logo-footer.webp" alt="Klinikk for alle" width="300"
+              height="229" loading="lazy" /></div>
+          <div class="back-to-top-wrapper"><a href="#top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i> Up</a>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 08:00 - 19:00</p>
+            <p>Saturday: 10:00 - 16:00</p>
+            <p>Sunday: Closed</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Contact</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Phone: <a href="tel:+4793043062">+47 93043062</a></p>
           </div>
         </div>
       </div>
-    </article>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <img src="../../images/Final Transparent Logo.webp" alt="TheBackROM logo" class="footer__logo" width="60" height="60" loading="lazy" />
-          <p>TheBackROM - Your chiropractor at Majorstua</p>
-        </div>
-        <div class="footer__contact">
-          <h3>Contact</h3>
-          <p>Gardeveien 17, 0363 Oslo</p>
-          <p>Phone: <a href="tel:+4793043062">+47 93043062</a></p>
-        </div>
+      <div class="footer__bottom"><a href="../privacy.html" class="footer__link--muted">Privacy Policy</a>
+        <p class="footer__copyright">&copy; 2026 Mads Finstad Chiropractor – All rights reserved</p>
       </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 Mads Finstad Chiropractor. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
-     class="mobile-sticky-cta"
-     aria-label="Book appointment with chiropractor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Book appointment
-  </a>
+    </footer>
+  </div>
 
   <script src="../../js/script.min.js" defer></script>
-  <script src="../../js/breadcrumbs.js" defer></script>
+  <script src="../../js/language-toggle.min.js" defer></script>
+  <script src="../../js/modern-enhancements.min.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+
+      if (sections.length === 0 || navLinks.length === 0) return;
+
+      function updateActiveLink() {
+        let current = '';
+        const scrollPos = window.scrollY + 200;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (scrollPos >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          const href = link.getAttribute('href');
+          if (current === '' && sections.length > 0) {
+            current = sections[0].getAttribute('id');
+          }
+          if (href && href === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
 </body>
+
 </html>
