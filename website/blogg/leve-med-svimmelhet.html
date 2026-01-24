@@ -1,18 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="nb">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1a202c" />
+  <meta name="color-scheme" content="light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="view-transition" content="same-origin" />
+
+  <link rel="manifest" href="../manifest.json" />
+  <link rel="apple-touch-icon" href="../images/Final Transparent Logo.png" />
   <link rel="icon" type="image/png" href="../images/Final Transparent Logo.png" />
-  <!-- Critical CSS for header positioning -->
-  <style>
-    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
-    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
-    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
-    #main-content{padding-top:var(--header-height)}
-  </style>
-  <title>Du trenger ikke leve med svimmelhet lenger | Kiropraktor Majorstua</title>
+
+    <title>Du trenger ikke leve med svimmelhet lenger | Kiropraktor Majorstua</title>
   <meta name="description" content="Svimmelhet rammer 15-20% årlig, men over 90% kan behandles effektivt. Lær om årsaker og behandlingsmuligheter. Kiropraktor Oslo.">
   <meta property="og:title" content="Du trenger ikke leve med svimmelhet lenger | Kiropraktor Majorstua">
   <meta property="og:description" content="Svimmelhet rammer 15-20% årlig, men over 90% kan behandles effektivt. Lær om årsaker og behandlingsmuligheter. Kiropraktor Oslo.">
@@ -28,76 +30,131 @@
   <link rel="canonical" href="https://thebackrom.com/blogg/leve-med-svimmelhet.html" />
   <link rel="alternate" hreflang="nb" href="https://thebackrom.com/blogg/leve-med-svimmelhet.html" />
   <link rel="alternate" hreflang="en" href="https://thebackrom.com/blogg/leve-med-svimmelhet-en.html" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540166625752174');
+        fbq('track', 'PageView');
+      }, 2000);
+    });
+  </script>
+  <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="preload" as="style" href="../css/pages-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../css/pages-combined.min.css?v=20260118">
-  <link rel="preload" as="style" href="../css/hub-article.css">
-  <link rel="stylesheet" href="../css/hub-article.css">
-</head>
-<body>
-  <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
-  <header class="header">
-    <div class="container header__container">
-      <a href="../index.html" class="header__logo" aria-label="Til forsiden">
-        <img src="../images/Final Transparent Logo.webp" alt="TheBackROM logo" width="50" height="50" />
-      </a>
-      <nav class="header__nav" aria-label="Hovedmeny">
-        <ul class="header__menu">
-          <li><a href="../plager/brystryggsmerter.html">Hjem</a></li>
-          <li><a href="../services.html">Tjenester</a></li>
-          <li><a href="../plager.html">Plager</a></li>
-          <li><a href="../priser.html">Priser</a></li>
-          <li><a href="../about.html">Om meg</a></li>
-          <li><a href="../blogg/index.html" class="active">Blogg</a></li>
-          <li><a href="../contact.html">Kontakt</a></li>
-        </ul>
-      </nav>
-      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary header__cta" target="_blank" rel="noopener">Bestill time</a>
-      <button class="header__menu-toggle" aria-label="Åpne meny" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+  <link rel="preload" as="style" href="../css/font-awesome-minimal.css">
+  <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
 
-  <main id="main-content">
-    <section class="page__main main main_services blog-hero">
-      <div class="main__container">
-        <span class="blog-post__category">Svimmelhet</span>
-        <h1 class="main__title">Du trenger ikke leve med svimmelhet lenger</h1>
-        <div class="blog-post__meta">
-          <time class="blog-post__date" datetime="2026-01-20">20. januar 2026</time>
-          <span class="blog-post__reading-time">8 min lesetid</span>
+  <style>
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
+</head>
+
+<body id="top">
+  <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
+            alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
+        <div class="header__navigation">
+          <div class="language-toggle" role="group" aria-label="Språkvalg">
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
+            <div class="language-toggle__slider"></div>
+          </div>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="../index.html" class="menu__link">Hjem</a></li>
+              <li class="menu__item"><a href="../about.html" class="menu__link">Om meg</a></li>
+              <li class="menu__item"><a href="../services.html" class="menu__link">Tjenester</a></li>
+              <li class="menu__item"><a href="../plager.html" class="menu__link">Plager</a></li>
+              <li class="menu__item"><a href="../priser.html" class="menu__link">Priser</a></li>
+              <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+              <li class="menu__item"><a href="../contact.html" class="menu__link">Kontakt</a></li>
+              <li class="menu__item"><a href="../blogg/index.html" class="menu__link">Blogg</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
-    <article class="blog-post">
-      <div class="container container--narrow">
-        <nav class="breadcrumb" aria-label="Brodsmuler">
-          <ol class="breadcrumb__list">
-            <li class="breadcrumb__item"><a href="../plager/brystryggsmerter.html">Hjem</a></li>
-            <li class="breadcrumb__item"><a href="../blogg/index.html">Blogg</a></li>
-            <li class="breadcrumb__item"><a href="../plager/svimmelhet.html">Svimmelhet</a></li>
-            <li class="breadcrumb__item" aria-current="page">Du trenger ikke leve med svimmelhet</li>
-          </ol>
-        </nav>
+    </header>
 
-        <!-- TL;DR Box -->
-        <div class="highlight-box" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0284c7; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
-          <h3 style="margin-top: 0; color: #0369a1;">TL;DR - Det viktigste du må huske</h3>
-          <ul style="margin-bottom: 0;">
-            <li><strong>Svimmelhet rammer 15-20%</strong> av befolkningen årlig, men over 90% kan behandles effektivt</li>
-            <li><strong>Vanligste årsaker:</strong> BPPV/krystallsyke (17-42%), nakkerelatert svimmelhet, vestibularisnevritt, migrene</li>
-            <li><strong>Behandlingsrespons:</strong> BPPV har 80-90% bedring, ofte på 1-3 behandlinger</li>
-            <li><strong>Røde flagg:</strong> Plutselig kraftig hodepine, taleproblemer, lammelser - ring 113</li>
-            <li><strong>Konsultasjon:</strong> 45 min første gang (1105 kr), 30 min oppfølging (780 kr)</li>
-          </ul>
+    <main class="page" id="main">
+      <!-- Hero Section -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <span class="blog-post__category">Svimmelhet</span>
+          <h1>Du trenger ikke leve med svimmelhet lenger</h1>
+          <p class="hub-hero__subtitle">Kiropraktor Mads Finstad, Majorstua</p>
+          <div class="blog-post__meta">
+            <time class="blog-post__date" datetime="2026-01-20">20. januar 2026</time>
+            <span class="blog-post__author">Mads Finstad</span>
+          </div>
         </div>
+      </section>
 
-        <div class="blog-post__content">
-          <h2>Kjenner du deg igjen?</h2>
+      <div class="hub-wrapper">
+        <article class="page__blog-post blog-post hub-main">
+          <div class="blog-post__container">
+            <div class="blog-post__content">
+              <h2 id="kjenner-du-deg-igjen">Kjenner du deg igjen?</h2>
           <p>Mange lever med svimmelhet uten å søke hjelp fordi de tror det er noe de bare må akseptere. Men her er den gode nyheten: <strong>Svimmelhet er sjelden noe du "bare må leve med".</strong></p>
           <p>Befolkningsstudier viser at svimmelhet rammer 15-20% av voksne i løpet av et år. Kvinner rammes 2-3 ganger oftere enn menn, og forekomsten øker med alderen. Men det betyr ikke at det er "normalt" - det betyr at det finnes mange som deg som kan ha nytte av en vurdering.</p>
 
-          <h2>Tre myter man hører ofte</h2>
+          <h2 id="tre-myter-man-horer-ofte">Tre myter man hører ofte</h2>
 
           <h3>"Svimmelhet hører med til alderen"</h3>
           <p>Forskning fra Imperial College London har slått fast at svimmelhet ikke er en normal del av aldring. Ja, forekomsten øker - studier viser at opptil 31% av personer over 80 år opplever svimmelhet, men dette skyldes behandlingsbare tilstander, ikke aldring i seg selv. De vanligste årsakene hos eldre er BPPV og medikamentbivirkninger, begge med gode behandlingsmuligheter.</p>
@@ -108,7 +165,7 @@
           <h3>"Det går over av seg selv"</h3>
           <p>Noen former for svimmelhet kan gå over spontant. Men mange venter unødvendig lenge. Med riktig behandling kan mange oppleve betydelig bedring på få konsultasjoner - i stedet for å tilpasse hverdagen rundt plagene i måneder eller år.</p>
 
-          <h2>De vanligste årsakene til svimmelhet</h2>
+          <h2 id="de-vanligste-arsakene-til-svimmelhet">De vanligste årsakene til svimmelhet</h2>
 
           <h3>1. BPPV - krystallsyke</h3>
           <p>BPPV (godartet posisjonsvertigo) er den vanligste årsaken til rotatorisk svimmelhet og utgjør 17-42% av alle svimmelhetstilfeller. Tilstanden oppstår når små kalkpartikler løsner i det indre øret og havner i buegangene.</p>
@@ -128,9 +185,9 @@
           <p>Vestibulær migrene, Menieres sykdom, medikamentbivirkninger, og ortostatisk hypotensjon (blodtrykksfall ved reising) er blant andre vanlige årsaker. Noen ganger overlapper flere tilstander.</p>
 
           <!-- Warning Box -->
-          <div class="warning-box" style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left: 4px solid #dc2626; padding: 20px; margin: 30px 0; border-radius: 8px;">
-            <h3 style="color: #dc2626; margin-top: 0;">Røde flagg - Ring 113 ved:</h3>
-            <ul style="margin-bottom: 0;">
+          <div class="insight-card warning">
+            <h3>Røde flagg - Ring 113 ved:</h3>
+            <ul>
               <li><strong>Plutselig kraftig hodepine</strong></li>
               <li><strong>Taleproblemer</strong> eller forståelsesvansker</li>
               <li><strong>Lammelser</strong> eller nummenhet i ansikt/arm/ben</li>
@@ -139,7 +196,7 @@
             </ul>
           </div>
 
-          <h2>Hva kan jeg tilby?</h2>
+          <h2 id="hva-kan-jeg-tilby">Hva kan jeg tilby?</h2>
           <p>Hos TheBackROM på Majorstua har jeg spesialisert oss på utredning og behandling av svimmelhet. Jeg har investert i utstyr som gjør det mulig å diagnostisere og behandle selv de som har hatt utfordringer andre steder:</p>
 
           <h3>TRV-stol</h3>
@@ -151,7 +208,7 @@
           <h3>Grundig nakkeundersøkelse</h3>
           <p>Vurdering av leddbevegelighet, muskelspenninger og propriosepsjon for å avdekke om nakken bidrar til symptomene dine.</p>
 
-          <h2>Hva kan du forvente?</h2>
+          <h2 id="hva-kan-du-forvente">Hva kan du forvente?</h2>
 
           <h3>første konsultasjon (45 minutter)</h3>
           <p>Jeg starter med en grundig gjennomgang av din sykehistorie og symptomer. Deretter gjør jeg en systematisk undersøkelse som inkluderer testing av balanse, øyebevegelser og nakke. Ved mistanke om BPPV utfører jeg diagnostiske tester som Dix-Hallpike. Basert på funnene diskuterer jeg en plan sammen.</p>
@@ -165,7 +222,7 @@
           </ul>
 
           <div class="blog-post__cta-box">
-            <h2>Er du klar for å få hjelp?</h2>
+            <h2 id="er-du-klar-for-a-fa-hjelp">Er du klar for å få hjelp?</h2>
             <p>Kiropraktor Mads Finstad har spesialkompetanse på svimmelhet og vestibulære lidelser. Jeg tilbyr grundig utredning med VNG og TRV-stol.</p>
             <p><strong>Priser:</strong> Nytt problem 1105 kr | Oppfølg 780 kr</p>
             <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary" target="_blank" rel="noopener">Bestill time</a>
@@ -183,52 +240,143 @@
             </ol>
           </div>
 
-          <h2>Relaterte artikler</h2>
+          <h2 id="relaterte-artikler">Relaterte artikler</h2>
           <ul>
             <li><a href="../plager/svimmelhet.html">Alt om svimmelhet</a></li>
             <li><a href="../plager/svimmelhet/krystallsyke-bppv.html">Krystallsyke (BPPV)</a></li>
             <li><a href="svimmelhet-myter.html">Svimmelhet: Myter avkreftet</a></li>
             <li><a href="eldre-svimmelhet-fallrisiko.html">Svimmelhet hos eldre og fallrisiko</a></li>
           </ul>
-        </div>
-      </div>
-    </article>
-  </main>
+            
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
+          </div>
+        </article>
 
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <img src="../images/Final Transparent Logo.webp" alt="TheBackROM logo" class="footer__logo" width="60" height="60" loading="lazy" />
-          <p>TheBackROM - Din kiropraktor på Majorstua</p>
+        <aside class="hub-sidebar">
+          <div class="hub-conversion-card">
+            <img src="../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
+            <h3>Trenger du hjelp?</h3>
+            <p>Jeg hjelper deg med å finne årsaken og riktig behandling.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+            </div>
+          </div>
+
+          <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
+            <h3>Innhold</h3>
+            <ul>
+                            <li><a href="#kjenner-du-deg-igjen">Kjenner du deg igjen?</a></li>
+              <li><a href="#tre-myter-man-horer-ofte">Tre myter man hører ofte</a></li>
+              <li><a href="#de-vanligste-arsakene-til-svimmelhet">De vanligste årsakene til svimmelhet</a></li>
+              <li><a href="#hva-kan-jeg-tilby">Hva kan jeg tilby?</a></li>
+              <li><a href="#hva-kan-du-forvente">Hva kan du forvente?</a></li>
+              <li><a href="#er-du-klar-for-a-fa-hjelp">Er du klar for å få hjelp?</a></li>
+              <li><a href="#relaterte-artikler">Relaterte artikler</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+      <div class="mobile-sticky-cta">
+        <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer">Bestill time</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Left Column -->
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
+          </div>
         </div>
-        <div class="footer__contact">
-          <h3>Kontakt</h3>
-          <p>Sorgenfrigata 11, 0365 Oslo</p>
-          <p>Tlf: <a href="tel:+4740178178">401 78 178</a></p>
+
+        <!-- Center Column -->
+        <div class="footer__center">
+          <div class="footer__logo">
+            <img src="../images/logo-footer.webp" alt="Klinikk for alle Kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Åpningstider</h3>
+            <p>Mandag - Fredag: 08:00 - 19:00</p>
+            <p>Lørdag: 10:00 - 16:00</p>
+            <p>Søndag: Stengt</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Kontaktinformasjon</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>E-post: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <p>&copy; 2026 Mads Finstad Kiropraktor. Alle rettigheter reservert.</p>
+        <a href="../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
       </div>
-    </div>
-  </footer>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
-     class="mobile-sticky-cta"
-     aria-label="Bestill time hos kiropraktor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Bestill time
-  </a>
+    </footer>
+  </div>
 
   <script src="../js/script.min.js" defer></script>
+  <script src="../js/language-toggle.min.js" defer></script>
+  <script src="../js/modern-enhancements.min.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('h2[id]');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+      function updateActiveLink() {
+        let currentSection = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 150) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + currentSection) {
+            link.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
   <script src="../js/breadcrumbs.js" defer></script>
 </body>
 </html>
-
-
