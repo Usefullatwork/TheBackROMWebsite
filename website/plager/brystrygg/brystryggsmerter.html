@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Brystryggsmerter - Komplett guide | Kiropraktor Majorstua Oslo</title>
 
@@ -31,6 +31,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/brystrygg/brystryggsmerter.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/brystrygg/brystryggsmerter.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/thoracic/thoracic-back-pain.html" />
 
   <!-- CollectionPage Schema -->
   <script type="application/ld+json">
@@ -93,10 +95,10 @@
       },
       {
         "@type": "Question",
-        "name": "Når bør jeg oppsøke lege for brystryggsmerter?",
+        "name": "Nær bør jeg oppsøke lege for brystryggsmerter?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Søk lege ved: plutselig intens smerte, smerter som stråler til brystet eller armen, pustevansker, feber, uforklarlig vekttap, nattsmerter som vekker deg, eller smerter etter traume. Også ved symptomer som nummenhet eller svakhet i bena."
+          "text": "Såk lege ved: plutselig intens smerte, smerter som stråler til brystet eller armen, pustevansker, feber, uforklarlig vekttap, nattsmerter som vekker deg, eller smerter etter traume. Også ved symptomer som nummenhet eller svakhet i bena."
         }
       }
     ]
@@ -126,12 +128,10 @@
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <noscript>
     <link rel="stylesheet" href="../../css/index-design.css?v=1">
   </noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="../../css/index-2026-fixes.css">
   </noscript>
@@ -240,14 +240,14 @@
     }
 
     .stat-number {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: 700;
       color: var(--hub-primary);
     }
 
     .stat-label {
       color: #64748b;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       margin-top: 4px;
     }
 
@@ -374,7 +374,23 @@
       font-weight: 600;
       font-size: 0.9rem;
     }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -432,7 +448,7 @@
 
           <section class="hub-intro">
             <div class="intro-text">
-              <p>Brystryggvirvlene (thorakalcolumna) utgjør den lengste delen av ryggsøylen med 12 virvler som er festet
+              <p>Brystryggvirvlene (thorakalcolumna) utgjør den lengste delen av ryggsåylen med 12 virvler som er festet
                 til ribbena. Denne delen av ryggen er naturlig stivere enn nakke og korsrygg, men kan likevel gi
                 betydelige plager.</p>
 
@@ -481,25 +497,25 @@
                 </a>
                 <a href="osteoporose.html" class="hub-subnav__card">
                   <strong>Osteoporose</strong>
-                  <span>Beinskjørhet og kompresjonsbrudd</span>
+                  <span>Beinskjårhet og kompresjonsbrudd</span>
                 </a>
               </div>
             </nav>
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Når må du søke hjelp umiddelbart?</h4>
+              <h4>Nær må du søke hjelp umiddelbart?</h4>
               <p>Ved plutselig intens brystsmerte med pustevansker, smerte som stråler til arm kombinert med kvalme,
                 eller nummenhet/svakhet i bena - ring 113 eller dra til legevakt.</p>
             </div>
 
             <img src="../../images/plager ryggsmerter/vondt i brystryggen.jpg"
-              alt="Vondt i brystryggen - årsaker og behandling" class="hub-featured-image" />
+              alt="Vondt i brystryggen - årsaker og behandling" class="hub-infographic" />
 
             <div class="stat-grid">
               <div class="stat-item">
                 <div class="stat-number">15-30%</div>
-                <div class="stat-label">Rammes i løpet av livet</div>
+                <div class="stat-label">Rammes i låpet av livet</div>
               </div>
               <div class="stat-item">
                 <div class="stat-number">12</div>
@@ -531,7 +547,7 @@
                 <span class="condition-badge">Vanligste årsak</span>
               </div>
               <p class="section-quick-link"><a href="mellom-skulderbladene.html">Gå til full artikkel &rarr;</a></p>
-              <p>Den vanligste plagen i brystryggområdet. Ofte forårsaket av muskulære spenninger, triggerpunkter
+              <p>Den vanligste plagen i brystryggomrødet. Ofte forårsaket av muskulære spenninger, triggerpunkter
                 (muskelknuter) eller leddysfunksjon i brystryggen. Kan gi refererte smerter frem mot brystet eller ut
                 armen.</p>
               <ul>
@@ -546,7 +562,7 @@
                 <span class="condition-badge">Akutt smerte</span>
               </div>
               <p class="section-quick-link"><a href="ribbeinslasning.html">Gå til full artikkel &rarr;</a></p>
-              <p>Akutt smerte ved bevegelse eller dyp pust? Ribbeinslåsning oppstår når leddet mellom ribbeinet og
+              <p>Akutt smerte ved bevegelse eller dyp pust? Ribbeinslåsning oppstår nær leddet mellom ribbeinet og
                 ryggvirvelen låser seg. Smerten kan være intens og forveksles ofte med hjerteinfarkt eller
                 lungeproblemer.</p>
             </div>
@@ -575,8 +591,8 @@
                 <h4 class="condition-title">Flat rygg (Hypokyfose)</h4>
               </div>
               <p class="section-quick-link"><a href="flat-rygg.html">Gå til full artikkel &rarr;</a></p>
-              <p>For lite kurve i brystryggen ("militærholdning") kan overraskende nok gi mer plager enn krum rygg.
-                Manglende støtdemping i ryggsøylen kan disponere for nakke- og skuldresmerter.</p>
+              <p>For lite kurve i brystryggen ("militårholdning") kan overraskende nok gi mer plager enn krum rygg.
+                Manglende støtdemping i ryggsåylen kan disponere for nakke- og skuldresmerter.</p>
             </div>
 
             <div class="condition-card">
@@ -584,7 +600,7 @@
                 <h4 class="condition-title">Osteoporose og brudd</h4>
               </div>
               <p class="section-quick-link"><a href="osteoporose.html">Gå til full artikkel &rarr;</a></p>
-              <p>Beinskjørhet kan føre til kompresjonsbrudd i brystvirvlene, ofte uten store traumer. Gir ofte akutt
+              <p>Beinskjårhet kan føre til kompresjonsbrudd i brystvirvlene, ofte uten store traumer. Gir ofte akutt
                 smerte som går over til kronisk verk og holdningsendring (økt krumning).</p>
             </div>
           </section>
@@ -603,7 +619,7 @@
                 <span class="article-card-tag blog">Artikkel</span>
                 <h3>BH-stropp-syndrom</h3>
                 <p>Kan BH-stroppene dine gi skulder- og nakkesmerter? Les om denne ofte oversette årsaken til plager i
-                  skulder-nakkeområdet og hva du kan gjøre.</p>
+                  skulder-nakkeomrødet og hva du kan gjøre.</p>
                 <span class="article-card-link">Les mer</span>
               </a>
 
@@ -626,7 +642,7 @@
               <a href="pust-stress-rygg.html" class="article-card">
                 <span class="article-card-tag blog">Artikkel</span>
                 <h3>Pust, stress og rygg</h3>
-                <p>Sammenhengen mellom pustemønster, stress og brystryggplager. Lær hvordan diafragmatisk pusting kan
+                <p>Sammenhengen mellom pustemånster, stress og brystryggplager. Lær hvordan diafragmatisk pusting kan
                   redusere spenninger og forbedre holdning.</p>
                 <span class="article-card-link">Les mer</span>
               </a>
@@ -634,7 +650,7 @@
               <a href="t4-syndrom.html" class="article-card">
                 <span class="article-card-tag blog">Artikkel</span>
                 <h3>T4-syndrom</h3>
-                <p>Kan problemer i Øvre brystrygg gi symptomer i hendene? Les om dette kontroversielle syndromet som kan
+                <p>Kan problemer i øvre brystrygg gi symptomer i hendene? Les om dette kontroversielle syndromet som kan
                   gi nummenhet og prikking i begge hender.</p>
                 <span class="article-card-link">Les mer</span>
               </a>
@@ -653,7 +669,7 @@
           <section class="hub-section" id="s3">
             <div class="section-header">
               <span class="section-number">3</span>
-              <h2>Når bør du søke hjelp?</h2>
+              <h2>Nær bør du søke hjelp?</h2>
             </div>
 
             <div class="red-flag-box">
@@ -670,14 +686,14 @@
             <ul>
               <li>Feber kombinert med ryggsmerter</li>
               <li>Smerter etter betydelig traume</li>
-              <li>Betydelig eller økende muskelsvakhet</li>
+              <li>Betydelig eller åkende muskelsvakhet</li>
             </ul>
 
             <h3>Planlagt vurdering</h3>
             <ul>
               <li>Vedvarende smerter som påvirker funksjonen</li>
               <li>Nummenhet eller prikking som ikke bedres</li>
-              <li>Smerter som påvirker søvn og daglige aktiviteter</li>
+              <li>Smerter som påvirker såvn og daglige aktiviteter</li>
             </ul>
           </section>
 
@@ -713,8 +729,8 @@
             </div>
 
             <div class="faq-item">
-              <div class="faq-question">Når bør jeg oppsøke lege for brystryggsmerter?</div>
-              <div class="faq-answer">Søk lege ved: plutselig intens smerte, smerter som stråler til brystet eller
+              <div class="faq-question">Nær bør jeg oppsøke lege for brystryggsmerter?</div>
+              <div class="faq-answer">Såk lege ved: plutselig intens smerte, smerter som stråler til brystet eller
                 armen, pustevansker, feber, uforklarlig vekttap, nattsmerter som vekker deg, eller smerter etter traume.
                 Også ved symptomer som nummenhet eller svakhet i bena.</div>
             </div>
@@ -759,7 +775,7 @@
                   <div style="padding: 16px;">
                     <h3 style="font-size: 15px; margin: 0 0 8px; color: var(--hub-dark);">Pust, stress og ryggsmerter
                     </h3>
-                    <p style="font-size: 13px; color: #6b7280; margin: 0 0 12px;">Hvordan stress påvirker pustemønsteret
+                    <p style="font-size: 13px; color: #6b7280; margin: 0 0 12px;">Hvordan stress påvirker pustemånsteret
                       og gir smerter i brystryggen.</p>
                     <a href="pust-stress-rygg.html"
                       style="color: var(--hub-primary); font-weight: 600; font-size: 13px; text-decoration: none;">Les
@@ -828,7 +844,11 @@
             <a href="stiv-rygg-idrett.html">Stiv rygg og idrett</a>
             <a href="fibromyalgi-brystsmerter.html">Fibromyalgi og brystsmerter</a>
             <a href="t4-syndrom.html">T4-syndrom</a>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
 
           <!-- Disclaimer -->
           <p class="disclaimer">Denne artikkelen er ment som generell informasjon og erstatter ikke individuell
@@ -859,7 +879,7 @@
             <ul>
               <li><a href="#s1">Diagnoser og tilstander</a></li>
               <li><a href="#s2">Artikler</a></li>
-              <li><a href="#s3">Når søke hjelp</a></li>
+              <li><a href="#s3">Nær søke hjelp</a></li>
               <li><a href="#s4">FAQ</a></li>
             </ul>
           </nav>
@@ -891,7 +911,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -935,7 +955,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

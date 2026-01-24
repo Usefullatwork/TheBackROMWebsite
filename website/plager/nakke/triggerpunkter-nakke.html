@@ -5,19 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1a202c" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css?v=20260101-fix" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <title>Triggerpunkter i Nakken - Muskelknuter og Referert Smerte | Kiropraktor Majorstua</title>
   <meta name="description" content="Triggerpunkter i nakken kan gi hodepine og skuldersmerter. Lær om behandling. Kiropraktor Majorstua.">
   <meta name="author" content="Mads Finstad">
   <link rel="canonical" href="https://thebackrom.com/plager/nakke/triggerpunkter-nakke.html" />
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/nakke/triggerpunkter-nakke.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/neck/neck-trigger-points.html" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"MedicalWebPage","headline":"Triggerpunkter i Nakken - Muskelknuter og Referert Smerte","description":"Triggerpunkter i nakken kan gi hodepine og skuldersmerter. Lær om behandling. Kiropraktor Majorstua.","author":{"@type":"Person","name":"Mads Finstad","jobTitle":"Kiropraktor"},"datePublished":"2026-01-01"}
   </script>
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101-fix" />
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="stylesheet" href="../../css/hub-article.css">
   <style>
     /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
@@ -41,8 +39,8 @@
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
     .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
     .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
     .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
     .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
@@ -60,10 +58,26 @@
     .sources-section ul { font-size: 0.85rem; color: #64748b; }
     .sources-section li { margin-bottom: 6px; }
     .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: var(--hub-primary); padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
+    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
     @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 <body id="top">
   <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
@@ -119,19 +133,19 @@
 
           <section class="hub-intro">
             <div class="intro-text">
-              <p>Myofascielt smertesyndrom (MPS) er en tilstand der smertefulle knuter - kalt triggerpunkter - oppstår i muskler og bindevevshinner (fascia). Disse punktene er omme ved trykk og kan gi smerte som stråler ut til andre områder av kroppen. Et triggerpunkt i øvre trapezius kan for eksempel gi hodepine opp mot tinningen.</p>
+              <p>Myofascielt smertesyndrom (MPS) er en tilstand der smertefulle knuter - kalt triggerpunkter - oppstår i muskler og bindevevshinner (fascia). Disse punktene er omme ved trykk og kan gi smerte som stråler ut til andre omrøder av kroppen. Et triggerpunkt i øvre trapezius kan for eksempel gi hodepine opp mot tinningen.</p>
 
-              <p>Tilstanden er svært vanlig. Blant pasienter med kroniske <a href="../nakkesmerter.html">nakkesmerter</a> har <strong>88-100%</strong> minst ett triggerpunkt (Cerezo-Tellez 2016; Ezzati 2021). I smerteklinikker har opptil 85% av pasientene en myofasciell komponent.</p>
+              <p>Tilstanden er svårt vanlig. Blant pasienter med kroniske <a href="../nakkesmerter.html">nakkesmerter</a> har <strong>88-100%</strong> minst ett triggerpunkt (Cerezo-Tellez 2016; Ezzati 2021). I smerteklinikker har opptil 85% av pasientene en myofasciell komponent.</p>
             </div>
 
             <div class="premium-summary-card">
               <h3>Kort oppsummert</h3>
               <ul>
-                <li><strong>Hva det er:</strong> Omme, stramme punkter i muskelvevet som kan gi lokal smerte og utstråling til andre områder</li>
+                <li><strong>Hva det er:</strong> Omme, stramme punkter i muskelvevet som kan gi lokal smerte og utstråling til andre omrøder</li>
                 <li><strong>Hvor vanlig:</strong> 88-100% av pasienter med kroniske nakkesmerter har triggerpunkter</li>
-                <li><strong>Vanligste muskler:</strong> Øvre trapezius (93%), levator scapulae, sternocleidomastoid, skalener</li>
-                <li><strong>Behandling:</strong> Manuell behandling og dry needling gir ofte korttidseffekt. Kombinert tøyning og styrketrening er viktigst for varig bedring</li>
-                <li><strong>Røde flagg:</strong> Uforklarlig vekttap, feber, nevrologiske utfall, gangforstyrrelser - søk lege</li>
+                <li><strong>Vanligste muskler:</strong> øvre trapezius (93%), levator scapulae, sternocleidomastoid, skalener</li>
+                <li><strong>Behandling:</strong> Manuell behandling og dry needling gir ofte korttidseffekt. Kombinert tåyning og styrketrening er viktigst for varig bedring</li>
+                <li><strong>Røde flagg:</strong> Uforklarlig vekttap, feber, nevrologiske utfall, gangforstyrrelser - såk lege</li>
                 <li><strong>Konsultasjon:</strong> 45 min første gang, 30 min oppfølg</li>
               </ul>
             </div>
@@ -162,29 +176,29 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Når må du søke hjelp umiddelbart?</h4>
+              <h4>Nær må du søke hjelp umiddelbart?</h4>
               <p>Ved uforklarlig vekttap, feber, nevrologiske utfall eller gangforstyrrelser - kontakt lege for vurdering.</p>
-              <a href="rode-flagg-nakkesmerter.html">Les mer om røde flagg ved nakkesmerter →</a>
+              <a href="rode-flagg-nakkesmerter.html">Les mer om røde flagg ved nakkesmerter ?</a>
             </div>
           </section>
 
-          <!-- SECTION 1: Årsaker -->
+          <!-- SECTION 1: årsaker -->
           <section class="hub-section" id="s1">
             <div class="section-header">
               <span class="section-number">1</span>
-              <h2>Årsaker og risikofaktorer</h2>
+              <h2>årsaker og risikofaktorer</h2>
             </div>
 
             <p>Triggerpunkter utvikles nær muskelfibre blir overbelastet eller skadet. De vanligste årsakene, rangert etter hvor ofte vi ser dem:</p>
 
             <div class="condition-card">
-              <h4>Statisk belastning og dårlig ergonomi (vanligst)</h4>
+              <h4>Statisk belastning og dørlig ergonomi (vanligst)</h4>
               <p>Langvarig skrivebordsarbeid, skjermbruk med fremskutt hode, og ensidig arbeid er de klart vanligste årsakene. Kontorarbeidere og manuelt arbeidende har tilsvarende triggerpunktfordeling, med gjennomsnittlig 6 aktive og 10-11 latente triggerpunkter (Fernandez-De-Las-Penas 2012).</p>
             </div>
 
             <div class="condition-card">
               <h4>Muskulær overbelastning</h4>
-              <p>Repetitive bevegelser, tunge løft, eller plutselig økt treningsbelastning.</p>
+              <p>Repetitive bevegelser, tunge låft, eller plutselig økt treningsbelastning.</p>
             </div>
 
             <div class="condition-card">
@@ -195,7 +209,7 @@
             <div class="condition-card">
               <h4>Andre faktorer</h4>
               <ul>
-                <li><strong>Søvnproblemer og utmattelse:</strong> Dårlig søvn reduserer musklenes evne til restitusjon</li>
+                <li><strong>Såvnproblemer og utmattelse:</strong> Dørlig såvn reduserer musklenes evne til restitusjon</li>
                 <li><strong>Vitamin D-mangel:</strong> Omtrent en tredjedel av MPS-pasienter har lave D-vitaminnivåer (StatPearls 2025)</li>
                 <li><strong>Traumer:</strong> Whiplash og andre skader. Blant whiplash-pasienter har 55-65% triggerpunkter i levator scapulae</li>
               </ul>
@@ -218,12 +232,12 @@
 
             <div class="condition-card">
               <h4>Lokal omhet</h4>
-              <p>Et distinkt punkt som er svært ømt ved trykk.</p>
+              <p>Et distinkt punkt som er svårt åmt ved trykk.</p>
             </div>
 
             <div class="condition-card">
               <h4>Referert smerte</h4>
-              <p>Smerten stråler ut i et forutsigbart mønster. Øvre trapezius gir ofte smerter mot bakhodet og tinningen. Sternocleidomastoid kan gi smerte rundt øyet og i pannen.</p>
+              <p>Smerten stråler ut i et forutsigbart månster. øvre trapezius gir ofte smerter mot bakhodet og tinningen. Sternocleidomastoid kan gi smerte rundt åyet og i pannen.</p>
             </div>
 
             <div class="condition-card">
@@ -252,7 +266,7 @@
             <div class="stat-grid">
               <div class="stat-item">
                 <span class="stat-number">93%</span>
-                <span class="stat-label">Øvre trapezius</span>
+                <span class="stat-label">øvre trapezius</span>
               </div>
               <div class="stat-item">
                 <span class="stat-number">55-65%</span>
@@ -265,8 +279,8 @@
             </div>
 
             <div class="condition-card">
-              <h4>Øvre trapezius (93% av kroniske nakkesmertepasienter)</h4>
-              <p>Gir smerte langs nakken, opp mot bakhodet, tinning og bak øyet. Den klassiske "spenningshodepinen".</p>
+              <h4>øvre trapezius (93% av kroniske nakkesmertepasienter)</h4>
+              <p>Gir smerte langs nakken, opp mot bakhodet, tinning og bak åyet. Den klassiske "spenningshodepinen".</p>
             </div>
 
             <div class="condition-card">
@@ -276,7 +290,7 @@
 
             <div class="condition-card">
               <h4>Sternocleidomastoid (SCM)</h4>
-              <p>Kan gi hodepine i panne og rundt øye, samt svimmelhet og balanseforstyrrelser.</p>
+              <p>Kan gi hodepine i panne og rundt åye, samt svimmelhet og balanseforstyrrelser.</p>
             </div>
 
             <div class="condition-card">
@@ -300,7 +314,7 @@
             </div>
 
             <h3>Bildediagnostikk</h3>
-            <p>MR og røntgen er sjelden nødvendig for triggerpunkter. Bildene viser ofte aldersrelaterte forandringer (<a href="degenerative-forandringer.html">slitasje</a>, degenerasjon) som ikke forklarer smertene dine. Ultralyd kan påvise triggerpunkter som mørkere områder med økt stivhet, men dette er foreløpig mest brukt i forskning.</p>
+            <p>MR og røntgen er sjelden nådvendig for triggerpunkter. Bildene viser ofte aldersrelaterte forandringer (<a href="degenerative-forandringer.html">slitasje</a>, degenerasjon) som ikke forklarer smertene dine. Ultralyd kan påvise triggerpunkter som mårkere omrøder med økt stivhet, men dette er forelåpig mest brukt i forskning.</p>
           </section>
 
           <!-- SECTION 5: Differensialdiagnoser -->
@@ -314,12 +328,12 @@
 
             <div class="condition-card">
               <h4>Cervikal radikulopati (nerverotsaffeksjon)</h4>
-              <p>Følger dermatomale mønstre (spesifikke hudområder), ofte med prikking/nummenhet og kraftsvikt. Triggerpunkter følger muskelspesifikke utstralingsbaner.</p>
+              <p>Følger dermatomale månstre (spesifikke hudomrøder), ofte med prikking/nummenhet og kraftsvikt. Triggerpunkter følger muskelspesifikke utstralingsbaner.</p>
             </div>
 
             <div class="condition-card">
               <h4>Fibromyalgi</h4>
-              <p>Utbredt smerte i mer enn 3 måneder, med omhet mange steder i kroppen, ofte med utmattelse og søvnproblemer.</p>
+              <p>Utbredt smerte i mer enn 3 måneder, med omhet mange steder i kroppen, ofte med utmattelse og såvnproblemer.</p>
             </div>
 
             <div class="condition-card">
@@ -337,41 +351,41 @@
 
             <h3>Hva kan kiropraktoren gjøre?</h3>
 
-            <p>En nettverks-metaanalyse fra 2024 som inkluderte 40 randomiserte studier og 2227 deltåkere viser at manuell behandling gir korttidsbedring av smerte, trykkömfintlighet og funksjon (Liu et al. 2024). Evidenskvaliteten er klassifisert som lav etter GRADE-systemet, men effektene er klinisk relevante for mange pasienter.</p>
+            <p>En nettverks-metaanalyse fra 2024 som inkluderte 40 randomiserte studier og 2227 deltøkere viser at manuell behandling gir korttidsbedring av smerte, trykkåmfintlighet og funksjon (Liu et al. 2024). Evidenskvaliteten er klassifisert som lav etter GRADE-systemet, men effektene er klinisk relevante for mange pasienter.</p>
 
             <div class="treatment-box">
               <h4>Behandlingen jeg tilbyr inkluderer:</h4>
               <ul>
                 <li><strong>Ischemisk kompresjon:</strong> Vedvarende trykk på triggerpunktet. En metaanalyse fra 2022 viser signifikant bedring i trykksmertetersel (Lu et al. 2022)</li>
                 <li><strong>Dry needling:</strong> Tynne naler settes direkte i triggerpunktet. Like effektivt som manuell triggerpunktbehandling på kort og mellomlang sikt (Lew et al. 2021)</li>
-                <li><strong>Myofascielle teknikker og mobilisering:</strong> Bløtvevsbehandling av muskler og fascia</li>
+                <li><strong>Myofascielle teknikker og mobilisering:</strong> Blåtvevsbehandling av muskler og fascia</li>
                 <li><strong>Leddmobilisering/manipulasjon:</strong> Ved samtidig leddysfunksjon i nakke eller brystygg</li>
-                <li><strong>Øvelsesbasert rehabilitering:</strong> Det viktigste for varig bedring</li>
+                <li><strong>åvelsesbasert rehabilitering:</strong> Det viktigste for varig bedring</li>
               </ul>
             </div>
 
             <div class="info-box">
-              <h4>Ærlig om forventninger</h4>
-              <p>Korttidseffektene av behandling er godt dokumentert. Langtidseffektene (6-12 måneder) er dærligere studert, og ved denne tidshorisonten er det liten forskjell mellom ulike behandlingsmetoder. Det som gir best varig effekt er å kombinere behandling med egentrening og å adressere underliggende faktorer som stress, ergonomi og søvn.</p>
+              <h4>årlig om forventninger</h4>
+              <p>Korttidseffektene av behandling er godt dokumentert. Langtidseffektene (6-12 måneder) er dørligere studert, og ved denne tidshorisonten er det liten forskjell mellom ulike behandlingsmetoder. Det som gir best varig effekt er å kombinere behandling med egentrening og å adressere underliggende faktorer som stress, ergonomi og såvn.</p>
             </div>
 
             <h3>Hva kan du gjøre selv?</h3>
 
-            <p>En systematisk oversikt fra 2017 viser at kombinert tøyning og styrketrening gir best effekt på myofascielle smerter (Mata Diz et al. 2017):</p>
+            <p>En systematisk oversikt fra 2017 viser at kombinert tåyning og styrketrening gir best effekt på myofascielle smerter (Mata Diz et al. 2017):</p>
 
             <div class="condition-card">
-              <h4>Tøyning</h4>
-              <p>Hold i 30 sekunder - dette er optimal varighet ifølge forskning (Mansoori et al. 2021). Tøy trapezius, levator scapulae og skalener daglig.</p>
+              <h4>Tåyning</h4>
+              <p>Hold i 30 sekunder - dette er optimal varighet ifølge forskning (Mansoori et al. 2021). Tåy trapezius, levator scapulae og skalener daglig.</p>
             </div>
 
             <div class="condition-card">
               <h4>Styrketrening</h4>
-              <p>Øvelser for dyp nakkemuskulatur og skulderbladsstabilisatorer. Jeg viser deg konkrete øvelser tilpasset dine triggerpunkter.</p>
+              <p>øvelser for dyp nakkemuskulatur og skulderbladsstabilisatorer. Jeg viser deg konkrete øvelser tilpasset dine triggerpunkter.</p>
             </div>
 
             <div class="condition-card">
               <h4>Ergonomi</h4>
-              <p>Skjerm i øyehøyde, underarmer støttet, regelmessige pauser. Unngå fremskutt hodestilling.</p>
+              <p>Skjerm i åyehøyde, underarmer ståttet, regelmessige pauser. Unngå fremskutt hodestilling.</p>
             </div>
 
             <div class="condition-card">
@@ -381,15 +395,15 @@
 
             <div class="condition-card">
               <h4>Varmepakninger og stressmestring</h4>
-              <p>Varme kan gi midlertidig lindring og øke gjennomblodningen. Kronisk stress vedlikeholder muskelspenninger - vurder pusteteknikker, mindfulness eller andre avslapningsmetoder.</p>
+              <p>Varme kan gi midlertidig lindring og åke gjennomblodningen. Kronisk stress vedlikeholder muskelspenninger - vurder pusteteknikker, mindfulness eller andre avslapningsmetoder.</p>
             </div>
           </section>
 
-          <!-- SECTION 7: Behandlingsforløp -->
+          <!-- SECTION 7: Behandlingsforlåp -->
           <section class="hub-section" id="s7">
             <div class="section-header">
               <span class="section-number">7</span>
-              <h2>Behandlingsforløp</h2>
+              <h2>Behandlingsforlåp</h2>
             </div>
 
             <p>Det finnes ingen standardiserte retningslinjer for behandlingsfrekvens ved MPS spesifikt. I praksis ser vi ofte:</p>
@@ -411,7 +425,7 @@
           <section class="hub-section" id="s8">
             <div class="section-header">
               <span class="section-number">8</span>
-              <h2>Røde flagg - når du bør søke lege</h2>
+              <h2>Røde flagg - nær du bør søke lege</h2>
             </div>
 
             <div class="red-flag-box">
@@ -452,17 +466,17 @@
 
             <div class="faq-item">
               <div class="faq-question">Finnes triggerpunkter egentlig?</div>
-              <div class="faq-answer">Det pågår faglig debatt om triggerpunktenes eksakte natur og patofysiologi. Det vi vet er at mange pasienter har omme punkter i muskulaturen som gir gjenkjennelige utstralingmønstre, og at behandling rettet mot disse punktene ofte gir symptomlettelse. Norske forskere har påpekt at selve diagnostikken har begrenset pålitelighet, men dette betyr ikke at smertene dine ikke er reelle.</div>
+              <div class="faq-answer">Det pågår faglig debatt om triggerpunktenes eksakte natur og patofysiologi. Det vi vet er at mange pasienter har omme punkter i muskulaturen som gir gjenkjennelige utstralingmånstre, og at behandling rettet mot disse punktene ofte gir symptomlettelse. Norske forskere har påpekt at selve diagnostikken har begrenset pålitelighet, men dette betyr ikke at smertene dine ikke er reelle.</div>
             </div>
 
             <div class="faq-item">
               <div class="faq-question">Hva er forskjellen på triggerpunkter og fibromyalgi?</div>
-              <div class="faq-answer">Triggerpunkter gir lokalisert smerte med spesifikk utstråling fra definerte punkter i muskler. Fibromyalgi er en tilstand med utbredt smerte over store deler av kroppen i mer enn 3 måneder, ofte kombinert med utmattelse, søvnproblemer og kognitiv tåke. De to tilstandene kan også forekomme samtidig.</div>
+              <div class="faq-answer">Triggerpunkter gir lokalisert smerte med spesifikk utstråling fra definerte punkter i muskler. Fibromyalgi er en tilstand med utbredt smerte over store deler av kroppen i mer enn 3 måneder, ofte kombinert med utmattelse, såvnproblemer og kognitiv tåke. De to tilstandene kan også forekomme samtidig.</div>
             </div>
 
             <div class="faq-item">
-              <div class="faq-question">Gjør dry needling vondt?</div>
-              <div class="faq-answer">Nålene som brukes er svært tynne (ømtrent som akupunkturnaler). De fleste opplever et lite stikk ved innstikk, og en karakteristisk "krampe" nær triggerpunktet treffes. Dette ubehaget er kortvarig. Noen opplever omhet i området i 1-2 dager etterpå, litt som etter hard trening.</div>
+              <div class="faq-question">Gjår dry needling vondt?</div>
+              <div class="faq-answer">Nølene som brukes er svårt tynne (åmtrent som akupunkturnaler). De fleste opplever et lite stikk ved innstikk, og en karakteristisk "krampe" nær triggerpunktet treffes. Dette ubehaget er kortvarig. Noen opplever omhet i omrødet i 1-2 dager etterpå, litt som etter hard trening.</div>
             </div>
 
             <div class="faq-item">
@@ -484,7 +498,7 @@
           <!-- CTA Section -->
           <div class="hub-cta">
             <h3>Trenger du hjelp med triggerpunkter i nakken?</h3>
-            <p>Kiropraktor Mads Finstad tilbyr behandling for myofascielle smerter og triggerpunkter hos Klinikk for Alle på Majorstua. Jeg kombinerer manuell behandling med øvelsesbasert rehabilitering for best mulig resultat.</p>
+            <p>Kiropraktor Mads Finstad tilbyr behandling for myofascielle smerter og triggerpunkter hos Klinikk for Alle på Majorstua. Jeg kombinerer manuell behandling med åvelsesbasert rehabilitering for best mulig resultat.</p>
             <p><strong>Priser:</strong> Nytt problem 1 140 kr | Oppfølg 795 kr</p>
             <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="button">Bestill time</a>
           </div>
@@ -492,12 +506,16 @@
           <!-- Related articles -->
           <div class="related-box">
             <h3>Relaterte artikler</h3>
-            <a href="../nakkesmerter.html">→ Nakkesmerter - Hovedartikkel</a>
-            <a href="stressnakke.html">→ Stressnakke</a>
-            <a href="degenerative-forandringer.html">→ Degenerative forandringer</a>
-            <a href="rode-flagg-nakkesmerter.html">→ Røde flagg</a>
-            <a href="cervikogen-hodepine.html">→ Cervikogen hodepine</a>
-          </div>
+            <a href="../nakkesmerter.html">? Nakkesmerter - Hovedartikkel</a>
+            <a href="stressnakke.html">? Stressnakke</a>
+            <a href="degenerative-forandringer.html">? Degenerative forandringer</a>
+            <a href="rode-flagg-nakkesmerter.html">? Røde flagg</a>
+            <a href="cervikogen-hodepine.html">? Cervikogen hodepine</a>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
 
           <!-- Disclaimer -->
           <p class="disclaimer">Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon eller opplever røde flagg-symptomer.</p>
@@ -542,13 +560,13 @@
           <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
             <h3>Innhold</h3>
             <ul>
-              <li><a href="#s1">Årsaker</a></li>
+              <li><a href="#s1">årsaker</a></li>
               <li><a href="#s2">Symptomer</a></li>
               <li><a href="#s3">Vanligste muskler</a></li>
               <li><a href="#s4">Diagnostikk</a></li>
               <li><a href="#s5">Differensialdiagnoser</a></li>
               <li><a href="#s6">Behandling</a></li>
-              <li><a href="#s7">Behandlingsforløp</a></li>
+              <li><a href="#s7">Behandlingsforlåp</a></li>
               <li><a href="#s8">Røde flagg</a></li>
               <li><a href="#s9">Prognose</a></li>
               <li><a href="#s10">FAQ</a></li>
@@ -581,7 +599,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -625,7 +643,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

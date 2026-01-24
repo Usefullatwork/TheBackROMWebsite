@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Bittfeil og Kjevesmerter - Myter vs Fakta | Kiropraktor Majorstua</title>
 
@@ -27,6 +27,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/kjeve/bittfeil-myter.html" />
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/kjeve/bittfeil-myter.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/jaw/bite-myths.html" />
 
   <script type="application/ld+json">
   {
@@ -122,11 +124,7 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
   /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
@@ -160,8 +158,8 @@
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
     .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
     .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
     .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
     .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
@@ -181,10 +179,26 @@
     .sources-section ul { font-size: 0.85rem; color: #64748b; }
     .sources-section li { margin-bottom: 6px; }
     .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: var(--hub-primary); padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
+    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
     @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -275,7 +289,7 @@
                   <span>Bruksisme og tannpressing</span>
                 </a>
                 <a href="øvelser-tmd.html" class="hub-subnav__card">
-                  <strong>Øvelser</strong>
+                  <strong>øvelser</strong>
                   <span>Treningsprogram for kjeven</span>
                 </a>
               </div>
@@ -283,7 +297,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Når må du søke hjelp umiddelbart?</h4>
+              <h4>Nær må du søke hjelp umiddelbart?</h4>
               <p>Ved kjevesmerte kombinert med brystsmerter (ring 113), plutselig intens hodepine, eller kjevetretthet ved tygging hos deg over 50 med synsforstyrrelser.</p>
             </div>
           </section>
@@ -320,11 +334,11 @@
             </div>
           </section>
 
-          <!-- SECTION 2: Årsaker -->
+          <!-- SECTION 2: årsaker -->
           <section class="hub-section" id="s2">
             <div class="section-header">
               <span class="section-number">2</span>
-              <h2>Årsaker til kjevesmerter - fra vanligst til sjeldnest</h2>
+              <h2>årsaker til kjevesmerter - fra vanligst til sjeldnest</h2>
             </div>
 
             <p>Moderne forskning viser at TMD har multifaktoriell årsak. Her er faktorene rangert etter hvor stor rolle de spiller:</p>
@@ -337,7 +351,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Stress, angst og søvnproblemer</h4>
+              <h4>Stress, angst og såvnproblemer</h4>
               <p>Psykologiske faktorer er sterkt assosiert med TMD. Se var artikkel om <a href="stress-og-kjevesmerter.html">stress og kjevesmerter</a>.</p>
             </div>
 
@@ -380,7 +394,7 @@
               <ul>
                 <li><strong>Manfredini et al. (2017):</strong> "Klinikere oppfordres til å forlate det gamle gnatologiske paradigmet i TMD-praksis."</li>
                 <li><strong>Cochrane-review (2024):</strong> Ingen evidens for at okklusjonsbehandling behandler eller forebygger TMD.</li>
-                <li><strong>NIDCR (USA):</strong> "I mange år trodde man at malokklusjon forårsaker TMD; det finnes imidlertid ingen evidens som støtter denne oppfatningen."</li>
+                <li><strong>NIDCR (USA):</strong> "I mange år trodde man at malokklusjon forårsaker TMD; det finnes imidlertid ingen evidens som ståtter denne oppfatningen."</li>
               </ul>
             </div>
 
@@ -396,7 +410,7 @@
               <h2>Hva med <a href="kjevehodepine.html">hodepine</a> og bitt?</h2>
             </div>
 
-            <p>Sammenhengen mellom malokklusjon og hodepine er også dårlig dokumentert. Van der Meer og kollegaer konkluderte i Cephalalgia (2019) at primare hodepiner som spenningshodepine og migrene "ikke er forårsaker av muskel-skjelett-dysfunksjon" - selv om de kan vare assosiert med slike symptomer.</p>
+            <p>Sammenhengen mellom malokklusjon og hodepine er også dørlig dokumentert. Van der Meer og kollegaer konkluderte i Cephalalgia (2019) at primare hodepiner som spenningshodepine og migrene "ikke er forårsaker av muskel-skjelett-dysfunksjon" - selv om de kan vare assosiert med slike symptomer.</p>
 
             <p>Den internasjonale hodepineklassifikasjonen (ICHD-3) anerkjenner "hodepine tilskrevet temporomandibular dysfunksjon" som sekundar hodepine. Men dette relaterer til TMD selv - ikke til bittavvik direkte.</p>
           </section>
@@ -411,12 +425,12 @@
             <p>TMD kan gi et bredt spekter av symptomer:</p>
 
             <ul>
-              <li>Smerte i kjeve, ansikt eller foran øret</li>
+              <li>Smerte i kjeve, ansikt eller foran året</li>
               <li>Klikking eller knasing ved gaping/tygging</li>
               <li>Begrenset gapeevne eller lasning av kjeven</li>
               <li>Tretthet i tyggemusklene</li>
               <li>Hodepine, særlig i tinningene</li>
-              <li>Øresmerter eller følelse av "tett" øre (uten infeksjon)</li>
+              <li>åresmerter eller følelse av "tett" åre (uten infeksjon)</li>
               <li>Nakkesmerter og stivhet</li>
             </ul>
 
@@ -432,10 +446,10 @@
 
             <p>TMD diagnostiseres primert gjennom klinisk undersøkelse. Kiropraktoren vil underske kjeveleddet, tyggemusklene, nakken og hodets bevegelse. Gapeevne males, og vi lytter etter lyder fra leddet.</p>
 
-            <p>Bildediagnostikk (MR/røntgen) er sjelden nødvendig ved typiske TMD-symptomer. Studier viser at bildefunn ofte ikke korrelerer med symptomer - mange uten plager har "unormale" funn på MR, og mange med plager har normale bilder. Klinisk undersøkelse er derfor viktigere enn bilder i de fleste tilfeller.</p>
+            <p>Bildediagnostikk (MR/røntgen) er sjelden nådvendig ved typiske TMD-symptomer. Studier viser at bildefunn ofte ikke korrelerer med symptomer - mange uten plager har "unormale" funn på MR, og mange med plager har normale bilder. Klinisk undersøkelse er derfor viktigere enn bilder i de fleste tilfeller.</p>
 
             <div class="info-box">
-              <h4>Når er bilder aktuelle?</h4>
+              <h4>Nær er bilder aktuelle?</h4>
               <p>Bilder kan vare aktuelle ved mistanke om strukturelle forandringer, etter traume, eller hvis konservativ behandling ikke gir effekt over tid.</p>
             </div>
           </section>
@@ -454,10 +468,10 @@
             <div class="treatment-box">
               <h4>Behandlingen kan inkludere:</h4>
               <ul>
-                <li>Bløtvevsbehandling av tygge- og nakkemuskulatur</li>
+                <li>Blåtvevsbehandling av tygge- og nakkemuskulatur</li>
                 <li>Mobilisering av kjeveledd og nakkevirvler</li>
                 <li>Triggerpunktbehandling</li>
-                <li><a href="øvelser-tmd.html">Øvelser for kjeve og nakke</a></li>
+                <li><a href="øvelser-tmd.html">øvelser for kjeve og nakke</a></li>
                 <li>Rad om avspenning og ergonomi</li>
               </ul>
             </div>
@@ -473,12 +487,12 @@
                 <li><strong>Unngå ekstrem gaping:</strong> Ver forsiktig ved store hamburgere, langvarig tannlegebesok</li>
                 <li><strong>Myk kost:</strong> Ved akutte plager, unnga hard/seig mat midlertidig</li>
                 <li><strong>Slapp av i kjeven:</strong> "Leppene sammen, tennene fra hverandre"</li>
-                <li><strong>Stresshandtering:</strong> Avspenningsøvelser og god søvn hjelper betydelig</li>
+                <li><strong>Stresshandtering:</strong> Avspenningsøvelser og god såvn hjelper betydelig</li>
                 <li><strong>Forsiktige toyninger:</strong> Rolige gapebevegelser og sideveis bevegelser</li>
               </ul>
             </div>
 
-            <h3>Behandlingsforløp</h3>
+            <h3>Behandlingsforlåp</h3>
 
             <p>Norske retningslinjer anbefaler en trinnvis tilnærming:</p>
             <ul>
@@ -568,7 +582,7 @@
             </div>
 
             <div class="myth-box">
-              <h4>Myte 3: "Perfekt bitt er nødvendig"</h4>
+              <h4>Myte 3: "Perfekt bitt er nådvendig"</h4>
               <p><strong>Sannhet:</strong> Kroppen har betydelig tilpasningsevne. De fleste med malokklusjon utvikler aldri TMD. Som McNamara skrev allerede i 1997: "A ikke oppna ideell okklusjon resulterer ikke i TMD-symptomer."</p>
             </div>
 
@@ -645,9 +659,13 @@
             <a href="../kjevesmerte.html">Kjevesmerter - Hovedartikkel</a>
             <a href="barn-ungdom-tmd.html">Kjevesmerter hos barn og ungdom</a>
             <a href="graviditet-kjevesmerter.html">Kjevesmerter i graviditet</a>
-            <a href="øvelser-tmd.html">Øvelser for kjeven</a>
+            <a href="øvelser-tmd.html">øvelser for kjeven</a>
             <a href="stress-og-kjevesmerter.html">Stress og kjevesmerter</a>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
 
           <!-- Disclaimer -->
           <p class="disclaimer">Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon eller opplever alvorlige symptomer.</p>
@@ -693,7 +711,7 @@
             <h3>Innhold</h3>
             <ul>
               <li><a href="#s1">Hvor vanlig?</a></li>
-              <li><a href="#s2">Årsaker</a></li>
+              <li><a href="#s2">årsaker</a></li>
               <li><a href="#s3">Paradigmeskiftet</a></li>
               <li><a href="#s4">Hodepine og bitt</a></li>
               <li><a href="#s5">Symptomer</a></li>
@@ -733,7 +751,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -777,7 +795,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

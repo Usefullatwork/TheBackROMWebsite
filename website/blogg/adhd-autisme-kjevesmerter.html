@@ -1,19 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="nb">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1a202c" />
+  <meta name="color-scheme" content="light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="view-transition" content="same-origin" />
+
+  <link rel="manifest" href="../manifest.json" />
+  <link rel="apple-touch-icon" href="../images/Final Transparent Logo.png" />
   <link rel="icon" type="image/png" href="../images/Final Transparent Logo.png" />
-  <!-- Critical CSS for header positioning -->
-  <style>
-    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
-    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
-    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
-    #main-content{padding-top:var(--header-height)}
-  </style>
-  <link rel="preload" as="style" href="../css/main.min.css?v=20260101_v5" />
-  <title>ADHD, Autisme og Kjevesmerter - Nevrodivergent og TMD | Kiropraktor Majorstua</title>
+
+    <title>ADHD, Autisme og Kjevesmerter - Nevrodivergent og TMD | Kiropraktor Majorstua</title>
   <meta name="description" content="ADHD og autisme kan øke risikoen for kjevesmerter og bruksisme. Lær om sammenhengen, utfordringer ved behandling, og tilpassede strategier for nevrodivergente.">
   <meta property="og:title" content="ADHD, Autisme og Kjevesmerter - Nevrodivergent og TMD | Kiropraktor Majorstua">
   <meta property="og:description" content="ADHD og autisme kan øke risikoen for kjevesmerter og bruksisme. Lær om sammenhengen, utfordringer ved behandling, og tilpassede strategier for nevrodivergente.">
@@ -29,79 +30,234 @@
   <link rel="canonical" href="https://thebackrom.com/blogg/adhd-autisme-kjevesmerter.html" />
   <link rel="alternate" hreflang="nb" href="https://thebackrom.com/blogg/adhd-autisme-kjevesmerter.html" />
   <link rel="alternate" hreflang="en" href="https://thebackrom.com/blogg/adhd-autisme-kjevesmerter-en.html" />
-  <link rel="stylesheet" href="../css/main.min.css?v=20260101_v5" />
-  <link rel="stylesheet" href="../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-2026-fixes.css"></noscript>
-  <link rel="preload" as="style" href="../css/hub-article.css">
-  <link rel="stylesheet" href="../css/hub-article.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/hub-article.css"></noscript>
-</head>
-<body>
-  <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
-  <header class="header">
-    <div class="container header__container">
-      <a href="../index.html" class="header__logo" aria-label="Til forsiden">
-        <img src="../images/Final Transparent Logo.webp" alt="TheBackROM logo" width="50" height="50" />
-      </a>
-      <nav class="header__nav" aria-label="Hovedmeny">
-        <ul class="header__menu">
-          <li><a href="../plager/brystryggsmerter.html">Hjem</a></li>
-          <li><a href="../services.html">Tjenester</a></li>
-          <li><a href="../plager.html">Plager</a></li>
-          <li><a href="../priser.html">Priser</a></li>
-          <li><a href="../about.html">Om meg</a></li>
-          <li><a href="../blogg/index.html" class="active">Blogg</a></li>
-          <li><a href="../contact.html">Kontakt</a></li>
-        </ul>
-      </nav>
-      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary header__cta" target="_blank" rel="noopener">Bestill time</a>
-      <button class="header__menu-toggle" aria-label="Åpne meny" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
 
-  <main id="main-content">
-    <section class="page__main main main_services blog-hero">
-      <div class="main__container">
-        <span class="blog-post__category">Kjeve</span>
-        <h1 class="main__title">ADHD, Autisme og Kjevesmerter: En Ofte Oversett Sammenheng</h1>
-        <div class="blog-post__meta">
-          <time class="blog-post__date" datetime="2026-12-28">28. desember 2026</time>
-          <span class="blog-post__reading-time">8 min lesetid</span>
+  <!-- Meta Pixel Code -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540166625752174');
+        fbq('track', 'PageView');
+      }, 2000);
+    });
+  </script>
+  <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="style" href="../css/pages-combined.min.css?v=20260118">
+  <link rel="preload" as="style" href="../css/font-awesome-minimal.css">
+  <link rel="stylesheet" href="../css/pages-combined.min.css?v=20260118">
+  <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
+
+  <style>
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+    .hub-toc-card a { display: block; padding: 10px 14px; color: #475569; text-decoration: none; border-radius: 8px; font-size: 14px; transition: all 0.2s ease; border-left: 3px solid transparent; }
+    .hub-toc-card a:hover { background: #e2e8f0; color: var(--hub-primary); }
+    .hub-toc-card a.active { background: #e0f2fe; color: var(--hub-primary); border-left-color: var(--hub-primary); font-weight: 500; }
+    .hub-intro { margin-bottom: 48px; }
+    .hub-intro h1 { font-size: 2.5rem; color: var(--hub-dark); margin-bottom: 24px; line-height: 1.2; }
+    .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
+    .intro-text p { margin-bottom: 16px; }
+    .premium-summary-card { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--hub-primary); }
+    .premium-summary-card h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 1.1rem; }
+    .premium-summary-card ul { margin: 0; padding-left: 20px; }
+    .premium-summary-card li { margin-bottom: 10px; color: #334155; line-height: 1.5; }
+    .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
+    .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section h4 { font-size: 1.05rem; color: var(--hub-dark); margin: 20px 0 10px; }
+    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
+    .condition-card ul { margin: 12px 0; padding-left: 20px; }
+    .condition-card li { margin-bottom: 6px; color: #4b5563; }
+    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
+    .treatment-box ul { margin: 0; padding-left: 20px; }
+    .treatment-box li { margin-bottom: 8px; color: #065f46; }
+    .treatment-box p { color: #065f46; margin-bottom: 8px; }
+    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .info-box p { color: #1e40af; margin-bottom: 8px; }
+    .info-box ul { margin: 0; padding-left: 20px; }
+    .info-box li { margin-bottom: 8px; color: #1e40af; }
+    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
+    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
+    .red-flag-box ul { margin: 0; padding-left: 20px; }
+    .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
+    .red-flag-alert { background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border: 2px solid var(--hub-red); border-radius: 12px; padding: 20px; margin: 24px 0; }
+    .red-flag-alert h4 { color: var(--hub-red); margin-bottom: 12px; font-size: 1.1rem; }
+    .red-flag-alert p { color: #7f1d1d; margin-bottom: 12px; }
+    .red-flag-alert a { color: var(--hub-red); font-weight: 600; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
+    .prognosis-highlight { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid var(--hub-green); }
+    .prognosis-highlight p { color: #065f46; font-weight: 500; margin: 0; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
+    .faq-item p { color: #4b5563; margin: 0; line-height: 1.6; }
+    .hub-cta { background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%); color: white; border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
+    .hub-cta h3 { color: white !important; font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; }
+    .hub-cta p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
+    .hub-cta .button { background: white; color: var(--hub-primary); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s ease; }
+    .hub-cta .button:hover { transform: translateY(-2px); }
+    .related-box { background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 32px; }
+    .related-box h3 { color: var(--hub-dark); margin-bottom: 16px; }
+    .related-box a { display: block; padding: 12px 0; color: var(--hub-primary); text-decoration: none; border-bottom: 1px solid #e5e7eb; transition: padding-left 0.2s ease; }
+    .related-box a:last-child { border-bottom: none; }
+    .related-box a:hover { padding-left: 8px; }
+    .sources-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
+    .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; }
+    .sources-section p { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
+    .medical-disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 32px; font-size: 0.85rem; color: #64748b; }
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+    .location-content ul { margin: 12px 0; padding-left: 20px; }
+    .location-content li { margin-bottom: 8px; color: #4b5563; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
+    .mobile-sticky-cta a { display: block; background: #F26522; color: #FFFFFF; text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; border: 2px solid #FFFFFF; }
+    @media (max-width: 900px) {
+      .hub-wrapper { flex-direction: column; padding: 20px; }
+      .hub-sidebar { display: none; }
+      .hub-main { max-width: 100%; padding-bottom: 100px; }
+      .hub-intro h1 { font-size: 1.8rem; }
+      .mobile-sticky-cta { display: block; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
+</head>
+
+<body id="top">
+  <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
+            alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
+        <div class="header__navigation">
+          <div class="language-toggle" role="group" aria-label="Språkvalg">
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
+            <div class="language-toggle__slider"></div>
+          </div>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="../index.html" class="menu__link">Hjem</a></li>
+              <li class="menu__item"><a href="../about.html" class="menu__link">Om meg</a></li>
+              <li class="menu__item"><a href="../services.html" class="menu__link">Tjenester</a></li>
+              <li class="menu__item"><a href="../plager.html" class="menu__link">Plager</a></li>
+              <li class="menu__item"><a href="../priser.html" class="menu__link">Priser</a></li>
+              <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+              <li class="menu__item"><a href="../contact.html" class="menu__link">Kontakt</a></li>
+              <li class="menu__item"><a href="../blogg/index.html" class="menu__link">Blogg</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
-    <div class="hub-wrapper">
-      <article class="blog-post">
-        <div class="container container--narrow">
-        <nav class="breadcrumb" aria-label="Brodsmuler">
-          <ol class="breadcrumb__list">
-            <li class="breadcrumb__item"><a href="../plager/brystryggsmerter.html">Hjem</a></li>
-            <li class="breadcrumb__item"><a href="../blogg/index.html">Blogg</a></li>
-            <li class="breadcrumb__item"><a href="../plager/kjevesmerte.html">Kjeveleddsproblemer</a></li>
-            <li class="breadcrumb__item" aria-current="page">ADHD, Autisme og Kjeve</li>
-          </ol>
-        </nav>
+    </header>
 
-        <!-- TL;DR Box -->
-        <div class="highlight-box" style="background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%); border-left: 4px solid var(--color-amber); padding: 20px; margin-bottom: 30px; border-radius: 8px;">
-          <h3 style="margin-top: 0; color: #1a1a2e;">TL;DR - Nevrodivergent og Kjeve</h3>
-          <ul style="margin-bottom: 0;">
-            <li><strong>økt risiko:</strong> Studier viser 2-3x høyere forekomst av bruksisme hos personer med ADHD</li>
-            <li><strong>Stimulantmedisiner:</strong> Kan forverre tanngnissing som bivirkning</li>
-            <li><strong>Sensoriske utfordringer:</strong> Autisme kan gi hypersensitivitet eller hyposensitivitet i kjeven</li>
-            <li><strong>Stimming:</strong> Kjevepress og tygging kan være selvregulerende atferd</li>
-            <li><strong>Tilpasset behandling:</strong> Kortere økter, tydelig kommunikasjon, sensoriske hensyn</li>
-          </ul>
+    <main class="page" id="main">
+      <!-- Hero Section -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <span class="blog-post__category">Kjeve</span>
+          <h1>ADHD, Autisme og Kjevesmerter: En Ofte Oversett Sammenheng</h1>
+          <p class="hub-hero__subtitle">Kiropraktor Mads Finstad, Majorstua</p>
+          <div class="blog-post__meta">
+            <time class="blog-post__date" datetime="2026-12-28">28. desember 2026</time>
+            <span class="blog-post__author">Mads Finstad</span>
+          </div>
         </div>
+      </section>
 
-        <div class="blog-post__content">
+      <div class="hub-wrapper">
+        <article class="page__blog-post blog-post hub-main">
+          <div class="blog-post__container">
+            <div class="blog-post__content">
+              <!-- Premium Summary Card -->
+              <div class="premium-summary-card">
+                <h3>Kort oppsummert</h3>
+                <ul>
+                  <li><strong>2-3 ganger hoyere risiko:</strong> Barn med ADHD har betydelig hoyere forekomst av bruksisme</li>
+                  <li><strong>Stimulantmedisiner</strong> kan gi bivirkninger som tanngnissing og kjevespenning</li>
+                  <li><strong>Sensoriske behov</strong> ved autisme kan inkludere kjeveaktivitet som selvregulering</li>
+                  <li><strong>Tilpasset behandling</strong> med forutsigbarhet og sensoriske hensyn gir bedre resultater</li>
+                </ul>
+              </div>
 
-          <h2>Hvorfor Nevrodivergente Har Høyere Risiko</h2>
-          <p>Flere faktorer bidrar til økt forekomst av kjeveplager hos personer med ADHD og autisme:</p>
+              <!-- Stat Grid -->
+              <div class="stat-grid">
+                <div class="stat-item">
+                  <div class="stat-number">2-3x</div>
+                  <div class="stat-label">Hoyere risiko for bruksisme ved ADHD</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">20-24%</div>
+                  <div class="stat-label">SSRI-brukere med bruksisme</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">Okt</div>
+                  <div class="stat-label">Forekomst ved autisme</div>
+                </div>
+              </div>
+
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">1</span>
+                  <h2 id="hvorfor-nevrodivergente-har-hoyere-risiko">Hvorfor Nevrodivergente Har Hoyere Risiko</h2>
+                </div>
+                <p>Flere faktorer bidrar til okt forekomst av kjeveplager hos personer med ADHD og autisme:</p>
 
           <h3>Ved ADHD</h3>
           <ul>
@@ -118,10 +274,15 @@
             <li><strong>Sensoriske behov:</strong> Sterke sansepreferanser kan inkludere proprioseptiv input fra kjeven</li>
             <li><strong>Angst:</strong> Høy forekomst av angst ved autisme, som øker muskelspenning</li>
             <li><strong>Interoceptive utfordringer:</strong> Vansker med å oppfatte kroppssignaler som smerte</li>
-            <li><strong>Maskering:</strong> Sosial maskering krever energi og kan øke spenninger</li>
+            <li><strong>Maskering:</strong> Sosial maskering krever energi og kan oke spenninger</li>
           </ul>
+              </div>
 
-          <h2>Forskning på Sammenhengen</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">2</span>
+                  <h2 id="forskning-pa-sammenhengen">Forskning pa Sammenhengen</h2>
+                </div>
           <p>Studier viser tydelig sammenheng:</p>
           <ul>
             <li>Barn med ADHD har <strong>2-3 ganger høyere</strong> forekomst av bruksisme</li>
@@ -130,12 +291,17 @@
             <li>Sensorisk sensitivitet ved ASD korrelerer med oral motorisk dysfunksjon</li>
           </ul>
 
-          <div style="background: #f0f9ff; border-left: 4px solid #0284c7; padding: 20px; margin: 30px 0; border-radius: 8px;">
-            <h4 style="margin-top: 0; color: #0369a1;">Viktig å vite</h4>
-            <p style="margin-bottom: 0;">Mange voksne med udiagnostisert ADHD eller autisme oppdages fårst nær de søker hjelp for fysiske plager som kroniske kjevesmerter eller hodepine. Hvis du gjenkjenner deg i mange punkter her, kan det være verdt å utforske nærmere.</p>
+          <div class="info-box">
+            <h4>Viktig a vite</h4>
+            <p>Mange voksne med udiagnostisert ADHD eller autisme oppdages forst nar de soker hjelp for fysiske plager som kroniske kjevesmerter eller hodepine. Hvis du gjenkjenner deg i mange punkter her, kan det vaere verdt a utforske naermere.</p>
           </div>
+              </div>
 
-          <h2>Medisiner og Kjeveplager</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">3</span>
+                  <h2 id="medisiner-og-kjeveplager">Medisiner og Kjeveplager</h2>
+                </div>
 
           <h3>Stimulantmedisiner (Ritalin, Elvanse, Attentin)</h3>
           <p>Vanlige ADHD-medisiner kan påvirke kjeven:</p>
@@ -151,8 +317,13 @@
             <li><strong>SSRI/SNRI:</strong> Kan gi bruksisme (20-24% av brukere)</li>
             <li><strong>Antipsykotika:</strong> Kan gi bevegelssforstyrrelser inkludert i kjeven</li>
           </ul>
+              </div>
 
-          <h2>Sensoriske Utfordringer og Behandling</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">4</span>
+                  <h2 id="sensoriske-utfordringer-og-behandling">Sensoriske Utfordringer og Behandling</h2>
+                </div>
           <p>Autistiske personer kan ha unike utfordringer med kjevebehandling:</p>
 
           <h3>Hypersensitivitet</h3>
@@ -166,10 +337,15 @@
           <ul>
             <li>Oppdager ikke smerte får den er alvorlig</li>
             <li>Kan bite hardt uten å merke det</li>
-            <li>Trenger sterkere trykk for å oppfatte behandlingen</li>
+            <li>Trenger sterkere trykk for a oppfatte behandlingen</li>
           </ul>
+              </div>
 
-          <h2>Tilpasset Behandlingstilnærming</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">5</span>
+                  <h2 id="tilpasset-behandlingstilnaerming">Tilpasset Behandlingstilnaerming</h2>
+                </div>
           <p>Hos meg tilpasser jeg behandlingen til nevrodivergente pasienter:</p>
 
           <h3>Praktiske Tilpasninger</h3>
@@ -187,10 +363,15 @@
             <li>Enkle, korte rutiner som er lette å følge</li>
             <li>Visuelle instruksjoner/påminnelser</li>
             <li>Koble øvelser til eksisterende rutiner</li>
-            <li>Realistiske mål som tar hensyn til utføringsvansker</li>
+            <li>Realistiske mal som tar hensyn til utforingsvansker</li>
           </ul>
+              </div>
 
-          <h2>Selvhjelpsstrategier</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">6</span>
+                  <h2 id="selvhjelpsstrategier">Selvhjelpsstrategier</h2>
+                </div>
 
           <h3>For ADHD</h3>
           <ul>
@@ -207,8 +388,13 @@
             <li><strong>Stressreduksjon:</strong> Reduser maskering der mulig</li>
             <li><strong>Rutiner:</strong> Bygg kjeveavspenning inn i eksisterende rutiner</li>
           </ul>
+              </div>
 
-          <h2>Når Stimming Er Involvert</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">7</span>
+                  <h2 id="nar-stimming-er-involvert">Nar Stimming Er Involvert</h2>
+                </div>
           <p>Hvis kjeveaktivitet er del av selvregulering:</p>
           <ul>
             <li>Jeg forsøker <strong>ikke</strong> å eliminere all stimming</li>
@@ -217,12 +403,17 @@
             <li>Samarbeider om løsninger som fungerer for deg</li>
           </ul>
 
-          <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 20px; margin: 30px 0; border-radius: 8px;">
-            <h4 style="margin-top: 0; color: #166534;">Nevroaffirmerende Tilnærming</h4>
-            <p style="margin-bottom: 0;">Jeg ser på nevrodivergente tilstander som en del av naturlig menneskelig variasjon, ikke som feil som må fikses. Målet er å hjelpe deg med fysiske plager, ikke å endre hvem du er.</p>
+          <div class="treatment-box">
+            <h4>Nevroaffirmerende Tilnaerming</h4>
+            <p>Jeg ser pa nevrodivergente tilstander som en del av naturlig menneskelig variasjon, ikke som feil som ma fikses. Malet er a hjelpe deg med fysiske plager, ikke a endre hvem du er.</p>
           </div>
+              </div>
 
-          <h2>Samarbeid Med Andre Behandlere</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">8</span>
+                  <h2 id="samarbeid-med-andre-behandlere">Samarbeid Med Andre Behandlere</h2>
+                </div>
           <p>For best resultat samarbeider jeg gjerne med:</p>
           <ul>
             <li>Fastlege/psykiater om medisiner</li>
@@ -230,80 +421,158 @@
             <li>Tannlege om bittskinne ved behov</li>
           </ul>
 
-          <!-- Booking CTA -->
-          <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center;">
-            <h3 style="color: var(--color-amber); margin-top: 0;">Kjeveplager og Nevrodivergent?</h3>
-            <p style="margin-bottom: 20px;">Jeg tilbyr tilpasset undersøkelse og behandling med forståelse for dine behov.</p>
-            <p style="font-size: 14px; margin-bottom: 20px;">
-              <strong>Nytt problem:</strong> 1 140 kr (45 min) | <strong>Oppfølging:</strong> 795 kr (30 min)
-            </p>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" target="_blank" rel="noopener" style="display: inline-block; background: var(--color-amber); color: #1a1a2e; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold;">Bestill Time</a>
-            <p style="margin-top: 16px; font-size: 13px; opacity: 0.8;">Gardeveien 17, Majorstua | Ingen henvisning nødvendig</p>
+          <!-- Hub CTA -->
+              <div class="hub-cta">
+                <h3>Kjeveplager og Nevrodivergent?</h3>
+                <p>Jeg tilbyr tilpasset undersokelse og behandling med forstaelse for dine behov.</p>
+                <p style="font-size: 14px; margin-bottom: 20px;">
+                  <strong>Nytt problem:</strong> 1 140 kr (45 min) | <strong>Oppfolging:</strong> 795 kr (30 min)
+                </p>
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" target="_blank" rel="noopener" class="button">Bestill Time</a>
+                <p style="margin-top: 16px; font-size: 13px; opacity: 0.8;">Gardeveien 17, Majorstua | Ingen henvisning nodvendig</p>
+              </div>
+              </div>
+
+              <!-- Related Box -->
+              <div class="related-box">
+                <h3>Relaterte artikler</h3>
+                <a href="../plager/kjeve/tanngnissing-bruksisme.html">Tanngnissing (Bruksisme) - Komplett guide</a>
+                <a href="stress-kjevesmerter.html">Stress og Kjevesmerter - Sammenhengen</a>
+                <a href="kjeveovelser-hjemme.html">Kjeveovelser Hjemme - Ovelsesprogram</a>
+                <a href="../plager/kjevesmerte.html">Kjevesmerter og TMD - Hovedside</a>
+              </div>
+            
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
+          </div>
+        </article>
+
+        <aside class="hub-sidebar">
+          <div class="hub-conversion-card">
+            <img src="../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
+            <h3>Trenger du hjelp?</h3>
+            <p>Jeg hjelper deg med å finne årsaken og riktig behandling.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+            </div>
           </div>
 
-          <h2>Les Mer</h2>
-          <ul>
-            <li><a href="../plager/kjeve/tanngnissing-bruksisme.html"><strong>Tanngnissing (Bruksisme)</strong></a> - Komplett guide</li>
-            <li><a href="stress-kjevesmerter.html"><strong>Stress og Kjevesmerter</strong></a> - Sammenhengen</li>
-            <li><a href="kjeveøvelser-hjemme.html"><strong>Kjeveøvelser Hjemme</strong></a> - øvelsesprogram</li>
-          </ul>
+          <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
+            <h3>INNHOLD</h3>
+            <ul>
+                            <li><a href="#hvorfor-nevrodivergente-har-hoyere-risiko">Hvorfor Nevrodivergente Har Høyere Risiko</a></li>
+              <li><a href="#forskning-pa-sammenhengen">Forskning på Sammenhengen</a></li>
+              <li><a href="#medisiner-og-kjeveplager">Medisiner og Kjeveplager</a></li>
+              <li><a href="#sensoriske-utfordringer-og-behandling">Sensoriske Utfordringer og Behandling</a></li>
+              <li><a href="#tilpasset-behandlingstilnaerming">Tilpasset Behandlingstilnærming</a></li>
+              <li><a href="#selvhjelpsstrategier">Selvhjelpsstrategier</a></li>
+              <li><a href="#nar-stimming-er-involvert">Når Stimming Er Involvert</a></li>
+              <li><a href="#samarbeid-med-andre-behandlere">Samarbeid Med Andre Behandlere</a></li>
+              <li><a href="#les-mer">Les Mer</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
 
-        </div>
-        </div>
-      </article>
-      <aside class="hub-sidebar">
-        <!-- Conversion Card -->
-        <div class="hub-conversion-card">
-          <img src="../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
-          <h3>Trenger du hjelp?</h3>
-          <p>Jeg hjelper deg med å finne årsaken og riktig behandling.</p>
-          <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Bestill time</a>
-          <div class="sidebar-info">
-            <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+      <div class="mobile-sticky-cta">
+        <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer">Bestill time</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Left Column -->
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
           </div>
         </div>
-      </aside>
-    </div>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__col">
-          <h4>TheBackROM</h4>
-          <p>Kiropraktor på Majorstua med fokus på evidensbasert behandling.</p>
+        <!-- Center Column -->
+        <div class="footer__center">
+          <div class="footer__logo">
+            <img src="../images/logo-footer.webp" alt="Klinikk for alle Kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
+          </div>
         </div>
-        <div class="footer__col">
-          <h4>Kontakt</h4>
-          <p>Gardeveien 17<br>0363 Oslo</p>
-          <p>Mads.finstad@hotmail.com</p>
-        </div>
-        <div class="footer__col">
-          <h4>Åpningstider</h4>
-          <p>Man-Fre: 08-20<br>Lær: 10-16</p>
+
+        <!-- Right Column -->
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Åpningstider</h3>
+            <p>Mandag - Fredag: 08:00 - 19:00</p>
+            <p>Lørdag: 10:00 - 16:00</p>
+            <p>Søndag: Stengt</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Kontaktinformasjon</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>E-post: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <p>&copy; 2026 Mads Finstad Kiropraktor. Alle rettigheter reservert.</p>
+        <a href="../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
       </div>
-    </div>
-  </footer>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
-     class="mobile-sticky-cta"
-     aria-label="Bestill time hos kiropraktor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Bestill time
-  </a>
+    </footer>
+  </div>
 
   <script src="../js/script.min.js" defer></script>
+  <script src="../js/language-toggle.min.js" defer></script>
+  <script src="../js/modern-enhancements.min.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('h2[id]');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+      function updateActiveLink() {
+        let currentSection = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 150) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + currentSection) {
+            link.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
   <script src="../js/breadcrumbs.js" defer></script>
 </body>
 </html>
-
-

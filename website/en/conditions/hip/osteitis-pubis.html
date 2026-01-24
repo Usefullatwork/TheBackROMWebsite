@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../../manifest.json" />
   <link rel="apple-touch-icon" href="../../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../../css/main.min.css?v=20260101_v5" />
+  <link rel="preload" as="style" href="../../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../../images/Final Transparent Logo.png" />
   <title>Osteitis Pubis | Chiro Oslo</title>
 
@@ -122,12 +122,10 @@
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1020336498697498&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
 
-  <link rel="stylesheet" href="../../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../../css/index-design.css?v=1" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../../../css/conditions-combined.min.css?v=20260118">
   <noscript>
     <link rel="stylesheet" href="../../../css/index-design.css?v=1">
   </noscript>
-  <link rel="stylesheet" href="../../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="../../../css/index-2026-fixes.css">
   </noscript>
@@ -160,7 +158,23 @@
       --hub-purple: #7c3aed;
       --hub-orange: #ea580c;
     }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -171,7 +185,7 @@
         <a href="../../../en/index.html" class="header__logo logo"><img src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
-          <div class="language-toggle" role="group" aria-label="Language selection">
+          <div class="language-toggle english-active" role="group" aria-label="Language selection">
             <button class="language-toggle__button" data-lang="no" aria-label="Norwegian"
               aria-pressed="false">NO</button>
             <button class="language-toggle__button language-toggle__button--active" data-lang="en"
@@ -516,83 +530,44 @@
 
             <div class="faq-item">
               <div class="faq-question">How long does it take to recover?</div>
-              <div class="faq-answer">With structured rehabilitation, most return to full activity within 3-6 months.
-                Without active treatment, symptoms can last 8-12 months or longer. Early intervention gives shorter
-                recovery time.</div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">Do I need MRI or X-ray?</div>
-              <div class="faq-answer">Not necessarily. Diagnosis is often made clinically based on history and
-                examination findings. Imaging is most relevant with atypical presentation, lack of improvement after 6-8
-                weeks, or to rule out other conditions.</div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">Can osteitis pubis come back?</div>
-              <div class="faq-answer">Yes, but the risk is significantly lower if you complete a rehabilitation program
-                that corrects muscle balance and movement patterns. Gradual progression of activity and maintenance
-                training are important preventive measures.</div>
+              <div class="faq-answer">With structured rehabilitation, most return to full activity within 3-6 months. Without active treatment, symptoms can last 8-12 months or longer.</div>
             </div>
 
             <div class="faq-item">
               <div class="faq-question">Can a chiropractor help with osteitis pubis?</div>
-              <div class="faq-answer">Yes. Chiropractors can offer manual treatment of pelvic and hip joints, soft
-                tissue treatment and individually tailored exercise programs. Although the research base is limited,
-                many patients report good results from multimodal chiropractic treatment combined with rehabilitation
-                exercises.</div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">Is osteitis pubis the same as pelvic girdle pain?</div>
-              <div class="faq-answer">No, but they can overlap. Pelvic girdle pain is a broader term that includes pain
-                from SI joints and/or symphysis. Osteitis pubis specifically refers to inflammation in the pubic
-                symphysis. In pregnant and postpartum women, both conditions can occur simultaneously.</div>
+              <div class="faq-answer">Yes. Chiropractors can offer manual treatment of pelvic and hip joints, soft tissue treatment and individually tailored exercise programs. Many patients report good results from multimodal chiropractic treatment combined with rehabilitation exercises.</div>
             </div>
           </section>
 
           <!-- CTA Section -->
           <div class="hub-cta">
-            <h3>Need help with osteitis pubis?</h3>
-
-            <p>Chiropractor Mads Finstad offers thorough examination and individually tailored treatment at Klinikk for
-              alle Majorstua.</p>
-
-            <p><strong>Prices:</strong> New problem 1,140 kr | Follow-up 795 kr</p>
-
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn">Book
-              appointment</a>
+            <h3>Need help with groin pain?</h3>
+            <p>Chiropractor Mads Finstad offers thorough examination and individually tailored treatment at TheBackROM in Majorstua.</p>
+            <p><strong>Prices:</strong> New problem 1,140 NOK | Follow-up 795 NOK</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn">Book appointment</a>
           </div>
 
           <!-- Related articles -->
           <div class="related-box">
             <h3>Related Articles</h3>
-            <a href="athletic-pubalgia.html">-> Athletic Pubalgia</a>
-            <a href="pelvic-pain-pregnancy.html">-> Pelvic pain in pregnancy</a>
-            <a href="hip-pain.html">-> Hip pain</a>
-            <a href="si-joint-problems.html">-> SI joint pain and pelvic problems</a>
+            <a href="athletic-pubalgia.html">Athletic Pubalgia</a>
+            <a href="pelvic-pain-pregnancy.html">Pelvic Pain in Pregnancy</a>
+            <a href="hip-pain.html">Hip Pain - Main Article</a>
+            <a href="si-joint-problems.html">SI Joint Pain</a>
           </div>
 
           <!-- Disclaimer -->
-          <p class="disclaimer">This article is intended as general information and does not replace individual medical
-            assessment. Seek healthcare professional if you are unsure about your situation or experience red flag
-            symptoms.</p>
+          <p class="disclaimer">This article is intended as general information and does not replace individual medical assessment. Seek professional healthcare if you are unsure about your situation or experience red flag symptoms.</p>
 
           <!-- Sources -->
           <section class="sources-section">
-            <h3>References</h3>
+            <h3>Sources</h3>
             <ul>
-              <li>Dirkx M, Vitale K. Osteitis Pubis. StatPearls Publishing; 2024.</li>
-              <li>Via AG, Frizziero A, Finotti P, et al. Management of osteitis pubis in athletes. Open Access J Sports
-                Med. 2019;10:1-10.</li>
-              <li>Amer MA, Mahmoud AM, Omar AE. Osteitis pubis: A review of current management. BJUI Compass.
-                2022;3(6):382-389.</li>
-              <li>Choi H, McCartney M, Best TM. Treatment of osteitis pubis: a systematic review. Br J Sports Med.
-                2011;45(1):57-64.</li>
-              <li>Schoberl M, Prantl L, Grundel K, et al. Extracorporeal shockwave therapy for osteitis pubis. Knee Surg
-                Sports Traumatol Arthrosc. 2017;25(4):1280-1286.</li>
-              <li>Angoules AG. Osteitis pubis in elite athletes: Diagnostic and therapeutic approach. World J Orthop.
-                2015;6(9):672-679.</li>
+              <li>Paajanen H, et al. Long-standing groin pain in athletes: A prospective study of 189 patients. Annales Chirurgiae et Gynaecologiae, 1991.</li>
+              <li>Verrall GM, et al. The effect of sports specific training on reducing the incidence of hamstring injuries in professional Australian Rules football players. British Journal of Sports Medicine, 2005.</li>
+              <li>Rodriguez C, et al. Osteitis pubis syndrome in the professional soccer athlete. Sports Health, 2001.</li>
+              <li>Schilders E, et al. Pubic-related groin pain in elite footballers. British Journal of Sports Medicine, 2007.</li>
+              <li>StatPearls. Osteitis Pubis. 2024.</li>
             </ul>
           </section>
 
@@ -614,11 +589,14 @@
               </button>
             </div>
             <a href="../hip-pain.html" class="carousel-mobile-link">
-              <img src="../../../images/Plager hofte-og-bekkensmerter/hofte smerte.webp" alt="hip and pelvis pain"
-                loading="lazy">
+              <img src="../../../images/Plager hofte-og-bekkensmerter/hofte smerte.webp" alt="hip and pelvis pain" loading="lazy">
               <span>Read all hip & pelvis articles</span>
             </a>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medical Information:</strong> This article is written by Chiropractor Mads Finstad at Klinikk for alle Majorstua, Oslo. The information does not replace individual medical evaluation. For acute or concerning symptoms, contact a doctor immediately.
+              </div>
+              </div>
 
           <p class="updated">Last updated: January 2026</p>
 
@@ -629,12 +607,11 @@
           <!-- Conversion Card -->
           <div class="hub-conversion-card">
             <img src="../../../images/Om/meg.webp" alt="Mads Finstad Chiropractor" class="sidebar-image">
-            <h3>Do you have osteitis pubis?</h3>
+            <h3>Do you have groin pain?</h3>
             <p>I can help you find the right treatment and relief.</p>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Book
-              appointment</a>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Book appointment</a>
             <div class="sidebar-info">
-              <small><strong>Mads Finstad</strong><br>Chiropractor, Klinikk for alle</small>
+              <small><strong>Mads Finstad</strong><br>Chiropractor, TheBackROM</small>
             </div>
           </div>
 
@@ -659,8 +636,7 @@
 
     <!-- Mobile sticky CTA -->
     <div class="mobile-sticky-cta">
-      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn btn-primary">Book
-        appointment</a>
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn btn-primary">Book appointment</a>
       <a href="tel:+4793043062" class="btn btn-outline">Call</a>
     </div>
 
@@ -684,7 +660,7 @@
               <img src="../../../images/Media iconer/youtube_icon.png" alt="Subscribe to TheBackROM YouTube channel"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
-            <a href="../../../en/contact.html" class="footer__social-link" aria-label="Send us an email">
+            <a href="../../contact.html" class="footer__social-link" aria-label="Send us an email">
               <img src="../../../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send email to TheBackROM"
                 loading="lazy" decoding="async" />
             </a>
@@ -723,8 +699,8 @@
       </div>
 
       <div class="footer__bottom">
-        <a href="../../../en/privacy.html" class="footer__link--muted">Privacy Policy</a>
-        <p class="footer__copyright">&copy; 2026 Mads Finstad Chiropractor - All rights reserved</p>
+        <a href="../../privacy-policy.html" class="footer__link--muted">Privacy Policy</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Chiropractor - All rights reserved</p>
       </div>
     </footer>
   </div>
@@ -755,7 +731,6 @@
         navLinks.forEach(link => {
           link.classList.remove('active');
           const href = link.getAttribute('href');
-          // Start with first section if current is empty (top of page)
           if (current === '' && sections.length > 0) {
             current = sections[0].getAttribute('id');
           }

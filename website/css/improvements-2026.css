@@ -1,0 +1,539 @@
+/* =========================================
+   FORBEDRINGER 2026
+   Nye seksjoner: Testimonials, Forsikring, Vurderinger
+   ========================================= */
+
+/* =========================================
+   1. RATING/VURDERING BADGE
+   ========================================= */
+
+.rating-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+}
+
+.rating-badge__stars {
+    display: flex;
+    gap: 2px;
+}
+
+.rating-badge__star {
+    color: #f59e0b;
+    font-size: 1rem;
+}
+
+.rating-badge__text {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.rating-badge__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.rating-badge__link:hover {
+    text-decoration: underline;
+}
+
+/* Hero rating badge - white background version */
+.main_home .rating-badge {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* =========================================
+   2. HEADER TELEFON-KNAPP
+   ========================================= */
+
+.header__phone {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .header__phone {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--color-secondary);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-decoration: none;
+        margin-right: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .header__phone:hover {
+        background: var(--color-secondary-dark);
+        transform: translateY(-2px);
+    }
+
+    .header__phone-icon {
+        font-size: 1rem;
+    }
+}
+
+/* =========================================
+   3. TESTIMONIALS SEKSJON
+   ========================================= */
+
+.testimonials-section {
+    background: var(--color-bg-light, #F8F9FA);
+    padding: var(--section-spacing, 100px) 0;
+}
+
+.testimonials-section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding, 20px);
+}
+
+.testimonials-section__title {
+    font-family: var(--font-family-header);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.testimonials-section__subtitle {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 10px 40px rgba(26, 95, 122, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(26, 95, 122, 0.12);
+}
+
+.testimonial-card__quote-icon {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 3rem;
+    color: var(--color-accent, #F26522);
+    opacity: 0.15;
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.testimonial-card__content {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card__text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4A4A4A;
+    font-style: italic;
+}
+
+.testimonial-card__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.testimonial-card__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.testimonial-card__info {
+    flex: 1;
+}
+
+.testimonial-card__name {
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.testimonial-card__condition {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.testimonial-card__stars {
+    display: flex;
+    gap: 2px;
+    margin-top: 4px;
+}
+
+.testimonial-card__star {
+    color: #f59e0b;
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   4. FORSIKRINGSPARTNERE SEKSJON
+   ========================================= */
+
+.insurance-section {
+    background: white;
+    padding: 60px 0;
+    border-top: 1px solid var(--color-border-light, #e5e7eb);
+    border-bottom: 1px solid var(--color-border-light, #e5e7eb);
+}
+
+.insurance-section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding, 20px);
+    text-align: center;
+}
+
+.insurance-section__title {
+    font-family: var(--font-family-header);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.insurance-section__text {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.insurance-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(2rem, 4vw, 4rem);
+}
+
+.insurance-logo {
+    max-height: 40px;
+    width: auto;
+    opacity: 0.7;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.insurance-logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* =========================================
+   5. STATISTIKK/ERFARING SEKSJON
+   ========================================= */
+
+.stats-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item__number {
+    font-family: var(--font-family-header);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.stat-item__label {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+}
+
+/* Stats in hero */
+.main_home .stats-bar {
+    margin-top: 2rem;
+}
+
+.main_home .stat-item__number {
+    color: white;
+}
+
+.main_home .stat-item__label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* =========================================
+   6. AKUTT TELEFON BANNER
+   ========================================= */
+
+.urgent-banner {
+    background: linear-gradient(135deg, var(--color-accent) 0%, #d95a1c 100%);
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.urgent-banner__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.urgent-banner__text {
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.urgent-banner__phone {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.urgent-banner__phone:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   7. PROBLEM CARDS - Forbedret Design
+   ========================================= */
+
+.problem-card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 40px rgba(26, 95, 122, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(26, 95, 122, 0.12);
+}
+
+.problems__item-title {
+    font-family: var(--font-family-header);
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+}
+
+.problems__item-title a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.problems__item-title a:hover {
+    color: var(--color-accent);
+}
+
+.problem-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.problem-list li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--color-border-light, #e5e7eb);
+}
+
+.problem-list li:last-child {
+    border-bottom: none;
+}
+
+.problem-list a {
+    color: #4A4A4A;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.problem-list a:hover {
+    color: var(--color-accent);
+}
+
+.card-footer-link {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.card-footer-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   8. CTA FORBEDRINGER
+   ========================================= */
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.button--secondary-light {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.button--secondary-light:hover {
+    background: white;
+    color: var(--color-primary);
+}
+
+/* =========================================
+   9. MOBIL STICKY RING-KNAPP
+   ========================================= */
+
+.mobile-call-btn {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .mobile-call-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        position: fixed;
+        bottom: 80px; /* Over booking-knappen */
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--color-secondary, #2A7B9B);
+        color: white;
+        padding: 12px 24px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-decoration: none;
+        box-shadow: 0 4px 20px rgba(42, 123, 155, 0.4);
+        z-index: 999;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-call-btn:hover,
+    .mobile-call-btn:active {
+        background: var(--color-secondary-dark, #1E5F78);
+        transform: translateX(-50%) translateY(-2px);
+        box-shadow: 0 6px 25px rgba(42, 123, 155, 0.5);
+    }
+
+    .mobile-call-btn__icon {
+        font-size: 1.1rem;
+    }
+
+    /* Juster booking-knappen for å gi plass */
+    .mobile-booking-btn,
+    .mobile-sticky-booking,
+    .mobile-sticky-cta {
+        bottom: 20px !important;
+    }
+}
+
+/* =========================================
+   10. HVORFOR VELGE OSS KORT-STILER
+   ========================================= */
+
+.testimonial-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.testimonial-card__quote-icon {
+    font-size: 2.5rem !important;
+    opacity: 0.8 !important;
+    color: var(--color-secondary) !important;
+}
+
+/* =========================================
+   11. RESPONSIVE JUSTERINGER
+   ========================================= */
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .insurance-logos {
+        gap: 1.5rem;
+    }
+
+    .insurance-logo {
+        max-height: 30px;
+    }
+
+    .stats-bar {
+        gap: 2rem;
+    }
+
+    .urgent-banner__content {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .problems-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonial-card {
+        padding: 24px;
+    }
+
+    .rating-badge {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}

@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>FAI - Hofteklem (Femoroacetabular Impingement) | Kiropraktor Majorstua</title>
 
@@ -27,6 +27,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/hofte/fai-hofteklem.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/hofte/fai-hofteklem.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/hip/fai-hip-impingement.html" />
 
   <script type="application/ld+json">
   {
@@ -103,11 +105,7 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
   /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -160,8 +158,8 @@
 
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 20px 0; }
     .stat-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; text-align: center; }
-    .stat-card .stat-number { font-size: 28px; font-weight: 700; color: var(--hub-primary-dark); display: block; }
-    .stat-card .stat-label { font-size: 12px; color: #6b7280; margin-top: 4px; }
+    .stat-card .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary-dark); display: block; }
+    .stat-card .stat-label { font-size: 0.75rem; color: #6b7280; margin-top: 4px; }
 
     .faq-item { border: 1px solid #e5e7eb; border-radius: 8px; margin: 10px 0; overflow: hidden; }
     .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
@@ -176,7 +174,23 @@
     .type-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; }
     .type-card h4 { color: var(--hub-primary-dark); font-size: 16px; margin: 0 0 10px; }
     .type-card p { font-size: 14px; color: #6b7280; margin: 0; }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -222,7 +236,7 @@
     <section class="hub-hero">
       <div class="hub-hero__container">
         <h1>FAI - Hofteklem</h1>
-        <p class="hub-hero__subtitle">Femoroacetabular Impingement: Årsaker, symptomer og behandling</p>
+        <p class="hub-hero__subtitle">Femoroacetabular Impingement: årsaker, symptomer og behandling</p>
       </div>
     </section>
 
@@ -291,7 +305,7 @@
             <section id="årsaker" class="hub-section">
               <div class="section-header">
                 <span class="section-number">2</span>
-                <h2>Årsaker og utvikling</h2>
+                <h2>årsaker og utvikling</h2>
               </div>
 
               <h3>Hvordan utvikles FAI?</h3>
@@ -304,8 +318,8 @@
                 <li><strong>Belastning for vekstsonene lukkes</strong></li>
               </ul>
 
-              <h3>Hvorfor får noen smerter?</h3>
-              <p>Mange har FAI-form uten å vite det. Smerter oppstår når:</p>
+              <h3>Hvorfor før noen smerter?</h3>
+              <p>Mange har FAI-form uten å vite det. Smerter oppstår nær:</p>
               <ul>
                 <li>Aktivitetsnivå økerplutselig</li>
                 <li>Man driver idretter med stor hoftebevegelse</li>
@@ -345,16 +359,16 @@
                 <li>Binding av sko</li>
               </ul>
 
-              <h3>Typisk smerteområde</h3>
+              <h3>Typisk smerteomrøde</h3>
               <p>Smertene sitter vanligvis <strong>foran i lysken</strong>, men kan også stråle til:</p>
               <ul>
-                <li>Forsiden av låret</li>
+                <li>Forsiden av læret</li>
                 <li>Seteregionen</li>
                 <li>Lateralt (utsiden) av hoften</li>
               </ul>
 
               <div class="warning-box">
-                <h4>Når bør du oppsøke hjelp?</h4>
+                <h4>Nær bør du oppsøke hjelp?</h4>
                 <ul>
                   <li>Vedvarende lyskesmerter over 4-6 uker</li>
                   <li>Smerter som begrenser daglige aktiviteter</li>
@@ -423,16 +437,16 @@
                 <li><strong>Aktivitetstilpasning</strong></li>
               </ul>
 
-              <h3>Øvelser å unnga/modifisere</h3>
+              <h3>øvelser å unnga/modifisere</h3>
               <ul>
                 <li><strong>Dyp kneboying</strong> - begrens dybden</li>
                 <li><strong>Brede utfall</strong> - hold smalere</li>
-                <li><strong>Hoftebøyerstretcher</strong> - unnga ekstreme stillinger</li>
+                <li><strong>Hoftebåyerstretcher</strong> - unnga ekstreme stillinger</li>
                 <li><strong>Kickbacks i ytterstilling</strong></li>
               </ul>
 
               <h3>Operasjon (hofteafrtroskopi)</h3>
-              <p>Operasjon vurderes når:</p>
+              <p>Operasjon vurderes nær:</p>
               <ul>
                 <li>3-6 måneder konservativ behandling ikke gir tilstrekkelig bedring</li>
                 <li>Betydelig cam/pincer-morfologi</li>
@@ -458,7 +472,7 @@
 
               <h3>Med konservativ behandling:</h3>
               <ul>
-                <li><strong>60-70%</strong> Oppnår tilfredsstillende funksjon</li>
+                <li><strong>60-70%</strong> Oppnær tilfredsstillende funksjon</li>
                 <li>Mange returnerer til full aktivitet (med tilpasninger)</li>
                 <li>Rehabilitering tar typisk 3-6 måneder</li>
               </ul>
@@ -540,7 +554,11 @@
                 <li>Ganz R, et al. Femoroacetabular Impingement: A Cause for Osteoarthritis of the Hip. Clin Orthop Relat Res. 2003;(417):112-120.</li>
               </ol>
             </section>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
         </article>
 
         <aside class="hub-sidebar" aria-label="Sidenavigasjon">
@@ -548,7 +566,7 @@
             <h3>Innhold</h3>
             <ul>
               <li><a href="#hva-er">Hva er FAI?</a></li>
-              <li><a href="#årsaker">Årsaker</a></li>
+              <li><a href="#årsaker">årsaker</a></li>
               <li><a href="#symptomer">Symptomer</a></li>
               <li><a href="#diagnostikk">Diagnostikk</a></li>
               <li><a href="#behandling">Behandling</a></li>
@@ -581,7 +599,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -625,7 +643,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
 </div>

@@ -1,404 +1,750 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nb">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1a202c" />
+  <meta name="color-scheme" content="light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="view-transition" content="same-origin" />
+
+  <link rel="manifest" href="../manifest.json" />
+  <link rel="apple-touch-icon" href="../images/Final Transparent Logo.png" />
   <link rel="icon" type="image/png" href="../images/Final Transparent Logo.png" />
-  <!-- Critical CSS for header positioning -->
-  <style>
-    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
-    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
-    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
-    #main-content{padding-top:var(--header-height)}
-  </style>
-  <link rel="preload" as="style" href="../css/main.min.css?v=20260101_v5" />
-  <title>Muskelsmerte vs. Nervesmerte - Den Komplette Guiden | Kiropraktor Majorstua</title>
-  <meta name="description" content="Lar å skille mellom muskelsmerte og nervesmerte. Ulik karakter, utstraling og behandling. Kiropraktor Mads Finstad, TheBackROM.">
+
+    <title>Muskelsmerte vs. Nervesmerte - Den Komplette Guiden | Kiropraktor Majorstua</title>
+  <meta name="description" content="Lar a skille mellom muskelsmerte og nervesmerte. Ulik karakter, utstraling og behandling. Kiropraktor Mads Finstad, TheBackROM.">
   <meta property="og:title" content="Muskelsmerte vs. Nervesmerte - Den Komplette Guiden | Kiropraktor Majorstua">
-  <meta property="og:description" content="Lar å skille mellom muskelsmerte og nervesmerte. Ulik karakter, utstraling og behandling. Kiropraktor Mads Finstad, TheBackROM.">
+  <meta property="og:description" content="Lar a skille mellom muskelsmerte og nervesmerte. Ulik karakter, utstraling og behandling. Kiropraktor Mads Finstad, TheBackROM.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://thebackrom.com/blogg/muskelsmerte-vs-nervesmerte.html">
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Muskelsmerte vs. Nervesmerte - Den Komplette Guiden | Kiropraktor Majorstua">
-  <meta name="twitter:description" content="Lar å skille mellom muskelsmerte og nervesmerte. Ulik karakter, utstraling og behandling. Kiropraktor Mads Finstad, TheBackROM.">
+  <meta name="twitter:description" content="Lar a skille mellom muskelsmerte og nervesmerte. Ulik karakter, utstraling og behandling. Kiropraktor Mads Finstad, TheBackROM.">
   <meta name="keywords" content="muskelsmerte, nervesmerte, isjias, radikulopati, myalgi, smertekarakter, kiropraktor Oslo">
   <meta name="author" content="Mads Finstad">
   <link rel="canonical" href="https://thebackrom.com/blogg/muskelsmerte-vs-nervesmerte.html" />
   <link rel="alternate" hreflang="nb" href="https://thebackrom.com/blogg/muskelsmerte-vs-nervesmerte.html" />
   <link rel="alternate" hreflang="en" href="https://thebackrom.com/blogg/muskelsmerte-vs-nervesmerte-en.html" />
-  <link rel="stylesheet" href="../css/main.min.css?v=20260101_v5" />
-  <link rel="stylesheet" href="../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-2026-fixes.css"></noscript>
-  <link rel="preload" as="style" href="../css/hub-article.css">
-  <link rel="stylesheet" href="../css/hub-article.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/hub-article.css"></noscript>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540166625752174');
+        fbq('track', 'PageView');
+      }, 2000);
+    });
+  </script>
+  <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="style" href="../css/pages-combined.min.css?v=20260118">
+  <link rel="stylesheet" href="../css/pages-combined.min.css?v=20260118">
+  <link rel="preload" as="style" href="../css/font-awesome-minimal.css">
+  <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
+
+  <style>
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+    .hub-toc-card a { display: block; padding: 10px 14px; color: #475569; text-decoration: none; border-radius: 8px; font-size: 14px; transition: all 0.2s ease; border-left: 3px solid transparent; }
+    .hub-toc-card a:hover { background: #e2e8f0; color: var(--hub-primary); }
+    .hub-toc-card a.active { background: #e0f2fe; color: var(--hub-primary); border-left-color: var(--hub-primary); font-weight: 500; }
+    .hub-intro { margin-bottom: 48px; }
+    .hub-intro h1 { font-size: 2.5rem; color: var(--hub-dark); margin-bottom: 24px; line-height: 1.2; }
+    .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
+    .intro-text p { margin-bottom: 16px; }
+    .premium-summary-card { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--hub-primary); }
+    .premium-summary-card h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 1.1rem; }
+    .premium-summary-card ul { margin: 0; padding-left: 20px; }
+    .premium-summary-card li { margin-bottom: 10px; color: #334155; line-height: 1.5; }
+    .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
+    .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section h4 { font-size: 1.05rem; color: var(--hub-dark); margin: 20px 0 10px; }
+    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
+    .condition-card ul { margin: 12px 0; padding-left: 20px; }
+    .condition-card li { margin-bottom: 6px; color: #4b5563; }
+    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
+    .treatment-box ul { margin: 0; padding-left: 20px; }
+    .treatment-box li { margin-bottom: 8px; color: #065f46; }
+    .treatment-box p { color: #065f46; margin-bottom: 8px; }
+    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .info-box p { color: #1e40af; margin-bottom: 8px; }
+    .info-box ul { margin: 0; padding-left: 20px; }
+    .info-box li { margin-bottom: 8px; color: #1e40af; }
+    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
+    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
+    .red-flag-box ul { margin: 0; padding-left: 20px; }
+    .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
+    .red-flag-alert { background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border: 2px solid var(--hub-red); border-radius: 12px; padding: 20px; margin: 24px 0; }
+    .red-flag-alert h4 { color: var(--hub-red); margin-bottom: 12px; font-size: 1.1rem; }
+    .red-flag-alert p { color: #7f1d1d; margin-bottom: 12px; }
+    .red-flag-alert a { color: var(--hub-red); font-weight: 600; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
+    .prognosis-highlight { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid var(--hub-green); }
+    .prognosis-highlight p { color: #065f46; font-weight: 500; margin: 0; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
+    .faq-item p { color: #4b5563; margin: 0; line-height: 1.6; }
+    .hub-cta { background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%); color: white; border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
+    .hub-cta h3 { color: white !important; font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; }
+    .hub-cta p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
+    .hub-cta .button { background: white; color: var(--hub-primary); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s ease; }
+    .hub-cta .button:hover { transform: translateY(-2px); }
+    .related-box { background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 32px; }
+    .related-box h3 { color: var(--hub-dark); margin-bottom: 16px; }
+    .related-box a { display: block; padding: 12px 0; color: var(--hub-primary); text-decoration: none; border-bottom: 1px solid #e5e7eb; transition: padding-left 0.2s ease; }
+    .related-box a:last-child { border-bottom: none; }
+    .related-box a:hover { padding-left: 8px; }
+    .sources-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
+    .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; }
+    .sources-section p { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
+    .medical-disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 32px; font-size: 0.85rem; color: #64748b; }
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+    .location-content ul { margin: 12px 0; padding-left: 20px; }
+    .location-content li { margin-bottom: 8px; color: #4b5563; }
+    .hub-infographic { width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 24px 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
+    .mobile-sticky-cta a { display: block; background: #F26522; color: #FFFFFF; text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; border: 2px solid #FFFFFF; }
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95rem; }
+    .comparison-table th, .comparison-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+    .comparison-table th { background: var(--hub-dark); color: white; font-weight: 600; }
+    .comparison-table tr:nth-child(even) { background: #f8fafc; }
+    .comparison-table tr:hover { background: #e0f2fe; }
+    @media (max-width: 900px) {
+      .hub-wrapper { flex-direction: column; padding: 20px; }
+      .hub-sidebar { display: none; }
+      .hub-main { max-width: 100%; padding-bottom: 100px; }
+      .hub-intro h1 { font-size: 1.8rem; }
+      .mobile-sticky-cta { display: block; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .comparison-table { font-size: 0.85rem; }
+      .comparison-table th, .comparison-table td { padding: 8px 10px; }
+    }
+
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
-<body>
+
+<body id="top">
   <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
-  <header class="header">
-    <div class="container header__container">
-      <a href="../index.html" class="header__logo" aria-label="Til forsiden">
-        <img src="../images/Final Transparent Logo.webp" alt="TheBackROM logo" width="50" height="50" />
-      </a>
-      <nav class="header__nav" aria-label="Hovedmeny">
-        <ul class="header__menu">
-          <li><a href="../plager/brystryggsmerter.html">Hjem</a></li>
-          <li><a href="../services.html">Tjenester</a></li>
-          <li><a href="../plager.html">Plager</a></li>
-          <li><a href="../priser.html">Priser</a></li>
-          <li><a href="../about.html">Om meg</a></li>
-          <li><a href="../blogg/index.html" class="active">Blogg</a></li>
-          <li><a href="../contact.html">Kontakt</a></li>
-        </ul>
-      </nav>
-      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary header__cta" target="_blank" rel="noopener">Bestill time</a>
-      <button class="header__menu-toggle" aria-label="Åpne meny" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main id="main-content">
-    <section class="page__main main main_services blog-hero">
-      <div class="main__container">
-        <span class="blog-post__category">Korsrygg</span>
-        <h1 class="main__title">Muskelsmerte vs. Nervesmerte - Den Komplette Guiden</h1>
-        <div class="blog-post__meta">
-          <time class="blog-post__date" datetime="2026-01-20">20. januar 2026</time>
-          <span class="blog-post__reading-time">12 min lesetid</span>
-        </div>
-      </div>
-    </section>
-    <article class="blog-post">
-      <div class="container container--narrow">
-        <nav class="breadcrumb" aria-label="Brodsmuler">
-          <ol class="breadcrumb__list">
-            <li class="breadcrumb__item"><a href="../plager/brystryggsmerter.html">Hjem</a></li>
-            <li class="breadcrumb__item"><a href="../blogg/index.html">Blogg</a></li>
-            <li class="breadcrumb__item"><a href="../plager/korsryggsmerte.html">Korsrygg</a></li>
-            <li class="breadcrumb__item" aria-current="page">Muskelsmerte vs nervesmerte</li>
-          </ol>
-        </nav>
-
-        <!-- TL;DR Box -->
-        <div class="highlight-box" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0284c7; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
-          <h3 style="margin-top: 0; color: #0369a1;">TL;DR - Muskelsmerte vs. Nervesmerte</h3>
-          <ul style="margin-bottom: 0;">
-            <li><strong>Muskelsmerte:</strong> Verkende, om, lokal smerte som forverres ved bruk av muskelen</li>
-            <li><strong>Nervesmerte:</strong> Skarp, brennende, elektrisk smerte som stråler langs nervebanen</li>
-            <li><strong>Muskelsmerte:</strong> Sjelden nummenhet eller svakhet</li>
-            <li><strong>Nervesmerte:</strong> Ofte ledsaget av prikking, nummenhet eller muskelsvakhet</li>
-            <li><strong>Behandling:</strong> Ulike tilnærminger - muskel trenger blotvevarbeid, nerve trenger avlastning</li>
-            <li><strong>Kombinasjon:</strong> Mange har elementer av begge - grundig undersøkelse er nøkkelen</li>
-            <li><strong>Konsultasjon:</strong> 45 min første gang, 30 min oppfølg</li>
-          </ul>
-        </div>
-
-        <div class="blog-post__content">
-          <h2>Hvorfor Er Det Viktig å Skille Mellom Dem?</h2>
-          <p>Mange pasienter kommer til klinikken og beskriver smertene sine som "isjias" eller "muskelspenning" - men virkeligheten er ofte mer nyansert. Å forstå om smertene primært kommer fra muskler eller nerver er kritisk fordi:</p>
-          <ul>
-            <li><strong>Behandlingen er fundamentalt forskjellig</strong></li>
-            <li><strong>Prognosen varierer</strong></li>
-            <li><strong>Selvhjelpsstrategiene er ulike</strong></li>
-            <li><strong>Røde flagg er forskjellige</strong></li>
-          </ul>
-          <p>En pasient med triggerpunkt i gluteus minimus kan ha smerter som stråler helt ned til leggen - akkurat som isjias. Men behandlingen er helt annerledes!</p>
-
-          <h2>Muskelsmerte (Myalgi) - Kjennetegn</h2>
-
-          <h3>Hvordan Foles Muskelsmerte?</h3>
-          <ul>
-            <li><strong>Verkende, dyp kvalitet:</strong> Ofte beskrevet som "molende" eller "tung"</li>
-            <li><strong>Stivhet:</strong> Spesielt etter hvile eller om morgenen</li>
-            <li><strong>Omhet ved trykk:</strong> Du kan ofte peke på et omt punkt</li>
-            <li><strong>Lokal:</strong> Smerten holder seg gjerne til muskelens område</li>
-            <li><strong>Bevegelsesrelatert:</strong> Verre nær muskelen brukes eller strekkes</li>
-          </ul>
-
-          <h3>Vanlige årsaker til Muskelsmerte</h3>
-          <ol>
-            <li><strong>Overbelastning:</strong> For mye, for fort, for lenge</li>
-            <li><strong>Triggerpunkter:</strong> Hypersensitive knuter i muskelfibrene</li>
-            <li><strong>Muskelstrekk:</strong> Akutt skade ved plutselig bevegelse</li>
-            <li><strong>Statisk belastning:</strong> Langvarig stillesittende arbeid</li>
-            <li><strong>Stress og spenning:</strong> Kronisk muskelspenning</li>
-            <li><strong>Dekondisjonering:</strong> Svak muskulatur som lett overbelastes</li>
-          </ol>
-
-          <h3>Triggerpunkter - Den Store Imitatoren</h3>
-          <p>Triggerpunkter fortjener spesiell oppmerksomhet fordi de kan gi referert smerte som ligner nervesmerte:</p>
-          <ul>
-            <li><strong>Gluteus minimus:</strong> Kan gi smerte ned hele baksiden av benet - nesten identisk med isjias!</li>
-            <li><strong>Quadratus lumborum:</strong> Refererer til hofte, sete og lyske</li>
-            <li><strong>Piriformis:</strong> Kan komprimere isjiasnerven og gi ekte nervesmerte (piriformissyndrom)</li>
-            <li><strong>Iliopsoas:</strong> Gir smerte i lysken og nedre rygg</li>
-          </ul>
-
-          <h2>Nervesmerte (Nevropati/Radikulopati) - Kjennetegn</h2>
-
-          <h3>Hvordan Foles Nervesmerte?</h3>
-          <ul>
-            <li><strong>Skarp, brennende kvalitet:</strong> Ofte beskrevet som "elektrisk" eller "stikkende"</li>
-            <li><strong>Utstraling:</strong> Følger nervens bane nedover armen eller benet</li>
-            <li><strong>Nummenhet:</strong> Nedsatt følelse i huden langs nervens forsyningsområde</li>
-            <li><strong>Prikking/mauring:</strong> Parestesier er typisk</li>
-            <li><strong>Svakhet:</strong> Nedsatt kraft i spesifikke muskler</li>
-          </ul>
-
-          <h3>Typisk Utstraling ved Isjias</h3>
-          <ul>
-            <li><strong>L4-nerverot:</strong> Fremside lar ? innside legg</li>
-            <li><strong>L5-nerverot:</strong> Utside lar og legg ? store ta</li>
-            <li><strong>S1-nerverot:</strong> Bakside lar og legg ? fotblad og lille ta</li>
-          </ul>
-
-          <h3>Vanlige årsaker til Nervesmerte</h3>
-          <ol>
-            <li><strong>Skiveprolaps:</strong> Skivemateriale som presser på nerveroten</li>
-            <li><strong>Spinal stenose:</strong> Trang ryggkanal, ofte aldersrelatert</li>
-            <li><strong>Foraminal stenose:</strong> Tranghet der nerven forlater ryggraden</li>
-            <li><strong>Piriformissyndrom:</strong> Piriformismuskelen klemmer isjiasnerven</li>
-            <li><strong>Spondylolistese:</strong> En virvel har glidd frem</li>
-          </ol>
-
-          <h2>Sammenligning: Muskel vs. Nerve</h2>
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Egenskap</th>
-                <th>Muskelsmerte</th>
-                <th>Nervesmerte</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Karakter</td>
-                <td>Verkende, molende, stiv</td>
-                <td>Skarp, brennende, elektrisk</td>
-              </tr>
-              <tr>
-                <td>Lokalisering</td>
-                <td>Lokal, følger muskelens område</td>
-                <td>Straler langs nervebanen</td>
-              </tr>
-              <tr>
-                <td>Nummenhet</td>
-                <td>Sjelden</td>
-                <td>Vanlig, følger dermatom</td>
-              </tr>
-              <tr>
-                <td>Svakhet</td>
-                <td>Ved bruk av muskelen</td>
-                <td>I spesifikke myotomer</td>
-              </tr>
-              <tr>
-                <td>Forverret av</td>
-                <td>Muskelbruk, trykk</td>
-                <td>Nervestrekk, hosting, nysing</td>
-              </tr>
-              <tr>
-                <td>Bedret av</td>
-                <td>Varme, lett bevegelse, massasje</td>
-                <td>Avlastning av nerven</td>
-              </tr>
-              <tr>
-                <td>Reflekser</td>
-                <td>Normale</td>
-                <td>Kan vare nedsatte</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h2>Selvtester Du Kan Prøve Hjemme</h2>
-
-          <h3>1. Slump-test (Tester Nerveirritasjon)</h3>
-          <ol>
-            <li>Sitt på en stol med bena hengende</li>
-            <li>Krok ryggen og boy hodet fremover (som en "slump")</li>
-            <li>Strekk ut ett bein mens du bøyer foten oppover</li>
-            <li>Loft hodet og se om smerten letter</li>
-          </ol>
-          <p><strong>Tolkning:</strong> Hvis du får smerter/prikking nedover benet som letter nær du løfter hodet, tyder det på nerveirritasjon.</p>
-
-          <h3>2. Straight Leg Raise (SLR)</h3>
-          <ol>
-            <li>Ligg flatt på ryggen</li>
-            <li>Hold benet helt strakt</li>
-            <li>Loft benet sakte oppover</li>
-          </ol>
-          <p><strong>Tolkning:</strong> Smerter som stråler nedover baksiden av benet ved 30-70 grader elevasjon tyder på nerveirritasjon.</p>
-
-          <h3>3. Triggerpunkt-palpasjon</h3>
-          <ol>
-            <li>Trykk på omme punkter i muskulaturen</li>
-            <li>Hold trykket i 10-15 sekunder</li>
-            <li>Observer om smerten "stråler ut" til andre områder</li>
-          </ol>
-          <p><strong>Tolkning:</strong> Referert smerte fra triggerpunkter kan ligne nervesmerte, men forsvinner nær trykket slippes.</p>
-
-          <h2>Når Begge Er Til Stede</h2>
-          <p>Ofte har pasienter elementer av begge smertetypene:</p>
-          <ul>
-            <li><strong>Nerveirritasjon gir sekundar muskelspenning:</strong> Kroppen "beskytter" det smertefulle området</li>
-            <li><strong>Muskelspenning kan irritere nerver:</strong> Piriformissyndrom er et klassisk eksempel</li>
-            <li><strong>Dekondisjonering:</strong> Smerteunngåelse fører til svakere muskler som lettere overbelastes</li>
-          </ul>
-          <p><strong>I disse tilfellene må begge komponenter behandles for full bedring.</strong></p>
-
-          <h2>Behandlingsforskjeller</h2>
-
-          <h3>Ved Muskelsmerte</h3>
-          <ul>
-            <li>Blotvevbehandling og massasje</li>
-            <li>Triggerpunktbehandling</li>
-            <li>Toying og mobilisering</li>
-            <li>Varme</li>
-            <li>Gradvis styrketrening</li>
-            <li>Ergonomiske tilpasninger</li>
-          </ul>
-
-          <h3>Ved Nervesmerte</h3>
-          <ul>
-            <li>Leddmanipulasjon/mobilisering for å avlaste nerven</li>
-            <li>Nervemobilisering (forsiktig "flossing")</li>
-            <li>Behandle underliggende årsak (prolaps, stenose)</li>
-            <li>Avlastning i akuttfasen</li>
-            <li>Gradvis eksponering nær nerven roer seg</li>
-          </ul>
-
-          <!-- Warning Box -->
-          <div class="warning-box" style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left: 4px solid #dc2626; padding: 20px; margin: 30px 0; border-radius: 8px;">
-            <h3 style="color: #dc2626; margin-top: 0;">Røde flagg - Søk Hjelp Raskt</h3>
-            <p>Oppsøk lege eller legevakt dersom du opplever:</p>
-            <ul style="margin-bottom: 0;">
-              <li><strong>Cauda equina-symptomer:</strong> Nummenhet rundt sete/kjonnsorgan, problemer med vannlating/avforing</li>
-              <li><strong>Progressiv svakhet:</strong> Tiltagende kraftsvekkelse i benet</li>
-              <li><strong>Fallende fot:</strong> Vansker med å løfte foten</li>
-              <li><strong>Bilateral utstraling:</strong> Nervesymptomer i begge ben samtidig</li>
-              <li><strong>Feber kombinert med ryggsmerte:</strong> Kan tyde på infeksjon</li>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
+            alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
+        <div class="header__navigation">
+          <div class="language-toggle" role="group" aria-label="Sprakvalg">
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
+            <div class="language-toggle__slider"></div>
+          </div>
+          <button type="button" class="icon-menu" aria-label="Apne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="../index.html" class="menu__link">Hjem</a></li>
+              <li class="menu__item"><a href="../about.html" class="menu__link">Om meg</a></li>
+              <li class="menu__item"><a href="../services.html" class="menu__link">Tjenester</a></li>
+              <li class="menu__item"><a href="../plager.html" class="menu__link">Plager</a></li>
+              <li class="menu__item"><a href="../priser.html" class="menu__link">Priser</a></li>
+              <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+              <li class="menu__item"><a href="../contact.html" class="menu__link">Kontakt</a></li>
+              <li class="menu__item"><a href="../blogg/index.html" class="menu__link">Blogg</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
             </ul>
           </div>
-
-          <h2>Prognose</h2>
-
-          <h3>Muskelsmerte</h3>
-          <p>Generelt god prognose. De fleste triggerpunkter og muskelspenninger responderer godt på behandling innen 2-6 uker. Kroniske tilfeller kan ta lenger, men bedring er forventet med riktig tilnærming.</p>
-
-          <h3>Nervesmerte</h3>
-          <p>Varierer mer avhengig av årsaken:</p>
-          <ul>
-            <li><strong>Skiveprolaps:</strong> 80-90% blir bra uten kirurgi innen 6-12 uker</li>
-            <li><strong>Stenose:</strong> Ofte svingende forløp, trenger aktiv handtering</li>
-            <li><strong>Piriformissyndrom:</strong> God prognose med riktig behandling</li>
-          </ul>
-
-          <!-- FAQ Section -->
-          <div class="faq-section" style="background: #f8fafc; padding: 25px; border-radius: 12px; margin: 30px 0;">
-            <h2 style="margin-top: 0;">Ofte Stilte Spørsmål</h2>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Kan muskelsmerte gi utstraling til benet?</h4>
-              <p>Ja! Triggerpunkter i glutealmuskulaturen kan gi referert smerte som stråler helt ned til leggen, og kan lett forveksles med isjias. Forskjellen er at muskelreferert smerte ikke følger et spesifikt dermatomalt mønster og gir sjelden nummenhet eller svakhet.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Hvorfor har jeg nummenhet hvis det "bare" er en muskel?</h4>
-              <p>Stram muskulatur kan faktisk komprimere nerver lokalt. Piriformissyndrom er et klassisk eksempel der piriformismuskelen klemmer på isjiasnerven. Da har du reelt sett begge deler - en muskel som forårsaker nerveirritasjon.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Kan nervesmerte og muskelsmerte oppstå samtidig?</h4>
-              <p>Absolutt, og det er faktisk ganske vanlig. Nerveirritasjon fører ofte til sekundær muskelspenning fordi kroppen prøver å "beskytte" området. Likeledes kan kronisk muskelspenning irritere nærliggende nerver. Behandlingen må ofte adressere begge komponenter.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Er varme eller kulde best?</h4>
-              <p><strong>Muskelsmerte:</strong> Varme er som regel best - øker blodsirkulasjon og løsner stramme muskler.<br>
-              <strong>Nervesmerte:</strong> Kulde kan hjelpe i akuttfasen for å dempe inflammasjon, men mange foretrekker varme også her. Prov deg frem.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Når bør jeg ta bildediagnostikk?</h4>
-              <p>MR er sjelden nødvendig de første 4-6 ukene med mindre det er røde flagg. Bildediagnostikk er mest relevant ved nervesmerte som ikke responderer på behandling, eller ved mistanke om alvorlig underliggende patologi. Les mer i var artikkel om <a href="mr-bildediagnostikk-ryggsmerte.html">bildediagnostikk ved ryggsmerte</a>.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Kan kiropraktor behandle begge typer?</h4>
-              <p>Ja. Kiropraktorer er trent i å differensiere mellom ulike smertetyper og tilpasser behandlingen deretter. Ved muskelsmerte brukes blotvevarbeid og triggerpunktbehandling, ved nervesmerte fokuseres det på å avlaste nerven gjennom leddbehandling og spesifikke øvelser.</p>
-            </div>
-          </div>
-
-          <!-- Sources Section -->
-          <div class="sources-section" style="background: #f1f5f9; padding: 20px; border-radius: 8px; margin: 30px 0;">
-            <h3 style="margin-top: 0;">Kilder</h3>
-            <ol style="font-size: 0.9rem; margin-bottom: 0;">
-              <li>Travell & Simons' Myofascial Pain and Dysfunction: The Trigger Point Manual (2019)</li>
-              <li>Bogduk N. Clinical Anatomy of the Lumbar Spine and Sacrum, 5th ed. (2012)</li>
-              <li>Fishman LM. Piriformis syndrome: diagnosis, treatment, and outcome. Arch Phys Med Rehabil. 2002</li>
-              <li>Nijs J. et al. Nociceptive, neuropathic, or central sensitization pain in patients with knee osteoarthritis. Clin J Pain. 2014</li>
-              <li>Konstantinou K, Dunn KM. Sciatica: review of epidemiological studies and prevalence estimates. Spine. 2008</li>
-            </ol>
-          </div>
-
-          <div class="blog-post__cta-box">
-            <h2>Usikker på Hva Smertene Skyldes?</h2>
-            <p>En grundig undersøkelse kan avdekke om det er muskel, nerve, eller en kombinasjon som gir plagene dine. Kiropraktor Mads Finstad tilbyr 45-minutters førstekonsultasjon.</p>
-            <p><strong>Priser:</strong> Nytt problem 1 140 kr | Oppfølg 795 kr</p>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary" target="_blank" rel="noopener">Bestill time</a>
-          </div>
-
-          <h2>Relaterte artikler</h2>
-          <ul>
-            <li><a href="piriformissyndrom-falsk-isjias.html">Piriformissyndrom - Den "falske" isjiassen</a></li>
-            <li><a href="isjias-prolaps-hekseskudd-forskjell.html">Isjias, prolaps eller hekseskudd? - Slik kjenner du forskjellen</a></li>
-            <li><a href="akutt-ryggsmerte-selvhjelp.html">Akutt ryggsmerte - Selvhjelp og tidlig behandling</a></li>
-            <li><a href="../plager/korsrygg/isjias.html">Alt om isjias - Komplett oversikt</a></li>
-          </ul>
         </div>
       </div>
-    </article>
-  </main>
+    </header>
 
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <img src="../images/Final Transparent Logo.webp" alt="TheBackROM logo" class="footer__logo" width="60" height="60" loading="lazy" />
-          <p>TheBackROM - Din kiropraktor på Majorstua</p>
+    <main class="page" id="main">
+      <!-- Hero Section -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <span class="blog-post__category">Korsrygg</span>
+          <h1>Muskelsmerte vs. Nervesmerte - Den Komplette Guiden</h1>
+          <p class="hub-hero__subtitle">Kiropraktor Mads Finstad, Majorstua</p>
+          <div class="blog-post__meta">
+            <time class="blog-post__date" datetime="2026-01-20">20. januar 2026</time>
+            <span class="blog-post__author">Mads Finstad</span>
+          </div>
         </div>
-        <div class="footer__contact">
-          <h3>Kontakt</h3>
-          <p>Sorgenfrigata 11, 0365 Oslo</p>
-          <p>Tlf: <a href="tel:+4740178178">401 78 178</a></p>
+      </section>
+
+      <div class="hub-wrapper">
+        <article class="page__blog-post blog-post hub-main">
+          <div class="blog-post__container">
+            <div class="blog-post__content">
+
+              <!-- Hub Intro Section -->
+              <section class="hub-intro">
+                <div class="intro-text">
+                  <p>Mange pasienter kommer til klinikken og beskriver smertene sine som "isjias" eller "muskelspenning" - men virkeligheten er ofte mer nyansert. A forsta om smertene primert kommer fra muskler eller nerver er kritisk for a fa riktig behandling.</p>
+                </div>
+
+                <div class="premium-summary-card">
+                  <h3>Kort oppsummert</h3>
+                  <ul>
+                    <li><strong>Muskelsmerte:</strong> Verkende, dyp, lokal - bedres ofte av varme og massasje</li>
+                    <li><strong>Nervesmerte:</strong> Skarp, brennende, straler langs nervebanen - nummenhet vanlig</li>
+                    <li><strong>Triggerpunkter</strong> kan gi referert smerte som ligner isjias</li>
+                    <li><strong>Behandlingen er fundamentalt forskjellig</strong> for de to smertetypene</li>
+                    <li><strong>80-90%</strong> med skiveprolaps blir bra uten kirurgi innen 6-12 uker</li>
+                  </ul>
+                </div>
+
+                <div class="red-flag-alert">
+                  <h4>Rode flagg - Sok hjelp raskt</h4>
+                  <p>Ved nummenhet rundt sete/kjonnsorganer, problemer med vannlating, progressiv svakhet eller bilateral utstraling - kontakt lege umiddelbart.</p>
+                  <a href="#s6">Les mer om rode flagg</a>
+                </div>
+
+                <div class="stat-grid">
+                  <div class="stat-item">
+                    <div class="stat-number">80-90%</div>
+                    <div class="stat-label">Skiveprolaps bra uten kirurgi</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">2-6 uker</div>
+                    <div class="stat-label">Typisk bedring muskelsmerte</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">6-12 uker</div>
+                    <div class="stat-label">Nervesmerte naturlig forlop</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">30%</div>
+                    <div class="stat-label">Har elementer av begge</div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- SECTION 1: Hvorfor viktig a skille -->
+              <section class="hub-section" id="s1">
+                <div class="section-header">
+                  <span class="section-number">1</span>
+                  <h2>Hvorfor er det viktig a skille mellom dem?</h2>
+                </div>
+
+                <div class="info-box">
+                  <h4>Derfor ma du vite forskjellen</h4>
+                  <ul>
+                    <li><strong>Behandlingen er fundamentalt forskjellig</strong></li>
+                    <li><strong>Prognosen varierer</strong></li>
+                    <li><strong>Selvhjelpsstrategiene er ulike</strong></li>
+                    <li><strong>Rode flagg er forskjellige</strong></li>
+                  </ul>
+                </div>
+
+                <p>En pasient med triggerpunkt i gluteus minimus kan ha smerter som straler helt ned til leggen - akkurat som isjias. Men behandlingen er helt annerledes!</p>
+              </section>
+
+              <!-- SECTION 2: Muskelsmerte -->
+              <section class="hub-section" id="s2">
+                <div class="section-header">
+                  <span class="section-number">2</span>
+                  <h2>Muskelsmerte (Myalgi) - Kjennetegn</h2>
+                </div>
+
+                <div class="condition-card">
+                  <h4>Hvordan foles muskelsmerte?</h4>
+                  <ul>
+                    <li><strong>Verkende, dyp kvalitet:</strong> Ofte beskrevet som "molende" eller "tung"</li>
+                    <li><strong>Stivhet:</strong> Spesielt etter hvile eller om morgenen</li>
+                    <li><strong>Omhet ved trykk:</strong> Du kan ofte peke pa et omt punkt</li>
+                    <li><strong>Lokal:</strong> Smerten holder seg gjerne til muskelens omrade</li>
+                    <li><strong>Bevegelsesrelatert:</strong> Verre nar muskelen brukes eller strekkes</li>
+                  </ul>
+                </div>
+
+                <h3>Vanlige arsaker til muskelsmerte</h3>
+                <ol>
+                  <li><strong>Overbelastning:</strong> For mye, for fort, for lenge</li>
+                  <li><strong>Triggerpunkter:</strong> Hypersensitive knuter i muskelfibrene</li>
+                  <li><strong>Muskelstrekk:</strong> Akutt skade ved plutselig bevegelse</li>
+                  <li><strong>Statisk belastning:</strong> Langvarig stillesittende arbeid</li>
+                  <li><strong>Stress og spenning:</strong> Kronisk muskelspenning</li>
+                  <li><strong>Dekondisjonering:</strong> Svak muskulatur som lett overbelastes</li>
+                </ol>
+
+                <div class="info-box">
+                  <h4>Triggerpunkter - Den store imitatoren</h4>
+                  <p>Triggerpunkter fortjener spesiell oppmerksomhet fordi de kan gi referert smerte som ligner nervesmerte:</p>
+                  <ul>
+                    <li><strong>Gluteus minimus:</strong> Kan gi smerte ned hele baksiden av benet - nesten identisk med isjias!</li>
+                    <li><strong>Quadratus lumborum:</strong> Refererer til hofte, sete og lyske</li>
+                    <li><strong>Piriformis:</strong> Kan komprimere isjiasnerven og gi ekte nervesmerte</li>
+                    <li><strong>Iliopsoas:</strong> Gir smerte i lysken og nedre rygg</li>
+                  </ul>
+                </div>
+              </section>
+
+              <!-- SECTION 3: Nervesmerte -->
+              <section class="hub-section" id="s3">
+                <div class="section-header">
+                  <span class="section-number">3</span>
+                  <h2>Nervesmerte (Nevropati/Radikulopati) - Kjennetegn</h2>
+                </div>
+
+                <div class="condition-card">
+                  <h4>Hvordan foles nervesmerte?</h4>
+                  <ul>
+                    <li><strong>Skarp, brennende kvalitet:</strong> Ofte beskrevet som "elektrisk" eller "stikkende"</li>
+                    <li><strong>Utstraling:</strong> Folger nervens bane nedover armen eller benet</li>
+                    <li><strong>Nummenhet:</strong> Nedsatt folelse i huden langs nervens forsyningsomrade</li>
+                    <li><strong>Prikking/mauring:</strong> Parestesier er typisk</li>
+                    <li><strong>Svakhet:</strong> Nedsatt kraft i spesifikke muskler</li>
+                  </ul>
+                </div>
+
+                <h3>Typisk utstraling ved isjias</h3>
+                <div class="treatment-box">
+                  <h4>Nerverotenes utbredelse</h4>
+                  <ul>
+                    <li><strong>L4-nerverot:</strong> Fremside lar - innside legg</li>
+                    <li><strong>L5-nerverot:</strong> Utside lar og legg - storeta</li>
+                    <li><strong>S1-nerverot:</strong> Bakside lar og legg - fotblad og lilleta</li>
+                  </ul>
+                </div>
+
+                <h3>Vanlige arsaker til nervesmerte</h3>
+                <ol>
+                  <li><strong>Skiveprolaps:</strong> Skivemateriale som presser pa nerveroten</li>
+                  <li><strong>Spinal stenose:</strong> Trang ryggkanal, ofte aldersrelatert</li>
+                  <li><strong>Foraminal stenose:</strong> Tranghet der nerven forlater ryggraden</li>
+                  <li><strong>Piriformissyndrom:</strong> Piriformismuskelen klemmer isjiasnerven</li>
+                  <li><strong>Spondylolistese:</strong> En virvel har glidd frem</li>
+                </ol>
+              </section>
+
+              <!-- SECTION 4: Sammenligning -->
+              <section class="hub-section" id="s4">
+                <div class="section-header">
+                  <span class="section-number">4</span>
+                  <h2>Sammenligning: Muskel vs. Nerve</h2>
+                </div>
+
+                <table class="comparison-table">
+                  <thead>
+                    <tr>
+                      <th>Egenskap</th>
+                      <th>Muskelsmerte</th>
+                      <th>Nervesmerte</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Karakter</td>
+                      <td>Verkende, molende, stiv</td>
+                      <td>Skarp, brennende, elektrisk</td>
+                    </tr>
+                    <tr>
+                      <td>Lokalisering</td>
+                      <td>Lokal, folger muskelens omrade</td>
+                      <td>Straler langs nervebanen</td>
+                    </tr>
+                    <tr>
+                      <td>Nummenhet</td>
+                      <td>Sjelden</td>
+                      <td>Vanlig, folger dermatom</td>
+                    </tr>
+                    <tr>
+                      <td>Svakhet</td>
+                      <td>Ved bruk av muskelen</td>
+                      <td>I spesifikke myotomer</td>
+                    </tr>
+                    <tr>
+                      <td>Forverret av</td>
+                      <td>Muskelbruk, trykk</td>
+                      <td>Nervestrekk, hosting, nysing</td>
+                    </tr>
+                    <tr>
+                      <td>Bedret av</td>
+                      <td>Varme, lett bevegelse, massasje</td>
+                      <td>Avlastning av nerven</td>
+                    </tr>
+                    <tr>
+                      <td>Reflekser</td>
+                      <td>Normale</td>
+                      <td>Kan vare nedsatte</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+
+              <!-- SECTION 5: Selvtester -->
+              <section class="hub-section" id="s5">
+                <div class="section-header">
+                  <span class="section-number">5</span>
+                  <h2>Selvtester du kan prove hjemme</h2>
+                </div>
+
+                <div class="condition-card">
+                  <h4>1. Slump-test (Tester nerveirritasjon)</h4>
+                  <ol>
+                    <li>Sitt pa en stol med bena hengende</li>
+                    <li>Krok ryggen og boy hodet fremover (som en "slump")</li>
+                    <li>Strekk ut ett bein mens du boyer foten oppover</li>
+                    <li>Loft hodet og se om smerten letter</li>
+                  </ol>
+                  <p><strong>Tolkning:</strong> Hvis du far smerter/prikking nedover benet som letter nar du lofter hodet, tyder det pa nerveirritasjon.</p>
+                </div>
+
+                <div class="condition-card">
+                  <h4>2. Straight Leg Raise (SLR)</h4>
+                  <ol>
+                    <li>Ligg flatt pa ryggen</li>
+                    <li>Hold benet helt strakt</li>
+                    <li>Loft benet sakte oppover</li>
+                  </ol>
+                  <p><strong>Tolkning:</strong> Smerter som straler nedover baksiden av benet ved 30-70 grader elevasjon tyder pa nerveirritasjon.</p>
+                </div>
+
+                <div class="condition-card">
+                  <h4>3. Triggerpunkt-palpasjon</h4>
+                  <ol>
+                    <li>Trykk pa omme punkter i muskulaturen</li>
+                    <li>Hold trykket i 10-15 sekunder</li>
+                    <li>Observer om smerten "straler ut" til andre omrader</li>
+                  </ol>
+                  <p><strong>Tolkning:</strong> Referert smerte fra triggerpunkter kan ligne nervesmerte, men forsvinner nar trykket slippes.</p>
+                </div>
+              </section>
+
+              <!-- SECTION 6: Rode flagg -->
+              <section class="hub-section" id="s6">
+                <div class="section-header">
+                  <span class="section-number">6</span>
+                  <h2>Rode flagg - Sok hjelp raskt</h2>
+                </div>
+
+                <div class="red-flag-box">
+                  <h3>Oppseok lege eller legevakt ved:</h3>
+                  <ul>
+                    <li><strong>Cauda equina-symptomer:</strong> Nummenhet rundt sete/kjonnsorganer, problemer med vannlating/avforing</li>
+                    <li><strong>Progressiv svakhet:</strong> Tiltagende kraftsvekkelse i benet</li>
+                    <li><strong>Fallende fot:</strong> Vansker med a lofte foten</li>
+                    <li><strong>Bilateral utstraling:</strong> Nervesymptomer i begge ben samtidig</li>
+                    <li><strong>Feber kombinert med ryggsmerte:</strong> Kan tyde pa infeksjon</li>
+                  </ul>
+                </div>
+              </section>
+
+              <!-- SECTION 7: Behandling -->
+              <section class="hub-section" id="s7">
+                <div class="section-header">
+                  <span class="section-number">7</span>
+                  <h2>Behandlingsforskjeller</h2>
+                </div>
+
+                <div class="treatment-box">
+                  <h4>Ved muskelsmerte</h4>
+                  <ul>
+                    <li>Blotvevbehandling og massasje</li>
+                    <li>Triggerpunktbehandling</li>
+                    <li>Toying og mobilisering</li>
+                    <li>Varme</li>
+                    <li>Gradvis styrketrening</li>
+                    <li>Ergonomiske tilpasninger</li>
+                  </ul>
+                </div>
+
+                <div class="treatment-box">
+                  <h4>Ved nervesmerte</h4>
+                  <ul>
+                    <li>Leddmanipulasjon/mobilisering for a avlaste nerven</li>
+                    <li>Nervemobilisering (forsiktig "flossing")</li>
+                    <li>Behandle underliggende arsak (prolaps, stenose)</li>
+                    <li>Avlastning i akuttfasen</li>
+                    <li>Gradvis eksponering nar nerven roer seg</li>
+                  </ul>
+                </div>
+
+                <p><strong>Ofte har pasienter elementer av begge smertetypene</strong> - nerveirritasjon gir sekundar muskelspenning, og muskelspenning kan irritere nerver. I disse tilfellene ma begge komponenter behandles for full bedring.</p>
+              </section>
+
+              <!-- SECTION 8: Prognose -->
+              <section class="hub-section" id="s8">
+                <div class="section-header">
+                  <span class="section-number">8</span>
+                  <h2>Prognose</h2>
+                </div>
+
+                <div class="prognosis-highlight">
+                  <p>De fleste triggerpunkter og muskelspenninger responderer godt pa behandling innen 2-6 uker.</p>
+                </div>
+
+                <h3>Nervesmerte - varierer med arsaken:</h3>
+                <ul>
+                  <li><strong>Skiveprolaps:</strong> 80-90% blir bra uten kirurgi innen 6-12 uker</li>
+                  <li><strong>Stenose:</strong> Ofte svingende forlop, trenger aktiv handtering</li>
+                  <li><strong>Piriformissyndrom:</strong> God prognose med riktig behandling</li>
+                </ul>
+              </section>
+
+              <!-- SECTION 9: FAQ -->
+              <section class="hub-section" id="s9">
+                <div class="section-header">
+                  <span class="section-number">9</span>
+                  <h2>Ofte stilte sporsmal</h2>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Kan muskelsmerte gi utstraling til benet?</h4>
+                  <p>Ja! Triggerpunkter i glutealmuskulaturen kan gi referert smerte som straler helt ned til leggen, og kan lett forveksles med isjias. Forskjellen er at muskelreferert smerte ikke folger et spesifikt dermatomalt monster og gir sjelden nummenhet eller svakhet.</p>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Hvorfor har jeg nummenhet hvis det "bare" er en muskel?</h4>
+                  <p>Stram muskulatur kan faktisk komprimere nerver lokalt. Piriformissyndrom er et klassisk eksempel der piriformismuskelen klemmer pa isjiasnerven. Da har du reelt sett begge deler.</p>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Er varme eller kulde best?</h4>
+                  <p><strong>Muskelsmerte:</strong> Varme er som regel best - oker blodsirkulasjon og losner stramme muskler.<br>
+                  <strong>Nervesmerte:</strong> Kulde kan hjelpe i akuttfasen for a dempe inflammasjon, men mange foretrekker varme ogsa her.</p>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Nar bor jeg ta bildediagnostikk?</h4>
+                  <p>MR er sjelden nodvendig de forste 4-6 ukene med mindre det er rode flagg. Bildediagnostikk er mest relevant ved nervesmerte som ikke responderer pa behandling. Les mer i var artikkel om <a href="mr-bildediagnostikk-ryggsmerte.html">bildediagnostikk ved ryggsmerte</a>.</p>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Kan kiropraktor behandle begge typer?</h4>
+                  <p>Ja. Kiropraktorer er trent i a differensiere mellom ulike smertetyper og tilpasser behandlingen deretter. Ved muskelsmerte brukes blotvevarbeid og triggerpunktbehandling, ved nervesmerte fokuseres det pa a avlaste nerven gjennom leddbehandling og spesifikke ovelser.</p>
+                </div>
+              </section>
+
+              <!-- SECTION 10: CTA -->
+              <section class="hub-section" id="s10">
+                <div class="section-header">
+                  <span class="section-number">10</span>
+                  <h2>Usikker pa hva smertene skyldes?</h2>
+                </div>
+
+                <p>En grundig undersokelse kan avdekke om det er muskel, nerve, eller en kombinasjon som gir plagene dine.</p>
+
+                <div class="hub-cta">
+                  <h3>Book time direkte</h3>
+                  <p>Nytt problem: 1 140 kr (45 min) | Oppfolging: 795 kr (30 min)</p>
+                  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="button" target="_blank" rel="noopener">Bestill time</a>
+                  <p style="margin-top: 16px; font-size: 0.9rem;">Eller ring: <a href="tel:+4793043062" style="color: white;">93 04 30 62</a></p>
+                </div>
+              </section>
+
+              <!-- Related Articles -->
+              <div class="related-box">
+                <h3>Relaterte artikler</h3>
+                <a href="piriformissyndrom-falsk-isjias.html">Piriformissyndrom - Den "falske" isjiassen</a>
+                <a href="isjias-prolaps-hekseskudd-forskjell.html">Isjias, prolaps eller hekseskudd?</a>
+                <a href="akutt-ryggsmerte-selvhjelp.html">Akutt ryggsmerte - Selvhjelp</a>
+                <a href="../plager/korsrygg/isjias.html">Alt om isjias - Komplett oversikt</a>
+              </div>
+
+              <!-- Sources Section -->
+              <div class="sources-section">
+                <h3>Kilder</h3>
+                <p>Travell & Simons' Myofascial Pain and Dysfunction: The Trigger Point Manual (2019)</p>
+                <p>Bogduk N. Clinical Anatomy of the Lumbar Spine and Sacrum, 5th ed. (2012)</p>
+                <p>Fishman LM. Piriformis syndrome: diagnosis, treatment, and outcome. Arch Phys Med Rehabil. 2002</p>
+                <p>Nijs J. et al. Nociceptive, neuropathic, or central sensitization pain. Clin J Pain. 2014</p>
+                <p>Konstantinou K, Dunn KM. Sciatica: review of epidemiological studies. Spine. 2008</p>
+              </div>
+
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+
+              <p style="font-size: 0.85rem; color: #64748b; margin-top: 20px;">Sist oppdatert: Januar 2026</p>
+
+            </div>
+          </div>
+        </article>
+
+        <aside class="hub-sidebar">
+          <div class="hub-conversion-card">
+            <img src="../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
+            <h3>Trenger du hjelp?</h3>
+            <p>Jeg hjelper deg med a finne arsaken og riktig behandling.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+            </div>
+          </div>
+
+          <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
+            <h3>INNHOLD</h3>
+            <ul>
+              <li><a href="#s1">Hvorfor skille mellom dem?</a></li>
+              <li><a href="#s2">Muskelsmerte (Myalgi)</a></li>
+              <li><a href="#s3">Nervesmerte (Radikulopati)</a></li>
+              <li><a href="#s4">Sammenligning</a></li>
+              <li><a href="#s5">Selvtester</a></li>
+              <li><a href="#s6">Rode flagg</a></li>
+              <li><a href="#s7">Behandlingsforskjeller</a></li>
+              <li><a href="#s8">Prognose</a></li>
+              <li><a href="#s9">FAQ</a></li>
+              <li><a href="#s10">Bestill time</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+      <div class="mobile-sticky-cta">
+        <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer">Bestill time</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Left Column -->
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Besok oss pa Facebook">
+              <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Besok TheBackROM pa Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Folg oss pa Instagram">
+              <img src="../images/Media iconer/instagramlogo.png" alt="Folg @chiro_mads pa Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Se vare videoer pa YouTube">
+              <img src="../images/Media iconer/youtube_icon.png" alt="Abonner pa TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Column -->
+        <div class="footer__center">
+          <div class="footer__logo">
+            <img src="../images/logo-footer.webp" alt="Klinikk for alle Kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Ga til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Apningstider</h3>
+            <p>Mandag - Fredag: 08:00 - 19:00</p>
+            <p>Lordag: 10:00 - 16:00</p>
+            <p>Sondag: Stengt</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Kontaktinformasjon</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>E-post: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <p>&copy; 2026 Mads Finstad Kiropraktor. Alle rettigheter reservert.</p>
+        <a href="../personvern.html" class="footer__link--muted">Personvernerklaring</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor - Alle rettigheter reservert</p>
       </div>
-    </div>
-  </footer>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
-     class="mobile-sticky-cta"
-     aria-label="Bestill time hos kiropraktor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Bestill time
-  </a>
+    </footer>
+  </div>
 
   <script src="../js/script.min.js" defer></script>
+  <script src="../js/language-toggle.min.js" defer></script>
+  <script src="../js/modern-enhancements.min.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+      function updateActiveLink() {
+        let currentSection = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 150) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + currentSection) {
+            link.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
   <script src="../js/breadcrumbs.js" defer></script>
 </body>
 </html>
-
-

@@ -8,18 +8,17 @@
   <meta name="color-scheme" content="light" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="view-transition" content="same-origin" />
 
   <link rel="manifest" href="../manifest.json" />
   <link rel="apple-touch-icon" href="../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../css/main.min.css?v=20260101_v5" />
   <link rel="icon" type="image/png" href="../images/Final Transparent Logo.png" />
 
-  <title>Trenger du MR for ryggsmerte? Når bildediagnostikk er nødvendig | Kiropraktor Majorstua</title>
+    <title>Trenger du MR for ryggsmerte? Når bildediagnostikk er nødvendig | Kiropraktor Majorstua</title>
   <meta name="description" content="MR-funn som skivebuking og slitasje er vanlige hos friske mennesker. Lar nær bildediagnostikk faktisk er nødvendig. Kiropraktor Majorstua.">
   <meta name="keywords" content="MR rygg, bildediagnostikk, ryggsmerte, kiropraktor Oslo, røntgen rygg, slitasje rygg">
   <meta name="author" content="Mads Finstad">
   <meta name="robots" content="index, follow">
-
   <meta property="og:title" content="Trenger du MR for ryggsmerte? Når bildediagnostikk er nødvendig">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://thebackrom.com/blogg/mr-bildediagnostikk-ryggsmerte.html">
@@ -52,16 +51,65 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-2026-fixes.css"></noscript>
-  <link rel="preload" as="style" href="../css/hub-article.css">
-  <link rel="stylesheet" href="../css/hub-article.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/hub-article.css"></noscript>
+  <!-- Meta Pixel Code -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540166625752174');
+        fbq('track', 'PageView');
+      }, 2000);
+    });
+  </script>
+  <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="style" href="../css/pages-combined.min.css?v=20260118">
+  <link rel="stylesheet" href="../css/pages-combined.min.css?v=20260118">
+  <link rel="preload" as="style" href="../css/font-awesome-minimal.css">
   <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
+
+  <style>
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -69,14 +117,21 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp" alt="Klinikk for alle Kiropraktor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
+            alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
-            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk" aria-pressed="true">NO</button>
-            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk" aria-pressed="false">EN</button>
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
-          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false"><span></span><span></span><span></span></button>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="menu__body">
             <ul class="menu__list">
               <li class="menu__item"><a href="../index.html" class="menu__link">Hjem</a></li>
@@ -86,8 +141,11 @@
               <li class="menu__item"><a href="../priser.html" class="menu__link">Priser</a></li>
               <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
               <li class="menu__item"><a href="../contact.html" class="menu__link">Kontakt</a></li>
-              <li class="menu__item"><a href="index.html" class="menu__link">Blogg</a></li>
-              <li class="menu__item"><a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="actions-header__button">Bestill Time</a></li>
+              <li class="menu__item"><a href="../blogg/index.html" class="menu__link">Blogg</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -95,46 +153,48 @@
     </header>
 
     <main class="page" id="main">
-      <section class="page__main main main_services main_pages">
-        <div class="main__container main__container_pages">
-          <h1 class="main__title">Trenger du MR for ryggsmerte?</h1>
-          <div class="main__text main__text_pages">Når bildediagnostikk er nødvendig - og nær den gjør mer skade enn nytte</div>
+      <!-- Hero Section -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <span class="blog-post__category">Korsrygg</span>
+          <h1>Trenger du MR for ryggsmerte?</h1>
+          <p class="hub-hero__subtitle">Når bildediagnostikk er nødvendig - og nær den gjør mer skade enn nytte</p>
+          <div class="blog-post__meta">
+            <time class="blog-post__date" datetime="2025-01-15">15. januar 2025</time>
+            <span class="blog-post__author">Mads Finstad</span>
+          </div>
         </div>
       </section>
 
-      <section class="page__blog-post blog-post">
-        <div class="blog-post__container">
-          <div class="blog-post__meta">
-            <span class="blog-post__date">15. januar 2025</span>
-            <span class="blog-post__author">Mads Finstad</span>
-            <span class="blog-post__category">Korsrygg</span>
-          </div>
-
-          <div class="blog-post__content">
-
-            <figure class="article-featured-image">
+      <div class="hub-wrapper">
+        <article class="page__blog-post blog-post hub-main">
+          <div class="blog-post__container">
+            <div class="blog-post__content">
+              <figure class="article-featured-image">
               <img src="../images/plager korsryggsmerter/Smart Approach to Back Pain MRIs.webp"
                    alt="Smart tilnærming til MR ved ryggsmerter"
                    width="1200" height="675" loading="eager" />
             </figure>
 
-            <div class="highlight-box" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0284c7; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
-              <h3 style="margin-top: 0; color: #0369a1;">TL;DR - Kort oppsummert</h3>
-              <ul style="margin-bottom: 0;">
+            <div class="premium-summary-card">
+              <h3>TL;DR - Kort oppsummert</h3>
+              <ul>
                 <li><strong>Hovedbudskap:</strong> MR-funn som skivebuking og slitasje er vanlige hos friske mennesker uten smerter - og forklarer ofte ikke smertene dine</li>
                 <li><strong>Fakta:</strong> 80% av 50-aringer uten smerter har degenerative forandringer på MR (Brinjikji, 2015)</li>
                 <li><strong>Klinisk undersøkelse:</strong> Ofte viktigere enn bilder for å finne årsaken til smertene</li>
-                <li><strong><a href="../plager/korsrygg/rode-flagg-ryggsmerter.html">Røde flagg</a>:</strong> Akutte nevrologiske symptomer, urinretensjon, uforklart vekttap krever rask utredning</li>
+                <li><strong><a href="../plager/korsryggsmerte.html#rodeflagg">Røde flagg</a>:</strong> Akutte nevrologiske symptomer, urinretensjon, uforklart vekttap krever rask utredning</li>
               </ul>
             </div>
 
+            <img src="../images/infographics/korsrygg/smart-approach-to-back-pain-mris.webp" alt="Infografikk: Smart tilnarming til MR ved ryggsmerte" class="hub-infographic" loading="lazy" width="1200" />
+
             <div class="blog-post__introduction">
-              <h2>"Kan jeg fa en MR?"</h2>
+              <h2 id="kan-jeg-fa-en-mr">"Kan jeg fa en MR?"</h2>
               <p>Det er et spørsmål jeg hører ofte på klinikken. Mange tror at en MR vil gi dem svaret på hvorfor de har vondt i ryggen. Tankegangen er forståelig: moderne teknologi burde vel kunne vise hva som er galt?</p>
               <p>Virkeligheten er mer nyansert. Internasjonal forskning de siste 10-15 årene har snudd opp ned på hvordan man tenker om bildediagnostikk ved ryggsmerte. Det som en gang virket som apenbar god medisin - å ta et bilde for å se hva som er galt - viser seg ofte å gjøre mer skade enn nytte.</p>
             </div>
 
-            <h2>MR-funn er vanlige hos friske mennesker</h2>
+            <h2 id="mr-funn-er-vanlige-hos-friske-mennesker">MR-funn er vanlige hos friske mennesker</h2>
             <p>Her kommer kanskje den viktigste innsikten: <strong>det meste av det jeg ser på MR er helt normalt</strong> - selv om det høres skremmende ut.</p>
             <p>En systematisk oversiktsartikkel fra 2015 (Brinjikji og medarbeidere, publisert i American Journal of Neuroradiology) gjennomgikk 33 studier med over 3100 personer uten ryggsmerte. Resultatene er oppsiktsekkende:</p>
 
@@ -159,7 +219,7 @@
             <p>Med andre ord: innen du fyller 50, har nesten 7 av 10 degenerative forandringer på MR - <strong>uten å ha smerter overhodet</strong>. Ved 80 år har nesten alle det.</p>
             <p>Disse funnene har blitt beskrevet som <em>"gratt har på innsiden"</em> - synlige forandringer som representerer aldring, ikke sykdom.</p>
 
-            <h2>Hvorfor kan MR faktisk gjøre vondt verre?</h2>
+            <h2 id="hvorfor-kan-mr-faktisk-gjore-vondt-verre">Hvorfor kan MR faktisk gjøre vondt verre?</h2>
             <p>Når du får beskjed om at du har "prolaps", "degenerasjon" eller "slitasje" i ryggen, skjer det noe i hodet. Ord har makt. Og i medisinen kaller man dette for <strong>noceboeffekten</strong> - at negative forventninger faktisk forverrer opplevelsen og utfallet.</p>
             <p>En studie fra 2022 (O'Keeffe og medarbeidere) viste at pasienter som fikk beskrivende diagnoser som "skivebuking", "artrose" eller "degenerasjon" opplevde:</p>
             <ul>
@@ -174,7 +234,7 @@
               <li>høyere smerteskar ved ettarskontroll - til tross for mer behandling</li>
             </ul>
 
-            <h2>Hva sier retningslinjene?</h2>
+            <h2 id="hva-sier-retningslinjene">Hva sier retningslinjene?</h2>
             <p>Alle store internasjonale fagmiljoer er samstemte: <strong>rutinemessig bildediagnostikk ved uspesifikk ryggsmerte anbefales ikke.</strong></p>
             <ul>
               <li><strong>American College of Physicians (2011):</strong> "Klinikere bør ikke rutinemessig rekvirere bildediagnostikk hos pasienter med uspesifikk <a href="../plager/korsryggsmerte.html">korsryggsmerte</a>"</li>
@@ -183,11 +243,11 @@
               <li><strong>Norske Helsedirektoratet:</strong> Anbefaler mot bildediagnostikk ved akutt og subakutt korsryggsmerte</li>
             </ul>
 
-            <h2>Når ER bildediagnostikk nødvendig?</h2>
+            <h2 id="nar-er-bildediagnostikk-nodvendig">Når ER bildediagnostikk nødvendig?</h2>
             <p>Alt det ovennevnte betyr ikke at MR aldri er nyttig. Det finnes klare situasjoner hvor rask utredning er helt avgjørende.</p>
 
-            <div class="warning-section" style="background: #fef2f2; border: 2px solid #ef4444; border-radius: 8px; padding: 20px; margin: 20px 0;">
-              <h3 style="color: #dc2626; margin-top: 0;">Røde flagg som krever rask utredning - Søk lege/legevakt umiddelbart ved:</h3>
+            <div class="insight-card warning">
+              <h3>Røde flagg som krever rask utredning - Søk lege/legevakt umiddelbart ved:</h3>
               <p><strong>Cauda equina-syndrom:</strong></p>
               <ul>
                 <li>Nummenhet i "seteområdet" (sadelbedovelse)</li>
@@ -207,7 +267,7 @@
               <li>Mistanke om spesifikk årsak som krever annen behandling</li>
             </ul>
 
-            <h2>Klinisk undersøkelse er ofte viktigere enn bilder</h2>
+            <h2 id="klinisk-undersokelse-er-ofte-viktigere-enn-bilder">Klinisk undersøkelse er ofte viktigere enn bilder</h2>
             <p>En grundig klinisk undersøkelse kan gi svært mye informasjon. Ved å teste bevegelse, styrke, reflekser og folsomhet kan en erfaren behandler ofte:</p>
             <ul>
               <li>Utelukke alvorlige årsaker</li>
@@ -217,7 +277,7 @@
             </ul>
             <p>Hos kiropraktor får du en systematisk gjennomgang av hele bevegelsesapparatet. Dette tar typisk 45 minutter ved første konsultasjon, og gir et godt grunnlag for å vurdere om jegdere utredning er nødvendig.</p>
 
-            <h2>Hva kan du gjøre i stedet for å ta MR?</h2>
+            <h2 id="hva-kan-du-gjore-i-stedet-for-a-ta-mr">Hva kan du gjøre i stedet for å ta MR?</h2>
             <p>For de aller fleste med ryggsmerte - over 90% - er årsaken uspesifikk. Det betyr at det ikke er noen farlig eller spesifikk sykdom, men heller muskel- og leddrelaterte plager som responderer godt på:</p>
             <ul>
               <li><strong>Tidlig behandling:</strong> Akutte ryggsmerter bør ikke "ventes ut" - tidlig intervensjon gir ofte raskere bedring</li>
@@ -226,24 +286,24 @@
               <li><strong>Øvelser:</strong> Individuelt tilpassede øvelser for kjernemuskulatur og mobilitet</li>
             </ul>
 
-            <h2>Ofte stilte spørsmål</h2>
+            <h2 id="ofte-stilte-sporsmal">Ofte stilte spørsmål</h2>
 
-            <div class="faq-item" style="margin-bottom: 20px;">
+            <div class="faq-item">
               <h4>Bør jeg ikke sjekke om det er noe galt med en MR?</h4>
               <p>For de fleste med ryggsmerte vil MR vise "funn" som ikke forklarer smertene dine - fordi disse funnene er like vanlige hos friske mennesker. En klinisk undersøkelse gir ofte mer nyttig informasjon.</p>
             </div>
 
-            <div class="faq-item" style="margin-bottom: 20px;">
+            <div class="faq-item">
               <h4>Jeg har hatt vondt lenge - kvalifiserer ikke det til MR?</h4>
               <p>Varighet alene er ikke grunn til bildediagnostikk. Hvis du har hatt plager over 6-8 uker uten bedring til tross for aktiv behandling, og kirurgi eller injeksjon vurderes, kan MR være aktuelt.</p>
             </div>
 
-            <div class="faq-item" style="margin-bottom: 20px;">
+            <div class="faq-item">
               <h4>Hva om MR-en min allerede viser prolaps eller slitasje?</h4>
               <p>Husk at disse funnene er svært vanlige hos smertefrie mennesker. Et funn på MR betyr ikke nødvendigvis at det er årsaken til smertene dine. Behandling bør alltid baseres på den kliniske vurderingen, ikke bare bildene.</p>
             </div>
 
-            <div class="faq-item" style="margin-bottom: 20px;">
+            <div class="faq-item">
               <h4>Kan kiropraktor rekvirere MR?</h4>
               <p>Ja, kiropraktorer i Norge med godkjent tilleggsutdanning kan rekvirere MR og annen bildediagnostikk. Henvisningene dekkes av folketrygden.</p>
             </div>
@@ -254,22 +314,22 @@
                 <li><a href="../plager/korsryggsmerte.html">? Korsryggsmerter - Hovedartikkel</a></li>
                 <li><a href="../plager/korsrygg/skiveprolaps.html">? Skiveprolaps i korsryggen</a></li>
                 <li><a href="../plager/korsrygg/spinal-stenose.html">? Spinal stenose</a></li>
-                <li><a href="../plager/korsrygg/rode-flagg-ryggsmerter.html">? Røde flagg ved ryggsmerter</a></li>
+                <li><a href="../plager/korsryggsmerte.html#rodeflagg">? Røde flagg ved ryggsmerter</a></li>
                 <li><a href="l4-l5-prolaps.html">? L4-L5 Prolaps</a></li>
                 <li><a href="l5-s1-prolaps.html">? L5-S1 Prolaps</a></li>
               </ul>
             </div>
 
-            <div class="cta-box">
+            <div class="hub-cta">
               <h3>Trenger du hjelp med ryggsmerte?</h3>
               <p>Kiropraktor Mads Finstad tilbyr grundig undersøkelse og behandling hos TheBackROM på Majorstua. Du får en individuell vurdering av om bildediagnostikk er nødvendig i din situasjon.</p>
               <p><strong>Priser:</strong> Nytt problem 1 140 kr | Oppfølg 795 kr</p>
               <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="button">Bestill Time</a>
             </div>
 
-            <div class="sources" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
+            <div class="sources-section">
               <h3>Kilder</h3>
-              <ol style="font-size: 14px; color: #6b7280;">
+              <ol>
                 <li>Brinjikji W, et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. AJNR. 2015.</li>
                 <li>Chou R, et al. Diagnostic imaging for low back pain: advice for high-value health care from the ACP. Ann Intern Med. 2011.</li>
                 <li>NICE. Low back pain and sciatica in over 16s (NG59). 2020.</li>
@@ -278,58 +338,137 @@
                 <li>O'Keeffe M, et al. Effect of diagnostic labelling on management intentions. Eur J Pain. 2022.</li>
               </ol>
             </div>
-
+            
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
           </div>
-        </div>
-      </section>
+        </article>
+
+        <aside class="hub-sidebar">
+          <div class="hub-conversion-card">
+            <img src="../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
+            <h3>Trenger du hjelp?</h3>
+            <p>Jeg hjelper deg med å finne årsaken og riktig behandling.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+            </div>
+          </div>
+
+          <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
+            <h3>Innhold</h3>
+            <ul>
+                            <li><a href="#kan-jeg-fa-en-mr">"Kan jeg fa en MR?"</a></li>
+              <li><a href="#mr-funn-er-vanlige-hos-friske-mennesker">MR-funn er vanlige hos friske mennesker</a></li>
+              <li><a href="#hvorfor-kan-mr-faktisk-gjore-vondt-verre">Hvorfor kan MR faktisk gjøre vondt verre?</a></li>
+              <li><a href="#hva-sier-retningslinjene">Hva sier retningslinjene?</a></li>
+              <li><a href="#nar-er-bildediagnostikk-nodvendig">Når ER bildediagnostikk nødvendig?</a></li>
+              <li><a href="#klinisk-undersokelse-er-ofte-viktigere-enn-bilder">Klinisk undersøkelse er ofte viktigere enn bilder</a></li>
+              <li><a href="#hva-kan-du-gjore-i-stedet-for-a-ta-mr">Hva kan du gjøre i stedet for å ta MR?</a></li>
+              <li><a href="#ofte-stilte-sporsmal">Ofte stilte spørsmål</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+      <div class="mobile-sticky-cta">
+        <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer">Bestill time</a>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="footer__container">
+        <!-- Left Column -->
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link"><img loading="lazy" decoding="async" src="../images/Media iconer/facebook_media_social_icon.png" alt="Facebook" /></a>
-            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"><img src="../images/Media iconer/instagramlogo.png" alt="Instagram" /></a>
-            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"><img src="../images/Media iconer/youtube_icon.png" alt="YouTube" loading="lazy" decoding="async"/></a>
-            <a href="../contact.html" class="footer__social-link"><img loading="lazy" decoding="async" src="../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="E-post" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
           </div>
         </div>
+
+        <!-- Center Column -->
         <div class="footer__center">
-          <div class="footer__logo"><a href="../index.html" class="logo"><img src="../images/Home/ryggmassasje-klinikk.png" alt="TheBackROM logo" /></a></div>
+          <div class="footer__logo">
+            <img src="../images/logo-footer.webp" alt="Klinikk for alle Kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
           <div class="back-to-top-wrapper">
-            <p class="back-to-top-text">Tilbake til start</p>
-            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen"><i class="fas fa-arrow-up" aria-hidden="true"></i> Opp</a>
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
           </div>
         </div>
+
+        <!-- Right Column -->
         <div class="footer__right">
-          <div class="footer__hours"><h3>Åpningstider</h3><p>Mandag - Fredag: 08:00 - 19:00</p><p>Lørdag: 10:00 - 16:00</p><p>Søndag: Stengt</p></div>
-          <div class="footer__contact"><h3>Kontaktinformasjon</h3><p>Gardeveien 17<br>0363 Oslo</p><p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p></div>
+          <div class="footer__hours">
+            <h3>Åpningstider</h3>
+            <p>Mandag - Fredag: 08:00 - 19:00</p>
+            <p>Lørdag: 10:00 - 16:00</p>
+            <p>Søndag: Stengt</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Kontaktinformasjon</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>E-post: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <a href="../personvern.html" class="footer__policy">Personvernerklæring</a>
-        <p class="footer__copyright">&copy; 2026 Mads Finstad Kiropraktor - Alle rettigheter reservert</p>
+        <a href="../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
-     class="mobile-sticky-cta"
-     aria-label="Bestill time hos kiropraktor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Bestill time
-  </a>
 
   <script src="../js/script.min.js" defer></script>
-  <script src="../js/modern-enhancements.min.js" defer></script>
   <script src="../js/language-toggle.min.js" defer></script>
+  <script src="../js/modern-enhancements.min.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('h2[id]');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+      function updateActiveLink() {
+        let currentSection = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 150) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + currentSection) {
+            link.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
   <script src="../js/breadcrumbs.js" defer></script>
 </body>
 </html>
-
-

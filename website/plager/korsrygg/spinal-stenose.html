@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
 
   <title>Spinal Stenose - Tranghet i Ryggen | Kiropraktor Majorstua</title>
@@ -27,6 +27,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/korsrygg/spinal-stenose.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/korsrygg/spinal-stenose.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/lower-back/spinal-stenosis.html" />
 
   <!-- MedicalWebPage Schema -->
   <script type="application/ld+json">
@@ -67,10 +69,10 @@
       },
       {
         "@type": "Question",
-        "name": "Hvorfor blir symptomene bedre når jeg setter meg?",
+        "name": "Hvorfor blir symptomene bedre nær jeg setter meg?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Når du bøyer ryggen fremover, utvides ryggkanalen og gir mer plass til nervene. Når du strekker deg bakover, blir kanalen trangere. Dette er grunnen til at mange har lettere for å sykle enn å gå."
+          "text": "Nær du båyer ryggen fremover, utvides ryggkanalen og gir mer plass til nervene. Nær du strekker deg bakover, blir kanalen trangere. Dette er grunnen til at mange har lettere for å sykle enn å gå."
         }
       },
       {
@@ -78,7 +80,7 @@
         "name": "Trenger jeg MR for å få diagnosen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ikke nødvendigvis. Den kliniske undersøkelsen er ofte tilstrekkelig for å stille diagnosen og starte behandling. Husk at MR-funn ofte ikke samsvarer med symptomene."
+          "text": "Ikke nådvendigvis. Den kliniske undersøkelsen er ofte tilstrekkelig for å stille diagnosen og starte behandling. Husk at MR-funn ofte ikke samsvarer med symptomene."
         }
       },
       {
@@ -86,7 +88,7 @@
         "name": "Hvor lenge varer en behandlingsserie?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Vanligvis anbefales 8-12 behandlinger over 6-12 uker som en første prøveperiode. Deretter vurderes behov for vedlikeholdsbehandling eller egentrening."
+          "text": "Vanligvis anbefales 8-12 behandlinger over 6-12 uker som en første pråveperiode. Deretter vurderes behov for vedlikeholdsbehandling eller egentrening."
         }
       },
       {
@@ -94,7 +96,7 @@
         "name": "Kan jeg fortsette å trene med spinal stenose?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutt! Aktivitet er viktig. Sykling, svømming og vanngymnastikk tolereres ofte godt fordi kroppen er i en fremoverlent posisjon som åpner ryggkanalen."
+          "text": "Absolutt! Aktivitet er viktig. Sykling, svømming og vanngymnastikk tolereres ofte godt fordi kroppen er i en fremoverlent posisjon som Åpner ryggkanalen."
         }
       }
     ]
@@ -122,11 +124,7 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
   /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
@@ -455,8 +453,8 @@
       text-align: center;
     }
 
-    .stat-number { font-size: 28px; font-weight: 700; color: var(--hub-primary-dark); display: block; }
-    .stat-label { font-size: 12px; color: #6b7280; margin-top: 4px; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary-dark); display: block; }
+    .stat-label { font-size: 0.75rem; color: #6b7280; margin-top: 4px; }
 
     .condition-card {
       background: #f8fafc;
@@ -654,8 +652,14 @@
       font-size: 14px;
     }
 
-    .mobile-sticky-cta .btn-primary { background: var(--hub-primary); color: var(--hub-dark); }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid var(--hub-primary); color: var(--hub-dark); }
+    .mobile-sticky-cta .btn-primary { background: #F26522; color: var(--hub-dark); }
+    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
   </style>
 </head>
 
@@ -705,7 +709,7 @@
       <section class="hub-hero">
         <div class="hub-hero__container">
           <h1>Spinal Stenose - Tranghet i Ryggen</h1>
-          <p class="hub-hero__subtitle">Årsaker, symptomer, diagnostikk og behandling hos kiropraktor</p>
+          <p class="hub-hero__subtitle">årsaker, symptomer, diagnostikk og behandling hos kiropraktor</p>
         </div>
       </section>
 
@@ -726,9 +730,9 @@
               <div class="intro-text">
                 <p>Spinal stenose betyr at ryggkanalen eller nerveutgangene i ryggen har blitt trangere enn normalt. Ordet "stenose" kommer fra gresk og betyr rett og slett "innsnevring". Tilstanden rammer oftest korsryggen (lumbal stenose), men kan også oppstå i nakken.</p>
 
-                <p>Mange er bekymret når de får denne diagnosen, men her er den gode nyheten: <strong>Flertallet av de som har stenose på MR-bilder har ingen symptomer overhodet</strong>. Og selv blant de med symptomer, klarer de fleste seg godt uten operasjon.</p>
+                <p>Mange er bekymret nær de før denne diagnosen, men her er den gode nyheten: <strong>Flertallet av de som har stenose på MR-bilder har ingen symptomer overhodet</strong>. Og selv blant de med symptomer, klarer de fleste seg godt uten operasjon.</p>
 
-                <p>I denne artikkelen får du vite hva spinal stenose egentlig er, hva som forårsaker det, hvordan det diagnostiseres, og ikke minst - hva som kan gjøres for å hjelpe deg.</p>
+                <p>I denne artikkelen før du vite hva spinal stenose egentlig er, hva som forårsaker det, hvordan det diagnostiseres, og ikke minst - hva som kan gjøres for å hjelpe deg.</p>
               </div>
 
               <aside class="tldr-sidebar">
@@ -747,8 +751,8 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Når må du søke hjelp umiddelbart?</h4>
-              <p>Ved nummenhet i skrittet, problemer med vannlating/avforing, eller økende svakhet i begge bena - ring 113 eller dra til legevakt.</p>
+              <h4>Nær må du søke hjelp umiddelbart?</h4>
+              <p>Ved nummenhet i skrittet, problemer med vannlating/avforing, eller åkende svakhet i begge bena - ring 113 eller dra til legevakt.</p>
               <a href="rode-flagg-ryggsmerter.html">Les mer om røde flagg</a>
             </div>
 
@@ -762,7 +766,7 @@
                 </a>
                 <a href="skiveprolaps.html" class="hub-subnav__btn">
                   <strong>Skiveprolaps</strong>
-                  <small>Når mellomvirvelskiven buler ut</small>
+                  <small>Nær mellomvirvelskiven buler ut</small>
                 </a>
                 <a href="spondylolistese.html" class="hub-subnav__btn">
                   <strong>Spondylolistese</strong>
@@ -770,7 +774,7 @@
                 </a>
                 <a href="rode-flagg-ryggsmerter.html" class="hub-subnav__btn">
                   <strong>Røde flagg</strong>
-                  <small>Når søke hjelp?</small>
+                  <small>Nær søke hjelp?</small>
                 </a>
               </div>
             </nav>
@@ -784,7 +788,7 @@
 
               <p>Spinal stenose er en tilstand der ryggkanalen (der ryggmargen og nervene går) eller nerveutgangene (foramen) blir trangere. Dette kan føre til press på nerver og gi symptomer som smerte, nummenhet eller svakhet i beina.</p>
 
-              <p>Det viktigste å forstå er at stenose på MR-bilder ikke nødvendigvis betyr at du har problemer. Mange mennesker har tranghet i ryggen uten å merke noe som helst.</p>
+              <p>Det viktigste å forstå er at stenose på MR-bilder ikke nådvendigvis betyr at du har problemer. Mange mennesker har tranghet i ryggen uten å merke noe som helst.</p>
 
               <div class="stat-grid">
                 <div class="stat-item">
@@ -807,11 +811,11 @@
               </div>
             </section>
 
-            <!-- SECTION 2: Årsaker -->
+            <!-- SECTION 2: årsaker -->
             <section class="hub-section" id="s2">
               <div class="section-header">
                 <span class="section-number">2</span>
-                <h2>Årsaker og risikofaktorer</h2>
+                <h2>årsaker og risikofaktorer</h2>
               </div>
 
               <p>Spinal stenose skyldes nesten alltid aldersrelaterte forandringer i ryggen. Over 95% av tilfellene er degenerativ stenose.</p>
@@ -852,20 +856,20 @@
                 <h2>Symptomer</h2>
               </div>
 
-              <p>Det klassiske symptomet ved lumbal spinal stenose kalles <strong>nevrogen claudicatio</strong> - et begrep som beskriver det typiske mønsteret mange opplever:</p>
+              <p>Det klassiske symptomet ved lumbal spinal stenose kalles <strong>nevrogen claudicatio</strong> - et begrep som beskriver det typiske månsteret mange opplever:</p>
 
               <ul>
                 <li>Smerter, tyngdefølelse eller nummenhet i ett eller begge bein</li>
-                <li>Symptomene kommer gradvis når du går eller står oppreist</li>
-                <li>Lindring ved å sette deg ned, bøye deg fremover eller lene deg på en handlevogn</li>
+                <li>Symptomene kommer gradvis nær du går eller står oppreist</li>
+                <li>Lindring ved å sette deg ned, båye deg fremover eller lene deg på en handlevogn</li>
                 <li>Ofte bedre å sykle enn å gå (fordi du sitter litt fremoverlent)</li>
               </ul>
 
-              <p>Disse symptomene kan minne om <a href="isjias.html">isjias</a>, men ved stenose er mønsteret typisk at symptomene forverres ved gange og bedres ved hvile i fremoverlent stilling.</p>
+              <p>Disse symptomene kan minne om <a href="isjias.html">isjias</a>, men ved stenose er månsteret typisk at symptomene forverres ved gange og bedres ved hvile i fremoverlent stilling.</p>
 
               <div class="info-box">
                 <h4>Handlevogn-tegnet</h4>
-                <p>Dette er så karakteristisk at det brukes diagnostisk verden over. Mange pasienter forteller at de kan gå mye lenger når de støtter seg på en handlevogn. Dette skyldes at fremoverleaning utvider ryggkanalen og gir mer plass til nervene.</p>
+                <p>Dette er så karakteristisk at det brukes diagnostisk verden over. Mange pasienter forteller at de kan gå mye lenger nær de ståtter seg på en handlevogn. Dette skyldes at fremoverleaning utvider ryggkanalen og gir mer plass til nervene.</p>
               </div>
             </section>
 
@@ -877,10 +881,10 @@
               </div>
 
               <h3>Klinisk undersøkelse</h3>
-              <p>Som kiropraktor gjør jeg en grundig undersøkelse som inkluderer vurdering av gangmønster og holdning, testing av reflekser, kraft og følsomhet i beina, og provokasjon av symptomer ved ulike stillinger.</p>
+              <p>Som kiropraktor gjør jeg en grundig undersøkelse som inkluderer vurdering av gangmånster og holdning, testing av reflekser, kraft og følsomhet i beina, og provokasjon av symptomer ved ulike stillinger.</p>
 
               <h3>Bildediagnostikk - et viktig forbehold</h3>
-              <p>MR er førstevalgundersøkelse når bildediagnostikk er indisert. Men her kommer et svært viktig poeng: <strong>Det er ofte dårlig sammenheng mellom MR-funn og symptomer.</strong></p>
+              <p>MR er førstevalgundersøkelse nær bildediagnostikk er indisert. Men her kommer et svårt viktig poeng: <strong>Det er ofte dørlig sammenheng mellom MR-funn og symptomer.</strong></p>
 
               <div class="warning-box">
                 <h4>MR-funn hos symptomfrie</h4>
@@ -915,7 +919,7 @@
                   <li>Manuell behandling for å bedre leddbevegelighet</li>
                   <li>Fleksjonsdistraksjon som øker plassen i ryggkanalen</li>
                   <li>Myofascielle teknikker</li>
-                  <li>Individuelt tilpasset øvelsesprogram</li>
+                  <li>Individuelt tilpasset åvelsesprogram</li>
                 </ul>
               </div>
 
@@ -934,28 +938,28 @@
               <div class="exercise-box">
                 <h4>Core-stabilisering</h4>
                 <ul>
-                  <li>Øvelser for mage- og ryggmuskulatur</li>
+                  <li>øvelser for mage- og ryggmuskulatur</li>
                   <li>Bekkenbru, planke, fuglen</li>
                   <li>Fokus på kontrollert bevegelse</li>
                 </ul>
               </div>
 
-              <h3>Behandlingsforløp</h3>
-              <p>Basert på tilgjengelig litteratur anbefales vanligvis en prøveperiode på <strong>8-12 behandlinger over 6-12 uker</strong>. Mange opplever første tegn til bedring etter 2-4 uker og betydelig fremgang i funksjon etter 6-12 uker.</p>
+              <h3>Behandlingsforlåp</h3>
+              <p>Basert på tilgjengelig litteratur anbefales vanligvis en pråveperiode på <strong>8-12 behandlinger over 6-12 uker</strong>. Mange opplever første tegn til bedring etter 2-4 uker og betydelig fremgang i funksjon etter 6-12 uker.</p>
             </section>
 
             <!-- SECTION 6: Røde flagg -->
             <section class="hub-section" id="s6">
               <div class="section-header">
                 <span class="section-number">6</span>
-                <h2>Røde flagg - når du må kontakte lege umiddelbart</h2>
+                <h2>Røde flagg - nær du må kontakte lege umiddelbart</h2>
               </div>
 
               <div class="red-flag-box">
                 <h3>AKUTT LEGEVAKT ved følgende symptomer:</h3>
                 <ul>
-                  <li><strong>Plutselig tap av blærekontroll</strong> - kan ikke holde på urinen eller tømme blæren</li>
-                  <li><strong>Nummenhet i skrittet (sadel-anestesi)</strong> - området du sitter på</li>
+                  <li><strong>Plutselig tap av blærekontroll</strong> - kan ikke holde på urinen eller tåmme blæren</li>
+                  <li><strong>Nummenhet i skrittet (sadel-anestesi)</strong> - omrødet du sitter på</li>
                   <li><strong>Tap av kontroll over avforing</strong></li>
                   <li><strong>Raskt tiltagende kraftsvikt i begge bein</strong></li>
                 </ul>
@@ -970,7 +974,7 @@
                 <h2>Prognose - hvordan går det på lang sikt?</h2>
               </div>
 
-              <p>Her har jeg gode nyheter: Den naturlige forløpet ved spinal stenose er ofte gunstigere enn mange tror.</p>
+              <p>Her har jeg gode nyheter: Den naturlige forlåpet ved spinal stenose er ofte gunstigere enn mange tror.</p>
 
               <div class="condition-card">
                 <h4>Uten behandling (JAMA Review 2022)</h4>
@@ -998,23 +1002,23 @@
               </div>
 
               <div class="faq-item">
-                <div class="faq-question">Hvorfor blir symptomene bedre når jeg setter meg?</div>
-                <div class="faq-answer">Når du bøyer ryggen fremover, utvides ryggkanalen og gir mer plass til nervene. Når du strekker deg bakover, blir kanalen trangere. Dette er grunnen til at mange har lettere for å sykle enn å gå.</div>
+                <div class="faq-question">Hvorfor blir symptomene bedre nær jeg setter meg?</div>
+                <div class="faq-answer">Nær du båyer ryggen fremover, utvides ryggkanalen og gir mer plass til nervene. Nær du strekker deg bakover, blir kanalen trangere. Dette er grunnen til at mange har lettere for å sykle enn å gå.</div>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">Trenger jeg MR for å få diagnosen?</div>
-                <div class="faq-answer">Ikke nødvendigvis. Den kliniske undersøkelsen er ofte tilstrekkelig for å stille diagnosen og starte behandling. Husk at MR-funn ofte ikke samsvarer med symptomene.</div>
+                <div class="faq-answer">Ikke nådvendigvis. Den kliniske undersøkelsen er ofte tilstrekkelig for å stille diagnosen og starte behandling. Husk at MR-funn ofte ikke samsvarer med symptomene.</div>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">Hvor lenge varer en behandlingsserie?</div>
-                <div class="faq-answer">Vanligvis anbefales 8-12 behandlinger over 6-12 uker som en første prøveperiode. Deretter vurderes behov for vedlikeholdsbehandling eller egentrening.</div>
+                <div class="faq-answer">Vanligvis anbefales 8-12 behandlinger over 6-12 uker som en første pråveperiode. Deretter vurderes behov for vedlikeholdsbehandling eller egentrening.</div>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">Kan jeg fortsette å trene med spinal stenose?</div>
-                <div class="faq-answer">Absolutt! Aktivitet er viktig. Sykling, svømming og vanngymnastikk tolereres ofte godt fordi kroppen er i en fremoverlent posisjon som åpner ryggkanalen.</div>
+                <div class="faq-answer">Absolutt! Aktivitet er viktig. Sykling, svømming og vanngymnastikk tolereres ofte godt fordi kroppen er i en fremoverlent posisjon som Åpner ryggkanalen.</div>
               </div>
             </section>
 
@@ -1057,7 +1061,11 @@
 
             <p class="updated">Sist oppdatert: Januar 2026</p>
 
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
         </article>
 
         <!-- Sticky sidenav (desktop only) -->
@@ -1075,7 +1083,7 @@
             <div class="hub-toc-card">
               <div class="sidenav-title">Innhold</div>
               <a href="#s1" class="sidenav-link active">1. Hva er spinal stenose?</a>
-              <a href="#s2" class="sidenav-link">2. Årsaker</a>
+              <a href="#s2" class="sidenav-link">2. årsaker</a>
               <a href="#s3" class="sidenav-link">3. Symptomer</a>
               <a href="#s4" class="sidenav-link">4. Diagnostikk</a>
               <a href="#s5" class="sidenav-link">5. Behandling</a>
@@ -1112,7 +1120,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -1156,7 +1164,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

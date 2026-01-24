@@ -15,8 +15,8 @@
   <link rel="manifest" href="../manifest.json" />
   <link rel="apple-touch-icon" href="../images/Final Transparent Logo.png" />
 
-  <!-- Preload Critical Resources -->
-  <link rel="preload" as="style" href="../css/main.min.css" />
+  <!-- Combined CSS - Single file for faster loading -->
+  <link rel="stylesheet" href="../css/pages-combined.min.css?v=20260118">
 
   <link rel="icon" type="image/png" href="../images/Final Transparent Logo.png" />
   <title>Brystryggsmerter å årsaker og Behandling | Kiropraktor Oslo</title>
@@ -39,6 +39,7 @@
   <meta name="twitter:description" content="Alt om brystryggsmerter: årsaker, symptomer, røde flagg og effektiv behandling hos kiropraktor.">
   <meta name="twitter:image" content="https://thebackrom.com/images/plager ryggsmerter/Ryggsmerte.jpg">
   <link rel="canonical" href="https://thebackrom.com/plager/ryggsmerter.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/ryggsmerter.html" />
 
   <!-- Schema.org MedicalWebPage + FAQPage -->
   <script type="application/ld+json">
@@ -162,12 +163,6 @@
       src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
   <!-- End Meta Pixel Code -->
 
-  <link rel="stylesheet" href="../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-2026-fixes.css"></noscript>
-  <link rel="stylesheet" href="../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
@@ -203,7 +198,7 @@
     .section-number{background:var(--hub-primary);color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}
     .intro-text{font-size:1.1rem;line-height:1.8;color:#444;margin-bottom:2rem}
     .intro-text p{margin-bottom:1rem}
-    .hub-featured-image{width:100%;max-width:600px;border-radius:12px;margin:1.5rem 0;box-shadow:0 4px 15px rgba(0,0,0,.1)}
+    .hub-infographic{width:100%;max-width:600px;border-radius:12px;margin:1.5rem 0;box-shadow:0 4px 15px rgba(0,0,0,.1)}
     .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin:2rem 0}
     .stat-box{background:linear-gradient(135deg,var(--hub-primary),var(--hub-dark));color:#fff;padding:1.5rem;border-radius:12px;text-align:center}
     .stat-box .number{font-size:2rem;font-weight:700;display:block}
@@ -253,7 +248,7 @@
     .comparison-card.muscle h4{color:var(--hub-green)}
     .comparison-card ul{margin:0;padding-left:1.2rem}
     .comparison-card li{margin-bottom:.5rem;color:#555;font-size:.95rem}
-    .mobile-sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--hub-primary);padding:1rem;text-align:center;z-index:100;box-shadow:0 -4px 20px rgba(0,0,0,.15)}
+    .mobile-sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#F26522;padding:1rem;text-align:center;z-index:100;box-shadow:0 -4px 20px rgba(0,0,0,.15)}
     .mobile-sticky-cta a{color:#fff;text-decoration:none;font-weight:700;font-size:1.1rem}
     @media(max-width:1024px){
       .hub-wrapper{grid-template-columns:1fr;padding:1rem}
@@ -266,6 +261,12 @@
       .hub-section h2{font-size:1.4rem}
       .section-number{width:32px;height:32px;font-size:.9rem}
     }
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
   </style>
 </head>
 
@@ -329,7 +330,7 @@
               <p>
                 <strong>Brystryggen (thorakalcolumna)</strong> består av 12 virvler (T1-T12) og utgjør den mest stabile delen av ryggsøylen. Til forskjell fra nakke og korsrygg, er brystsryggen festet til ribbebena, noe som gir ekstra ståtte men også kan være en kilde til smerte nær leddene blir dysfunksjonelle.
               </p>
-              <img src="../images/plager ryggsmerter/Ryggsmerte.jpg" alt="Illustrasjon av brystryggsmerter og thorakal anatomi" class="hub-featured-image" loading="lazy" decoding="async" />
+              <img src="../images/plager ryggsmerter/Ryggsmerte.jpg" alt="Illustrasjon av brystryggsmerter og thorakal anatomi" class="hub-infographic" loading="lazy" decoding="async" />
               <p>
                 Brystryggsmerter er vanligere enn mange tror, men får ofte mindre oppmerksomhet enn nakke- og korsryggsmerter. Smertene kan variere fra verkende stivhet mellom skulderbladene til skarpe, stikkende smerter som stråler rundt ribbeina.
               </p>
@@ -454,7 +455,7 @@
             </div>
 
             <div class="condition-card">
-              <h3>Dærlig holdning og ergonomi</h3>
+              <h3>Dårlig holdning og ergonomi</h3>
               <p>Langvarig feilbelastning fra kontorarbeid, mobilbruk eller ensidig aktivitet.</p>
               <ul>
                 <li>Fremoverlent hode og runde skuldre</li>
@@ -705,7 +706,11 @@
               <li><a href="korsryggsmerte.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Korsryggsmerter – Alt du trenger å vite</a></li>
               <li><a href="hodepine.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Hodepine å årsaker og behandling</a></li>
             </ul>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
 
         </article>
 

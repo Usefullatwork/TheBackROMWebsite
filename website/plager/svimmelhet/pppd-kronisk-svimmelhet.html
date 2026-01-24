@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Kronisk Svimmelhet og PPPD - Den Komplette Guiden | Kiropraktor Oslo</title>
 
@@ -27,6 +27,8 @@
   <meta property="og:site_name" content="TheBackROM">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/svimmelhet/pppd-kronisk-svimmelhet.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/svimmelhet/pppd-kronisk-svimmelhet.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/dizziness/pppd-chronic-dizziness.html" />
 
   <script type="application/ld+json">
   {
@@ -69,11 +71,7 @@
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
@@ -107,8 +105,8 @@
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
     .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
     .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
     .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
     .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
@@ -128,7 +126,23 @@
     .sources-section ul { font-size: 0.85rem; color: #64748b; }
     .sources-section li { margin-bottom: 6px; }
     .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -187,7 +201,7 @@
             <div class="intro-text">
               <p><a href="../svimmelhet.html">Svimmelhet</a> som vedvarer i mer enn tre måneder kalles kronisk svimmelhet. En koreansk befolkningsstudie fra 2022 fant at 4,8% av voksne over 40 år opplever slike langvarige plager. Blant de som har en akutt svimmelhetsepisode utvikler rundt 17% kroniske symptomer.</p>
 
-              <p>Kronisk svimmelhet skiller seg fra akutt vertigo på flere måter. Mens akutt vertigo gir intens rotasjonsfølelse som varer sekunder til dager, opplever de fleste med kronisk svimmelhet en vagere følelse - ustøhet, gynging, "tåkete hode" eller en følelse av å være på en båt.</p>
+              <p>Kronisk svimmelhet skiller seg fra akutt vertigo på flere måter. Mens akutt vertigo gir intens rotasjonsfølelse som varer sekunder til dager, opplever de fleste med kronisk svimmelhet en vagere følelse - uståhet, gynging, "tåkete hode" eller en følelse av å være på en bøt.</p>
             </div>
 
             <div class="premium-summary-card">
@@ -218,15 +232,15 @@
                   <span>Svimmelhetsepisoder med migrene</span>
                 </a>
                 <a href="menieres-sykdom.html" class="hub-subnav__card">
-                  <strong>Menières sykdom</strong>
-                  <span>Svimmelhet, hørselstap og øresus</span>
+                  <strong>Meniåres sykdom</strong>
+                  <span>Svimmelhet, hårselstap og åresus</span>
                 </a>
               </div>
             </nav>
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Når må du søke hjelp umiddelbart?</h4>
+              <h4>Nær må du søke hjelp umiddelbart?</h4>
               <p>Ved akutt svimmelhet med hodepine, dobbeltsyn, talevansker eller lammelser - ring 113 eller dra til legevakt.</p>
             </div>
           </section>
@@ -238,9 +252,9 @@
               <h2>Hva er PPPD?</h2>
             </div>
 
-            <p>PPPD står for Persistent Postural-Perceptual Dizziness, på norsk: Persisterende Postural-Perseptuell Svimmelhet. Tilstanden ble formelt definert av Bárány Society i 2017 og er nå inkludert i WHOs internasjonale sykdomsklassifikasjon (ICD-11 kode AB32.0).</p>
+            <p>PPPD står for Persistent Postural-Perceptual Dizziness, på norsk: Persisterende Postural-Perseptuell Svimmelhet. Tilstanden ble formelt definert av Børåny Society i 2017 og er nå inkludert i WHOs internasjonale sykdomsklassifikasjon (ICD-11 kode AB32.0).</p>
 
-            <p>PPPD er en funksjonell lidelse. Det betyr at problemet ikke ligger i selve balanseorganet - øret og nervene fungerer ofte helt normalt ved testing. Problemet ligger i hvordan hjernen prosesserer og reagerer på signalene den mottar. Dette skiller PPPD fra tilstander som <a href="vestibulær-hypofunksjon.html">vestibulær hypofunksjon</a>, der det er målbar skade på balanseorganet.</p>
+            <p>PPPD er en funksjonell lidelse. Det betyr at problemet ikke ligger i selve balanseorganet - året og nervene fungerer ofte helt normalt ved testing. Problemet ligger i hvordan hjernen prosesserer og reagerer på signalene den mottar. Dette skiller PPPD fra tilstander som <a href="vestibulær-hypofunksjon.html">vestibulær hypofunksjon</a>, der det er målbar skade på balanseorganet.</p>
 
             <div class="stat-grid">
               <div class="stat-item">
@@ -258,7 +272,7 @@
             </div>
 
             <div class="warning-box">
-              <h4>Når alle tester er "normale"</h4>
+              <h4>Nær alle tester er "normale"</h4>
               <p>En av de mest frustrerende opplevelsene for pasienter med kronisk svimmelhet er at alle undersøkelser kommer tilbake som "normale". Dette betyr ikke at symptomene er innbilte. Tvert imot: Normale testresultater er nettopp det som kjennetegner den vanligste formen for kronisk svimmelhet - PPPD.</p>
             </div>
           </section>
@@ -267,12 +281,12 @@
           <section class="hub-section" id="s2">
             <div class="section-header">
               <span class="section-number">2</span>
-              <h2>De fem diagnosekriteriene (Bárány Society, 2017)</h2>
+              <h2>De fem diagnosekriteriene (Børåny Society, 2017)</h2>
             </div>
 
             <div class="condition-card">
               <h4>1. Varighet</h4>
-              <p>Svimmelhet, ustøhet eller ikke-roterende vertigo til stede de fleste dager i minst tre måneder</p>
+              <p>Svimmelhet, uståhet eller ikke-roterende vertigo til stede de fleste dager i minst tre måneder</p>
             </div>
 
             <div class="condition-card">
@@ -281,7 +295,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>3. Utløsende hendelse</h4>
+              <h4>3. Utlåsende hendelse</h4>
               <p>Tilstanden startet etter en akutt vestibulær lidelse, annen medisinsk sykdom, eller psykologisk stress</p>
             </div>
 
@@ -311,22 +325,22 @@
 
             <div class="condition-card">
               <h4>Visuell avhengighet</h4>
-              <p>Hjernen stoler ikke lenger på balansesystemet i øret, så den klamrer seg til synet. Derfor blir du svimmel på supermarkedet eller nær du scroller på mobilen. Dette er også vanlig ved <a href="vestibulær-migrene.html">vestibulær migrene</a>.</p>
+              <p>Hjernen stoler ikke lenger på balansesystemet i året, så den klamrer seg til synet. Derfor blir du svimmel på supermarkedet eller nær du scroller på mobilen. Dette er også vanlig ved <a href="vestibulær-migrene.html">vestibulær migrene</a>.</p>
             </div>
 
             <div class="condition-card">
               <h4>Kroppslig stivhet</h4>
-              <p>Du spenner ubevisst muskler i nakke og ben for å "holde deg fast". Dette gir sekundære nakkesmerter og en stiv gange, lignende det man ser ved <a href="nakkesvimmelhet.html">nakkesvimmelhet</a>.</p>
+              <p>Du spenner ubevisst muskler i nakke og ben for å "holde deg fast". Dette gir sekundøre nakkesmerter og en stiv gange, lignende det man ser ved <a href="nakkesvimmelhet.html">nakkesvimmelhet</a>.</p>
             </div>
 
             <div class="condition-card">
               <h4>Angst-loop</h4>
-              <p>Hver gang du kjenner ustøhet, tenker hjernen "Fare!" og skrur opp alarmen enda mer.</p>
+              <p>Hver gang du kjenner uståhet, tenker hjernen "Fare!" og skrur opp alarmen enda mer.</p>
             </div>
 
             <div class="info-box">
               <h4>Hva skjer i hjernen ved PPPD?</h4>
-              <p>Nevroavbildningsstudier har vist at dette ikke er "innbilning" - det er målbare endringer i hjernens funksjon. Redusert aktivitet i den parietoinsulære vestibulære cortex (PIVC), og økt aktivitet i visuelle områder. Den gode nyheten er at hjernen er plastisk - med riktig behandling kan disse mønstrene reverseres.</p>
+              <p>Nevroavbildningsstudier har vist at dette ikke er "innbilning" - det er målbare endringer i hjernens funksjon. Redusert aktivitet i den parietoinsulære vestibulære cortex (PIVC), og økt aktivitet i visuelle omrøder. Den gode nyheten er at hjernen er plastisk - med riktig behandling kan disse månstrene reverseres.</p>
             </div>
           </section>
 
@@ -339,15 +353,15 @@
 
             <h3>Hovedsymptomer:</h3>
             <ul>
-              <li><strong>Ikke-roterende svimmelhet:</strong> Det spinner ikke, men det gynger, svinger eller føles som å være på en båt</li>
+              <li><strong>Ikke-roterende svimmelhet:</strong> Det spinner ikke, men det gynger, svinger eller føles som å være på en bøt</li>
               <li><strong>Hjernetåke ("brain fog"):</strong> Konsentrasjonsvansker, mental tretthet - rapporteres av ca. 81%</li>
               <li><strong>Utmattelse:</strong> Ekstrem tretthet, verst utover ettermiddagen - rapporteres av ca. 85%</li>
-              <li><strong>Visuell overfølsomhet:</strong> Forverring i travle miljøer (kjøpesentre, supermarkeder)</li>
+              <li><strong>Visuell overfølsomhet:</strong> Forverring i travle miljåer (kjøpesentre, supermarkeder)</li>
               <li><strong>Bevegelsesintoleranse:</strong> Symptomer forverres av både aktive og passive bevegelser (bil, buss)</li>
             </ul>
 
             <h3>Psykisk helse og PPPD</h3>
-            <p>60% av PPPD-pasienter har klinisk signifikant angst og 45% har depresjon, men 25% har ingen psykiatrisk tilstand i det hele tatt. Dette understreker at PPPD er en nevrologisk tilstand - ikke "bare angst". Lignende psykiske utfordringer ses også ved andre kroniske svimmelhetslidelser som <a href="menieres-sykdom.html">Menières sykdom</a> og <a href="mdds.html">MdDS</a>.</p>
+            <p>60% av PPPD-pasienter har klinisk signifikant angst og 45% har depresjon, men 25% har ingen psykiatrisk tilstand i det hele tatt. Dette understreker at PPPD er en nevrologisk tilstand - ikke "bare angst". Lignende psykiske utfordringer ses også ved andre kroniske svimmelhetslidelser som <a href="menieres-sykdom.html">Meniåres sykdom</a> og <a href="mdds.html">MdDS</a>.</p>
 
             <div class="red-flag-box">
               <h3>Røde flagg - ring 113 eller oppsøk legevakt ved:</h3>
@@ -356,7 +370,7 @@
                 <li>Dobbeltsyn, synsforstyrrelser eller synsfeltutfall</li>
                 <li>Talevansker eller svelgeproblemer</li>
                 <li>Nummenhet, svakhet eller lammelse i ansikt, arm eller ben</li>
-                <li>Plutselig ensidig hørselstap</li>
+                <li>Plutselig ensidig hårselstap</li>
                 <li>Svimmelhet med brystsmerter eller hjertebank</li>
               </ul>
             </div>
@@ -372,33 +386,33 @@
             <p>Behandlingen hviler på tre pilarer. Nyere forskning viser at kombinasjonen gir best resultat.</p>
 
             <div class="treatment-box">
-              <h4>1. Vestibulær rehabilitering (VRT) - hjørnesteinen</h4>
+              <h4>1. Vestibulær rehabilitering (VRT) - hjårnesteinen</h4>
               <p>En fersk meta-analyse fra 2025 (Li et al., Frontiers in Neurology) viste betydelig bedring: DHI-total forbedret seg med 21,84 poeng.</p>
               <ul>
                 <li><strong>Blikkstabiliseringsøvelser:</strong> Lærer hjernen å stole på vestibulære signaler igjen</li>
                 <li><strong>Tilvenningsøvelser (habituering):</strong> Gradvis, gjentatt eksponering for bevegelser som provoserer symptomer</li>
                 <li><strong>Balansetrening:</strong> Utfordrer balansesystemet for å redusere overkontroll</li>
-                <li><strong>Visuell desensibilisering:</strong> Gradvis eksponering for visuelt "bråkete" miljøer</li>
+                <li><strong>Visuell desensibilisering:</strong> Gradvis eksponering for visuelt "bråkete" miljåer</li>
               </ul>
               <p><strong>Tidsperspektiv:</strong> Forbedring starter ofte etter 6-8 uker. Maksimal effekt kan kreve 3-6 måneder.</p>
             </div>
 
             <div class="condition-card">
               <h4>2. Kognitiv atferdsterapi (CBT)</h4>
-              <p>Fordi frykt-unngåelses-adferden er en del av mekanismen som holder PPPD ved like, er det ofte verdifullt å jobbe med tankemønstrene. En meta-analyse fra 2024 viste at CBT kombinert med annen behandling gir signifikant bedre resultater.</p>
+              <p>Fordi frykt-unngåelses-adferden er en del av mekanismen som holder PPPD ved like, er det ofte verdifullt å jobbe med tankemånstrene. En meta-analyse fra 2024 viste at CBT kombinert med annen behandling gir signifikant bedre resultater.</p>
             </div>
 
             <div class="condition-card">
               <h4>3. Medikamentell behandling (SSRI/SNRI)</h4>
-              <p>Antidepressiva av typen SSRI eller SNRI brukes ved PPPD - ikke primært mot depresjon, men fordi de stabiliserer nervesystemet. En studie fra 2025 viste vedvarende bedring over 3 år.</p>
+              <p>Antidepressiva av typen SSRI eller SNRI brukes ved PPPD - ikke primårt mot depresjon, men fordi de stabiliserer nervesystemet. En studie fra 2025 viste vedvarende bedring over 3 år.</p>
             </div>
           </section>
 
-          <!-- SECTION 6: Øvelser -->
+          <!-- SECTION 6: øvelser -->
           <section class="hub-section" id="s6">
             <div class="section-header">
               <span class="section-number">6</span>
-              <h2>Øvelser du kan gjøre hjemme</h2>
+              <h2>øvelser du kan gjøre hjemme</h2>
             </div>
 
             <div class="condition-card">
@@ -408,15 +422,15 @@
                 <li>Fokuser på målet</li>
                 <li>Beveg hodet sakte fra side til side mens du holder blikket på målet</li>
                 <li>Start med 10 repetisjoner, 3 ganger daglig</li>
-                <li>Øk hastigheten gradvis over uker</li>
+                <li>åk hastigheten gradvis over uker</li>
               </ul>
             </div>
 
             <div class="condition-card">
               <h4>Balanseøvelser</h4>
               <ul>
-                <li><strong>Nivå 1 - Romberg:</strong> Stå med føttene sammen, armene langs siden, hold i 30 sekunder. Progresjon: Åpne øyne - Lukkede øyne - Mykt underlag</li>
-                <li><strong>Nivå 2 - Tandemstående:</strong> Stå med én fot foran den andre (hæl-tå), hold i 30 sekunder på hver side</li>
+                <li><strong>Nivå 1 - Romberg:</strong> Stå med fåttene sammen, armene langs siden, hold i 30 sekunder. Progresjon: Åpne åyne - Lukkede åyne - Mykt underlag</li>
+                <li><strong>Nivå 2 - Tandemstående:</strong> Stå med ån fot foran den andre (høl-tå), hold i 30 sekunder på hver side</li>
                 <li><strong>Nivå 3 - Ettbeins stående:</strong> Stå på ett ben, mål: 30 sekunder på hver side</li>
               </ul>
             </div>
@@ -424,8 +438,8 @@
             <div class="info-box">
               <h4>Viktige prinsipper</h4>
               <ul>
-                <li><strong>Konsistens er nøkkelen:</strong> Daglig øving gir bedre resultater enn intensiv, sporadisk trening</li>
-                <li><strong>Mild symptomprovokasjon er målet:</strong> Øvelsene skal gi mild-moderat svimmelhet som går over innen 15-20 minutter</li>
+                <li><strong>Konsistens er nåkkelen:</strong> Daglig åving gir bedre resultater enn intensiv, sporadisk trening</li>
+                <li><strong>Mild symptomprovokasjon er målet:</strong> åvelsene skal gi mild-moderat svimmelhet som går over innen 15-20 minutter</li>
                 <li><strong>Dokumenter fremgang:</strong> Før dagbok over symptomer og øvelser</li>
               </ul>
             </div>
@@ -474,7 +488,7 @@
             <a href="krystallsyke-bppv.html">Krystallsyke (BPPV)</a>
             <a href="vestibularisnevritt.html">Vestibularisnevritt</a>
             <a href="vestibulær-migrene.html">Vestibulær migrene</a>
-            <a href="menieres-sykdom.html">Menières sykdom</a>
+            <a href="menieres-sykdom.html">Meniåres sykdom</a>
             <a href="vestibulær-hypofunksjon.html">Vestibulær hypofunksjon</a>
             <a href="mdds.html">MdDS</a>
             <a href="nakkesvimmelhet.html">Nakkesvimmelhet</a>
@@ -486,7 +500,11 @@
             <a href="../../tjeneste/svimmelhet/vng-undersøkelse.html">VNG-undersøkelse - Diagnostisk test for svimmelhet</a>
             <a href="../../tjeneste/svimmelhet/vestibular-rehabilitering.html">Vestibulær rehabilitering - Behandling av svimmelhet</a>
             <a href="../../tjeneste/svimmelhet/balansesystemet.html">Balansesystemets anatomi - Forstå hvordan balansen fungerer</a>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
 
           <!-- Disclaimer -->
           <p class="disclaimer">Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon eller opplever røde flagg-symptomer.</p>
@@ -495,7 +513,7 @@
           <section class="sources-section">
             <h3>Kilder</h3>
             <ul>
-              <li>Bárány Society. Diagnostic criteria for persistent postural-perceptual dizziness. J Vestib Res. 2017.</li>
+              <li>Børåny Society. Diagnostic criteria for persistent postural-perceptual dizziness. J Vestib Res. 2017.</li>
               <li>Li et al. Vestibular rehabilitation for PPPD: A meta-analysis. Frontiers in Neurology. 2025.</li>
               <li>Staab JP et al. Persistent Postural-Perceptual Dizziness (PPPD): clinical characteristics and natural history. J Neurol. 2017.</li>
               <li>Koreansk befolkningsstudie om kronisk svimmelhet. 2022.</li>
@@ -528,7 +546,7 @@
               <li><a href="#s3">Alarm-teorien</a></li>
               <li><a href="#s4">Symptomer</a></li>
               <li><a href="#s5">Behandling</a></li>
-              <li><a href="#s6">Øvelser</a></li>
+              <li><a href="#s6">øvelser</a></li>
               <li><a href="#s7">Prognose</a></li>
             </ul>
           </nav>
@@ -559,7 +577,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -603,7 +621,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

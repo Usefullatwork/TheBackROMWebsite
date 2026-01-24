@@ -122,7 +122,7 @@ function initLanguageToggle() {
     languageToggles.forEach(toggle => {
         // Check current page to set initial state
         const currentPath = window.location.pathname;
-        const isEnglishPage = currentPath.includes('-en.html') || currentPath.includes('/en/');
+        const isEnglishPage = currentPath.includes('-en.html') || currentPath.includes('/en/') || currentPath.endsWith('/en');
 
         // Set initial state based on current page
         if (isEnglishPage) {
@@ -141,7 +141,7 @@ function initLanguageToggle() {
                 button.addEventListener('click', function(e) {
                     const targetLang = button.getAttribute('data-lang') || (button.textContent.trim() === 'EN' ? 'en' : 'no');
                     const currentPath = window.location.pathname;
-                    const isCurrentlyEnglish = currentPath.includes('/en/');
+                    const isCurrentlyEnglish = currentPath.includes('/en/') || currentPath.endsWith('/en');
                     let targetUrl;
 
                     // Update visual state first
@@ -216,7 +216,13 @@ function initLanguageToggle() {
                     if (targetLang === 'en' && !isCurrentlyEnglish) {
                         // Switch from Norwegian to English
                         toggle.classList.add('english-active');
-                        const fileName = currentPath.split('/').pop();
+                        let fileName = currentPath.split('/').pop();
+                        // Normalize: handle root URL and missing extensions
+                        if (!fileName || fileName === '') {
+                            fileName = 'index.html';
+                        } else if (!fileName.includes('.')) {
+                            fileName = fileName + '.html';
+                        }
 
                         // Map Norwegian file names to English relative paths
                         const relativePathMappings = {
@@ -263,7 +269,13 @@ function initLanguageToggle() {
                     } else if (targetLang === 'no' && isCurrentlyEnglish) {
                         // Switch from English to Norwegian
                         toggle.classList.remove('english-active');
-                        const fileName = currentPath.split('/').pop();
+                        let fileName = currentPath.split('/').pop();
+                        // Normalize: handle root URL, /en folder, and missing extensions
+                        if (!fileName || fileName === '' || fileName === 'en') {
+                            fileName = 'index.html';
+                        } else if (!fileName.includes('.')) {
+                            fileName = fileName + '.html';
+                        }
 
                         // Map English file names to Norwegian relative paths
                         const relativePathMappings = {
@@ -317,7 +329,8 @@ function initLanguageToggle() {
                         // Check if file exists (basic check) for http(s) protocol
                         fetch(targetUrl, { method: 'HEAD' })
                             .then(response => {
-                                if (response.ok) {
+                                // Accept 2xx and 3xx status codes (redirects are OK)
+                                if (response.ok || (response.status >= 300 && response.status < 400)) {
                                     window.location.href = targetUrl;
                                 } else {
                                     // If target file doesn't exist, show toast

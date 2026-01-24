@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Isjias: Ekte vs. falsk, varighet og behandling | Kiropraktor Majorstua</title>
 
@@ -28,6 +28,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/korsrygg/isjias.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/korsrygg/isjias.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/lower-back/sciatica.html" />
 
   <script type="application/ld+json">
   {
@@ -140,11 +142,7 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
   /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
@@ -178,8 +176,8 @@
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
     .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
     .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
     .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
     .nerve-box { background: var(--color-amber-light); border: 1px solid #fbbf24; border-radius: 10px; padding: 16px; margin: 16px 0; }
@@ -205,10 +203,26 @@
     .sources-section ul { font-size: 0.85rem; color: #64748b; }
     .sources-section li { margin-bottom: 6px; }
     .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: var(--hub-primary); padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
+    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
     @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -283,10 +297,10 @@
               <h3>Kort oppsummert</h3>
               <ul>
                 <li>Kun <strong>3-5%</strong> av alle ryggplager er ekte isjias</li>
-                <li>Årsaker: <a href="skiveprolaps.html">Diskusprolaps</a> (~90%), <a href="spinal-stenose.html">spinal stenose</a>, foraminal stenose</li>
+                <li>årsaker: <a href="skiveprolaps.html">Diskusprolaps</a> (~90%), <a href="spinal-stenose.html">spinal stenose</a>, foraminal stenose</li>
                 <li><strong>50%</strong> bedre innen 4 uker, median 10-12 uker</li>
                 <li>Manuell behandling + øvelser anbefales</li>
-                <li><a href="rode-flagg-ryggsmerter.html">Røde flagg</a>: Blære-/tarmforstyrrelser, nummenhet i sadelområdet</li>
+                <li><a href="rode-flagg-ryggsmerter.html">Røde flagg</a>: Blære-/tarmforstyrrelser, nummenhet i sadelomrødet</li>
               </ul>
             </div>
 
@@ -312,20 +326,20 @@
                   <span>Falsk isjias fra setemuskel</span>
                 </a>
                 <a href="../../blogg/øvelser-isjias.html" class="hub-subnav__card">
-                  <strong>Øvelser</strong>
-                  <span>Øvelser for lindring</span>
+                  <strong>øvelser</strong>
+                  <span>øvelser for lindring</span>
                 </a>
                 <a href="rode-flagg-ryggsmerter.html" class="hub-subnav__card">
                   <strong>Røde flagg</strong>
-                  <span>Når søke hjelp?</span>
+                  <span>Nær søke hjelp?</span>
                 </a>
               </div>
             </nav>
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Når må du søke hjelp umiddelbart?</h4>
-              <p>Ved nummenhet i skrittet, problemer med vannlating/avforing, eller økende svakhet i begge bena - ring 113 eller dra til legevakt.</p>
+              <h4>Nær må du søke hjelp umiddelbart?</h4>
+              <p>Ved nummenhet i skrittet, problemer med vannlating/avforing, eller åkende svakhet i begge bena - ring 113 eller dra til legevakt.</p>
               <a href="rode-flagg-ryggsmerter.html">Les mer om røde flagg</a>
             </div>
           </section>
@@ -339,7 +353,7 @@
 
             <p>Isjias (også kalt ischias eller lumbal radikulopati) beskriver smerte som oppstår nær isjiasnerven eller neverrotene som danner den blir irritert, betent eller komprimert. Isjiasnerven er kroppens lengste og tykkeste nerve med en diameter på opptil 2 cm. Den starter i korsryggen og går gjennom setet og helt ned til foten (StatPearls, 2024).</p>
 
-            <p>Det viktige å forstå er at "isjias" er et <strong>symptom, ikke en diagnose</strong> i seg selv. Det beskriver hvor smerten kjennes, men sier ikke nødvendigvis hva som forårsaker den.</p>
+            <p>Det viktige å forstå er at "isjias" er et <strong>symptom, ikke en diagnose</strong> i seg selv. Det beskriver hvor smerten kjennes, men sier ikke nådvendigvis hva som forårsaker den.</p>
 
             <h3>Hvor vanlig er isjias?</h3>
 
@@ -410,7 +424,7 @@
 
             <div class="condition-card">
               <h4>2. SI-leddsdysfunksjon</h4>
-              <p>Referert smerte fra bekkenbaksiden. Gir ofte smerte til setet og baksiden av låret.</p>
+              <p>Referert smerte fra bekkenbaksiden. Gir ofte smerte til setet og baksiden av læret.</p>
             </div>
 
             <div class="condition-card">
@@ -436,7 +450,7 @@
               <tbody>
                 <tr>
                   <td><strong>Smerteutbredelse</strong></td>
-                  <td>Under kneet, ofte til fot/tær</td>
+                  <td>Under kneet, ofte til fot/tår</td>
                   <td>Stopper vanligvis over kneet</td>
                 </tr>
                 <tr>
@@ -451,7 +465,7 @@
                 </tr>
                 <tr>
                   <td><strong>Lasegues test</strong></td>
-                  <td>Positiv (smerte ved benløft)</td>
+                  <td>Positiv (smerte ved benlåft)</td>
                   <td>Ofte negativ</td>
                 </tr>
               </tbody>
@@ -465,12 +479,12 @@
               <h2>Symptomer ved ekte isjias</h2>
             </div>
 
-            <p>Klassiske symptomer inkluderer smerte fra korsrygg/sete, nedover baksiden av låret, under kneet, potensielt til fot og tær. Smertemonesteret avhenger av hvilken nerverot som er påvirket:</p>
+            <p>Klassiske symptomer inkluderer smerte fra korsrygg/sete, nedover baksiden av læret, under kneet, potensielt til fot og tår. Smertemonesteret avhenger av hvilken nerverot som er påvirket:</p>
 
             <div class="nerve-box">
               <h4>L4-rot</h4>
               <ul>
-                <li>Smerte til forsiden av låret og innsiden av leggen</li>
+                <li>Smerte til forsiden av læret og innsiden av leggen</li>
                 <li>Svekket knestrekk</li>
               </ul>
             </div>
@@ -495,7 +509,7 @@
             <ul>
               <li><strong>Smertekvalitet:</strong> Skarp, brennende, elektrisk. Ofte beskrevet som "strom" gjennom benet.</li>
               <li><strong>Forverring:</strong> Hosting, nysing, pressing, sitting, fremoverbyoyning økervanligvis smerten.</li>
-              <li><strong>Lindring:</strong> Ligge på ryggen med bøyde knær, forsiktig bevegelse.</li>
+              <li><strong>Lindring:</strong> Ligge på ryggen med båyde knær, forsiktig bevegelse.</li>
             </ul>
           </section>
 
@@ -506,7 +520,7 @@
               <h2>Hvor lenge varer isjias egentlig?</h2>
             </div>
 
-            <p>Det finnes en utbredt oppfatning om at "90% blir friske i løpet av 6 uker." Nyere forskning viser at dette er for optimistisk. Her er hva studiene faktisk viser:</p>
+            <p>Det finnes en utbredt oppfatning om at "90% blir friske i låpet av 6 uker." Nyere forskning viser at dette er for optimistisk. Her er hva studiene faktisk viser:</p>
 
             <div class="timeline-box">
               <h4>Ved 4 uker</h4>
@@ -541,7 +555,7 @@
             <h3>Tilbakefall er vanlig</h3>
             <p>Selv etter vellykket behandling opplever mange tilbakefall:</p>
             <ul>
-              <li><strong>24%</strong> får tilbakefall innen 4 år etter ikke-operativ behandling</li>
+              <li><strong>24%</strong> før tilbakefall innen 4 år etter ikke-operativ behandling</li>
               <li><strong>25%</strong> av de som var friske ved 2 år, hadde fatt tilbakefall ved 4 år</li>
               <li>Tilbakevendende ryggsmerter (43%) er vanligere enn tilbakevendende utstraling til bein</li>
             </ul>
@@ -556,12 +570,12 @@
             </div>
 
             <h3>Klinisk undersøkelse</h3>
-            <p>Diagnostikken baseres primært på sykehistorie og klinisk undersøkelse. En grundig nevrologisk undersøkelse kan ofte lokalisere hvilket niva i ryggen som er affisert.</p>
+            <p>Diagnostikken baseres primårt på sykehistorie og klinisk undersøkelse. En grundig nevrologisk undersøkelse kan ofte lokalisere hvilket niva i ryggen som er affisert.</p>
 
-            <p><strong>Lasegues test</strong> (straight leg raise) er den mest prediktive testen for å identifisere kandidater for kirurgi. Testen er positiv nær den reproduserer pasientens smerte ved et benløft under 45 grader med utstraling under kneet (StatPearls, 2023).</p>
+            <p><strong>Lasegues test</strong> (straight leg raise) er den mest prediktive testen for å identifisere kandidater for kirurgi. Testen er positiv nær den reproduserer pasientens smerte ved et benlåft under 45 grader med utstraling under kneet (StatPearls, 2023).</p>
 
             <h3>Bildediagnostikk</h3>
-            <p>MR eller CT anbefales <strong>ikke rutinemessig</strong>. Danske nasjonale retningslinjer frarader rutinemessig bildediagnostikk ved nyoppstått isjias (European Spine Journal, 2018).</p>
+            <p>MR eller CT anbefales <strong>ikke rutinemessig</strong>. Danske nasjonale retningslinjer frarader rutinemessig bildediagnostikk ved nyoppstøtt isjias (European Spine Journal, 2018).</p>
 
             <div class="info-box">
               <h4>Viktig å forstå</h4>
@@ -591,9 +605,9 @@
               <h4>Hva kan kiropraktoren gjøre?</h4>
               <ul>
                 <li><strong>Manuell behandling:</strong> Spinal manipulasjon og mobilisering kan lindre smerte og forbedre bevegelighet</li>
-                <li><strong>Bløtvevsbehandling:</strong> Muskelarbeid på <a href="../../blogg/piriformissyndrom-falsk-isjias.html">piriformis</a>, glutealmuskulatur og hamstrings ved falsk isjias</li>
+                <li><strong>Blåtvevsbehandling:</strong> Muskelarbeid på <a href="../../blogg/piriformissyndrom-falsk-isjias.html">piriformis</a>, glutealmuskulatur og hamstrings ved falsk isjias</li>
                 <li><strong>Nevral mobilisering:</strong> Nerve-glide øvelser for å bedre nervens bevegelighet</li>
-                <li><strong>Øvelsesveiledning:</strong> Kjernemuskeltrening og gradert aktivitet tilpasset din situasjon</li>
+                <li><strong>åvelsesveiledning:</strong> Kjernemuskeltrening og gradert aktivitet tilpasset din situasjon</li>
               </ul>
             </div>
 
@@ -604,16 +618,16 @@
                 <li><strong>Nerve-glide øvelser</strong> - forsiktig toyning som mobiliserer nerven uten å irritere den.</li>
                 <li><strong>Ergonomiske tilpasninger</strong> - unnga langvarig sitting, ta pauser.</li>
                 <li><strong>Smertestillende</strong> ved behov i akuttfasen.</li>
-                <li><strong>Værtålmodig</strong> - bedring tar ofte 10-12 uker.</li>
+                <li><strong>Vårtølmodig</strong> - bedring tar ofte 10-12 uker.</li>
               </ul>
             </div>
 
             <h3>Kirurgi</h3>
 
-            <p>Kirurgi vurderes kun når:</p>
+            <p>Kirurgi vurderes kun nær:</p>
             <ul>
               <li>Serios konservativ behandling i 6-12 uker ikke gir tilstrekkelig bedring</li>
-              <li>Det er progressive nevrologiske utfall (økende muskelsvakhet)</li>
+              <li>Det er progressive nevrologiske utfall (åkende muskelsvakhet)</li>
               <li>Ved cauda equina syndrom (akutt kirurgisk tilstand)</li>
             </ul>
 
@@ -633,17 +647,17 @@
             <div class="red-flag-box">
               <h3>CAUDA EQUINA SYNDROM - RING 113</h3>
               <ul>
-                <li>Nummenhet i sadelområdet (rundt endetarm/kjønnsorganer)</li>
+                <li>Nummenhet i sadelomrødet (rundt endetarm/kjånnsorganer)</li>
                 <li>Tap av blære- eller tarmkontroll</li>
-                <li>Bilateral (begge ben) raskt økende svakhet</li>
+                <li>Bilateral (begge ben) raskt åkende svakhet</li>
               </ul>
-              <p style="font-style: italic; margin-top: 12px; color: #991b1b;">Dette er en kirurgisk øyeblikkelig hjelp-situasjon. Forsinkelse kan gi varig skade. Cauda equina syndrom er sjeldent (0,3-7 tilfeller per 100 000 årlig), men konsekvensene av forsinket behandling er alvorlige.</p>
+              <p style="font-style: italic; margin-top: 12px; color: #991b1b;">Dette er en kirurgisk åyeblikkelig hjelp-situasjon. Forsinkelse kan gi varig skade. Cauda equina syndrom er sjeldent (0,3-7 tilfeller per 100 000 årlig), men konsekvensene av forsinket behandling er alvorlige.</p>
             </div>
 
             <h3>Andre alvorlige tegn som krever legevurdering:</h3>
             <ul>
-              <li>Progressiv muskelsvakhet (økende fra dag til dag)</li>
-              <li>Fotdropp (vansker med å løfte foten)</li>
+              <li>Progressiv muskelsvakhet (åkende fra dag til dag)</li>
+              <li>Fotdropp (vansker med å låfte foten)</li>
               <li>Feber kombinert med ryggsmerter</li>
               <li>Uforklarlig vekttap</li>
               <li>Kjent kreftsykdom med nye ryggsmerter</li>
@@ -737,7 +751,11 @@
             <a href="skiveprolaps.html">Skiveprolaps i korsryggen</a>
             <a href="hekseskudd.html">Hekseskudd (Akutt Lumbago)</a>
             <a href="../../blogg/piriformissyndrom-falsk-isjias.html">Piriformissyndrom - Falsk isjias</a>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
 
           <!-- Disclaimer -->
           <p class="disclaimer">Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon eller opplever røde flagg-symptomer.</p>
@@ -823,7 +841,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -867,7 +885,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

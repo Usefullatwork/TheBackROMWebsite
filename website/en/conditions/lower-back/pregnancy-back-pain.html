@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,7 +11,7 @@
 
   <link rel="manifest" href="../../../manifest.json" />
   <link rel="apple-touch-icon" href="../../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../../css/main.min.css?v=20260101_v5" />
+  <link rel="preload" as="style" href="../../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../../images/Final Transparent Logo.png" />
 
   <title>Pregnant with Back Pain? How a Chiropractor... | Chiro Oslo</title>
@@ -110,12 +110,10 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../../css/index-design.css?v=1" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../../../css/conditions-combined.min.css?v=20260118">
   <noscript>
     <link rel="stylesheet" href="../../../css/index-design.css?v=1">
   </noscript>
-  <link rel="stylesheet" href="../../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="../../../css/index-2026-fixes.css">
   </noscript>
@@ -521,14 +519,14 @@
     }
 
     .stat-number {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: 700;
       color: var(--hub-pink);
     }
 
     .stat-label {
       color: #64748b;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       margin-top: 4px;
     }
 
@@ -840,6 +838,12 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
   </style>
 </head>
 
@@ -851,7 +855,7 @@
         <a href="../../../index.html" class="header__logo logo"><img src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
-          <div class="language-toggle" role="group" aria-label="Language selection">
+          <div class="language-toggle english-active" role="group" aria-label="Language selection">
             <button class="language-toggle__button" data-lang="no" aria-label="Norwegian"
               aria-pressed="false">NO</button>
             <button class="language-toggle__button language-toggle__button--active" data-lang="en"

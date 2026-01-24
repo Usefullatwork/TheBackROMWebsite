@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Løperkne (PFPS) - Slik returnerer du til full distanse | Kiropraktor Majorstua</title>
 
@@ -28,6 +28,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/kne/løperkne.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/kne/loperkne.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/knee/runners-knee.html" />
 
   <script type="application/ld+json">
   {
@@ -72,7 +74,7 @@
         "name": "Hva er løperkne (PFPS)?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Løperkne, eller patellofemoralt smertesyndrom (PFPS), er smerter rundt eller bak kneskallen. Det er den vanligste løpeskaden og rammer ca. 22.7% av alle løpere. Smertene forverres typisk ved trapper, kneboying og langvarig sitting."
+          "text": "Løperkne, eller patellofemoralt smertesyndrom (PFPS), er smerter rundt eller bak kneskallen. Det er den vanligste løpeskaden og rammer ca. 22.7% av alle løpere. Smertene forverres typisk ved trapper, knebøying og langvarig sitting."
         }
       },
       {
@@ -101,10 +103,10 @@
       },
       {
         "@type": "Question",
-        "name": "Hjelper innleggssaler mot løperkne?",
+        "name": "Hjelper innleggssåler mot løperkne?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Forskningen er blandet. Noen får nytte av innleggssaler, spesielt ved overpronasjon, men de er ikke førstelinjebehandling. Hoftestyrke og løpeformjusteringer har bedre dokumentert effekt."
+          "text": "Forskningen er blandet. Noen får nytte av innleggssåler, spesielt ved overpronasjon, men de er ikke førstelinjebehandling. Hoftestyrke og løpeformjusteringer har bedre dokumentert effekt."
         }
       }
     ]
@@ -132,11 +134,7 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
   /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
@@ -215,8 +213,24 @@
     @media (max-width: 1024px) { .mobile-sticky-cta { display: flex; } }
     .mobile-sticky-cta .btn { flex: 1; text-align: center; padding: 12px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 14px; }
     .mobile-sticky-cta .btn-primary { background: var(--hub-accent, #F26522); color: #fff; }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid var(--hub-primary); color: var(--hub-dark); }
-  </style>
+    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -276,7 +290,7 @@
 
             <!-- Intro text -->
             <div class="intro-text">
-              <p>Du kjenner det etter 3 kilometer. En verkende smerte foran i kneet, rundt eller bak kneskallen. Det startet gradvis, men nå kommer det tidligere og tidligere i hver løpeøkter. Trapper er blitt en plage, og langvarig sitting gir stive, omme knær.</p>
+              <p>Du kjenner det etter 3 kilometer. En verkende smerte foran i kneet, rundt eller bak kneskallen. Det startet gradvis, men nå kommer det tidligere og tidligere i hver løpeøkter. Trapper er blitt en plage, og langvarig sitting gir stive, ømme knær.</p>
 
               <p>Dette er løperkne - den vanligste løpeskaden blant alle typer <a href="../knesmerter.html">knesmerter</a>. <strong>22.7% av alle løpere</strong> rammes på et tidspunkt. Den gode nyheten? Med riktig tilnærming kan de fleste returnere til full løpeaktivitet.</p>
 
@@ -289,7 +303,7 @@
               <ul>
                 <li data-icon="&#127939;"><strong>22.7%</strong> av løpere rammes</li>
                 <li data-icon="&#128170;">Hoftesvakhet er ofte årsaken</li>
-                <li data-icon="&#9889;">Ok stegfrekvens med 5-10%</li>
+                <li data-icon="&#9889;">Øk stegfrekvens med 5-10%</li>
                 <li data-icon="&#9202;">Bedring typisk innen 6-12 uker</li>
                 <li data-icon="&#9888;">40% har noe plager etter 1 år</li>
               </ul>
@@ -373,7 +387,7 @@
               <ul>
                 <li><strong>Lokalisasjon:</strong> Smerte rundt, bak eller under kneskallen</li>
                 <li><strong>Karakter:</strong> Verkende, dump smerte (sjelden skarp)</li>
-                <li><strong>Provokasjon:</strong> Trapper (spesielt ned), kneboying, langvarig sitting</li>
+                <li><strong>Provokasjon:</strong> Trapper (spesielt ned), knebøying, langvarig sitting</li>
                 <li><strong>Debut:</strong> Gradvis økning, ikke akutt hendelse</li>
                 <li><strong>Krepitasjon:</strong> Knaselyder fra kneet ved bøyning</li>
               </ul>
@@ -386,7 +400,7 @@
                 <ul>
                   <li>Plutselig hevelse etter traume (kan indikere <a href="meniskskade.html">meniskskade</a> eller <a href="korsbandskade.html">korsbandskade</a>)</li>
                   <li>Kneet "gir etter" eller føles ustabilt</li>
-                  <li>Lasing - kneet kan ikke bøyes/strekkes (mulig meniskproblematikk)</li>
+                  <li>Låsing - kneet kan ikke bøyes/strekkes (mulig meniskproblematikk)</li>
                   <li>Nattsmerter som vekker deg</li>
                   <li>Synlig feilstilling av kneskallen</li>
                 </ul>
@@ -459,9 +473,9 @@
                 <h2>Løpetrening med løperkne</h2>
               </div>
 
-              <p>Mange lurer på om de må slutte å lope. Svaret er som regel nei - men du må justere:</p>
+              <p>Mange lurer på om de må slutte å løpe. Svaret er som regel nei - men du må justere:</p>
 
-              <h3>Kan jeg fortsette å lope?</h3>
+              <h3>Kan jeg fortsette å løpe?</h3>
               <p>Ja, ofte - men med modifikasjoner. Nøkkelprinsippet er å finne den "dosen" med løping kneet tolererer, og bygge derfra.</p>
 
               <h3>Praktiske tips</h3>
@@ -531,7 +545,7 @@
                 <h2>Forebygging</h2>
               </div>
 
-              <p>Har du hatt løperkne en gang, er risikoen for tilbakefall høyere. Forebygging er derfør viktig:</p>
+              <p>Har du hatt løperkne en gang, er risikoen for tilbakefall høyere. Forebygging er derfor viktig:</p>
 
               <h3>10%-regelen</h3>
               <p>Aldri øk ukentlig treningsmengde med mer enn 10% om gangen. Dette gjelder både distanse og intensitet.</p>
@@ -569,7 +583,7 @@
               </div>
 
               <div class="faq-item">
-                <div class="faq-question">Kan jeg fortsette å lope?</div>
+                <div class="faq-question">Kan jeg fortsette å løpe?</div>
                 <div class="faq-answer">Ofte ja, men med justeringer. Reduser distanse og intensitet til et nivå der smerten er under 3/10. Mange har nytte av å økestegfrekvensen med 5-10%.</div>
               </div>
 
@@ -579,17 +593,17 @@
               </div>
 
               <div class="faq-item">
-                <div class="faq-question">Hjelper innleggssaler?</div>
+                <div class="faq-question">Hjelper innleggssåler?</div>
                 <div class="faq-answer">Forskningen er blandet. Noen får nytte, spesielt ved overpronasjon, men de er ikke førstelinjebehandling. Hoftestyrke og løpeformjusteringer har bedre dokumentert effekt.</div>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">Bør jeg bytte sko?</div>
-                <div class="faq-answer">Sko bør være komfortable, men det finnes ingen "beste" sko for løperkne. Hvis skoene er slitt (over 600-800 km), er det lurt å bytte. Unngå drastiske endringer i dempning/dropp.</div>
+                <div class="faq-answer">Sko bør være komfortable, men det finnes ingen "beste" sko for løperkne. Hvis skoene er slitt (over 600-800 km), er det lurt å bytte. Unngå drastiske endringer i demping/dropp.</div>
               </div>
 
               <div class="faq-item">
-                <div class="faq-question">Hva med kneband/patella-tape?</div>
+                <div class="faq-question">Hva med knebånd/patella-tape?</div>
                 <div class="faq-answer">Kan gi kortvarig symptomlindring hos noen, men løsninger ikke de underliggende årsakene. Bruk gjerne som supplement, men ikke som erstatning for trening.</div>
               </div>
             </section>
@@ -627,16 +641,20 @@
               <ul>
                 <li>Taunton JE, et al. A retrospective case-control analysis of 2002 running injuries. Br J Sports Med. 2002;36(2):95-101.</li>
                 <li>Barton CJ, et al. Running retraining to treat lower limb injuries. Br J Sports Med. 2016;50(9):513-26.</li>
-                <li>Willy RW, Davis IS. The effect of å hip-strengthening program on mechanics during running. J Orthop Sports Phys Ther. 2011;41(9):625-32.</li>
+                <li>Willy RW, Davis IS. The effect of a hip-strengthening program on mechanics during running. J Orthop Sports Phys Ther. 2011;41(9):625-32.</li>
                 <li>Lenhart RL, et al. Increasing running step rate reduces patellofemoral joint forces. Med Sci Sports Exerc. 2014;46(3):557-64.</li>
                 <li>Collins NJ, et al. 2018 Consensus statement on patellofemoral pain. Br J Sports Med. 2018;52(18):1170.</li>
-                <li>Rathleff MS, et al. Is hip strength å risk factor for patellofemoral pain? Br J Sports Med. 2014;48(14):1088.</li>
+                <li>Rathleff MS, et al. Is hip strength a risk factor for patellofemoral pain? Br J Sports Med. 2014;48(14):1088.</li>
               </ul>
             </section>
 
             <p class="updated">Sist oppdatert: Januar 2026</p>
 
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
         </article>
 
         <aside class="hub-sidebar">
@@ -723,7 +741,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor — Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
@@ -758,5 +776,3 @@
 </body>
 
 </html>
-
-

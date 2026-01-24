@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Hopperkne (Patellar Tendinopati) | Kiropraktor Majorstua</title>
 
@@ -27,6 +27,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/kne/hopperkne.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/kne/hopperkne.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/knee/jumpers-knee.html" />
 
   <script type="application/ld+json">
   {
@@ -43,9 +45,9 @@
   {
     "@context": "https://schema.org", "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Hva er hopperkne?", "acceptedAnswer": { "@type": "Answer", "text": "Hopperkne (patellar tendinopati) er en overbelastningsskade i patellasenen - senen som forbinder kneskallen med leggbeinet. Det er vanlig hos idrettsutøvere i hoppeidretter som volleyball, basketball og handball." } },
+      { "@type": "Question", "name": "Hva er hopperkne?", "acceptedAnswer": { "@type": "Answer", "text": "Hopperkne (patellar tendinopati) er en overbelastningsskade i patellasenen - senen som forbinder kneskallen med leggbeinet. Det er vanlig hos idrettsutåvere i hoppeidretter som volleyball, basketball og handball." } },
       { "@type": "Question", "name": "Hva er Heavy Slow Resistance (HSR)?", "acceptedAnswer": { "@type": "Answer", "text": "HSR er et treningsprogram der du gjør tunge styrkeøvelser med langsom hastighet (3 sekunder opp, 3 sekunder ned). Forskning viser at dette er like effektivt eller bedre enn eksentrisk trening for seneplager." } },
-      { "@type": "Question", "name": "Hvorfor bør jeg unngå kortisoninjeksjon?", "acceptedAnswer": { "@type": "Answer", "text": "Kortison kan gi kortvarig smertelindring, men forskning viser at det kan svekke senen og øke risikoen for ruptur på sikt. For seneplager anbefales treningsbasert behandling fremfor injeksjoner." } },
+      { "@type": "Question", "name": "Hvorfor bør jeg unngå kortisoninjeksjon?", "acceptedAnswer": { "@type": "Answer", "text": "Kortison kan gi kortvarig smertelindring, men forskning viser at det kan svekke senen og åke risikoen for ruptur på sikt. For seneplager anbefales treningsbasert behandling fremfor injeksjoner." } },
       { "@type": "Question", "name": "Hva er forbindelsen til fluorokinolon-antibiotika?", "acceptedAnswer": { "@type": "Answer", "text": "Fluorokinoloner (som Ciprofloxacin) er assosiert med økt risiko for seneskade og -ruptur. Hvis du har seneplager, bør du diskutere antibiotikavalg med legen din og eventuelt unngå denne typen." } }
     ]
   }
@@ -54,11 +56,7 @@
   <script>window.addEventListener('load', function() { setTimeout(function() { !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','540166625752174');fbq('track','PageView'); }, 2000); });</script>
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"/></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -79,7 +77,23 @@
     }
     .wrapper { overflow: visible !important; }
     .page { padding-top: 0 !important; }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -139,7 +153,7 @@
 
             <div class="intro-tldr-grid">
               <div class="intro-text">
-                <p>Du merker smerte rett under kneskallen når du hopper, lander eller løper. Det begynte gradvis og har blitt verre over tid. Kanskje har du spurt legen om kortisoninjeksjon for å få rask lindring. Denne typen <a href="../knesmerter.html">knesmerte</a> er vanlig blant idrettsutøvere i hoppeidretter.</p>
+                <p>Du merker smerte rett under kneskallen nær du hopper, lander eller låper. Det begynte gradvis og har blitt verre over tid. Kanskje har du spurt legen om kortisoninjeksjon for å få rask lindring. Denne typen <a href="../knesmerter.html">knesmerte</a> er vanlig blant idrettsutåvere i hoppeidretter.</p>
                 <p>Stopp! Forskning viser at kortison kan gjøre seneplager <strong>verre</strong> på sikt. Den gode nyheten er at jeg har effektive treningsbaserte behandlinger som faktisk fungerer.</p>
                 <p>La oss se på hva hopperkne er, og hvordan <strong>Heavy Slow Resistance (HSR)</strong> har blitt gullstandard for behandling.</p>
               </div>
@@ -159,7 +173,7 @@
 
             <section class="hub-section" id="s1">
               <div class="section-header"><span class="section-number">1</span><h2 class="section-title">Hva er hopperkne?</h2></div>
-              <p>Hopperkne (patellar tendinopati) er en overbelastningsskade i patellasenen - senen som forbinder kneskallen med leggbeinet. Tilstanden kalles også "jumper's knee". Til forskjell fra <a href="løperkne.html">løperkne (PFPS)</a> som rammer selve kneleddet, er det her senen som er problemet.</p>
+              <p>Hopperkne (patellar tendinopati) er en overbelastningsskade i patellasenen - senen som forbinder kneskallen med leggbeinet. Tilstanden kalles også "jumper's knee". Til forskjell fra <a href="låperkne.html">låperkne (PFPS)</a> som rammer selve kneleddet, er det her senen som er problemet.</p>
               <h3>Viktig terminologi</h3>
               <div class="info-box">
                 <h4>Tendinopati, IKKE tendinitt</h4>
@@ -172,7 +186,7 @@
                 <li>Friidrett (hopp, sprint)</li>
                 <li>Menn rammes noe oftere enn kvinner</li>
                 <li>Vanligst mellom 15-30 år</li>
-                <li>Løpere kan også rammes, men <a href="løperkne.html">løperkne</a> og <a href="iliotibial-band-syndrom.html">IT-band syndrom</a> er vanligere</li>
+                <li>Låpere kan også rammes, men <a href="låperkne.html">låperkne</a> og <a href="iliotibial-band-syndrom.html">IT-band syndrom</a> er vanligere</li>
               </ul>
               <div class="stat-grid">
                 <div class="stat-card"><span class="stat-number">45%</span><span class="stat-label">av elite-volleyballspillere</span></div>
@@ -193,17 +207,17 @@
               <h3>Faser av tendinopati</h3>
               <div class="condition-card">
                 <div class="condition-header"><h4 class="condition-title">Reaktiv fase</h4></div>
-                <p>Akutt respons på overbelastning. Senen hevner og tykkner. Ofte etter plutselig treningsøkning.</p>
+                <p>Akutt respons på overbelastning. Senen hevner og tykkner. Ofte etter plutselig treningsåkning.</p>
               </div>
               <div class="condition-card">
                 <div class="condition-header"><h4 class="condition-title">Degenerativ fase</h4></div>
-                <p>Kronisk tilstand med strukturelle endringer i senen. Krever mer tid og tålmodighet i rehabiliteringen.</p>
+                <p>Kronisk tilstand med strukturelle endringer i senen. Krever mer tid og tølmodighet i rehabiliteringen.</p>
               </div>
             </section>
 
             <section class="hub-section" id="s3">
               <div class="section-header"><span class="section-number">3</span><h2 class="section-title">Behandling - Heavy Slow Resistance</h2></div>
-              <p>Treningsbasert behandling er hjørnesteinen for seneplager. Heavy Slow Resistance (HSR) har vist seg minst like effektivt som eksentrisk trening.</p>
+              <p>Treningsbasert behandling er hjårnesteinen for seneplager. Heavy Slow Resistance (HSR) har vist seg minst like effektivt som eksentrisk trening.</p>
               <div class="treatment-box">
                 <h4>Heavy Slow Resistance (HSR) protokoll</h4>
                 <p>Tunge styrkeøvelser med langsom hastighet:</p>
@@ -224,7 +238,7 @@
               </ul>
               <div class="info-box">
                 <h4>Smerte under trening?</h4>
-                <p>Moderat smerte (under 5/10) er akseptabelt under trening. Smerten bør ikke øke over dager/uker. Hvis smerten øker, reduser belastningen midlertidig.</p>
+                <p>Moderat smerte (under 5/10) er akseptabelt under trening. Smerten bør ikke åke over dager/uker. Hvis smerten øker, reduser belastningen midlertidig.</p>
               </div>
             </section>
 
@@ -235,11 +249,11 @@
                 <ul>
                   <li>Kan gi kortvarig smertelindring (uker)</li>
                   <li>Forskning viser at kortison kan <strong>svekke senen</strong></li>
-                  <li>Øker risiko for <strong>seneruptur</strong> på sikt</li>
+                  <li>øker risiko for <strong>seneruptur</strong> på sikt</li>
                   <li>Gir ofte <strong>tilbakefall</strong> av symptomer</li>
                   <li>Frarades sterkt for seneplager i retningslinjer</li>
                 </ul>
-                <p class="note">Hvis legen foreslår kortisoninjeksjon for seneplager, spør om alternativer!</p>
+                <p class="note">Hvis legen foreslær kortisoninjeksjon for seneplager, spår om alternativer!</p>
               </div>
               <div class="warning-box">
                 <h4>Fluorokinolon-antibiotika</h4>
@@ -249,13 +263,13 @@
               <ul>
                 <li><strong>Komplett hvile:</strong> Senen trenger belastning for å tilpasse seg</li>
                 <li><strong>For mye stretching:</strong> Kan irritere senen ytterligere</li>
-                <li><strong>For rask progresjon:</strong> Gradvis økning er nøkkel</li>
+                <li><strong>For rask progresjon:</strong> Gradvis åkning er nåkkel</li>
               </ul>
             </section>
 
             <section class="hub-section" id="s5">
               <div class="section-header"><span class="section-number">5</span><h2 class="section-title">Prognose</h2></div>
-              <p>Seneplager krever tålmodighet. Forvent 3-6 måneders rehabilitering for god effekt.</p>
+              <p>Seneplager krever tølmodighet. Forvent 3-6 måneders rehabilitering for god effekt.</p>
               <ul>
                 <li><strong>3-6 måneder:</strong> Typisk tid for betydelig bedring</li>
                 <li><strong>12 uker:</strong> Minimum varighet av treningsprogram</li>
@@ -278,7 +292,7 @@
               </div>
               <div class="faq-item">
                 <div class="faq-question">Hvorfor bør jeg unngå kortison?</div>
-                <div class="faq-answer">Kortison kan gi kortvarig smertelindring, men forskning viser at det kan svekke senen og øke risikoen for ruptur på sikt. Treningsbasert behandling anbefales.</div>
+                <div class="faq-answer">Kortison kan gi kortvarig smertelindring, men forskning viser at det kan svekke senen og åke risikoen for ruptur på sikt. Treningsbasert behandling anbefales.</div>
               </div>
               <div class="faq-item">
                 <div class="faq-question">Hva med NSAIDs (Ibux, Voltaren)?</div>
@@ -304,7 +318,7 @@
             <div class="related-box">
               <h3>Relaterte artikler</h3>
               <a href="../knesmerter.html">Knesmerter - Hovedartikkel</a>
-              <a href="løperkne.html">Løperkne (PFPS)</a>
+              <a href="låperkne.html">Låperkne (PFPS)</a>
               <a href="iliotibial-band-syndrom.html">IT-band syndrom</a>
               <a href="korsbandskade.html">Korsbandskade (ACL)</a>
               <a href="meniskskade.html">Meniskskade</a>
@@ -326,7 +340,11 @@
             </section>
 
             <p class="updated">Sist oppdatert: Januar 2026</p>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
         </article>
 
         <aside class="hub-sidebar">
@@ -364,7 +382,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -408,7 +426,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

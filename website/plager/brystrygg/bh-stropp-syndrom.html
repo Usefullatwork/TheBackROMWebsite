@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json">
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png">
-  <link rel="preload" as="style" href="../../css/main.min.css">
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png">
   <title>BH-stropp-syndrom og skuldersmerter - Kiropraktor på Majorstua</title>
 
@@ -27,6 +27,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/brystrygg/bh-stropp-syndrom.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/brystrygg/bh-stropp-syndrom.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/thoracic/bra-strap-syndrome.html" />
 
   <script type="application/ld+json">
   {
@@ -78,7 +80,7 @@
         "name": "Kan kiropraktor hjelpe med BH-stropp-syndrom?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja, kiropraktoren kan behandle de sekundære muskel- og leddplagene som utvikler seg. Bløtvevsbehandling, leddmobilisering og øvelsesinstruksjon kan gi lindring."
+          "text": "Ja, kiropraktoren kan behandle de sekundøre muskel- og leddplagene som utvikler seg. Blåtvevsbehandling, leddmobilisering og åvelsesinstruksjon kan gi lindring."
         }
       },
       {
@@ -114,11 +116,7 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
   /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
@@ -152,8 +150,8 @@
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
     .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
     .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
     .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
     .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
@@ -174,10 +172,26 @@
     .sources-section ul { font-size: 0.85rem; color: #64748b; }
     .sources-section li { margin-bottom: 6px; }
     .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: var(--hub-primary); padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
+    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
     @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -225,7 +239,7 @@
       <section class="hub-hero">
         <div class="hub-hero__container">
           <h1>BH-stropp-syndrom og skuldersmerter</h1>
-          <p class="hub-hero__subtitle">Årsaker, symptomer og behandling hos kvinner | Kiropraktor Mads Finstad, Majorstua</p>
+          <p class="hub-hero__subtitle">årsaker, symptomer og behandling hos kvinner | Kiropraktor Mads Finstad, Majorstua</p>
         </div>
       </section>
 
@@ -234,7 +248,7 @@
 
           <section class="hub-intro">
             <div class="intro-text">
-              <p>BH-stropp-syndrom er en form for kostoklavikulært syndrom - en tilstand der BH-stroppene komprimerer nerveflettningen (plexus brachialis) og blodkar mellom kragebeinet og første ribbein. Når smale stropper bærer vekten av brystene time etter time, dag etter dag, kan trykket skade både nerver og muskelvev.</p>
+              <p>BH-stropp-syndrom er en form for kostoklavikulært syndrom - en tilstand der BH-stroppene komprimerer nerveflettningen (plexus brachialis) og blodkar mellom kragebeinet og første ribbein. Nær smale stropper bører vekten av brystene time etter time, dag etter dag, kan trykket skade både nerver og muskelvev.</p>
 
               <p>Tilstanden er <strong>underdiagnostisert</strong> fordi mange - inkludert helsepersonell - ikke tenker på BH-en som en mulig årsak til skulder- og nakkeplager. Det typiske tegnet er synlige furer eller groover i huden der stroppene sitter.</p>
             </div>
@@ -245,7 +259,7 @@
                 <li><strong>Hva det er:</strong> Tilstand der BH-stropper komprimerer nerver og muskler over skuldrene</li>
                 <li><strong>Vanligste årsaker:</strong> Feil BH-størrelse (80% bruker feil), store bryst (D-kopp+), smale stropper</li>
                 <li><strong>59%</strong> av kvinner rapporterer BH-relaterte rygg-, skulder- eller nakkesmerter</li>
-                <li><strong>Kiropraktisk behandling:</strong> Bløtvevsbehandling, leddmobilisering, øvelsesinstruksjon</li>
+                <li><strong>Kiropraktisk behandling:</strong> Blåtvevsbehandling, leddmobilisering, åvelsesinstruksjon</li>
                 <li><strong>Røde flagg:</strong> Ensidig arm-svakhet, uforklart vekttap, nattsmerter, feber</li>
               </ul>
             </div>
@@ -261,11 +275,11 @@
                 </a>
                 <a href="mellom-skulderbladene.html" class="hub-subnav__card">
                   <strong>Mellom skulderbladene</strong>
-                  <span>Årsaker og behandling av øvre ryggsmerter</span>
+                  <span>årsaker og behandling av øvre ryggsmerter</span>
                 </a>
                 <a href="t4-syndrom.html" class="hub-subnav__card">
                   <strong>T4-syndrom</strong>
-                  <span>Smerter og nummenhet fra Øvre brystrygg</span>
+                  <span>Smerter og nummenhet fra øvre brystrygg</span>
                 </a>
                 <a href="krum-rygg.html" class="hub-subnav__card">
                   <strong>Krum rygg (kyfose)</strong>
@@ -276,7 +290,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Når må du søke hjelp umiddelbart?</h4>
+              <h4>Nær må du søke hjelp umiddelbart?</h4>
               <p>Ved ensidig arm-svakhet, uforklart vekttap, nattsmerter som vekker deg, eller feber sammen med smerter - kontakt lege.</p>
             </div>
           </section>
@@ -288,7 +302,7 @@
               <h2>Hvem rammes av BH-stropp-syndrom?</h2>
             </div>
 
-            <p>BH-stropp-syndrom rammer primært kvinner med større bryst som bruker BH daglig over lengre tid. Tilstanden er spesielt vanlig hos kvinner med D-kopp eller større.</p>
+            <p>BH-stropp-syndrom rammer primårt kvinner med større bryst som bruker BH daglig over lengre tid. Tilstanden er spesielt vanlig hos kvinner med D-kopp eller større.</p>
 
             <div class="stat-grid">
               <div class="stat-item">
@@ -308,23 +322,23 @@
             <p>Revmatolog Silva beskrev de typiske furene i huden som "den viktigste ledetraden til diagnosen" allerede i 1986 (Annals of the Rheumatic Diseases).</p>
           </section>
 
-          <!-- SECTION 2: Årsaker -->
+          <!-- SECTION 2: årsaker -->
           <section class="hub-section" id="s2">
             <div class="section-header">
               <span class="section-number">2</span>
-              <h2>Årsaker og risikofaktorer</h2>
+              <h2>årsaker og risikofaktorer</h2>
             </div>
 
             <p>Fra vanligst til sjeldnest:</p>
 
             <div class="condition-card">
               <h4>Feil BH-størrelse (vanligst)</h4>
-              <p>Hele 80% av kvinner bruker feil størrelse - 70% for liten, 10% for stor (Greenbaum et al., 2003). Når bandet er for stort, havner mer vekt på stroppene.</p>
+              <p>Hele 80% av kvinner bruker feil størrelse - 70% for liten, 10% for stor (Greenbaum et al., 2003). Nær bandet er for stort, havner mer vekt på stroppene.</p>
             </div>
 
             <div class="condition-card">
               <h4>Store bryst (D-kopp eller større)</h4>
-              <p>Studier viser en signifikant sammenheng mellom kopp-størrelse og skulder-/nakkesmerter (p<0.05). Kvinner med de største brystene har opptil <strong>12 ganger høyere odds</strong> for ryggsmerter.</p>
+              <p>Studier viser en signifikant sammenheng mellom kopp-størrelse og skulder-/nakkesmerter (p<0.05). Kvinner med de stårste brystene har opptil <strong>12 ganger høyere odds</strong> for ryggsmerter.</p>
             </div>
 
             <div class="condition-card">
@@ -335,8 +349,8 @@
             <h3>Andre faktorer</h3>
             <ul>
               <li><strong>Lang daglig brukstid:</strong> De fleste kvinner bruker BH 12-14 timer daglig. Trykk på bare 9 kPa over 2 timer kan gi hud- og muskelskade.</li>
-              <li><strong>Dårlig holdning:</strong> Avrundede skuldre øker belastningen på stroppene og kan forsterke kompresjonen.</li>
-              <li><strong>Racerback-BHer:</strong> Samler stroppene nærmere nakken og kan øke trykket på sensitive områder.</li>
+              <li><strong>Dørlig holdning:</strong> Avrundede skuldre øker belastningen på stroppene og kan forsterke kompresjonen.</li>
+              <li><strong>Racerback-BHer:</strong> Samler stroppene nærmere nakken og kan åke trykket på sensitive omrøder.</li>
             </ul>
           </section>
 
@@ -347,24 +361,24 @@
               <h2>Symptomer</h2>
             </div>
 
-            <p>Det typiske symptombildet har et karakteristisk mønster:</p>
+            <p>Det typiske symptombildet har et karakteristisk månster:</p>
 
             <div class="condition-card">
               <h4>Typiske symptomer</h4>
               <ul>
                 <li>Skulder- og nakkesmerter - ofte på begge sider, men kan være verre på en side</li>
                 <li>Smertene er minimale om morgenen og blir gradvis verre utover dagen</li>
-                <li><strong>Lindring når BH-en fjernes</strong> - dette er et viktig diagnostisk tegn</li>
+                <li><strong>Lindring nær BH-en fjernes</strong> - dette er et viktig diagnostisk tegn</li>
                 <li>Nummenhet eller prikking ned i armen (på grunn av nervekompresjon)</li>
                 <li>Synlige furer eller merker der stroppene sitter</li>
                 <li>Hodepine - ofte fra bakhodet og oppover</li>
-                <li>Tretthet i skuldrene, spesielt ved langvarig stående eller bæring av vesker</li>
+                <li>Tretthet i skuldrene, spesielt ved langvarig stående eller børing av vesker</li>
               </ul>
             </div>
 
             <div class="info-box">
               <h4>Viktig diagnostisk tegn</h4>
-              <p>Symptomlindring når BH-en fjernes, og forverring utover dagen, skiller BH-stropp-syndrom fra andre skulder-/nakkeplager.</p>
+              <p>Symptomlindring nær BH-en fjernes, og forverring utover dagen, skiller BH-stropp-syndrom fra andre skulder-/nakkeplager.</p>
             </div>
           </section>
 
@@ -375,7 +389,7 @@
               <h2>Diagnostikk</h2>
             </div>
 
-            <p>Diagnosen stilles primært gjennom klinisk undersøkelse. Sykehistorien er ofte avslørende: smerter som varierer med BH-bruk, synlige stropp-furer, og bedring i helger eller ferier når pasienten bruker BH mindre.</p>
+            <p>Diagnosen stilles primårt gjennom klinisk undersøkelse. Sykehistorien er ofte avslærende: smerter som varierer med BH-bruk, synlige stropp-furer, og bedring i helger eller ferier nær pasienten bruker BH mindre.</p>
 
             <h3>Differensialdiagnoser som må vurderes</h3>
 
@@ -408,7 +422,7 @@
 
             <div class="info-box">
               <h4>Om bildediagnostikk</h4>
-              <p>MR og røntgen er sjelden nødvendig for BH-stropp-syndrom. Disse undersøkelsene viser ofte "normalfunn" som slitasjeforandringer som ikke forklarer smertene. Den kliniske undersøkelsen - med fokus på stropp-furer, symptommønster og respons på BH-fjerning - er viktigere enn bilder.</p>
+              <p>MR og røntgen er sjelden nådvendig for BH-stropp-syndrom. Disse undersøkelsene viser ofte "normalfunn" som slitasjeforandringer som ikke forklarer smertene. Den kliniske undersøkelsen - med fokus på stropp-furer, symptommånster og respons på BH-fjerning - er viktigere enn bilder.</p>
             </div>
           </section>
 
@@ -420,21 +434,21 @@
             </div>
 
             <h3>Hva kan kiropraktoren gjøre?</h3>
-            <p>Det finnes begrenset forskning på manuell behandling spesifikt for BH-stropp-syndrom. Samtidig kan kiropraktisk behandling adressere de sekundære muskel- og leddplagene som ofte følger med:</p>
+            <p>Det finnes begrenset forskning på manuell behandling spesifikt for BH-stropp-syndrom. Samtidig kan kiropraktisk behandling adressere de sekundøre muskel- og leddplagene som ofte følger med:</p>
 
             <div class="treatment-box">
               <h4>Kiropraktisk behandling</h4>
               <ul>
-                <li><strong>Bløtvevsbehandling:</strong> Massasje og triggerpunktbehandling av trapezius og nakkemuskulatur kan lindre spenninger.</li>
+                <li><strong>Blåtvevsbehandling:</strong> Massasje og triggerpunktbehandling av trapezius og nakkemuskulatur kan lindre spenninger.</li>
                 <li><strong>Leddmobilisering:</strong> Behandling av stive ledd i nakke og øvre rygg kan redusere refleksspenninger.</li>
                 <li><strong>Holdningsveiledning:</strong> Råd om arbeidsstilling og ergonomi.</li>
-                <li><strong>Øvelsesinstruksjon:</strong> Styrkeøvelser for øvre rygg og skulderblad-stabilisering.</li>
+                <li><strong>åvelsesinstruksjon:</strong> Styrkeøvelser for øvre rygg og skulderblad-stabilisering.</li>
               </ul>
             </div>
 
             <div class="info-box">
               <h4>Viktig</h4>
-              <p>Manuell behandling alene løser sjelden problemet dersom BH-passformen ikke endres. En studie fra Mayo Clinic fant at konservativ behandling inkludert fysioterapi og vekttap "ikke ga tilstrekkelig varig lindring" hos kvinner med symptomatisk makromasti.</p>
+              <p>Manuell behandling alene låser sjelden problemet dersom BH-passformen ikke endres. En studie fra Mayo Clinic fant at konservativ behandling inkludert fysioterapi og vekttap "ikke ga tilstrekkelig varig lindring" hos kvinner med symptomatisk makromasti.</p>
             </div>
 
             <h3>Hva kan du gjøre selv?</h3>
@@ -445,8 +459,8 @@
               <ul>
                 <li><strong>Få profesjonell BH-tilpasning:</strong> Mange butikker tilbyr gratis fitting. Med 80% som bruker feil størrelse, er sjansen stor for at din nåværende BH ikke passer optimalt.</li>
                 <li><strong>Velg brede stropper:</strong> Stropper på minst 4-4,5 cm fordeler trykket bedre enn smale stropper.</li>
-                <li><strong>Prioriter støtte fra bandet:</strong> Ideelt sett bør 80% av støtten komme fra bandet rundt brystkassen, ikke fra stroppene.</li>
-                <li><strong>Unngå racerback-BHer:</strong> Disse samler stroppene nærmere nakken og kan øke trykket.</li>
+                <li><strong>Prioriter ståtte fra bandet:</strong> Ideelt sett bør 80% av ståtten komme fra bandet rundt brystkassen, ikke fra stroppene.</li>
+                <li><strong>Unngå racerback-BHer:</strong> Disse samler stroppene nærmere nakken og kan åke trykket.</li>
               </ul>
             </div>
 
@@ -454,12 +468,12 @@
               <h4>Livsstilstiltak</h4>
               <ul>
                 <li><strong>Ta pauser:</strong> Hvis mulig, ta av BH-en i perioder gjennom dagen, spesielt hjemme.</li>
-                <li><strong>Styrketrening:</strong> Øvelser for øvre rygg og skulderblad kan bedre holdningen og redusere belastningen.</li>
+                <li><strong>Styrketrening:</strong> øvelser for øvre rygg og skulderblad kan bedre holdningen og redusere belastningen.</li>
               </ul>
             </div>
 
-            <h3>Behandlingsforløp</h3>
-            <p>Ved BH-stropp-syndrom er forløpet ofte annerledes enn ved andre muskel- og skjelettplager. Mange opplever betydelig bedring innen 1-2 uker etter bytte til riktig BH. Triggerpunktsmerter og muskelspenninger kan ofte lindres med 3-4 behandlinger.</p>
+            <h3>Behandlingsforlåp</h3>
+            <p>Ved BH-stropp-syndrom er forlåpet ofte annerledes enn ved andre muskel- og skjelettplager. Mange opplever betydelig bedring innen 1-2 uker etter bytte til riktig BH. Triggerpunktsmerter og muskelspenninger kan ofte lindres med 3-4 behandlinger.</p>
           </section>
 
           <!-- SECTION 6: Prognose -->
@@ -489,24 +503,24 @@
             <h3>Langsiktig</h3>
             <ul>
               <li><strong>Ved BH-bytte:</strong> Mange opplever merkbar bedring innen 1-2 uker.</li>
-              <li><strong>Ved manuell behandling:</strong> Muskelspenninger og triggerpunkter kan ofte løses i løpet av 3-4 behandlinger.</li>
+              <li><strong>Ved manuell behandling:</strong> Muskelspenninger og triggerpunkter kan ofte låses i låpet av 3-4 behandlinger.</li>
               <li><strong>Langsiktig:</strong> Med riktig BH-passform og holdningsarbeid kan plagene holdes under kontroll permanent.</li>
-              <li><strong>Tilbakefall:</strong> Er vanlig hvis man går tilbake til dårlig passende BHer.</li>
+              <li><strong>Tilbakefall:</strong> Er vanlig hvis man går tilbake til dørlig passende BHer.</li>
               <li><strong>Ved alvorlig makromasti:</strong> For kvinner der konservativ behandling ikke gir varig lindring, kan brystreduksjon være aktuelt. En metaanalyse fra Mayo Clinic viste at 71% opplevde betydelig bedring i skuldersmerter etter operasjon.</li>
             </ul>
           </section>
 
-          <!-- SECTION 7: Når søke hjelp -->
+          <!-- SECTION 7: Nær søke hjelp -->
           <section class="hub-section" id="s7">
             <div class="section-header">
               <span class="section-number">7</span>
-              <h2>Når bør du søke hjelp?</h2>
+              <h2>Nær bør du søke hjelp?</h2>
             </div>
 
             <div class="red-flag-box">
-              <h3>Røde flagg - søk lege dersom du opplever:</h3>
+              <h3>Røde flagg - såk lege dersom du opplever:</h3>
               <ul>
-                <li>Ensidig arm-svakhet eller økende nummenhet</li>
+                <li>Ensidig arm-svakhet eller åkende nummenhet</li>
                 <li>Uforklart vekttap</li>
                 <li>Nattsmerter som vekker deg</li>
                 <li>Feber sammen med nakke-/skuldersmerter</li>
@@ -519,7 +533,7 @@
             <ul>
               <li>Vedvarende skulder-/nakkesmerter som påvirker funksjonen</li>
               <li>Synlige stropp-furer som ikke bedres</li>
-              <li>Smerter som påvirker søvn og daglige aktiviteter</li>
+              <li>Smerter som påvirker såvn og daglige aktiviteter</li>
             </ul>
           </section>
 
@@ -532,12 +546,12 @@
 
             <div class="faq-item">
               <div class="faq-question">Hvordan vet jeg om jeg bruker feil BH-størrelse?</div>
-              <div class="faq-answer">Tegn på feil størrelse inkluderer: bandet kryper opp i ryggen, stroppene glir av eller graver seg inn, brystvev "flyter over" koppen, eller du justerer BH-en konstant gjennom dagen. Med 80% som bruker feil størrelse, er en profesjonell fitting verdt å prøve.</div>
+              <div class="faq-answer">Tegn på feil størrelse inkluderer: bandet kryper opp i ryggen, stroppene glir av eller graver seg inn, brystvev "flyter over" koppen, eller du justerer BH-en konstant gjennom dagen. Med 80% som bruker feil størrelse, er en profesjonell fitting verdt å pråve.</div>
             </div>
 
             <div class="faq-item">
               <div class="faq-question">Kan kiropraktor hjelpe med BH-stropp-syndrom?</div>
-              <div class="faq-answer">Ja, kiropraktoren kan behandle de sekundære muskel- og leddplagene som utvikler seg. Bløtvevsbehandling, leddmobilisering og øvelsesinstruksjon kan gi lindring. Men det viktigste tiltaket er ofte å korrigere BH-passformen.</div>
+              <div class="faq-answer">Ja, kiropraktoren kan behandle de sekundøre muskel- og leddplagene som utvikler seg. Blåtvevsbehandling, leddmobilisering og åvelsesinstruksjon kan gi lindring. Men det viktigste tiltaket er ofte å korrigere BH-passformen.</div>
             </div>
 
             <div class="faq-item">
@@ -552,7 +566,7 @@
 
             <div class="faq-item">
               <div class="faq-question">Hvorfor er smertene verre på slutten av dagen?</div>
-              <div class="faq-answer">Dette er typisk for BH-stropp-syndrom. Kumulativ belastning gjennom dagen - ofte 12-14 timer - gir progressiv tretthet i muskulaturen og økende nervekompresjon. Dette skiller tilstanden fra for eksempel cervikal radikulopati, som ikke har samme tidsmønster.</div>
+              <div class="faq-answer">Dette er typisk for BH-stropp-syndrom. Kumulativ belastning gjennom dagen - ofte 12-14 timer - gir progressiv tretthet i muskulaturen og åkende nervekompresjon. Dette skiller tilstanden fra for eksempel cervikal radikulopati, som ikke har samme tidsmånster.</div>
             </div>
 
             <div class="faq-item">
@@ -575,13 +589,17 @@
           <!-- Related articles -->
           <div class="related-box">
             <h3>Relaterte artikler</h3>
-            <a href="../brystryggsmerter.html">→ Brystrygg - Hovedartikkel</a>
-            <a href="mellom-skulderbladene.html">→ Smerter mellom skulderbladene</a>
-            <a href="t4-syndrom.html">→ T4-syndrom</a>
-            <a href="krum-rygg.html">→ Krum rygg (kyfose)</a>
-            <a href="stiv-rygg-idrett.html">→ Stiv brystrygg</a>
-            <a href="fibromyalgi-brystsmerter.html">→ Fibromyalgi med brystsmerter</a>
-          </div>
+            <a href="../brystryggsmerter.html">? Brystrygg - Hovedartikkel</a>
+            <a href="mellom-skulderbladene.html">? Smerter mellom skulderbladene</a>
+            <a href="t4-syndrom.html">? T4-syndrom</a>
+            <a href="krum-rygg.html">? Krum rygg (kyfose)</a>
+            <a href="stiv-rygg-idrett.html">? Stiv brystrygg</a>
+            <a href="fibromyalgi-brystsmerter.html">? Fibromyalgi med brystsmerter</a>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
 
           <!-- Disclaimer -->
           <p class="disclaimer">Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon eller opplever røde flagg-symptomer.</p>
@@ -627,12 +645,12 @@
             <h3>Innhold</h3>
             <ul>
               <li><a href="#s1">Hvem rammes?</a></li>
-              <li><a href="#s2">Årsaker</a></li>
+              <li><a href="#s2">årsaker</a></li>
               <li><a href="#s3">Symptomer</a></li>
               <li><a href="#s4">Diagnostikk</a></li>
               <li><a href="#s5">Behandling</a></li>
               <li><a href="#s6">Prognose</a></li>
-              <li><a href="#s7">Når søke hjelp</a></li>
+              <li><a href="#s7">Nær søke hjelp</a></li>
               <li><a href="#s8">FAQ</a></li>
             </ul>
           </nav>
@@ -663,7 +681,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -707,7 +725,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

@@ -1,265 +1,684 @@
 ﻿<!DOCTYPE html>
 <html lang="nb">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1a202c" />
+  <meta name="color-scheme" content="light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="view-transition" content="same-origin" />
+
+  <link rel="manifest" href="../manifest.json" />
+  <link rel="apple-touch-icon" href="../images/Final Transparent Logo.png" />
   <link rel="icon" type="image/png" href="../images/Final Transparent Logo.png" />
-  <!-- Critical CSS for header positioning -->
-  <style>
-    :root{--header-height:70px;--container-padding:clamp(1rem,3vw,2rem)}
-    .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);height:var(--header-height)}
-    .header__container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:87.5rem;margin:0 auto;padding:0 var(--container-padding)}
-    #main-content{padding-top:var(--header-height)}
-  </style>
-  <link rel="preload" as="style" href="../css/main.min.css?v=20260101_v5" />
-  <title>Svimmel og kvalm - årsaker, behandling og nær du bør søke hjelp | Kiropraktor Majorstua</title>
-  <meta name="description" content="Svimmelhet kombinert med kvalme kan ha mange årsaker. Lar om BPPV, vestibulær migrene og nær du bør oppsøke hjelp.">
-  <meta property="og:title" content="Svimmel og kvalm - årsaker, behandling og nær du bør søke hjelp | Kiropraktor Majorstua">
-  <meta property="og:description" content="Svimmelhet kombinert med kvalme kan ha mange årsaker. Lar om BPPV, vestibulær migrene og nær du bør oppsøke hjelp.">
+
+  <title>Svimmel og kvalm - årsaker, behandling og når du bør søke hjelp | Kiropraktor Majorstua</title>
+  <meta name="description" content="Svimmelhet kombinert med kvalme kan ha mange årsaker. Lær om BPPV, vestibulær migrene og når du bør oppsøke hjelp.">
+  <meta name="keywords" content="svimmel og kvalm, svimmelhet kvalme, BPPV, vestibulær migrene, kiropraktor Oslo">
+  <meta name="author" content="Mads Finstad">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Svimmel og kvalm - årsaker, behandling og når du bør søke hjelp | Kiropraktor Majorstua">
+  <meta property="og:description" content="Svimmelhet kombinert med kvalme kan ha mange årsaker. Lær om BPPV, vestibulær migrene og når du bør oppsøke hjelp.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://thebackrom.com/blogg/svimmel-og-kvalm.html">
+  <meta property="og:image" content="https://thebackrom.com/images/infographics/svimmelhet/dizziness-causes-duration-and-red-flags.webp">
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Svimmel og kvalm - årsaker, behandling og nær du bør søke hjelp | Kiropraktor Majorstua">
-  <meta name="twitter:description" content="Svimmelhet kombinert med kvalme kan ha mange årsaker. Lar om BPPV, vestibulær migrene og nær du bør oppsøke hjelp.">
-  <meta name="keywords" content="svimmel og kvalm, svimmelhet kvalme, BPPV, vestibulær migrene, kiropraktor Oslo">
-  <meta name="author" content="Mads Finstad">
+  <meta name="twitter:title" content="Svimmel og kvalm - årsaker, behandling og når du bør søke hjelp | Kiropraktor Majorstua">
+  <meta name="twitter:description" content="Svimmelhet kombinert med kvalme kan ha mange årsaker. Lær om BPPV, vestibulær migrene og når du bør oppsøke hjelp.">
+  <meta name="twitter:image" content="https://thebackrom.com/images/infographics/svimmelhet/dizziness-causes-duration-and-red-flags.webp">
   <link rel="canonical" href="https://thebackrom.com/blogg/svimmel-og-kvalm.html" />
   <link rel="alternate" hreflang="nb" href="https://thebackrom.com/blogg/svimmel-og-kvalm.html" />
   <link rel="alternate" hreflang="en" href="https://thebackrom.com/blogg/svimmel-og-kvalm-en.html" />
-  <link rel="stylesheet" href="../css/main.min.css?v=20260101_v5" />
-  <link rel="stylesheet" href="../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/index-2026-fixes.css"></noscript>
-  <link rel="preload" as="style" href="../css/hub-article.css">
-  <link rel="stylesheet" href="../css/hub-article.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/hub-article.css"></noscript>
+
+  <!-- Schema.org MedicalWebPage + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "name": "Svimmel og kvalm - årsaker, behandling og når du bør søke hjelp",
+        "description": "Komplett guide til svimmelhet og kvalme: årsaker som BPPV og vestibulær migrene, behandling og når du bør oppsøke hjelp.",
+        "url": "https://thebackrom.com/blogg/svimmel-og-kvalm.html",
+        "mainContentOfPage": {
+          "@type": "WebPageElement",
+          "cssSelector": ".hub-main"
+        },
+        "medicalAudience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Patient"
+        },
+        "specialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Chiropractic"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Mads Finstad",
+          "jobTitle": "Kiropraktor",
+          "url": "https://thebackrom.com/about.html"
+        },
+        "publisher": {
+          "@type": "MedicalBusiness",
+          "name": "Klinikk for alle Majorstua",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Gardeveien 17",
+            "addressLocality": "Oslo",
+            "postalCode": "0363",
+            "addressCountry": "NO"
+          }
+        },
+        "datePublished": "2026-01-20",
+        "lastReviewed": "2026-01-20"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Hvor lenge varer kvalmen ved svimmelhet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Det avhenger av årsaken. Ved BPPV varer kvalmen typisk sekunder til minutter etter hodebevegelse. Ved vestibularisnevritt kan kvalmen være vedvarende i dager. Ved migrene kan den vare i timer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan stress gi svimmelhet og kvalme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Stress og angst kan forårsake hyperventilering som gir svimmelhet. I tillegg er 30-50% av svimmelhetspasienter også rammet av angst eller depresjon - dette er en biologisk kobling, ikke innbilt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Er svimmelhet og kvalme farlig?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vanligvis ikke. De fleste årsaker er godartede og behandlingsbare. Men akutt svimmelhet med nevrologiske symptomer (lammelser, talevansker, synsforstyrrelser) kan være tegn på hjerneslag og krever øyeblikkelig legevurdering."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hva hjelper mot kvalmen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Behandle årsaken til svimmelheten. Ved BPPV gir reposisjonsmanøver rask bedring. Ved anfall kan det hjelpe å ligge stille, fokusere på et fast punkt, og ta dype pust. Kvalmestillende medikamenter kan brukes kortvarig, men bør ikke brukes over 2-3 dager da de kan forsinke tilheling."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540166625752174');
+        fbq('track', 'PageView');
+      }, 2000);
+    });
+  </script>
+  <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="style" href="../css/pages-combined.min.css?v=20260118">
+  <link rel="stylesheet" href="../css/pages-combined.min.css?v=20260118">
+  <link rel="preload" as="style" href="../css/font-awesome-minimal.css">
+  <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
+
+  <style>
+    :root {
+      --hub-primary: #1a5f7a;
+      --hub-dark: #0d3d4d;
+      --hub-red: #dc2626;
+      --hub-green: #059669;
+      --hub-blue: #2563eb;
+      --hub-purple: #7c3aed;
+      --hub-orange: #ea580c;
+    }
+    .hub-toc-card a { display: block; padding: 10px 14px; color: #475569; text-decoration: none; border-radius: 8px; font-size: 14px; transition: all 0.2s ease; border-left: 3px solid transparent; }
+    .hub-toc-card a:hover { background: #e2e8f0; color: var(--hub-primary); }
+    .hub-toc-card a.active { background: #e0f2fe; color: var(--hub-primary); border-left-color: var(--hub-primary); font-weight: 500; }
+    .hub-intro { margin-bottom: 48px; }
+    .hub-intro h1 { font-size: 2.5rem; color: var(--hub-dark); margin-bottom: 24px; line-height: 1.2; }
+    .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
+    .intro-text p { margin-bottom: 16px; }
+    .premium-summary-card { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--hub-primary); }
+    .premium-summary-card h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 1.1rem; }
+    .premium-summary-card ul { margin: 0; padding-left: 20px; }
+    .premium-summary-card li { margin-bottom: 10px; color: #334155; line-height: 1.5; }
+    .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
+    .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section h4 { font-size: 1.05rem; color: var(--hub-dark); margin: 20px 0 10px; }
+    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
+    .condition-card ul { margin: 12px 0; padding-left: 20px; }
+    .condition-card li { margin-bottom: 6px; color: #4b5563; }
+    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
+    .treatment-box ul { margin: 0; padding-left: 20px; }
+    .treatment-box li { margin-bottom: 8px; color: #065f46; }
+    .treatment-box p { color: #065f46; margin-bottom: 8px; }
+    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .info-box p { color: #1e40af; margin-bottom: 8px; }
+    .info-box ul { margin: 0; padding-left: 20px; }
+    .info-box li { margin-bottom: 8px; color: #1e40af; }
+    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
+    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
+    .red-flag-box ul { margin: 0; padding-left: 20px; }
+    .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
+    .red-flag-alert { background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border: 2px solid var(--hub-red); border-radius: 12px; padding: 20px; margin: 24px 0; }
+    .red-flag-alert h4 { color: var(--hub-red); margin-bottom: 12px; font-size: 1.1rem; }
+    .red-flag-alert p { color: #7f1d1d; margin-bottom: 12px; }
+    .red-flag-alert a { color: var(--hub-red); font-weight: 600; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
+    .prognosis-highlight { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid var(--hub-green); }
+    .prognosis-highlight p { color: #065f46; font-weight: 500; margin: 0; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
+    .faq-item p { color: #4b5563; margin: 0; line-height: 1.6; }
+    .hub-cta { background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%); color: white; border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
+    .hub-cta h3 { color: white !important; font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; }
+    .hub-cta p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
+    .hub-cta .button { background: white; color: var(--hub-primary); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s ease; }
+    .hub-cta .button:hover { transform: translateY(-2px); }
+    .related-box { background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 32px; }
+    .related-box h3 { color: var(--hub-dark); margin-bottom: 16px; }
+    .related-box a { display: block; padding: 12px 0; color: var(--hub-primary); text-decoration: none; border-bottom: 1px solid #e5e7eb; transition: padding-left 0.2s ease; }
+    .related-box a:last-child { border-bottom: none; }
+    .related-box a:hover { padding-left: 8px; }
+    .sources-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
+    .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; }
+    .sources-section p { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
+    .medical-disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 32px; font-size: 0.85rem; color: #64748b; }
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+    .location-content ul { margin: 12px 0; padding-left: 20px; }
+    .location-content li { margin-bottom: 8px; color: #4b5563; }
+    .hub-infographic { width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 24px 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
+    .mobile-sticky-cta a { display: block; background: #F26522; color: #FFFFFF; text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; border: 2px solid #FFFFFF; }
+    @media (max-width: 900px) {
+      .hub-wrapper { flex-direction: column; padding: 20px; }
+      .hub-sidebar { display: none; }
+      .hub-main { max-width: 100%; padding-bottom: 100px; }
+      .hub-intro h1 { font-size: 1.8rem; }
+      .mobile-sticky-cta { display: block; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
-<body>
+
+<body id="top">
   <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
-  <header class="header">
-    <div class="container header__container">
-      <a href="../index.html" class="header__logo" aria-label="Til forsiden">
-        <img src="../images/Final Transparent Logo.webp" alt="TheBackROM logo" width="50" height="50" />
-      </a>
-      <nav class="header__nav" aria-label="Hovedmeny">
-        <ul class="header__menu">
-          <li><a href="../plager/brystryggsmerter.html">Hjem</a></li>
-          <li><a href="../services.html">Tjenester</a></li>
-          <li><a href="../plager.html">Plager</a></li>
-          <li><a href="../priser.html">Priser</a></li>
-          <li><a href="../about.html">Om meg</a></li>
-          <li><a href="../blogg/index.html" class="active">Blogg</a></li>
-          <li><a href="../contact.html">Kontakt</a></li>
-        </ul>
-      </nav>
-      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary header__cta" target="_blank" rel="noopener">Bestill time</a>
-      <button class="header__menu-toggle" aria-label="Åpne meny" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main id="main-content">
-    <section class="page__main main main_services blog-hero">
-      <div class="main__container">
-        <span class="blog-post__category">Svimmelhet</span>
-        <h1 class="main__title">Svimmel og kvalm - årsaker, behandling og nær du bør søke hjelp</h1>
-        <div class="blog-post__meta">
-          <time class="blog-post__date" datetime="2026-01-20">20. januar 2026</time>
-          <span class="blog-post__reading-time">10 min lesetid</span>
-        </div>
-      </div>
-    </section>
-    <article class="blog-post">
-      <div class="container container--narrow">
-        <nav class="breadcrumb" aria-label="Brodsmuler">
-          <ol class="breadcrumb__list">
-            <li class="breadcrumb__item"><a href="../plager/brystryggsmerter.html">Hjem</a></li>
-            <li class="breadcrumb__item"><a href="../blogg/index.html">Blogg</a></li>
-            <li class="breadcrumb__item"><a href="../plager/svimmelhet.html">Svimmelhet</a></li>
-            <li class="breadcrumb__item" aria-current="page">Svimmel og kvalm</li>
-          </ol>
-        </nav>
-
-        <!-- TL;DR Box -->
-        <div class="highlight-box" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0284c7; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
-          <h3 style="margin-top: 0; color: #0369a1;">TL;DR - Kort oppsummert</h3>
-          <ul style="margin-bottom: 0;">
-            <li><strong>Hva det er:</strong> Svimmelhet kombinert med kvalme - et vanlig symptombilde som kan ha mange ulike årsaker</li>
-            <li><strong>Vanligste årsaker:</strong> Krystallsyke (BPPV), vestibulær migrene, ortostatisk hypotensjon, angst/stress, lavt blodsukker</li>
-            <li><strong>Behandling:</strong> Sterk evidens for Epley-manover ved BPPV (74% blir symptomfrie), moderat evidens for manuell behandling ved nakkesvimmelhet</li>
-            <li><strong>Røde flagg:</strong> Akutt svimmelhet med lammelser, talevansker, dobbeltsyn, brystsmerter eller kraftig hodepine - ring 113</li>
-            <li><strong>Konsultasjon:</strong> 45 min første gang, 30 min oppfølg</li>
-          </ul>
-        </div>
-
-        <div class="blog-post__content">
-          <h2>Hva betyr det å være svimmel og kvalm?</h2>
-          <p>Kombinasjonen kan foles dramatisk - mange beskriver det som å miste fotfestet, bokstavelig talt. Det finnes mange mulige forklaringer, fra helt ufærlige tilstander som kan behandles på en konsultasjon, til mer alvorlige årsaker som krever rask medisinsk hjelp.</p>
-          <p>Denne artikkelen hjelper deg å forstå hva som kan ligge bak symptomene dine, og når du bør oppsøke hvilken type helsehjelp.</p>
-
-          <h2>årsaker til svimmelhet og kvalme</h2>
-
-          <h3>Vestibulære årsaker (balanseorganet)</h3>
-
-          <h4>Krystallsyke (BPPV) - vanligst</h4>
-          <p>Benign paroksysmal posisjonsvertigo (BPPV), ofte kalt krystallsyke, er den vanligste årsaken til svimmelhet nær du søker hjelp hos spesialist. Tilstanden står for 17-42% av tilfellene i svimmelhetsklinikker. Livstidsprevalensen er 2,4%.</p>
-          <p>Små kalsiumkrystaller i det indre øret løsner og havner i buegangene, der de forstyrrer balansesignalene. Resultatet er intense, korte svimmelhetsanfall (under ett minutt) som utløses av hodebevegelser - typisk når du legger deg ned, snur deg i sengen eller ser opp. Kvalme er vanlig under anfallene.</p>
-          <p>Kvinner rammes 2,2 ganger oftere enn menn, og tilstanden er vanligst mellom 50-70 år.</p>
-
-          <h4>Vestibulær migrene - underdiagnostisert</h4>
-          <p>Vestibulær migrene rammer 1-2,7% av befolkningen og er den nest vanligste årsaken til tilbakevendende svimmelhetsanfall. Likevel får bare 10% av de som oppfyller diagnosekriteriene beskjed om at migrene er årsaken til svimmelheten deres.</p>
-          <p>Anfallene varer fra 5 minutter til 72 timer og inkluderer ofte hodepine, lys- eller lydføolsomhet. Et viktig diagnostisk kriterium er nettopp at hodebevegelse-utløst svimmelhet MED kvalme er et karakteristisk symptom.</p>
-
-          <h4>Vestibularisnevritt</h4>
-          <p>Vestibularisnevritt er en betennelse i balansenerven, ofte etter en virusinfeksjon. Årlig forekomst er 3,5-15,5 per 100 000, tilsvarende ca. 500-1000 tilfeller i Norge per år.</p>
-          <p>Symptomene kommer bratt: kraftig roterende svimmelhet, uttalt kvalme og oppkast, og vansker med å gå. I motsetning til krystallsyke er symptomene konstante (ikke anfallsvise). De fleste opplever markant bedring innen 1-3 dager, og 50% er symptomfrie innen 6 uker.</p>
-
-          <h4>Menieres sykdom - sjelden</h4>
-          <p>Menieres sykdom er relativt sjelden med en forekomst på ca. 43 per 100 000. Tilstanden gir anfall med svimmelhet (20 minutter til 12 timer), Hørselstap, Øresus og trykkfølelse i øret.</p>
-
-          <h3>Ikke-Vestibulære årsaker</h3>
-
-          <h4>Ortostatisk hypotensjon (blodtrykksfall)</h4>
-          <p>Når blodtrykket faller bratt ved stillingsendring, kan du bli svimmel og kvalm. Dette rammer ca. 20% av voksne over 60 år og opp til 50% av sykehjemspasienter.</p>
-
-          <h4>Angst og funksjonell svimmelhet</h4>
-          <p>28,3% av pasienter med svimmelhet har symptomer på minst en angstlidelse. Persistent postural-perceptual dizziness (PPPD) er en kronisk tilstand som ofte starter etter en akutt svimmelhetsepisode, og rammer 15-20% av pasienter i spesialistklinikker.</p>
-
-          <h4>Lavt blodsukker</h4>
-          <p>Hypoglykemi gir ofte svimmelhet som første symptom - 72,3% rapporterer dette. Kvalme, skjelving og sultfølelse følger gjerne med.</p>
-
-          <h4>Medikamentbivirkninger</h4>
-          <p>Over 1000 medikamenter har svimmelhet som kjent bivirkning. Blodtrykksmedisin, beroligende midler, smertestillende og epilepsimedisiner er vanlige syndere. Hos eldre pasienter forklarer medisiner 23% av vedvarende svimmelhet.</p>
-
-          <!-- Warning Box -->
-          <div class="warning-box" style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left: 4px solid #dc2626; padding: 20px; margin: 30px 0; border-radius: 8px;">
-            <h3 style="color: #dc2626; margin-top: 0;">Røde flagg - Ring 113 ved akutt svimmelhet med:</h3>
-            <ul style="margin-bottom: 0;">
-              <li><strong>Lammelser</strong> eller nummenhet i ansikt/arm/ben</li>
-              <li><strong>Talevansker</strong> eller forståelsesproblemer</li>
-              <li><strong>Dobbeltsyn</strong> eller synstap</li>
-              <li><strong>Brystsmerter</strong></li>
-              <li><strong>Kraftig hodepine</strong> - spesielt hvis nyoppstått</li>
-              <li><strong>Klarer ikke stå eller gå</strong></li>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
+            alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
+        <div class="header__navigation">
+          <div class="language-toggle" role="group" aria-label="Språkvalg">
+            <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
+              aria-pressed="true">NO</button>
+            <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
+              aria-pressed="false">EN</button>
+            <div class="language-toggle__slider"></div>
+          </div>
+          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="../index.html" class="menu__link">Hjem</a></li>
+              <li class="menu__item"><a href="../about.html" class="menu__link">Om meg</a></li>
+              <li class="menu__item"><a href="../services.html" class="menu__link">Tjenester</a></li>
+              <li class="menu__item"><a href="../plager.html" class="menu__link">Plager</a></li>
+              <li class="menu__item"><a href="../priser.html" class="menu__link">Priser</a></li>
+              <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+              <li class="menu__item"><a href="../contact.html" class="menu__link">Kontakt</a></li>
+              <li class="menu__item"><a href="../blogg/index.html" class="menu__link">Blogg</a></li>
+              <li class="menu__item">
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
+                  class="actions-header__button">Bestill Time</a>
+              </li>
             </ul>
           </div>
-
-          <h2>Behandling</h2>
-
-          <h3>Hva kan kiropraktoren gjøre?</h3>
-
-          <h4>Krystallsyke (BPPV)</h4>
-          <p>Epley-manoveren er gullstandarden. En metaanalyse viser at 74% blir kvitt symptomene - 6,5 ganger bedre enn kontrollgrupper. En systematisk oversikt fra 2022 viser NNT på 3, altså at hver tredje pasient som behandles blir symptomfri sammenlignet med ingen behandling.</p>
-          <p>Den modifiserte Epley-teknikken gir 85% suksess ved første behandling versus 63% for tradisjonell teknikk. Til sammenligning: Ubehandlet krystallsyke gir bare 18% bedring etter en måned.</p>
-          <p>Tilbakefall er vanlig - ca. 30% får symptomer igjen innen ett år, og 50% innen fem år. Dette betyr at de fleste vil trenge behandling igjen på et tidspunkt.</p>
-
-          <h4>Nakke-relatert svimmelhet</h4>
-          <p>Cervikogen svimmelhet er en omdiskutert diagnose. Barany Society har eksplisitt nektet å foresta diagnosekriterier fordi evidensen for en direkte mekanistisk sammenheng mellom nakke og svimmelhet mangler.</p>
-          <p>Likevel finnes det pasienter som opplever bedring av svimmelhet etter nakkebehandling. En systematisk oversikt og metaanalyse av 13 randomiserte studier (898 pasienter) fant moderat kvalitet evidens for at manuell behandling reduserer svimmelhet, nakkesymptomer og balanseplager.</p>
-
-          <h3>Hva kan du forvente?</h3>
-          <ul>
-            <li><strong>BPPV:</strong> Mange opplever betydelig bedring etter 1-3 behandlinger</li>
-            <li><strong>Nakke-relatert:</strong> Typisk 4-8 behandlinger over noen uker</li>
-            <li><strong>Vestibulær rehabilitering:</strong> 4-12 ukers program ved mer sammensatte tilstander</li>
-          </ul>
-
-          <!-- FAQ Section -->
-          <div class="faq-section" style="background: #f8fafc; padding: 25px; border-radius: 12px; margin: 30px 0;">
-            <h2 style="margin-top: 0;">Ofte stilte spørsmål</h2>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Hvor lenge varer kvalmen ved svimmelhet?</h4>
-              <p>Det avhenger av årsaken. Ved BPPV varer kvalmen typisk sekunder til minutter etter hodebevegelse. Ved vestibularisnevritt kan kvalmen være vedvarende i dager. Ved migrene kan den vare i timer.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Kan stress gi svimmelhet og kvalme?</h4>
-              <p>Ja. Stress og angst kan forårsake hyperventilering som gir svimmelhet. I tillegg er 30-50% av svimmelhetspasienter også rammet av angst eller depresjon - dette er en biologisk kobling, ikke "innbilt".</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Er svimmelhet og kvalme farlig?</h4>
-              <p>Vanligvis ikke. De fleste årsaker er godartede og behandlingsbare. Men akutt svimmelhet med nevrologiske symptomer (lammelser, talevansker, synsforstyrrelser) kan være tegn på hjerneslag og krever ojeblikkelig legevurdering.</p>
-            </div>
-
-            <div class="faq-item" style="margin-bottom: 20px;">
-              <h4>Hva hjelper mot kvalmen?</h4>
-              <p>Behandle årsaken til svimmelheten. Ved BPPV gir reposisjonsmanover rask bedring. Ved anfall kan det hjelpe å ligge stille, fokusere på et fast punkt, og ta dype pust. Kvalmestillende medikamenter kan brukes kortvarig, men bør ikke brukes over 2-3 dager da de kan forsinke tilheling.</p>
-            </div>
-          </div>
-
-          <div class="blog-post__cta-box">
-            <h2>Er du svimmel og kvalm?</h2>
-            <p>Kiropraktor Mads Finstad har spesialkompetanse på svimmelhet. Jeg tilbyr grundig utredning med VNG og TRV-stol for å finne årsaken og gi riktig behandling.</p>
-            <p><strong>Priser:</strong> Nytt problem 1105 kr | Oppfølg 780 kr</p>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="btn btn--primary" target="_blank" rel="noopener">Bestill time</a>
-          </div>
-
-          <!-- Sources Section -->
-          <div class="sources-section" style="background: #f1f5f9; padding: 20px; border-radius: 8px; margin: 30px 0;">
-            <h3 style="margin-top: 0;">Kilder</h3>
-            <ol style="font-size: 0.9rem; margin-bottom: 0;">
-              <li>Neuhauser HK. Epidemiology of dizziness. Handbook of Clinical Neurology. 2016</li>
-              <li>Bosner S, et al. Dizziness in primary care. BMC Family Practice. 2018</li>
-              <li>von Brevern M, et al. BPPV epidemiology. J Neurol Neurosurg Psychiatry. 2007</li>
-              <li>Paz-Tamayo A, et al. Vestibular migraine. Frontiers in Genetics. 2020</li>
-              <li>Prim-Espada P. Epley maneuver effectiveness. Neurologia</li>
-              <li>De Vestel C, et al. Manual therapy for cervicogenic dizziness. JMMT. 2022</li>
-            </ol>
-          </div>
-
-          <h2>Relaterte artikler</h2>
-          <ul>
-            <li><a href="../plager/svimmelhet.html">Alt om svimmelhet</a></li>
-            <li><a href="../plager/svimmelhet/krystallsyke-bppv.html">Krystallsyke (BPPV)</a></li>
-            <li><a href="../plager/svimmelhet/vestibulær-migrene.html">Vestibulær migrene</a></li>
-            <li><a href="svimmelhet-stress-angst.html">Svimmelhet og stress/angst</a></li>
-          </ul>
         </div>
       </div>
-    </article>
-  </main>
+    </header>
 
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <img src="../images/Final Transparent Logo.webp" alt="TheBackROM logo" class="footer__logo" width="60" height="60" loading="lazy" />
-          <p>TheBackROM - Din kiropraktor på Majorstua</p>
+    <main class="page" id="main">
+      <!-- Hero Section -->
+      <section class="hub-hero">
+        <div class="hub-hero__container">
+          <span class="blog-post__category">Svimmelhet</span>
+          <h1>Svimmel og kvalm - årsaker, behandling og når du bør søke hjelp</h1>
+          <p class="hub-hero__subtitle">Kiropraktor Mads Finstad, Majorstua</p>
+          <div class="blog-post__meta">
+            <time class="blog-post__date" datetime="2026-01-20">20. januar 2026</time>
+            <span class="blog-post__author">Mads Finstad</span>
+          </div>
         </div>
-        <div class="footer__contact">
-          <h3>Kontakt</h3>
-          <p>Sorgenfrigata 11, 0365 Oslo</p>
-          <p>Tlf: <a href="tel:+4740178178">401 78 178</a></p>
+      </section>
+
+      <div class="hub-wrapper">
+        <article class="page__blog-post blog-post hub-main">
+          <div class="blog-post__container">
+            <div class="blog-post__content">
+
+              <!-- Hub Intro Section -->
+              <section class="hub-intro">
+                <div class="intro-text">
+                  <p>Kombinasjonen kan føles dramatisk - mange beskriver det som å miste fotfestet, bokstavelig talt. Det finnes mange mulige forklaringer, fra helt ufarlige tilstander som kan behandles på én konsultasjon, til mer alvorlige årsaker som krever rask medisinsk hjelp.</p>
+
+                  <p><strong>Den gode nyheten:</strong> De aller fleste tilfeller av svimmelhet og kvalme skyldes godartede tilstander som responderer godt på behandling. BPPV (krystallsyke) alene står for 17-42% av alle svimmelhetstilfeller - og har en suksessrate på 74% med riktig behandling.</p>
+                </div>
+
+                <div class="premium-summary-card">
+                  <h3>Kort oppsummert</h3>
+                  <ul>
+                    <li>BPPV (krystallsyke) er <strong>vanligste årsak</strong> - 74% blir kvitt symptomene med behandling</li>
+                    <li>Vestibulær migrene rammer 1-2,7% - men bare 10% får riktig diagnose</li>
+                    <li>Vestibularisnevritt gir akutte symptomer - 50% symptomfrie innen 6 uker</li>
+                    <li><strong>Røde flagg:</strong> Lammelser, talevansker, synstap - ring 113</li>
+                  </ul>
+                </div>
+
+                <!-- Red Flag Alert Box -->
+                <div class="red-flag-alert">
+                  <h4>Når må du søke hjelp raskt?</h4>
+                  <p>Ved lammelser, talevansker, dobbeltsyn, brystsmerter eller kraftig hodepine sammen med svimmelhet - ring 113 umiddelbart.</p>
+                  <a href="#s4">Les mer om røde flagg</a>
+                </div>
+
+                <!-- Main Infographic -->
+                <img src="../images/infographics/svimmelhet/dizziness-causes-duration-and-red-flags.webp"
+                     alt="Infografikk om svimmelhet - årsaker, varighet og røde flagg"
+                     class="hub-infographic"
+                     loading="lazy"
+                     decoding="async" />
+
+                <div class="stat-grid">
+                  <div class="stat-item">
+                    <div class="stat-number">17-42%</div>
+                    <div class="stat-label">Av svimmelhet skyldes BPPV</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">74%</div>
+                    <div class="stat-label">BPPV-suksess med Epley</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">1-2,7%</div>
+                    <div class="stat-label">Rammes av vestibulær migrene</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">50%</div>
+                    <div class="stat-label">Vestibularisnevritt fri innen 6 uker</div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- SECTION 1: Årsaker -->
+              <section class="hub-section" id="s1">
+                <div class="section-header">
+                  <span class="section-number">1</span>
+                  <h2>Årsaker til svimmelhet og kvalme</h2>
+                </div>
+
+                <h3>Vestibulære årsaker (balanseorganet)</h3>
+
+                <div class="condition-card">
+                  <h4>Krystallsyke (BPPV) - vanligst</h4>
+                  <p>Benign paroksysmal posisjonsvertigo (BPPV), ofte kalt krystallsyke, er den vanligste årsaken til svimmelhet når du søker hjelp hos spesialist. Tilstanden står for 17-42% av tilfellene i svimmelhetsklinikker. Livstidsprevalensen er 2,4%.</p>
+                  <p>Små kalsiumkrystaller i det indre øret løsner og havner i buegangene, der de forstyrrer balansesignalene. Resultatet er intense, korte svimmelhetsanfall (under ett minutt) som utløses av hodebevegelser - typisk når du legger deg ned, snur deg i sengen eller ser opp. Kvalme er vanlig under anfallene.</p>
+                  <p><strong>Hvem rammes?</strong> Kvinner rammes 2,2 ganger oftere enn menn, og tilstanden er vanligst mellom 50-70 år.</p>
+                  <p><a href="../plager/svimmelhet/krystallsyke-bppv.html" style="color: var(--hub-primary); font-weight: 600;">Les mer om krystallsyke (BPPV) →</a></p>
+                </div>
+
+                <div class="condition-card">
+                  <h4>Vestibulær migrene - underdiagnostisert</h4>
+                  <p>Vestibulær migrene rammer 1-2,7% av befolkningen og er den nest vanligste årsaken til tilbakevendende svimmelhetsanfall. Likevel får bare 10% av de som oppfyller diagnosekriteriene beskjed om at migrene er årsaken til svimmelheten deres.</p>
+                  <p>Anfallene varer fra 5 minutter til 72 timer og inkluderer ofte hodepine, lys- eller lydfølsomhet. Et viktig diagnostisk kriterium er nettopp at hodebevegelse-utløst svimmelhet MED kvalme er et karakteristisk symptom.</p>
+                  <p><a href="../plager/svimmelhet/vestibulaer-migrene.html" style="color: var(--hub-primary); font-weight: 600;">Les mer om vestibulær migrene →</a></p>
+                </div>
+
+                <div class="condition-card">
+                  <h4>Vestibularisnevritt</h4>
+                  <p>Vestibularisnevritt er en betennelse i balansenerven, ofte etter en virusinfeksjon. Årlig forekomst er 3,5-15,5 per 100 000, tilsvarende ca. 500-1000 tilfeller i Norge per år.</p>
+                  <p>Symptomene kommer brått: kraftig roterende svimmelhet, uttalt kvalme og oppkast, og vansker med å gå. I motsetning til krystallsyke er symptomene konstante (ikke anfallsvise). De fleste opplever markant bedring innen 1-3 dager, og 50% er symptomfrie innen 6 uker.</p>
+                  <p><a href="../plager/svimmelhet/vestibularisnevritt.html" style="color: var(--hub-primary); font-weight: 600;">Les mer om vestibularisnevritt →</a></p>
+                </div>
+
+                <div class="condition-card">
+                  <h4>Ménières sykdom - sjelden</h4>
+                  <p>Ménières sykdom er relativt sjelden med en forekomst på ca. 43 per 100 000. Tilstanden gir anfall med svimmelhet (20 minutter til 12 timer), hørselstap, øresus og trykkfølelse i øret.</p>
+                  <p><a href="../plager/svimmelhet/menieres-sykdom.html" style="color: var(--hub-primary); font-weight: 600;">Les mer om Ménières sykdom →</a></p>
+                </div>
+
+                <h3>Ikke-vestibulære årsaker</h3>
+
+                <div class="info-box">
+                  <h4>Ortostatisk hypotensjon (blodtrykksfall)</h4>
+                  <p>Når blodtrykket faller brått ved stillingsendring, kan du bli svimmel og kvalm. Dette rammer ca. 20% av voksne over 60 år og opp til 50% av sykehjemspasienter.</p>
+                </div>
+
+                <div class="info-box">
+                  <h4>Angst og funksjonell svimmelhet</h4>
+                  <p>28,3% av pasienter med svimmelhet har symptomer på minst én angstlidelse. Persistent postural-perceptual dizziness (PPPD) er en kronisk tilstand som ofte starter etter en akutt svimmelhetsepisode, og rammer 15-20% av pasienter i spesialistklinikker.</p>
+                  <p><a href="../plager/svimmelhet/pppd-kronisk-svimmelhet.html" style="color: var(--hub-blue); font-weight: 600;">Les mer om PPPD →</a></p>
+                </div>
+
+                <div class="info-box">
+                  <h4>Lavt blodsukker</h4>
+                  <p>Hypoglykemi gir ofte svimmelhet som første symptom - 72,3% rapporterer dette. Kvalme, skjelving og sultfølelse følger gjerne med.</p>
+                </div>
+
+                <div class="info-box">
+                  <h4>Medikamentbivirkninger</h4>
+                  <p>Over 1000 medikamenter har svimmelhet som kjent bivirkning. Blodtrykksmedisin, beroligende midler, smertestillende og epilepsimedisiner er vanlige syndere. Hos eldre pasienter forklarer medisiner 23% av vedvarende svimmelhet.</p>
+                </div>
+              </section>
+
+              <!-- SECTION 2: Behandling -->
+              <section class="hub-section" id="s2">
+                <div class="section-header">
+                  <span class="section-number">2</span>
+                  <h2>Behandling</h2>
+                </div>
+
+                <h3>Hva kan kiropraktoren gjøre?</h3>
+
+                <div class="treatment-box">
+                  <h4>Krystallsyke (BPPV)</h4>
+                  <p>Epley-manøveren er gullstandarden. En metaanalyse viser at <strong>74% blir kvitt symptomene</strong> - 6,5 ganger bedre enn kontrollgrupper. En systematisk oversikt fra 2022 viser NNT på 3, altså at hver tredje pasient som behandles blir symptomfri sammenlignet med ingen behandling.</p>
+                  <p>Den modifiserte Epley-teknikken gir 85% suksess ved første behandling versus 63% for tradisjonell teknikk. Til sammenligning: Ubehandlet krystallsyke gir bare 18% bedring etter en måned.</p>
+                  <p><strong>Tilbakefall er vanlig</strong> - ca. 30% får symptomer igjen innen ett år, og 50% innen fem år. Dette betyr at de fleste vil trenge behandling igjen på et tidspunkt.</p>
+                </div>
+
+                <div class="treatment-box">
+                  <h4>Nakke-relatert svimmelhet</h4>
+                  <p>Cervikogen svimmelhet er en omdiskutert diagnose. Bárány Society har eksplisitt nektet å foreslå diagnosekriterier fordi evidensen for en direkte mekanistisk sammenheng mellom nakke og svimmelhet mangler.</p>
+                  <p>Likevel finnes det pasienter som opplever bedring av svimmelhet etter nakkebehandling. En systematisk oversikt og metaanalyse av 13 randomiserte studier (898 pasienter) fant moderat kvalitet evidens for at manuell behandling reduserer svimmelhet, nakkesymptomer og balanseplager.</p>
+                </div>
+
+                <h3>Hva kan du forvente?</h3>
+                <ul>
+                  <li><strong>BPPV:</strong> Mange opplever betydelig bedring etter 1-3 behandlinger</li>
+                  <li><strong>Nakke-relatert:</strong> Typisk 4-8 behandlinger over noen uker</li>
+                  <li><strong>Vestibulær rehabilitering:</strong> 4-12 ukers program ved mer sammensatte tilstander</li>
+                </ul>
+
+                <div class="prognosis-highlight">
+                  <p>De fleste med svimmelhet og kvalme blir betydelig bedre med riktig behandling. Nøkkelen er å finne riktig diagnose først.</p>
+                </div>
+              </section>
+
+              <!-- SECTION 3: FAQ -->
+              <section class="hub-section" id="s3">
+                <div class="section-header">
+                  <span class="section-number">3</span>
+                  <h2>Ofte stilte spørsmål</h2>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Hvor lenge varer kvalmen ved svimmelhet?</h4>
+                  <p>Det avhenger av årsaken. Ved BPPV varer kvalmen typisk sekunder til minutter etter hodebevegelse. Ved vestibularisnevritt kan kvalmen være vedvarende i dager. Ved migrene kan den vare i timer.</p>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Kan stress gi svimmelhet og kvalme?</h4>
+                  <p>Ja. Stress og angst kan forårsake hyperventilering som gir svimmelhet. I tillegg er 30-50% av svimmelhetspasienter også rammet av angst eller depresjon - dette er en biologisk kobling, ikke "innbilt".</p>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Er svimmelhet og kvalme farlig?</h4>
+                  <p>Vanligvis ikke. De fleste årsaker er godartede og behandlingsbare. Men akutt svimmelhet med nevrologiske symptomer (lammelser, talevansker, synsforstyrrelser) kan være tegn på hjerneslag og krever øyeblikkelig legevurdering.</p>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Hva hjelper mot kvalmen?</h4>
+                  <p>Behandle årsaken til svimmelheten. Ved BPPV gir reposisjonsmanøver rask bedring. Ved anfall kan det hjelpe å ligge stille, fokusere på et fast punkt, og ta dype pust. Kvalmestillende medikamenter kan brukes kortvarig, men bør ikke brukes over 2-3 dager da de kan forsinke tilheling.</p>
+                </div>
+              </section>
+
+              <!-- SECTION 4: Røde flagg -->
+              <section class="hub-section" id="s4">
+                <div class="section-header">
+                  <span class="section-number">4</span>
+                  <h2>Røde flagg - når du må søke hjelp raskt</h2>
+                </div>
+
+                <div class="red-flag-box">
+                  <h3>Ring 113 ved akutt svimmelhet med:</h3>
+                  <ul>
+                    <li><strong>Lammelser</strong> eller nummenhet i ansikt/arm/ben</li>
+                    <li><strong>Talevansker</strong> eller forståelsesproblemer</li>
+                    <li><strong>Dobbeltsyn</strong> eller synstap</li>
+                    <li><strong>Brystsmerter</strong></li>
+                    <li><strong>Kraftig hodepine</strong> - spesielt hvis nyoppstått</li>
+                    <li><strong>Klarer ikke stå eller gå</strong></li>
+                  </ul>
+                </div>
+
+                <div class="info-box">
+                  <h4>Disse symptomene kan tyde på hjerneslag eller annen alvorlig tilstand og krever øyeblikkelig medisinsk hjelp.</h4>
+                </div>
+              </section>
+
+              <!-- SECTION 5: Kontakt -->
+              <section class="hub-section" id="s5">
+                <div class="section-header">
+                  <span class="section-number">5</span>
+                  <h2>Er du svimmel og kvalm?</h2>
+                </div>
+
+                <p>Kiropraktor Mads Finstad har spesialkompetanse på svimmelhet. Jeg tilbyr grundig utredning med VNG og TRV-stol for å finne årsaken og gi riktig behandling.</p>
+
+                <div class="hub-cta">
+                  <h3>Book time direkte</h3>
+                  <p>Nytt problem: 1 140 kr (45 min) | Oppfølging: 795 kr (30 min)</p>
+                  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="button" target="_blank" rel="noopener">Bestill time</a>
+                  <p style="margin-top: 16px; font-size: 0.9rem;">Eller ring: <a href="tel:+4793043062" style="color: white;">93 04 30 62</a></p>
+                </div>
+              </section>
+
+              <!-- Related Articles -->
+              <div class="related-box">
+                <h3>Relaterte artikler</h3>
+                <a href="../plager/svimmelhet.html">Alt om svimmelhet</a>
+                <a href="../plager/svimmelhet/krystallsyke-bppv.html">Krystallsyke (BPPV)</a>
+                <a href="../plager/svimmelhet/vestibulær-migrene.html">Vestibulær migrene</a>
+                <a href="svimmelhet-stress-angst.html">Svimmelhet og stress/angst</a>
+              </div>
+
+              <!-- Sources Section -->
+              <div class="sources-section">
+                <h3>Kilder</h3>
+                <p>Neuhauser HK. Epidemiology of dizziness. Handbook of Clinical Neurology. 2016</p>
+                <p>Bosner S, et al. Dizziness in primary care. BMC Family Practice. 2018</p>
+                <p>von Brevern M, et al. BPPV epidemiology. J Neurol Neurosurg Psychiatry. 2007</p>
+                <p>Paz-Tamayo A, et al. Vestibular migraine. Frontiers in Genetics. 2020</p>
+                <p>Prim-Espada P. Epley maneuver effectiveness. Neurologia</p>
+                <p>De Vestel C, et al. Manual therapy for cervicogenic dizziness. JMMT. 2022</p>
+              </div>
+
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+
+              <p style="font-size: 0.85rem; color: #64748b; margin-top: 20px;">Sist oppdatert: Januar 2026</p>
+
+            </div>
+          </div>
+        </article>
+
+        <aside class="hub-sidebar">
+          <div class="hub-conversion-card">
+            <img src="../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
+            <h3>Trenger du hjelp?</h3>
+            <p>Jeg hjelper deg med å finne årsaken og riktig behandling.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Bestill time</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
+            </div>
+          </div>
+
+          <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
+            <h3>Innhold</h3>
+            <ul>
+              <li><a href="#s1">Årsaker til svimmelhet og kvalme</a></li>
+              <li><a href="#s2">Behandling</a></li>
+              <li><a href="#s3">Ofte stilte spørsmål</a></li>
+              <li><a href="#s4">Røde flagg</a></li>
+              <li><a href="#s5">Er du svimmel og kvalm?</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+      <div class="mobile-sticky-cta">
+        <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer">Bestill time</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Left Column -->
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Besøk oss på Facebook">
+              <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Følg oss på Instagram">
+              <img src="../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+                height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Se våre videoer på YouTube">
+              <img src="../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
+              <img src="../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send e-post til TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Column -->
+        <div class="footer__center">
+          <div class="footer__logo">
+            <img src="../images/logo-footer.webp" alt="Klinikk for alle Kiropraktor Majorstua Oslo logo" width="300"
+              height="229" loading="lazy" decoding="async" />
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="text--muted-small">Tilbake til start</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Åpningstider</h3>
+            <p>Mandag - Fredag: 08:00 - 19:00</p>
+            <p>Lørdag: 10:00 - 16:00</p>
+            <p>Søndag: Stengt</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Kontaktinformasjon</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Telefon: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>E-post: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
         </div>
       </div>
+
       <div class="footer__bottom">
-        <p>&copy; 2026 Mads Finstad Kiropraktor. Alle rettigheter reservert.</p>
+        <a href="../personvern.html" class="footer__link--muted">Personvernerklæring</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
       </div>
-    </div>
-  </footer>
-  <!-- Mobile Sticky Booking Button -->
-  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer"
-     class="mobile-sticky-cta"
-     aria-label="Bestill time hos kiropraktor">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-      <line x1="16" y1="2" x2="16" y2="6"></line>
-      <line x1="8" y1="2" x2="8" y2="6"></line>
-      <line x1="3" y1="10" x2="21" y2="10"></line>
-    </svg>
-    Bestill time
-  </a>
+    </footer>
+  </div>
 
   <script src="../js/script.min.js" defer></script>
+  <script src="../js/language-toggle.min.js" defer></script>
+  <script src="../js/modern-enhancements.min.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+      function updateActiveLink() {
+        let currentSection = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 150) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + currentSection) {
+            link.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
   <script src="../js/breadcrumbs.js" defer></script>
 </body>
 </html>
-
-

@@ -1,0 +1,475 @@
+{
+  "description": "Mapping of blog articles to their topic-matched infographics",
+  "generated": "2026-01-23",
+  "articles": {
+    "korsrygg": {
+      "no": {
+        "blogg/ovelser-isjias.html": {
+          "infographic": "korsrygg/five-exercises-to-relieve-sciatica-pain.webp",
+          "alt_no": "Infografikk: Fem ovelser som lindrer isjiassmerte",
+          "alt_en": "Infographic: Five exercises to relieve sciatica pain"
+        },
+        "blogg/diskogen-smerte.html": {
+          "infographic": "korsrygg/discogenic-pain-sitting-and-movement.webp",
+          "alt_no": "Infografikk: Diskogen smerte - sitte- og bevegelsesvaner",
+          "alt_en": "Infographic: Discogenic pain - sitting and movement habits"
+        },
+        "blogg/piriformissyndrom-falsk-isjias.html": {
+          "infographic": "korsrygg/piriformis-syndrome-false-sciatica-explained.webp",
+          "alt_no": "Infografikk: Piriformissyndrom - falsk isjias forklart",
+          "alt_en": "Infographic: Piriformis syndrome - false sciatica explained"
+        },
+        "blogg/l4-l5-prolaps.html": {
+          "infographic": "korsrygg/guide-to-l4-l5-disc-herniation.webp",
+          "alt_no": "Infografikk: Guide til L4-L5 skiveprolaps",
+          "alt_en": "Infographic: Guide to L4-L5 disc herniation"
+        },
+        "blogg/l5-s1-prolaps.html": {
+          "infographic": "korsrygg/l5-s1-disc-herniation-symptoms-and-recovery.webp",
+          "alt_no": "Infografikk: L5-S1 prolaps - symptomer og bedring",
+          "alt_en": "Infographic: L5-S1 disc herniation symptoms and recovery"
+        },
+        "blogg/akutt-ryggsmerte-selvhjelp.html": {
+          "infographic": "korsrygg/practical-guide-to-acute-back-pain.webp",
+          "alt_no": "Infografikk: Praktisk guide til akutt ryggsmerte",
+          "alt_en": "Infographic: Practical guide to acute back pain"
+        },
+        "blogg/isjias-prolaps-hekseskudd-forskjell.html": {
+          "infographic": "korsrygg/back-pain-lumbago-sciatica-disc.webp",
+          "alt_no": "Infografikk: Forskjellen mellom isjias, prolaps og hekseskudd",
+          "alt_en": "Infographic: Back pain - lumbago, sciatica, and disc problems"
+        },
+        "blogg/mr-bildediagnostikk-ryggsmerte.html": {
+          "infographic": "korsrygg/smart-approach-to-back-pain-mris.webp",
+          "alt_no": "Infografikk: Smart tilnarming til MR ved ryggsmerte",
+          "alt_en": "Infographic: Smart approach to back pain MRIs"
+        },
+        "blogg/styrkeovelser-korsrygg.html": {
+          "infographic": "korsrygg/3-exercises-to-strengthen-lower-back.webp",
+          "alt_no": "Infografikk: 3 ovelser for a styrke korsryggen",
+          "alt_en": "Infographic: 3 exercises to strengthen lower back"
+        },
+        "blogg/facettleddssyndrom.html": {
+          "infographic": "korsrygg/facet-joint-syndrome-causes-and-management.webp",
+          "alt_no": "Infografikk: Facettleddssyndrom - arsaker og behandling",
+          "alt_en": "Infographic: Facet joint syndrome causes and management"
+        },
+        "blogg/muskelsmerte-vs-nervesmerte.html": {
+          "infographic": "korsrygg/sciatica-nerve-pain-vs-muscle.webp",
+          "alt_no": "Infografikk: Muskelsmerte vs. nervesmerte",
+          "alt_en": "Infographic: Sciatica - nerve pain vs muscle pain"
+        }
+      },
+      "en": {
+        "en/blog/exercises-sciatica.html": {
+          "infographic": "korsrygg/five-exercises-to-relieve-sciatica-pain.webp",
+          "alt_no": "Infografikk: Fem ovelser som lindrer isjiassmerte",
+          "alt_en": "Infographic: Five exercises to relieve sciatica pain"
+        },
+        "en/blog/discogenic-pain.html": {
+          "infographic": "korsrygg/discogenic-pain-sitting-and-movement.webp",
+          "alt_no": "Infografikk: Diskogen smerte - sitte- og bevegelsesvaner",
+          "alt_en": "Infographic: Discogenic pain - sitting and movement habits"
+        },
+        "en/blog/piriformis-syndrome-false-sciatica.html": {
+          "infographic": "korsrygg/piriformis-syndrome-false-sciatica-explained.webp",
+          "alt_no": "Infografikk: Piriformissyndrom - falsk isjias forklart",
+          "alt_en": "Infographic: Piriformis syndrome - false sciatica explained"
+        },
+        "en/blog/l4-l5-disc-herniation.html": {
+          "infographic": "korsrygg/guide-to-l4-l5-disc-herniation.webp",
+          "alt_no": "Infografikk: Guide til L4-L5 skiveprolaps",
+          "alt_en": "Infographic: Guide to L4-L5 disc herniation"
+        },
+        "en/blog/l5-s1-disc-herniation.html": {
+          "infographic": "korsrygg/l5-s1-disc-herniation-symptoms-and-recovery.webp",
+          "alt_no": "Infografikk: L5-S1 prolaps - symptomer og bedring",
+          "alt_en": "Infographic: L5-S1 disc herniation symptoms and recovery"
+        },
+        "en/blog/acute-back-pain-self-help.html": {
+          "infographic": "korsrygg/practical-guide-to-acute-back-pain.webp",
+          "alt_no": "Infografikk: Praktisk guide til akutt ryggsmerte",
+          "alt_en": "Infographic: Practical guide to acute back pain"
+        },
+        "en/blog/sciatica-prolapse-lumbago-difference.html": {
+          "infographic": "korsrygg/back-pain-lumbago-sciatica-disc.webp",
+          "alt_no": "Infografikk: Forskjellen mellom isjias, prolaps og hekseskudd",
+          "alt_en": "Infographic: Back pain - lumbago, sciatica, and disc problems"
+        },
+        "en/blog/mri-imaging-back-pain.html": {
+          "infographic": "korsrygg/smart-approach-to-back-pain-mris.webp",
+          "alt_no": "Infografikk: Smart tilnarming til MR ved ryggsmerte",
+          "alt_en": "Infographic: Smart approach to back pain MRIs"
+        },
+        "en/blog/strengthening-exercises-lower-back.html": {
+          "infographic": "korsrygg/3-exercises-to-strengthen-lower-back.webp",
+          "alt_no": "Infografikk: 3 ovelser for a styrke korsryggen",
+          "alt_en": "Infographic: 3 exercises to strengthen lower back"
+        },
+        "en/blog/facet-joint-syndrome.html": {
+          "infographic": "korsrygg/facet-joint-syndrome-causes-and-management.webp",
+          "alt_no": "Infografikk: Facettleddssyndrom - arsaker og behandling",
+          "alt_en": "Infographic: Facet joint syndrome causes and management"
+        },
+        "en/blog/muscle-pain-vs-nerve-pain.html": {
+          "infographic": "korsrygg/sciatica-nerve-pain-vs-muscle.webp",
+          "alt_no": "Infografikk: Muskelsmerte vs. nervesmerte",
+          "alt_en": "Infographic: Sciatica - nerve pain vs muscle pain"
+        }
+      }
+    },
+    "kjeve": {
+      "no": {
+        "blogg/stress-kjevesmerter.html": {
+          "infographic": "kjeve/stress-and-jaw-pain-infographic.webp",
+          "alt_no": "Infografikk: Stress og kjevesmerter",
+          "alt_en": "Infographic: Stress and jaw pain"
+        },
+        "blogg/kjevesmerter-barn-ungdom.html": {
+          "infographic": "kjeve/parents-guide-to-pediatric-tmd.webp",
+          "alt_no": "Infografikk: Foreldres guide til kjevesmerter hos barn",
+          "alt_en": "Infographic: Parents guide to pediatric TMD"
+        },
+        "blogg/kjeveovelser-hjemme.html": {
+          "infographic": "kjeve/managing-jaw-pain-(tmd)-guide.webp",
+          "alt_no": "Infografikk: Guide til a handtere kjevesmerter (TMD)",
+          "alt_en": "Infographic: Managing jaw pain (TMD) guide"
+        },
+        "blogg/botox-vs-manuell-behandling-kjeve.html": {
+          "infographic": "kjeve/botox-hype-vs-clinical-reality.webp",
+          "alt_no": "Infografikk: Botox-hype vs. klinisk virkelighet",
+          "alt_en": "Infographic: Botox hype vs clinical reality"
+        },
+        "blogg/hypermobilitet-eds-kjeve.html": {
+          "infographic": "kjeve/guide-to-eds-jaw-disorders.webp",
+          "alt_no": "Infografikk: Guide til EDS og kjeveleddsproblemer",
+          "alt_en": "Infographic: Guide to EDS jaw disorders"
+        },
+        "blogg/tekstnakke-kjevesmerter.html": {
+          "infographic": "kjeve/text-neck-to-jaw-pain.webp",
+          "alt_no": "Infografikk: Fra tekstnakke til kjevesmerter",
+          "alt_en": "Infographic: Text neck to jaw pain"
+        },
+        "blogg/musikere-kjevesmerter.html": {
+          "infographic": "kjeve/tmd-guide-for-wind-players.webp",
+          "alt_no": "Infografikk: TMD-guide for blaserinstrumentister",
+          "alt_en": "Infographic: TMD guide for wind players"
+        },
+        "blogg/kampsport-kjeveskader.html": {
+          "infographic": "kjeve/combat-athletes-guide-to-tmd.webp",
+          "alt_no": "Infografikk: Kampsportutoveres guide til TMD",
+          "alt_en": "Infographic: Combat athletes guide to TMD"
+        },
+        "blogg/adhd-autisme-kjevesmerter.html": {
+          "infographic": "kjeve/adhd-autism-and-jaw-pain.webp",
+          "alt_no": "Infografikk: ADHD, autisme og kjevesmerter",
+          "alt_en": "Infographic: ADHD, autism and jaw pain"
+        },
+        "blogg/tmd-ibs-mage-kjeve.html": {
+          "infographic": "kjeve/the-gut-jaw-connection-explained.webp",
+          "alt_no": "Infografikk: Sammenhengen mellom mage og kjeve",
+          "alt_en": "Infographic: The gut-jaw connection explained"
+        },
+        "blogg/kjeve-nakke-svimmelhet.html": {
+          "infographic": "kjeve/the-jaw-and-neck-pain-link.webp",
+          "alt_no": "Infografikk: Sammenhengen mellom kjeve og nakke",
+          "alt_en": "Infographic: The jaw and neck pain link"
+        },
+        "blogg/bittfeil-myter-fakta.html": {
+          "infographic": "kjeve/jaw-pain-causes-and-solutions.webp",
+          "alt_no": "Infografikk: Kjevesmerter - arsaker og losninger",
+          "alt_en": "Infographic: Jaw pain causes and solutions"
+        },
+        "blogg/graviditet-kjevesmerter.html": {
+          "infographic": "kjeve/navigating-jaw-pain-during-pregnancy.webp",
+          "alt_no": "Infografikk: Kjevesmerter under graviditet",
+          "alt_en": "Infographic: Navigating jaw pain during pregnancy"
+        }
+      },
+      "en": {
+        "en/blog/stress-jaw-pain.html": {
+          "infographic": "kjeve/stress-and-jaw-pain-infographic.webp",
+          "alt_no": "Infografikk: Stress og kjevesmerter",
+          "alt_en": "Infographic: Stress and jaw pain"
+        },
+        "en/blog/jaw-pain-children-adolescents.html": {
+          "infographic": "kjeve/parents-guide-to-pediatric-tmd.webp",
+          "alt_no": "Infografikk: Foreldres guide til kjevesmerter hos barn",
+          "alt_en": "Infographic: Parents guide to pediatric TMD"
+        },
+        "en/blog/jaw-exercises-home.html": {
+          "infographic": "kjeve/managing-jaw-pain-(tmd)-guide.webp",
+          "alt_no": "Infografikk: Guide til a handtere kjevesmerter (TMD)",
+          "alt_en": "Infographic: Managing jaw pain (TMD) guide"
+        },
+        "en/blog/botox-vs-manual-treatment-jaw.html": {
+          "infographic": "kjeve/botox-hype-vs-clinical-reality.webp",
+          "alt_no": "Infografikk: Botox-hype vs. klinisk virkelighet",
+          "alt_en": "Infographic: Botox hype vs clinical reality"
+        },
+        "en/blog/hypermobility-eds-jaw.html": {
+          "infographic": "kjeve/guide-to-eds-jaw-disorders.webp",
+          "alt_no": "Infografikk: Guide til EDS og kjeveleddsproblemer",
+          "alt_en": "Infographic: Guide to EDS jaw disorders"
+        },
+        "en/blog/text-neck-jaw-pain.html": {
+          "infographic": "kjeve/text-neck-to-jaw-pain.webp",
+          "alt_no": "Infografikk: Fra tekstnakke til kjevesmerter",
+          "alt_en": "Infographic: Text neck to jaw pain"
+        },
+        "en/blog/musicians-jaw-pain.html": {
+          "infographic": "kjeve/tmd-guide-for-wind-players.webp",
+          "alt_no": "Infografikk: TMD-guide for blaserinstrumentister",
+          "alt_en": "Infographic: TMD guide for wind players"
+        },
+        "en/blog/martial-arts-jaw-injuries.html": {
+          "infographic": "kjeve/combat-athletes-guide-to-tmd.webp",
+          "alt_no": "Infografikk: Kampsportutoveres guide til TMD",
+          "alt_en": "Infographic: Combat athletes guide to TMD"
+        },
+        "en/blog/adhd-autism-jaw-pain.html": {
+          "infographic": "kjeve/adhd-autism-and-jaw-pain.webp",
+          "alt_no": "Infografikk: ADHD, autisme og kjevesmerter",
+          "alt_en": "Infographic: ADHD, autism and jaw pain"
+        },
+        "en/blog/tmd-ibs-gut-jaw.html": {
+          "infographic": "kjeve/the-gut-jaw-connection-explained.webp",
+          "alt_no": "Infografikk: Sammenhengen mellom mage og kjeve",
+          "alt_en": "Infographic: The gut-jaw connection explained"
+        },
+        "en/blog/jaw-neck-dizziness.html": {
+          "infographic": "kjeve/the-jaw-and-neck-pain-link.webp",
+          "alt_no": "Infografikk: Sammenhengen mellom kjeve og nakke",
+          "alt_en": "Infographic: The jaw and neck pain link"
+        },
+        "en/blog/bite-problems-myths-facts.html": {
+          "infographic": "kjeve/jaw-pain-causes-and-solutions.webp",
+          "alt_no": "Infografikk: Kjevesmerter - arsaker og losninger",
+          "alt_en": "Infographic: Jaw pain causes and solutions"
+        },
+        "en/blog/pregnancy-jaw-pain.html": {
+          "infographic": "kjeve/navigating-jaw-pain-during-pregnancy.webp",
+          "alt_no": "Infografikk: Kjevesmerter under graviditet",
+          "alt_en": "Infographic: Navigating jaw pain during pregnancy"
+        }
+      }
+    },
+    "svimmelhet": {
+      "no": {
+        "blogg/svimmelhet-myter.html": {
+          "infographic": "svimmelhet/dizziness-myths-versus-facts-infographic.webp",
+          "alt_no": "Infografikk: Svimmelhetsmyter vs. fakta",
+          "alt_en": "Infographic: Dizziness myths versus facts"
+        },
+        "blogg/svimmelhet-ikke-bppv.html": {
+          "infographic": "svimmelhet/vertigo-hidden-causes-and-solutions.webp",
+          "alt_no": "Infografikk: Svimmelhet - skjulte arsaker og losninger",
+          "alt_en": "Infographic: Vertigo hidden causes and solutions"
+        },
+        "blogg/svimmelhet-behandling.html": {
+          "infographic": "svimmelhet/understanding-dizziness-causes-and-treatment.webp",
+          "alt_no": "Infografikk: Forsta svimmelhet - arsaker og behandling",
+          "alt_en": "Infographic: Understanding dizziness causes and treatment"
+        },
+        "blogg/svimmelhet-stress-angst.html": {
+          "infographic": "svimmelhet/from-spinning-to-stable-guide.webp",
+          "alt_no": "Infografikk: Fra svimmelhet til stabilitet",
+          "alt_en": "Infographic: From spinning to stable guide"
+        },
+        "blogg/svimmel-i-senga.html": {
+          "infographic": "svimmelhet/quick-guide-to-positional-vertigo-(bppv).webp",
+          "alt_no": "Infografikk: Hurtigguide til stillingsbetinget svimmelhet (BPPV)",
+          "alt_en": "Infographic: Quick guide to positional vertigo (BPPV)"
+        },
+        "blogg/svimmel-naar-du-staar-opp.html": {
+          "infographic": "svimmelhet/guide-to-postural-orthostatic-tachycardia-syndrome.webp",
+          "alt_no": "Infografikk: Guide til POTS - svimmelhet nar du star opp",
+          "alt_en": "Infographic: Guide to postural orthostatic tachycardia syndrome"
+        },
+        "blogg/svimmel-og-kvalm.html": {
+          "infographic": "svimmelhet/dizziness-causes-duration-and-red-flags.webp",
+          "alt_no": "Infografikk: Svimmelhet - arsaker, varighet og rode flagg",
+          "alt_en": "Infographic: Dizziness causes, duration and red flags"
+        },
+        "blogg/subtil-krystallsyke.html": {
+          "infographic": "svimmelhet/a-guide-to-crystal-sickness-(bppv).webp",
+          "alt_no": "Infografikk: Guide til krystallsyke (BPPV)",
+          "alt_en": "Infographic: A guide to crystal sickness (BPPV)"
+        },
+        "blogg/eldre-svimmelhet-fallrisiko.html": {
+          "infographic": "svimmelhet/the-science-of-body-stability.webp",
+          "alt_no": "Infografikk: Vitenskapen bak kroppens stabilitet",
+          "alt_en": "Infographic: The science of body stability"
+        },
+        "blogg/sentral-svimmelhet.html": {
+          "infographic": "svimmelhet/decoding-dizziness-causes-and-solutions.webp",
+          "alt_no": "Infografikk: Forsta svimmelhet - arsaker og losninger",
+          "alt_en": "Infographic: Decoding dizziness causes and solutions"
+        },
+        "blogg/leve-med-svimmelhet.html": {
+          "infographic": "svimmelhet/from-spinning-to-stable-guide.webp",
+          "alt_no": "Infografikk: Fra svimmelhet til stabilitet",
+          "alt_en": "Infographic: From spinning to stable guide"
+        }
+      },
+      "en": {
+        "en/blog/dizziness-myths.html": {
+          "infographic": "svimmelhet/dizziness-myths-versus-facts-infographic.webp",
+          "alt_no": "Infografikk: Svimmelhetsmyter vs. fakta",
+          "alt_en": "Infographic: Dizziness myths versus facts"
+        },
+        "en/blog/dizziness-not-bppv.html": {
+          "infographic": "svimmelhet/vertigo-hidden-causes-and-solutions.webp",
+          "alt_no": "Infografikk: Svimmelhet - skjulte arsaker og losninger",
+          "alt_en": "Infographic: Vertigo hidden causes and solutions"
+        },
+        "en/blog/dizziness-treatment.html": {
+          "infographic": "svimmelhet/understanding-dizziness-causes-and-treatment.webp",
+          "alt_no": "Infografikk: Forsta svimmelhet - arsaker og behandling",
+          "alt_en": "Infographic: Understanding dizziness causes and treatment"
+        },
+        "en/blog/dizziness-stress-anxiety.html": {
+          "infographic": "svimmelhet/from-spinning-to-stable-guide.webp",
+          "alt_no": "Infografikk: Fra svimmelhet til stabilitet",
+          "alt_en": "Infographic: From spinning to stable guide"
+        },
+        "en/blog/dizzy-in-bed.html": {
+          "infographic": "svimmelhet/quick-guide-to-positional-vertigo-(bppv).webp",
+          "alt_no": "Infografikk: Hurtigguide til stillingsbetinget svimmelhet (BPPV)",
+          "alt_en": "Infographic: Quick guide to positional vertigo (BPPV)"
+        },
+        "en/blog/dizzy-when-standing-up.html": {
+          "infographic": "svimmelhet/guide-to-postural-orthostatic-tachycardia-syndrome.webp",
+          "alt_no": "Infografikk: Guide til POTS - svimmelhet nar du star opp",
+          "alt_en": "Infographic: Guide to postural orthostatic tachycardia syndrome"
+        },
+        "en/blog/dizzy-and-nauseous.html": {
+          "infographic": "svimmelhet/dizziness-causes-duration-and-red-flags.webp",
+          "alt_no": "Infografikk: Svimmelhet - arsaker, varighet og rode flagg",
+          "alt_en": "Infographic: Dizziness causes, duration and red flags"
+        },
+        "en/blog/subtle-bppv.html": {
+          "infographic": "svimmelhet/a-guide-to-crystal-sickness-(bppv).webp",
+          "alt_no": "Infografikk: Guide til krystallsyke (BPPV)",
+          "alt_en": "Infographic: A guide to crystal sickness (BPPV)"
+        },
+        "en/blog/elderly-dizziness-fall-risk.html": {
+          "infographic": "svimmelhet/the-science-of-body-stability.webp",
+          "alt_no": "Infografikk: Vitenskapen bak kroppens stabilitet",
+          "alt_en": "Infographic: The science of body stability"
+        },
+        "en/blog/central-dizziness.html": {
+          "infographic": "svimmelhet/decoding-dizziness-causes-and-solutions.webp",
+          "alt_no": "Infografikk: Forsta svimmelhet - arsaker og losninger",
+          "alt_en": "Infographic: Decoding dizziness causes and solutions"
+        },
+        "en/blog/living-with-dizziness.html": {
+          "infographic": "svimmelhet/from-spinning-to-stable-guide.webp",
+          "alt_no": "Infografikk: Fra svimmelhet til stabilitet",
+          "alt_en": "Infographic: From spinning to stable guide"
+        }
+      }
+    },
+    "nakke": {
+      "no": {
+        "blogg/stressnakke-triggerpunkter.html": {
+          "infographic": "nakke/stress-neck-causes-and-relief.webp",
+          "alt_no": "Infografikk: Stressnakke - arsaker og lindring",
+          "alt_en": "Infographic: Stress neck causes and relief"
+        },
+        "blogg/tekstnakke-mobilnakke.html": {
+          "infographic": "nakke/understanding-and-beating-text-neck.webp",
+          "alt_no": "Infografikk: Forsta og bekjempe tekstnakke",
+          "alt_en": "Infographic: Understanding and beating text neck"
+        },
+        "blogg/nummenhet-fingre-nakke-hand.html": {
+          "infographic": "nakke/finger-numbness-wrist-or-neck.webp",
+          "alt_no": "Infografikk: Nummenhet i fingrene - handledd eller nakke?",
+          "alt_en": "Infographic: Finger numbness - wrist or neck?"
+        },
+        "blogg/nakkesmerter-gravid.html": {
+          "infographic": "nakke/navigating-neck-pain-in-pregnancy.webp",
+          "alt_no": "Infografikk: Nakkesmerter under graviditet",
+          "alt_en": "Infographic: Navigating neck pain in pregnancy"
+        },
+        "blogg/triggerpunkter-nakken.html": {
+          "infographic": "nakke/neck-trigger-point-patient-guide.webp",
+          "alt_no": "Infografikk: Pasientguide til triggerpunkter i nakken",
+          "alt_en": "Infographic: Neck trigger point patient guide"
+        }
+      },
+      "en": {
+        "en/blog/stress-neck-trigger-points.html": {
+          "infographic": "nakke/stress-neck-causes-and-relief.webp",
+          "alt_no": "Infografikk: Stressnakke - arsaker og lindring",
+          "alt_en": "Infographic: Stress neck causes and relief"
+        },
+        "en/blog/text-neck-phone-neck.html": {
+          "infographic": "nakke/understanding-and-beating-text-neck.webp",
+          "alt_no": "Infografikk: Forsta og bekjempe tekstnakke",
+          "alt_en": "Infographic: Understanding and beating text neck"
+        },
+        "en/blog/numbness-fingers-neck-hand.html": {
+          "infographic": "nakke/finger-numbness-wrist-or-neck.webp",
+          "alt_no": "Infografikk: Nummenhet i fingrene - handledd eller nakke?",
+          "alt_en": "Infographic: Finger numbness - wrist or neck?"
+        },
+        "en/blog/neck-pain-pregnancy.html": {
+          "infographic": "nakke/navigating-neck-pain-in-pregnancy.webp",
+          "alt_no": "Infografikk: Nakkesmerter under graviditet",
+          "alt_en": "Infographic: Navigating neck pain in pregnancy"
+        },
+        "en/blog/trigger-points-neck.html": {
+          "infographic": "nakke/neck-trigger-point-patient-guide.webp",
+          "alt_no": "Infografikk: Pasientguide til triggerpunkter i nakken",
+          "alt_en": "Infographic: Neck trigger point patient guide"
+        }
+      }
+    },
+    "andre": {
+      "no": {
+        "blogg/kiropraktor-vs-fysioterapeut.html": {
+          "infographic": "korsrygg/back-pain-treatment-comparison-norway.webp",
+          "alt_no": "Infografikk: Sammenligning av ryggbehandling i Norge",
+          "alt_en": "Infographic: Back pain treatment comparison Norway"
+        },
+        "blogg/hjernerystelse-idrett.html": {
+          "infographic": "svimmelhet/dizziness-causes-duration-and-red-flags.webp",
+          "alt_no": "Infografikk: Svimmelhet - arsaker, varighet og rode flagg",
+          "alt_en": "Infographic: Dizziness causes, duration and red flags"
+        }
+      },
+      "en": {
+        "en/blog/chiropractor-vs-physiotherapist.html": {
+          "infographic": "korsrygg/back-pain-treatment-comparison-norway.webp",
+          "alt_no": "Infografikk: Sammenligning av ryggbehandling i Norge",
+          "alt_en": "Infographic: Back pain treatment comparison Norway"
+        },
+        "en/blog/concussion-sports.html": {
+          "infographic": "svimmelhet/dizziness-causes-duration-and-red-flags.webp",
+          "alt_no": "Infografikk: Svimmelhet - arsaker, varighet og rode flagg",
+          "alt_en": "Infographic: Dizziness causes, duration and red flags"
+        }
+      }
+    }
+  },
+  "transformation_rules": {
+    "stylesheet_fix": {
+      "from": "<link rel=\"preload\" as=\"style\" href=\"../css/hub-article.css\">",
+      "to": "<link rel=\"preload\" as=\"style\" href=\"../css/hub-article.css\">\n  <link rel=\"stylesheet\" href=\"../css/hub-article.css\">"
+    },
+    "tldr_box": {
+      "from_pattern": "<div class=\"highlight-box\" style=\"background: linear-gradient(135deg, #fff9e6",
+      "to_class": "premium-summary-card"
+    },
+    "warning_box": {
+      "from_pattern": "style=\"background: #fef2f2; border-left: 4px solid #dc2626",
+      "to_class": "insight-card warning"
+    },
+    "cta_box": {
+      "from_pattern": "style=\"background: linear-gradient(135deg, #1a1a2e",
+      "to_class": "hub-cta"
+    },
+    "infographic_placement": "Insert after premium-summary-card (TLDR section)"
+  }
+}

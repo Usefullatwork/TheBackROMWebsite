@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,10 +28,50 @@
   <script type="application/ld+json">
   { "@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Knee Osteoarthritis - Exercise is the Best Medicine", "description": "Knee osteoarthritis: Exercise is the best treatment. Chiropractor Majorstua.", "author": { "@type": "Person", "name": "Mads Finstad", "jobTitle": "Chiropractor" } }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I run with knee osteoarthritis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on symptom level. Many can continue running with modifications. Research shows that running does not accelerate osteoarthritis in the same way as previously believed. Start gradually and listen to your body."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I get an X-ray for knee osteoarthritis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not necessarily. The diagnosis can often be made clinically. X-rays don't change the treatment (exercise!) and the findings often don't correlate with symptoms. Can be relevant if surgery is being considered."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can osteoarthritis be reversed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cartilage damage is largely irreversible, but symptoms can be significantly improved with exercise and lifestyle changes. Many experience significant improvement despite what images show."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What about supplements like glucosamine for knee osteoarthritis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Research shows little to no effect of glucosamine and chondroitin. If it helps you, there's no harm in using it, but don't expect miracles. Exercise has better evidence."
+        }
+      }
+    ]
+  }
+  </script>
 
   <script>window.addEventListener('load', function () { setTimeout(function () { !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '540166625752174'); fbq('track', 'PageView'); }, 2000); });</script>
 
-  <link rel="stylesheet" href="../../../css/main.min.css?v=20260101_v5">
+  <link rel="stylesheet" href="../../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../../css/hub-article.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
@@ -45,7 +85,23 @@
       --hub-green: #059669;
       --hub-blue: #2563eb;
     }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -56,7 +112,7 @@
         <a href="../../../en/index.html" class="header__logo logo"><img src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
-          <div class="language-toggle" role="group" aria-label="Language selection">
+          <div class="language-toggle english-active" role="group" aria-label="Language selection">
             <button class="language-toggle__button" data-lang="no" aria-pressed="false">NO</button>
             <button class="language-toggle__button language-toggle__button--active" data-lang="en"
               aria-pressed="true">EN</button>
@@ -125,6 +181,13 @@
               <p>Osteoarthritis (OA) is a condition where the cartilage in the joint gradually breaks down. In the knee,
                 this can affect the medial (inside), lateral (outside), or patellofemoral (kneecap) compartment.</p>
               <h3>Important to Understand</h3>
+
+              <!-- Anatomy Illustration Placeholder -->
+              <div class="anatomy-placeholder">
+                <span class="anatomy-placeholder__text">Knee joint anatomy illustration showing cartilage breakdown</span>
+                <span class="anatomy-placeholder__label">Image: Knee Osteoarthritis Anatomy</span>
+              </div>
+
               <div class="info-box">
                 <h4>Images don't tell the whole story</h4>
                 <p>There's often poor correlation between what X-rays show and how much pain you have. Many people with
@@ -193,6 +256,27 @@
                 <li><strong>Balance training:</strong> Especially important for fall prevention</li>
                 <li><strong>Stretching:</strong> Maintains mobility</li>
               </ul>
+
+              <!-- Exercise Grid Placeholder -->
+              <div class="exercise-grid-placeholder">
+                <div class="exercise-item-placeholder">
+                  <span class="exercise-item-placeholder__name">Squats</span>
+                  <span class="exercise-item-placeholder__desc">Quadriceps strength</span>
+                </div>
+                <div class="exercise-item-placeholder">
+                  <span class="exercise-item-placeholder__name">Lunges</span>
+                  <span class="exercise-item-placeholder__desc">Leg stability</span>
+                </div>
+                <div class="exercise-item-placeholder">
+                  <span class="exercise-item-placeholder__name">Step-ups</span>
+                  <span class="exercise-item-placeholder__desc">Functional strength</span>
+                </div>
+                <div class="exercise-item-placeholder">
+                  <span class="exercise-item-placeholder__name">Cycling</span>
+                  <span class="exercise-item-placeholder__desc">Low-impact cardio</span>
+                </div>
+              </div>
+
               <div class="info-box">
                 <h4>Does exercise damage the cartilage?</h4>
                 <p>No! Research shows that moderate exercise is safe and actually helps maintain the cartilage. The
@@ -213,6 +297,15 @@
                 <li><strong>PRP:</strong> Limited evidence, expensive</li>
               </ul>
             </section>
+
+            <!-- Mid-Content CTA Banner -->
+            <div class="mid-content-cta">
+              <div class="mid-content-cta__text">
+                <h4 class="mid-content-cta__title">Ready to start your recovery?</h4>
+                <p class="mid-content-cta__subtitle">Get a personalized exercise program for your knee osteoarthritis</p>
+              </div>
+              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="mid-content-cta__button">Book appointment</a>
+            </div>
 
             <section class="hub-section" id="s4">
               <div class="section-header"><span class="section-number">4</span>
@@ -260,6 +353,7 @@
                 <div class="faq-answer">Research shows little to no effect of glucosamine and chondroitin. If it helps
                   you, there's no harm in using it, but don't expect miracles. Exercise has better evidence.</div>
               </div>
+              <p class="faq-more-link"><a href="../../../faq/knee-pain-faq.html">See all knee pain FAQs →</a></p>
             </section>
 
             <div class="hub-cta">
@@ -307,7 +401,11 @@
             <p class="disclaimer">This article is intended as general information and does not replace individual
               medical assessment.</p>
             <p class="updated">Last updated: January 2026</p>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medical Information:</strong> This article is written by Chiropractor Mads Finstad at Klinikk for alle Majorstua, Oslo. The information does not replace individual medical evaluation. For acute or concerning symptoms, contact a doctor immediately.
+              </div>
+              </div>
         </article>
 
         <aside class="hub-sidebar">

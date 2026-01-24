@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>ACL-brudd (fremre korsband) - Ma du operere? | Kiropraktor Majorstua</title>
 
@@ -28,6 +28,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/kne/korsbandskade.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/kne/korsbandskade.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/knee/acl-injury.html" />
 
   <script type="application/ld+json">
   {
@@ -61,7 +63,7 @@
         "name": "Må jeg operere ACL?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ikke nødvendigvis. KANON-studien viste at halvparten av pasientene med ACL-ruptur klarte seg like godt med rehabilitering alene som med operasjon. Operasjon er spesielt aktuelt for unge idrettsutovere som skal tilbake til krevende idrett."
+          "text": "Ikke nådvendigvis. KANON-studien viste at halvparten av pasientene med ACL-ruptur klarte seg like godt med rehabilitering alene som med operasjon. Operasjon er spesielt aktuelt for unge idrettsutovere som skal tilbake til krevende idrett."
         }
       },
       {
@@ -74,7 +76,7 @@
       },
       {
         "@type": "Question",
-        "name": "Når kan jeg returnere til idrett etter ACL-skade?",
+        "name": "Nær kan jeg returnere til idrett etter ACL-skade?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Retur for 9 måneder øker risikoen for ny skade med inntil 7 ganger. De fleste retningslinjer anbefaler 9-12 måneders rehabilitering for retur til krevende idrett, uavhengig av om du opererer eller ikke."
@@ -101,11 +103,7 @@
   </script>
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"/></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -177,8 +175,24 @@
     @media (max-width: 900px) { .mobile-sticky-cta { display: flex; } .hub-main { margin-bottom: 80px; } }
     .mobile-sticky-cta .btn { flex: 1; text-align: center; padding: 12px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 14px; }
     .mobile-sticky-cta .btn-primary { background: var(--hub-accent, #F26522); color: #fff; }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid var(--hub-primary); color: var(--hub-dark); }
-  </style>
+    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -244,7 +258,7 @@
             <div class="intro-tldr-grid">
 
               <div class="intro-text">
-                <p>Du har vært hos legen. MR viser en ruptur av fremre korsband (ACL). Den første tanken er: "Na må jeg opereres." Men er det virkelig sann? <a href="../knesmerter.html">Knesmerter</a> etter en akutt skade kan være skremmende, men forskningen gir grunn til optimisme.</p>
+                <p>Du har vårt hos legen. MR viser en ruptur av fremre korsband (ACL). Den første tanken er: "Na må jeg opereres." Men er det virkelig sann? <a href="../knesmerter.html">Knesmerter</a> etter en akutt skade kan være skremmende, men forskningen gir grunn til optimisme.</p>
 
                 <p>De siste årenes forskning har utfordret den automatiske koblingen mellom ACL-ruptur og operasjon. <strong>KANON-studien</strong> viste at halvparten av pasientene klarte seg like godt med rehabilitering alene. Og en ny protokoll kalt <strong>Cross-bracing</strong> viser lovende resultater for heling uten kirurgi.</p>
 
@@ -369,7 +383,7 @@
 
               <h3>Hva betyr dette?</h3>
               <ul>
-                <li>ACL-operasjon er ikke automatisk nødvendig for alle</li>
+                <li>ACL-operasjon er ikke automatisk nådvendig for alle</li>
                 <li>Rehabilitering først er et trygt alternativ</li>
                 <li>Man kan vente og se hvordan kneet responderer</li>
                 <li>De som trenger operasjon kan fortsatt opereres senere</li>
@@ -377,7 +391,7 @@
 
               <div class="info-box">
                 <h4>Viktig nyanse</h4>
-                <p>KANON-studien inkluderte unge, aktive mennesker. De som opplevde gjentatte giving way-episoder under rehabilitering, fikk tilbud om operasjon. Studien viser at individuell vurdering er nøkkelen.</p>
+                <p>KANON-studien inkluderte unge, aktive mennesker. De som opplevde gjentatte giving way-episoder under rehabilitering, fikk tilbud om operasjon. Studien viser at individuell vurdering er nåkkelen.</p>
               </div>
             </section>
 
@@ -399,7 +413,7 @@
               <h3>Protokollen</h3>
 
               <div class="timeline-box">
-                <h4>Typisk Cross-bracing forløp</h4>
+                <h4>Typisk Cross-bracing forlåp</h4>
                 <p><strong>Uke 0-4:</strong> Kneet i strak ortose, krykker, begrenset belastning</p>
                 <p><strong>Uke 4-12:</strong> Gradvis okning av bevegelighet og belastning</p>
                 <p><strong>3+ måneder:</strong> Full rehabilitering mot funksjonsmal</p>
@@ -443,7 +457,7 @@
                   <h4 class="condition-title">Copers vs. Non-copers</h4>
                   <span class="condition-badge">Viktig konsept</span>
                 </div>
-                <p><strong>Copers:</strong> De som Oppnår god funksjon og stabilitet uten operasjon. De kan ofte returnere til idrett på høyere niva.</p>
+                <p><strong>Copers:</strong> De som Oppnær god funksjon og stabilitet uten operasjon. De kan ofte returnere til idrett på høyere niva.</p>
                 <p><strong>Non-copers:</strong> De som opplever gjentatt ustabilitet til tross for rehabilitering. Disse er bedre kandidater for operasjon.</p>
               </div>
             </section>
@@ -452,7 +466,7 @@
             <section class="hub-section" id="s6">
               <div class="section-header">
                 <span class="section-number">6</span>
-                <h2 class="section-title">Retur til idrett - Når er det trygt?</h2>
+                <h2 class="section-title">Retur til idrett - Nær er det trygt?</h2>
               </div>
 
               <div class="red-flag-box">
@@ -496,7 +510,7 @@
                 <h2 class="section-title">Rehabilitering</h2>
               </div>
 
-              <p>Rehabilitering er hjørnesteinen uansett om du opererer eller ikke.</p>
+              <p>Rehabilitering er hjårnesteinen uansett om du opererer eller ikke.</p>
 
               <h3>Faser i rehabiliteringen</h3>
 
@@ -550,7 +564,7 @@
 
               <div class="faq-item">
                 <div class="faq-question">Må jeg operere ACL?</div>
-                <div class="faq-answer">Ikke nødvendigvis. KANON-studien viste at halvparten klarte seg like godt med rehabilitering alene. Operasjon er spesielt aktuelt for unge idrettsutovere som skal tilbake til krevende idrett med vridninger og retningsendringer.</div>
+                <div class="faq-answer">Ikke nådvendigvis. KANON-studien viste at halvparten klarte seg like godt med rehabilitering alene. Operasjon er spesielt aktuelt for unge idrettsutovere som skal tilbake til krevende idrett med vridninger og retningsendringer.</div>
               </div>
 
               <div class="faq-item">
@@ -559,7 +573,7 @@
               </div>
 
               <div class="faq-item">
-                <div class="faq-question">Når kan jeg returnere til idrett?</div>
+                <div class="faq-question">Nær kan jeg returnere til idrett?</div>
                 <div class="faq-answer">Retur for 9 måneder øker risikoen for ny skade med inntil 7 ganger. De fleste retningslinjer anbefaler 9-12 måneders rehabilitering for retur til krevende idrett.</div>
               </div>
 
@@ -625,7 +639,11 @@
 
             <p class="updated">Sist oppdatert: Januar 2026</p>
 
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
         </article>
 
         <aside class="hub-sidebar">
@@ -668,7 +686,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -712,7 +730,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

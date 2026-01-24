@@ -12,11 +12,11 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Metatarsalgi: Smerter i Forfoten | Kiropraktor Majorstua Oslo</title>
 
-  <meta name="description" content="Smerter under forfoten? Metatarsalgi gir brennende smerte ved taballene. Lar om årsaker, behandling og øvelser. Kiropraktor Majorstua - ingen henvisning nødvendig." />
+  <meta name="description" content="Smerter under forfoten? Metatarsalgi gir brennende smerte ved taballene. Lar om årsaker, behandling og øvelser. Kiropraktor Majorstua - ingen henvisning nådvendig." />
   <meta name="keywords" content="metatarsalgi, forfotssmerter, smerter i forfoten, brennende fot, kiropraktor oslo, taballer, mellomfotsmerter" />
   <meta name="author" content="Mads Finstad">
   <meta name="robots" content="index, follow">
@@ -27,6 +27,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/fot/metatarsalgi.html" />
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/fot/metatarsalgi.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/foot/metatarsalgia.html" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -78,11 +80,7 @@
   src="https://www.facebook.com/tr?id=1020647599498498&ev=PageView&noscript=1" alt="Facebook Pixel"
   /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
@@ -116,8 +114,8 @@
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
     .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
     .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
     .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
     .condition-badge { background: var(--hub-primary); color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; display: inline-block; margin-left: 8px; }
@@ -142,10 +140,26 @@
     .sources-section ul { font-size: 0.85rem; color: #64748b; }
     .sources-section li { margin-bottom: 6px; }
     .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: var(--hub-primary); padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
+    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
     @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -202,7 +216,7 @@
 
           <section class="hub-intro">
             <div class="intro-text">
-              <p>Kjenner du en brennende, verkende smerte under forfoten når du går? Foles det som du går på smastein? Dette er typiske tegn på metatarsalgi - en av mange <a href="../fotsmerte.html">fot- og ankelplager</a> vi behandler.</p>
+              <p>Kjenner du en brennende, verkende smerte under forfoten nær du går? Foles det som du går på smastein? Dette er typiske tegn på metatarsalgi - en av mange <a href="../fotsmerte.html">fot- og ankelplager</a> vi behandler.</p>
 
               <p>Metatarsalgi er en av de vanligste årsakene til forfotssmerter og rammer alt fra lopere til de som jobber mye staende. <strong>Den gode nyheten er at de fleste blir betydelig bedre med konservativ behandling.</strong></p>
             </div>
@@ -225,7 +239,7 @@
               <div class="hub-subnav__grid hub-subnav__grid--detailed">
                 <a href="mortons-nevrom.html" class="hub-subnav__card">
                   <strong>Mortons nevrom</strong>
-                  <span>Nervesmerte mellom tærne</span>
+                  <span>Nervesmerte mellom tårne</span>
                 </a>
                 <a href="hallux-valgus.html" class="hub-subnav__card">
                   <strong>Hallux valgus</strong>
@@ -250,9 +264,9 @@
               <h2>Hva er metatarsalgi?</h2>
             </div>
 
-            <p>Metatarsalgi er ikke en spesifikk diagnose, men en samlebetegnelse for smerter lokalisert til forfoten - området under metatarsalhodene (taballene). Det er der de lange mellomfotsbeina (metatarsalene) moter tærne.</p>
+            <p>Metatarsalgi er ikke en spesifikk diagnose, men en samlebetegnelse for smerter lokalisert til forfoten - omrødet under metatarsalhodene (taballene). Det er der de lange mellomfotsbeina (metatarsalene) moter tårne.</p>
 
-            <p>Smerten oppstår vanligvis nær dette området blir overbelastet. Over tid kan det fore til irritasjon av blotvev, betennelse i leddkapsler, eller stressreaksjoner i bein.</p>
+            <p>Smerten oppstår vanligvis nær dette omrødet blir overbelastet. Over tid kan det fore til irritasjon av blotvev, betennelse i leddkapsler, eller stressreaksjoner i bein.</p>
 
             <div class="stat-grid">
               <div class="stat-item">
@@ -274,7 +288,7 @@
           <section class="hub-section" id="s2">
             <div class="section-header">
               <span class="section-number">2</span>
-              <h2>Årsaker og risikofaktorer</h2>
+              <h2>årsaker og risikofaktorer</h2>
             </div>
 
             <p>Metatarsalgi utvikles nær forfoten utsettes for unormalt høy eller langvarig belastning.</p>
@@ -293,7 +307,7 @@
 
             <div class="condition-card">
               <h4>Overbelastning</h4>
-              <p>For rask okning i aktivitet, langvarig staende arbeid, eller intensiv løpetrening kan overbelaste forfoten.</p>
+              <p>For rask okning i aktivitet, langvarig staende arbeid, eller intensiv låpetrening kan overbelaste forfoten.</p>
             </div>
 
             <div class="condition-card">
@@ -306,7 +320,7 @@
               <ul>
                 <li>Overvekt (økt belastning per steg)</li>
                 <li>Alder over 50 (tynnere fettputer under foten)</li>
-                <li>Høye hæler (skyver vekten fremover)</li>
+                <li>Høye høler (skyver vekten fremover)</li>
                 <li>Diabetes (endret sensibilitet og blodgjennomstromning)</li>
                 <li>Revmatoid artritt</li>
                 <li>Idrett med mye loping og hopping - kan også fore til <a href="akillestendinopati.html">akillestendinopati</a> eller <a href="stressfraktur-fot.html">stressfraktur</a></li>
@@ -324,7 +338,7 @@
             <p>Symptomene ved metatarsalgi er ofte karakteristiske:</p>
 
             <ul>
-              <li><strong>Brennende eller verkende smerte:</strong> Lokalisert til området under taballene</li>
+              <li><strong>Brennende eller verkende smerte:</strong> Lokalisert til omrødet under taballene</li>
               <li><strong>Smastein i skoen-følelse:</strong> Som om du går på noe hardt</li>
               <li><strong>Forverring ved aktivitet:</strong> Verre ved gange, loping, standing</li>
               <li><strong>Bedring ved hvile:</strong> Lettere nær du sitter eller ligger</li>
@@ -369,7 +383,7 @@
               <h2>Behandling</h2>
             </div>
 
-            <p>Konservativ behandling er svært effektiv for de fleste med metatarsalgi.</p>
+            <p>Konservativ behandling er svårt effektiv for de fleste med metatarsalgi.</p>
 
             <div class="treatment-box">
               <h4>Førstelinjebehandling</h4>
@@ -385,7 +399,7 @@
 
             <div class="condition-card">
               <h4>1. Biomekanisk vurdering</h4>
-              <p>Undersøkelse av fotens biomekanikk, gangmønster og mulige medvirkende faktorer høyere opp i kinematisk kjede. <a href="tibialis-posterior-tendinopati.html">Tibialis posterior tendinopati</a> eller <a href="ankelinstabilitet.html">ankelinstabilitet</a> kan påvirke forfotbelastningen.</p>
+              <p>Undersøkelse av fotens biomekanikk, gangmånster og mulige medvirkende faktorer høyere opp i kinematisk kjede. <a href="tibialis-posterior-tendinopati.html">Tibialis posterior tendinopati</a> eller <a href="ankelinstabilitet.html">ankelinstabilitet</a> kan påvirke forfotbelastningen.</p>
             </div>
 
             <div class="condition-card">
@@ -394,7 +408,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>3. Øvelser<span class="condition-badge">Viktig</span></h4>
+              <h4>3. øvelser<span class="condition-badge">Viktig</span></h4>
               <p>Styrking av intrinsiske fotmuskler, toying av leggen, og balansetrening.</p>
             </div>
 
@@ -402,15 +416,15 @@
               <h4>Hjemmeovelse: Ta-spredning</h4>
               <ol>
                 <li>Sitt med foten flat på gulvet</li>
-                <li>Forsok å spre tærne fra hverandre som en vifte</li>
+                <li>Forsok å spre tårne fra hverandre som en vifte</li>
                 <li>Hold i 5 sekunder, slipp, gjenta</li>
                 <li>Gjor 10-15 repetisjoner, 2-3 ganger daglig</li>
               </ol>
-              <p><strong>Tips:</strong> Dette styrker de små musklene i foten som bidrar til å støtte forfotens bue.</p>
+              <p><strong>Tips:</strong> Dette styrker de små musklene i foten som bidrar til å ståtte forfotens bue.</p>
             </div>
 
             <div class="warning-box">
-              <h4>Når bør du oppsøke hjelp?</h4>
+              <h4>Nær bør du oppsøke hjelp?</h4>
               <ul>
                 <li>Smertene vedvarer mer enn 2-3 uker</li>
                 <li>Nummenhet eller brennende sensasjoner</li>
@@ -430,7 +444,7 @@
 
             <p>Med riktig behandling har de aller fleste med metatarsalgi god prognose. Over 90% blir bedre med konservativ behandling - lignende suksessrater ses ved <a href="plantar-fasciopati.html">plantar fasciopati</a>.</p>
 
-            <h3>Forventet forløp</h3>
+            <h3>Forventet forlåp</h3>
 
             <ul>
               <li>Lettere tilfeller: Bedring innen 2-4 uker med avlastning</li>
@@ -464,12 +478,12 @@
 
             <div class="faq-item">
               <div class="faq-question">Hjelper innleggssaler?</div>
-              <div class="faq-answer">Ja, innlegg med metatarsalpute kan avlaste forfoten betydelig. Puten plasseres bak (proksimalt for) metatarsalhodene for å løfte dem og redusere trykket.</div>
+              <div class="faq-answer">Ja, innlegg med metatarsalpute kan avlaste forfoten betydelig. Puten plasseres bak (proksimalt for) metatarsalhodene for å låfte dem og redusere trykket.</div>
             </div>
 
             <div class="faq-item">
-              <div class="faq-question">Må jeg slutte med høye hæler?</div>
-              <div class="faq-answer">Høye hæler skyver vekten fremover og økerbelastningen på forfoten dramatisk. Begrens bruken, spesielt ved langvarig staende eller gange. Vurder bredere hæler fremfor stiletter.</div>
+              <div class="faq-question">Må jeg slutte med høye høler?</div>
+              <div class="faq-answer">Høye høler skyver vekten fremover og økerbelastningen på forfoten dramatisk. Begrens bruken, spesielt ved langvarig staende eller gange. Vurder bredere høler fremfor stiletter.</div>
             </div>
 
             <div class="faq-item">
@@ -506,7 +520,11 @@
             <a href="stressfraktur-fot.html">Stressfraktur i foten</a>
             <a href="tibialis-posterior-tendinopati.html">Tibialis posterior tendinopati</a>
             <a href="ankelinstabilitet.html">Kronisk ankelinstabilitet</a>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
 
           <!-- Disclaimer -->
           <p class="disclaimer">Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon.</p>
@@ -544,7 +562,7 @@
             <h3>Innhold</h3>
             <ul>
               <li><a href="#s1">Hva er metatarsalgi?</a></li>
-              <li><a href="#s2">Årsaker</a></li>
+              <li><a href="#s2">årsaker</a></li>
               <li><a href="#s3">Symptomer</a></li>
               <li><a href="#s4">Behandling</a></li>
               <li><a href="#s5">Prognose</a></li>
@@ -578,7 +596,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -622,7 +640,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

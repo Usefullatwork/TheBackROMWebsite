@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>GTPS - Smerter på Utsiden av Hoften | Kiropraktor Majorstua</title>
 
@@ -27,6 +27,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/hofte/gtps-gluteal-tendinopati.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/hofte/gtps-gluteal-tendinopati.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/hip/gtps-gluteal-tendinopathy.html" />
 
   <script type="application/ld+json">
   {
@@ -103,11 +105,7 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
   /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -160,8 +158,8 @@
 
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 20px 0; }
     .stat-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; text-align: center; }
-    .stat-card .stat-number { font-size: 28px; font-weight: 700; color: var(--hub-primary-dark); display: block; }
-    .stat-card .stat-label { font-size: 12px; color: #6b7280; margin-top: 4px; }
+    .stat-card .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary-dark); display: block; }
+    .stat-card .stat-label { font-size: 0.75rem; color: #6b7280; margin-top: 4px; }
 
     .faq-item { border: 1px solid #e5e7eb; border-radius: 8px; margin: 10px 0; overflow: hidden; }
     .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
@@ -175,7 +173,25 @@
     .hub-toc-card .sidenav-link { display: block; padding: 8px 10px; margin: 3px 0; color: #6b7280; text-decoration: none; font-size: 13px; border-radius: 6px; transition: all 0.2s; border-left: 2px solid transparent; }
     .hub-toc-card .sidenav-link:hover { background: #f3f4f6; color: var(--hub-dark); }
     .hub-toc-card .sidenav-link.active { background: #f0fdfa; color: var(--hub-primary-dark); border-left-color: var(--hub-primary); font-weight: 600; }
-  </style>
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
+    .mobile-sticky-cta a { display: block; background: #F26522; color: #FFFFFF; text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; border: 2px solid #FFFFFF; }
+    @media (max-width: 900px) { .mobile-sticky-cta { display: block; } .hub-main { padding-bottom: 100px; } }
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -222,7 +238,7 @@
       <section class="hub-hero">
         <div class="hub-hero__container">
           <h1>GTPS - Smerter på Utsiden av Hoften</h1>
-          <p class="hub-hero__subtitle">Gluteal tendinopati: Årsaker, symptomer og behandling</p>
+          <p class="hub-hero__subtitle">Gluteal tendinopati: årsaker, symptomer og behandling</p>
         </div>
       </section>
 
@@ -278,7 +294,7 @@
             <section id="årsaker" class="hub-section">
               <div class="section-header">
                 <span class="section-number">2</span>
-                <h2>Årsaker og risikofaktorer</h2>
+                <h2>årsaker og risikofaktorer</h2>
               </div>
 
               <h3>Kompresjon er hovedproblemet</h3>
@@ -359,7 +375,7 @@
               </ul>
 
               <h3>Bildediagnostikk</h3>
-              <p><strong>MR</strong> kan vise senedegenerasjon, partielle rupturer eller bursitt, men er sjelden nødvendig for å stille diagnosen. Klinisk undersøkelse er ofte tilstrekkelig.</p>
+              <p><strong>MR</strong> kan vise senedegenerasjon, partielle rupturer eller bursitt, men er sjelden nådvendig for å stille diagnosen. Klinisk undersøkelse er ofte tilstrekkelig.</p>
 
               <p><strong>Røntgen</strong> kan utelukke artrose og andre benforandringer.</p>
             </section>
@@ -405,7 +421,7 @@
               <p>Kortison gir rask smertelindring de første ukene, men LEAP-studien viste at effekten ikke varer. Etter 1 år var kortisongruppen ikke bedre enn "vent og se"-gruppen. I tillegg kan gjentatte injeksjoner skade senevevet.</p>
 
               <div class="info-box">
-                <h4>Når vurdere kortison?</h4>
+                <h4>Nær vurdere kortison?</h4>
                 <p>Kortison kan vare aktuelt som et "pustehull" for å komme i gang med trening hvis smertene er så sterke at trening ikke lar seg gjennomfore. Men det bør aldri vare eneste behandling.</p>
               </div>
             </section>
@@ -416,7 +432,7 @@
                 <h2>Prognose</h2>
               </div>
 
-              <p>GTPS er en tilstand som tar tid å behandle - typisk <strong>6-9 måneder</strong> for full bedring. Men prognosen er god hvis du er tålmodig og følger et treningsprogram.</p>
+              <p>GTPS er en tilstand som tar tid å behandle - typisk <strong>6-9 måneder</strong> for full bedring. Men prognosen er god hvis du er tølmodig og følger et treningsprogram.</p>
 
               <h3>Hva kan du forvente?</h3>
               <ul>
@@ -460,7 +476,7 @@
 
               <div class="faq-item">
                 <div class="faq-question">Hjelper toying?</div>
-                <div class="faq-answer">Var forsiktig med toying. Mange tøyeøvelser komprimerer senene og kan gjøre vondt verre. Fokuser heller på styrketrening.</div>
+                <div class="faq-answer">Var forsiktig med toying. Mange tåyeøvelser komprimerer senene og kan gjøre vondt verre. Fokuser heller på styrketrening.</div>
               </div>
 
               <div class="faq-item">
@@ -501,7 +517,11 @@
                 <li>Barratt PA, et al. Hip Joint Pathology: Clinical Presentation and Correlation with MRI. Clin J Sport Med. 2006.</li>
               </ol>
             </section>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
         </article>
 
         <aside class="hub-sidebar" aria-label="Sidenavigasjon">
@@ -509,7 +529,7 @@
             <h3>Innhold</h3>
             <ul>
               <li><a href="#hva-er" class="sidenav-link">Hva er GTPS?</a></li>
-              <li><a href="#årsaker" class="sidenav-link">Årsaker</a></li>
+              <li><a href="#årsaker" class="sidenav-link">årsaker</a></li>
               <li><a href="#symptomer" class="sidenav-link">Symptomer</a></li>
               <li><a href="#diagnostikk" class="sidenav-link">Diagnostikk</a></li>
               <li><a href="#behandling" class="sidenav-link">Behandling</a></li>
@@ -542,7 +562,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -586,7 +606,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
 </div>

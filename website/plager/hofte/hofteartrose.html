@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Hofteartrose: Symptomer, trening og behandling | Kiropraktor Majorstua</title>
 
@@ -28,6 +28,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/hofte/hofteartrose.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/hofte/hofteartrose.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/hip/hip-osteoarthritis.html" />
 
   <script type="application/ld+json">
   {
@@ -93,7 +95,7 @@
       },
       {
         "@type": "Question",
-        "name": "Når trenger jeg hofteprotese?",
+        "name": "Nær trenger jeg hofteprotese?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Hofteprotese vurderes nær smerter og funksjonstap er betydelige til tross for 3-6 måneder med aktiv konservativ behandling. I Norge settes det inn rundt 10.000 hofteproteser årlig, med 95,6% overlevelse etter 10 år."
@@ -132,11 +134,7 @@
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel"
   /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
@@ -350,15 +348,31 @@
       text-decoration: none;
       font-size: 14px;
     }
-    .mobile-sticky-cta .btn-primary { background: var(--hub-primary); color: #fff; }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid var(--hub-primary); color: var(--hub-dark); }
+    .mobile-sticky-cta .btn-primary { background: #F26522; color: #fff; }
+    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
 
     .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
     .hub-content p { margin-bottom: 14px; font-size: 15px; }
     .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
     .hub-content li { margin-bottom: 6px; font-size: 15px; }
     .hub-content strong { color: var(--hub-dark); }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -419,7 +433,7 @@
             <div class="intro-tldr-grid">
 
               <div class="intro-text">
-                <p>Du merker det først nær du tar på sokkene om morgenen. En stivhet i lysken som gjør det vanskelig å bøye deg. Eller kanskje en verkende smerte nær du reiser deg etter å ha sittet lenge. Trappegang blir tyngre, og lengre gaturer gir deg mer vondt enn for. Dette er typiske tegn på <a href="../hoftesmerter.html">hoftesmerter</a> som krever utredning.</p>
+                <p>Du merker det først nær du tar på sokkene om morgenen. En stivhet i lysken som gjør det vanskelig å båye deg. Eller kanskje en verkende smerte nær du reiser deg etter å ha sittet lenge. Trappegang blir tyngre, og lengre gaturer gir deg mer vondt enn for. Dette er typiske tegn på <a href="../hoftesmerter.html">hoftesmerter</a> som krever utredning.</p>
 
                 <p>Dette er typiske tegn på hofteartrose - slitasjegikt i hoften. Det rammer omtrent <strong>5,5% av den norske befolkningen</strong>, og forekomsten øker med alderen.</p>
 
@@ -459,7 +473,7 @@
                 <h2 class="section-title">Hva er hofteartrose?</h2>
               </div>
 
-              <p>Hofteartrose - også kalt <strong>coxartrose</strong> eller slitasjegikt i hoften - oppstår nær brusken som dekker leddflaten i hoften brytes ned. Brusken fungerer normalt som en glatt pute som lar larbenshodet gli somløst i hofteskalen. Når brusken tynnes, kan det oppstå direkte kontakt mellom bein og bein. Dette gir smerte, stivhet og etter hvert redusert bevegelighet.</p>
+              <p>Hofteartrose - også kalt <strong>coxartrose</strong> eller slitasjegikt i hoften - oppstår nær brusken som dekker leddflaten i hoften brytes ned. Brusken fungerer normalt som en glatt pute som lar larbenshodet gli somlåst i hofteskalen. Nær brusken tynnes, kan det oppstå direkte kontakt mellom bein og bein. Dette gir smerte, stivhet og etter hvert redusert bevegelighet.</p>
 
               <div class="stat-grid">
                 <div class="stat-item">
@@ -492,7 +506,7 @@
             <section class="hub-section" id="s2">
               <div class="section-header">
                 <span class="section-number">2</span>
-                <h2 class="section-title">Årsaker og risikofaktorer</h2>
+                <h2 class="section-title">årsaker og risikofaktorer</h2>
               </div>
 
               <p>Risikofaktorene for hofteartrose er godt dokumentert i forskning. Her er de viktigste, rangert etter hvor stor betydning de har:</p>
@@ -500,7 +514,7 @@
               <div class="risk-grid">
                 <div class="risk-card">
                   <h4>Tungt fysisk arbeid</h4>
-                  <p><span class="risk-multiplier">6,7x</span> økt risiko ved langvarig tung belastning. Yrker med mye løfting, staing og repetitive bevegelser er særlig utsatt.</p>
+                  <p><span class="risk-multiplier">6,7x</span> økt risiko ved langvarig tung belastning. Yrker med mye låfting, staing og repetitive bevegelser er særlig utsatt.</p>
                 </div>
                 <div class="risk-card">
                   <h4>Tidligere hofteskade</h4>
@@ -508,7 +522,7 @@
                 </div>
                 <div class="risk-card">
                   <h4>Overvekt (BMI over 35)</h4>
-                  <p><span class="risk-multiplier">4,5x</span> økt risiko. Interessant nok påvirker ikke overvekt hvor raskt artrosen utvikler seg etter at den først har oppstått.</p>
+                  <p><span class="risk-multiplier">4,5x</span> økt risiko. Interessant nok påvirker ikke overvekt hvor raskt artrosen utvikler seg etter at den først har oppstøtt.</p>
                 </div>
                 <div class="risk-card">
                   <h4>Arv og genetikk</h4>
@@ -526,11 +540,11 @@
                 <h2 class="section-title">Symptomer</h2>
               </div>
 
-              <p><strong>Lyskesmerte</strong> er det mest typiske symptomet på hofteartrose og har 84% sensitivitet for å påvise hofteleddsplager (Khan, BMJ, 2004). Smerten kjennes ofte dyp og verkende, på innsiden av låret eller i lyskefolden. Den forverres typisk ved aktivitet som trappegang, lengre gaturer eller å reise seg fra sittende.</p>
+              <p><strong>Lyskesmerte</strong> er det mest typiske symptomet på hofteartrose og har 84% sensitivitet for å påvise hofteleddsplager (Khan, BMJ, 2004). Smerten kjennes ofte dyp og verkende, på innsiden av læret eller i lyskefolden. Den forverres typisk ved aktivitet som trappegang, lengre gaturer eller å reise seg fra sittende.</p>
 
               <div class="condition-card">
                 <h4>Smertelokalisasjon - 47% stråler til kne</h4>
-                <p>Hos nesten halvparten stråler smerten nedover låret, og hos noen helt ned til kneet. Dette kan gjøre det vanskelig å skille hofteartrose fra andre tilstander.</p>
+                <p>Hos nesten halvparten stråler smerten nedover læret, og hos noen helt ned til kneet. Dette kan gjøre det vanskelig å skille hofteartrose fra andre tilstander.</p>
               </div>
 
               <h3>Typiske symptomer</h3>
@@ -538,12 +552,12 @@
                 <li><strong>Morgenstivhet</strong> som varer under 60 minutter - dette skiller artrose fra inflammatoriske leddsykdommer</li>
                 <li><strong>Redusert bevegelighet</strong> - det blir vanskelig å ta på sokker og sko, krysse beina, eller komme seg inn og ut av bil</li>
                 <li><strong>Innoverrotasjon</strong> av hoften er ofte det første som blir begrenset</li>
-                <li><strong>Endret gangmønster</strong> utvikler seg gradvis for å unngå smerte</li>
+                <li><strong>Endret gangmånster</strong> utvikler seg gradvis for å unngå smerte</li>
               </ul>
 
               <div class="warning-box">
-                <h4>Sekundære plager</h4>
-                <p>Når du begynner å gå annerledes for å unngå smerte, kan det over tid gi sekundære plager i kne, rygg eller motsatt hofte. Endret gangmønster kan også fore til <a href="gtps-gluteal-tendinopati.html">GTPS (smerter på utsiden av hoften)</a> eller <a href="si-ledd-bekkenproblemer.html">SI-leddsproblemer</a>.</p>
+                <h4>Sekundøre plager</h4>
+                <p>Nær du begynner å gå annerledes for å unngå smerte, kan det over tid gi sekundøre plager i kne, rygg eller motsatt hofte. Endret gangmånster kan også fore til <a href="gtps-gluteal-tendinopati.html">GTPS (smerter på utsiden av hoften)</a> eller <a href="si-ledd-bekkenproblemer.html">SI-leddsproblemer</a>.</p>
               </div>
             </section>
 
@@ -568,7 +582,7 @@
 
               <div class="info-box">
                 <h4>Om bildediagnostikk</h4>
-                <p>Bildediagnostikk har klare begrensninger. <strong>Kun 21%</strong> av de som har røntgenforandringer forenlig med hofteartrose har faktisk symptomer. Milde til moderate forandringer på røntgen korrelerer dårlig med smerte.</p>
+                <p>Bildediagnostikk har klare begrensninger. <strong>Kun 21%</strong> av de som har røntgenforandringer forenlig med hofteartrose har faktisk symptomer. Milde til moderate forandringer på røntgen korrelerer dørlig med smerte.</p>
                 <p>NICE-retningslinjene (2022) anbefaler derfor klinisk diagnostikk uten rutinebildetaking hos pasienter over 45 år med typisk presentasjon.</p>
               </div>
             </section>
@@ -610,7 +624,7 @@
                 <h4>Typisk behandling hos kiropraktor</h4>
                 <ul>
                   <li><strong>Leddmobilisering</strong> for å bedre bevegelighet i hoften</li>
-                  <li><strong>Bløtvevsbehandling</strong> av stram muskulatur rundt hoften</li>
+                  <li><strong>Blåtvevsbehandling</strong> av stram muskulatur rundt hoften</li>
                   <li><strong>Individuelt tilpasset treningsprogram</strong></li>
                   <li><strong>Rad om ergonomi</strong> og aktivitetstilpasning</li>
                 </ul>
@@ -618,7 +632,7 @@
 
               <h3>Hva kan du gjøre selv?</h3>
 
-              <p><strong>Trening er hjørnesteinen</strong> i behandling av hofteartrose. En Cochrane-oversikt fra 2014 fant at trening gir en moderat smertereduksjon (SMD -0,38), og effekten holder seg i minst 6-9 måneder.</p>
+              <p><strong>Trening er hjårnesteinen</strong> i behandling av hofteartrose. En Cochrane-oversikt fra 2014 fant at trening gir en moderat smertereduksjon (SMD -0,38), og effekten holder seg i minst 6-9 måneder.</p>
 
               <div class="treatment-box">
                 <h4>Anbefalt trening</h4>
@@ -638,7 +652,7 @@
               <h3>Vektnedgang</h3>
               <p>Anbefales i de fleste retningslinjer. En Cochrane-oversikt fra 2024 fant moderat effekt på smerte (SMD -0,32) og funksjon (SMD -0,27). <strong>Selv 5 kg vekttap kan gi merkbar bedring.</strong></p>
 
-              <h3>Behandlingsforløp</h3>
+              <h3>Behandlingsforlåp</h3>
               <p>Typisk anbefales 5-9 behandlinger over 5-12 uker, kombinert med hjemmeøvelser. Hvis du ikke merker bedring etter 4-6 uker med aktiv behandling, bør annen tilnærming vurderes. Mange opplever tydelig bedring etter 4-6 uker med regelmessig trening, med full effekt etter 8-12 uker.</p>
             </section>
 
@@ -649,7 +663,7 @@
                 <h2 class="section-title">Prognose - hvordan går det?</h2>
               </div>
 
-              <p>Prognosen for hofteartrose er <strong>bedre enn mange tror</strong>. CHECK-studien, som fulgte 588 pasienter med tidlig hofteartrose i 10 år, fant at bare 12% trengte hofteprotese i løpet av denne perioden. De resterende <strong>88% hadde stabile symptomer</strong> og opprettholdt sitt aktivitetsniva.</p>
+              <p>Prognosen for hofteartrose er <strong>bedre enn mange tror</strong>. CHECK-studien, som fulgte 588 pasienter med tidlig hofteartrose i 10 år, fant at bare 12% trengte hofteprotese i låpet av denne perioden. De resterende <strong>88% hadde stabile symptomer</strong> og opprettholdt sitt aktivitetsniva.</p>
 
               <div class="stat-grid">
                 <div class="stat-item">
@@ -703,13 +717,13 @@
               </div>
 
               <div class="faq-item">
-                <div class="faq-question">Når trenger jeg hofteprotese?</div>
+                <div class="faq-question">Nær trenger jeg hofteprotese?</div>
                 <div class="faq-answer">Hofteprotese vurderes nær smerter og funksjonstap er betydelige til tross for 3-6 måneder med aktiv konservativ behandling, smertestillende og trening ikke lenger gir tilstrekkelig effekt, og livskvaliteten er sterkt redusert. I Norge settes det inn rundt 10.000 hofteproteser årlig, med 95,6% overlevelse etter 10 år.</div>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">Må jeg ta røntgen eller MR?</div>
-                <div class="faq-answer">Ikke nødvendigvis. Klinisk undersøkelse er ofte tilstrekkelig for å stille diagnosen. Bilder anbefales hovedsakelig hvis det er usikkerhet om diagnosen, mistanke om andre tilstander, eller ved planlegging av kirurgi.</div>
+                <div class="faq-answer">Ikke nådvendigvis. Klinisk undersøkelse er ofte tilstrekkelig for å stille diagnosen. Bilder anbefales hovedsakelig hvis det er usikkerhet om diagnosen, mistanke om andre tilstander, eller ved planlegging av kirurgi.</div>
               </div>
 
               <div class="faq-item">
@@ -721,7 +735,7 @@
             <!-- CTA -->
             <div class="hub-cta">
               <h3>Trenger du hjelp med hofteartrose?</h3>
-              <p>Kiropraktor Mads Finstad tilbyr grundig undersøkelse og individuelt tilpasset behandling hos TheBackROM på Majorstua. Du trenger ingen henvisning - kiropraktorer har vært primærkontakter i Norge siden 2006.</p>
+              <p>Kiropraktor Mads Finstad tilbyr grundig undersøkelse og individuelt tilpasset behandling hos TheBackROM på Majorstua. Du trenger ingen henvisning - kiropraktorer har vårt primårkontakter i Norge siden 2006.</p>
               <p>Jeg kombinerer manuell behandling med treningsrad for best mulig resultat.</p>
               <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="button">Bestill vurdering</a>
             </div>
@@ -748,7 +762,7 @@
                 <li>Fan Z et al. Prevalence of hip osteoarthritis: systematic review and meta-analysis. Arthritis Research & Therapy 2023</li>
                 <li>Sulsky SI et al. Work load as risk factor for hip osteoarthritis. PLoS One 2012</li>
                 <li>Cooper C et al. Individual risk factors for hip osteoarthritis. Am J Epidemiology 1998</li>
-                <li>Spector TD, MacGregør AJ. Risk factors for osteoarthritis: genetics. Osteoarthritis and Cartilage 2004</li>
+                <li>Spector TD, MacGregår AJ. Risk factors for osteoarthritis: genetics. Osteoarthritis and Cartilage 2004</li>
                 <li>Khan AM et al. Hip osteoarthritis: where is the pain? Ann R Coll Surg Engl 2004</li>
                 <li>Fransen M et al. Exercise for osteoarthritis of the hip. Cochrane Database Syst Rev 2014</li>
                 <li>Brantingham JW et al. Manipulative therapy for lower extremity conditions. JMPT 2012</li>
@@ -765,7 +779,11 @@
 
             <p class="updated">Sist oppdatert: Januar 2026</p>
 
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
         </article>
 
         <aside class="hub-sidebar">
@@ -808,7 +826,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -852,7 +870,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>

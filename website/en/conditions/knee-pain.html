@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css?v=20260101_v5" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
 
   <title>Knee and Leg Pain - Complete Guide | Chiropractor Oslo</title>
@@ -97,12 +97,10 @@
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <noscript>
     <link rel="stylesheet" href="../../css/index-design.css?v=1">
   </noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="../../css/index-2026-fixes.css">
   </noscript>
@@ -134,7 +132,23 @@
       --hub-purple: #7c3aed;
       --hub-orange: #ea580c;
     }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -145,7 +159,7 @@
         <a href="../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
-          <div class="language-toggle" role="group" aria-label="Language selection">
+          <div class="language-toggle english-active" role="group" aria-label="Language selection">
             <button class="language-toggle__button" data-lang="no" aria-label="Switch to Norwegian"
               aria-pressed="false">NO</button>
             <button class="language-toggle__button language-toggle__button--active" data-lang="en" aria-label="English"
@@ -223,34 +237,42 @@
                 information:</p>
               <div class="hub-subnav__grid hub-subnav__grid--detailed">
                 <a href="knee/meniscus-injury.html" class="hub-subnav__card">
+                  <div class="condition-icon-placeholder">🔄</div>
                   <strong>Meniscus Injury</strong>
                   <span>Everything about meniscus injuries: symptoms, treatment and prognosis</span>
                 </a>
                 <a href="knee/knee-osteoarthritis.html" class="hub-subnav__card">
+                  <div class="condition-icon-placeholder">🦴</div>
                   <strong>Knee Osteoarthritis</strong>
                   <span>Osteoarthritis in the knee: symptoms and exercise-based treatment</span>
                 </a>
                 <a href="knee/runners-knee.html" class="hub-subnav__card">
+                  <div class="condition-icon-placeholder">🏃</div>
                   <strong>Runner's Knee (PFPS)</strong>
                   <span>Patellofemoral pain: causes and effective treatment</span>
                 </a>
                 <a href="knee/acl-injury.html" class="hub-subnav__card">
+                  <div class="condition-icon-placeholder">⚡</div>
                   <strong>ACL Injury</strong>
                   <span>Anterior cruciate ligament injury: rehabilitation and treatment options</span>
                 </a>
                 <a href="knee/shin-splints.html" class="hub-subnav__card">
+                  <div class="condition-icon-placeholder">🦵</div>
                   <strong>Shin Splints</strong>
                   <span>Leg pain when running: causes and treatment</span>
                 </a>
                 <a href="knee/jumpers-knee.html" class="hub-subnav__card">
+                  <div class="condition-icon-placeholder">🦘</div>
                   <strong>Jumper's Knee</strong>
                   <span>Patellar tendinopathy: load-related pain and rehabilitation</span>
                 </a>
                 <a href="knee/it-band-syndrome.html" class="hub-subnav__card">
+                  <div class="condition-icon-placeholder">🚴</div>
                   <strong>IT Band Syndrome (ITBS)</strong>
                   <span>Pain on the outside of the knee in runners and cyclists</span>
                 </a>
                 <a href="knee/knee-pain-from-hip.html" class="hub-subnav__card">
+                  <div class="condition-icon-placeholder">🔗</div>
                   <strong>Knee Pain from Hip</strong>
                   <span>When hip problems cause knee pain</span>
                 </a>
@@ -266,7 +288,7 @@
             </div>
 
             <img src="../../images/plager knesmerter/knee smerte.png" alt="Knee pain - anatomy and treatment"
-              class="hub-featured-image" />
+              class="hub-infographic" loading="lazy" decoding="async" />
 
             <div class="stat-grid">
               <div class="stat-item">
@@ -547,12 +569,9 @@
             </div>
           </section>
 
-          <!-- Section 8: CTA -->
+          <!-- CTA Section (no number) -->
           <section id="contact" class="hub-section">
-            <div class="section-header">
-              <span class="section-number">8</span>
-              <h2>Need Help with Knee or Leg Pain?</h2>
-            </div>
+            <h2 style="color: var(--hub-dark); margin-bottom: 12px;">Need Help with Knee or Leg Pain?</h2>
 
             <p>Are you experiencing knee or leg pain that affects your daily life? Book an assessment with a
               chiropractor for an individual examination and treatment plan.</p>
@@ -616,29 +635,92 @@
           <nav class="hub-toc-card" aria-label="Content navigation">
             <h3>Contents</h3>
             <ul>
-              <li><a href="#anatomy">Anatomy</a></li>
-              <li><a href="#symptoms">Symptoms and Causes</a></li>
-              <li><a href="#research">Research</a></li>
-              <li><a href="#treatment">Treatment</a></li>
-              <li><a href="#redflags">Red Flags</a></li>
-              <li><a href="#prevention">Prevention</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#contact">Book Appointment</a></li>
+              <li><a href="#anatomy">1. Anatomy</a></li>
+              <li><a href="#symptoms">2. Symptoms</a></li>
+              <li><a href="#research">3. Research</a></li>
+              <li><a href="#treatment">4. Treatment</a></li>
+              <li><a href="#redflags">5. Red Flags</a></li>
+              <li><a href="#prevention">6. Prevention</a></li>
+              <li><a href="#faq">7. FAQ</a></li>
             </ul>
           </nav>
         </aside>
       </div>
 
-      <!-- Related Blog Articles -->
-      <section class="related-articles hub-section" style="background: #f8fafc; padding: 2rem; border-radius: 12px; margin: 2rem 0;">
-        <h2 style="margin-bottom: 1.5rem; color: var(--color-primary);">Related Articles</h2>
-        <p style="margin-bottom: 1rem;">Learn more about knee and lower body pain through our in-depth blog articles:</p>
-        <ul style="list-style: none; padding: 0; display: grid; gap: 0.75rem;">
-          <li><a href="../blog/piriformis-syndrome-false-sciatica.html" style="color: var(--color-accent); text-decoration: none;">Piriformis Syndrome – The "False Sciatica"</a></li>
-          <li><a href="../blog/muscle-pain-vs-nerve-pain.html" style="color: var(--color-accent); text-decoration: none;">Muscle Pain vs Nerve Pain – How to Tell the Difference</a></li>
-          <li><a href="../blog/sciatica-prolapse-lumbago-difference.html" style="color: var(--color-accent); text-decoration: none;">Sciatica, Disc Prolapse and Lumbago – What's the Difference?</a></li>
-          <li><a href="../blog/chiropractor-vs-physiotherapist.html" style="color: var(--color-accent); text-decoration: none;">Chiropractor vs Physiotherapist – Which Should You Choose?</a></li>
-        </ul>
+      <!-- Blog Carousel Section (no number) -->
+      <section class="blog-section-hub" id="blog-carousel">
+        <h2 style="color: var(--hub-dark); margin-bottom: 8px;">From the Blog</h2>
+        <p style="margin-bottom: 16px; color: #64748b;">Explore our articles on knee and leg pain:</p>
+
+        <div class="blog-scroll-wrapper" style="position: relative; padding: 0 40px;">
+          <button class="blog-scroll-btn blog-scroll-prev" aria-label="Previous"
+            style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); z-index: 10; width: 36px; height: 36px; border-radius: 50%; background: var(--hub-primary); border: none; cursor: pointer; font-size: 20px; color: white;">‹</button>
+          <button class="blog-scroll-btn blog-scroll-next" aria-label="Next"
+            style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); z-index: 10; width: 36px; height: 36px; border-radius: 50%; background: var(--hub-primary); border: none; cursor: pointer; font-size: 20px; color: white;">›</button>
+          <div class="blog-grid"
+            style="display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 10px 0; scrollbar-width: none;">
+
+            <article class="blog-card"
+              style="flex: 0 0 280px; scroll-snap-align: start; background: #f8fafc; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="../../images/plager knesmerter/knee smerte.webp" alt="Knee pain exercises"
+                  style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              </div>
+              <div style="padding: 16px;">
+                <h3 style="font-size: 15px; margin: 0 0 8px; color: var(--hub-dark);">Piriformis Syndrome - False Sciatica</h3>
+                <p style="font-size: 13px; color: #6b7280; margin: 0 0 12px;">When hip muscles cause leg pain</p>
+                <a href="../blog/piriformis-syndrome-false-sciatica.html"
+                  style="color: var(--hub-primary); font-weight: 600; font-size: 13px; text-decoration: none;">Read more →</a>
+              </div>
+            </article>
+
+            <article class="blog-card"
+              style="flex: 0 0 280px; scroll-snap-align: start; background: #f8fafc; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="../../images/infographics/korsrygg/sciatica-nerve-pain-vs-muscle.webp" alt="Muscle vs nerve pain"
+                  style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              </div>
+              <div style="padding: 16px;">
+                <h3 style="font-size: 15px; margin: 0 0 8px; color: var(--hub-dark);">Muscle Pain vs Nerve Pain</h3>
+                <p style="font-size: 13px; color: #6b7280; margin: 0 0 12px;">How to tell the difference</p>
+                <a href="../blog/muscle-pain-vs-nerve-pain.html"
+                  style="color: var(--hub-primary); font-weight: 600; font-size: 13px; text-decoration: none;">Read more →</a>
+              </div>
+            </article>
+
+            <article class="blog-card"
+              style="flex: 0 0 280px; scroll-snap-align: start; background: #f8fafc; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="../../images/infographics/korsrygg/back-pain-lumbago-sciatica-disc.webp" alt="Sciatica and prolapse"
+                  style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              </div>
+              <div style="padding: 16px;">
+                <h3 style="font-size: 15px; margin: 0 0 8px; color: var(--hub-dark);">Sciatica, Prolapse or Lumbago?</h3>
+                <p style="font-size: 13px; color: #6b7280; margin: 0 0 12px;">Understanding the differences</p>
+                <a href="../blog/sciatica-prolapse-lumbago-difference.html"
+                  style="color: var(--hub-primary); font-weight: 600; font-size: 13px; text-decoration: none;">Read more →</a>
+              </div>
+            </article>
+
+            <article class="blog-card"
+              style="flex: 0 0 280px; scroll-snap-align: start; background: #f8fafc; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="../../images/Om/meg.webp" alt="Chiropractor vs physiotherapist"
+                  style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              </div>
+              <div style="padding: 16px;">
+                <h3 style="font-size: 15px; margin: 0 0 8px; color: var(--hub-dark);">Chiropractor vs Physiotherapist</h3>
+                <p style="font-size: 13px; color: #6b7280; margin: 0 0 12px;">Which should you choose?</p>
+                <a href="../blog/chiropractor-vs-physiotherapist.html"
+                  style="color: var(--hub-primary); font-weight: 600; font-size: 13px; text-decoration: none;">Read more →</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 16px;">
+          <a href="../blog/index.html" style="color: var(--hub-primary); font-weight: 600;">View all blog posts →</a>
+        </div>
       </section>
 
       <div class="mobile-sticky-cta">
@@ -713,6 +795,7 @@
   <script src="../../js/script.min.js" defer></script>
   <script src="../../js/language-toggle.min.js" defer></script>
   <script src="../../js/modern-enhancements.min.js" defer></script>
+  <script src="../../js/blog-carousel.min.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const sections = document.querySelectorAll('.hub-section');
@@ -749,6 +832,23 @@
     });
   </script>
   <script src="../../js/breadcrumbs.js" defer></script>
+  <script>
+    // Force scroll to top on page load (fix for browser scroll restoration)
+    if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual';
+    }
+    window.addEventListener('load', function() {
+      if (!window.location.hash) {
+        setTimeout(function() { window.scrollTo(0, 0); }, 0);
+      }
+    });
+    // Also on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function() {
+      if (!window.location.hash) {
+        window.scrollTo(0, 0);
+      }
+    });
+  </script>
 </body>
 
 </html>

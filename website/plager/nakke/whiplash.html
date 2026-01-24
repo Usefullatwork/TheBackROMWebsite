@@ -12,7 +12,7 @@
 
   <link rel="manifest" href="../../manifest.json" />
   <link rel="apple-touch-icon" href="../../images/Final Transparent Logo.png" />
-  <link rel="preload" as="style" href="../../css/main.min.css" />
+  <link rel="preload" as="style" href="../../css/conditions-combined.min.css?v=20260118" />
   <link rel="icon" type="image/png" href="../../images/Final Transparent Logo.png" />
   <title>Whiplash (Nakkesleng) - Behandling hos Kiropraktor | Majorstua Oslo</title>
 
@@ -27,6 +27,8 @@
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
   <link rel="canonical" href="https://thebackrom.com/plager/nakke/whiplash.html">
+  <link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/nakke/whiplash.html" />
+  <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/neck/whiplash.html" />
 
   <script type="application/ld+json">
   {
@@ -110,11 +112,7 @@
   <noscript><img loading="lazy" decoding="async" height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=540166625752174&ev=PageView&noscript=1" alt="Facebook Pixel" /></noscript>
 
-  <link rel="stylesheet" href="../../css/main.min.css?v=20260101_v5">
-  <link rel="stylesheet" href="../../css/index-design.css?v=1" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-design.css?v=1"></noscript>
-  <link rel="stylesheet" href="../../css/index-2026-fixes.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../../css/index-2026-fixes.css"></noscript>
+  <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../css/hub-article.css">
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
@@ -147,8 +145,8 @@
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
     .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
     .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
     .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
     .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
@@ -172,10 +170,26 @@
     .sources-section ul { font-size: 0.85rem; color: #64748b; }
     .sources-section li { margin-bottom: 6px; }
     .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--hub-primary); padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: var(--hub-primary); padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
+    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
     @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -234,7 +248,7 @@
             <div class="intro-text">
               <p>Whiplash - eller nakkesleng på norsk - beskriver en skademekanisme der hodet plutselig kastes fremover og bakover. Begrepet "whiplash-assosierte lidelser" (WAD) brukes om symptomene som oppstår etter en slik skade. Det er altså ikke en diagnose i seg selv, men en beskrivelse av hvordan skaden oppsto.</p>
 
-              <p>Påkjørsel bakfra i bil er den vanligste årsaken, men whiplash kan også oppstå ved sportsulykker, fall eller andre situasjoner med bra bevegelse av nakken. <strong>83% av personer involvert i bilulykker får en viss grad av whiplash-skade</strong> (PMC, 2009).</p>
+              <p>Påkjårsel bakfra i bil er den vanligste årsaken, men whiplash kan også oppstå ved sportsulykker, fall eller andre situasjoner med bra bevegelse av nakken. <strong>83% av personer involvert i bilulykker før en viss grad av whiplash-skade</strong> (PMC, 2009).</p>
             </div>
 
             <div class="premium-summary-card">
@@ -266,14 +280,14 @@
                 </a>
                 <a href="rode-flagg-nakkesmerter.html" class="hub-subnav__card">
                   <strong>Røde flagg</strong>
-                  <span>Når du må søke hjelp</span>
+                  <span>Nær du må søke hjelp</span>
                 </a>
               </div>
             </nav>
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Når må du søke hjelp umiddelbart?</h4>
+              <h4>Nær må du søke hjelp umiddelbart?</h4>
               <p>Ved nevrologiske utfall, kraftig hodepine, synsforstyrrelser, eller svakhet i armer/ben - ring 113 eller dra til legevakt.</p>
               <a href="rode-flagg-nakkesmerter.html">Les mer om røde flagg</a>
             </div>
@@ -292,12 +306,12 @@
             </div>
 
             <h3>Forekomst</h3>
-            <p>Norge har verdens høyeste forekomst av nakkesmerter, med 6 151 tilfeller per 100 000 innbyggere ifølge Global Burden of Disease-studien. I Norden rammes omtrent 235-383 personer per 100 000 årlig av whiplash spesifikt. Kvinner har omtrent dobbelt så høy risiko som menn for å utvikle symptomer etter påkjørsel bakfra.</p>
+            <p>Norge har verdens høyeste forekomst av nakkesmerter, med 6 151 tilfeller per 100 000 innbyggere ifølge Global Burden of Disease-studien. I Norden rammes omtrent 235-383 personer per 100 000 årlig av whiplash spesifikt. Kvinner har omtrent dobbelt så høy risiko som menn for å utvikle symptomer etter påkjårsel bakfra.</p>
 
             <div class="stat-grid">
               <div class="stat-item">
                 <span class="stat-number">83%</span>
-                <span class="stat-label">får whiplash-skade ved bilulykke</span>
+                <span class="stat-label">før whiplash-skade ved bilulykke</span>
               </div>
               <div class="stat-item">
                 <span class="stat-number">235-383</span>
@@ -343,7 +357,7 @@
                 </tr>
                 <tr>
                   <td><strong>WAD IV</strong></td>
-                  <td>Fraktur eller luksasjon - krever øyeblikkelig legevurdering</td>
+                  <td>Fraktur eller luksasjon - krever åyeblikkelig legevurdering</td>
                 </tr>
               </tbody>
             </table>
@@ -351,17 +365,17 @@
             <p>De aller fleste har WAD grad II. Hodepine, svimmelhet, tinnitus og kjeveproblemer kan forekomme ved alle grader.</p>
           </section>
 
-          <!-- SECTION 3: Årsaker og risikofaktorer -->
+          <!-- SECTION 3: årsaker og risikofaktorer -->
           <section class="hub-section" id="s3">
             <div class="section-header">
               <span class="section-number">3</span>
-              <h2>Årsaker og risikofaktorer</h2>
+              <h2>årsaker og risikofaktorer</h2>
             </div>
 
             <h3>Vanligste årsaker</h3>
             <div class="condition-card">
               <h4>Bilulykker (whiplash)</h4>
-              <p>Den klassiske årsaken. Ved påkjørsel bakfra utsettes nakken for en rask akselerasjon-deselerasjon som kan skade bløtdelene.</p>
+              <p>Den klassiske årsaken. Ved påkjårsel bakfra utsettes nakken for en rask akselerasjon-deselerasjon som kan skade bløtdelene.</p>
             </div>
 
             <div class="condition-card">
@@ -387,7 +401,7 @@
 
             <div class="info-box">
               <h4>Interessant funn</h4>
-              <p>Forskning viser at selve kollisjonen (retning, hastighet, hodestøttetype) ikke påvirker prognosen nevneverdig. Bildediagnostiske funn forutsier heller ikke prognosen - psykososiale faktorer betyr langt mer.</p>
+              <p>Forskning viser at selve kollisjonen (retning, hastighet, hodeståttetype) ikke påvirker prognosen nevneverdig. Bildediagnostiske funn forutsier heller ikke prognosen - psykososiale faktorer betyr langt mer.</p>
             </div>
           </section>
 
@@ -428,7 +442,7 @@
               <h4>Behandlingen kan inkludere:</h4>
               <ul>
                 <li><strong>Manuell behandling:</strong> Skansom mobilisering av nakkeledd og muskulatur</li>
-                <li><strong>Bløtvevsbehandling:</strong> <a href="triggerpunkter-nakke.html">Triggerpunkt</a>-terapi, muskeltøying og fasciell behandling</li>
+                <li><strong>Blåtvevsbehandling:</strong> <a href="triggerpunkter-nakke.html">Triggerpunkt</a>-terapi, muskeltåying og fasciell behandling</li>
                 <li><strong>Aktiv rehabilitering:</strong> Spesifikke øvelser for styrke, stabilitet og bevegelighet</li>
                 <li><strong>Råd og veiledning:</strong> Informasjon om tilstanden og hva du kan gjøre selv</li>
               </ul>
@@ -450,12 +464,12 @@
               <li><strong>Hjemmeøvelser:</strong> Kiropraktoren gir deg tilpassede øvelser som en del av behandlingen</li>
             </ul>
 
-            <h3>Behandlingsforløp</h3>
+            <h3>Behandlingsforlåp</h3>
             <p>For akutt whiplash (WAD I-II) anbefaler OPTIMa-retningslinjene:</p>
             <ul>
               <li><strong>Akutt fase:</strong> 2-3 behandlinger per uke i 2-4 uker (6-12 behandlinger totalt)</li>
               <li><strong>Evaluering:</strong> Vurdering av respons etter 6-12 behandlinger</li>
-              <li><strong>Vedvarende plager:</strong> 1-2 behandlinger per uke med gradvis nedtrapping, økende fokus på egentrening</li>
+              <li><strong>Vedvarende plager:</strong> 1-2 behandlinger per uke med gradvis nedtrapping, åkende fokus på egentrening</li>
             </ul>
           </section>
 
@@ -463,7 +477,7 @@
           <section class="hub-section" id="s6">
             <div class="section-header">
               <span class="section-number">6</span>
-              <h2>Røde flagg - Når du må søke lege</h2>
+              <h2>Røde flagg - Nær du må søke lege</h2>
             </div>
 
             <div class="red-flag-box">
@@ -489,20 +503,20 @@
               <h2>Prognose - Hva kan du forvente?</h2>
             </div>
 
-            <h3>Tre typiske forløp (Sterling et al., Pain, 2010)</h3>
+            <h3>Tre typiske forlåp (Sterling et al., Pain, 2010)</h3>
             <div class="condition-card">
-              <h4>Mildt forløp (~45-50%)</h4>
+              <h4>Mildt forlåp (~45-50%)</h4>
               <p>Full bedring innen 2-3 måneder med minimale restsymptomer.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Moderat forløp (~30-40%)</h4>
+              <h4>Moderat forlåp (~30-40%)</h4>
               <p>Delvis bedring med vedvarende milde til moderate symptomer.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Alvorlig forløp (~15-20%)</h4>
-              <p>Dårlig bedring med kroniske moderate til alvorlige plager.</p>
+              <h4>Alvorlig forlåp (~15-20%)</h4>
+              <p>Dørlig bedring med kroniske moderate til alvorlige plager.</p>
             </div>
 
             <div class="prognosis-box">
@@ -588,10 +602,14 @@
             <p style="margin-bottom: 12px;">Vil du lære mer om sjeldne årsaker til hals- og nakkesmerter?</p>
             <ul style="list-style: none; padding: 0; margin: 0;">
               <li style="margin-bottom: 10px;"><a href="../kjeve/eagle-syndrom.html" style="color: var(--hub-blue); text-decoration: none; font-weight: 500;">Eagle syndrom</a> - Forlenget styloidutloper som årsak til hals- og kjevesmerter</li>
-              <li style="margin-bottom: 10px;"><a href="../kjeve/glossopharyngeal-nevralgi.html" style="color: var(--hub-blue); text-decoration: none; font-weight: 500;">Glossopharyngeal nevralgi</a> - Intense smerter i hals, tunge og øre</li>
+              <li style="margin-bottom: 10px;"><a href="../kjeve/glossopharyngeal-nevralgi.html" style="color: var(--hub-blue); text-decoration: none; font-weight: 500;">Glossopharyngeal nevralgi</a> - Intense smerter i hals, tunge og åre</li>
               <li style="margin-bottom: 0;"><a href="../kjeve/icr-intern-carotis.html" style="color: var(--hub-blue); text-decoration: none; font-weight: 500;">Carotidyni og carotisdisseksjon</a> - Vaskulære årsaker til hals- og ansiktssmerte</li>
             </ul>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
+              </div>
+              </div>
 
           <!-- Disclaimer -->
           <p class="disclaimer"><strong>Medisinsk ansvarsfraskrivelse:</strong> Denne artikkelen er ment som generell informasjon og erstatter ikke individuell medisinsk vurdering. Oppsøk helsepersonell dersom du er usikker på din situasjon.</p>
@@ -634,7 +652,7 @@
             <ul>
               <li><a href="#s1">Hva er whiplash?</a></li>
               <li><a href="#s2">WAD-gradering</a></li>
-              <li><a href="#s3">Årsaker</a></li>
+              <li><a href="#s3">årsaker</a></li>
               <li><a href="#s4">Symptomer</a></li>
               <li><a href="#s5">Behandling</a></li>
               <li><a href="#s6">Røde flagg</a></li>
@@ -669,7 +687,7 @@
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
+              aria-label="Se være videoer på YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
@@ -713,7 +731,7 @@
 
       <div class="footer__bottom">
         <a href="../../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <p class="footer__copyright">å 2026 Mads Finstad Kiropraktor å Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
