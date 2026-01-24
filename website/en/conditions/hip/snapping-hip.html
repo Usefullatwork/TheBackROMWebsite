@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -157,7 +157,23 @@
       --hub-purple: #7c3aed;
       --hub-orange: #ea580c;
     }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -542,7 +558,11 @@
                 loading="lazy">
               <span>Read all hip & pelvis articles</span>
             </a>
-          </div>
+          
+              <div class="medical-disclaimer">
+                <strong>Medical Information:</strong> This article is written by Chiropractor Mads Finstad at Klinikk for alle Majorstua, Oslo. The information does not replace individual medical evaluation. For acute or concerning symptoms, contact a doctor immediately.
+              </div>
+              </div>
 
           <p class="updated">Last updated: January 2026</p>
 

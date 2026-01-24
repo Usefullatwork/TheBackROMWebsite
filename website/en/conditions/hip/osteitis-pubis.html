@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -158,7 +158,23 @@
       --hub-purple: #7c3aed;
       --hub-orange: #ea580c;
     }
-  </style>
+  
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+  
+    /* Hub Hero Section */
+    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
+    .hub-hero__container { max-width: 900px; margin: 0 auto; }
+    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
+    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
+    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
+    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
+</style>
 </head>
 
 <body id="top">
@@ -514,4 +530,222 @@
 
             <div class="faq-item">
               <div class="faq-question">How long does it take to recover?</div>
-              <div class="
+              <div class="faq-answer">With structured rehabilitation, most return to full activity within 3-6 months. Without active treatment, symptoms can last 8-12 months or longer.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">Can a chiropractor help with osteitis pubis?</div>
+              <div class="faq-answer">Yes. Chiropractors can offer manual treatment of pelvic and hip joints, soft tissue treatment and individually tailored exercise programs. Many patients report good results from multimodal chiropractic treatment combined with rehabilitation exercises.</div>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <div class="hub-cta">
+            <h3>Need help with groin pain?</h3>
+            <p>Chiropractor Mads Finstad offers thorough examination and individually tailored treatment at TheBackROM in Majorstua.</p>
+            <p><strong>Prices:</strong> New problem 1,140 NOK | Follow-up 795 NOK</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn">Book appointment</a>
+          </div>
+
+          <!-- Related articles -->
+          <div class="related-box">
+            <h3>Related Articles</h3>
+            <a href="athletic-pubalgia.html">Athletic Pubalgia</a>
+            <a href="pelvic-pain-pregnancy.html">Pelvic Pain in Pregnancy</a>
+            <a href="hip-pain.html">Hip Pain - Main Article</a>
+            <a href="si-joint-problems.html">SI Joint Pain</a>
+          </div>
+
+          <!-- Disclaimer -->
+          <p class="disclaimer">This article is intended as general information and does not replace individual medical assessment. Seek professional healthcare if you are unsure about your situation or experience red flag symptoms.</p>
+
+          <!-- Sources -->
+          <section class="sources-section">
+            <h3>Sources</h3>
+            <ul>
+              <li>Paajanen H, et al. Long-standing groin pain in athletes: A prospective study of 189 patients. Annales Chirurgiae et Gynaecologiae, 1991.</li>
+              <li>Verrall GM, et al. The effect of sports specific training on reducing the incidence of hamstring injuries in professional Australian Rules football players. British Journal of Sports Medicine, 2005.</li>
+              <li>Rodriguez C, et al. Osteitis pubis syndrome in the professional soccer athlete. Sports Health, 2001.</li>
+              <li>Schilders E, et al. Pubic-related groin pain in elite footballers. British Journal of Sports Medicine, 2007.</li>
+              <li>StatPearls. Osteitis Pubis. 2024.</li>
+            </ul>
+          </section>
+
+          <!-- Compact Blog Carousel -->
+          <div class="blog-carousel-compact">
+            <div class="carousel-header-compact">
+              <span class="carousel-label">From Our Blog</span>
+              <a href="../hip-pain.html" class="carousel-hub-link">All hip & pelvis articles →</a>
+            </div>
+            <div class="carousel-wrapper-compact">
+              <button class="carousel-btn-compact prev" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="carousel-track-compact" id="blog-carousel-track">
+                <!-- Articles loaded by blog-carousel.min.js -->
+              </div>
+              <button class="carousel-btn-compact next" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <a href="../hip-pain.html" class="carousel-mobile-link">
+              <img src="../../../images/Plager hofte-og-bekkensmerter/hofte smerte.webp" alt="hip and pelvis pain" loading="lazy">
+              <span>Read all hip & pelvis articles</span>
+            </a>
+          
+              <div class="medical-disclaimer">
+                <strong>Medical Information:</strong> This article is written by Chiropractor Mads Finstad at Klinikk for alle Majorstua, Oslo. The information does not replace individual medical evaluation. For acute or concerning symptoms, contact a doctor immediately.
+              </div>
+              </div>
+
+          <p class="updated">Last updated: January 2026</p>
+
+        </article>
+
+        <!-- Sidebar (desktop only) -->
+        <aside class="hub-sidebar">
+          <!-- Conversion Card -->
+          <div class="hub-conversion-card">
+            <img src="../../../images/Om/meg.webp" alt="Mads Finstad Chiropractor" class="sidebar-image">
+            <h3>Do you have groin pain?</h3>
+            <p>I can help you find the right treatment and relief.</p>
+            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Book appointment</a>
+            <div class="sidebar-info">
+              <small><strong>Mads Finstad</strong><br>Chiropractor, TheBackROM</small>
+            </div>
+          </div>
+
+          <!-- Table of Contents -->
+          <nav class="hub-toc-card" aria-label="Content navigation">
+            <h3>Contents</h3>
+            <ul>
+              <li><a href="#s1">What is osteitis pubis?</a></li>
+              <li><a href="#s2">Causes</a></li>
+              <li><a href="#s3">Symptoms</a></li>
+              <li><a href="#s4">Diagnostics</a></li>
+              <li><a href="#s5">Treatment</a></li>
+              <li><a href="#s6">Red flags</a></li>
+              <li><a href="#s7">Prognosis</a></li>
+              <li><a href="#s8">FAQ</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </main>
+
+    <!-- Mobile sticky CTA -->
+    <div class="mobile-sticky-cta">
+      <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn btn-primary">Book appointment</a>
+      <a href="tel:+4793043062" class="btn btn-outline">Call</a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Left Column -->
+        <div class="footer__left">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Visit us on Facebook">
+              <img src="../../../images/Media iconer/facebook_media_social_icon.png" alt="Visit TheBackROM on Facebook"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Follow us on Instagram">
+              <img src="../../../images/Media iconer/instagramlogo.png" alt="Follow @chiro_mads on Instagram"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
+              aria-label="Watch our videos on YouTube">
+              <img src="../../../images/Media iconer/youtube_icon.png" alt="Subscribe to TheBackROM YouTube channel"
+                width="512" height="512" loading="lazy" decoding="async" />
+            </a>
+            <a href="../../contact.html" class="footer__social-link" aria-label="Send us an email">
+              <img src="../../../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send email to TheBackROM"
+                loading="lazy" decoding="async" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Column -->
+        <div class="footer__center">
+          <div class="footer__logo">
+            <img src="../../../images/logo-footer.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo"
+              width="300" height="229" loading="lazy" decoding="async" />
+          </div>
+          <div class="back-to-top-wrapper">
+            <p class="text--muted-small">Back to top</p>
+            <a href="#top" class="back-to-top-btn" aria-label="Go to top of page">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i> Up
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer__right">
+          <div class="footer__hours">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 08:00 - 19:00</p>
+            <p>Saturday: 10:00 - 16:00</p>
+            <p>Sunday: Closed</p>
+          </div>
+          <div class="footer__contact">
+            <h3>Contact Information</h3>
+            <p>Gardeveien 17<br>0363 Oslo</p>
+            <p>Phone: <a href="tel:+4793043062">+47 93043062</a></p>
+            <p>Email: <a href="mailto:Mads.finstad@hotmail.com">Mads.finstad@hotmail.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <a href="../../privacy-policy.html" class="footer__link--muted">Privacy Policy</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Chiropractor - All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../../../js/script.min.js" defer></script>
+  <script src="../../../js/language-toggle.min.js" defer></script>
+  <script src="../../../js/modern-enhancements.min.js" defer></script>
+
+  <!-- TOC scroll tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('.hub-section');
+      const navLinks = document.querySelectorAll('.hub-toc-card a');
+
+      if (sections.length === 0 || navLinks.length === 0) return;
+
+      function updateActiveLink() {
+        let current = '';
+        const scrollPos = window.scrollY + 200;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (scrollPos >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          const href = link.getAttribute('href');
+          if (current === '' && sections.length > 0) {
+            current = sections[0].getAttribute('id');
+          }
+          if (href && href === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    });
+  </script>
+  <script src="../../../js/blog-carousel.min.js" defer></script>
+  <script src="../../../js/breadcrumbs.js" defer></script>
+</body>
+
+</html>
