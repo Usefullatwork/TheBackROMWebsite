@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nb">
 
 <head>
@@ -80,20 +80,37 @@
     .hub-intro h1 { font-size: 2.5rem; color: var(--hub-dark); margin-bottom: 24px; line-height: 1.2; }
     .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
     .intro-text p { margin-bottom: 16px; }
+    .premium-summary-card { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--hub-primary); }
+    .premium-summary-card h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 1.2rem; }
+    .premium-summary-card ul { margin: 0; padding-left: 20px; }
+    .premium-summary-card li { margin-bottom: 10px; color: #334155; line-height: 1.6; }
+    .premium-summary-card li strong { color: var(--hub-primary); }
     .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
     .hub-section h2 { color: var(--hub-dark); margin: 0 0 20px; }
     .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; flex-shrink: 0; }
+    .section-header h2 { margin: 0; }
+    .condition-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .condition-card h4 { color: var(--hub-dark); margin-bottom: 12px; }
     .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
     .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
     .treatment-box ul { margin: 0; padding-left: 20px; }
     .treatment-box li { margin-bottom: 8px; color: #065f46; }
     .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
     .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .info-box p { margin: 0; color: #1e40af; }
     .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
     .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
     .red-flag-box ul { margin: 0; padding-left: 20px; }
     .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-grid .stat-item { background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #e2e8f0; }
+    .stat-grid .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--hub-primary); display: block; }
+    .stat-grid .stat-label { font-size: 0.85rem; color: #64748b; margin-top: 4px; }
+    .prognosis-highlight { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--hub-green); }
+    .prognosis-highlight h4 { color: var(--hub-green); margin-bottom: 12px; }
     .symptom-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin: 16px 0; }
     .symptom-list li { background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--hub-primary); list-style: none; color: #334155; }
     .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
@@ -122,14 +139,15 @@
       .hub-main { max-width: 100%; padding-bottom: 100px; }
       .hub-intro h1 { font-size: 1.8rem; }
       .mobile-sticky-cta { display: block; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
     }
-  
+
     .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
     .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
     .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
     .location-content { padding: 20px 24px; }
     .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
+
     /* Hub Hero Section */
     .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
     .hub-hero__container { max-width: 900px; margin: 0 auto; }
@@ -150,14 +168,14 @@
         <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
-          <div class="language-toggle" role="group" aria-label="Språkvalg">
+          <div class="language-toggle" role="group" aria-label="Sprakvalg">
             <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
               aria-pressed="true">NO</button>
             <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
               aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
-          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+          <button type="button" class="icon-menu" aria-label="Apne navigasjonsmeny" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -187,7 +205,7 @@
       <section class="hub-hero">
         <div class="hub-hero__container">
           <span class="blog-post__category">Kjeve</span>
-          <h1>Tekstnakke og Kjevesmerter: Hvordan Mobilbruk Påvirker Kjeven</h1>
+          <h1>Tekstnakke og Kjevesmerter: Hvordan Mobilbruk Pavirker Kjeven</h1>
           <p class="hub-hero__subtitle">Kiropraktor Mads Finstad, Majorstua</p>
           <div class="blog-post__meta">
             <time class="blog-post__date" datetime="2026-12-28">28. desember 2026</time>
@@ -200,160 +218,265 @@
         <article class="page__blog-post blog-post hub-main">
           <div class="blog-post__container">
             <div class="blog-post__content">
-              <h2 id="hva-er-tekstnakke">Hva Er Tekstnakke?</h2>
-          <p>"Tekstnakke" (text neck/tech neck) refererer til nakke- og hodeplager som oppstår fra langvarig bruk av mobile enheter med bøyd hode. Når du ser ned på telefonen, bøyes nakken fremover og hodet skyves foran tyngdelinjen.</p>
 
-          <p>Dette er ikke bare et moderne fenomen - samme holdning ses ved:</p>
-          <ul>
-            <li>Skrivebordsarbeid med lav skjerm</li>
-            <li>Lesing av bøker i fanget</li>
-            <li>Håndarbeid</li>
-            <li>Gaming på nettbrett</li>
-          </ul>
+              <!-- Premium Summary Card -->
+              <div class="premium-summary-card">
+                <h3>Viktige punkter om tekstnakke og kjevesmerter</h3>
+                <ul>
+                  <li><strong>60-66% av kontorarbeidere</strong> har fremoverlent hode som kan pavirke kjeven</li>
+                  <li><strong>70-90% av TMD-pasienter</strong> har samtidige nakkeproblemer</li>
+                  <li><strong>Hver 15 grader fremoverlent</strong> nakke legger til 12-15 kg ekstra belastning</li>
+                  <li><strong>Enkle ovelser</strong> og holdningsjusteringer kan gi betydelig bedring</li>
+                </ul>
+              </div>
 
-          <p>Men smarttelefonen har dramatisk økt tiden man tilbringer i denne stillingen.</p>
+              <!-- Stat Grid -->
+              <div class="stat-grid">
+                <div class="stat-item">
+                  <span class="stat-number">3-5</span>
+                  <span class="stat-label">Timer daglig mobilbruk</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">70-90%</span>
+                  <span class="stat-label">TMD med nakkeplager</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">12-15kg</span>
+                  <span class="stat-label">Ekstra nakkebelastning</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">7+</span>
+                  <span class="stat-label">Timer skjerm for ungdom</span>
+                </div>
+              </div>
 
-          <h2 id="tallene-som-taler-for-seg">Tallene som Taler for Seg</h2>
-          <ul>
-            <li>Gjennomsnittlig smarttelefonbruk: <strong>3-5 timer daglig</strong></li>
-            <li>Ungdom bruker ofte <strong>7+ timer</strong> på skjermer daglig</li>
-            <li><strong>60-66% av kontorarbeidere</strong> har fremoverlent hode</li>
-            <li>Hver 15å fremoverlent nakke legger til <strong>12-15 kg ekstra belastning</strong></li>
-          </ul>
+              <!-- Section 1 -->
+              <section class="hub-section" id="hva-er-tekstnakke">
+                <div class="section-header">
+                  <span class="section-number">1</span>
+                  <h2>Hva Er Tekstnakke?</h2>
+                </div>
+                <p>"Tekstnakke" (text neck/tech neck) refererer til nakke- og hodeplager som oppstar fra langvarig bruk av mobile enheter med boyd hode. Nar du ser ned pa telefonen, boyes nakken fremover og hodet skyves foran tyngdelinjen.</p>
 
-          <h2 id="hvordan-tekstnakke-pavirker-kjeven">Hvordan Tekstnakke Påvirker Kjeven</h2>
-          <p>Sammenhengen mellom fremoverlent hode og kjeveplager er godt dokumentert:</p>
+                <p>Dette er ikke bare et moderne fenomen - samme holdning ses ved:</p>
+                <ul class="symptom-list">
+                  <li>Skrivebordsarbeid med lav skjerm</li>
+                  <li>Lesing av boker i fanget</li>
+                  <li>Handarbeid</li>
+                  <li>Gaming pa nettbrett</li>
+                </ul>
 
-          <h3>1. Biomekanisk Endring</h3>
-          <p>Når hodet skyves fremover:</p>
-          <ul>
-            <li>Underkjeven trekkes bakover og ned av tyngdekraften</li>
-            <li>Kjevemusklene må jobbe for å holde munnen lukket</li>
-            <li>Kjeveleddet belastes asymmetrisk</li>
-            <li>Bakre del av leddet komprimeres</li>
-          </ul>
+                <p>Men smarttelefonen har dramatisk okt tiden man tilbringer i denne stillingen.</p>
+              </section>
 
-          <h3>2. Muskulær Kompensasjon</h3>
-          <ul>
-            <li>Masseter og temporalis aktiveres unødvendig</li>
-            <li>Konstant lav-nivå spenning fører til utmatting</li>
-            <li>økt risiko for triggerpunkter</li>
-            <li>Spenningshodepine i tinninger</li>
-          </ul>
+              <!-- Section 2 -->
+              <section class="hub-section" id="tallene-som-taler-for-seg">
+                <div class="section-header">
+                  <span class="section-number">2</span>
+                  <h2>Tallene som Taler for Seg</h2>
+                </div>
 
-          <h3>3. Nerveforbindelser</h3>
-          <ul>
-            <li>Trigeminocervical-komplekset kobler nakke og kjeve</li>
-            <li>Stram nakkemuskulatur kan gi henvist smerte til kjeven</li>
-            <li>Suboccipital spenning påvirker kjevemuskulaturen reflektorisk</li>
-          </ul>
+                <div class="info-box">
+                  <h4>Statistikk om skjermbruk og holdning</h4>
+                  <ul style="margin: 0; padding-left: 20px; color: #1e40af;">
+                    <li>Gjennomsnittlig smarttelefonbruk: <strong>3-5 timer daglig</strong></li>
+                    <li>Ungdom bruker ofte <strong>7+ timer</strong> pa skjermer daglig</li>
+                    <li><strong>60-66% av kontorarbeidere</strong> har fremoverlent hode</li>
+                    <li>Hver 15 grader fremoverlent nakke legger til <strong>12-15 kg ekstra belastning</strong></li>
+                  </ul>
+                </div>
+              </section>
 
-          <div style="background: #f0f9ff; border-left: 4px solid #0284c7; padding: 20px; margin: 30px 0; border-radius: 8px;">
-            <h4 style="margin-top: 0; color: #0369a1;">Forskning Bekrefter Sammenhengen</h4>
-            <p style="margin-bottom: 0;">Studier viser at 70-90% av TMD-pasienter har samtidige nakkeproblemer, og at behandling av nakken ofte forbedrer kjevesymptomene - selv uten direkte kjevebehandling.</p>
-          </div>
+              <!-- Section 3 -->
+              <section class="hub-section" id="hvordan-tekstnakke-pavirker-kjeven">
+                <div class="section-header">
+                  <span class="section-number">3</span>
+                  <h2>Hvordan Tekstnakke Pavirker Kjeven</h2>
+                </div>
+                <p>Sammenhengen mellom fremoverlent hode og kjeveplager er godt dokumentert:</p>
 
-          <h2 id="symptomer-pa-tekstnakke-med-kjeveinvolvering">Symptomer på Tekstnakke med Kjeveinvolvering</h2>
-          <ul>
-            <li>Nakkestivhet og -smerter</li>
-            <li>Hodepine, ofte fra nakke til tinning</li>
-            <li>Kjevesmerter som forverres ved skjermbruk</li>
-            <li>økt tanngnissing eller sammenbiting</li>
-            <li>Skulder- og Øvre ryggsmerter</li>
-            <li>Tretthet i kjevemuskulaturen</li>
-          </ul>
+                <div class="condition-card">
+                  <h4>1. Biomekanisk Endring</h4>
+                  <p>Nar hodet skyves fremover:</p>
+                  <ul>
+                    <li>Underkjeven trekkes bakover og ned av tyngdekraften</li>
+                    <li>Kjevemusklene ma jobbe for a holde munnen lukket</li>
+                    <li>Kjeveleddet belastes asymmetrisk</li>
+                    <li>Bakre del av leddet komprimeres</li>
+                  </ul>
+                </div>
 
-          <h2 id="selvtest-har-du-tekstnakke">Selvtest: Har Du Tekstnakke?</h2>
-          <p>Stå med ryggen mot en vegg med hælene, setet og skulderbladene mot veggen:</p>
-          <ul>
-            <li><strong>Hvis bakhodet naturlig hviler mot veggen:</strong> Normal holdning</li>
-            <li><strong>Hvis du må strekke deg for å nå veggen:</strong> Mulig FHP</li>
-            <li><strong>Hvis du ikke klarer å nå veggen uten å bøye nakken bakover:</strong> Sannsynlig FHP</li>
-          </ul>
+                <div class="condition-card">
+                  <h4>2. Muskulaer Kompensasjon</h4>
+                  <ul>
+                    <li>Masseter og temporalis aktiveres unodvendig</li>
+                    <li>Konstant lav-niva spenning forer til utmatting</li>
+                    <li>Okt risiko for triggerpunkter</li>
+                    <li>Spenningshodepine i tinninger</li>
+                  </ul>
+                </div>
 
-          <h2 id="losninger-og-forebygging">Løsninger og Forebygging</h2>
+                <div class="condition-card">
+                  <h4>3. Nerveforbindelser</h4>
+                  <ul>
+                    <li>Trigeminocervical-komplekset kobler nakke og kjeve</li>
+                    <li>Stram nakkemuskulatur kan gi henvist smerte til kjeven</li>
+                    <li>Suboccipital spenning pavirker kjevemuskulaturen reflektorisk</li>
+                  </ul>
+                </div>
 
-          <h3>1. Endre Mobilvanene</h3>
-          <ul>
-            <li><strong>Hold telefonen høyere:</strong> Løft den opp i øyenhøyde</li>
-            <li><strong>Begrens tid:</strong> Sett grenser for skjermtid</li>
-            <li><strong>Ta pauser:</strong> 20-20-20-regelen (hver 20. min, se 20 sek på noe 20 meter unna)</li>
-            <li><strong>Veksle:</strong> Bytt mellom å holde telefonen med høyre og venstre hånd</li>
-          </ul>
+                <div class="prognosis-highlight">
+                  <h4>Forskning Bekrefter Sammenhengen</h4>
+                  <p style="margin: 0;">Studier viser at 70-90% av TMD-pasienter har samtidige nakkeproblemer, og at behandling av nakken ofte forbedrer kjevesymptomene - selv uten direkte kjevebehandling.</p>
+                </div>
+              </section>
 
-          <h3>2. Optimaliser Arbeidsstasjonen</h3>
-          <ul>
-            <li><strong>Skjermhøyde:</strong> øverste kant på øyenhøyde</li>
-            <li><strong>Skjermavstand:</strong> En armlengde</li>
-            <li><strong>Stol:</strong> Ryggståtte og riktig høyde</li>
-            <li><strong>Evt. ståbord:</strong> Variasjon er bra</li>
-          </ul>
+              <!-- Section 4 -->
+              <section class="hub-section" id="symptomer-pa-tekstnakke-med-kjeveinvolvering">
+                <div class="section-header">
+                  <span class="section-number">4</span>
+                  <h2>Symptomer pa Tekstnakke med Kjeveinvolvering</h2>
+                </div>
+                <ul class="symptom-list">
+                  <li>Nakkestivhet og -smerter</li>
+                  <li>Hodepine, ofte fra nakke til tinning</li>
+                  <li>Kjevesmerter som forverres ved skjermbruk</li>
+                  <li>Okt tanngnissing eller sammenbiting</li>
+                  <li>Skulder- og ovre ryggsmerter</li>
+                  <li>Tretthet i kjevemuskulaturen</li>
+                </ul>
+              </section>
 
-          <h3>3. øvelser</h3>
+              <!-- Section 5 -->
+              <section class="hub-section" id="selvtest-har-du-tekstnakke">
+                <div class="section-header">
+                  <span class="section-number">5</span>
+                  <h2>Selvtest: Har Du Tekstnakke?</h2>
+                </div>
+                <p>Sta med ryggen mot en vegg med haelene, setet og skulderbladene mot veggen:</p>
 
-          <h4>Chin Tuck (Hakeinndraging)</h4>
-          <ol>
-            <li>Sitt eller stå rett</li>
-            <li>Trekk haken rett bakover (som "dobbelthake")</li>
-            <li>Hold 5 sekunder</li>
-            <li>Gjenta 10 ganger, flere ganger daglig</li>
-          </ol>
+                <div class="treatment-box">
+                  <h4>Slik tolker du testen</h4>
+                  <ul>
+                    <li><strong>Hvis bakhodet naturlig hviler mot veggen:</strong> Normal holdning</li>
+                    <li><strong>Hvis du ma strekke deg for a na veggen:</strong> Mulig FHP (fremoverlent hode)</li>
+                    <li><strong>Hvis du ikke klarer a na veggen uten a boye nakken bakover:</strong> Sannsynlig FHP</li>
+                  </ul>
+                </div>
+              </section>
 
-          <h4>Nakketøyning</h4>
-          <ol>
-            <li>Len hodet forsiktig til siden (øre mot skulder)</li>
-            <li>Hold 20-30 sekunder</li>
-            <li>Gjenta på motsatt side</li>
-          </ol>
+              <!-- Section 6 -->
+              <section class="hub-section" id="losninger-og-forebygging">
+                <div class="section-header">
+                  <span class="section-number">6</span>
+                  <h2>Losninger og Forebygging</h2>
+                </div>
 
-          <h4>Brystmuskel-strekk</h4>
-          <ol>
-            <li>Stå i en døråpning med underarmene mot karmen</li>
-            <li>Ta et skritt fremover</li>
-            <li>Kjenn strekk i brystet</li>
-            <li>Hold 30 sekunder</li>
-          </ol>
+                <div class="treatment-box">
+                  <h4>1. Endre Mobilvanene</h4>
+                  <ul>
+                    <li><strong>Hold telefonen hoyere:</strong> Loft den opp i oyenhoyde</li>
+                    <li><strong>Begrens tid:</strong> Sett grenser for skjermtid</li>
+                    <li><strong>Ta pauser:</strong> 20-20-20-regelen (hver 20. min, se 20 sek pa noe 20 meter unna)</li>
+                    <li><strong>Veksle:</strong> Bytt mellom a holde telefonen med hoyre og venstre hand</li>
+                  </ul>
+                </div>
 
-          <h4>Skulderblad-retraction</h4>
-          <ol>
-            <li>Trekk skulderbladene sammen og ned</li>
-            <li>Hold 5 sekunder</li>
-            <li>Gjenta 10 ganger</li>
-          </ol>
+                <div class="treatment-box">
+                  <h4>2. Optimaliser Arbeidsstasjonen</h4>
+                  <ul>
+                    <li><strong>Skjermhoyde:</strong> Overste kant pa oyenhoyde</li>
+                    <li><strong>Skjermavstand:</strong> En armlengde</li>
+                    <li><strong>Stol:</strong> Ryggstotte og riktig hoyde</li>
+                    <li><strong>Evt. stabord:</strong> Variasjon er bra</li>
+                  </ul>
+                </div>
 
-          <h2 id="tips-for-barn-og-ungdom">Tips for Barn og Ungdom</h2>
-          <p>Tekstnakke-problemer starter tidlig. For foreldre:</p>
-          <ul>
-            <li>Begrens skjermtid (AAP anbefaler maks 1-2 timer for barn)</li>
-            <li>Oppmuntre til fysisk aktivitet</li>
-            <li>Sett opp ergonomisk studieomrøde</li>
-            <li>Modeller god holdning selv</li>
-            <li>Vår oppmerksom på hodepine og nakkeplager</li>
-          </ul>
+                <h3>3. Ovelser</h3>
 
-          <!-- Booking CTA -->
-          <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center;">
-            <h3 style="color: var(--color-amber); margin-top: 0;">Har Du Nakke- og Kjeveplager?</h3>
-            <p style="margin-bottom: 20px;">Jeg undersøker sammenhengen og lager en plan for å bedre både holdning og symptomer.</p>
-            <p style="font-size: 14px; margin-bottom: 20px;">
-              <strong>Nytt problem:</strong> 1 140 kr (45 min) | <strong>Oppfølging:</strong> 795 kr (30 min)
-            </p>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" target="_blank" rel="noopener" style="display: inline-block; background: var(--color-amber); color: #1a1a2e; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold;">Bestill Time</a>
-            <p style="margin-top: 16px; font-size: 13px; opacity: 0.8;">Gardeveien 17, Majorstua | Ingen henvisning nødvendig</p>
-          </div>
+                <div class="condition-card">
+                  <h4>Chin Tuck (Hakeinndraging)</h4>
+                  <ol>
+                    <li>Sitt eller sta rett</li>
+                    <li>Trekk haken rett bakover (som "dobbelthake")</li>
+                    <li>Hold 5 sekunder</li>
+                    <li>Gjenta 10 ganger, flere ganger daglig</li>
+                  </ol>
+                </div>
 
-          <!-- Related Pages -->
-          <h2 id="les-mer">Les Mer</h2>
-          <ul>
-            <li><a href="../plager/kjeve/nakke-kjeve-sammenheng.html"><strong>TMD og Nakkesmerter</strong></a> - Sammenhengen forklart</li>
-            <li><a href="kjeveøvelser-hjemme.html"><strong>Kjeveøvelser Hjemme</strong></a> - Treningsprogram</li>
-            <li><a href="../plager/kjevesmerte.html"><strong>Kjeveleddsproblemer (TMD)</strong></a> - Alt om TMD</li>
-          </ul>
-            
+                <div class="condition-card">
+                  <h4>Nakketoyning</h4>
+                  <ol>
+                    <li>Len hodet forsiktig til siden (ore mot skulder)</li>
+                    <li>Hold 20-30 sekunder</li>
+                    <li>Gjenta pa motsatt side</li>
+                  </ol>
+                </div>
+
+                <div class="condition-card">
+                  <h4>Brystmuskel-strekk</h4>
+                  <ol>
+                    <li>Sta i en dorapning med underarmene mot karmen</li>
+                    <li>Ta et skritt fremover</li>
+                    <li>Kjenn strekk i brystet</li>
+                    <li>Hold 30 sekunder</li>
+                  </ol>
+                </div>
+
+                <div class="condition-card">
+                  <h4>Skulderblad-retraction</h4>
+                  <ol>
+                    <li>Trekk skulderbladene sammen og ned</li>
+                    <li>Hold 5 sekunder</li>
+                    <li>Gjenta 10 ganger</li>
+                  </ol>
+                </div>
+              </section>
+
+              <!-- Section 7 -->
+              <section class="hub-section" id="tips-for-barn-og-ungdom">
+                <div class="section-header">
+                  <span class="section-number">7</span>
+                  <h2>Tips for Barn og Ungdom</h2>
+                </div>
+                <p>Tekstnakke-problemer starter tidlig. For foreldre:</p>
+
+                <div class="info-box">
+                  <h4>Rad for foreldre</h4>
+                  <ul style="margin: 0; padding-left: 20px; color: #1e40af;">
+                    <li>Begrens skjermtid (AAP anbefaler maks 1-2 timer for barn)</li>
+                    <li>Oppmuntre til fysisk aktivitet</li>
+                    <li>Sett opp ergonomisk studieomrade</li>
+                    <li>Modeller god holdning selv</li>
+                    <li>Vaer oppmerksom pa hodepine og nakkeplager</li>
+                  </ul>
+                </div>
+              </section>
+
+              <!-- Hub CTA -->
+              <div class="hub-cta">
+                <h3>Har Du Nakke- og Kjeveplager?</h3>
+                <p>Jeg undersoker sammenhengen og lager en plan for a bedre bade holdning og symptomer.</p>
+                <p style="font-size: 14px; margin-bottom: 20px;">
+                  <strong>Nytt problem:</strong> 1 140 kr (45 min) | <strong>Oppfolging:</strong> 795 kr (30 min)
+                </p>
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" target="_blank" rel="noopener" class="button">Bestill Time</a>
+                <p style="margin-top: 16px; font-size: 13px; opacity: 0.8;">Gardeveien 17, Majorstua | Ingen henvisning nodvendig</p>
+              </div>
+
+              <!-- Related Box -->
+              <div class="related-box">
+                <h3>Les Mer</h3>
+                <a href="../plager/kjeve/nakke-kjeve-sammenheng.html">TMD og Nakkesmerter - Sammenhengen forklart</a>
+                <a href="kjeveovelser-hjemme.html">Kjeveovelser Hjemme - Treningsprogram</a>
+                <a href="../plager/kjevesmerte.html">Kjeveleddsproblemer (TMD) - Alt om TMD</a>
+                <a href="stress-kjevesmerter.html">Stress og Kjevesmerter - Sammenhengen</a>
+              </div>
+
               <div class="medical-disclaimer">
                 <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
               </div>
-              </div>
+            </div>
           </div>
         </article>
 
@@ -361,7 +484,7 @@
           <div class="hub-conversion-card">
             <img src="../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
             <h3>Trenger du hjelp?</h3>
-            <p>Jeg hjelper deg med å finne årsaken og riktig behandling.</p>
+            <p>Jeg hjelper deg med a finne arsaken og riktig behandling.</p>
             <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Bestill time</a>
             <div class="sidebar-info">
               <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
@@ -371,14 +494,13 @@
           <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
             <h3>INNHOLD</h3>
             <ul>
-                            <li><a href="#hva-er-tekstnakke">Hva Er Tekstnakke?</a></li>
-              <li><a href="#tallene-som-taler-for-seg">Tallene som Taler for Seg</a></li>
-              <li><a href="#hvordan-tekstnakke-pavirker-kjeven">Hvordan Tekstnakke Påvirker Kjeven</a></li>
-              <li><a href="#symptomer-pa-tekstnakke-med-kjeveinvolvering">Symptomer på Tekstnakke med Kjeveinvolvering</a></li>
-              <li><a href="#selvtest-har-du-tekstnakke">Selvtest: Har Du Tekstnakke?</a></li>
-              <li><a href="#losninger-og-forebygging">Løsninger og Forebygging</a></li>
-              <li><a href="#tips-for-barn-og-ungdom">Tips for Barn og Ungdom</a></li>
-              <li><a href="#les-mer">Les Mer</a></li>
+              <li><a href="#hva-er-tekstnakke">1. Hva Er Tekstnakke?</a></li>
+              <li><a href="#tallene-som-taler-for-seg">2. Tallene som Taler for Seg</a></li>
+              <li><a href="#hvordan-tekstnakke-pavirker-kjeven">3. Hvordan Tekstnakke Pavirker Kjeven</a></li>
+              <li><a href="#symptomer-pa-tekstnakke-med-kjeveinvolvering">4. Symptomer</a></li>
+              <li><a href="#selvtest-har-du-tekstnakke">5. Selvtest</a></li>
+              <li><a href="#losninger-og-forebygging">6. Losninger og Forebygging</a></li>
+              <li><a href="#tips-for-barn-og-ungdom">7. Tips for Barn og Ungdom</a></li>
             </ul>
           </nav>
         </aside>
@@ -395,18 +517,18 @@
         <div class="footer__left">
           <div class="footer__social">
             <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Besøk oss på Facebook">
-              <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+              aria-label="Besok oss pa Facebook">
+              <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Besok TheBackROM pa Facebook"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Følg oss på Instagram">
-              <img src="../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+              aria-label="Folg oss pa Instagram">
+              <img src="../images/Media iconer/instagramlogo.png" alt="Folg @chiro_mads pa Instagram" width="512"
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
-              <img src="../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+              aria-label="Se vare videoer pa YouTube">
+              <img src="../images/Media iconer/youtube_icon.png" alt="Abonner pa TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
             <a href="../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
@@ -424,7 +546,7 @@
           </div>
           <div class="back-to-top-wrapper">
             <p class="text--muted-small">Tilbake til start</p>
-            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+            <a href="#top" class="back-to-top-btn" aria-label="Ga til toppen av siden">
               <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
             </a>
           </div>
@@ -433,10 +555,10 @@
         <!-- Right Column -->
         <div class="footer__right">
           <div class="footer__hours">
-            <h3>Åpningstider</h3>
+            <h3>Apningstider</h3>
             <p>Mandag - Fredag: 08:00 - 19:00</p>
-            <p>Lørdag: 10:00 - 16:00</p>
-            <p>Søndag: Stengt</p>
+            <p>Lordag: 10:00 - 16:00</p>
+            <p>Sondag: Stengt</p>
           </div>
           <div class="footer__contact">
             <h3>Kontaktinformasjon</h3>
@@ -448,8 +570,8 @@
       </div>
 
       <div class="footer__bottom">
-        <a href="../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <a href="../personvern.html" class="footer__link--muted">Personvernerklaering</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor - Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
@@ -459,7 +581,7 @@
   <script src="../js/modern-enhancements.min.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('h2[id]');
+      const sections = document.querySelectorAll('.hub-section[id]');
       const navLinks = document.querySelectorAll('.hub-toc-card a');
       function updateActiveLink() {
         let currentSection = '';

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nb">
 
 <head>
@@ -102,22 +102,45 @@
     .hub-intro h1 { font-size: 2.5rem; color: var(--hub-dark); margin-bottom: 24px; line-height: 1.2; }
     .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
     .intro-text p { margin-bottom: 16px; }
+    .premium-summary-card { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--hub-primary); }
+    .premium-summary-card h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 1.1rem; }
+    .premium-summary-card ul { margin: 0; padding-left: 20px; }
+    .premium-summary-card li { margin-bottom: 10px; color: #334155; line-height: 1.5; }
     .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0 0 20px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
     .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section h4 { font-size: 1.05rem; color: var(--hub-dark); margin: 20px 0 10px; }
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
+    .condition-card ul { margin: 12px 0; padding-left: 20px; }
+    .condition-card li { margin-bottom: 6px; color: #4b5563; }
     .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
     .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
     .treatment-box ul { margin: 0; padding-left: 20px; }
     .treatment-box li { margin-bottom: 8px; color: #065f46; }
+    .treatment-box p { color: #065f46; margin-bottom: 8px; }
     .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
     .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .info-box p { color: #1e40af; margin-bottom: 8px; }
+    .info-box ul { margin: 0; padding-left: 20px; }
+    .info-box li { margin-bottom: 8px; color: #1e40af; }
     .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
     .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
     .red-flag-box ul { margin: 0; padding-left: 20px; }
     .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
-    .symptom-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin: 16px 0; }
-    .symptom-list li { background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--hub-primary); list-style: none; color: #334155; }
+    .red-flag-alert { background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border: 2px solid var(--hub-red); border-radius: 12px; padding: 20px; margin: 24px 0; }
+    .red-flag-alert h4 { color: var(--hub-red); margin-bottom: 12px; font-size: 1.1rem; }
+    .red-flag-alert p { color: #7f1d1d; margin-bottom: 12px; }
+    .red-flag-alert a { color: var(--hub-red); font-weight: 600; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
+    .prognosis-highlight { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid var(--hub-green); }
+    .prognosis-highlight p { color: #065f46; font-weight: 500; margin: 0; }
     .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
     .faq-item:last-child { border-bottom: none; }
     .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
@@ -132,26 +155,29 @@
     .related-box a { display: block; padding: 12px 0; color: var(--hub-primary); text-decoration: none; border-bottom: 1px solid #e5e7eb; transition: padding-left 0.2s ease; }
     .related-box a:last-child { border-bottom: none; }
     .related-box a:hover { padding-left: 8px; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
-    .mobile-sticky-cta a { display: block; background: white; color: #F26522; text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; }
     .sources-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
     .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; }
     .sources-section p { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
     .medical-disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 32px; font-size: 0.85rem; color: #64748b; }
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+    .location-content ul { margin: 12px 0; padding-left: 20px; }
+    .location-content li { margin-bottom: 8px; color: #4b5563; }
+    .hub-infographic { width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 24px 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
+    .mobile-sticky-cta a { display: block; background: #F26522; color: #FFFFFF; text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; border: 2px solid #FFFFFF; }
     @media (max-width: 900px) {
       .hub-wrapper { flex-direction: column; padding: 20px; }
       .hub-sidebar { display: none; }
       .hub-main { max-width: 100%; padding-bottom: 100px; }
       .hub-intro h1 { font-size: 1.8rem; }
       .mobile-sticky-cta { display: block; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
     }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
+
     /* Hub Hero Section */
     .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
     .hub-hero__container { max-width: 900px; margin: 0 auto; }
@@ -172,14 +198,14 @@
         <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
-          <div class="language-toggle" role="group" aria-label="Språkvalg">
+          <div class="language-toggle" role="group" aria-label="Sprakvalg">
             <button class="language-toggle__button language-toggle__button--active" data-lang="no" aria-label="Norsk"
               aria-pressed="true">NO</button>
             <button class="language-toggle__button" data-lang="en" aria-label="Bytt til Engelsk"
               aria-pressed="false">EN</button>
             <div class="language-toggle__slider"></div>
           </div>
-          <button type="button" class="icon-menu" aria-label="Åpne navigasjonsmeny" aria-expanded="false">
+          <button type="button" class="icon-menu" aria-label="Apne navigasjonsmeny" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -209,7 +235,7 @@
       <section class="hub-hero">
         <div class="hub-hero__container">
           <span class="blog-post__category">Graviditet</span>
-          <h1>Nakkesmerter i Svangerskapet - Årsaker og Trygg Behandling</h1>
+          <h1>Nakkesmerter i Svangerskapet - Arsaker og Trygg Behandling</h1>
           <p class="hub-hero__subtitle">Kiropraktor Mads Finstad, Majorstua</p>
           <div class="blog-post__meta">
             <time class="blog-post__date" datetime="2026-01-23">23. januar 2026</time>
@@ -222,112 +248,233 @@
         <article class="page__blog-post blog-post hub-main">
           <div class="blog-post__container">
             <div class="blog-post__content">
-              <div class="tldr-box" style="background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%); border-left: 4px solid var(--color-amber); border-radius: 0 10px 10px 0; padding: 20px; margin-bottom: 28px;">
-              <h3 style="font-size: 15px; color: #1a1a2e; margin-bottom: 12px;">TL;DR - Kort oppsummert</h3>
-              <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Hva det er:</strong> Muskel- og leddsmerter i nakke og skuldre som oppstår under graviditet</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Vanligste årsaker:</strong> Holdningsendringer, hormonelle forandringer (relaxin), søvnforstyrrelser</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong>Behandling:</strong> Kiropraktisk behandling er trygt gjennom hele svangerskapet og har god dokumentasjon</li>
-                <li style="padding: 5px 0; font-size: 14px;"><strong><a href="../plager/nakkesmerter.html#rodeflagg" style="color: inherit;">Røde flagg</a>:</strong> Nakke-/skuldersmerter kombinert med vaginal blødning, kraftige magesmerter eller synsforstyrrelser</li>
-              </ul>
-            </div>
 
-            <h2 id="hvor-vanlig-er-nakkesmerter-i-svangerskapet">Hvor vanlig er nakkesmerter i svangerskapet?</h2>
-            <p><a href="../plager/nakkesmerter.html">Nakkesmerter</a> er en vanlig plage blant gravide kvinner. En stor australsk studie med over 1800 gravide fant at <strong>12,4% opplevde nakkesmerter</strong> i løpet av svangerskapet. Andre studier rapporterer opptil 20% prevalens nær man inkluderer skulderplager.</p>
-            <p>Til sammenligning rammes omtrent 40% av gravide av ryggsmerter, og denne andelen øker gjennom svangerskapet - fra rundt 28% i første trimester til nesten 48% i tredje trimester.</p>
-            <p>Det som mange ikke vet, er at nakkeplagene ofte forverres etter fødsel. Japanske studier viser at hele <strong>73% av kvinner rapporterer nakke- og skuldersmerter den første måneden etter fødsel</strong>.</p>
+              <!-- Hub Intro Section -->
+              <section class="hub-intro">
+                <div class="intro-text">
+                  <p><a href="../plager/nakkesmerter.html">Nakkesmerter</a> er en vanlig plage blant gravide kvinner. Kombinasjonen av hormonelle endringer, holdningsforandringer og soevnforstyrrelser skaper perfekte forhold for muskel- og leddsmerter i nakke og skuldre.</p>
+                  <p><strong>Den gode nyheten:</strong> Kiropraktisk behandling er dokumentert trygt gjennom hele svangerskapet og har god effekt pa muskel- og skjelettplager hos gravide.</p>
+                </div>
 
-            <h2 id="arsaker-til-nakkesmerter-hos-gravide">Årsaker til nakkesmerter hos gravide</h2>
-            <p>Nakkesmerter i svangerskapet skyldes en kombinasjon av faktorer:</p>
+                <div class="premium-summary-card">
+                  <h3>Kort oppsummert</h3>
+                  <ul>
+                    <li><strong>12-20% av gravide</strong> opplever nakkesmerter i lopet av svangerskapet</li>
+                    <li><strong>73% rapporterer</strong> nakke- og skuldersmerter forste maned etter fodsel</li>
+                    <li><strong>Kiropraktisk behandling</strong> er trygt gjennom hele svangerskapet</li>
+                    <li><strong>1,8 behandlinger</strong> i gjennomsnitt for betydelig smertelindring</li>
+                  </ul>
+                </div>
 
-            <h3>Hormonelle endringer (rammer alle gravide)</h3>
-            <p>Under svangerskapet produserer kroppen hormonet <strong>relaxin</strong>, som løsner opp leddbånd og bindevev for å forberede kroppen på fødsel. Relaxin-nivåene er høyest i første trimester, men hormonet blir værende i kroppen gjennom hele svangerskapet og flere måneder etter fødsel.</p>
+                <!-- Red Flag Alert Box -->
+                <div class="red-flag-alert">
+                  <h4>Nar ma du soke hjelp raskt?</h4>
+                  <p>Plutselig skuldertippsmerte, magesmerter med blodning, eller synsforstyrrelser kan vaere tegn pa alvorlige tilstander.</p>
+                  <a href="#s3">Les mer om rode flagg</a>
+                </div>
 
-            <h3>Holdningsendringer og tyngdepunktsforskyvning</h3>
-            <p>Etter hvert som magen vokser, forskyves kroppens tyngdepunkt fremover. For å kompensere lener mange gravide seg bakover, noe som fører til økt svai i korsryggen. Denne holdningsendringen forplanter seg oppover i ryggsøylen og påvirker nakken.</p>
+                <div class="stat-grid">
+                  <div class="stat-item">
+                    <div class="stat-number">12-20%</div>
+                    <div class="stat-label">Gravide med nakkesmerter</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">73%</div>
+                    <div class="stat-label">Med plager etter fodsel</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label">Gravide med ryggsmerter</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">1,8</div>
+                    <div class="stat-label">Behandlinger til bedring</div>
+                  </div>
+                </div>
+              </section>
 
-            <h3>Vektøkning og brystforstørrelse</h3>
-            <p>Den naturlige vektøkningen i svangerskapet - typisk 10-16 kilo - legger ekstra press på alle vektbærende ledd. Brystene kan øke betraktelig i størrelse, noe som trekker skuldrene fremover og skaper spenninger i øvre rygg og nakke.</p>
+              <!-- SECTION 1: Hvor vanlig -->
+              <section class="hub-section" id="s1">
+                <div class="section-header">
+                  <span class="section-number">1</span>
+                  <h2>Hvor vanlig er nakkesmerter i svangerskapet?</h2>
+                </div>
 
-            <h3>Søvnforstyrrelser</h3>
-            <p>God søvn blir vanskeligere utover i svangerskapet. Mange gravide sliter med å finne en komfortabel sovestilling, må opp flere ganger om natten, og har generelt urolig søvn. Dårlige soveposisjoner kan føre til stiv og smertefull nakke om morgenen.</p>
+                <p>En stor australsk studie med over 1800 gravide fant at <strong>12,4% opplevde nakkesmerter</strong> i lopet av svangerskapet. Andre studier rapporterer opptil 20% prevalens nar man inkluderer skulderplager.</p>
+                <p>Til sammenligning rammes omtrent 40% av gravide av ryggsmerter, og denne andelen oker gjennom svangerskapet - fra rundt 28% i forste trimester til nesten 48% i tredje trimester.</p>
+                <p>Det som mange ikke vet, er at nakkeplagene ofte forverres etter fodsel. Japanske studier viser at hele <strong>73% av kvinner rapporterer nakke- og skuldersmerter den forste maneden etter fodsel</strong>.</p>
+              </section>
 
-            <h2 id="rode-flagg-naer-bor-du-kontakte-lege">Røde flagg - nær bør du kontakte lege?</h2>
-            <div style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border: 2px solid #ef4444; border-radius: 10px; padding: 20px; margin: 20px 0;">
-              <h4 style="color: #dc2626; margin-bottom: 10px;">Kontakt lege eller legevakt ved:</h4>
-              <p style="color: #7f1d1d; margin-bottom: 10px;"><strong>Ektopisk svangerskap (uke 4-12):</strong></p>
-              <ul style="color: #7f1d1d;">
-                <li>Plutselig, skarp smerte i skuldertipppen</li>
-                <li>Magesmerter kombinert med vaginal blødning</li>
-                <li>Svimmelhet eller besvimelse</li>
-              </ul>
-              <p style="color: #7f1d1d; margin-bottom: 10px; margin-top: 15px;"><strong>Svangerskapsforgiftning (preeklampsi):</strong></p>
-              <ul style="color: #7f1d1d;">
-                <li>Nakke-/skuldersmerter + høyt blodtrykk</li>
-                <li>Synsforstyrrelser (gnister, flimmer)</li>
-                <li>Hevelse i ansikt og hender</li>
-              </ul>
-            </div>
+              <!-- SECTION 2: Arsaker -->
+              <section class="hub-section" id="s2">
+                <div class="section-header">
+                  <span class="section-number">2</span>
+                  <h2>Arsaker til nakkesmerter hos gravide</h2>
+                </div>
 
-            <h2 id="behandling-hos-kiropraktor-trygt-og-effektivt">Behandling hos kiropraktor - trygt og effektivt</h2>
-            <p>Kiropraktisk behandling under svangerskapet har god dokumentasjon for sikkerhet og effekt. En gjennomgang av forskningslitteraturen konkluderer med at manuell behandling og kiropraktikk er <strong>trygge og effektive behandlingsalternativer for gravide kvinner</strong> med mekaniske rygg- og bekkensmerter.</p>
+                <p>Nakkesmerter i svangerskapet skyldes en kombinasjon av faktorer:</p>
 
-            <h3>Hva kan kiropraktoren gjøre?</h3>
-            <ul>
-              <li><strong>Grundig undersøkelse:</strong> Første konsultasjon inkluderer fullstendig undersøkelse for å kartlegge årsaken til plagene og utelukke tilstander som krever annen oppfølging</li>
-              <li><strong>Skånsom leddbehandling:</strong> Gravide har økt leddbevegelighet på grunn av relaxin-hormonet, så behandlingen gjøres med mykere teknikker. Benken tilpasses slik at magen får plass</li>
-              <li><strong>Muskelbehandling:</strong> Myke teknikker som massasje og triggerpunktbehandling kan lindre muskelspenninger i nakke og skuldre</li>
-              <li><strong>Øvelser og veiledning:</strong> Du får individuelt tilpassede øvelser og råd om ergonomi, soveposisjoner og daglige aktiviteter</li>
-            </ul>
+                <div class="condition-card">
+                  <h4>Hormonelle endringer (rammer alle gravide)</h4>
+                  <p>Under svangerskapet produserer kroppen hormonet <strong>relaxin</strong>, som losner opp leddbånd og bindevev for a forberede kroppen pa fodsel. Relaxin-nivaene er hoyest i forste trimester, men hormonet blir vaerende i kroppen gjennom hele svangerskapet og flere maneder etter fodsel.</p>
+                </div>
 
-            <h3>Forventet behandlingsforløp</h3>
-            <p>De fleste gravide med nakkeplager opplever bedring innen 2-4 behandlinger. En studie fant at gravide i gjennomsnitt trengte 1,8 behandlinger for å oppnå betydelig smertelindring.</p>
+                <div class="condition-card">
+                  <h4>Holdningsendringer og tyngdepunktsforskyvning</h4>
+                  <p>Etter hvert som magen vokser, forskyves kroppens tyngdepunkt fremover. For a kompensere lener mange gravide seg bakover, noe som forer til okt svai i korsryggen. Denne holdningsendringen forplanter seg oppover i ryggsoylen og pavirker nakken.</p>
+                </div>
 
-            <h2 id="hva-kan-du-gjore-selv">Hva kan du gjøre selv?</h2>
-            <h3>Øvelser og tøying</h3>
-            <ul>
-              <li><strong>Nakkestrekk:</strong> Sitt eller stå med rak rygg. Senk øret mot skulderen og hold i 20-30 sekunder. Gjenta på andre siden. Gjør dette 2-3 ganger daglig.</li>
-              <li><strong>Hakeinnrekk (chin tucks):</strong> Trekk haken forsiktig bakover som om du lager dobbelthake. Hold i 5 sekunder. Gjenta 10 ganger.</li>
-              <li><strong>Skulderruller:</strong> Rull skuldrene bakover i store sirkler. Gjør 10 repetisjoner flere ganger daglig.</li>
-              <li><strong>Bryststrekk:</strong> Stå i en døråpning med armene ut til siden. Len deg forsiktig fremover til du kjenner strekk i brystet. Hold i 20-30 sekunder.</li>
-            </ul>
+                <div class="condition-card">
+                  <h4>Vektokning og brystforstorrelse</h4>
+                  <p>Den naturlige vektokningen i svangerskapet - typisk 10-16 kilo - legger ekstra press pa alle vektbaerende ledd. Brystene kan oke betraktelig i storrelse, noe som trekker skuldrene fremover og skaper spenninger i ovre rygg og nakke.</p>
+                </div>
 
-            <h3>Ergonomi og søvn</h3>
-            <ul>
-              <li>Skjermen bør være i øyehøyde ved skjermarbeid</li>
-              <li>Ta pauser hvert 30. minutt</li>
-              <li>Bruk graviditetspute eller vanlig pute mellom knærne ved sidesøvn</li>
-              <li>Velg en pute som holder nakken i nøytral posisjon</li>
-            </ul>
+                <div class="condition-card">
+                  <h4>Sovnforstyrrelser</h4>
+                  <p>God sovn blir vanskeligere utover i svangerskapet. Mange gravide sliter med a finne en komfortabel sovestilling, ma opp flere ganger om natten, og har generelt urolig sovn. Darlige soveposisjoner kan fore til stiv og smertefull nakke om morgenen.</p>
+                </div>
+              </section>
 
-            <h2 id="nakkeplager-etter-fodsel-og-ved-amming">Nakkeplager etter fødsel og ved amming</h2>
-            <p>Nakkeplagene forsvinner ikke nødvendigvis etter fødsel - faktisk rapporterer opptil 72% av ammende kvinner muskel- og skjelettplager. "Ammernakke" beskriver nakkesmerter som oppstår av gjentatt fremoverbøyd posisjon under amming.</p>
-            <p><strong>Tips for ammende:</strong></p>
-            <ul>
-              <li>Bring barnet til brystet, ikke brystet til barnet</li>
-              <li>Varier ammestillinger - prøv sideliggende amming</li>
-              <li>Støtt nakken og ryggen med god stol og puter</li>
-              <li>Ta pauser og gjør tøyeøvelser mellom ammeøktene</li>
-            </ul>
+              <!-- SECTION 3: Rode flagg -->
+              <section class="hub-section" id="s3">
+                <div class="section-header">
+                  <span class="section-number">3</span>
+                  <h2>Rode flagg - nar bor du kontakte lege?</h2>
+                </div>
 
-            <h2 id="ofte-stilte-sporsmal">Ofte stilte spørsmål</h2>
-            <h3>Er det trygt å gå til kiropraktor nær jeg er gravid?</h3>
-            <p>Ja, kiropraktisk behandling er dokumentert trygt gjennom hele svangerskapet når det utføres av en kvalifisert behandler. Forskning viser at bivirkninger er sjeldne og milde.</p>
+                <div class="red-flag-box">
+                  <h3>Kontakt lege eller legevakt ved:</h3>
+                  <ul>
+                    <li><strong>Ektopisk svangerskap (uke 4-12):</strong> Plutselig, skarp smerte i skuldertippen, magesmerter kombinert med vaginal blodning, svimmelhet eller besvimelse</li>
+                    <li><strong>Svangerskapsforgiftning (preeklampsi):</strong> Nakke-/skuldersmerter + hoyt blodtrykk, synsforstyrrelser (gnister, flimmer), hevelse i ansikt og hender</li>
+                  </ul>
+                </div>
 
-            <h3>Når i svangerskapet bør jeg søke behandling?</h3>
-            <p>Du kan oppsøke kiropraktor nær som helst i svangerskapet. Tidlig behandling av muskel- og skjelettplager gir ofte raskere bedring enn å vente. Du trenger ikke henvisning.</p>
+                <div class="info-box">
+                  <h4>Viktig a vite</h4>
+                  <p>De fleste nakkesmerter i svangerskapet er ufarlige muskel- og skjelettplager. Men symptomene ovenfor krever rask medisinsk vurdering.</p>
+                </div>
+              </section>
 
-            <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 28px; margin: 32px 0; text-align: center; color: #fff;">
-              <h3 style="font-size: 20px; margin-bottom: 10px;">Trenger du hjelp med nakkesmerter i svangerskapet?</h3>
-              <p style="font-size: 14px; opacity: 0.9; margin-bottom: 18px;">Kiropraktor Mads Finstad tilbyr trygg og individuelt tilpasset behandling for gravide. TheBackROM på Majorstua.</p>
-              <p style="margin-bottom: 18px; font-size: 13px;"><strong>Priser:</strong> Nytt problem 1 140 kr | Oppfølging 795 kr</p>
-              <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" style="display: inline-block; background: var(--color-amber); color: #1a1a2e; padding: 14px 32px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 15px;" target="_blank" rel="noopener">Book time online</a>
-            </div>
-            
+              <!-- SECTION 4: Behandling -->
+              <section class="hub-section" id="s4">
+                <div class="section-header">
+                  <span class="section-number">4</span>
+                  <h2>Behandling hos kiropraktor - trygt og effektivt</h2>
+                </div>
+
+                <p>Kiropraktisk behandling under svangerskapet har god dokumentasjon for sikkerhet og effekt. En gjennomgang av forskningslitteraturen konkluderer med at manuell behandling og kiropraktikk er <strong>trygge og effektive behandlingsalternativer for gravide kvinner</strong> med mekaniske rygg- og bekkensmerter.</p>
+
+                <div class="treatment-box">
+                  <h4>Hva kan kiropraktoren gjore?</h4>
+                  <ul>
+                    <li><strong>Grundig undersokelse:</strong> Forste konsultasjon inkluderer fullstendig undersokelse for a kartlegge arsaken til plagene og utelukke tilstander som krever annen oppfolging</li>
+                    <li><strong>Skansom leddbehandling:</strong> Gravide har okt leddbevegelighet pa grunn av relaxin-hormonet, sa behandlingen gjores med mykere teknikker. Benken tilpasses slik at magen far plass</li>
+                    <li><strong>Muskelbehandling:</strong> Myke teknikker som massasje og triggerpunktbehandling kan lindre muskelspenninger i nakke og skuldre</li>
+                    <li><strong>Ovelser og veiledning:</strong> Du far individuelt tilpassede ovelser og rad om ergonomi, soveposisjoner og daglige aktiviteter</li>
+                  </ul>
+                </div>
+
+                <div class="prognosis-highlight">
+                  <p>De fleste gravide med nakkeplager opplever bedring innen 2-4 behandlinger. En studie fant at gravide i gjennomsnitt trengte 1,8 behandlinger for a oppna betydelig smertelindring.</p>
+                </div>
+              </section>
+
+              <!-- SECTION 5: Hva kan du gjore selv -->
+              <section class="hub-section" id="s5">
+                <div class="section-header">
+                  <span class="section-number">5</span>
+                  <h2>Hva kan du gjore selv?</h2>
+                </div>
+
+                <h3>Ovelser og toying</h3>
+                <ul>
+                  <li><strong>Nakkestrekk:</strong> Sitt eller sta med rak rygg. Senk oret mot skulderen og hold i 20-30 sekunder. Gjenta pa andre siden. Gjor dette 2-3 ganger daglig.</li>
+                  <li><strong>Hakeinnrekk (chin tucks):</strong> Trekk haken forsiktig bakover som om du lager dobbelthake. Hold i 5 sekunder. Gjenta 10 ganger.</li>
+                  <li><strong>Skulderruller:</strong> Rull skuldrene bakover i store sirkler. Gjor 10 repetisjoner flere ganger daglig.</li>
+                  <li><strong>Bryststrekk:</strong> Sta i en dorapning med armene ut til siden. Len deg forsiktig fremover til du kjenner strekk i brystet. Hold i 20-30 sekunder.</li>
+                </ul>
+
+                <h3>Ergonomi og sovn</h3>
+                <ul>
+                  <li>Skjermen bor vaere i oyehoyde ved skjermarbeid</li>
+                  <li>Ta pauser hvert 30. minutt</li>
+                  <li>Bruk graviditetspute eller vanlig pute mellom knarne ved sidesovn</li>
+                  <li>Velg en pute som holder nakken i noytral posisjon</li>
+                </ul>
+              </section>
+
+              <!-- SECTION 6: Etter fodsel -->
+              <section class="hub-section" id="s6">
+                <div class="section-header">
+                  <span class="section-number">6</span>
+                  <h2>Nakkeplager etter fodsel og ved amming</h2>
+                </div>
+
+                <p>Nakkeplagene forsvinner ikke nodvendigvis etter fodsel - faktisk rapporterer opptil 72% av ammende kvinner muskel- og skjelettplager. "Ammernakke" beskriver nakkesmerter som oppstar av gjentatt fremoverboyd posisjon under amming.</p>
+
+                <div class="treatment-box">
+                  <h4>Tips for ammende</h4>
+                  <ul>
+                    <li>Bring barnet til brystet, ikke brystet til barnet</li>
+                    <li>Varier ammestillinger - prov sideliggende amming</li>
+                    <li>Stott nakken og ryggen med god stol og puter</li>
+                    <li>Ta pauser og gjor toyeovelser mellom ammeoktene</li>
+                  </ul>
+                </div>
+              </section>
+
+              <!-- SECTION 7: FAQ -->
+              <section class="hub-section" id="s7">
+                <div class="section-header">
+                  <span class="section-number">7</span>
+                  <h2>Ofte stilte sporsmal</h2>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Er det trygt a ga til kiropraktor nar jeg er gravid?</h4>
+                  <p>Ja, kiropraktisk behandling er dokumentert trygt gjennom hele svangerskapet nar det utfores av en kvalifisert behandler. Forskning viser at bivirkninger er sjeldne og milde.</p>
+                </div>
+
+                <div class="faq-item">
+                  <h4>Nar i svangerskapet bor jeg soke behandling?</h4>
+                  <p>Du kan oppsoke kiropraktor nar som helst i svangerskapet. Tidlig behandling av muskel- og skjelettplager gir ofte raskere bedring enn a vente. Du trenger ikke henvisning.</p>
+                </div>
+              </section>
+
+              <!-- SECTION 8: Kontakt -->
+              <section class="hub-section" id="s8">
+                <div class="section-header">
+                  <span class="section-number">8</span>
+                  <h2>Trenger du hjelp med nakkesmerter i svangerskapet?</h2>
+                </div>
+
+                <p>Kiropraktor Mads Finstad tilbyr trygg og individuelt tilpasset behandling for gravide. TheBackROM pa Majorstua.</p>
+
+                <div class="hub-cta">
+                  <h3>Book time direkte</h3>
+                  <p>Nytt problem: 1 140 kr (45 min) | Oppfolging: 795 kr (30 min)</p>
+                  <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" class="button" target="_blank" rel="noopener">Bestill time</a>
+                  <p style="margin-top: 16px; font-size: 0.9rem;">Eller ring: <a href="tel:+4793043062" style="color: white;">93 04 30 62</a></p>
+                </div>
+              </section>
+
+              <!-- Related Articles -->
+              <div class="related-box">
+                <h3>Relaterte artikler</h3>
+                <a href="../plager/nakkesmerter.html">Alt om nakkesmerter</a>
+                <a href="stressnakke-triggerpunkter.html">Stressnakke og triggerpunkter</a>
+                <a href="triggerpunkter-nakken.html">Triggerpunkter i nakken</a>
+                <a href="../plager/nakke/stiv-nakke-om-morgenen.html">Stiv nakke om morgenen</a>
+              </div>
+
               <div class="medical-disclaimer">
                 <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
               </div>
-              </div>
+
+              <p style="font-size: 0.85rem; color: #64748b; margin-top: 20px;">Sist oppdatert: Januar 2026</p>
+
+            </div>
           </div>
         </article>
 
@@ -335,7 +482,7 @@
           <div class="hub-conversion-card">
             <img src="../images/Om/meg.webp" alt="Mads Finstad Kiropraktor" class="sidebar-image">
             <h3>Trenger du hjelp?</h3>
-            <p>Jeg hjelper deg med å finne årsaken og riktig behandling.</p>
+            <p>Jeg hjelper deg med a finne arsaken og riktig behandling.</p>
             <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" rel="noopener noreferrer" class="btn-cta">Bestill time</a>
             <div class="sidebar-info">
               <small><strong>Mads Finstad</strong><br>Kiropraktor, TheBackROM</small>
@@ -343,15 +490,16 @@
           </div>
 
           <nav class="hub-toc-card" aria-label="Innholdsnavigasjon">
-            <h3>INNHOLD</h3>
+            <h3>Innhold</h3>
             <ul>
-                            <li><a href="#hvor-vanlig-er-nakkesmerter-i-svangerskapet">Hvor vanlig er nakkesmerter i svangerskapet?</a></li>
-              <li><a href="#arsaker-til-nakkesmerter-hos-gravide">Årsaker til nakkesmerter hos gravide</a></li>
-              <li><a href="#rode-flagg-naer-bor-du-kontakte-lege">Røde flagg - nær bør du kontakte lege?</a></li>
-              <li><a href="#behandling-hos-kiropraktor-trygt-og-effektivt">Behandling hos kiropraktor - trygt og effektivt</a></li>
-              <li><a href="#hva-kan-du-gjore-selv">Hva kan du gjøre selv?</a></li>
-              <li><a href="#nakkeplager-etter-fodsel-og-ved-amming">Nakkeplager etter fødsel og ved amming</a></li>
-              <li><a href="#ofte-stilte-sporsmal">Ofte stilte spørsmål</a></li>
+              <li><a href="#s1">Hvor vanlig er nakkesmerter?</a></li>
+              <li><a href="#s2">Arsaker hos gravide</a></li>
+              <li><a href="#s3">Rode flagg</a></li>
+              <li><a href="#s4">Behandling hos kiropraktor</a></li>
+              <li><a href="#s5">Hva kan du gjore selv?</a></li>
+              <li><a href="#s6">Etter fodsel og amming</a></li>
+              <li><a href="#s7">Ofte stilte sporsmal</a></li>
+              <li><a href="#s8">Book time</a></li>
             </ul>
           </nav>
         </aside>
@@ -368,18 +516,18 @@
         <div class="footer__left">
           <div class="footer__social">
             <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Besøk oss på Facebook">
-              <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Besøk TheBackROM på Facebook"
+              aria-label="Besok oss pa Facebook">
+              <img src="../images/Media iconer/facebook_media_social_icon.png" alt="Besok TheBackROM pa Facebook"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Følg oss på Instagram">
-              <img src="../images/Media iconer/instagramlogo.png" alt="Følg @chiro_mads på Instagram" width="512"
+              aria-label="Folg oss pa Instagram">
+              <img src="../images/Media iconer/instagramlogo.png" alt="Folg @chiro_mads pa Instagram" width="512"
                 height="512" loading="lazy" decoding="async" />
             </a>
             <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link"
-              aria-label="Se våre videoer på YouTube">
-              <img src="../images/Media iconer/youtube_icon.png" alt="Abonner på TheBackROM YouTube kanal"
+              aria-label="Se vare videoer pa YouTube">
+              <img src="../images/Media iconer/youtube_icon.png" alt="Abonner pa TheBackROM YouTube kanal"
                 width="512" height="512" loading="lazy" decoding="async" />
             </a>
             <a href="../contact.html" class="footer__social-link" aria-label="Send oss en e-post">
@@ -397,7 +545,7 @@
           </div>
           <div class="back-to-top-wrapper">
             <p class="text--muted-small">Tilbake til start</p>
-            <a href="#top" class="back-to-top-btn" aria-label="Gå til toppen av siden">
+            <a href="#top" class="back-to-top-btn" aria-label="Ga til toppen av siden">
               <i class="fas fa-arrow-up" aria-hidden="true"></i> Opp
             </a>
           </div>
@@ -406,10 +554,10 @@
         <!-- Right Column -->
         <div class="footer__right">
           <div class="footer__hours">
-            <h3>Åpningstider</h3>
+            <h3>Apningstider</h3>
             <p>Mandag - Fredag: 08:00 - 19:00</p>
-            <p>Lørdag: 10:00 - 16:00</p>
-            <p>Søndag: Stengt</p>
+            <p>Lordag: 10:00 - 16:00</p>
+            <p>Sondag: Stengt</p>
           </div>
           <div class="footer__contact">
             <h3>Kontaktinformasjon</h3>
@@ -421,8 +569,8 @@
       </div>
 
       <div class="footer__bottom">
-        <a href="../personvern.html" class="footer__link--muted">Personvernerklæring</a>
-        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor – Alle rettigheter reservert</p>
+        <a href="../personvern.html" class="footer__link--muted">Personvernerklaering</a>
+        <p class="footer__copyright">© 2026 Mads Finstad Kiropraktor - Alle rettigheter reservert</p>
       </div>
     </footer>
   </div>
@@ -432,7 +580,7 @@
   <script src="../js/modern-enhancements.min.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('h2[id]');
+      const sections = document.querySelectorAll('.hub-section');
       const navLinks = document.querySelectorAll('.hub-toc-card a');
       function updateActiveLink() {
         let currentSection = '';

@@ -80,22 +80,45 @@
     .hub-intro h1 { font-size: 2.5rem; color: var(--hub-dark); margin-bottom: 24px; line-height: 1.2; }
     .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
     .intro-text p { margin-bottom: 16px; }
+    .premium-summary-card { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--hub-primary); }
+    .premium-summary-card h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 1.1rem; }
+    .premium-summary-card ul { margin: 0; padding-left: 20px; }
+    .premium-summary-card li { margin-bottom: 10px; color: #334155; line-height: 1.5; }
     .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0 0 20px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+    .hub-section h2 { color: var(--hub-dark); margin: 0; }
     .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
+    .hub-section h4 { font-size: 1.05rem; color: var(--hub-dark); margin: 20px 0 10px; }
     .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .condition-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
+    .condition-card ul { margin: 12px 0; padding-left: 20px; }
+    .condition-card li { margin-bottom: 6px; color: #4b5563; }
     .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
     .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
     .treatment-box ul { margin: 0; padding-left: 20px; }
     .treatment-box li { margin-bottom: 8px; color: #065f46; }
+    .treatment-box p { color: #065f46; margin-bottom: 8px; }
     .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
     .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
+    .info-box p { color: #1e40af; margin-bottom: 8px; }
+    .info-box ul { margin: 0; padding-left: 20px; }
+    .info-box li { margin-bottom: 8px; color: #1e40af; }
     .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
     .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
     .red-flag-box ul { margin: 0; padding-left: 20px; }
     .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
-    .symptom-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin: 16px 0; }
-    .symptom-list li { background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--hub-primary); list-style: none; color: #334155; }
+    .red-flag-alert { background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border: 2px solid var(--hub-red); border-radius: 12px; padding: 20px; margin: 24px 0; }
+    .red-flag-alert h4 { color: var(--hub-red); margin-bottom: 12px; font-size: 1.1rem; }
+    .red-flag-alert p { color: #7f1d1d; margin-bottom: 12px; }
+    .red-flag-alert a { color: var(--hub-red); font-weight: 600; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
+    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
+    .prognosis-highlight { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid var(--hub-green); }
+    .prognosis-highlight p { color: #065f46; font-weight: 500; margin: 0; }
     .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
     .faq-item:last-child { border-bottom: none; }
     .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
@@ -110,26 +133,28 @@
     .related-box a { display: block; padding: 12px 0; color: var(--hub-primary); text-decoration: none; border-bottom: 1px solid #e5e7eb; transition: padding-left 0.2s ease; }
     .related-box a:last-child { border-bottom: none; }
     .related-box a:hover { padding-left: 8px; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
-    .mobile-sticky-cta a { display: block; background: white; color: #F26522; text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; }
     .sources-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
     .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; }
     .sources-section p { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
     .medical-disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 32px; font-size: 0.85rem; color: #64748b; }
+    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
+    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
+    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
+    .location-content { padding: 20px 24px; }
+    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
+    .location-content ul { margin: 12px 0; padding-left: 20px; }
+    .location-content li { margin-bottom: 8px; color: #4b5563; }
+    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
+    .mobile-sticky-cta a { display: block; background: #F26522; color: #FFFFFF; text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; border: 2px solid #FFFFFF; }
     @media (max-width: 900px) {
       .hub-wrapper { flex-direction: column; padding: 20px; }
       .hub-sidebar { display: none; }
       .hub-main { max-width: 100%; padding-bottom: 100px; }
       .hub-intro h1 { font-size: 1.8rem; }
       .mobile-sticky-cta { display: block; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
     }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
+
     /* Hub Hero Section */
     .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
     .hub-hero__container { max-width: 900px; margin: 0 auto; }
@@ -200,8 +225,39 @@
         <article class="page__blog-post blog-post hub-main">
           <div class="blog-post__container">
             <div class="blog-post__content">
-              <h2 id="hvorfor-nevrodivergente-har-hoyere-risiko">Hvorfor Nevrodivergente Har Høyere Risiko</h2>
-          <p>Flere faktorer bidrar til økt forekomst av kjeveplager hos personer med ADHD og autisme:</p>
+              <!-- Premium Summary Card -->
+              <div class="premium-summary-card">
+                <h3>Kort oppsummert</h3>
+                <ul>
+                  <li><strong>2-3 ganger hoyere risiko:</strong> Barn med ADHD har betydelig hoyere forekomst av bruksisme</li>
+                  <li><strong>Stimulantmedisiner</strong> kan gi bivirkninger som tanngnissing og kjevespenning</li>
+                  <li><strong>Sensoriske behov</strong> ved autisme kan inkludere kjeveaktivitet som selvregulering</li>
+                  <li><strong>Tilpasset behandling</strong> med forutsigbarhet og sensoriske hensyn gir bedre resultater</li>
+                </ul>
+              </div>
+
+              <!-- Stat Grid -->
+              <div class="stat-grid">
+                <div class="stat-item">
+                  <div class="stat-number">2-3x</div>
+                  <div class="stat-label">Hoyere risiko for bruksisme ved ADHD</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">20-24%</div>
+                  <div class="stat-label">SSRI-brukere med bruksisme</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">Okt</div>
+                  <div class="stat-label">Forekomst ved autisme</div>
+                </div>
+              </div>
+
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">1</span>
+                  <h2 id="hvorfor-nevrodivergente-har-hoyere-risiko">Hvorfor Nevrodivergente Har Hoyere Risiko</h2>
+                </div>
+                <p>Flere faktorer bidrar til okt forekomst av kjeveplager hos personer med ADHD og autisme:</p>
 
           <h3>Ved ADHD</h3>
           <ul>
@@ -218,10 +274,15 @@
             <li><strong>Sensoriske behov:</strong> Sterke sansepreferanser kan inkludere proprioseptiv input fra kjeven</li>
             <li><strong>Angst:</strong> Høy forekomst av angst ved autisme, som øker muskelspenning</li>
             <li><strong>Interoceptive utfordringer:</strong> Vansker med å oppfatte kroppssignaler som smerte</li>
-            <li><strong>Maskering:</strong> Sosial maskering krever energi og kan øke spenninger</li>
+            <li><strong>Maskering:</strong> Sosial maskering krever energi og kan oke spenninger</li>
           </ul>
+              </div>
 
-          <h2 id="forskning-pa-sammenhengen">Forskning på Sammenhengen</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">2</span>
+                  <h2 id="forskning-pa-sammenhengen">Forskning pa Sammenhengen</h2>
+                </div>
           <p>Studier viser tydelig sammenheng:</p>
           <ul>
             <li>Barn med ADHD har <strong>2-3 ganger høyere</strong> forekomst av bruksisme</li>
@@ -230,12 +291,17 @@
             <li>Sensorisk sensitivitet ved ASD korrelerer med oral motorisk dysfunksjon</li>
           </ul>
 
-          <div style="background: #f0f9ff; border-left: 4px solid #0284c7; padding: 20px; margin: 30px 0; border-radius: 8px;">
-            <h4 style="margin-top: 0; color: #0369a1;">Viktig å vite</h4>
-            <p style="margin-bottom: 0;">Mange voksne med udiagnostisert ADHD eller autisme oppdages fårst nær de søker hjelp for fysiske plager som kroniske kjevesmerter eller hodepine. Hvis du gjenkjenner deg i mange punkter her, kan det være verdt å utforske nærmere.</p>
+          <div class="info-box">
+            <h4>Viktig a vite</h4>
+            <p>Mange voksne med udiagnostisert ADHD eller autisme oppdages forst nar de soker hjelp for fysiske plager som kroniske kjevesmerter eller hodepine. Hvis du gjenkjenner deg i mange punkter her, kan det vaere verdt a utforske naermere.</p>
           </div>
+              </div>
 
-          <h2 id="medisiner-og-kjeveplager">Medisiner og Kjeveplager</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">3</span>
+                  <h2 id="medisiner-og-kjeveplager">Medisiner og Kjeveplager</h2>
+                </div>
 
           <h3>Stimulantmedisiner (Ritalin, Elvanse, Attentin)</h3>
           <p>Vanlige ADHD-medisiner kan påvirke kjeven:</p>
@@ -251,8 +317,13 @@
             <li><strong>SSRI/SNRI:</strong> Kan gi bruksisme (20-24% av brukere)</li>
             <li><strong>Antipsykotika:</strong> Kan gi bevegelssforstyrrelser inkludert i kjeven</li>
           </ul>
+              </div>
 
-          <h2 id="sensoriske-utfordringer-og-behandling">Sensoriske Utfordringer og Behandling</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">4</span>
+                  <h2 id="sensoriske-utfordringer-og-behandling">Sensoriske Utfordringer og Behandling</h2>
+                </div>
           <p>Autistiske personer kan ha unike utfordringer med kjevebehandling:</p>
 
           <h3>Hypersensitivitet</h3>
@@ -266,10 +337,15 @@
           <ul>
             <li>Oppdager ikke smerte får den er alvorlig</li>
             <li>Kan bite hardt uten å merke det</li>
-            <li>Trenger sterkere trykk for å oppfatte behandlingen</li>
+            <li>Trenger sterkere trykk for a oppfatte behandlingen</li>
           </ul>
+              </div>
 
-          <h2 id="tilpasset-behandlingstilnaerming">Tilpasset Behandlingstilnærming</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">5</span>
+                  <h2 id="tilpasset-behandlingstilnaerming">Tilpasset Behandlingstilnaerming</h2>
+                </div>
           <p>Hos meg tilpasser jeg behandlingen til nevrodivergente pasienter:</p>
 
           <h3>Praktiske Tilpasninger</h3>
@@ -287,10 +363,15 @@
             <li>Enkle, korte rutiner som er lette å følge</li>
             <li>Visuelle instruksjoner/påminnelser</li>
             <li>Koble øvelser til eksisterende rutiner</li>
-            <li>Realistiske mål som tar hensyn til utføringsvansker</li>
+            <li>Realistiske mal som tar hensyn til utforingsvansker</li>
           </ul>
+              </div>
 
-          <h2 id="selvhjelpsstrategier">Selvhjelpsstrategier</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">6</span>
+                  <h2 id="selvhjelpsstrategier">Selvhjelpsstrategier</h2>
+                </div>
 
           <h3>For ADHD</h3>
           <ul>
@@ -307,8 +388,13 @@
             <li><strong>Stressreduksjon:</strong> Reduser maskering der mulig</li>
             <li><strong>Rutiner:</strong> Bygg kjeveavspenning inn i eksisterende rutiner</li>
           </ul>
+              </div>
 
-          <h2 id="nar-stimming-er-involvert">Når Stimming Er Involvert</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">7</span>
+                  <h2 id="nar-stimming-er-involvert">Nar Stimming Er Involvert</h2>
+                </div>
           <p>Hvis kjeveaktivitet er del av selvregulering:</p>
           <ul>
             <li>Jeg forsøker <strong>ikke</strong> å eliminere all stimming</li>
@@ -317,12 +403,17 @@
             <li>Samarbeider om løsninger som fungerer for deg</li>
           </ul>
 
-          <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 20px; margin: 30px 0; border-radius: 8px;">
-            <h4 style="margin-top: 0; color: #166534;">Nevroaffirmerende Tilnærming</h4>
-            <p style="margin-bottom: 0;">Jeg ser på nevrodivergente tilstander som en del av naturlig menneskelig variasjon, ikke som feil som må fikses. Målet er å hjelpe deg med fysiske plager, ikke å endre hvem du er.</p>
+          <div class="treatment-box">
+            <h4>Nevroaffirmerende Tilnaerming</h4>
+            <p>Jeg ser pa nevrodivergente tilstander som en del av naturlig menneskelig variasjon, ikke som feil som ma fikses. Malet er a hjelpe deg med fysiske plager, ikke a endre hvem du er.</p>
           </div>
+              </div>
 
-          <h2 id="samarbeid-med-andre-behandlere">Samarbeid Med Andre Behandlere</h2>
+              <div class="hub-section">
+                <div class="section-header">
+                  <span class="section-number">8</span>
+                  <h2 id="samarbeid-med-andre-behandlere">Samarbeid Med Andre Behandlere</h2>
+                </div>
           <p>For best resultat samarbeider jeg gjerne med:</p>
           <ul>
             <li>Fastlege/psykiater om medisiner</li>
@@ -330,23 +421,26 @@
             <li>Tannlege om bittskinne ved behov</li>
           </ul>
 
-          <!-- Booking CTA -->
-          <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center;">
-            <h3 style="color: var(--color-amber); margin-top: 0;">Kjeveplager og Nevrodivergent?</h3>
-            <p style="margin-bottom: 20px;">Jeg tilbyr tilpasset undersøkelse og behandling med forståelse for dine behov.</p>
-            <p style="font-size: 14px; margin-bottom: 20px;">
-              <strong>Nytt problem:</strong> 1 140 kr (45 min) | <strong>Oppfølging:</strong> 795 kr (30 min)
-            </p>
-            <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" target="_blank" rel="noopener" style="display: inline-block; background: var(--color-amber); color: #1a1a2e; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold;">Bestill Time</a>
-            <p style="margin-top: 16px; font-size: 13px; opacity: 0.8;">Gardeveien 17, Majorstua | Ingen henvisning nødvendig</p>
-          </div>
+          <!-- Hub CTA -->
+              <div class="hub-cta">
+                <h3>Kjeveplager og Nevrodivergent?</h3>
+                <p>Jeg tilbyr tilpasset undersokelse og behandling med forstaelse for dine behov.</p>
+                <p style="font-size: 14px; margin-bottom: 20px;">
+                  <strong>Nytt problem:</strong> 1 140 kr (45 min) | <strong>Oppfolging:</strong> 795 kr (30 min)
+                </p>
+                <a href="https://onlinebooking.solvitjournal.no/kfa_majorstuen/6562/book-available" target="_blank" rel="noopener" class="button">Bestill Time</a>
+                <p style="margin-top: 16px; font-size: 13px; opacity: 0.8;">Gardeveien 17, Majorstua | Ingen henvisning nodvendig</p>
+              </div>
+              </div>
 
-          <h2 id="les-mer">Les Mer</h2>
-          <ul>
-            <li><a href="../plager/kjeve/tanngnissing-bruksisme.html"><strong>Tanngnissing (Bruksisme)</strong></a> - Komplett guide</li>
-            <li><a href="stress-kjevesmerter.html"><strong>Stress og Kjevesmerter</strong></a> - Sammenhengen</li>
-            <li><a href="kjeveøvelser-hjemme.html"><strong>Kjeveøvelser Hjemme</strong></a> - øvelsesprogram</li>
-          </ul>
+              <!-- Related Box -->
+              <div class="related-box">
+                <h3>Relaterte artikler</h3>
+                <a href="../plager/kjeve/tanngnissing-bruksisme.html">Tanngnissing (Bruksisme) - Komplett guide</a>
+                <a href="stress-kjevesmerter.html">Stress og Kjevesmerter - Sammenhengen</a>
+                <a href="kjeveovelser-hjemme.html">Kjeveovelser Hjemme - Ovelsesprogram</a>
+                <a href="../plager/kjevesmerte.html">Kjevesmerter og TMD - Hovedside</a>
+              </div>
             
               <div class="medical-disclaimer">
                 <strong>Medisinsk informasjon:</strong> Denne artikkelen er skrevet av Kiropraktor Mads Finstad hos Klinikk for alle Majorstua. Informasjonen erstatter ikke individuell medisinsk vurdering. Ved akutte eller bekymringsfulle symptomer, kontakt lege umiddelbart.
