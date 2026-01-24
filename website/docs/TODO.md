@@ -1,10 +1,21 @@
 # Website TODO List
 
-**Last Updated:** 2026-01-15
+**Last Updated:** 2026-01-24
 
 ---
 
 ## Completed Work
+
+### Website Audit & Fixes (Jan 24, 2026) ✅
+- [x] Scanned 492 files for CSS issues - 0 remaining
+- [x] Fixed truncated file: `en/conditions/hip/osteitis-pubis.html`
+- [x] Fixed 8 broken links in `en/index.html`
+- [x] Fixed 7 broken links in English blog posts (bppv.html → bppv-crystal-disease.html)
+- [x] Standardized mobile CTA colors to orange (#F26522)
+- [x] Added hub-hero CSS to 268+ files
+- [x] Added location-section CSS where missing
+- [x] Verified 24 FAQ pages are properly linked from hub pages
+- [x] Verified 493/494 files have proper header/footer
 
 ### Content Consolidation (Jan 15, 2026)
 - [x] Merged 8 high-volume blog duplicates into condition pages (EN + NO)

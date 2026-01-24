@@ -542,3 +542,42 @@ When adding FAQ schema to a new body area (e.g., back, shoulder):
 | popliteus-syndrome.html | ✅ | ✅ |
 | prepatellar-bursitis.html | ✅ | ✅ |
 | shin-splints.html | ✅ | ✅ |
+
+---
+
+## Website Audit Completion (January 24, 2026) ✅
+
+### Files Audited
+- **492 HTML files** scanned for CSS issues
+- **493/494 files** have proper header/footer structure
+- **0 CSS issues** remaining after standardization
+
+### Critical Fixes Applied
+
+#### Truncated File Restored
+- `en/conditions/hip/osteitis-pubis.html` - was cut off mid-content, now complete
+
+#### Broken Links Fixed (15 total)
+**en/index.html (8 links):**
+- `services/dizziness.html` → `services/dizziness-treatment.html`
+- `conditions/lower-back/chronic-pain.html` → `conditions/lower-back/nociplastic-pain.html`
+- `conditions/dizziness/bppv.html` → `conditions/dizziness/bppv-crystal-disease.html`
+- `conditions/dizziness/pppd.html` → `conditions/dizziness/pppd-chronic-dizziness.html`
+- `conditions/jaw/clicking-locking.html` → `conditions/jaw/clicking-locking-joint-problems.html`
+- `conditions/jaw/chewing-pain.html` → `conditions/jaw-pain.html`
+- `conditions/jaw/teeth-grinding.html` → `conditions/jaw/bruxism.html`
+- `conditions/hip/pelvic-girdle-pain.html` → `conditions/hip/pelvic-pain-pregnancy.html`
+
+**en/blog/* (7 files):**
+- `../conditions/dizziness/bppv.html` → `../conditions/dizziness/bppv-crystal-disease.html`
+
+### CSS Standardization
+- Mobile CTA: orange (#F26522)
+- Hub-hero CSS: added to 268+ files
+- Location-section CSS: added where missing
+- Stat font sizes: standardized
+
+### FAQ Pages (24 total)
+All properly linked from hub pages:
+- `/faq/` contains 12 Norwegian + 12 English FAQ pages
+- Linked from `faq.html` and `en/faq.html`
