@@ -1,2 +1,5 @@
 nul
 images-originals/
+blogg/_backup_*/
+*.backup
+article-review.png
