@@ -113,12 +113,12 @@
         /* Hub Layout */
         .hub-wrapper{display:grid;grid-template-columns:1fr 280px;gap:3rem;max-width:1400px;margin:0 auto;padding:2rem}
         .hub-main{min-width:0}
-        .hub-sidenav{position:sticky;top:100px;height:fit-content;background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,.08);border:1px solid #e5e7eb}
-        .hub-sidenav h3{font-size:1rem;color:var(--hub-dark);margin:0 0 1rem;padding-bottom:.75rem;border-bottom:2px solid var(--hub-primary)}
-        .hub-sidenav ul{list-style:none;padding:0;margin:0}
-        .hub-sidenav li{margin-bottom:.5rem}
-        .hub-sidenav a{display:block;padding:.5rem .75rem;color:#4b5563;text-decoration:none;font-size:.9rem;border-radius:6px;transition:all .2s}
-        .hub-sidenav a:hover,.hub-sidenav a.active{background:var(--hub-light);color:var(--hub-primary)}
+        .hub-sidebar{position:sticky;top:100px;height:fit-content;background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,.08);border:1px solid #e5e7eb}
+        .hub-sidebar h3{font-size:1rem;color:var(--hub-dark);margin:0 0 1rem;padding-bottom:.75rem;border-bottom:2px solid var(--hub-primary)}
+        .hub-sidebar ul{list-style:none;padding:0;margin:0}
+        .hub-sidebar li{margin-bottom:.5rem}
+        .hub-sidebar a{display:block;padding:.5rem .75rem;color:#4b5563;text-decoration:none;font-size:.9rem;border-radius:6px;transition:all .2s}
+        .hub-sidebar a:hover,.hub-sidebar a.active{background:var(--hub-light);color:var(--hub-primary)}
 
         /* Sections */
         .hub-section{margin-bottom:3rem;scroll-margin-top:100px}
@@ -132,10 +132,10 @@
         .hub-main li{line-height:1.7;margin-bottom:.5rem}
 
         /* TLDR Box */
-        .tldr-box{background:var(--hub-light);border-left:4px solid var(--hub-primary);padding:1.5rem;margin:0 0 2rem;border-radius:0 8px 8px 0}
-        .tldr-box h2{color:var(--hub-dark);font-size:1.25rem;margin:0 0 1rem}
-        .tldr-box ul{margin:0;padding-left:1.25rem}
-        .tldr-box li{margin-bottom:.75rem;line-height:1.6}
+        .premium-summary-card{background:var(--hub-light);border-left:4px solid var(--hub-primary);padding:1.5rem;margin:0 0 2rem;border-radius:0 8px 8px 0}
+        .premium-summary-card h2{color:var(--hub-dark);font-size:1.25rem;margin:0 0 1rem}
+        .premium-summary-card ul{margin:0;padding-left:1.25rem}
+        .premium-summary-card li{margin-bottom:.75rem;line-height:1.6}
 
         /* Info/Warning/Treatment Boxes */
         .info-box{background:#f0f9ff;border-left:4px solid var(--hub-primary);padding:1.5rem;margin:1.5rem 0;border-radius:0 8px 8px 0}
@@ -193,7 +193,7 @@
         /* Responsive */
         @media(max-width:1024px){
             .hub-wrapper{grid-template-columns:1fr;padding:1rem}
-            .hub-sidenav{display:none}
+            .hub-sidebar{display:none}
         }
         @media(max-width:768px){
             .mobile-sticky-cta{display:flex}
@@ -266,7 +266,7 @@
       <div class="hub-wrapper">
         <article class="hub-main">
           <!-- TLDR -->
-          <div class="tldr-box">
+          <div class="premium-summary-card">
             <h2>TL;DR – Kort oppsummert</h2>
             <ul>
               <li><strong>Hva det er:</strong> Blåmerke/hematom på hoftekammen (crista iliaca) etter direkte slag</li>
@@ -534,7 +534,7 @@
         </article>
 
         <!-- Sidebar -->
-        <aside class="hub-sidenav">
+        <aside class="hub-sidebar">
           <h3>Innhold</h3>
           <ul>
             <li><a href="#hva-er">1. Hva er hip pointer?</a></li>
@@ -637,14 +637,14 @@
   <script>
   document.addEventListener('DOMContentLoaded',function(){
     const sections=document.querySelectorAll('.hub-section');
-    const navLinks=document.querySelectorAll('.hub-sidenav a');
+    const navLinks=document.querySelectorAll('.hub-sidebar a');
     if(!sections.length||!navLinks.length)return;
     const observer=new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{
         if(entry.isIntersecting){
           navLinks.forEach(link=>link.classList.remove('active'));
           const id=entry.target.getAttribute('id');
-          const activeLink=document.querySelector('.hub-sidenav a[href="#'+id+'"]');
+          const activeLink=document.querySelector('.hub-sidebar a[href="#'+id+'"]');
           if(activeLink)activeLink.classList.add('active');
         }
       });

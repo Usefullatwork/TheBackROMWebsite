@@ -187,12 +187,12 @@
     }
     .hub-wrapper{display:grid;grid-template-columns:1fr 280px;gap:3rem;max-width:1400px;margin:0 auto;padding:2rem}
     .hub-main{max-width:900px}
-    .hub-sidenav{position:sticky;top:100px;height:fit-content;background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.08)}
-    .hub-sidenav h3{font-size:1rem;margin-bottom:1rem;color:var(--hub-dark);border-bottom:2px solid var(--hub-primary);padding-bottom:.5rem}
-    .hub-sidenav ul{list-style:none;padding:0;margin:0}
-    .hub-sidenav li{margin-bottom:.5rem}
-    .hub-sidenav a{color:#555;text-decoration:none;font-size:.9rem;display:block;padding:.4rem .8rem;border-radius:6px;transition:all .2s}
-    .hub-sidenav a:hover,.hub-sidenav å.active{background:var(--hub-light);color:var(--hub-primary);font-weight:600}
+    .hub-sidebar{position:sticky;top:100px;height:fit-content;background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+    .hub-sidebar h3{font-size:1rem;margin-bottom:1rem;color:var(--hub-dark);border-bottom:2px solid var(--hub-primary);padding-bottom:.5rem}
+    .hub-sidebar ul{list-style:none;padding:0;margin:0}
+    .hub-sidebar li{margin-bottom:.5rem}
+    .hub-sidebar a{color:#555;text-decoration:none;font-size:.9rem;display:block;padding:.4rem .8rem;border-radius:6px;transition:all .2s}
+    .hub-sidebar a:hover,.hub-sidebar å.active{background:var(--hub-light);color:var(--hub-primary);font-weight:600}
     .hub-section{margin-bottom:3rem;scroll-margin-top:100px}
     .hub-section h2{display:flex;align-items:center;gap:1rem;color:var(--hub-dark);font-size:1.8rem;margin-bottom:1.5rem}
     .section-number{background:var(--hub-primary);color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}
@@ -252,7 +252,7 @@
     .mobile-sticky-cta a{color:#fff;text-decoration:none;font-weight:700;font-size:1.1rem}
     @media(max-width:1024px){
       .hub-wrapper{grid-template-columns:1fr;padding:1rem}
-      .hub-sidenav{display:none}
+      .hub-sidebar{display:none}
       .mobile-sticky-cta{display:block}
       .comparison-box{grid-template-columns:1fr}
     }
@@ -715,7 +715,7 @@
         </article>
 
         <!-- Sidenav -->
-        <aside class="hub-sidenav">
+        <aside class="hub-sidebar">
           <h3>Innhold</h3>
           <ul>
             <li><a href="#introduksjon">Hva er brystryggsmerter?</a></li>
@@ -825,7 +825,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('.hub-section');
-      const navLinks = document.querySelectorAll('.hub-sidenav a');
+      const navLinks = document.querySelectorAll('.hub-sidebar a');
 
       function updateActiveLink() {
         let current = '';

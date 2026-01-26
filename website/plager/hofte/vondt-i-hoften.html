@@ -206,19 +206,19 @@
 
     @media (min-width: 1200px) { .hub-main { max-width: 1100px; } }
 
-    .hub-sidenav {
+    .hub-sidebar {
       width: 220px;
       flex-shrink: 0;
       position: relative;
       align-self: stretch;
     }
 
-    .hub-sidenav .sidenav-inner { position: sticky; top: calc(var(--header-height, 80px) + 20px); }
+    .hub-sidebar .sidenav-inner { position: sticky; top: calc(var(--header-height, 80px) + 20px); }
 
-    @media (min-width: 1400px) { .hub-sidenav { width: 260px; } }
+    @media (min-width: 1400px) { .hub-sidebar { width: 260px; } }
 
     @media (max-width: 1000px) {
-      .hub-sidenav { display: none; }
+      .hub-sidebar { display: none; }
       .hub-wrapper { padding: 0 16px; }
       .hub-main { max-width: 100%; }
     }
@@ -302,7 +302,7 @@
     @media (max-width: 600px) { .hub-content { padding: 20px; } }
 
     /* TL;DR Box */
-    .tldr-box {
+    .premium-summary-card {
       background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%);
       border: 2px solid var(--hub-primary);
       border-radius: 12px;
@@ -310,7 +310,7 @@
       margin-bottom: 28px;
     }
 
-    .tldr-box h3 {
+    .premium-summary-card h3 {
       font-size: 16px;
       color: var(--hub-dark);
       margin: 0 0 16px;
@@ -319,9 +319,9 @@
       gap: 8px;
     }
 
-    .tldr-box ul { list-style: none; padding: 0; margin: 0; }
+    .premium-summary-card ul { list-style: none; padding: 0; margin: 0; }
 
-    .tldr-box li {
+    .premium-summary-card li {
       padding: 8px 0;
       font-size: 14px;
       line-height: 1.5;
@@ -330,8 +330,8 @@
       gap: 10px;
     }
 
-    .tldr-box li .icon { font-size: 16px; flex-shrink: 0; }
-    .tldr-box li.warning { color: #b45309; }
+    .premium-summary-card li .icon { font-size: 16px; flex-shrink: 0; }
+    .premium-summary-card li.warning { color: #b45309; }
 
     .intro-text { font-size: 16px; line-height: 1.7; color: #374151; margin-bottom: 24px; }
     .intro-text p { margin-bottom: 14px; }
@@ -353,7 +353,7 @@
 
     .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
 
-    .section-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
 
     .section-number {
       width: 32px;
@@ -752,16 +752,16 @@
         <article class="hub-main">
 
           <!-- Hero -->
-          <header class="hub-hero">
+          <section class="hub-hero">
             <h1>Vondt i Hoften?</h1>
             <p class="subtitle">Din komplette guide til årsak, symptomer og behandling</p>
             <p class="author">Kiropraktor Mads Finstad, Klinikk for alle Majorstua</p>
-          </header>
+          </section>
 
           <div class="hub-content">
 
             <!-- TL;DR Box -->
-            <div class="tldr-box">
+            <div class="premium-summary-card">
               <h3>TL;DR å Kort oppsummert</h3>
               <ul>
                 <li><span class="icon">?</span> Hoftesmerter rammer <strong>10% av voksne</strong> å de fleste blir bedre uten operasjon</li>
@@ -792,7 +792,7 @@
 
             <!-- SECTION 1: Finn din smertetype -->
             <section class="hub-section" id="s1">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">1</span>
                 <h2 class="section-title">Hvor har du vondt? Finn din smertetype</h2>
               </div>
@@ -866,7 +866,7 @@
 
             <!-- SECTION 2: Hjemmetester -->
             <section class="hub-section" id="s2">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">2</span>
                 <h2 class="section-title">Gjår-det-selv tester: Finn ut mer før du kommer</h2>
               </div>
@@ -894,7 +894,7 @@
 
             <!-- SECTION 3: Differensiering -->
             <section class="hub-section" id="s3">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">3</span>
                 <h2 class="section-title">Hofte, rygg eller bekken? Slik skiller du dem</h2>
               </div>
@@ -932,7 +932,7 @@
 
             <!-- SECTION 4: MR-fellen -->
             <section class="hub-section" id="s4">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">4</span>
                 <h2 class="section-title">MR-fellen: Hvorfor bildet ikke alltid stemmer</h2>
               </div>
@@ -966,7 +966,7 @@
 
             <!-- SECTION 5: Akutt selvhjelp -->
             <section class="hub-section" id="s5">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">5</span>
                 <h2 class="section-title">Akutt selvhjelp: Hva du kan gjøre nå</h2>
               </div>
@@ -991,7 +991,7 @@
 
             <!-- SECTION 6: Behandling -->
             <section class="hub-section" id="s6">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">6</span>
                 <h2 class="section-title">Behandling: Konservativ vs. kirurgi</h2>
               </div>
@@ -1031,7 +1031,7 @@
 
             <!-- SECTION 7: Røde flagg -->
             <section class="hub-section" id="s7">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">7</span>
                 <h2 class="section-title">Røde flagg: Nær du må søke hjelp raskt</h2>
               </div>
@@ -1060,7 +1060,7 @@
 
             <!-- SECTION 8: FAQ -->
             <section class="hub-section" id="s8">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">8</span>
                 <h2 class="section-title">Ofte stilte spørsmål</h2>
               </div>
@@ -1172,7 +1172,7 @@
         </article>
 
         <!-- Sticky sidenav (desktop only) -->
-        <aside class="hub-sidenav">
+        <aside class="hub-sidebar">
           <nav class="sidenav-inner" aria-label="Sidenavigasjon">
             <div class="sidenav-title">Innhold</div>
             <a href="#s1" class="sidenav-link active">1. Finn din smertetype</a>
@@ -1269,7 +1269,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('.hub-section');
-      const navLinks = document.querySelectorAll('.hub-sidenav .sidenav-link');
+      const navLinks = document.querySelectorAll('.hub-sidebar .sidenav-link');
 
       if (sections.length === 0 || navLinks.length === 0) return;
 

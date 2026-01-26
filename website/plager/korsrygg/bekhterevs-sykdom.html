@@ -199,22 +199,22 @@
 
     @media (min-width: 1200px) { .hub-main { max-width: 1100px; } }
 
-    .hub-sidenav {
+    .hub-sidebar {
       width: 220px;
       flex-shrink: 0;
       position: relative;
       align-self: stretch;
     }
 
-    .hub-sidenav .sidenav-inner {
+    .hub-sidebar .sidenav-inner {
       position: sticky;
       top: calc(var(--header-height, 80px) + 20px);
     }
 
-    @media (min-width: 1400px) { .hub-sidenav { width: 260px; } }
+    @media (min-width: 1400px) { .hub-sidebar { width: 260px; } }
 
     @media (max-width: 1000px) {
-      .hub-sidenav { display: none; }
+      .hub-sidebar { display: none; }
       .hub-wrapper { padding: 0 16px; }
       .hub-main { max-width: 100%; }
     }
@@ -352,7 +352,7 @@
 
     .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
 
-    .section-heading {
+    .section-header {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -697,11 +697,11 @@
 
         <article class="hub-main">
 
-          <header class="hub-hero">
+          <section class="hub-hero">
             <h1>Bekhterevs sykdom (Ankyloserende spondylitt)</h1>
             <p class="subtitle">Inflammatorisk ryggsykdom: symptomer, diagnostikk og behandling</p>
             <p class="author">Kiropraktor Mads Finstad, Klinikk for alle Majorstua</p>
-          </header>
+          </section>
 
           <!-- Featured Article Image -->
           <figure class="article-featured-image">
@@ -764,7 +764,7 @@
 
             <!-- SECTION 1: Hva er Bekhterevs -->
             <section class="hub-section" id="s1">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">1</span>
                 <h2 class="section-title">Hva er Bekhterevs sykdom?</h2>
               </div>
@@ -807,7 +807,7 @@
 
             <!-- SECTION 2: Symptomer -->
             <section class="hub-section" id="s2">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">2</span>
                 <h2 class="section-title">Symptomer på Bekhterevs sykdom</h2>
               </div>
@@ -908,7 +908,7 @@
 
             <!-- SECTION 3: Diagnostikk -->
             <section class="hub-section" id="s3">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">3</span>
                 <h2 class="section-title">Diagnostikk</h2>
               </div>
@@ -965,7 +965,7 @@
 
             <!-- SECTION 4: Behandling -->
             <section class="hub-section" id="s4">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">4</span>
                 <h2 class="section-title">Behandling</h2>
               </div>
@@ -1042,7 +1042,7 @@
 
             <!-- SECTION 5: Prognose -->
             <section class="hub-section" id="s5">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">5</span>
                 <h2 class="section-title">Prognose og å leve med Bekhterevs</h2>
               </div>
@@ -1083,7 +1083,7 @@
 
             <!-- SECTION 6: Røde flagg -->
             <section class="hub-section" id="s6">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">6</span>
                 <h2 class="section-title">Nær søke lege?</h2>
               </div>
@@ -1112,7 +1112,7 @@
 
             <!-- SECTION 7: FAQ -->
             <section class="hub-section" id="s7">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">7</span>
                 <h2 class="section-title">Ofte stilte spørsmål</h2>
               </div>
@@ -1195,7 +1195,7 @@
         </article>
 
         <!-- Sticky sidenav (desktop only) -->
-        <aside class="hub-sidenav">
+        <aside class="hub-sidebar">
           <nav class="sidenav-inner" aria-label="Sidenavigasjon">
             <div class="sidenav-title">Innhold</div>
             <a href="#s1" class="sidenav-link active">1. Hva er Bekhterevs?</a>
@@ -1291,7 +1291,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('.hub-section');
-      const navLinks = document.querySelectorAll('.hub-sidenav .sidenav-link');
+      const navLinks = document.querySelectorAll('.hub-sidebar .sidenav-link');
 
       if (sections.length === 0 || navLinks.length === 0) return;
 
