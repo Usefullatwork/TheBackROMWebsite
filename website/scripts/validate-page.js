@@ -47,7 +47,10 @@ try {
 
 // Auto-detect profile if not specified
 if (!profileName) {
-  if (filePath.includes('/conditions/') && !filePath.includes('/conditions/lower-back/')
+  // Check for Norwegian blog files
+  if (filePath.includes('blogg/') || filePath.includes('blogg\\')) {
+    profileName = 'nb-blog-article';
+  } else if (filePath.includes('/conditions/') && !filePath.includes('/conditions/lower-back/')
       && !filePath.includes('/conditions/shoulder/') && !filePath.includes('/conditions/hip/')
       && !filePath.includes('/conditions/knee/') && !filePath.includes('/conditions/neck/')
       && !filePath.includes('/conditions/headache/') && !filePath.includes('/conditions/foot/')
@@ -144,34 +147,37 @@ if (profile.content) {
 }
 
 // === NORWEGIAN WORD CHECK ===
-console.log('\n-- NORWEGIAN WORDS (should be 0) --\n');
+// Skip for Norwegian pages (they should have Norwegian content)
+if (!profile.skipNorwegianCheck) {
+  console.log('\n-- NORWEGIAN WORDS (should be 0) --\n');
 
-const norwegianWords = config.norwegianWords || [];
+  const norwegianWords = config.norwegianWords || [];
 
-// Only check in visible content (not in URLs, meta tags, or schema)
-const visibleContent = content
-  .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
-  .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
-  .replace(/href="[^"]*"/gi, '')
-  .replace(/src="[^"]*"/gi, '')
-  .replace(/content="[^"]*plager[^"]*"/gi, '')
-  .replace(/hreflang="[^"]*"/gi, '');
+  // Only check in visible content (not in URLs, meta tags, or schema)
+  const visibleContent = content
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+    .replace(/href="[^"]*"/gi, '')
+    .replace(/src="[^"]*"/gi, '')
+    .replace(/content="[^"]*plager[^"]*"/gi, '')
+    .replace(/hreflang="[^"]*"/gi, '');
 
-let foundNorwegian = [];
-norwegianWords.forEach(word => {
-  const regex = new RegExp(`\\b${word}\\b`, 'gi');
-  const matches = visibleContent.match(regex);
-  if (matches && matches.length > 0) {
-    foundNorwegian.push(`${word} (${matches.length}x)`);
+  let foundNorwegian = [];
+  norwegianWords.forEach(word => {
+    const regex = new RegExp(`\\b${word}\\b`, 'gi');
+    const matches = visibleContent.match(regex);
+    if (matches && matches.length > 0) {
+      foundNorwegian.push(`${word} (${matches.length}x)`);
+    }
+  });
+
+  if (foundNorwegian.length === 0) {
+    console.log('[PASS] No Norwegian words found');
+    passed++;
+  } else {
+    console.log(`[WARN] Norwegian words: ${foundNorwegian.join(', ')}`);
+    warnings++;
   }
-});
-
-if (foundNorwegian.length === 0) {
-  console.log('[PASS] No Norwegian words found');
-  passed++;
-} else {
-  console.log(`[WARN] Norwegian words: ${foundNorwegian.join(', ')}`);
-  warnings++;
 }
 
 // === IMAGE CHECKS ===

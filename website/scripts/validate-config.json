@@ -1,5 +1,46 @@
 {
   "profiles": {
+    "nb-blog-article": {
+      "description": "Norwegian blog article pages with hub design",
+      "structure": [
+        { "name": "lang=\"nb\"", "pattern": "lang=\"nb\"", "required": true },
+        { "name": "pages-combined.min.css", "pattern": "pages-combined.min.css", "required": true },
+        { "name": "hub-hero section", "pattern": "hub-hero", "required": true },
+        { "name": "hub-wrapper", "pattern": "hub-wrapper", "required": true },
+        { "name": "hub-main article", "pattern": "hub-main", "required": true },
+        { "name": "hub-sidebar", "pattern": "class=\"hub-sidebar\"", "required": true },
+        { "name": "premium-summary-card", "pattern": "premium-summary-card", "required": true },
+        { "name": "hub-toc-card", "pattern": "hub-toc-card", "required": true },
+        { "name": "hub-conversion-card", "pattern": "hub-conversion-card", "required": true },
+        { "name": "mobile-sticky-cta", "pattern": "mobile-sticky-cta", "required": true }
+      ],
+      "seo": [
+        { "name": "title tag", "pattern": "<title>", "required": true },
+        { "name": "meta description", "pattern": "name=\"description\"", "required": true },
+        { "name": "canonical URL", "pattern": "rel=\"canonical\"", "required": true },
+        { "name": "og:title", "pattern": "og:title", "required": true },
+        { "name": "Article schema", "pattern": "\"Article\"", "required": false }
+      ],
+      "content": {
+        "minSections": 0,
+        "minFaqItems": 0,
+        "exactStatItems": null,
+        "requireSources": false,
+        "requireDisclaimer": false,
+        "requireRelatedBox": false
+      },
+      "images": {
+        "requireFeaturedImage": false,
+        "requireProfileImage": false,
+        "requireLazyLoading": true,
+        "requireAsyncDecoding": false
+      },
+      "fileSize": {
+        "minKB": 20,
+        "maxKB": 50
+      },
+      "skipNorwegianCheck": true
+    },
     "hub-article": {
       "description": "Hub article pages with full design",
       "structure": [

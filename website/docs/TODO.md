@@ -1,10 +1,31 @@
 # Website TODO List
 
-**Last Updated:** 2026-01-24
+**Last Updated:** 2026-01-25
 
 ---
 
 ## Completed Work
+
+### Blog Enhancement & Validation QA (Jan 25, 2026) ✅
+- [x] Ran `validate-page.js` on all blog files - all pass
+- [x] Ran `check-links.js` on blogg/ - 0 broken links
+- [x] Ran `check-images.js` on blogg/ - issues only in backup folders
+- [x] Ran `scan-full-site.ps1` - 0 issues after fixes
+- [x] Fixed 2 blog files with old stat font sizes:
+  - `blogg/tekstnakke-kjevesmerter.html`
+  - `blogg/tmd-ibs-mage-kjeve.html`
+- [x] Updated validation system for Norwegian blog pages:
+  - Added `nb-blog-article` profile to `scripts/validate-config.json`
+  - Updated `scripts/validate-page.js` to auto-detect blogg/ files
+  - Skip Norwegian word check for Norwegian pages
+
+### Blog Enhancement Project (Jan 25, 2026) ✅
+- [x] Phase 1: All commits (CSS fixes, Norwegian hub, contact/FAQ, scripts)
+- [x] Phase 2: Blog enhancement preparation
+- [x] Phase 3: All 35 blog files enhanced with hub design
+- [x] Phase 4: Verified 42 files have premium-summary-card
+- [x] Phase 5: Committed, pushed, PR #1 created and merged
+- [x] Added README.md to project
 
 ### Website Audit & Fixes (Jan 24, 2026) ✅
 - [x] Scanned 492 files for CSS issues - 0 remaining
@@ -77,6 +98,19 @@ All hub pages have been converted to the full hub format with validation passing
 ---
 
 ## Future Improvements
+
+### Visual QA (Manual Browser Testing)
+Test 3-5 representative blog files:
+- [ ] Test mobile responsive layout
+- [ ] Verify TOC navigation works (sidebar links)
+- [ ] Confirm infographics load
+- [ ] Test sticky CTA button (appears on scroll)
+- [ ] Check hub design elements (hero, sidebar, stats grid)
+
+Recommended test files:
+- `blogg/diskogen-smerte.html` (standard)
+- `blogg/kiropraktor-vs-fysioterapeut.html` (comparison)
+- `blogg/isjias-prolaps-hekseskudd-forskjell.html` (infographic)
 
 ### Performance
 - [ ] Run Lighthouse audit
