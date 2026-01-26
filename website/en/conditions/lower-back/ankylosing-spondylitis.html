@@ -231,26 +231,26 @@
       }
     }
 
-    .hub-sidenav {
+    .hub-sidebar {
       width: 220px;
       flex-shrink: 0;
       position: relative;
       align-self: stretch;
     }
 
-    .hub-sidenav .sidenav-inner {
+    .hub-sidebar .sidenav-inner {
       position: sticky;
       top: calc(var(--header-height, 80px) + 20px);
     }
 
     @media (min-width: 1400px) {
-      .hub-sidenav {
+      .hub-sidebar {
         width: 260px;
       }
     }
 
     @media (max-width: 1000px) {
-      .hub-sidenav {
+      .hub-sidebar {
         display: none;
       }
 
@@ -454,7 +454,7 @@
       border-top: none;
     }
 
-    .section-heading {
+    .section-header {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -1085,7 +1085,7 @@
 
             <!-- SECTION 1: What is Ankylosing Spondylitis -->
             <section class="hub-section" id="s1">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">1</span>
                 <h2 class="section-title">What is Ankylosing Spondylitis?</h2>
               </div>
@@ -1134,7 +1134,7 @@
 
             <!-- SECTION 2: Symptoms -->
             <section class="hub-section" id="s2">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">2</span>
                 <h2 class="section-title">Symptoms of Ankylosing Spondylitis</h2>
               </div>
@@ -1242,7 +1242,7 @@
 
             <!-- SECTION 3: Diagnosis -->
             <section class="hub-section" id="s3">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">3</span>
                 <h2 class="section-title">Diagnosis</h2>
               </div>
@@ -1308,7 +1308,7 @@
 
             <!-- SECTION 4: Treatment -->
             <section class="hub-section" id="s4">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">4</span>
                 <h2 class="section-title">Treatment</h2>
               </div>
@@ -1393,7 +1393,7 @@
 
             <!-- SECTION 5: Prognosis -->
             <section class="hub-section" id="s5">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">5</span>
                 <h2 class="section-title">Prognosis and Living with AS</h2>
               </div>
@@ -1436,7 +1436,7 @@
 
             <!-- SECTION 6: Red Flags -->
             <section class="hub-section" id="s6">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">6</span>
                 <h2 class="section-title">When to See a Doctor?</h2>
               </div>
@@ -1466,7 +1466,7 @@
 
             <!-- SECTION 7: FAQ -->
             <section class="hub-section" id="s7">
-              <div class="section-heading">
+              <div class="section-header">
                 <span class="section-number">7</span>
                 <h2 class="section-title">Frequently Asked Questions</h2>
               </div>
@@ -1593,7 +1593,7 @@
         </article>
 
         <!-- Sticky sidenav (desktop only) -->
-        <aside class="hub-sidenav">
+        <aside class="hub-sidebar">
           <nav class="sidenav-inner" aria-label="Page navigation">
             <div class="sidenav-title">Contents</div>
             <a href="#s1" class="sidenav-link active">1. What is AS?</a>
@@ -1691,7 +1691,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const sections = document.querySelectorAll('.hub-section');
-      const navLinks = document.querySelectorAll('.hub-sidenav .sidenav-link');
+      const navLinks = document.querySelectorAll('.hub-sidebar .sidenav-link');
 
       if (sections.length === 0 || navLinks.length === 0) return;
 

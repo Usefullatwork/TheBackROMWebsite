@@ -256,26 +256,26 @@
       }
     }
 
-    .hub-sidenav {
+    .hub-sidebar {
       width: 220px;
       flex-shrink: 0;
       position: relative;
       align-self: stretch;
     }
 
-    .hub-sidenav .sidenav-inner {
+    .hub-sidebar .sidenav-inner {
       position: sticky;
       top: calc(var(--header-height, 80px) + 20px);
     }
 
     @media (min-width: 1400px) {
-      .hub-sidenav {
+      .hub-sidebar {
         width: 260px;
       }
     }
 
     @media (max-width: 1000px) {
-      .hub-sidenav {
+      .hub-sidebar {
         display: none;
       }
 
@@ -1481,7 +1481,7 @@
         </article>
 
         <!-- Sticky sidenav (desktop only) -->
-        <aside class="hub-sidenav">
+        <aside class="hub-sidebar">
           <div class="sidenav-inner">
 
             <!-- Conversion card FIRST -->
@@ -1591,7 +1591,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const sections = document.querySelectorAll('.hub-section');
-      const navLinks = document.querySelectorAll('.hub-sidenav .sidenav-link');
+      const navLinks = document.querySelectorAll('.hub-sidebar .sidenav-link');
 
       if (sections.length === 0 || navLinks.length === 0) return;
 
