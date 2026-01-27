@@ -336,6 +336,40 @@
     .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
     @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
 </style>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I know if my back pain is dangerous?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most back pain is harmless. Watch for combinations of symptoms: Back pain alone without other symptoms is rarely serious. It's when back pain is combined with bladder dysfunction, groin numbness, unexplained weight loss, fever, or rapidly progressive weakness that you should seek prompt help."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a chiropractor detect serious illness?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Norwegian chiropractors are licensed healthcare professionals with 5-6 years of education. A thorough clinical examination with neurological testing is often more informative than imaging. When serious pathology is suspected, the chiropractor has a duty to refer further."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly does cauda equina syndrome develop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It varies. Some experience gradual worsening over days to weeks, others get sudden symptoms. If you have established back pain and develop new symptoms like bladder dysfunction or groin numbness, you should seek help immediately."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body id="top">

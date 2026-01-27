@@ -136,6 +136,40 @@
     .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
     @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
 </style>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can the neck really cause dizziness?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The neck contains a high density of proprioceptive sensors. When these send inaccurate signals, a \"sensory mismatch\" can occur that is experienced as dizziness. The Barany Society (2022) acknowledges that this can probably occur in a subset of patients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an MRI of my neck?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually not. MRI is primarily relevant for red flags or lack of treatment response after 8-12 weeks. Degenerative findings are very common even in symptom-free people."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long until I get better?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most notice improvement within 4-6 weeks. Acute cases can respond faster (2-4 treatments), chronic cases may require 8-12 weeks."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body id="top">

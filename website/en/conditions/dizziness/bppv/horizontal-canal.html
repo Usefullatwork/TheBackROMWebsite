@@ -137,6 +137,40 @@
     .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
     @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
 </style>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is horizontal canal BPPV worse than posterior canal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many patients experience the symptoms as more intense. This may be due to the horizontal canal's larger diameter and stronger response to head movements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I do exercises at home?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some home exercises can be useful as a supplement, but initial diagnosis and treatment should be performed by qualified healthcare professionals. It is important to know which variant you have."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is horizontal canal BPPV dangerous?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The condition itself is not dangerous, but the intense dizziness significantly increases fall risk. It is important to get a correct diagnosis to rule out other causes."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body id="top">

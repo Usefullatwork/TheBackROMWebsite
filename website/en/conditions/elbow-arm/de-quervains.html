@@ -266,6 +266,48 @@
     .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
     @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
 </style>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does it take to recover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With proper treatment, most experience significant improvement within 4-6 weeks. Complete healing may take 3-6 months."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does cortisone help?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, for De Quervain's, cortisone has good effect (unlike tennis elbow). Combined with splinting, this is gold standard according to JAMA 2023."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I continue using my phone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You should significantly reduce thumb use on phone during treatment period. Consider using index finger or voice functions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need surgery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rarely. Most recover with conservative treatment. Surgery is only considered for prolonged symptoms without improvement from 1-2 cortisone injections."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body id="top">
