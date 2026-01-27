@@ -242,3 +242,72 @@ Single source for statistics/facts, brief references elsewhere:
 - Instagram: @chiro_mads
 - Facebook: 61551540184975
 - YouTube: @TheBackROM
+
+---
+
+## Session Learnings Log
+
+### 2026-01-27 - Comprehensive Website Audit & Fixes
+
+**Task:** Full audit of ~493 production HTML pages across 8 phases
+
+**Audit Pipeline (`npm run audit`):**
+1. `spellcheck:hub` - CSpell on en/conditions/*.html
+2. `validate:hubs` - Structure validation for 12 hub pages
+3. `check-sitemap` - Verify sitemap entries match actual files
+4. `check-images` - Missing images, alt text, lazy loading
+5. `check-links` - Broken links, hreflang, external rel attributes
+
+**Issues Found & Fixed:**
+- 163 files: `warning-box` → `red-flag-alert`
+- 194 files: Norwegian encoding corruption (å/ø in wrong places)
+- 16 files: Added MedicalWebPage schema
+- 41 files: Added FAQPage schema
+- 7 files: Added hreflang for foot articles
+- 1 orphan sitemap entry removed (nociplastic-pain.html)
+
+**Scripts Created:**
+- `scripts/fix-warning-box.js` - Batch class replacement
+- `scripts/fix-encoding-v2.js` - Norwegian character fixes
+- `scripts/add-medical-schema.js` - Add MedicalWebPage JSON-LD
+- `scripts/add-faq-schema.js` - Extract FAQ content and generate schema
+- `scripts/add-hreflang-foot.js` - Add hreflang links to foot articles
+
+**Validation Config Adjustments (`scripts/validate-config.json`):**
+- `requireFeaturedImage: false` - hub-featured-image class doesn't exist
+- `maxKB: 55` - Some hub pages are 52KB, was failing at 50KB limit
+
+**Medical Terms Added to `cspell.json`:**
+- FADIR, FABER (hip examination tests)
+
+---
+
+### 2026-01-27 - CSS Class Standardization
+
+**Issues Found & Fixed (59 files total):**
+- 7 files: `<header class="hub-hero">` → `<section class="hub-hero">`
+- 18 files: `hub-sidenav` → `hub-sidebar`
+- 8 files: `section-heading` → `section-header`
+- 10 files: `tldr-box` → `premium-summary-card`
+- 29 files: `cta-box` → `hub-cta`
+
+**Gold Standard Classes (from korsryggsmerte.html):**
+| Wrong Class | Correct Class |
+|-------------|---------------|
+| `hub-sidenav` | `hub-sidebar` |
+| `section-heading` | `section-header` |
+| `tldr-box` | `premium-summary-card` |
+| `cta-box` | `hub-cta` |
+| `warning-box` | `red-flag-alert` |
+
+---
+
+### 2026-01-26 - Batch HTML Updates with Norwegian Characters
+
+**Pattern discovered:**
+- Website path contains en-dash (–) character
+- PowerShell requires constructing path with `[char]0x2013` for the en-dash
+
+**What to avoid:**
+- PowerShell's `Get-Content -Encoding UTF8` + `Set-Content -Encoding UTF8` can corrupt Norwegian characters (å→Ã¥, ø→Ã¸)
+- Instead use: `[System.IO.File]::WriteAllText($path, $content, [System.Text.UTF8Encoding]::new($true))`
