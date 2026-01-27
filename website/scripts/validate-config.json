@@ -80,14 +80,14 @@
         "requireRelatedBox": true
       },
       "images": {
-        "requireFeaturedImage": true,
+        "requireFeaturedImage": false,
         "requireProfileImage": true,
         "requireLazyLoading": true,
         "requireAsyncDecoding": true
       },
       "fileSize": {
         "minKB": 20,
-        "maxKB": 50
+        "maxKB": 55
       }
     },
     "sub-article": {
