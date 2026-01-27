@@ -304,7 +304,7 @@
 
     .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
 
-    .tldr-sidebar {
+    .premium-summary-card {
       background: linear-gradient(135deg, var(--hub-purple-light) 0%, #ede9fe 100%);
       border-left: 4px solid var(--hub-primary);
       border-radius: 0 10px 10px 0;
@@ -312,24 +312,24 @@
       align-self: start;
     }
 
-    .tldr-sidebar h3 { font-size: 15px; color: var(--hub-dark); margin-bottom: 12px; }
-    .tldr-sidebar ul { list-style: none; padding: 0; margin: 0; }
+    .premium-summary-card h3 { font-size: 15px; color: var(--hub-dark); margin-bottom: 12px; }
+    .premium-summary-card ul { list-style: none; padding: 0; margin: 0; }
 
-    .tldr-sidebar li {
+    .premium-summary-card li {
       padding: 5px 0 5px 22px;
       position: relative;
       font-size: 13px;
       line-height: 1.5;
     }
 
-    .tldr-sidebar li::before {
+    .premium-summary-card li::before {
       content: attr(data-icon);
       position: absolute;
       left: 0;
       font-size: 12px;
     }
 
-    .tldr-sidebar .btn-small {
+    .premium-summary-card .btn-small {
       display: block;
       background: var(--hub-primary);
       color: #fff;
@@ -342,7 +342,7 @@
       margin-top: 14px;
     }
 
-    .tldr-sidebar .btn-small:hover { background: var(--hub-primary-dark); }
+    .premium-summary-card .btn-small:hover { background: var(--hub-primary-dark); }
 
     .hub-section {
       margin-top: 32px;
@@ -722,7 +722,7 @@
                 <p>Tidlig diagnose er avgjørende. Med moderne behandling kan de fleste leve aktive liv og forebygge de strukturelle forandringene som tidligere preget sykdommen.</p>
               </div>
 
-              <aside class="tldr-sidebar">
+              <div class="premium-summary-card">
                 <h3>TL;DR - Kort oppsummert</h3>
                 <ul>
                   <li data-icon="&#10004;">Debuterer typisk <strong>før 45 år</strong></li>
