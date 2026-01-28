@@ -2,119 +2,20 @@
 
 **Generated:** 2026-01-28
 **Pages scanned:** 491
-**Total issues:** 3786
+**Total issues:** 3701
 
 ## Summary
 
 | Severity | Count |
 |----------|-------|
 | 🔴 Critical | 0 |
-| 🟡 Warning | 101 |
-| 🔵 Info | 3685 |
+| 🟡 Warning | 2 |
+| 🔵 Info | 3699 |
 
 ## Warnings
 
-- **priser.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **plager.html** [Meta Tags] Title too long (72 chars)
-- **404.html** [Meta Tags] Missing canonical link
-- **blogg\index.html** [Performance] Inline CSS 3699 chars (>2000)
 - **blogg\index.html** [Performance] 9 external scripts (>8)
-- **blogg\nakkesmerter-gravid.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\piriformissyndrom-falsk-isjias.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\l4-l5-prolaps.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\diskogen-smerte.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\ovelser-isjias.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\subtil-krystallsyke.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\l5-s1-prolaps.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\svimmelhet-myter.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\svimmel-i-senga.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\muskelsmerte-vs-nervesmerte.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\stressnakke-triggerpunkter.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\akutt-ryggsmerte-selvhjelp.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **plager\idrettsskader.html** [Performance] Inline CSS 3235 chars (>2000)
-- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Meta Tags] Title too long (99 chars)
-- **plager\fot\stressfraktur-fot.html** [Meta Tags] Title too long (84 chars)
-- **plager\fot\mortons-nevrom.html** [Meta Tags] Description too short (30 chars)
-- **plager\fot\hallux-valgus.html** [Meta Tags] Title too long (80 chars)
-- **plager\fot\ankelinstabilitet.html** [Meta Tags] Title too long (77 chars)
-- **plager\fot\hallux-rigidus.html** [Meta Tags] Title too long (91 chars)
-- **plager\fot\tibialis-posterior-tendinopati.html** [Meta Tags] Title too long (91 chars)
-- **plager\fot\fottrening.html** [Meta Tags] Title too long (79 chars)
-- **plager\fot\minimalistsko.html** [Meta Tags] Title too long (82 chars)
-- **plager\skulder\kortison-skulder.html** [Performance] Inline CSS 6677 chars (>2000)
-- **plager\skulder\slap-lesjon.html** [Performance] Inline CSS 6117 chars (>2000)
-- **plager\skulder\biceps-tendinopati.html** [Performance] Inline CSS 5741 chars (>2000)
-- **plager\nakke\degenerative-forandringer.html** [Meta Tags] Title too long (78 chars)
-- **plager\nakke\tekstnakke.html** [Performance] Inline CSS 4677 chars (>2000)
-- **plager\kne\loperkne.html** [Performance] Inline CSS 6295 chars (>2000)
-- **plager\kne\knesmerte-fra-hoften.html** [Meta Tags] Title too long (74 chars)
-- **plager\kne\knesmerte-fra-hoften.html** [Performance] Inline CSS 5880 chars (>2000)
-- **plager\brystrygg\pust-stress-rygg.html** [Meta Tags] Title too long (76 chars)
-- **plager\brystrygg\kostokondritt.html** [Meta Tags] Title too long (71 chars)
-- **plager\svimmelhet\scds.html** [Meta Tags] Title too long (84 chars)
-- **plager\svimmelhet\mdds.html** [Meta Tags] Title too long (77 chars)
-- **plager\svimmelhet\whiplash-svimmelhet.html** [Meta Tags] Title too long (78 chars)
-- **plager\svimmelhet\vestibularisnevritt.html** [Meta Tags] Title too long (79 chars)
-- **plager\svimmelhet\post-hjernerystelse.html** [Meta Tags] Title too long (81 chars)
-- **plager\albue-arm\triggerpunkter-arm.html** [Meta Tags] Title too long (77 chars)
-- **plager\albue-arm\tennisalbue.html** [Meta Tags] Title too long (77 chars)
-- **plager\korsrygg\nociplastisk-smerte.html** [Hreflang & Language] Missing hreflang="en"
-- **tjeneste\graston.html** [Meta Tags] Title too long (92 chars)
-- **tjeneste\svimmelhet.html** [Meta Tags] Title too long (106 chars)
-- **tjeneste\fasciemanipulasjon.html** [Meta Tags] Title too long (84 chars)
-- **tjeneste\dry-needling.html** [Meta Tags] Title too long (83 chars)
-- **tjeneste\trykkbolge.html** [Meta Tags] Title too long (75 chars)
-- **en\conditions\knee-pain.html** [Meta Tags] Description too short (63 chars)
-- **en\conditions\neck-pain.html** [Meta Tags] Description too short (31 chars)
-- **en\conditions\neck\cervical-foraminal-stenosis.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\conditions\neck\finger-numbness.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\conditions\neck\stress-neck.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\conditions\neck\text-neck.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\conditions\neck\whiplash-headache.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\conditions\neck\whiplash.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\conditions\jaw\clicking-locking-joint-problems.html** [Meta Tags] Description too short (64 chars)
-- **en\conditions\elbow-arm\de-quervains.html** [Meta Tags] Description too short (29 chars)
-- **en\conditions\elbow-arm\golfers-elbow.html** [Meta Tags] Description too short (24 chars)
-- **en\conditions\knee\jumpers-knee.html** [Meta Tags] Description too short (6 chars)
-- **en\conditions\knee\knee-pain-from-hip.html** [Meta Tags] Description too short (30 chars)
-- **en\conditions\knee\meniscus-injury.html** [Meta Tags] Description too short (45 chars)
-- **en\conditions\knee\runners-knee.html** [Meta Tags] Description too short (6 chars)
-- **en\conditions\knee\runners-knee.html** [Performance] Inline CSS 7538 chars (>2000)
-- **en\conditions\foot\mortons-neuroma.html** [Meta Tags] Description too short (29 chars)
-- **en\conditions\foot\orthotic-weaning.html** [Performance] Inline CSS 2606 chars (>2000)
-- **en\conditions\foot\severs-disease.html** [Meta Tags] Description too short (44 chars)
-- **en\conditions\foot\weak-feet.html** [Meta Tags] Title too long (76 chars)
-- **en\conditions\thoracic\costochondritis.html** [Meta Tags] Description too short (15 chars)
-- **en\conditions\thoracic\scheuermanns-disease.html** [Meta Tags] Description too short (11 chars)
-- **en\conditions\thoracic\scheuermanns-disease.html** [Content Quality] Norwegian word in EN page: "nakke"
-- **en\conditions\dizziness\menieres-disease.html** [Meta Tags] Description too short (7 chars)
-- **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] Inline CSS 6784 chars (>2000)
-- **en\conditions\shoulder\cortisone-shoulder.html** [Performance] Inline CSS 8016 chars (>2000)
-- **en\conditions\shoulder\throwers-shoulder.html** [Meta Tags] Description too short (7 chars)
-- **en\conditions\lower-back\spinal-stenosis.html** [Meta Tags] Description too short (59 chars)
-- **en\blog\index.html** [Performance] Inline CSS 4280 chars (>2000)
 - **en\blog\index.html** [Performance] 9 external scripts (>8)
-- **en\blog\neck-pain-pregnancy.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\stress-neck-trigger-points.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\sciatica-prolapse-lumbago-difference.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\subtle-bppv.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\discogenic-pain.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\dizziness-myths.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\dizziness-treatment.html** [Meta Tags] Description too short (51 chars)
-- **en\blog\dizzy-and-nauseous.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\dizzy-in-bed.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\exercises-sciatica.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\l4-l5-disc-herniation.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\l5-s1-disc-herniation.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\mri-imaging-back-pain.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\muscle-pain-vs-nerve-pain.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\blog\acute-back-pain-self-help.html** [Meta Tags] Description too short (25 chars)
-- **en\blog\acute-back-pain-self-help.html** [Accessibility] Heading skip: h1 → h3
-- **en\404.html** [Meta Tags] Description too short (18 chars)
-- **en\emergency.html** [Schema Markup] FAQ section found but no FAQPage schema
-- **en\new-patients.html** [Schema Markup] FAQ section found but no FAQPage schema
 
 ## Info
 
@@ -132,7 +33,7 @@
 - **plager.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager.html** [Performance] CSS missing version hash: font-awesome-minimal.css
-- **plager.html** [Content Quality] Low word count: 146 (<300)
+- **plager.html** [Content Quality] Low word count: 143 (<300)
 - **404.html** [Meta Tags] Missing og:image
 - **404.html** [Performance] Image missing loading attribute: logo-header.webp
 - **404.html** [Performance] CSS missing version hash: font-awesome-minimal.css
@@ -184,6 +85,7 @@
 - **blogg\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **blogg\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **blogg\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\index.html** [Performance] CSS missing version hash: inline-index-9d26cabd.css
 - **blogg\index.html** [Content Quality] Low word count: 104 (<300)
 - **blogg\index.html** [Structural Consistency] Missing mobile sticky CTA
 - **blogg\nakkesmerter-gravid.html** [Meta Tags] Missing og:image
@@ -650,6 +552,7 @@
 - **plager\kjevesmerte.html** [Performance] CSS missing version hash: hub-article.css
 - **plager\idrettsskader.html** [Meta Tags] Missing og:image
 - **plager\idrettsskader.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\idrettsskader.html** [Performance] CSS missing version hash: inline-idrettsskader-4ec1c172.css
 - **plager\idrettsskader.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\idrettsskader.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\idrettsskader.html** [Performance] CSS missing version hash: font-awesome-minimal.css
@@ -1053,11 +956,13 @@
 - **plager\skulder\kortison-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\skulder\kortison-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\skulder\kortison-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\kortison-skulder.html** [Performance] CSS missing version hash: inline-kortison-skulder-a2ba4fce.css
 - **plager\skulder\slap-lesjon.html** [Performance] Image missing loading attribute: logo-header.webp
 - **plager\skulder\slap-lesjon.html** [Performance] CSS missing version hash: hub-article.css
 - **plager\skulder\slap-lesjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\skulder\slap-lesjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\skulder\slap-lesjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\slap-lesjon.html** [Performance] CSS missing version hash: inline-slap-lesjon-ad25100a.css
 - **plager\skulder\ergonomi-skulder.html** [Performance] Image missing loading attribute: logo-header.webp
 - **plager\skulder\ergonomi-skulder.html** [Performance] CSS missing version hash: hub-article.css
 - **plager\skulder\ergonomi-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
@@ -1074,6 +979,7 @@
 - **plager\skulder\biceps-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\skulder\biceps-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\skulder\biceps-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\biceps-tendinopati.html** [Performance] CSS missing version hash: inline-biceps-tendinopati-f17ea19b.css
 - **plager\skulder\tos-sovende-arm.html** [Performance] Image missing loading attribute: logo-header.webp
 - **plager\skulder\tos-sovende-arm.html** [Performance] CSS missing version hash: hub-article.css
 - **plager\skulder\tos-sovende-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
@@ -1305,6 +1211,7 @@
 - **plager\nakke\tekstnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\nakke\tekstnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\nakke\tekstnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\tekstnakke.html** [Performance] CSS missing version hash: inline-tekstnakke-fe3d1306.css
 - **plager\nakke\nakkesleng-hodepine.html** [Meta Tags] Missing og:image
 - **plager\nakke\nakkesleng-hodepine.html** [Performance] Image missing loading attribute: logo-header.webp
 - **plager\nakke\nakkesleng-hodepine.html** [Performance] Image missing loading attribute: meg.webp
@@ -1434,6 +1341,7 @@
 - **plager\kne\loperkne.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\kne\loperkne.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\kne\loperkne.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\loperkne.html** [Performance] CSS missing version hash: inline-loperkne-5b875dd7.css
 - **plager\kne\kneartrose.html** [Performance] Image missing loading attribute: logo-header.webp
 - **plager\kne\kneartrose.html** [Performance] CSS missing version hash: hub-article.css
 - **plager\kne\kneartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
@@ -1486,6 +1394,7 @@
 - **plager\kne\knesmerte-fra-hoften.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\kne\knesmerte-fra-hoften.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\kne\knesmerte-fra-hoften.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\knesmerte-fra-hoften.html** [Performance] CSS missing version hash: inline-knesmerte-fra-hoften-b26db581.css
 - **plager\kne\pcl-skade.html** [Performance] Image missing loading attribute: logo-header.webp
 - **plager\kne\pcl-skade.html** [Performance] Image missing decoding="async": meg.webp
 - **plager\kne\pcl-skade.html** [Performance] CSS missing version hash: hub-article.css
@@ -1861,6 +1770,13 @@
 - **plager\korsrygg\isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\korsrygg\isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\korsrygg\isjias.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\nociplastisk-smerte.html** [Hreflang & Language] No hreflang tags (single-language page)
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: hub-article.css
 - **plager\korsrygg\spondylolistese.html** [Performance] Image missing loading attribute: logo-header.webp
 - **plager\korsrygg\spondylolistese.html** [Performance] CSS missing version hash: hub-article.css
 - **plager\korsrygg\spondylolistese.html** [Performance] CSS missing version hash: font-awesome-minimal.css
@@ -1912,12 +1828,6 @@
 - **plager\korsrygg\hekseskudd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\korsrygg\hekseskudd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\korsrygg\hekseskudd.html** [Performance] CSS missing version hash: hub-article.css
-- **plager\korsrygg\nociplastisk-smerte.html** [Performance] Image missing loading attribute: logo-header.webp
-- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: hub-article.css
-- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
-- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
-- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
-- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: hub-article.css
 - **plager\ryggsmerter.html** [Performance] Image missing loading attribute: logo-header.webp
 - **plager\ryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **plager\ryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
@@ -2655,6 +2565,7 @@
 - **en\conditions\knee\runners-knee.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **en\conditions\knee\runners-knee.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **en\conditions\knee\runners-knee.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\runners-knee.html** [Performance] CSS missing version hash: inline-runners-knee-54f84fb1.css
 - **en\conditions\knee\shin-splints.html** [Meta Tags] Missing og:image
 - **en\conditions\knee\shin-splints.html** [Performance] No CSS preload found
 - **en\conditions\knee\shin-splints.html** [Performance] Image missing decoding="async": knee smerte.webp
@@ -2741,6 +2652,7 @@
 - **en\conditions\foot\orthotic-weaning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **en\conditions\foot\orthotic-weaning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **en\conditions\foot\orthotic-weaning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\orthotic-weaning.html** [Performance] CSS missing version hash: inline-orthotic-weaning-93775ac3.css
 - **en\conditions\foot\orthotics.html** [Performance] Image missing decoding="async": meg.webp
 - **en\conditions\foot\orthotics.html** [Performance] CSS missing version hash: index-2026-fixes.css
 - **en\conditions\foot\orthotics.html** [Performance] CSS missing version hash: hub-article.css
@@ -3224,6 +3136,7 @@
 - **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] CSS missing version hash: inline-biceps-tendinopathy-dc250812.css
 - **en\conditions\shoulder\calcific-tendinitis.html** [Performance] Image missing decoding="async": skulder smerter.webp
 - **en\conditions\shoulder\calcific-tendinitis.html** [Performance] CSS missing version hash: index-2026-fixes.css
 - **en\conditions\shoulder\calcific-tendinitis.html** [Performance] CSS missing version hash: hub-article.css
@@ -3243,6 +3156,7 @@
 - **en\conditions\shoulder\cortisone-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **en\conditions\shoulder\cortisone-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **en\conditions\shoulder\cortisone-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\cortisone-shoulder.html** [Performance] CSS missing version hash: inline-cortisone-shoulder-604d57ad.css
 - **en\conditions\shoulder\pain-behind-shoulder.html** [Meta Tags] Missing og:image
 - **en\conditions\shoulder\pain-behind-shoulder.html** [Performance] Image missing decoding="async": skulder smerter.webp
 - **en\conditions\shoulder\pain-behind-shoulder.html** [Performance] CSS missing version hash: index-2026-fixes.css
@@ -3494,6 +3408,7 @@
 - **en\blog\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **en\blog\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
 - **en\blog\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\index.html** [Performance] CSS missing version hash: inline-index-2f977c92.css
 - **en\blog\index.html** [Content Quality] Low word count: 126 (<300)
 - **en\blog\index.html** [Structural Consistency] Missing mobile sticky CTA
 - **en\blog\jaw-exercises-home.html** [Meta Tags] Missing og:image
@@ -3806,19 +3721,13 @@
 
 ## By Category
 
-### Accessibility
-
-Critical: 0 | Warnings: 1 | Info: 0
-
-- 🟡 **en\blog\acute-back-pain-self-help.html** Heading skip: h1 → h3
-
 ### Content Quality
 
-Critical: 0 | Warnings: 1 | Info: 41
+Critical: 0 | Warnings: 0 | Info: 41
 
 - 🔵 **contact.html** Low word count: 166 (<300)
 - 🔵 **services.html** Low word count: 136 (<300)
-- 🔵 **plager.html** Low word count: 146 (<300)
+- 🔵 **plager.html** Low word count: 143 (<300)
 - 🔵 **404.html** Low word count: 96 (<300)
 - 🔵 **blogg\index.html** Low word count: 104 (<300)
 - 🔵 **plager\idrettsskader.html** Low word count: 281 (<300)
@@ -3841,7 +3750,6 @@ Critical: 0 | Warnings: 1 | Info: 41
 - 🔵 **en\conditions\knee\prepatellar-bursitis.html** Medical page missing source/reference section
 - 🔵 **en\conditions\knee\shin-splints.html** Medical page missing source/reference section
 - 🔵 **en\conditions\foot\hallux-valgus.html** Medical page missing source/reference section
-- 🟡 **en\conditions\thoracic\scheuermanns-disease.html** Norwegian word in EN page: "nakke"
 - 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** Medical page missing source/reference section
 - 🔵 **en\conditions\dizziness\bppv\posterior-canal.html** Medical page missing source/reference section
 - 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** Medical page missing source/reference section
@@ -3861,16 +3769,14 @@ Critical: 0 | Warnings: 1 | Info: 41
 
 ### Hreflang & Language
 
-Critical: 0 | Warnings: 1 | Info: 0
+Critical: 0 | Warnings: 0 | Info: 1
 
-- 🟡 **plager\korsrygg\nociplastisk-smerte.html** Missing hreflang="en"
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** No hreflang tags (single-language page)
 
 ### Meta Tags
 
-Critical: 0 | Warnings: 47 | Info: 249
+Critical: 0 | Warnings: 0 | Info: 249
 
-- 🟡 **plager.html** Title too long (72 chars)
-- 🟡 **404.html** Missing canonical link
 - 🔵 **404.html** Missing og:image
 - 🔵 **blogg\nakkesmerter-gravid.html** Missing og:image
 - 🔵 **blogg\eldre-svimmelhet-fallrisiko.html** Missing og:image
@@ -3918,7 +3824,6 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **plager\hofte\idrettsskader-hofte.html** Missing og:image
 - 🔵 **plager\hofte\fai-hofteklem.html** Missing og:image
 - 🔵 **plager\hofte\snapping-hip.html** Missing og:image
-- 🟡 **plager\hofte\athletic-pubalgia-lyskebrokk.html** Title too long (99 chars)
 - 🔵 **plager\hofte\athletic-pubalgia-lyskebrokk.html** Missing og:image
 - 🔵 **plager\hofte\gtps-gluteal-tendinopati.html** Missing og:image
 - 🔵 **plager\hofte\bekkenleddsmerter-graviditet.html** Missing og:image
@@ -3926,16 +3831,8 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **plager\hofte\proksimal-hamstringtendinopati.html** Missing og:image
 - 🔵 **plager\hofte\si-ledd-bekkenproblemer.html** Missing og:image
 - 🔵 **plager\hofte\triggerpunkter-hofte-bekken.html** Missing og:image
-- 🟡 **plager\fot\stressfraktur-fot.html** Title too long (84 chars)
-- 🟡 **plager\fot\mortons-nevrom.html** Description too short (30 chars)
 - 🔵 **plager\fot\metatarsalgi.html** Missing og:image
-- 🟡 **plager\fot\hallux-valgus.html** Title too long (80 chars)
-- 🟡 **plager\fot\ankelinstabilitet.html** Title too long (77 chars)
 - 🔵 **plager\fot\ankelinstabilitet.html** Missing og:image
-- 🟡 **plager\fot\hallux-rigidus.html** Title too long (91 chars)
-- 🟡 **plager\fot\tibialis-posterior-tendinopati.html** Title too long (91 chars)
-- 🟡 **plager\fot\fottrening.html** Title too long (79 chars)
-- 🟡 **plager\fot\minimalistsko.html** Title too long (82 chars)
 - 🔵 **plager\skulder\smerter-bak-skulder.html** Missing og:image
 - 🔵 **plager\hodepine\klasehodepine.html** Missing og:image
 - 🔵 **plager\hodepine\vestibulaer-migrene.html** Missing og:image
@@ -3947,7 +3844,6 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **plager\nakke\nummenhet-fingre.html** Missing og:image
 - 🔵 **plager\nakke\torticollis.html** Missing og:image
 - 🔵 **plager\nakke\cervikal-foraminal-stenose.html** Missing og:image
-- 🟡 **plager\nakke\degenerative-forandringer.html** Title too long (78 chars)
 - 🔵 **plager\nakke\degenerative-forandringer.html** Missing og:image
 - 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** Missing og:image
 - 🔵 **plager\nakke\nakkesleng-hodepine.html** Missing og:image
@@ -3963,24 +3859,16 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **plager\kne\beinhinnebetennelse.html** Missing og:image
 - 🔵 **plager\kne\hopperkne.html** Missing og:image
 - 🔵 **plager\kne\iliotibial-band-syndrom.html** Missing og:image
-- 🟡 **plager\kne\knesmerte-fra-hoften.html** Title too long (74 chars)
 - 🔵 **plager\brystrygg\bh-stropp-syndrom.html** Missing og:image
-- 🟡 **plager\brystrygg\pust-stress-rygg.html** Title too long (76 chars)
 - 🔵 **plager\brystrygg\osteoporose.html** Missing og:image
-- 🟡 **plager\brystrygg\kostokondritt.html** Title too long (71 chars)
-- 🟡 **plager\svimmelhet\scds.html** Title too long (84 chars)
 - 🔵 **plager\svimmelhet\scds.html** Missing og:image
 - 🔵 **plager\svimmelhet\vestibulaer-hypofunksjon.html** Missing og:image
 - 🔵 **plager\svimmelhet\nakkesvimmelhet.html** Missing og:image
 - 🔵 **plager\svimmelhet\menieres-sykdom.html** Missing og:image
-- 🟡 **plager\svimmelhet\mdds.html** Title too long (77 chars)
 - 🔵 **plager\svimmelhet\mdds.html** Missing og:image
-- 🟡 **plager\svimmelhet\whiplash-svimmelhet.html** Title too long (78 chars)
 - 🔵 **plager\svimmelhet\whiplash-svimmelhet.html** Missing og:image
 - 🔵 **plager\svimmelhet\krystallsyke-bppv.html** Missing og:image
-- 🟡 **plager\svimmelhet\vestibularisnevritt.html** Title too long (79 chars)
 - 🔵 **plager\svimmelhet\vestibularisnevritt.html** Missing og:image
-- 🟡 **plager\svimmelhet\post-hjernerystelse.html** Title too long (81 chars)
 - 🔵 **plager\svimmelhet\post-hjernerystelse.html** Missing og:image
 - 🔵 **plager\svimmelhet\vestibulaer-migrene.html** Missing og:image
 - 🔵 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** Missing og:image
@@ -3990,29 +3878,20 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **plager\svimmelhet\pots-syndrom.html** Missing og:image
 - 🔵 **plager\albue-arm\musearm.html** Missing og:image
 - 🔵 **plager\albue-arm\tommelartrose.html** Missing og:image
-- 🟡 **plager\albue-arm\triggerpunkter-arm.html** Title too long (77 chars)
 - 🔵 **plager\albue-arm\triggerpunkter-arm.html** Missing og:image
 - 🔵 **plager\albue-arm\triggerfinger.html** Missing og:image
 - 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** Missing og:image
 - 🔵 **plager\albue-arm\golfalbue.html** Missing og:image
 - 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** Missing og:image
-- 🟡 **plager\albue-arm\tennisalbue.html** Title too long (77 chars)
 - 🔵 **plager\albue-arm\tennisalbue.html** Missing og:image
 - 🔵 **plager\albue-arm\de-quervains.html** Missing og:image
 - 🔵 **plager\korsrygg\si-ledd.html** Missing og:image
 - 🔵 **plager\korsrygg\graviditet.html** Missing og:image
 - 🔵 **plager\korsrygg\spinal-stenose.html** Missing og:image
 - 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** Missing og:image
-- 🟡 **tjeneste\graston.html** Title too long (92 chars)
-- 🟡 **tjeneste\svimmelhet.html** Title too long (106 chars)
-- 🟡 **tjeneste\fasciemanipulasjon.html** Title too long (84 chars)
 - 🔵 **tjeneste\akutt-behandling.html** Missing og:image
 - 🔵 **tjeneste\rehabilitering.html** Missing og:image
-- 🟡 **tjeneste\dry-needling.html** Title too long (83 chars)
 - 🔵 **tjeneste\forebyggende-behandling.html** Missing og:image
-- 🟡 **tjeneste\trykkbolge.html** Title too long (75 chars)
-- 🟡 **en\conditions\knee-pain.html** Description too short (63 chars)
-- 🟡 **en\conditions\neck-pain.html** Description too short (31 chars)
 - 🔵 **en\conditions\hip\athletic-pubalgia.html** Missing og:image
 - 🔵 **en\conditions\hip\back-hip-sciatica.html** Missing og:image
 - 🔵 **en\conditions\hip\bursitis-myth.html** Missing og:image
@@ -4046,7 +3925,6 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **en\conditions\neck\whiplash.html** Missing og:image
 - 🔵 **en\conditions\jaw\bite-myths.html** Missing og:image
 - 🔵 **en\conditions\jaw\bruxism.html** Missing og:image
-- 🟡 **en\conditions\jaw\clicking-locking-joint-problems.html** Description too short (64 chars)
 - 🔵 **en\conditions\jaw\clicking-locking-joint-problems.html** Missing og:image
 - 🔵 **en\conditions\jaw\ear-pain-tinnitus.html** Missing og:image
 - 🔵 **en\conditions\jaw\icr-syndrome.html** Missing og:image
@@ -4055,9 +3933,7 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **en\conditions\jaw\tmd-exercises.html** Missing og:image
 - 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** Missing og:image
 - 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** Missing og:image
-- 🟡 **en\conditions\elbow-arm\de-quervains.html** Description too short (29 chars)
 - 🔵 **en\conditions\elbow-arm\de-quervains.html** Missing og:image
-- 🟡 **en\conditions\elbow-arm\golfers-elbow.html** Description too short (24 chars)
 - 🔵 **en\conditions\elbow-arm\golfers-elbow.html** Missing og:image
 - 🔵 **en\conditions\elbow-arm\mouse-arm.html** Missing og:image
 - 🔵 **en\conditions\elbow-arm\tennis-elbow.html** Missing og:image
@@ -4066,30 +3942,21 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **en\conditions\elbow-arm\trigger-points-arm.html** Missing og:image
 - 🔵 **en\conditions\knee\acl-injury.html** Missing og:image
 - 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** Missing og:image
-- 🟡 **en\conditions\knee\jumpers-knee.html** Description too short (6 chars)
 - 🔵 **en\conditions\knee\jumpers-knee.html** Missing og:image
 - 🔵 **en\conditions\knee\knee-osteoarthritis.html** Missing og:image
-- 🟡 **en\conditions\knee\knee-pain-from-hip.html** Description too short (30 chars)
 - 🔵 **en\conditions\knee\knee-pain-from-hip.html** Missing og:image
-- 🟡 **en\conditions\knee\meniscus-injury.html** Description too short (45 chars)
 - 🔵 **en\conditions\knee\meniscus-injury.html** Missing og:image
 - 🔵 **en\conditions\knee\pcl-injury.html** Missing og:image
 - 🔵 **en\conditions\knee\pes-anserine-bursitis.html** Missing og:image
 - 🔵 **en\conditions\knee\popliteus-syndrome.html** Missing og:image
 - 🔵 **en\conditions\knee\prepatellar-bursitis.html** Missing og:image
-- 🟡 **en\conditions\knee\runners-knee.html** Description too short (6 chars)
 - 🔵 **en\conditions\knee\shin-splints.html** Missing og:image
 - 🔵 **en\conditions\foot\ankle-instability.html** Missing og:image
 - 🔵 **en\conditions\foot\metatarsalgia.html** Missing og:image
-- 🟡 **en\conditions\foot\mortons-neuroma.html** Description too short (29 chars)
-- 🟡 **en\conditions\foot\severs-disease.html** Description too short (44 chars)
-- 🟡 **en\conditions\foot\weak-feet.html** Title too long (76 chars)
 - 🔵 **en\conditions\headache\cervicogenic-headache.html** Missing og:image
 - 🔵 **en\conditions\headache\cluster-headache.html** Missing og:image
 - 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** Missing og:image
-- 🟡 **en\conditions\thoracic\costochondritis.html** Description too short (15 chars)
 - 🔵 **en\conditions\thoracic\osteoporosis.html** Missing og:image
-- 🟡 **en\conditions\thoracic\scheuermanns-disease.html** Description too short (11 chars)
 - 🔵 **en\conditions\thoracic\scheuermanns-disease.html** Missing og:image
 - 🔵 **en\conditions\dizziness\bppv\anterior-canal.html** Missing og:image
 - 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** Missing og:image
@@ -4097,7 +3964,6 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **en\conditions\dizziness\bppv-crystal-disease.html** Missing og:image
 - 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** Missing og:image
 - 🔵 **en\conditions\dizziness\mdds.html** Missing og:image
-- 🟡 **en\conditions\dizziness\menieres-disease.html** Description too short (7 chars)
 - 🔵 **en\conditions\dizziness\menieres-disease.html** Missing og:image
 - 🔵 **en\conditions\dizziness\post-concussion.html** Missing og:image
 - 🔵 **en\conditions\dizziness\pots-syndrome.html** Missing og:image
@@ -4108,10 +3974,8 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **en\conditions\dizziness\vestibular-neuritis.html** Missing og:image
 - 🔵 **en\conditions\dizziness\whiplash-dizziness.html** Missing og:image
 - 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** Missing og:image
-- 🟡 **en\conditions\shoulder\throwers-shoulder.html** Description too short (7 chars)
 - 🔵 **en\conditions\lower-back\red-flags-back-pain.html** Missing og:image
 - 🔵 **en\conditions\lower-back\si-joint.html** Missing og:image
-- 🟡 **en\conditions\lower-back\spinal-stenosis.html** Description too short (59 chars)
 - 🔵 **en\conditions\lower-back\spinal-stenosis.html** Missing og:image
 - 🔵 **en\conditions\lower-back\pregnancy-back-pain.html** Missing og:image
 - 🔵 **en\services\acute-treatment.html** Missing og:image
@@ -4146,7 +4010,6 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **en\blog\dizziness-myths.html** Missing og:image
 - 🔵 **en\blog\dizziness-not-bppv.html** Missing og:image
 - 🔵 **en\blog\dizziness-stress-anxiety.html** Missing og:image
-- 🟡 **en\blog\dizziness-treatment.html** Description too short (51 chars)
 - 🔵 **en\blog\dizzy-and-nauseous.html** Missing og:image
 - 🔵 **en\blog\dizzy-in-bed.html** Missing og:image
 - 🔵 **en\blog\dizzy-when-standing-up.html** Missing og:image
@@ -4157,9 +4020,7 @@ Critical: 0 | Warnings: 47 | Info: 249
 - 🔵 **en\blog\living-with-dizziness.html** Missing og:image
 - 🔵 **en\blog\mri-imaging-back-pain.html** Missing og:image
 - 🔵 **en\blog\muscle-pain-vs-nerve-pain.html** Missing og:image
-- 🟡 **en\blog\acute-back-pain-self-help.html** Description too short (25 chars)
 - 🔵 **en\blog\acute-back-pain-self-help.html** Missing og:image
-- 🟡 **en\404.html** Description too short (18 chars)
 - 🔵 **en\404.html** Missing og:image
 - 🔵 **en\emergency-dizziness.html** Missing og:image
 - 🔵 **en\emergency-treatment.html** Missing og:image
@@ -4168,7 +4029,7 @@ Critical: 0 | Warnings: 47 | Info: 249
 
 ### Performance
 
-Critical: 0 | Warnings: 15 | Info: 3296
+Critical: 0 | Warnings: 2 | Info: 3309
 
 - 🔵 **priser.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **priser.html** CSS missing version hash: font-awesome-minimal.css
@@ -4222,13 +4083,13 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **faq.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **faq.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **faq.html** CSS missing version hash: font-awesome-minimal.css
-- 🟡 **blogg\index.html** Inline CSS 3699 chars (>2000)
 - 🟡 **blogg\index.html** 9 external scripts (>8)
 - 🔵 **blogg\index.html** Image missing loading attribute: instagramlogo.png
 - 🔵 **blogg\index.html** Image missing decoding="async": instagramlogo.png
 - 🔵 **blogg\index.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **blogg\index.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **blogg\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\index.html** CSS missing version hash: inline-index-9d26cabd.css
 - 🔵 **blogg\nakkesmerter-gravid.html** Image missing loading attribute: logo-header.webp
 - 🔵 **blogg\nakkesmerter-gravid.html** Image missing loading attribute: meg.webp
 - 🔵 **blogg\nakkesmerter-gravid.html** Image missing decoding="async": meg.webp
@@ -4656,8 +4517,8 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **plager\kjevesmerte.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\kjevesmerte.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\kjevesmerte.html** CSS missing version hash: hub-article.css
-- 🟡 **plager\idrettsskader.html** Inline CSS 3235 chars (>2000)
 - 🔵 **plager\idrettsskader.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\idrettsskader.html** CSS missing version hash: inline-idrettsskader-4ec1c172.css
 - 🔵 **plager\idrettsskader.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\idrettsskader.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\idrettsskader.html** CSS missing version hash: font-awesome-minimal.css
@@ -5036,18 +4897,18 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **plager\skulder\ac-ledd-artrose.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\skulder\ac-ledd-artrose.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\skulder\ac-ledd-artrose.html** CSS missing version hash: hub-article.css
-- 🟡 **plager\skulder\kortison-skulder.html** Inline CSS 6677 chars (>2000)
 - 🔵 **plager\skulder\kortison-skulder.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\skulder\kortison-skulder.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\skulder\kortison-skulder.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\skulder\kortison-skulder.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\skulder\kortison-skulder.html** CSS missing version hash: font-awesome-minimal.css
-- 🟡 **plager\skulder\slap-lesjon.html** Inline CSS 6117 chars (>2000)
+- 🔵 **plager\skulder\kortison-skulder.html** CSS missing version hash: inline-kortison-skulder-a2ba4fce.css
 - 🔵 **plager\skulder\slap-lesjon.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\skulder\slap-lesjon.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\skulder\slap-lesjon.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\skulder\slap-lesjon.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\skulder\slap-lesjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\slap-lesjon.html** CSS missing version hash: inline-slap-lesjon-ad25100a.css
 - 🔵 **plager\skulder\ergonomi-skulder.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\skulder\ergonomi-skulder.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\skulder\ergonomi-skulder.html** CSS missing version hash: font-awesome-minimal.css
@@ -5059,12 +4920,12 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **plager\skulder\klikking-skulder.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\skulder\klikking-skulder.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\skulder\klikking-skulder.html** CSS missing version hash: font-awesome-minimal.css
-- 🟡 **plager\skulder\biceps-tendinopati.html** Inline CSS 5741 chars (>2000)
 - 🔵 **plager\skulder\biceps-tendinopati.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\skulder\biceps-tendinopati.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\skulder\biceps-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\skulder\biceps-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\skulder\biceps-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\biceps-tendinopati.html** CSS missing version hash: inline-biceps-tendinopati-f17ea19b.css
 - 🔵 **plager\skulder\tos-sovende-arm.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\skulder\tos-sovende-arm.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\skulder\tos-sovende-arm.html** CSS missing version hash: font-awesome-minimal.css
@@ -5278,12 +5139,12 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** CSS missing version hash: hub-article.css
-- 🟡 **plager\nakke\tekstnakke.html** Inline CSS 4677 chars (>2000)
 - 🔵 **plager\nakke\tekstnakke.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\nakke\tekstnakke.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\nakke\tekstnakke.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\nakke\tekstnakke.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\nakke\tekstnakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\tekstnakke.html** CSS missing version hash: inline-tekstnakke-fe3d1306.css
 - 🔵 **plager\nakke\nakkesleng-hodepine.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\nakke\nakkesleng-hodepine.html** Image missing loading attribute: meg.webp
 - 🔵 **plager\nakke\nakkesleng-hodepine.html** Image missing decoding="async": meg.webp
@@ -5390,12 +5251,12 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **plager\kjeve\kjevehodepine.html** Image missing decoding="async": meg.webp
 - 🔵 **plager\kjeve\kjevehodepine.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\kjeve\kjevehodepine.html** CSS missing version hash: hub-article.css
-- 🟡 **plager\kne\loperkne.html** Inline CSS 6295 chars (>2000)
 - 🔵 **plager\kne\loperkne.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\kne\loperkne.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\kne\loperkne.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\kne\loperkne.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\kne\loperkne.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\loperkne.html** CSS missing version hash: inline-loperkne-5b875dd7.css
 - 🔵 **plager\kne\kneartrose.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\kne\kneartrose.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\kne\kneartrose.html** CSS missing version hash: font-awesome-minimal.css
@@ -5440,12 +5301,12 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **plager\kne\iliotibial-band-syndrom.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\kne\iliotibial-band-syndrom.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\kne\iliotibial-band-syndrom.html** CSS missing version hash: hub-article.css
-- 🟡 **plager\kne\knesmerte-fra-hoften.html** Inline CSS 5880 chars (>2000)
 - 🔵 **plager\kne\knesmerte-fra-hoften.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\kne\knesmerte-fra-hoften.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\kne\knesmerte-fra-hoften.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\kne\knesmerte-fra-hoften.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\kne\knesmerte-fra-hoften.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\knesmerte-fra-hoften.html** CSS missing version hash: inline-knesmerte-fra-hoften-b26db581.css
 - 🔵 **plager\kne\pcl-skade.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\kne\pcl-skade.html** Image missing decoding="async": meg.webp
 - 🔵 **plager\kne\pcl-skade.html** CSS missing version hash: hub-article.css
@@ -5794,6 +5655,12 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **plager\korsrygg\isjias.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\korsrygg\isjias.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\korsrygg\isjias.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\korsrygg\spondylolistese.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\korsrygg\spondylolistese.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\korsrygg\spondylolistese.html** CSS missing version hash: font-awesome-minimal.css
@@ -5840,12 +5707,6 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **plager\korsrygg\hekseskudd.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\korsrygg\hekseskudd.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\korsrygg\hekseskudd.html** CSS missing version hash: hub-article.css
-- 🔵 **plager\korsrygg\nociplastisk-smerte.html** Image missing loading attribute: logo-header.webp
-- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: hub-article.css
-- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: font-awesome-minimal.css
-- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: font-awesome-minimal.css
-- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: font-awesome-minimal.css
-- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: hub-article.css
 - 🔵 **plager\ryggsmerter.html** Image missing loading attribute: logo-header.webp
 - 🔵 **plager\ryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **plager\ryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
@@ -6477,7 +6338,6 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **en\conditions\knee\prepatellar-bursitis.html** CSS missing version hash: hub-article.css
 - 🔵 **en\conditions\knee\prepatellar-bursitis.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\knee\prepatellar-bursitis.html** CSS missing version hash: hub-article.css
-- 🟡 **en\conditions\knee\runners-knee.html** Inline CSS 7538 chars (>2000)
 - 🔵 **en\conditions\knee\runners-knee.html** Image missing decoding="async": knee smerte.webp
 - 🔵 **en\conditions\knee\runners-knee.html** Image missing decoding="async": meg.webp
 - 🔵 **en\conditions\knee\runners-knee.html** CSS missing version hash: index-2026-fixes.css
@@ -6485,6 +6345,7 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **en\conditions\knee\runners-knee.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\knee\runners-knee.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\knee\runners-knee.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\runners-knee.html** CSS missing version hash: inline-runners-knee-54f84fb1.css
 - 🔵 **en\conditions\knee\shin-splints.html** No CSS preload found
 - 🔵 **en\conditions\knee\shin-splints.html** Image missing decoding="async": knee smerte.webp
 - 🔵 **en\conditions\knee\shin-splints.html** Image missing decoding="async": facebook_media_social_icon.png
@@ -6560,13 +6421,13 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **en\conditions\foot\mortons-neuroma.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\foot\mortons-neuroma.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\foot\mortons-neuroma.html** CSS missing version hash: inline-page-specific-bab6ec07.css
-- 🟡 **en\conditions\foot\orthotic-weaning.html** Inline CSS 2606 chars (>2000)
 - 🔵 **en\conditions\foot\orthotic-weaning.html** Image missing decoding="async": meg.webp
 - 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: index-2026-fixes.css
 - 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: hub-article.css
 - 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: inline-orthotic-weaning-93775ac3.css
 - 🔵 **en\conditions\foot\orthotics.html** Image missing decoding="async": meg.webp
 - 🔵 **en\conditions\foot\orthotics.html** CSS missing version hash: index-2026-fixes.css
 - 🔵 **en\conditions\foot\orthotics.html** CSS missing version hash: hub-article.css
@@ -7013,13 +6874,13 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **en\conditions\shoulder\ac-joint-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\shoulder\ac-joint-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\shoulder\ac-joint-osteoarthritis.html** CSS missing version hash: hub-article.css
-- 🟡 **en\conditions\shoulder\biceps-tendinopathy.html** Inline CSS 6784 chars (>2000)
 - 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** Image missing decoding="async": skulder smerter.webp
 - 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: index-2026-fixes.css
 - 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: hub-article.css
 - 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: inline-biceps-tendinopathy-dc250812.css
 - 🔵 **en\conditions\shoulder\calcific-tendinitis.html** Image missing decoding="async": skulder smerter.webp
 - 🔵 **en\conditions\shoulder\calcific-tendinitis.html** CSS missing version hash: index-2026-fixes.css
 - 🔵 **en\conditions\shoulder\calcific-tendinitis.html** CSS missing version hash: hub-article.css
@@ -7033,13 +6894,13 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **en\conditions\shoulder\clicking-shoulder.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\shoulder\clicking-shoulder.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\shoulder\clicking-shoulder.html** CSS missing version hash: font-awesome-minimal.css
-- 🟡 **en\conditions\shoulder\cortisone-shoulder.html** Inline CSS 8016 chars (>2000)
 - 🔵 **en\conditions\shoulder\cortisone-shoulder.html** Image missing decoding="async": skulder smerter.webp
 - 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: index-2026-fixes.css
 - 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: hub-article.css
 - 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: inline-cortisone-shoulder-604d57ad.css
 - 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** Image missing decoding="async": skulder smerter.webp
 - 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** CSS missing version hash: index-2026-fixes.css
 - 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** CSS missing version hash: hub-article.css
@@ -7253,11 +7114,11 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **en\blog\hypermobility-eds-jaw.html** Image missing decoding="async": Final Transparent Logo.webp
 - 🔵 **en\blog\hypermobility-eds-jaw.html** Image missing decoding="async": meg.webp
 - 🔵 **en\blog\hypermobility-eds-jaw.html** CSS missing version hash: hub-article.css
-- 🟡 **en\blog\index.html** Inline CSS 4280 chars (>2000)
 - 🟡 **en\blog\index.html** 9 external scripts (>8)
 - 🔵 **en\blog\index.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\blog\index.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\blog\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\index.html** CSS missing version hash: inline-index-2f977c92.css
 - 🔵 **en\blog\jaw-exercises-home.html** Image missing decoding="async": Final Transparent Logo.webp
 - 🔵 **en\blog\jaw-exercises-home.html** CSS missing version hash: index-2026-fixes.css
 - 🔵 **en\blog\jaw-exercises-home.html** CSS missing version hash: hub-article.css
@@ -7481,47 +7342,6 @@ Critical: 0 | Warnings: 15 | Info: 3296
 - 🔵 **en\services.html** CSS missing version hash: font-awesome-minimal.css
 - 🔵 **en\services.html** CSS missing version hash: improvements-2026.css
 - 🔵 **en\services.html** CSS missing version hash: improvements-2026.css
-
-### Schema Markup
-
-Critical: 0 | Warnings: 36 | Info: 0
-
-- 🟡 **priser.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\nakkesmerter-gravid.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\piriformissyndrom-falsk-isjias.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\l4-l5-prolaps.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\diskogen-smerte.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\ovelser-isjias.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\subtil-krystallsyke.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\l5-s1-prolaps.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\svimmelhet-myter.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\svimmel-i-senga.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\mr-bildediagnostikk-ryggsmerte.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\muskelsmerte-vs-nervesmerte.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\stressnakke-triggerpunkter.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\akutt-ryggsmerte-selvhjelp.html** FAQ section found but no FAQPage schema
-- 🟡 **blogg\isjias-prolaps-hekseskudd-forskjell.html** FAQ section found but no FAQPage schema
-- 🟡 **en\conditions\neck\cervical-foraminal-stenosis.html** FAQ section found but no FAQPage schema
-- 🟡 **en\conditions\neck\finger-numbness.html** FAQ section found but no FAQPage schema
-- 🟡 **en\conditions\neck\stress-neck.html** FAQ section found but no FAQPage schema
-- 🟡 **en\conditions\neck\text-neck.html** FAQ section found but no FAQPage schema
-- 🟡 **en\conditions\neck\whiplash-headache.html** FAQ section found but no FAQPage schema
-- 🟡 **en\conditions\neck\whiplash.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\neck-pain-pregnancy.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\stress-neck-trigger-points.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\sciatica-prolapse-lumbago-difference.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\subtle-bppv.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\discogenic-pain.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\dizziness-myths.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\dizzy-and-nauseous.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\dizzy-in-bed.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\exercises-sciatica.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\l4-l5-disc-herniation.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\l5-s1-disc-herniation.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\mri-imaging-back-pain.html** FAQ section found but no FAQPage schema
-- 🟡 **en\blog\muscle-pain-vs-nerve-pain.html** FAQ section found but no FAQPage schema
-- 🟡 **en\emergency.html** FAQ section found but no FAQPage schema
-- 🟡 **en\new-patients.html** FAQ section found but no FAQPage schema
 
 ### Structural Consistency
 

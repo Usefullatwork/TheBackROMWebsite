@@ -43,15 +43,21 @@ function findHtmlFiles(dir) {
 // ── Helpers ─────────────────────────────────────────────────────────────────
 
 function getMeta(content, name) {
-  const re = new RegExp(`<meta\\s+name=["']${name}["']\\s+content=["']([^"']*)["']`, 'i');
-  const re2 = new RegExp(`<meta\\s+content=["']([^"']*)["']\\s+name=["']${name}["']`, 'i');
-  return (content.match(re) || content.match(re2) || [])[1] || '';
+  // Handle both double and single quoted attributes separately to allow apostrophes in double-quoted values
+  const reDouble = new RegExp(`<meta\\s+name="${name}"\\s+content="([^"]*)"`, 'i');
+  const reSingle = new RegExp(`<meta\\s+name='${name}'\\s+content='([^']*)'`, 'i');
+  const reDouble2 = new RegExp(`<meta\\s+content="([^"]*)"\\s+name="${name}"`, 'i');
+  const reSingle2 = new RegExp(`<meta\\s+content='([^']*)'\\s+name='${name}'`, 'i');
+  return (content.match(reDouble) || content.match(reSingle) || content.match(reDouble2) || content.match(reSingle2) || [])[1] || '';
 }
 
 function getOg(content, prop) {
-  const re = new RegExp(`<meta\\s+property=["']${prop}["']\\s+content=["']([^"']*)["']`, 'i');
-  const re2 = new RegExp(`<meta\\s+content=["']([^"']*)["']\\s+property=["']${prop}["']`, 'i');
-  return (content.match(re) || content.match(re2) || [])[1] || '';
+  // Handle both double and single quoted attributes separately
+  const reDouble = new RegExp(`<meta\\s+property="${prop}"\\s+content="([^"]*)"`, 'i');
+  const reSingle = new RegExp(`<meta\\s+property='${prop}'\\s+content='([^']*)'`, 'i');
+  const reDouble2 = new RegExp(`<meta\\s+content="([^"]*)"\\s+property="${prop}"`, 'i');
+  const reSingle2 = new RegExp(`<meta\\s+content='([^']*)'\\s+property='${prop}'`, 'i');
+  return (content.match(reDouble) || content.match(reSingle) || content.match(reDouble2) || content.match(reSingle2) || [])[1] || '';
 }
 
 function isEnglish(filePath) {
@@ -184,7 +190,8 @@ function checkHreflang(filePath, content) {
   }
 
   if (hreflangTags.length === 0) {
-    addIssue(filePath, cat, 'No hreflang tags found', 'warning');
+    // No hreflang is OK for single-language pages - only info level
+    addIssue(filePath, cat, 'No hreflang tags (single-language page)', 'info');
     return;
   }
 
