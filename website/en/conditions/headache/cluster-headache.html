@@ -136,33 +136,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -170,7 +144,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -280,7 +254,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Gender Distribution</h4>
+                <h3>Gender Distribution</h3>
                 <p>A Norwegian registry study from 2024 showed a female:male ratio of 1.2:1. This differs from older studies showing 4:1 male predominance. The difference is likely because women were previously misdiagnosed with migraine.</p>
               </div>
             </section>
@@ -307,7 +281,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>The Most Important Sign: Restlessness and Agitation</h4>
+                <h3>The Most Important Sign: Restlessness and Agitation</h3>
                 <p>Here cluster headache differs dramatically from <a href="migraine.html">migraine</a>. While migraine patients seek darkness and rest, cluster headache patients become <strong>extremely restless</strong> during attacks.</p>
                 <p>They pace restlessly, rock back and forth, hold their eye, or bang their head against the wall. This agitation is seen in up to 90% of patients.</p>
               </div>
@@ -329,7 +303,7 @@
               <p><strong>Chronic cluster headache (10-20% of cases):</strong> Attacks persist for over one year without sufficient breaks, or with remissions under 3 months.</p>
 
               <div class="info-box">
-                <h4>Progression Between Forms</h4>
+                <h3>Progression Between Forms</h3>
                 <p>About 4-13% of episodic patients develop chronic form over time. Fortunately, 25-33% of chronic patients go the other way - back to episodic form.</p>
               </div>
             </section>
@@ -346,7 +320,7 @@
               <p>During an attack, the trigeminovascular system is activated, and large amounts of <strong>CGRP</strong> (calcitonin gene-related peptide) - a pain signaling substance - are released.</p>
 
               <div class="red-flag-alert">
-                <h4>Why Don't Regular Painkillers Work?</h4>
+                <h3>Why Don't Regular Painkillers Work?</h3>
                 <p>Attacks reach maximum intensity in 5-10 minutes and last only 15-180 minutes. Paracetamol and ibuprofen need 30-60 minutes to work. By the time they could have effect, the attack is often over by itself.</p>
                 <p><strong>Even morphine has no effect.</strong> Therefore, specific, fast-acting treatments are required.</p>
               </div>
@@ -371,7 +345,7 @@
               <p>On average, it takes <strong>5-7 years</strong> from first attack to correct diagnosis. A full 77% receive the wrong diagnosis first.</p>
 
               <div class="info-box">
-                <h4>Common Misdiagnoses</h4>
+                <h3>Common Misdiagnoses</h3>
                 <ul>
                   <li>Trigeminal neuralgia - 22% - see <a href="occipital-neuralgia.html">occipital neuralgia</a> for similar neuralgia</li>
                   <li><a href="migraine.html">Migraine</a> - 19%</li>
@@ -391,7 +365,7 @@
               <h3>Acute Treatment - Break the Attack</h3>
 
               <div class="treatment-box">
-                <h4>1. High-Flow Oxygen (The Gold Standard)</h4>
+                <h3>1. High-Flow Oxygen (The Gold Standard)</h3>
                 <p>100% pure oxygen at least 12-15 liters/minute through a non-rebreathing mask for 15-20 minutes.</p>
                 <ul>
                   <li>78% became pain-free after 15 minutes (vs 20% with placebo)</li>
@@ -401,7 +375,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>2. Subcutaneous Sumatriptan (Imigran)</h4>
+                <h3>2. Subcutaneous Sumatriptan (Imigran)</h3>
                 <p>An injection (6 mg) in the thigh gives the fastest medicinal relief.</p>
                 <ul>
                   <li>75% achieved no or mild pain</li>

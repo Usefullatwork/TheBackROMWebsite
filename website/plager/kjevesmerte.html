@@ -153,39 +153,7 @@
   <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-toc-card a { display: block; padding: 10px 14px; color: #475569; text-decoration: none; border-radius: 8px; font-size: 14px; transition: all 0.2s ease; border-left: 3px solid transparent; }
-    .hub-toc-card a:hover { background: #e2e8f0; color: var(--hub-primary); }
-    .hub-toc-card a.active { background: #e0f2fe; color: var(--hub-primary); border-left-color: var(--hub-primary); font-weight: 500; }
-    .section-quick-link { margin: 0 0 16px; }
-    .section-quick-link a { color: var(--hub-primary); font-weight: 600; font-size: 0.95rem; text-decoration: none; }
-    .section-quick-link a:hover { text-decoration: underline; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -193,7 +161,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -250,7 +218,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>34%</strong> opplever symptomer i livet, 5-12% trenger behandling</li>
                 <li><strong>Kvinner</strong> rammes dobbelt så ofte som menn</li>
@@ -317,7 +285,7 @@
 
             <!-- Red Flag Alert Box -->
             <div class="red-flag-alert">
-              <h4>Når må du ringe 113?</h4>
+              <h3>Når må du ringe 113?</h3>
               <p>Ved brystsmerter som stråler til kjeven, plutselig ansiktssvakhet, eller pustevansker sammen med kjevesmerte – ring 113 umiddelbart.</p>
               <a href="#rodeflagg">Les mer om røde flagg →</a>
             </div>
@@ -398,18 +366,18 @@
             </div>
 
             <div class="condition-card">
-              <h4>1. Muskelrelaterte plager (myofasciale smerter) – 45% av tilfellene</h4>
+              <h3>1. Muskelrelaterte plager (myofasciale smerter) – 45% av tilfellene</h3>
               <p>Utgjør klart vanligst (ScienceDirect 2021). Tyggemuskulaturen blir stram, overbelastet eller utvikler ømme punkter som kan sende smerte til tinning, øye eller nakke.</p>
             </div>
 
             <div class="condition-card">
-              <h4>2. Leddrelaterte plager</h4>
+              <h3>2. Leddrelaterte plager</h3>
               <p class="section-quick-link"><a href="kjeve/klikking-lasing-leddproblemer.html">Gå til full artikkel om klikking og låsning →</a></p>
               <p>Rammer selve kjeveleddet. Klikkelyder, låsning eller følelse av at kjeven «setter seg fast». Kan skyldes forskyvning av leddskiven eller slitasje.</p>
             </div>
 
             <div class="condition-card">
-              <h4>3. Kombinerte plager</h4>
+              <h3>3. Kombinerte plager</h3>
               <p>Mange har elementer av begge. Muskelspenning kan gi leddproblemer over tid, og omvendt.</p>
             </div>
           </section>
@@ -435,25 +403,25 @@
             <h3>Hva forÅrsaker det?</h3>
 
             <div class="condition-card">
-              <h4>Stress og muskelspenning</h4>
+              <h3>Stress og muskelspenning</h3>
               <p class="section-quick-link"><a href="kjeve/stress-og-kjevesmerter.html">Gå til full artikkel om stress og kjevesmerter →</a></p>
               <p>Vanligste faktor. Under stress klemmer mange tennene ubevisst – dag og natt.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Dårlig holdning</h4>
+              <h3>Dårlig holdning</h3>
               <p class="section-quick-link"><a href="kjeve/tekstnakke-kjeve.html">Gå til full artikkel om tekstnakke og kjeve →</a></p>
               <p>Fremoverlent hode ved skjermarbeid trekker kjeven bakover og komprimerer leddet. <strong>76% av TMD-pasienter har fremskutt hodeposisjon</strong> (PMC 2021).</p>
             </div>
 
             <div class="condition-card">
-              <h4>Tanngnissing (bruksisme)</h4>
+              <h3>Tanngnissing (bruksisme)</h3>
               <p class="section-quick-link"><a href="kjeve/tanngnissing-bruksisme.html">Gå til full artikkel om tanngnissing →</a></p>
               <p>8-10% har nattlig bruksisme (Zieliński 2024). Men sammenhengen med TMD-smerte er mer komplisert enn man trodde.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Nakkeplager</h4>
+              <h3>Nakkeplager</h3>
               <p class="section-quick-link"><a href="kjeve/nakke-kjeve-sammenheng.html">Gå til full artikkel om nakke-kjeve-sammenheng →</a></p>
               <p>Nerveforbindelser mellom kjeve og øvre nakke (trigeminocervikale kjerne) gjør at problemer ett sted kan gi symptomer det andre.</p>
             </div>
@@ -484,7 +452,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Behandlingstilnærming</h4>
+              <h3>Behandlingstilnærming</h3>
               <ul>
                 <li><strong>Undersøkelse:</strong> Kartlegging av kjeve, nakke, holdning og bevegelighet</li>
                 <li><strong>Muskelbehandling:</strong> Løsning av stram tyggemuskulatur og triggerpunkter</li>
@@ -539,22 +507,22 @@
             <h3>Hva du kan gjøre selv</h3>
 
             <div class="condition-card">
-              <h4>Hvilestilling for kjeven</h4>
+              <h3>Hvilestilling for kjeven</h3>
               <p>Tungespissen mot ganen, tennene 2-3 mm fra hverandre, leppene lukket. Reduserer ubevisst klemming.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Varme eller kulde</h4>
+              <h3>Varme eller kulde</h3>
               <p>Varm klut for stramme muskler. Is ved akutt smerte.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Myk kost</h4>
+              <h3>Myk kost</h3>
               <p>Kutt maten i mindre biter. Unngå tyggegummi nær det er vondt.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Tre enkle øvelser</h4>
+              <h3>Tre enkle øvelser</h3>
               <p class="section-quick-link"><a href="kjeve/øvelser-tmd.html">Gå til full artikkel om øvelser for kjeven →</a></p>
               <ul>
                 <li><strong>Kontrollert åpning:</strong> Åpne munnen sakte. Hold 2 sekunder. Lukk sakte. 10 ganger.</li>
@@ -573,32 +541,32 @@
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Er kjeveleddsproblemer alvorlig?</h4>
+              <h3 class="faq-question">Er kjeveleddsproblemer alvorlig?</h3>
               <p class="faq-answer">Vanligvis ikke. TMD er en godartet tilstand. Ca. 40% opplever spontan bedring uten behandling (AAFP 2015). Men langvarige plager bør undersøkes – tidlig behandling gir raskere bedring.</p>
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Kommer plagene tilbake?</h4>
+              <h3 class="faq-question">Kommer plagene tilbake?</h3>
               <p class="faq-answer">Det varierer. Håndterer du stress, forbedrer ergonomi og gjør øvelser regelmessig, er tilbakefall mindre sannsynlig. Endrer du ingenting, kommer plagene ofte igjen.</p>
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Trenger jeg bittskinne?</h4>
+              <h3 class="faq-question">Trenger jeg bittskinne?</h3>
               <p class="faq-answer">Kanskje. Skinnen beskytter tennene, men evidensen for smertelindring er begrenset. Den erstatter ikke aktiv behandling.</p>
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Hjelper nakkebehandling på kjeven?</h4>
+              <h3 class="faq-question">Hjelper nakkebehandling på kjeven?</h3>
               <p class="faq-answer">Ja, ofte. 70% av TMD-pasienter har samtidige nakkeplager. Nerveforbindelser gjør at behandling av øvre nakke kan redusere kjevesymptomer.</p>
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Må jeg opereres?</h4>
+              <h3 class="faq-question">Må jeg opereres?</h3>
               <p class="faq-answer">Svært sjelden. Under 5% trenger kirurgi – og da kun etter lengre konservativ behandling uten resultat.</p>
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Er klikkelyder farlig?</h4>
+              <h3 class="faq-question">Er klikkelyder farlig?</h3>
               <p class="faq-answer">Smertefrie klikkelyder er nesten alltid harmløse. Ca. 33% av befolkningen har dem. Følges de av smerte eller låsning, bør du få det sjekket.</p>
             </div>
           </section>

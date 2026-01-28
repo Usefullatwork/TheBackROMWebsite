@@ -165,346 +165,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    @media (max-width: 800px) {
-      .intro-tldr-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .intro-text p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #374151;
-    }
-
-    .hub-content {
-      padding: 32px;
-    }
-
-    @media (max-width: 600px) {
-      .hub-content {
-        padding: 20px;
-      }
-    }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .hub-section:first-of-type {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-    }
-
-    .section-title {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--hub-dark);
-      margin: 0;
-    }
-
-    @media (max-width: 600px) {
-      .section-title {
-        font-size: 18px;
-      }
-    }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 {
-      color: #dc2626;
-      margin: 0 0 12px;
-      font-size: 16px;
-    }
-
-    .red-flag-box ul {
-      color: #7f1d1d;
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .red-flag-box li {
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .treatment-box h4 {
-      color: #166534;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .treatment-box p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #166534;
-    }
-
-    .treatment-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-    }
-
-    .treatment-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-      color: #166534;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .info-box h4 {
-      color: #1e40af;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .info-box p {
-      font-size: 14px;
-      margin: 0;
-      color: #1e3a8a;
-    }
-
-    .info-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-      color: #1e3a8a;
-    }
-
-    .info-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .red-flag-alert{
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .red-flag-alert h4 {
-      color: #92400e;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .red-flag-alert p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #78350f;
-    }
-
-    .red-flag-alert ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-      color: #78350f;
-    }
-
-    .red-flag-alert li {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-
-    .faq-question {
-      padding: 14px 16px;
-      font-weight: 600;
-      background: #fafafa;
-      font-size: 14px;
-      color: var(--hub-dark);
-    }
-
-    .faq-answer {
-      padding: 14px 16px;
-      color: #6b7280;
-      border-top: 1px solid #e5e7eb;
-      font-size: 14px;
-    }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: #6b7280;
-      font-size: 15px;
-      margin-bottom: 12px;
-    }
-
-    .sources-section ul {
-      font-size: 12px;
-      color: #6b7280;
-      line-height: 1.6;
-      padding-left: 20px;
-    }
-
-    .sources-section li {
-      margin-bottom: 4px;
-    }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-    }
-
-    .hub-content h3 {
-      font-size: 17px;
-      color: var(--hub-dark);
-      margin: 22px 0 10px;
-    }
-
-    .hub-content p {
-      margin-bottom: 14px;
-      font-size: 15px;
-    }
-
-    .hub-content ul,
-    .hub-content ol {
-      margin: 14px 0;
-      padding-left: 24px;
-    }
-
-    .hub-content li {
-      margin-bottom: 6px;
-      font-size: 15px;
-    }
-
-    .hub-content strong {
-      color: var(--hub-dark);
-    }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-
-    @media (max-width: 900px) {
-      .mobile-sticky-cta {
-        display: flex;
-      }
-
-      .hub-main {
-        margin-bottom: 80px;
-      }
-    }
-
-    .mobile-sticky-cta .btn {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .mobile-sticky-cta .btn-primary {
-      background: #F26522;
-      color: #fff;
-    }
-
-    .mobile-sticky-cta .btn-outline {
-      background: #fff;
-      border: 2px solid #F26522;
-      color: var(--hub-dark);
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -512,7 +173,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -574,7 +235,7 @@
               </div>
 
               <aside class="premium-summary-card">
-                <h3>Quick Summary</h3>
+                <h2>Quick Summary</h2>
                 <ul>
                   <li><strong>16-20%</strong> over 65 have X-ray findings</li>
                   <li>Less than <strong>1%</strong> need treatment</li>
@@ -613,7 +274,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Important perspective</h4>
+                <h3>Important perspective</h3>
                 <p>Shoulder osteoarthritis is much rarer than osteoarthritis in the hip and knee. The shoulder joint
                   bears less weight, and the surrounding muscles provide good support. Most people with degenerative
                   changes on imaging have no or few symptoms.</p>
@@ -630,7 +291,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Primary osteoarthritis</h4>
+                  <h3 class="condition-title">Primary osteoarthritis</h3>
                   <span class="condition-badge">Most common</span>
                 </div>
                 <p>Age-related wear without a known triggering cause. Develops gradually over time.</p>
@@ -638,7 +299,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Secondary osteoarthritis</h4>
+                  <h3 class="condition-title">Secondary osteoarthritis</h3>
                 </div>
                 <p>Result of another condition or injury:</p>
                 <ul>
@@ -680,7 +341,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>Movements that often provoke symptoms</h4>
+                <h3>Movements that often provoke symptoms</h3>
                 <ul>
                   <li>Putting on a jacket or sweater</li>
                   <li>Reaching behind the back (bra clasp, wallet)</li>
@@ -692,7 +353,7 @@
               <h3>Difference from frozen shoulder</h3>
 
               <div class="info-box">
-                <h4>Shoulder osteoarthritis vs. frozen shoulder</h4>
+                <h3>Shoulder osteoarthritis vs. frozen shoulder</h3>
                 <ul>
                   <li><strong>Shoulder osteoarthritis:</strong> Gradual stiffness over years, pain with loading,
                     crepitation</li>
@@ -721,7 +382,7 @@
               <h3>Imaging</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">X-ray</h4>
+                <h3 class="condition-title">X-ray</h3>
                 <p>First choice. Shows classic osteoarthritis signs:</p>
                 <ul>
                   <li>Narrowed joint space</li>
@@ -732,7 +393,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">MRI</h4>
+                <h3 class="condition-title">MRI</h3>
                 <p>Useful for assessing:</p>
                 <ul>
                   <li>The condition of the rotator cuff</li>
@@ -742,7 +403,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Imaging findings do not equal symptoms</h4>
+                <h3>Imaging findings do not equal symptoms</h3>
                 <p>Many have significant degenerative changes on imaging without symptoms. The degree of wear on X-ray
                   correlates poorly with pain level. Treatment is based on symptoms, not images.</p>
               </div>
@@ -778,7 +439,7 @@
               <h3>Conservative treatment</h3>
 
               <div class="treatment-box">
-                <h4>Strength training and mobility</h4>
+                <h3>Strength training and mobility</h3>
                 <p>The cornerstone of treatment:</p>
                 <ul>
                   <li><strong>Rotator cuff strengthening:</strong> Maintains muscle support around the joint</li>
@@ -789,7 +450,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>What can a chiropractor do?</h4>
+                <h3>What can a chiropractor do?</h3>
                 <ul>
                   <li><strong>Manual treatment:</strong> Mobilization of shoulder, neck and thoracic spine</li>
                   <li><strong>Soft tissue treatment:</strong> Work on tight muscles</li>
@@ -802,13 +463,13 @@
               <h3>Injection treatment</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Cortisone injection</h4>
+                <h3 class="condition-title">Cortisone injection</h3>
                 <p>Can provide short-term pain relief (weeks to months). Used during flare-ups or to enable starting
                   exercise. Read more about <a href="cortisone-shoulder.html">cortisone in the shoulder</a>.</p>
               </div>
 
               <div class="red-flag-alert">
-                <h4>Hyaluronic acid - NOT recommended</h4>
+                <h3>Hyaluronic acid - NOT recommended</h3>
                 <p>The American Academy of Orthopaedic Surgeons (AAOS) recommends <strong>against</strong> the use of
                   hyaluronic acid injections in the shoulder due to lack of evidence of effect.</p>
               </div>
@@ -818,7 +479,7 @@
                 function:</p>
 
               <div class="condition-card">
-                <h4 class="condition-title">Shoulder replacement (arthroplasty)</h4>
+                <h3 class="condition-title">Shoulder replacement (arthroplasty)</h3>
                 <p>May be relevant in severe osteoarthritis with significant functional impairment. Anatomical
                   prosthesis or reverse prosthesis depending on the condition of the rotator cuff.</p>
               </div>
@@ -831,7 +492,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>The positive:</h4>
+                <h3>The positive:</h3>
                 <ul>
                   <li>Most get good symptom relief with conservative treatment</li>
                   <li>Less than 1% need surgical treatment</li>
@@ -841,7 +502,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>The realistic:</h4>
+                <h3>The realistic:</h3>
                 <ul>
                   <li>The wear itself does not disappear</li>
                   <li>Symptoms can vary over time</li>
@@ -858,7 +519,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Daily tips</h4>
+                <h3>Daily tips</h3>
                 <ul>
                   <li>Keep your shoulder moving - avoid prolonged immobilization</li>
                   <li>Heat before activity can relieve stiffness</li>
@@ -868,7 +529,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Exercises</h4>
+                <h3>Exercises</h3>
                 <ul>
                   <li><strong>Pendulum exercises:</strong> Let the arm hang and swing gently</li>
                   <li><strong>Wall climbing:</strong> Gentle mobility up a wall</li>

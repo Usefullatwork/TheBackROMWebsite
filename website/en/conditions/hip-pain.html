@@ -91,52 +91,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    /* Diagnosis Guide Styles - Location Headers with Dark BG */
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .comparison-card { padding: 0; }
-    .diagnosis-table { width: 100%; border-collapse: collapse; }
-    .diagnosis-table th { background: #f3f4f6; padding: 12px 16px; text-align: left; font-size: 14px; color: var(--hub-dark); border-bottom: 2px solid #e5e7eb; }
-    .diagnosis-table td { padding: 16px; border-bottom: 1px solid #e5e7eb; vertical-align: top; font-size: 14px; }
-    .diagnosis-table tr:last-child td { border-bottom: none; }
-    .diagnosis-name { font-weight: 700; color: var(--hub-primary); display: block; margin-bottom: 4px; font-size: 16px; }
-    .diagnosis-likelihood { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
-    .diagnosis-likelihood.common { background: #dcfce7; color: #166534; }
-    .diagnosis-likelihood.uncommon { background: #f3f4f6; color: #4b5563; }
-    .diagnosis-likelihood.rare { background: #fee2e2; color: #991b1b; }
-    .diagnosis-link { display: inline-block; margin-top: 8px; color: var(--hub-primary); text-decoration: none; font-weight: 600; font-size: 13px; }
-    .diagnosis-link:hover { text-decoration: underline; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-    @media (max-width: 768px) {
-      .diagnosis-table, .diagnosis-table tbody, .diagnosis-table tr, .diagnosis-table td { display: block; width: 100%; }
-      .diagnosis-table thead { display: none; }
-      .diagnosis-table tr { margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; }
-      .diagnosis-table td { padding: 12px 16px; border: none; }
-      .diagnosis-table td::before { content: attr(data-label); font-weight: 700; display: block; margin-bottom: 4px; color: #6b7280; font-size: 12px; }
-    }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -144,7 +99,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img loading="lazy" src="../../images/logo-header.webp"
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -194,7 +149,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li>Hip pain affects <strong>10% of adults</strong> - most get better without surgery</li>
                 <li>Most common causes: Tendinopathy (GTPS), osteoarthritis, FAI - all treated well conservatively</li>
@@ -237,7 +192,7 @@
 
             <!-- Red Flag Alert Box -->
             <div class="red-flag-alert">
-              <h4>When must you seek help quickly?</h4>
+              <h3>When must you seek help quickly?</h3>
               <p>With fever together with hip or back pain, severe swelling/redness, loss of bladder control, or sudden weakness/numbness in the leg - seek help immediately.</p>
               <a href="#redflags">Read more about red flags</a>
             </div>
@@ -264,7 +219,7 @@
             </div>
 
             <div class="info-box">
-              <h4>What does "non-specific hip pain" mean?</h4>
+              <h3>What does "non-specific hip pain" mean?</h3>
               <p>For most people, the pain comes from muscles, tendons or joints - not from serious injury. Conservative treatment (exercise, manual therapy) is often as effective as surgery.</p>
             </div>
           </section>
@@ -527,7 +482,7 @@
             </div>
 
             <div class="info-box">
-              <h4>The MRI Trap</h4>
+              <h3>The MRI Trap</h3>
               <p>MRI shows everything - including things that are normal age-related changes. 69% of pain-free people have labral tears on MRI. A "tear" doesn't necessarily mean it's the source of your pain. <strong>I treat people, not images.</strong></p>
             </div>
           </section>
@@ -542,7 +497,7 @@
             <p>Research tells a clear story: <strong>for most hip and pelvic pain, exercise and manual treatment are as good or better than invasive measures.</strong></p>
 
             <div class="condition-card">
-              <h4>Treatment at the Chiropractor</h4>
+              <h3>Treatment at the Chiropractor</h3>
               <p>Treatment starts with a thorough examination to find out where your pain actually comes from - not just what an image shows. Then I create a plan tailored to you.</p>
               <ul>
                 <li><strong>Manual therapy:</strong> Joint mobilization, soft tissue work</li>
@@ -613,7 +568,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Contact a doctor or chiropractor within a few days if:</h4>
+              <h3>Contact a doctor or chiropractor within a few days if:</h3>
               <ul>
                 <li>Persistent night pain that wakes you repeatedly</li>
                 <li>Morning stiffness lasting over 60 minutes</li>
@@ -630,32 +585,32 @@
             </div>
 
             <div class="faq-item">
-              <h4>Is it dangerous if my hip "clicks" or "snaps"?</h4>
+              <h3>Is it dangerous if my hip "clicks" or "snaps"?</h3>
               <p>Usually not. "Snapping hip" is very common - affecting 5-10% of the population - and is rarely dangerous as long as it doesn't hurt. It only becomes concerning if accompanied by pain or locking.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Does stretching the hip help?</h4>
+              <h3>Does stretching the hip help?</h3>
               <p>Be careful. For GTPS or proximal hamstring tendinopathy, aggressive stretching can make pain worse. Focus instead on strength training and mobility within pain limits.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Does cortisone help?</h4>
+              <h3>Does cortisone help?</h3>
               <p>Short-term relief yes, but long-term effect is poor. Exercise gives better results after 1 year. <a href="#treatment">Read more about treatment</a>.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can I exercise with hip pain?</h4>
+              <h3>Can I exercise with hip pain?</h3>
               <p>Yes, and you should! Research shows that exercise is more effective than passive treatment for most hip pain. But train smart: avoid activities that cause severe pain.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Do I need an MRI or X-ray?</h4>
+              <h3>Do I need an MRI or X-ray?</h3>
               <p>Not always - and often not initially. A thorough clinical examination often provides enough information. Imaging is relevant if symptoms don't improve as expected.</p>
             </div>
 
             <div class="faq-item">
-              <h4>How long until I get better?</h4>
+              <h3>How long until I get better?</h3>
               <p>This varies greatly. Acute muscle problems: 2-4 weeks. GTPS: 6-9 months with proper treatment. Hip osteoarthritis: most notice effects from exercise within 8-12 weeks.</p>
             </div>
           </section>

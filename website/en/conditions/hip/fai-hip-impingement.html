@@ -135,71 +135,7 @@
         <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
     </noscript>
 
-    <style>
-        :root {
-            --hub-primary: #1a5f7a;
-            --hub-primary-dark: #0f4f68;
-            --hub-dark: #0d3d4d;
-            --hub-dark-light: #1a5f7a;
-            --hub-red: #dc2626;
-            --hub-green: #059669;
-            --hub-blue: #2563eb;
-            --hub-purple: #7c3aed;
-            --hub-orange: #ea580c;
-        }
-
-        /* Page specific overrides if needed */
-        .wrapper {
-            overflow: visible !important;
-        }
-
-        .page {
-            padding-top: 0 !important;
-        }
-
-        /* Type grid for FAI types */
-        .type-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
-        }
-
-        .type-card {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 20px;
-        }
-
-        .type-card h4 {
-            color: var(--hub-primary-dark);
-            font-size: 16px;
-            margin: 0 0 10px;
-        }
-
-        .type-card p {
-            font-size: 14px;
-            color: #6b7280;
-            margin: 0;
-        }
-    
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -207,7 +143,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+                <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
                         alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229"
                         decoding="async" /></a>
                 <div class="header__navigation">
@@ -357,7 +293,7 @@
                             </ul>
 
                             <div class="info-box">
-                                <h4>Important to Understand</h4>
+                                <h3>Important to Understand</h3>
                                 <p>FAI shape on X-ray does not automatically mean you need treatment. Many live
                                     perfectly fine with FAI morphology. It is symptoms and function that matter, not
                                     images.</p>
@@ -401,7 +337,7 @@
                             </ul>
 
                             <div class="red-flag-alert">
-                                <h4>When Should You Seek Help?</h4>
+                                <h3>When Should You Seek Help?</h3>
                                 <ul>
                                     <li>Persistent groin pain over 4-6 weeks</li>
                                     <li>Pain limiting daily activities</li>
@@ -436,7 +372,7 @@
                             </ul>
 
                             <div class="info-box">
-                                <h4>Alpha Angle</h4>
+                                <h3>Alpha Angle</h3>
                                 <p>On X-ray, the alpha angle is measured to assess cam morphology. Over 55-60 degrees is
                                     considered elevated. But remember: An elevated angle alone does not mean you need
                                     treatment - only if you have symptoms.</p>
@@ -493,7 +429,7 @@
                             </ul>
 
                             <div class="red-flag-alert">
-                                <h4>Important on Surgery</h4>
+                                <h3>Important on Surgery</h3>
                                 <ul>
                                     <li>Even after successful surgery, rehabilitation takes 6-12 months</li>
                                     <li>Results are best in patients without osteoarthritis</li>
@@ -528,7 +464,7 @@
                                 muscle strength.</p>
 
                             <div class="info-box">
-                                <h4>FAI and Osteoarthritis</h4>
+                                <h3>FAI and Osteoarthritis</h3>
                                 <p>FAI is a risk factor for <a href="hip-osteoarthritis.html">hip osteoarthritis</a>,
                                     but most people with FAI do not develop osteoarthritis. Good muscle strength and
                                     control can reduce load on the joint and protect the cartilage.</p>

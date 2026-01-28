@@ -121,33 +121,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -155,7 +129,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -226,7 +200,7 @@
               <p>Dette er et svårt vanlig fenomen - studier viser at <strong>opptil 45% av befolkningen opplever lyder fra nakken ved bevegelse</strong>. Det øker naturlig med alderen, og de fleste tilfeller er helt ufarlige.</p>
 
               <div class="info-box">
-                <h4>Visste du?</h4>
+                <h3>Visste du?</h3>
                 <p>Den karakteristiske "pop"-lyden nær et ledd knekker skyldes at gassbobler (hovedsakelig nitrogen og karbondioksid) frigjøres fra leddvåsken. Dette kalles kavitasjon og er helt ufarlig. Det tar ca. 20 minutter før gassboblene dannes på nytt.</p>
               </div>
             </section>
@@ -242,22 +216,22 @@
               <h3>Ufarlige Årsaker</h3>
 
               <div class="condition-card">
-                <h4>1. Kavitasjon (gassbobler)</h4>
+                <h3>1. Kavitasjon (gassbobler)</h3>
                 <p>Nær leddet strekkes, synker trykket i leddkapselen. Dette gjør at gasser låst i leddvåsken frigjøres som bobler, noe som gir en hårbar "pop" eller klikkelyd. Dette er samme mekanisme som nær en kiropraktor justerer et ledd.</p>
               </div>
 
               <div class="condition-card">
-                <h4>2. Sener og ligamenter</h4>
+                <h3>2. Sener og ligamenter</h3>
                 <p>Sener og leddbånd kan gli over benete strukturer eller hverandre ved bevegelse. Dette skaper ofte en "snapping" eller glidende lyd, spesielt nær nakken har vårt i samme stilling lenge.</p>
               </div>
 
               <div class="condition-card">
-                <h4>3. Fasettledd</h4>
+                <h3>3. Fasettledd</h3>
                 <p>Nakken har mange små ledd (fasettledd) mellom virvlene. Nær disse leddene beveger seg, kan de produsere lyder - spesielt hvis leddene er stive eller det er lett asymmetri i bevegelsen.</p>
               </div>
 
               <div class="condition-card">
-                <h4>4. Aldersrelaterte forandringer</h4>
+                <h3>4. Aldersrelaterte forandringer</h3>
                 <p>Med alderen blir bruskoverflaten i leddene litt ruere, og dette kan gi en knirkende eller malende lyd ved bevegelse. Dette er normalt og betyr ikke at du har "slitt ut" nakken.</p>
               </div>
 
@@ -290,7 +264,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Forskning viser</h4>
+                <h3>Forskning viser</h3>
                 <p>Studier har ikke funnet noen sammenheng mellom lyddannelse i ledd og økt risiko for artrose eller andre degenerative tilstander. Med andre ord: lyden i seg selv gjør ingen skade.</p>
               </div>
             </section>
@@ -304,7 +278,7 @@
               <p>Mange opplever en midlertidig lettelse nær de knekker nakken selv. Men det er viktig å skille mellom tilfeldig knasing ved bevegelse og aktivt å manipulere nakken for å få den til å knekke.</p>
 
               <div class="red-flag-alert">
-                <h4>Frarødes: Aktivt å knekke nakken selv</h4>
+                <h3>Frarødes: Aktivt å knekke nakken selv</h3>
                 <ul>
                   <li>Gjentatt selvmanipulasjon kan føre til <strong>hypermobilitet</strong> over tid</li>
                   <li>Du risikerer å overstrekke <strong>leddbånd og kapsler</strong></li>
@@ -316,7 +290,7 @@
               <p>Hvis du føler et behov for å knekke nakken ofte, kan det være et tegn på at noen ledd er stive mens andre kompenserer ved å være for mobile. En kiropraktor kan vurdere dette og behandle de faktiske problemomrødene.</p>
 
               <div class="treatment-box">
-                <h4>Bedre alternativer:</h4>
+                <h3>Bedre alternativer:</h3>
                 <ul>
                   <li>Forsiktige tåyningsøvelser for nakken</li>
                   <li>Regelmessige bevegelsespauser ved skjermarbeid</li>
@@ -335,7 +309,7 @@
               <p>Selv om knasing vanligvis er ufarlig, er det noen situasjoner der du bør la deg undersøke:</p>
 
               <div class="red-flag-alert">
-                <h4>Oppsøk helsepersonell hvis knasingen ledsages av:</h4>
+                <h3>Oppsøk helsepersonell hvis knasingen ledsages av:</h3>
                 <ul>
                   <li><strong>Smerte</strong> - spesielt hvis den er ny eller forverres</li>
                   <li><strong>Hevelse</strong> eller varme over nakken</li>
@@ -361,7 +335,7 @@
 
               <h3>Hva kan kiropraktoren gjøre?</h3>
               <div class="treatment-box">
-                <h4>Behandlingen kan inkludere:</h4>
+                <h3>Behandlingen kan inkludere:</h3>
                 <ul>
                   <li><strong>Undersøkelse:</strong> Kartlegge årsaken til knasingen og utelukke underliggende problemer</li>
                   <li><strong>Manuell behandling:</strong> Mobilisering av stive ledd for å forbedre bevegelsesmånsteret</li>
@@ -388,32 +362,32 @@
               </div>
 
               <div class="faq-item">
-                <h4>Er det farlig at nakken knaser?</h4>
+                <h3>Er det farlig at nakken knaser?</h3>
                 <p>Nei, vanligvis ikke. Krepitasjon (knasing) i nakken er svårt vanlig og skyldes ofte at gassbobler frigjøres fra leddene, sener glir over bein, eller normale aldersforandringer. Det er sjelden tegn på noe alvorlig.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Hvorfor lager nakken min lyd?</h4>
+                <h3>Hvorfor lager nakken min lyd?</h3>
                 <p>De vanligste årsakene er: 1) Gassbobler som frigjøres fra leddvåsken (kavitasjon), 2) Sener eller ligamenter som glir over beinstrukturer, 3) Fasettleddene som beveger seg, 4) Mild degenerasjon som er helt normalt med alder.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Nær bør jeg oppsøke hjelp for knasing i nakken?</h4>
+                <h3>Nær bør jeg oppsøke hjelp for knasing i nakken?</h3>
                 <p>Du bør oppsøke hjelp hvis knasingen ledsages av smerte, hevelse, redusert bevegelighet, nummenhet eller svakhet i armene, eller hvis det oppsto etter en skade.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Kan jeg knekke nakken min selv?</h4>
+                <h3>Kan jeg knekke nakken min selv?</h3>
                 <p>Det frarødes å aktivt knekke nakken selv. Selv om den tilfeldige lyden ved bevegelse er ufarlig, kan gjentatt selvmanipulasjon føre til hypermobilitet og instabilitet over tid.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Betyr knasing at jeg har artrose?</h4>
+                <h3>Betyr knasing at jeg har artrose?</h3>
                 <p>Nei, ikke nødvendigvis. Knasing alene er ikke et tegn på artrose. Artrose gir vanligvis også andre symptomer som smerte, stivhet og redusert bevegelighet.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Hvorfor føler jeg lettelse nær nakken knekker?</h4>
+                <h3>Hvorfor føler jeg lettelse nær nakken knekker?</h3>
                 <p>Nær leddet "popper", frigjøres endorfiner som gir en kortvarig følelse av lettelse. I tillegg kan strekking av leddkapselen føre til refleksavslapping av omliggende muskler.</p>
               </div>
             </section>

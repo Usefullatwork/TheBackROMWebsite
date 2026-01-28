@@ -171,33 +171,7 @@
     <link rel="stylesheet" href="../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -205,7 +179,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img loading="lazy" src="../../images/logo-header.webp"
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -266,7 +240,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li>Most problems aren't dangerous - <strong>80-90% improve significantly</strong> with proper treatment</li>
                 <li>Four main categories: Tendon problems, nerve compressions, joint wear and muscular problems</li>
@@ -318,7 +292,7 @@
 
             <!-- Red Flag Alert Box -->
             <div class="red-flag-alert">
-              <h4>When must you see a doctor or emergency room NOW?</h4>
+              <h3>When must you see a doctor or emergency room NOW?</h3>
               <p>Sudden severe pain after a fall with visible misalignment, rapidly increasing numbness/paralysis, fever
                 with redness and swelling, or visible muscle wasting developing quickly.</p>
               <a href="#redflags">Read more about red flags for arm pain</a>
@@ -408,7 +382,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Tennis elbow (lateral epicondylitis)</h4>
+                <h3 class="condition-title">Tennis elbow (lateral epicondylitis)</h3>
                 <span class="condition-badge">1-3% annually</span>
               </div>
               <p class="section-quick-link"><a href="arm/tennis-elbow.html">Go to full article on tennis elbow &#8594;</a></p>
@@ -428,7 +402,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Carpal tunnel syndrome</h4>
+                <h3 class="condition-title">Carpal tunnel syndrome</h3>
                 <span class="condition-badge">2-3% of population</span>
               </div>
               <p class="section-quick-link"><a href="arm/carpal-tunnel-syndrome.html">Go to full article on carpal tunnel syndrome &#8594;</a></p>
@@ -445,7 +419,7 @@
                 pregnancy, type 2 diabetes and low metabolism.</p>
 
               <div class="treatment-box">
-                <h4>Treatment</h4>
+                <h3>Treatment</h3>
                 <p>A night splint that keeps the wrist straight provides improvement in <strong>50-70% within 2-3
                     months</strong>. In severe cases with muscle weakness, surgery may be relevant - with 90% success
                   rate.</p>
@@ -454,7 +428,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Golfer's elbow (medial epicondylitis)</h4>
+                <h3 class="condition-title">Golfer's elbow (medial epicondylitis)</h3>
                 <span class="condition-badge orange">7-10x rarer than tennis elbow</span>
               </div>
               <p class="section-quick-link"><a href="arm/golfers-elbow.html">Go to full article on golfer's elbow &#8594;</a></p>
@@ -465,7 +439,7 @@
                 often affected than golfers.</p>
 
               <div class="info-box">
-                <h4>Important to know</h4>
+                <h3>Important to know</h3>
                 <p>The ulnar nerve runs just behind the tender area. <strong>20-60% of patients</strong> with golfer's
                   elbow have concurrent nerve irritation causing tingling in the ring and little finger. This can
                   significantly prolong treatment time.</p>
@@ -474,7 +448,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">De Quervain's tenosynovitis</h4>
+                <h3 class="condition-title">De Quervain's tenosynovitis</h3>
                 <span class="condition-badge purple">6-10x more common in women</span>
               </div>
               <p class="section-quick-link"><a href="arm/de-quervains.html">Go to full article on De Quervain's &#8594;</a></p>
@@ -489,7 +463,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Trigger finger (snapping finger)</h4>
+                <h3 class="condition-title">Trigger finger (snapping finger)</h3>
                 <span class="condition-badge green">2-3% lifetime prevalence</span>
               </div>
               <p class="section-quick-link"><a href="arm/trigger-finger.html">Go to full article on trigger finger &#8594;</a></p>
@@ -503,14 +477,14 @@
                 lock in a bent position.</p>
 
               <div class="treatment-box">
-                <h4>Treatment</h4>
+                <h3>Treatment</h3>
                 <p>Cortisone injection gives <strong>63-80% success</strong> (unlike tennis elbow, where cortisone isn't recommended). Around 80% avoid surgery with conservative treatment.</p>
               </div>
             </div>
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Cubital tunnel syndrome</h4>
+                <h3 class="condition-title">Cubital tunnel syndrome</h3>
                 <span class="condition-badge">Second most common nerve compression</span>
               </div>
               <p class="section-quick-link"><a href="arm/cubital-tunnel-syndrome.html">Go to full article on cubital tunnel syndrome &#8594;</a></p>
@@ -529,7 +503,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Thumb arthritis (CMC-1 arthritis)</h4>
+                <h3 class="condition-title">Thumb arthritis (CMC-1 arthritis)</h3>
                 <span class="condition-badge orange">>33% at 80 years</span>
               </div>
               <p class="section-quick-link"><a href="arm/thumb-arthritis.html">Go to full article on thumb arthritis &#8594;</a></p>
@@ -539,7 +513,7 @@
                 Genetics is the strongest risk factor - heritability is a full 86%.</p>
 
               <div class="info-box">
-                <h4>Important point</h4>
+                <h3>Important point</h3>
                 <p>X-ray findings correlate poorly with symptoms. <strong>Up to 72% of women</strong> with visible
                   arthritis on images have no pain whatsoever. Clinical examination is more important than images.</p>
               </div>
@@ -547,7 +521,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Mouse arm (WRULD)</h4>
+                <h3 class="condition-title">Mouse arm (WRULD)</h3>
                 <span class="condition-badge">57% of computer users</span>
               </div>
               <p class="section-quick-link"><a href="arm/mouse-arm.html">Go to full article on mouse arm &#8594;</a></p>
@@ -559,7 +533,7 @@
                 ergonomics and psychosocial stress. Intensive mouse use over 25 hours per week quadruples the risk.</p>
 
               <div class="info-box">
-                <h4>Surprising finding</h4>
+                <h3>Surprising finding</h3>
                 <p>Regular breaks alone have little effect without active movement. <strong>Strength training 2-3 times
                     per week</strong> has the strongest evidence for reducing symptoms.</p>
               </div>
@@ -702,12 +676,12 @@
             </div>
 
             <div class="exercise-box">
-              <h4>Eccentric Wrist Extension (for tennis elbow)</h4>
+              <h3>Eccentric Wrist Extension (for tennis elbow)</h3>
               <p>Hold a light weight (0.5-1 kg) with your arm on a table, wrist over the edge. Slowly lower the weight over 3-4 seconds. Use your other hand to lift back up. 3 sets of 15 repetitions, 2x daily.</p>
             </div>
 
             <div class="exercise-box">
-              <h4>Nerve Gliding (for carpal tunnel)</h4>
+              <h3>Nerve Gliding (for carpal tunnel)</h3>
               <p>Straighten your arm, palm up. Make a fist, then open your fingers and extend the wrist back. Hold 2-3 seconds. 10 repetitions, 3x daily. Stop if symptoms worsen.</p>
             </div>
           </section>
@@ -728,7 +702,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Honest about relapses</h4>
+              <h3>Honest about relapses</h3>
               <p>Many conditions have a risk of relapse if underlying factors aren't addressed. Ergonomics, training
                 load and work conditions are often just as important as the treatment itself.</p>
             </div>
@@ -755,33 +729,33 @@
             </div>
 
             <div class="faq-item">
-              <h4>How long does it take for tennis elbow to heal?</h4>
+              <h3>How long does it take for tennis elbow to heal?</h3>
               <p>89% report improvement within 12 months. With proper treatment and exercises, you can often notice
                 significant improvement after 6-8 weeks. Eccentric strength training shows 81% pain reduction after 7
                 weeks.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Does cortisone help with tennis elbow?</h4>
+              <h3>Does cortisone help with tennis elbow?</h3>
               <p>No, cortisone is not recommended for tennis elbow. Research shows that cortisone provides short-term
                 improvement but poorer long-term results. For trigger finger, however, cortisone injection gives 63-80%
                 success.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can I train with arm pain?</h4>
+              <h3>Can I train with arm pain?</h3>
               <p>Yes, adapted activity works better than complete rest. Move the arm, but avoid movements that cause
                 clear pain. Strength training 2-3 times per week has the strongest evidence for reducing symptoms.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Do I need surgery for carpal tunnel syndrome?</h4>
+              <h3>Do I need surgery for carpal tunnel syndrome?</h3>
               <p>Not necessarily. A night splint that keeps the wrist straight provides improvement in 50-70% within 2-3
                 months. In severe cases with muscle weakness, surgery may be relevant - with 90% success rate.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Do I need a referral to see a chiropractor?</h4>
+              <h3>Do I need a referral to see a chiropractor?</h3>
               <p>No. As authorised healthcare professionals with primary contact status, chiropractors can examine and treat you directly - and refer onwards to specialists or diagnostic imaging when necessary.</p>
             </div>
           </section>

@@ -182,297 +182,7 @@
         <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
     </noscript>
 
-    <style>
-        /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-        :root {
-            --hub-primary: #1a5f7a;
-            --hub-dark: #0d3d4d;
-            --hub-red: #dc2626;
-            --hub-green: #059669;
-            --hub-blue: #2563eb;
-            --hub-purple: #7c3aed;
-            --hub-orange: #ea580c;
-        }
-
-        .hub-intro {
-            margin-bottom: 40px;
-        }
-
-        .intro-text {
-            font-size: 1.05rem;
-            line-height: 1.7;
-            color: #374151;
-            margin-bottom: 24px;
-        }
-
-        .intro-text p {
-            margin-bottom: 14px;
-        }
-
-        .hub-section {
-            margin-bottom: 40px;
-            scroll-margin-top: 100px;
-        }
-
-        .section-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-
-        .section-number {
-            background: var(--hub-primary);
-            color: white;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            font-size: 1rem;
-            flex-shrink: 0;
-        }
-
-        .hub-section h2 {
-            color: var(--hub-dark);
-            margin: 0;
-        }
-
-        .hub-section h3 {
-            font-size: 1.15rem;
-            color: var(--hub-dark);
-            margin: 24px 0 12px;
-        }
-
-        .hub-section p {
-            color: #374151;
-            line-height: 1.7;
-            margin-bottom: 14px;
-        }
-
-        .stat-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 16px;
-            margin: 24px 0;
-        }
-
-        .stat-item {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--hub-primary);
-        }
-
-        .stat-label {
-            color: #64748b;
-            font-size: 0.75rem;
-            margin-top: 4px;
-        }
-
-        .condition-card {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 16px 0;
-        }
-
-        .condition-card h4 {
-            color: var(--hub-primary);
-            margin-bottom: 10px;
-        }
-
-        .treatment-box {
-            background: #ecfdf5;
-            border: 1px solid #6ee7b7;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .treatment-box h4 {
-            color: var(--hub-green);
-            margin-bottom: 12px;
-        }
-
-        .info-box {
-            background: #eff6ff;
-            border: 1px solid #93c5fd;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .info-box h4 {
-            color: var(--hub-blue);
-            margin-bottom: 12px;
-        }
-
-        .red-flag-box {
-            background: #fef2f2;
-            border: 2px solid #fca5a5;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .red-flag-box h3 {
-            color: var(--hub-red);
-            margin-bottom: 12px;
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .comparison-table th {
-            background: #f8fafc;
-            color: var(--hub-dark);
-            font-weight: 600;
-        }
-
-        .part-header {
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-            border-radius: 12px;
-            padding: 20px 24px;
-            margin: 40px 0 24px;
-            border-left: 4px solid var(--hub-primary);
-        }
-
-        .part-header h2 {
-            color: var(--hub-dark);
-            margin: 0;
-            font-size: 1.4rem;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid #e5e7eb;
-            padding: 16px 0;
-        }
-
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-
-        .faq-item h4 {
-            color: var(--hub-dark);
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .faq-item p {
-            color: #4b5563;
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        .sources-section {
-            margin-top: 32px;
-            padding-top: 20px;
-            border-top: 1px solid #e5e7eb;
-        }
-
-        .sources-section h3 {
-            color: var(--hub-dark);
-            margin-bottom: 12px;
-            font-size: 1.1rem;
-        }
-
-        .sources-section ol {
-            font-size: 0.85rem;
-            color: #64748b;
-        }
-
-        .sources-section li {
-            margin-bottom: 6px;
-        }
-
-        .symptom-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 12px;
-            margin: 16px 0;
-            list-style: none;
-            padding: 0;
-        }
-
-        .symptom-list li {
-            background: #f8fafc;
-            padding: 12px 16px;
-            border-radius: 8px;
-            border-left: 3px solid var(--hub-primary);
-            color: #334155;
-        }
-
-        .mobile-sticky-cta {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: #F26522;
-            padding: 12px 16px;
-            z-index: 100;
-        }
-
-        .mobile-sticky-cta a {
-            display: inline-block;
-            background: white;
-            color: #F26522;
-            padding: 10px 20px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            margin-right: 8px;
-        }
-
-        @media (max-width: 900px) {
-            .mobile-sticky-cta {
-                display: flex;
-                gap: 8px;
-                justify-content: center;
-            }
-
-            .symptom-list {
-                grid-template-columns: 1fr;
-            }
-        }
-    
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -480,7 +190,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+                <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
                         alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229"
                         decoding="async" /></a>
                 <div class="header__navigation">
@@ -546,7 +256,7 @@
                         </div>
 
                         <div class="premium-summary-card">
-                            <h3>Quick Summary</h3>
+                            <h2>Quick Summary</h2>
                             <ul>
                                 <li><strong>What it is:</strong> A growth disorder causing permanent rounding of the
                                     upper back (structural hyperkyphosis)</li>
@@ -622,7 +332,7 @@
                         <p>The exact cause is not fully understood, but several factors appear to play a role:</p>
 
                         <div class="condition-card">
-                            <h4>Main Factors</h4>
+                            <h3>Main Factors</h3>
                             <ul>
                                 <li><strong>Genetics (most common):</strong> With 74% heritability, genetic factors are
                                     the dominant risk factor. The condition often runs in families.</li>
@@ -635,7 +345,7 @@
                         </div>
 
                         <div class="info-box">
-                            <h4>Important to Know</h4>
+                            <h3>Important to Know</h3>
                             <p>Scheuermann's disease is NOT caused by poor posture - it is a structural condition, not a
                                 result of habits.</p>
                         </div>
@@ -670,7 +380,7 @@
                             require:</p>
 
                         <div class="condition-card">
-                            <h4>Diagnostic Criteria (Sorensen)</h4>
+                            <h3>Diagnostic Criteria (Sorensen)</h3>
                             <ul>
                                 <li>Thoracic kyphosis over 40 degrees (measured with Cobb angle)</li>
                                 <li>At least 3 consecutive vertebrae with wedging of 5 degrees or more</li>
@@ -679,7 +389,7 @@
                         </div>
 
                         <div class="info-box">
-                            <h4>Important Differentiation</h4>
+                            <h3>Important Differentiation</h3>
                             <p>In postural (posture-related) kyphosis, the patient can actively straighten the back by
                                 hyperextension. In Scheuermann's, the curve is rigid and cannot be actively corrected -
                                 this is a key finding in clinical examination.</p>
@@ -732,7 +442,7 @@
                             improvement that remained stable at 10+ years follow-up.</p>
 
                         <div class="treatment-box">
-                            <h4>Important Prerequisites for Effect</h4>
+                            <h3>Important Prerequisites for Effect</h3>
                             <ul>
                                 <li>Use minimum 16 hours daily (preferably 16-20 hours)</li>
                                 <li>Active growth remains (Risser stage 0-2)</li>
@@ -742,7 +452,7 @@
                         </div>
 
                         <div class="info-box">
-                            <h4>Norwegian Context</h4>
+                            <h3>Norwegian Context</h3>
                             <p>The Norwegian Electronic Health Library (Helsebiblioteket) points out that bracing for
                                 kyphosis is used relatively little in Norway compared to international recommendations.
                                 Discuss with a specialist if this is relevant.</p>
@@ -754,7 +464,7 @@
                             showed statistically better reduction in thoracic kyphosis and improved quality of life.</p>
 
                         <div class="treatment-box">
-                            <h4>Recommended Exercise Types</h4>
+                            <h3>Recommended Exercise Types</h3>
                             <ul>
                                 <li>Thoracic spine extension (stretching exercises)</li>
                                 <li>Strengthening of spinal extensors</li>
@@ -808,7 +518,7 @@
                         </ul>
 
                         <div class="info-box">
-                            <h4>Uplifting News</h4>
+                            <h3>Uplifting News</h3>
                             <p>A Swedish study of older men (69-81 years) with Scheuermann's disease found no increased
                                 incidence of neck or back pain compared to peers without the condition (Jonsson et al.,
                                 Acta Orthop, 2023). As many as 25% of adults with Scheuermann's report actually no back
@@ -831,7 +541,7 @@
                             research, chiropractic treatment can contribute to:</p>
 
                         <div class="treatment-box">
-                            <h4>Chiropractic Treatment Can Contribute To</h4>
+                            <h3>Chiropractic Treatment Can Contribute To</h3>
                             <ul>
                                 <li>Improved mobility in stiff thoracic segments</li>
                                 <li>Reduction of muscle tension and trigger points</li>
@@ -843,7 +553,7 @@
                         </div>
 
                         <div class="info-box">
-                            <h4>Important Expectation Management</h4>
+                            <h3>Important Expectation Management</h3>
                             <p>Chiropractic treatment can NOT "straighten out" a structural kyphosis in adults. The goal
                                 is symptom relief and better function, not structural change.</p>
                         </div>
@@ -867,7 +577,7 @@
                         </div>
 
                         <div class="treatment-box">
-                            <h4>Recommended Self-Help Measures</h4>
+                            <h3>Recommended Self-Help Measures</h3>
                             <ul>
                                 <li><strong>Daily Mobility:</strong> Short sessions (10-15 min) with stretching and
                                     mobilization of thoracic spine</li>
@@ -913,7 +623,7 @@
                         <p>Surgery is reserved for the most severe cases. Indications include:</p>
 
                         <div class="condition-card">
-                            <h4>Surgical Indications</h4>
+                            <h3>Surgical Indications</h3>
                             <ul>
                                 <li>Kyphosis over 75 degrees that progresses</li>
                                 <li>Curves 60-75 degrees with significant pain not responding to 6+ months conservative
@@ -939,7 +649,7 @@
                             followed 67 patients for 32 years. Main findings were:</p>
 
                         <div class="condition-card">
-                            <h4>Main Findings from Long-Term Study (32 years)</h4>
+                            <h3>Main Findings from Long-Term Study (32 years)</h3>
                             <ul>
                                 <li>Persons with untreated Scheuermann's experienced slightly more back pain than
                                     control group</li>
@@ -993,46 +703,46 @@
                         </div>
 
                         <div class="faq-item">
-                            <h4>Can Scheuermann's disease be cured?</h4>
+                            <h3>Can Scheuermann's disease be cured?</h3>
                             <p>The structural change in the vertebrae is permanent. In adolescents, correct treatment
                                 (brace + exercise) can slow or stop progression. In adults, treatment focuses on
                                 symptoms and function, not structure.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h4>Is Scheuermann's the same as poor posture?</h4>
+                            <h3>Is Scheuermann's the same as poor posture?</h3>
                             <p>No. Scheuermann's is a structural condition where the vertebrae themselves are shaped
                                 differently. Postural kyphosis is due to muscular habits and can be corrected actively.
                                 A person with Scheuermann's cannot "straighten up" in the same way.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h4>Will I always have pain?</h4>
+                            <h3>Will I always have pain?</h3>
                             <p>Not necessarily. As many as 25% of adults with Scheuermann's report no back pain. With
                                 proper exercise and lifestyle adaptation, many live well with the condition.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h4>Can I exercise normally?</h4>
+                            <h3>Can I exercise normally?</h3>
                             <p>Yes, most forms of exercise are both safe and recommended. Swimming, strength training,
                                 running and yoga are all good alternatives. Be careful with very heavy lifting with
                                 axial loading (like heavy squats and deadlifts) if you have symptoms.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h4>Will my children inherit the condition?</h4>
+                            <h3>Will my children inherit the condition?</h3>
                             <p>There is a significant genetic component (74% heritability), so children have increased
                                 risk. Be aware of posture changes in puberty and seek assessment if concerned.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h4>Do I need X-ray or MRI?</h4>
+                            <h3>Do I need X-ray or MRI?</h3>
                             <p>X-ray confirms diagnosis and measures curve (Cobb angle). MRI is rarely necessary unless
                                 there is suspicion of other conditions or neurological symptoms.</p>
                         </div>
 
                         <div class="faq-item">
-                            <h4>Does it get worse with age?</h4>
+                            <h3>Does it get worse with age?</h3>
                             <p>The curve typically increases by approx. 0.45 degrees per year throughout adulthood. But
                                 this does not necessarily mean more pain - many have stable or even improved symptom
                                 burden with proper follow-up.</p>

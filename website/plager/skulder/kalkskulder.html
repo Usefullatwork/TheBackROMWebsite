@@ -146,83 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -230,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -281,7 +205,7 @@
 
             <!-- Premium Summary Card (was tldr-sidebar) -->
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li>Forekomst: <strong>2,7-7,8%</strong> av befolkningen</li>
                 <li>Kvinner rammes <strong>2x oftere</strong>, typisk 40-60 år</li>
@@ -355,7 +279,7 @@
               <p>Kalkskulder følger et karakteristisk forløp i tre faser. å forstå hvilken fase du er i hjelper både med å forutsi forløpet og velge riktig behandling.</p>
 
               <div class="condition-card">
-                <h4>Fase 1: Pre-kalksifisering og dannelse (Formative phase)</h4>
+                <h3>Fase 1: Pre-kalksifisering og dannelse (Formative phase)</h3>
                 <p>I denne fasen omdannes normalt senevev til fibrobruskvev, og kalsium begynner å avleires. Prosessen kan ta uker til måneder.</p>
                 <ul>
                   <li><strong>Symptomer:</strong> Milde til moderate smerter, ofte vage og diffuse</li>
@@ -365,7 +289,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>Fase 2: Hvilefase (Resting/Chronic phase)</h4>
+                <h3>Fase 2: Hvilefase (Resting/Chronic phase)</h3>
                 <p>Kalken er ferdig dannet og ligger relativt stabilt i senen. Dette er ofte den lengste fasen og kan vare i år.</p>
                 <ul>
                   <li><strong>Symptomer:</strong> Varierende - kan være nesten symptomfri eller gi vedvarende plager</li>
@@ -375,7 +299,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>Fase 3: Resorpsjon (Resorptive phase)</h4>
+                <h3>Fase 3: Resorpsjon (Resorptive phase)</h3>
                 <p>Kroppen begynner aktivt å bryte ned kalken. Dette er paradoksalt nok den mest smertefulle fasen, men signaliserer at tilstanden er i ferd med å gå over.</p>
                 <ul>
                   <li><strong>Symptomer:</strong> Intense, akutte smerter - ofte nattlige. Dramatisk nedsatt bevegelighet</li>
@@ -408,12 +332,12 @@
               </ul>
 
               <div class="condition-card">
-                <h4>Akutt presentasjon (resorpsjonsfasen)</h4>
+                <h3>Akutt presentasjon (resorpsjonsfasen)</h3>
                 <p>Plutselig debut av intense smerter, ofte om natten. Skulderen kan være svårt om til å berore, og pasienten holder ofte armen helt stille for å unngå smerte. Tilstanden kan ligne på septisk artritt eller gikt.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Kronisk presentasjon (hvile-/dannelsesfasen)</h4>
+                <h3>Kronisk presentasjon (hvile-/dannelsesfasen)</h3>
                 <p>Gradvis åkende smerte over tid. Smerten forverres ved aktivitet, særlig bevegelser over skulderhøyde. Kan ligne på impingement-syndrom.</p>
               </div>
 
@@ -473,7 +397,7 @@
               <p>Selv om kalkskulder vanligvis er en godartet tilstand, er det viktig å utelukke andre Årsaker til skuldersmerte.</p>
 
               <div class="red-flag-alert">
-                <h4>Oppsøk lege hvis du opplever:</h4>
+                <h3>Oppsøk lege hvis du opplever:</h3>
                 <ul>
                   <li>Feber kombinert med intens skuldersmerte og hovelse (kan være infeksjon)</li>
                   <li>Betydelig vekttap uten årsak</li>
@@ -487,22 +411,22 @@
               <h3>Tilstander som kan ligne kalkskulder</h3>
 
               <div class="condition-card">
-                <h4>Rotatormansjett-tendinopati/ruptur</h4>
+                <h3>Rotatormansjett-tendinopati/ruptur</h3>
                 <p>Lignende symptombilde, men røntgen vil ikke vise kalk. Ultralyd eller MR kan skille mellom tilstandene.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Impingement-syndrom</h4>
+                <h3>Impingement-syndrom</h3>
                 <p>Overlappende symptomer med smertefull bue. Kalkskulder kan gi sekundør impingement.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Frossen skulder (adhesiv kapsulitt)</h4>
+                <h3>Frossen skulder (adhesiv kapsulitt)</h3>
                 <p>Gir også betydelig bevegelsesinnskrenkning, men med et annet månster (stivhet i alle retninger).</p>
               </div>
 
               <div class="condition-card">
-                <h4><a href="ac-ledd-artrose.html">AC-ledd-artrose</a></h4>
+                <h3><a href="ac-ledd-artrose.html">AC-ledd-artrose</a></h3>
                 <p>Smerte lokalisert mer til toppen av skulderen. Røntgen viser forandringer i AC-leddet, ikke kalk i senen.</p>
               </div>
             </section>
@@ -541,17 +465,17 @@
               <h3>Andre behandlingsalternativer</h3>
 
               <div class="condition-card">
-                <h4>Ultralydveiledet barbotage (nøling)</h4>
+                <h3>Ultralydveiledet barbotage (nøling)</h3>
                 <p>En nøl føres inn i kalkavleiringen under ultralydveiledning. Kalkslam aspireres og skylles ut. Kan være effektivt, særlig i resorpsjonsfasen nær kalken er bløt og flytende.</p>
               </div>
 
               <div class="condition-card">
-                <h4><a href="kortison-skulder.html">Kortisoninjeksjon</a></h4>
+                <h3><a href="kortison-skulder.html">Kortisoninjeksjon</a></h3>
                 <p>Kan gi god kortvarig smertelindring, særlig i akutt fase. Påvirker ikke selve kalkavleiringen, men demper inflammasjonen rundt.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Medikamenter</h4>
+                <h3>Medikamenter</h3>
                 <p>NSAIDs (f.eks. Ibux, Voltaren) kan hjelpe mot smerte og betennelse i akutt fase. Ved sterke smerter kan kortvarig bruk av sterkere smertestillende være nødvendig.</p>
               </div>
 
@@ -654,32 +578,32 @@
               </div>
 
               <div class="condition-card">
-                <h4>Kan kalkskulder gå over av seg selv?</h4>
+                <h3>Kan kalkskulder gå over av seg selv?</h3>
                 <p>Ja. Kalkskulder er en selvbegrensende tilstand. Kalken vil til slutt reabsorberes naturlig, men dette kan ta alt fra noen måneder til flere år. Behandling kan fremskynde prosessen og lindre symptomer i mellomtiden.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Hjelper støtbølgeterapi (ESWT) ved kalkskulder?</h4>
+                <h3>Hjelper støtbølgeterapi (ESWT) ved kalkskulder?</h3>
                 <p>ESWT har Level I-evidens for kalkskulder. KALK-studien (BMJ 2023) viste imidlertid ingen forskjell fra placebo for pasienter med kortere symptomvarighet. Behandlingen ser ut til å være mest nyttig for pasienter med langvarige plager.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Må jeg opereres for kalkskulder?</h4>
+                <h3>Må jeg opereres for kalkskulder?</h3>
                 <p>Sjelden. 80-99% av pasienter blir bra uten operasjon. Kirurgi vurderes kun ved langvarige plager (over 6-12 måneder) etter mislykket konservativ behandling.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Hvorfor går smerten plutselig fra vondt til veldig vondt?</h4>
+                <h3>Hvorfor går smerten plutselig fra vondt til veldig vondt?</h3>
                 <p>Dette skjer i resorpsjonsfasen nær kroppen bryter ned kalken. Immunsystemet aktiveres, det oppstar betennelse, og dette gir intense smerter. Paradoksalt nok er dette ofte tegn på at kroppen er i gang med å låse problemet.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Kan kalkskulder komme tilbake?</h4>
+                <h3>Kan kalkskulder komme tilbake?</h3>
                 <p>Residivfrekvensen er lav nær kalken først er fullstendig reabsorbert. Imidlertid kan kalkskulder i sjeldne tilfeller oppstå i den andre skulderen.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Bør jeg unngå all aktivitet?</h4>
+                <h3>Bør jeg unngå all aktivitet?</h3>
                 <p>Nei. I akutt fase bør du unngå bevegelser som provoserer smerte, men fullstendig hvile anbefales ikke. Tilpasset aktivitet innenfor smertefrie grenser hjelper med å opprettholde bevegelighet.</p>
               </div>
             </section>

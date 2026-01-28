@@ -83,61 +83,8 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
-
-  <!-- FAQPage Schema -->
+  <link rel="stylesheet" href="../../../css/hub-article.css">
+<!-- FAQPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -177,7 +124,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -264,7 +211,7 @@
             </nav>
 
             <div class="red-flag-alert">
-              <h4>When should you seek immediate help?</h4>
+              <h3>When should you seek immediate help?</h3>
               <p>For double vision, speech difficulties, swallowing problems, numbness or sudden weakness in arms/legs - call emergency services or go to the emergency room.</p>
             </div>
           </section>
@@ -310,22 +257,22 @@
             <p>From most common to rarest:</p>
 
             <div class="condition-card">
-              <h4>Myofascial Dysfunction and Trigger Points (most common)</h4>
+              <h3>Myofascial Dysfunction and Trigger Points (most common)</h3>
               <p>58.5% had myofascial pain syndrome, and 59.7% of these had dizziness. Tight muscles - especially in the suboccipital muscles, upper trapezius and sternocleidomastoid - can disturb proprioceptive signaling.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Joint Stiffness in the Upper Neck</h4>
+              <h3>Joint Stiffness in the Upper Neck</h3>
               <p>The upper cervical joints (C0-C1-C2) contain a very high density of proprioceptive sensors. When these joints become stiff, inaccurate signals are sent to the brain.</p>
             </div>
 
             <div class="condition-card">
-              <h4><a href="whiplash-dizziness.html">Whiplash</a> and Neck Injuries</h4>
+              <h3><a href="whiplash-dizziness.html">Whiplash</a> and Neck Injuries</h3>
               <p>Dizziness is reported in 20-58% of patients with whiplash-associated injury.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Prolonged Poor Head Posture</h4>
+              <h3>Prolonged Poor Head Posture</h3>
               <p>"Tech neck" - constantly leaning head forward in front of screens.</p>
             </div>
 
@@ -374,17 +321,17 @@
             <h3>Clinical Tests</h3>
 
             <div class="condition-card">
-              <h4>Cervical Torsion Test</h4>
+              <h3>Cervical Torsion Test</h3>
               <p>The body is rotated while the head is held still. <strong>Specificity 92%, sensitivity 72%</strong>.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Cervical Repositioning Test</h4>
+              <h3>Cervical Repositioning Test</h3>
               <p>The patient should return the head to neutral position with closed eyes. <strong>Deviation over 4.5 degrees</strong> suggests disturbed proprioception.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Flexion-Rotation Test</h4>
+              <h3>Flexion-Rotation Test</h3>
               <p><strong>Sensitivity 91%, specificity 90%</strong> for C1-C2 dysfunction.</p>
             </div>
 
@@ -413,7 +360,7 @@
             <p>A systematic review from 2022 (De Vestel et al.) concluded that there is moderate evidence that manual therapy reduces dizziness symptoms, and that the effect is enhanced when manual therapy is combined with exercises.</p>
 
             <div class="treatment-box">
-              <h4>Manual Therapy</h4>
+              <h3>Manual Therapy</h3>
               <p>Reid et al. (2014, 2015) conducted several randomized controlled trials showing that both Mulligan SNAGs and Maitland mobilizations gave significant improvement compared to placebo - effects that persisted at 12-month follow-up.</p>
             </div>
 
@@ -427,17 +374,17 @@
             <h3>What Can You Do Yourself?</h3>
 
             <div class="condition-card">
-              <h4>Chin Tuck Exercise</h4>
+              <h3>Chin Tuck Exercise</h3>
               <p>Pull the chin straight back. Hold 5 seconds, repeat 10 times.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Ergonomic Adjustments</h4>
+              <h3>Ergonomic Adjustments</h3>
               <p>Screen at eye level, breaks every 30 minutes.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Stress Management</h4>
+              <h3>Stress Management</h3>
               <p>Breathing techniques, good sleep hygiene.</p>
             </div>
 
@@ -449,7 +396,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Treatment Response</h4>
+              <h3>Treatment Response</h3>
               <p>60-85% of patients respond well to combined manual therapy and exercises (Lystad et al., 2011).</p>
             </div>
           </section>

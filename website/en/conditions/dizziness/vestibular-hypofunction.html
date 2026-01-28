@@ -83,64 +83,8 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-    .comparison-table th, .comparison-table td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
-    .comparison-table th { background: #f8fafc; color: var(--hub-dark); font-weight: 600; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
-
-  <!-- FAQPage Schema -->
+  <link rel="stylesheet" href="../../../css/hub-article.css">
+<!-- FAQPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -188,7 +132,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -275,7 +219,7 @@
             </nav>
 
             <div class="red-flag-alert">
-              <h4>When should you seek immediate help?</h4>
+              <h3>When should you seek immediate help?</h3>
               <p>For acute dizziness combined with headache, neck pain, speech difficulties, paralysis, double vision or numbness - call emergency services or go to the emergency room.</p>
             </div>
           </section>
@@ -313,13 +257,13 @@
             <p>Vestibular hypofunction is divided into two main types, and the differences are significant - both regarding symptoms, causes and prognosis.</p>
 
             <div class="condition-card">
-              <h4>Unilateral Vestibular Hypofunction (One-sided)</h4>
+              <h3>Unilateral Vestibular Hypofunction (One-sided)</h3>
               <p>In unilateral hypofunction, the balance organ is damaged on only one side. This is the most common form and is most often caused by <a href="vestibular-neuritis.html">vestibular neuritis</a> (virus on the balance nerve).</p>
               <p><strong>How does it work?</strong> The balance organs in the right and left ear normally function as a "push-pull" system. When you turn your head to the right, the signal from the right ear increases while it decreases from the left. With one-sided damage, an imbalance occurs that the brain interprets as constant rotation. The good news is that the brain is remarkably good at compensating for one-sided damage.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Bilateral Vestibular Hypofunction (Two-sided)</h4>
+              <h3>Bilateral Vestibular Hypofunction (Two-sided)</h3>
               <p>In bilateral hypofunction, the balance organs function poorly or not at all on both sides. This is a rarer and more serious condition.</p>
               <p><strong>How does it work?</strong> When both sides are "silent," the brain receives no information about the head's movements. It's like driving a car without a speedometer and without windows - you have no idea how you're moving.</p>
               <p><strong>Prevalence:</strong> Approximately 28 per 100,000 adults. The average age at diagnosis is 58-64 years, and men are somewhat more often affected than women.</p>
@@ -347,23 +291,23 @@
 
             <h3>Causes of Bilateral Vestibular Hypofunction</h3>
             <div class="condition-card">
-              <h4>1. Unknown Cause (Idiopathic) - 31-51%</h4>
+              <h3>1. Unknown Cause (Idiopathic) - 31-51%</h3>
               <p>In approximately half of cases, no clear cause is found. Interestingly, around 50% of these patients have migraine, which can also cause <a href="vestibular-migraine.html">vestibular migraine</a>.</p>
             </div>
             <div class="condition-card">
-              <h4>2. Ototoxic Medications - 12-35%</h4>
+              <h3>2. Ototoxic Medications - 12-35%</h3>
               <p>Aminoglycosides (especially gentamicin) are the most common identifiable cause. Damage can occur with any dose.</p>
             </div>
             <div class="condition-card">
-              <h4>3. Hereditary Conditions - 17-31%</h4>
+              <h3>3. Hereditary Conditions - 17-31%</h3>
               <p>DFNA9 (mutation in the COCH gene) is most common in Europe. CANVAS syndrome accounts for 2-5% of cases.</p>
             </div>
             <div class="condition-card">
-              <h4>4. Meniere's Disease (Bilateral) - 2-17%</h4>
+              <h3>4. Meniere's Disease (Bilateral) - 2-17%</h3>
               <p>When <a href="menieres-disease.html">Meniere's disease</a> affects both ears over time.</p>
             </div>
             <div class="condition-card">
-              <h4>5. Meningitis - 5-11%</h4>
+              <h3>5. Meningitis - 5-11%</h3>
               <p>Meningitis can spread to both inner ears.</p>
             </div>
           </section>
@@ -409,19 +353,19 @@
             <h3>Symptoms in Bilateral Hypofunction</h3>
             <p>Bilateral hypofunction gives a characteristic symptom triad:</p>
             <div class="condition-card">
-              <h4>1. Unsteadiness When Walking and Standing</h4>
+              <h3>1. Unsteadiness When Walking and Standing</h3>
               <p>The main complaint, especially on uneven surfaces, in darkness or with head movements. Many describe feeling like they're "walking on a boat."</p>
             </div>
             <div class="condition-card">
-              <h4>2. Oscillopsia - When the World Jumps</h4>
+              <h3>2. Oscillopsia - When the World Jumps</h3>
               <p>Often the most bothersome symptom. The visual image "jumps" with head movements. About 70% experience this.</p>
             </div>
             <div class="condition-card">
-              <h4>3. Symptom-Free at Rest</h4>
+              <h3>3. Symptom-Free at Rest</h3>
               <p>Symptoms disappear when you sit or lie still. This distinguishes bilateral hypofunction from other causes.</p>
             </div>
             <div class="condition-card">
-              <h4>4. No Spinning Dizziness</h4>
+              <h3>4. No Spinning Dizziness</h3>
               <p>Rarely classic vertigo because both sides are equally weak - there is no imbalance creating the sensation of rotation.</p>
             </div>
 
@@ -451,7 +395,7 @@
             <p>Treatment is not about "repairing" the balance organs - they can rarely be restored. The goal is to train the brain to compensate.</p>
 
             <div class="treatment-box">
-              <h4>Treatment Methods</h4>
+              <h3>Treatment Methods</h3>
               <ul>
                 <li><strong>Gaze stabilization exercises (VOR training):</strong> Trains the eyes to maintain focus while the head moves</li>
                 <li><strong>Habituation:</strong> Gradual exposure to movements that trigger dizziness</li>
@@ -502,7 +446,7 @@
             <p>The prognosis for regaining vestibular function is limited - only about 4% improve enough to no longer meet diagnostic criteria. However, quality of life can improve significantly with rehabilitation and adaptations.</p>
 
             <div class="info-box">
-              <h4>Fall Risk</h4>
+              <h3>Fall Risk</h3>
               <p>Patients with bilateral hypofunction have <strong>31 times higher fall risk</strong> than the normal population.</p>
             </div>
           </section>

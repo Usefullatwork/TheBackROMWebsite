@@ -129,33 +129,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -163,7 +137,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -218,7 +192,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Hva det er:</strong> Inflammasjon i skambensleddet (symphysis pubis), oftest forårsaket av overbelastning hos aktive personer</li>
                 <li><strong>Vanligste Årsaker:</strong> Idrett med sparking/retningsskifte (fotball, ishockey) > graviditet/fodsel > bekkenkirurgi</li>
@@ -254,7 +228,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Nær må du søke hjelp umiddelbart?</h4>
+              <h3>Nær må du søke hjelp umiddelbart?</h3>
               <p>Ved feber kombinert med lyskesmerte, alvorlig sykdomsfølelse eller rådhet/varme over skambeinet - kontakt lege eller legevakt.</p>
             </div>
           </section>
@@ -296,17 +270,17 @@
             <p>Fra vanligst til sjeldnest:</p>
 
             <div class="condition-card">
-              <h4>1. Idrettsrelatert overbelastning (vanligst)</h4>
+              <h3>1. Idrettsrelatert overbelastning (vanligst)</h3>
               <p>Fotball, ishockey, rugby, langdistanseloping og andre idretter med sparking, retningsskifte eller repetitiv belastning. Fotballspillere har høyest risiko med 10-18% av skader årlig.</p>
             </div>
 
             <div class="condition-card">
-              <h4>2. Graviditet og fodsel</h4>
+              <h3>2. Graviditet og fodsel</h3>
               <p>Under graviditet låsner bekkenleddene på grunn av hormonet relaxin. Etter langvarig eller komplisert fodsel kan inflammasjon oppstå, særlig kombinert med muskulær ubalanse.</p>
             </div>
 
             <div class="condition-card">
-              <h4>3. Bekkenkirurgi (sjeldnest)</h4>
+              <h3>3. Bekkenkirurgi (sjeldnest)</h3>
               <p>Urologiske eller gynekologiske inngrep kan utlose tilstanden. Forekomsten etter urethropexy-operasjon er 0,7-2,5%.</p>
             </div>
 
@@ -353,12 +327,12 @@
             <h3>Klinisk undersøkelse</h3>
 
             <div class="condition-card">
-              <h4>Pubic spring-test</h4>
+              <h3>Pubic spring-test</h3>
               <p>Direkte trykk over skambensleddet og sideveis press på skambeinsgreinene. Reproduksjon av kjent smerte regnes som den mest spesifikke testen.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Squeeze-test (adduksjonstest)</h4>
+              <h3>Squeeze-test (adduksjonstest)</h3>
               <p>Pasienten ligger på ryggen og klemmer sammen knærne mot motstand. Testen korrelerer godt med benmargsodem ved MR.</p>
             </div>
 
@@ -366,7 +340,7 @@
             <p><strong>MR er gullstandarden</strong> og skiller effektivt mellom akutte og kroniske forandringer. Akutte funn inkluderer benmargsodem og leddvaeske, mens kroniske forandringer viser sklerose, cyster og osteofytter.</p>
 
             <div class="info-box">
-              <h4>Viktig å huske</h4>
+              <h3>Viktig å huske</h3>
               <p>MR- og røntgenfunn korrelerer ikke alltid med symptomer. Mange idrettsutovere har bildediagnostiske funn uten å ha plager.</p>
             </div>
           </section>
@@ -381,7 +355,7 @@
             <p>Konservativ behandling er førstevalget og gir gode resultater hos de fleste. En systematisk gjennomgang fant at <strong>97,6% av pasienter</strong> i case-serier kom tilbake til idrett med konservativ tilnærming. Kirurgi er sjelden nødvendig.</p>
 
             <div class="treatment-box">
-              <h4>Hva kan kiropraktoren gjøre?</h4>
+              <h3>Hva kan kiropraktoren gjøre?</h3>
               <p>Evidensgrunnlaget for kiropraktisk behandling av osteitis pubis er begrenset til enkeltkasuistikker. Klinisk erfaring tilsier at en kombinasjon av flere tiltak ofte fungerer godt:</p>
               <ul>
                 <li>Mobilisering av bekken- og hofteledd</li>

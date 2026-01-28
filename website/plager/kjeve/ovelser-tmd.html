@@ -74,67 +74,8 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section ul { font-size: 0.85rem; color: #64748b; }
-    .sources-section li { margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
-
-  <!-- FAQPage Schema -->
+  <link rel="stylesheet" href="../../css/hub-article.css">
+<!-- FAQPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -206,7 +147,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -261,7 +202,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>90-95%</strong> blir bedre med øvelser og hjemmebehandling</li>
                 <li><strong>Rocabado 6x6</strong> er den mest dokumenterte protokollen</li>
@@ -333,7 +274,7 @@
             <p>Koordinasjonsøvelser viser den beste effekten ifølge systematisk oversikt (Shimada et al., 2023). Disse åvelsene trener kjeven til å bevege seg kontrollert og symmetrisk.</p>
 
             <div class="condition-card">
-              <h4>Kontrollert apning og lukking</h4>
+              <h3>Kontrollert apning og lukking</h3>
               <ul>
                 <li>Plasser tungespissen mot ganen, rett bak fortennene</li>
                 <li>Åpne munnen sakte mens tungen holdes på plass</li>
@@ -354,32 +295,32 @@
             <p>Dette er den mest dokumenterte ovelsesprotokollen for TMD. Prinsippet er enkelt: <strong>6 øvelser, 6 repetisjoner, 6 ganger daglig.</strong></p>
 
             <div class="condition-card">
-              <h4>Ovelse 1 - Hviletungeposisjon</h4>
+              <h3>Ovelse 1 - Hviletungeposisjon</h3>
               <p>Plasser fremre tredjedel av tungen mot ganen med lett trykk. Hold tennene 2-3 mm fra hverandre. "Lips together, teeth apart" er manteret. Denne posisjonen avlaster kjeveleddet.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Ovelse 2 - Kontrollert kjeveapning</h4>
+              <h3>Ovelse 2 - Kontrollert kjeveapning</h3>
               <p>Med tungen på ganen, Åpne og lukk kjeven sakte og kontrollert. Bevegelsen skal vare rett opp og ned, uten at kjeven sklir til siden.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Ovelse 3 - Hakeinndraging (chin tuck)</h4>
+              <h3>Ovelse 3 - Hakeinndraging (chin tuck)</h3>
               <p>Trekk haken rett bakover, som om du lager en "dobbelhake". Hold i 5-6 sekunder. Dette styrker nakkemuskulaturen og bedrer hodeholding.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Ovelse 4 - Nakke-ekstensjon</h4>
+              <h3>Ovelse 4 - Nakke-ekstensjon</h3>
               <p>Kombiner øvre nakkefleksjon (nikk ned) med nedre nakkeekstensjon (se opp). Hold i 5-6 sekunder.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Ovelse 5 - Skulderholdning</h4>
+              <h3>Ovelse 5 - Skulderholdning</h3>
               <p>Trekk skuldrene bakover og ned. Hold i 5-6 sekunder. God skulderholdning påvirker nakken og kjeven.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Ovelse 6 - Isometrisk motstand</h4>
+              <h3>Ovelse 6 - Isometrisk motstand</h3>
               <p>Plasser handen mot haken og press forsiktig mens du pråver å Åpne munnen. Kjeven beveger seg ikke - muskelen jobber statisk. Gjenta med motstand mot lukking og sidebevegelser.</p>
             </div>
           </section>
@@ -392,12 +333,12 @@
             </div>
 
             <div class="condition-card">
-              <h4>Passiv strekkovelse</h4>
+              <h3>Passiv strekkovelse</h3>
               <p>Plasser tommelen på de nedre fortennene og pekefingeren på de øvre. Åpne munnen forsiktig med fingerhjelp, hold i 10-30 sekunder. Gjenta 3-5 ganger.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Sidebevegelser</h4>
+              <h3>Sidebevegelser</h3>
               <p>For underkjeven forsiktig til høyre, hold 5 sekunder, så til venstre. Gjenta 5-10 ganger til hver side.</p>
             </div>
           </section>
@@ -412,7 +353,7 @@
             <p>En undersøkelse fra TMJ Association viser at <strong>74% av pasienter opplever lindring</strong> med termisk terapi.</p>
 
             <div class="treatment-box">
-              <h4>Bruk varme ved:</h4>
+              <h3>Bruk varme ved:</h3>
               <ul>
                 <li>Dump, murende smerte i tyggemuskulaturen</li>
                 <li>Stivhet i kjeven, særlig om morgenen</li>
@@ -422,7 +363,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Bruk kulde ved:</h4>
+              <h3>Bruk kulde ved:</h3>
               <ul>
                 <li>Akutt, skarp smerte</li>
                 <li>Hevelse i kjeveomrødet</li>
@@ -442,7 +383,7 @@
             <p>Masseter-muskelen (den store tyggemuskelen under kinnet) er ofte stram og om ved TMD. Enkel selvmassasje kan hjelpe.</p>
 
             <div class="condition-card">
-              <h4>Masseter-massasje</h4>
+              <h3>Masseter-massasje</h3>
               <ul>
                 <li>Finn muskelen: Bit tennene sammen og kjenn den store muskelen som buler ut på kinnet</li>
                 <li>Slapp av kjeven og press 2-3 fingre inn i muskelen</li>
@@ -479,7 +420,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Stressmestring</h4>
+              <h3>Stressmestring</h3>
               <p>Angst og <a href="stress-og-kjevesmerter.html">stress</a> er blant de sterkeste risikofaktorene for TMD (OPPERA-studien, 2013). Mange strammer kjeven ubevisst nær de er stresset.</p>
               <ul>
                 <li>Legg merke til nær du biter tennene sammen - leppene lukket, tennene fra hverandre</li>
@@ -500,7 +441,7 @@
             <p>Forvent ikke mirakler over natten. Tidlig respons kan merkes etter 1-2 uker, men meningsfull bedring krever typisk <strong>6-8 uker</strong> med konsekvent innsats (PMC, 2023).</p>
 
             <div class="condition-card">
-              <h4>Typisk forløp</h4>
+              <h3>Typisk forløp</h3>
               <ul>
                 <li><strong>Uke 1-2:</strong> Noen merker lett lindring, andre ingen endring enna</li>
                 <li><strong>Uke 4-6:</strong> Gradvis bedring i smerte og bevegelighet</li>
@@ -510,7 +451,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Langtidsprognose</h4>
+              <h3>Langtidsprognose</h3>
               <p>OPPERA-studien viste at 51% av nye TMD-tilfeller ikke lenger moter diagnostiske kriterier etter 8 måneder. Opptil 85% viser bedring innen 3 år.</p>
               <p><strong>Viktig å vite:</strong> Tilbakefall er vanlig. Rundt 65% av TMD-tilfeller er tilbakevendende episoder. Derfor er det lurt å fortsette med vedlikeholdsøvelser selv etter at plagene er borte.</p>
             </div>
@@ -532,7 +473,7 @@
             </ul>
 
             <div class="treatment-box">
-              <h4>Hva kan kiropraktoren gjøre?</h4>
+              <h3>Hva kan kiropraktoren gjøre?</h3>
               <ul>
                 <li><strong>Manuell behandling:</strong> Forskning viser at kombinasjonen av manuell terapi og øvelser gir bedre resultater enn øvelser alene. En systematisk oversikt (PMC, 2020) fant at kombinasjonsbehandling gå 6 mm storre forbedring i gapeevne.</li>
                 <li><strong>Vurdering av nakke og holdning:</strong> Nakkeproblemer og TMD henger ofte sammen. Behandling rettet mot både kjeve og nakke gir ofte best resultat.</li>

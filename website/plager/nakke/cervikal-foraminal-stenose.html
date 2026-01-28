@@ -121,77 +121,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-    .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; scroll-margin-top: 100px; }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
-    .hub-section h3 { font-size: 17px; font-weight: 600; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section ul { margin: 10px 0; padding-left: 20px; }
-    .hub-section li { font-size: 14px; margin-bottom: 6px; color: #4b5563; }
-    .condition-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 14px 0; }
-    .condition-card h4 { font-size: 15px; font-weight: 600; color: var(--hub-dark); margin-bottom: 10px; }
-    .condition-card p { font-size: 14px; margin-bottom: 10px; }
-    .condition-card ul { margin: 10px 0; padding-left: 20px; }
-    .condition-card li { font-size: 14px; margin-bottom: 6px; color: #4b5563; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 10px; font-size: 15px; }
-    .info-box p { font-size: 14px; color: #1e40af; margin: 0; }
-    .red-flag-alert{ background: #fef2f2; border: 2px solid #fca5a5; border-radius: 10px; padding: 20px; margin: 20px 0; }
-    .red-flag-alert h4 { color: var(--hub-red); margin-bottom: 12px; font-size: 16px; }
-    .red-flag-alert ul { margin: 0; padding-left: 20px; }
-    .red-flag-alert li { color: #991b1b; margin-bottom: 8px; font-weight: 500; }
-    .treatment-box { background: #f0fdf4; border: 1px solid #86efac; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 10px; }
-    .treatment-box ul { margin: 0; padding-left: 20px; }
-    .treatment-box li { color: #166534; margin-bottom: 6px; font-size: 14px; }
-    .anatomy-box { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #7dd3fc; border-radius: 10px; padding: 20px; margin: 20px 0; }
-    .anatomy-box h4 { color: #0369a1; margin-bottom: 12px; font-size: 16px; }
-    .anatomy-box p { color: #0c4a6e; margin-bottom: 10px; font-size: 14px; }
-    .anatomy-box ul { margin: 0; padding-left: 20px; }
-    .anatomy-box li { color: #0c4a6e; margin-bottom: 6px; font-size: 14px; }
-    .prognosis-box { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid var(--hub-green); border-radius: 0 10px 10px 0; padding: 18px; margin: 20px 0; }
-    .prognosis-box h4 { color: #166534; margin-bottom: 10px; }
-    .prognosis-box p { color: #166534; margin: 0; font-size: 14px; }
-    .faq-section { margin-top: 32px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 18px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-item h4 { color: var(--hub-dark); margin-bottom: 10px; font-size: 15px; }
-    .faq-item p { color: #4b5563; margin: 0; font-size: 14px; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 16px; }
-    .sources-section p { font-size: 13px; color: #6b7280; margin-bottom: 6px; }
-    .disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 24px; font-size: 13px; color: #6b7280; }
-    @media (max-width: 768px) { .hub-content { padding-bottom: 100px; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -199,7 +129,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -246,7 +176,7 @@
         <article class="hub-main">
           <div class="hub-content">
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Hva det er:</strong> Innsnevring av nerveåpningene (foramen) i nakkevirvlene som klemmer på nervene</li>
                 <li><strong>Vanligste symptomer:</strong> Utstråling til arm/hand, <a href="nummenhet-fingre.html">nummenhet</a>, prikking, svakhet - ofte på en side</li>
@@ -293,22 +223,22 @@
               </div>
 
               <div class="condition-card">
-                <h4>Spondylose (slitasje)</h4>
+                <h3>Spondylose (slitasje)</h3>
                 <p>Den vanligste årsaken. Over tid kan virvlene utvikle beinpåleiring (osteofytter) som vokser inn i foramen og gjør apningen trangere.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Skiveforandringer</h4>
+                <h3>Skiveforandringer</h3>
                 <p>Diskusutbuling eller <a href="nakkeprolaps.html">prolaps</a> kan presse på nerveroten. En "hard" herniering med beinpåleiring er vanligere ved stenose enn "myk" diskusprolaps.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Fasettleddsartrose</h4>
+                <h3>Fasettleddsartrose</h3>
                 <p>Slitasje i fasettleddene fører til fortykkelse av leddkapselen og beinpåleiring som reduserer plassen i foramen.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Ligamentum flavum-fortykkelse</h4>
+                <h3>Ligamentum flavum-fortykkelse</h3>
                 <p>Det gule leddbandet kan bli tykkere med alderen og bidra til innsnevring.</p>
               </div>
 
@@ -337,13 +267,13 @@
               </ul>
 
               <div class="info-box">
-                <h4>Spurlings test</h4>
+                <h3>Spurlings test</h3>
                 <p>En klassisk test for foraminal stenose: Hodet båyes bakover og roteres mot smertefull side, deretter trykkes lett ned. Positiv test reproduserer utstråling til armen. Dette "lukker" foramen og provoserer symptomene.</p>
               </div>
 
               <h3>Symptomfordeling etter niva</h3>
               <div class="condition-card">
-                <h4>C5-nerven (C4-C5 stenose)</h4>
+                <h3>C5-nerven (C4-C5 stenose)</h3>
                 <ul>
                   <li>Smerte: Skulder og overarm</li>
                   <li>Svakhet: Skulderlåft, albuebåy</li>
@@ -352,7 +282,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>C6-nerven (C5-C6 stenose)</h4>
+                <h3>C6-nerven (C5-C6 stenose)</h3>
                 <ul>
                   <li>Smerte: Underarm, tommel og pekefinger</li>
                   <li>Svakhet: Handleddsekstensjon, biceps</li>
@@ -361,7 +291,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>C7-nerven (C6-C7 stenose)</h4>
+                <h3>C7-nerven (C6-C7 stenose)</h3>
                 <ul>
                   <li>Smerte: Bakside av arm, langfinger</li>
                   <li>Svakhet: Triceps, handleddsfleksjon</li>
@@ -379,7 +309,7 @@
               <p>De fleste med cervikal foraminal stenose responderer godt på konservativ behandling. Studier viser at 75-90% oppnær god symptomkontroll uten kirurgi.</p>
 
               <div class="treatment-box">
-                <h4>Kiropraktisk behandling kan inkludere:</h4>
+                <h3>Kiropraktisk behandling kan inkludere:</h3>
                 <ul>
                   <li><strong>Manuell mobilisering:</strong> Forsiktig mobilisering av nakkeledd for å bedre bevegelighet</li>
                   <li><strong>Manuell traksjon:</strong> "Strekk" av nakken som Åpner foramen og gir nerveavlastning</li>
@@ -391,17 +321,17 @@
 
               <h3>øvelser som ofte hjelper</h3>
               <div class="condition-card">
-                <h4>Cervikale retraksjoner (hakefremtrekk)</h4>
+                <h3>Cervikale retraksjoner (hakefremtrekk)</h3>
                 <p>Trekk haken rett bakover som om du lager "dobbelthake". Hold 5 sekunder. Denne åvelsen sentraliserer nakkeskivene og kan Åpne foramen.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Sidebåy bort fra smertefull side</h4>
+                <h3>Sidebåy bort fra smertefull side</h3>
                 <p>Båy hodet forsiktig mot skulderen på den friske siden. Dette Åpner foramen på den smertefulle siden og kan gi umiddelbar lindring.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Skulderbladsstabilisering</h4>
+                <h3>Skulderbladsstabilisering</h3>
                 <p>Trekk skulderbladene sammen og ned. Hold 10 sekunder. Styrker muskulaturen som ståtter god nakkeholdning.</p>
               </div>
 
@@ -426,7 +356,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>KONTAKT LEGE UMIDDELBART VED:</h4>
+                <h3>KONTAKT LEGE UMIDDELBART VED:</h3>
                 <ul>
                   <li>Progressiv svakhet i arm eller hand som forverres</li>
                   <li>Synlig muskelsvinn (atrofi)</li>
@@ -456,27 +386,27 @@
               </div>
 
               <div class="faq-item">
-                <h4>Hva er forskjellen på foraminal stenose og sentral stenose?</h4>
+                <h3>Hva er forskjellen på foraminal stenose og sentral stenose?</h3>
                 <p>Foraminal stenose påvirker nerveåpningene på siden av virvelsoylen der nervene går ut, og gir symptomer i arm/hand. Sentral stenose påvirker selve spinalkanalen og kan gi symptomer i både armer og ben, samt gangforstyrrelser.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Kan cervikal foraminal stenose behandles uten operasjon?</h4>
+                <h3>Kan cervikal foraminal stenose behandles uten operasjon?</h3>
                 <p>Ja, de fleste med cervikal foraminal stenose responderer godt på konservativ behandling. Studier viser at 75-90% før god lindring uten kirurgi gjennom manuell behandling, traksjonsøvelser og styrketrening.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Hvilke øvelser hjelper ved foraminal stenose i nakken?</h4>
+                <h3>Hvilke øvelser hjelper ved foraminal stenose i nakken?</h3>
                 <p>Cervikale retraksjonsøvelser (hakefremtrekk), nakketraksjonsøvelser og skulderbladstabilisering er ofte effektive. øvelser som Åpner foramen (lett sidebåy bort fra smertefull side) kan gi umiddelbar lindring.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Er det farlig å ha cervikal foraminal stenose?</h4>
+                <h3>Er det farlig å ha cervikal foraminal stenose?</h3>
                 <p>Foraminal stenose i seg selv er ikke farlig, men ubehandlet kan den føre til progressiv nerveskade. Søk lege ved åkende svakhet, muskelsvinn eller problemer med finmotorikk.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Kan stenosen bli verre over tid?</h4>
+                <h3>Kan stenosen bli verre over tid?</h3>
                 <p>Stenosen kan gradvis tilta med alderen, men symptomene varierer og mange lever godt med tilstanden i mange år. God holdning, regelmessig trening og tidlig behandling ved forverring bidrar til best mulig forløp.</p>
               </div>
             </section>

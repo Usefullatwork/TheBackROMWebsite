@@ -117,33 +117,7 @@
     <link rel="stylesheet" href="../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -151,7 +125,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img loading="lazy" src="../../images/logo-header.webp"
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -250,7 +224,7 @@
 
             <!-- Red Flag Alert Box -->
             <div class="red-flag-alert">
-              <h4>When to Seek Emergency Care</h4>
+              <h3>When to Seek Emergency Care</h3>
               <p>Seek immediate medical attention for suspected fractures, joint dislocations, severe swelling with inability to move, signs of concussion, or any injury with numbness or loss of circulation.</p>
               <a href="#redflags">Read more about red flags</a>
             </div>
@@ -278,7 +252,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Why Active Rehabilitation Works</h4>
+              <h3>Why Active Rehabilitation Works</h3>
               <p>Research consistently shows that active rehabilitation - gradually loading injured tissue through specific exercises - leads to better outcomes than rest alone. Movement promotes healing, maintains fitness, and builds the strength needed to prevent re-injury.</p>
             </div>
           </section>
@@ -294,12 +268,12 @@
             <p>Sports injuries fall into two main categories, each requiring different treatment approaches:</p>
 
             <div class="condition-card">
-              <h4>Acute Injuries</h4>
+              <h3>Acute Injuries</h3>
               <p>Result from a single traumatic event - a fall, collision, or sudden movement. Examples include ankle sprains, muscle tears, and ligament ruptures. These typically cause immediate pain and swelling.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Overuse Injuries</h4>
+              <h3>Overuse Injuries</h3>
               <p>Develop gradually from repetitive stress over time. Examples include tendinopathies (Achilles, patellar), stress fractures, and shin splints. Pain often starts mild and worsens if training continues unchanged.</p>
             </div>
 
@@ -321,22 +295,22 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Training Errors (Most Common)</h4>
+              <h3>Training Errors (Most Common)</h3>
               <p>Rapid increases in training volume, intensity, or frequency are responsible for most overuse injuries. The "10% rule" - increasing weekly load by no more than 10% - helps prevent this.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Biomechanical Factors</h4>
+              <h3>Biomechanical Factors</h3>
               <p>Poor movement patterns, muscle imbalances, weakness, and lack of flexibility can increase injury risk. These are often correctable with targeted exercise.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Equipment and Environment</h4>
+              <h3>Equipment and Environment</h3>
               <p>Worn-out footwear, inappropriate equipment, poor playing surfaces, and inadequate protective gear all contribute to injury risk.</p>
             </div>
 
             <div class="info-box">
-              <h4>Previous Injury</h4>
+              <h3>Previous Injury</h3>
               <p>A history of previous injury is one of the strongest predictors of future injury. Incomplete rehabilitation and premature return to sport significantly increase re-injury risk.</p>
             </div>
           </section>
@@ -349,7 +323,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Comprehensive Assessment</h4>
+              <h3>Comprehensive Assessment</h3>
               <p>Treatment starts with a thorough evaluation including:</p>
               <ul>
                 <li>Detailed injury history and mechanism</li>
@@ -372,7 +346,7 @@
             </ul>
 
             <div class="exercise-box">
-              <h4>Rehabilitation Phases</h4>
+              <h3>Rehabilitation Phases</h3>
               <p>Structured return to sport typically follows these phases:</p>
               <ul>
                 <li><strong>Phase 1:</strong> Pain management and protected movement</li>
@@ -394,17 +368,17 @@
             <p>Recovery time varies significantly based on injury type and severity:</p>
 
             <div class="treatment-box">
-              <h4>Muscle Strains</h4>
+              <h3>Muscle Strains</h3>
               <p>Grade 1 (mild): 1-2 weeks. Grade 2 (moderate): 3-6 weeks. Grade 3 (severe/complete): 3-6 months. Proper rehabilitation reduces re-injury risk.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Ligament Sprains</h4>
+              <h3>Ligament Sprains</h3>
               <p>Grade 1: 1-2 weeks. Grade 2: 4-8 weeks. Grade 3: 8-12 weeks or longer. Some severe sprains may require surgical consultation.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Tendinopathies</h4>
+              <h3>Tendinopathies</h3>
               <p>Often require 3-6 months of consistent loading exercises. Quick fixes are rare - patience and progressive loading are key.</p>
             </div>
 
@@ -441,22 +415,22 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Progressive Training</h4>
+              <h3>Progressive Training</h3>
               <p>Follow the 10% rule for weekly increases. Allow adequate recovery between hard sessions. Include rest days and easier weeks in your program.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Strength and Conditioning</h4>
+              <h3>Strength and Conditioning</h3>
               <p>Regular strength training protects against injury. Focus on sport-specific movements and addressing muscle imbalances. 2-3 sessions per week is effective.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Proper Warm-Up</h4>
+              <h3>Proper Warm-Up</h3>
               <p>Dynamic warm-up before activity prepares muscles and joints. Include sport-specific movements. Save static stretching for after activity.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Equipment and Technique</h4>
+              <h3>Equipment and Technique</h3>
               <ul>
                 <li>Replace running shoes every 500-800 km</li>
                 <li>Use sport-appropriate protective equipment</li>
@@ -474,32 +448,32 @@
             </div>
 
             <div class="faq-item">
-              <h4>How soon after injury should I seek treatment?</h4>
+              <h3>How soon after injury should I seek treatment?</h3>
               <p>For acute injuries, assessment within the first few days is ideal. Early intervention can speed recovery and prevent complications. For overuse injuries, seek help when pain affects your training or doesn't improve with modified activity.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can I continue training with a sports injury?</h4>
+              <h3>Can I continue training with a sports injury?</h3>
               <p>Often yes, with modifications. Many injuries allow continued training at reduced intensity or with alternative activities. Complete rest is rarely necessary and can actually delay recovery. A chiropractor can guide appropriate modifications.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Should I use ice or heat on my injury?</h4>
+              <h3>Should I use ice or heat on my injury?</h3>
               <p>For acute injuries (first 48-72 hours), ice can help manage pain and swelling. After the acute phase, heat may help with muscle relaxation. However, active movement and appropriate loading are more important than either.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Do I need imaging for my sports injury?</h4>
+              <h3>Do I need imaging for my sports injury?</h3>
               <p>Not always. A thorough clinical examination often provides sufficient information to start treatment. Imaging may be recommended if there's suspected fracture, complete ligament tear, or if symptoms don't improve as expected.</p>
             </div>
 
             <div class="faq-item">
-              <h4>How do I know when I'm ready to return to sport?</h4>
+              <h3>How do I know when I'm ready to return to sport?</h3>
               <p>Return to sport should be based on function, not time. You should have full pain-free range of motion, adequate strength (usually 90%+ of uninjured side), and be able to perform sport-specific movements without symptoms.</p>
             </div>
 
             <div class="faq-item">
-              <h4>How can I prevent re-injury?</h4>
+              <h3>How can I prevent re-injury?</h3>
               <p>Complete your rehabilitation fully. Maintain strength and conditioning. Progress gradually back to full training. Address any biomechanical factors that contributed to the original injury.</p>
             </div>
           </section>

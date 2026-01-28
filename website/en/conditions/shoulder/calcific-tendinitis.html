@@ -165,147 +165,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .hub-content {
-      padding: 32px;
-    }
-
-    @media (max-width: 600px) {
-      .hub-content {
-        padding: 20px;
-      }
-    }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    @media (max-width: 800px) {
-      .intro-tldr-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .intro-text p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #374151;
-    }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .hub-section:first-of-type {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-    }
-
-    .hub-content h3 {
-      font-size: 17px;
-      color: var(--hub-dark);
-      margin: 22px 0 10px;
-    }
-
-    .hub-content p {
-      margin-bottom: 14px;
-      font-size: 15px;
-    }
-
-    .hub-content ul,
-    .hub-content ol {
-      margin: 14px 0;
-      padding-left: 24px;
-    }
-
-    .hub-content li {
-      margin-bottom: 6px;
-      font-size: 15px;
-    }
-
-    .hub-content strong {
-      color: var(--hub-dark);
-    }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: #6b7280;
-      font-size: 15px;
-      margin-bottom: 12px;
-    }
-
-    .sources-section ul {
-      font-size: 12px;
-      color: #6b7280;
-      line-height: 1.6;
-      padding-left: 20px;
-    }
-
-    .sources-section li {
-      margin-bottom: 4px;
-    }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -313,7 +173,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -363,7 +223,7 @@
 
             <!-- Premium Summary Card (was tldr-sidebar) -->
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li>Prevalence: <strong>2.7-7.8%</strong> of population</li>
                 <li>Women affected <strong>2x more often</strong>, typically 40-60 years</li>
@@ -451,7 +311,7 @@
                 in helps both predict the course and choose the right treatment.</p>
 
               <div class="condition-card">
-                <h4>Phase 1: Pre-calcification and Formation (Formative phase)</h4>
+                <h3>Phase 1: Pre-calcification and Formation (Formative phase)</h3>
                 <p>In this phase, normal tendon tissue transforms into fibrocartilage, and calcium begins to deposit.
                   The process can take weeks to months.</p>
                 <ul>
@@ -462,7 +322,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>Phase 2: Resting Phase (Resting/Chronic phase)</h4>
+                <h3>Phase 2: Resting Phase (Resting/Chronic phase)</h3>
                 <p>The calcium is fully formed and lies relatively stable in the tendon. This is often the longest phase
                   and can last for years.</p>
                 <ul>
@@ -473,7 +333,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>Phase 3: Resorption (Resorptive phase)</h4>
+                <h3>Phase 3: Resorption (Resorptive phase)</h3>
                 <p>The body begins actively breaking down the calcium. Paradoxically, this is the most painful phase,
                   but signals that the condition is resolving.</p>
                 <ul>
@@ -513,14 +373,14 @@
               </ul>
 
               <div class="condition-card">
-                <h4>Acute presentation (resorptive phase)</h4>
+                <h3>Acute presentation (resorptive phase)</h3>
                 <p>Sudden onset of intense pain, often at night. The shoulder may be very tender to touch, and the
                   patient often holds the arm completely still to avoid pain. The condition can resemble septic
                   arthritis or gout.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Chronic presentation (resting/formation phase)</h4>
+                <h3>Chronic presentation (resting/formation phase)</h3>
                 <p>Gradually increasing pain over time. The pain worsens with activity, especially movements above
                   shoulder height. May resemble impingement syndrome.</p>
               </div>
@@ -587,7 +447,7 @@
                 shoulder pain.</p>
 
               <div class="red-flag-alert">
-                <h4>Seek medical attention if you experience:</h4>
+                <h3>Seek medical attention if you experience:</h3>
                 <ul>
                   <li>Fever combined with intense shoulder pain and swelling (may be infection)</li>
                   <li>Significant unexplained weight loss</li>
@@ -602,24 +462,24 @@
               <h3>Conditions that may resemble calcific tendinitis</h3>
 
               <div class="condition-card">
-                <h4>Rotator cuff tendinopathy/tear</h4>
+                <h3>Rotator cuff tendinopathy/tear</h3>
                 <p>Similar symptom picture, but X-ray will not show calcium. Ultrasound or MRI can distinguish between
                   the conditions.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Impingement syndrome</h4>
+                <h3>Impingement syndrome</h3>
                 <p>Overlapping symptoms with painful arc. Calcific tendinitis can cause secondary impingement.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Frozen shoulder (adhesive capsulitis)</h4>
+                <h3>Frozen shoulder (adhesive capsulitis)</h3>
                 <p>Also causes significant restriction of movement, but with a different pattern (stiffness in all
                   directions).</p>
               </div>
 
               <div class="condition-card">
-                <h4><a href="ac-joint-arthritis.html">AC joint arthritis</a></h4>
+                <h3><a href="ac-joint-arthritis.html">AC joint arthritis</a></h3>
                 <p>Pain localized more to the top of the shoulder. X-ray shows changes in the AC joint, not calcium in
                   the tendon.</p>
               </div>
@@ -666,20 +526,20 @@
               <h3>Other treatment options</h3>
 
               <div class="condition-card">
-                <h4>Ultrasound-guided barbotage (needling)</h4>
+                <h3>Ultrasound-guided barbotage (needling)</h3>
                 <p>A needle is inserted into the calcium deposit under ultrasound guidance. Calcium slurry is aspirated
                   and flushed out. Can be effective, especially in the resorptive phase when the calcium is soft and
                   liquid.</p>
               </div>
 
               <div class="condition-card">
-                <h4><a href="cortisone-shoulder.html">Cortisone injection</a></h4>
+                <h3><a href="cortisone-shoulder.html">Cortisone injection</a></h3>
                 <p>Can provide good short-term pain relief, especially in the acute phase. Does not affect the calcium
                   deposit itself, but reduces the inflammation around it.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Medications</h4>
+                <h3>Medications</h3>
                 <p>NSAIDs (e.g., ibuprofen, diclofenac) can help with pain and inflammation in the acute phase. For
                   severe pain, short-term use of stronger painkillers may be necessary.</p>
               </div>
@@ -786,40 +646,40 @@
               </div>
 
               <div class="condition-card">
-                <h4>Can calcific tendinitis go away on its own?</h4>
+                <h3>Can calcific tendinitis go away on its own?</h3>
                 <p>Yes. Calcific tendinitis is a self-limiting condition. The calcium will eventually be reabsorbed
                   naturally, but this can take anywhere from a few months to several years. Treatment can speed up the
                   process and relieve symptoms in the meantime.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Does shockwave therapy (ESWT) help with calcific tendinitis?</h4>
+                <h3>Does shockwave therapy (ESWT) help with calcific tendinitis?</h3>
                 <p>ESWT has Level I evidence for calcific tendinitis. The KALK study (BMJ 2023) showed no difference
                   from placebo for patients with shorter symptom duration. The treatment appears to be most useful for
                   patients with long-term symptoms.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Do I need surgery for calcific tendinitis?</h4>
+                <h3>Do I need surgery for calcific tendinitis?</h3>
                 <p>Rarely. 80-99% of patients recover without surgery. Surgery is only considered for long-term symptoms
                   (over 6-12 months) after failed conservative treatment.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Why does the pain suddenly go from bad to very bad?</h4>
+                <h3>Why does the pain suddenly go from bad to very bad?</h3>
                 <p>This happens in the resorptive phase when the body breaks down the calcium. The immune system
                   activates, inflammation occurs, and this causes intense pain. Paradoxically, this is often a sign that
                   the body is resolving the problem.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Can calcific tendinitis come back?</h4>
+                <h3>Can calcific tendinitis come back?</h3>
                 <p>The recurrence rate is low once the calcium is fully reabsorbed. However, in rare cases, calcific
                   tendinitis can occur in the other shoulder.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Should I avoid all activity?</h4>
+                <h3>Should I avoid all activity?</h3>
                 <p>No. In the acute phase, you should avoid movements that provoke pain, but complete rest is not
                   recommended. Adapted activity within pain-free limits helps maintain mobility.</p>
               </div>

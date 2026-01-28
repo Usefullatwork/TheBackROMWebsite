@@ -138,71 +138,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .cycle-box {
-      background: linear-gradient(135deg, var(--color-amber-light) 0%, #fde68a 100%);
-      border: 2px solid var(--hub-orange);
-      border-radius: 12px;
-      padding: 24px;
-      margin: 20px 0;
-      text-align: center;
-    }
-
-    .cycle-box h4 { color: #92400e; font-size: 16px; margin: 0 0 16px; }
-
-    .cycle-steps {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .cycle-step {
-      background: #fff;
-      border-radius: 8px;
-      padding: 12px 16px;
-      font-size: 13px;
-      color: #78350f;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .cycle-arrow {
-      font-size: 20px;
-      color: var(--hub-orange);
-    }
-
-    @media (max-width: 600px) {
-      .cycle-steps { flex-direction: column; }
-      .cycle-arrow { transform: rotate(90deg); }
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -210,7 +146,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -351,7 +287,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Triptans (Sumatriptan, Zolmitriptan, etc.)</h4>
+                  <h3 class="condition-title">Triptans (Sumatriptan, Zolmitriptan, etc.)</h3>
                   <span class="condition-badge">10+ days/month</span>
                 </div>
                 <p>Migraine-specific medications. Risk of MOH when used 10 or more days per month for 3+ months.</p>
@@ -363,7 +299,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Combination Preparations and Opioids</h4>
+                  <h3 class="condition-title">Combination Preparations and Opioids</h3>
                   <span class="condition-badge">10+ days/month</span>
                 </div>
                 <p>Combinations containing caffeine, codeine, or other opioids. High risk of dependence and MOH.</p>
@@ -376,7 +312,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Common Painkillers (NSAIDs, Paracetamol)</h4>
+                  <h3 class="condition-title">Common Painkillers (NSAIDs, Paracetamol)</h3>
                   <span class="condition-badge">15+ days/month</span>
                 </div>
                 <p>Ibuprofen, naproxen, paracetamol, and similar. Risk with use 15 or more days per month.</p>
@@ -388,7 +324,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Important to Know</h4>
+                <h3>Important to Know</h3>
                 <p>MOH only develops in people who already have a primary headache diagnosis (migraine, tension headache). People who take painkillers regularly for other conditions (arthritis, back pain) do not develop MOH unless they also have headache to begin with.</p>
               </div>
             </section>
@@ -403,7 +339,7 @@
               <p>The MOH diagnosis is made when the following criteria are met (ICHD-3):</p>
 
               <div class="info-box">
-                <h4>Diagnostic Criteria</h4>
+                <h3>Diagnostic Criteria</h3>
                 <ul>
                   <li>Headache 15+ days per month in a patient with known primary headache</li>
                   <li>Regular overuse of acute headache medications for more than 3 months</li>
@@ -452,7 +388,7 @@
               <h3>Step 2: Discontinuation</h3>
 
               <div class="treatment-box">
-                <h4>Methods for Discontinuation</h4>
+                <h3>Methods for Discontinuation</h3>
                 <ul>
                   <li><strong>Abrupt discontinuation:</strong> Recommended for triptans and common painkillers. Safe to do at home with good planning</li>
                   <li><strong>Gradual tapering:</strong> Recommended for opioids and combination preparations. Should be done under doctor supervision</li>
@@ -461,7 +397,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Expect Rebound Headache</h4>
+                <h3>Expect Rebound Headache</h3>
                 <p>The first 1-2 weeks after discontinuation, the headache will typically worsen significantly. This is normal and temporary. Other symptoms may include:</p>
                 <ul>
                   <li>Nausea and vomiting</li>
@@ -483,7 +419,7 @@
               <h3>Step 4: Relapse Prevention</h3>
 
               <div class="treatment-box">
-                <h4>Lifestyle Changes to Prevent Relapse</h4>
+                <h3>Lifestyle Changes to Prevent Relapse</h3>
                 <ul>
                   <li><strong>Headache diary:</strong> Continue keeping a diary to catch increased use early</li>
                   <li><strong>The 10-day rule:</strong> Never use acute painkillers more than 10 days per month</li>
@@ -532,7 +468,7 @@
               <p>30-40% experience relapse in the first year after discontinuation. The risk is highest in the first 6 months. Therefore, follow-up and preventive strategies are important.</p>
 
               <div class="info-box">
-                <h4>The Underlying Headache</h4>
+                <h3>The Underlying Headache</h3>
                 <p>Remember that discontinuation does not cure the primary headache (migraine/tension headache). The goal is to return to the original state with episodic headache that can be effectively treated with limited medication use. <a href="trigger-point-headache.html">Trigger point treatment</a> can be a useful supplement for managing muscle tension during the discontinuation phase.</p>
               </div>
             </section>

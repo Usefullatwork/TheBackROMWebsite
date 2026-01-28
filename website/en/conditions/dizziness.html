@@ -175,52 +175,7 @@
     <link rel="stylesheet" href="../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    /* Page-specific styles */
-    .balance-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 20px 0; }
-    .balance-item { text-align: center; padding: 20px; background: #f8fafc; border-radius: 10px; border: 1px solid #e2e8f0; }
-    .balance-item .icon { font-size: 2rem; margin-bottom: 8px; }
-    .balance-item h4 { color: var(--hub-dark); margin: 0 0 6px; font-size: 15px; }
-    .balance-item p { font-size: 13px; margin: 0; color: #6b7280; }
-    .five-ds-box { background: #fffbeb; border: 1px solid #fbbf24; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .five-ds-box h4 { color: #b45309; margin: 0 0 10px; font-size: 15px; }
-    .five-ds-box ul { margin: 0; padding-left: 20px; }
-    .five-ds-box li { font-size: 14px; margin-bottom: 4px; }
-    .symptom-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin: 16px 0; list-style: none; padding: 0; }
-    .symptom-list li { background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--hub-primary); color: #334155; }
-    .referral-box { background: #f5f3ff; border: 1px solid #d8b4fe; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .referral-box ul { margin: 0; padding-left: 20px; }
-    .referral-box li { margin-bottom: 8px; color: #5b21b6; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .treatment-box p { margin-bottom: 8px; }
-    .hub-section { scroll-margin-top: 100px; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -228,7 +183,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img loading="lazy" src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Clinic for All Chiropractor Mads Finstad"><img loading="lazy" src="../../images/logo-header.webp"
             alt="Clinic for All Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -336,7 +291,7 @@
 
             <!-- Red Flag Alert Box - Immediately Visible -->
             <div class="red-flag-alert">
-              <h4>When must you call 113 or go to A&E?</h4>
+              <h3>When must you call 113 or go to A&E?</h3>
               <p>With sudden severe dizziness together with speech difficulties, facial paralysis, paralysis in arm/leg,
                 or double vision - seek help immediately.</p>
               <a href="../blog/central-dizziness.html">Read more about red flags</a>
@@ -441,7 +396,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">BPPV (Benign Paroxysmal Positional Vertigo)</h4>
+                <h3 class="condition-title">BPPV (Benign Paroxysmal Positional Vertigo)</h3>
                 <span class="condition-badge">17-42% of cases</span>
               </div>
               <p class="section-quick-link"><a href="dizziness/bppv.html">Go to full article on BPPV &rarr;</a></p>
@@ -459,7 +414,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Vestibular Migraine</h4>
+                <h3 class="condition-title">Vestibular Migraine</h3>
                 <span class="condition-badge">approx. 1-3% of population</span>
               </div>
               <p class="section-quick-link"><a href="dizziness/vestibular-migraine.html">Go to full article on
@@ -471,7 +426,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Vestibular Neuritis</h4>
+                <h3 class="condition-title">Vestibular Neuritis</h3>
                 <span class="condition-badge">3-10% in dizziness clinics</span>
               </div>
               <p class="section-quick-link"><a href="dizziness/vestibular-neuritis.html">Go to full article on
@@ -483,7 +438,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Orthostatic Hypotension</h4>
+                <h3 class="condition-title">Orthostatic Hypotension</h3>
               </div>
               <p>Drop in blood pressure when you stand up that temporarily reduces blood supply to the brain. Causes
                 blackouts and brief dizziness. Usually harmless and improves by standing up more slowly.</p>
@@ -491,7 +446,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Cervicogenic Dizziness</h4>
+                <h3 class="condition-title">Cervicogenic Dizziness</h3>
               </div>
               <p class="section-quick-link"><a href="dizziness/cervicogenic-dizziness.html">Go to full article on
                   cervicogenic dizziness &rarr;</a></p>
@@ -505,7 +460,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">M�ni�re's Disease</h4>
+                <h3 class="condition-title">M�ni�re's Disease</h3>
               </div>
               <p class="section-quick-link"><a href="dizziness/menieres-disease.html">Go to full article on M�ni�re's
                   disease &rarr;</a></p>
@@ -516,7 +471,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">PPPD</h4>
+                <h3 class="condition-title">PPPD</h3>
               </div>
               <p class="section-quick-link"><a href="dizziness/pppd.html">Go to full article on PPPD (chronic dizziness)
                   &rarr;</a></p>
@@ -527,7 +482,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Vestibular Hypofunction</h4>
+                <h3 class="condition-title">Vestibular Hypofunction</h3>
               </div>
               <p class="section-quick-link"><a href="dizziness/vestibular-hypofunction.html">Go to full article on
                   vestibular hypofunction &rarr;</a></p>
@@ -538,7 +493,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Dizziness After Concussion</h4>
+                <h3 class="condition-title">Dizziness After Concussion</h3>
               </div>
               <p class="section-quick-link"><a href="dizziness/post-concussion.html">Go to full article on problems
                   after concussion &rarr;</a></p>
@@ -548,7 +503,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Whiplash and Dizziness</h4>
+                <h3 class="condition-title">Whiplash and Dizziness</h3>
               </div>
               <p class="section-quick-link"><a href="dizziness/whiplash-dizziness.html">Go to full article on whiplash
                   and dizziness &rarr;</a></p>
@@ -572,7 +527,7 @@
             <h3>Conditions with Strong Evidence</h3>
 
             <div class="treatment-box">
-              <h4>BPPV (Benign Paroxysmal Positional Vertigo)</h4>
+              <h3>BPPV (Benign Paroxysmal Positional Vertigo)</h3>
               <p class="section-quick-link"><a href="dizziness/bppv.html">Go to full article on BPPV &rarr;</a></p>
               <p>Here I have solid evidence. Repositioning manoeuvres like Epley and Semont have success rates of 80-90%
                 (StatPearls, 2024). Many patients notice immediate improvement after the first treatment.</p>
@@ -715,50 +670,50 @@
             </div>
 
             <div class="faq-item">
-              <h4>Do I need a referral from a doctor?</h4>
+              <h3>Do I need a referral from a doctor?</h3>
               <p>No. Chiropractors have had primary contact status in Norway since 2006. You can book an appointment
                 directly. I can also refer you onwards to a specialist if necessary.</p>
             </div>
 
             <div class="faq-item">
-              <h4>How many treatments do I need?</h4>
+              <h3>How many treatments do I need?</h3>
               <p>For BPPV: Often 1-3 treatments. Most notice improvement after the first session. For other conditions:
                 Usually 4-8 weeks with treatment and exercises.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can dizziness come back?</h4>
+              <h3>Can dizziness come back?</h3>
               <p>Yes, especially BPPV. Around 30% experience new episodes within 1 year, and up to 50% within 5 years
                 (Brandt, J Neurol, 2006). Vitamin D supplementation and home exercises can potentially reduce the risk.
               </p>
             </div>
 
             <div class="faq-item">
-              <h4>Do I need MRI or CT?</h4>
+              <h3>Do I need MRI or CT?</h3>
               <p>In most cases clinical examination is sufficient. Diagnostic imaging is only necessary with red flags,
                 suspected central cause, or when treatment doesn't give expected results.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Do medicines help?</h4>
+              <h3>Do medicines help?</h3>
               <p>Medicines don't cure BPPV - it's a mechanical problem requiring a mechanical solution. Vestibular
                 suppressants can be used briefly in the acute phase, but delay the brain's compensation.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Is neck treatment dangerous?</h4>
+              <h3>Is neck treatment dangerous?</h3>
               <p>Vertebral artery dissection is a very rare but serious complication. Before treatment I conduct
                 screening for vascular risk factors. If I suspect vascular problems I refer without treating.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can I exercise with dizziness?</h4>
+              <h3>Can I exercise with dizziness?</h3>
               <p>Yes, adapted activity is important. Only avoid movements that cause severe worsening. Light cardio
                 training (walking, cycling) is good. Be careful with yoga positions with extreme neck extension.</p>
             </div>
 
             <div class="faq-item">
-              <h4>What's the difference between chiropractor and physiotherapist for dizziness?</h4>
+              <h3>What's the difference between chiropractor and physiotherapist for dizziness?</h3>
               <p>Both can perform vestibular rehabilitation and repositioning manoeuvres. Chiropractors additionally
                 have competence in joint treatment of the neck. For complex PPPD a physiotherapist with vestibular
                 specialisation may be most appropriate.</p>

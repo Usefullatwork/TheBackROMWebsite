@@ -146,112 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal variables - hub-article.css handles the rest */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    /* Premium summary card (TL;DR box) */
-    .premium-summary-card h3 { font-size: 15px; color: var(--hub-dark); margin-bottom: 12px; }
-    .premium-summary-card ul { list-style: none; padding: 0; margin: 0; }
-    .premium-summary-card li {
-      padding: 5px 0 5px 22px;
-      position: relative;
-      font-size: 13px;
-      line-height: 1.5;
-    }
-    .premium-summary-card li::before {
-      content: attr(data-icon);
-      position: absolute;
-      left: 0;
-      font-size: 12px;
-    }
-    .premium-summary-card .btn-small {
-      display: block;
-      background: var(--hub-accent, var(--hub-primary));
-      color: #fff;
-      padding: 10px 14px;
-      border-radius: 6px;
-      font-weight: 700;
-      text-decoration: none;
-      text-align: center;
-      font-size: 13px;
-      margin-top: 14px;
-    }
-
-    /* Section styling */
-    .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    /* Content boxes */
-    .red-flag-box { background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border: 2px solid var(--hub-red); border-radius: 10px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-    .red-flag-box .note { font-style: italic; margin-top: 12px; color: #991b1b; font-size: 13px; }
-
-    .treatment-box { background: #f0fdf4; border: 1px solid #86efac; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p, .treatment-box li { font-size: 14px; color: #166534; }
-
-    .info-box { background: #eff6ff; border-left: 4px solid var(--hub-blue); border-radius: 0 10px 10px 0; padding: 16px; margin: 16px 0; }
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p, .info-box li { font-size: 14px; color: #1e3a8a; }
-
-    .nerve-box { background: #f5f3ff; border: 1px solid #d8b4fe; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .nerve-box h4 { color: var(--hub-purple); font-size: 15px; margin: 0 0 12px; }
-    .nerve-box li { font-size: 14px; margin-bottom: 8px; color: #5b21b6; }
-
-    .timeline-box { background: var(--color-amber-light); border: 1px solid #fbbf24; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .timeline-box h4 { color: #92400e; font-size: 15px; margin: 0 0 12px; }
-    .timeline-box p { font-size: 14px; color: #78350f; }
-
-    .research-box { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border: 2px solid var(--hub-green); border-radius: 10px; padding: 20px; margin: 20px 0; }
-    .research-box h4 { color: #047857; font-size: 15px; margin: 0 0 12px; }
-    .research-box p { font-size: 14px; color: #065f46; }
-
-    .faq-item { border: 1px solid #e5e7eb; border-radius: 8px; margin: 10px 0; overflow: hidden; }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .sources-section { margin-top: 28px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-
-    .disclaimer { font-size: 12px; color: #6b7280; font-style: italic; margin: 20px 0; padding: 14px; background: #f9fafb; border-radius: 8px; }
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -259,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -346,7 +241,7 @@
               <p>Disse tre senene fester seg sammen i et månster som ligner en gasefot - derav det latinske navnet "pes anserinus" (pes = fot, anser = gas).</p>
 
               <div class="info-box">
-                <h4>Slimposens funksjon</h4>
+                <h3>Slimposens funksjon</h3>
                 <p>Slimposen (bursa) fungerer som en liten pute fylt med vaeske. Den reduserer friksjon mellom sener og bein under bevegelse. Nær den blir irritert eller betent, produserer den mer vaeske og blir smertefull.</p>
               </div>
 
@@ -372,7 +267,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Kneartrose</h4>
+                  <h3 class="condition-title">Kneartrose</h3>
                   <span class="condition-badge">Vanligste årsak</span>
                 </div>
                 <p>Ved artrose endres biomekanikken i kneet, noe som kan fore til økt belastning på pes anserine-omrødet. Opptil 75% av pasienter med medial kneartrose har samtidig pes anserine-smerte.</p>
@@ -380,21 +275,21 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Overvekt</h4>
+                  <h3 class="condition-title">Overvekt</h3>
                 </div>
                 <p>økt kroppsvekt gir økt belastning på kneet og kan endre gangmånster. Dette øker friksjonen i pes anserine-omrødet.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Stramme hamstrings</h4>
+                  <h3 class="condition-title">Stramme hamstrings</h3>
                 </div>
                 <p>Stram muskulatur på baksiden av læret økerspenningen på semitendinosus-senen og dermed trykket på slimposen.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Overbelastning</h4>
+                  <h3 class="condition-title">Overbelastning</h3>
                 </div>
                 <p>For rask okning i lopevolum, lange turer, eller repetitive kneboyninger kan irritere slimposen.</p>
               </div>
@@ -464,7 +359,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Palpasjonsomhet</h4>
+                  <h3 class="condition-title">Palpasjonsomhet</h3>
                   <span class="condition-badge">Hovedfunn</span>
                 </div>
                 <p>Tydelig omhet ved trykk over pes anserine-omrødet, ca. 5-7 cm nedenfor mediale leddspalte. Dette er det viktigste diagnostiske funnet.</p>
@@ -472,7 +367,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Smerteprovokasjonstester</h4>
+                  <h3 class="condition-title">Smerteprovokasjonstester</h3>
                 </div>
                 <ul>
                   <li>Smerte ved motstandstestet hofte-fleksjon og knefleksjon</li>
@@ -491,7 +386,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Differensialdiagnoser</h4>
+                <h3>Differensialdiagnoser</h3>
                 <p>Andre tilstander som kan gi lignende symptomer:</p>
                 <ul>
                   <li>Medial <a href="meniskskade.html">meniskskade</a></li>
@@ -515,7 +410,7 @@
               <h3>Førstelinjebehandling</h3>
 
               <div class="treatment-box">
-                <h4>Aktivitetsmodifisering</h4>
+                <h3>Aktivitetsmodifisering</h3>
                 <ul>
                   <li>Reduser aktiviteter som provoserer smerten</li>
                   <li>Unngå repetitive kneboyninger og trappegang</li>
@@ -524,12 +419,12 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Isbehandling</h4>
+                <h3>Isbehandling</h3>
                 <p>Bruk is over det smertefulle omrødet i 15-20 minutter, 2-3 ganger daglig. Spesielt effektivt etter aktivitet.</p>
               </div>
 
               <div class="treatment-box">
-                <h4>Toying</h4>
+                <h3>Toying</h3>
                 <ul>
                   <li><strong>Hamstrings-toying:</strong> Helt sentralt - hold 30-60 sekunder, gjenta 3-4 ganger daglig</li>
                   <li><strong>Quadriceps-toying:</strong> Balanserer muskelspill</li>
@@ -538,7 +433,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Styrketrening</h4>
+                <h3>Styrketrening</h3>
                 <ul>
                   <li><strong>Hofteabduktorer:</strong> Gluteus medius-styrke forbedrer knekontroll</li>
                   <li><strong>Quadriceps:</strong> Styrker ståtte rundt kneet</li>
@@ -621,7 +516,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Ved artrose</h4>
+                <h3>Ved artrose</h3>
                 <p>Hvis du har underliggende kneartrose, er det viktig å behandle denne også. Styrketrening og vektnedgang er de mest effektive tiltakene for både artrose og bursitt.</p>
               </div>
             </section>

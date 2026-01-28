@@ -146,91 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    /* Premium Summary Card - TL;DR */
-    .premium-summary-card .btn-cta {
-      display: block;
-      background: linear-gradient(135deg, var(--hub-accent, #F26522) 0%, #e85a10 100%);
-      color: white;
-      padding: 12px 20px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-align: center;
-      margin-top: 16px;
-      transition: all 0.3s ease;
-      box-shadow: 0 3px 12px rgba(242, 101, 34, 0.25);
-    }
-
-    .premium-summary-card .btn-cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 16px rgba(242, 101, 34, 0.35);
-    }
-
-    /* Mobile sticky CTA */
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-
-    @media (max-width: 1024px) {
-      .mobile-sticky-cta { display: flex; }
-      .hub-main { margin-bottom: 80px; }
-    }
-
-    .mobile-sticky-cta .btn {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .mobile-sticky-cta .btn-primary { background: #F26522; color: #fff; }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -238,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -424,33 +340,33 @@
               <p>Det er sjelden bare ån årsak. Spenningshodepine utvikles oftest gjennom et samspill mellom flere faktorer:</p>
 
               <div class="condition-card">
-                <h4>1. Muskulsere spenninger og triggerpunkter</h4>
+                <h3>1. Muskulsere spenninger og triggerpunkter</h3>
                 <p>Omme knuter (<a href="triggerpunkter-hodepine.html">triggerpunkter</a>) i nakke- og kjevemuskulatur er det mest konsistente funnet. En metaanalyse fra 2022 (Pain Physician) fant at kroniske pasienter hadde betydelig økt omhet i perikarial muskulatur (SMD 1,57).</p>
                 <p>Hos personer med kronisk spenningshodepine har forskning funnet gjennomsnittlig <strong>3,9 triggerpunkter per pasient</strong>, mot 1,4 hos friske kontroller (Couppe et al., 2007).</p>
               </div>
 
               <div class="condition-card">
-                <h4>2. Stress og psykisk belastning</h4>
+                <h3>2. Stress og psykisk belastning</h3>
                 <p>Stress aktiverer det sympatiske nervesystemet og øker muskelspenningen automatisk. En studie fant at hodepinefrekvensen økte med 4,3% for hver 10-poeng økning på stressskala. Mange kjenner seg igjen i at skuldrene heves og kjeven klemmes sammen i krevende perioder.</p>
               </div>
 
               <div class="condition-card">
-                <h4>3. Såvnforstyrrelser</h4>
+                <h3>3. Såvnforstyrrelser</h3>
                 <p>Omtrent <strong>50%</strong> av pasienter med spenningshodepine har såvnproblemer (Odegard et al., 2010). Dørlig såvnkvalitet senker smerteterskelen og er en selvstendig risikofaktor for kronifisering. Mange opplever derfor <a href="morgenhodepine.html">morgenhodepine</a> som følge av dørlig nattesåvn.</p>
               </div>
 
               <div class="condition-card">
-                <h4>4. Sentral sensitisering</h4>
+                <h3>4. Sentral sensitisering</h3>
                 <p>Ved langvarig spenningshodepine skjer det endringer i sentralnervesystemet. Smertesystemet blir "overaktivt" - hjernen registrerer smertesignaler kraftigere enn normalt. Dette forklarer hvorfor hodepinen kan vedvare selv etter at de opprinnelige triggerne er borte.</p>
               </div>
 
               <div class="condition-card">
-                <h4>5. Holdning og ergonomi</h4>
+                <h3>5. Holdning og ergonomi</h3>
                 <p>Fremoverlent hodeposisjon ("tekst-nakke") er assosiert med økt forekomst av aktive triggerpunkter og spenningshodepine. Statisk arbeid foran skjerm uten variasjon øker risikoen.</p>
               </div>
 
               <div class="condition-card">
-                <h4>6. Genetiske faktorer og hormoner</h4>
+                <h3>6. Genetiske faktorer og hormoner</h3>
                 <p>Arveligheten for hyppig spenningshodepine er beregnet til <strong>44-48%</strong> i tvillingstudier. Førstegradsslektninger har 3,1 ganger høyere risiko for å utvikle tilstanden. Hos kvinner kan hormonsvingninger også spille en rolle - les mer om <a href="hormonhodepine.html">hormonhodepine</a>.</p>
               </div>
 
@@ -491,7 +407,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Søk lege eller legevakt ved:</h4>
+                <h3>Søk lege eller legevakt ved:</h3>
                 <ul>
                   <li><strong>Plutselig, intens hodepine</strong> - "den verste hodepinen i mitt liv"</li>
                   <li><strong>Feber og nakkestivhet</strong> - kan indikere hjernehinnebetennelse</li>
@@ -603,27 +519,27 @@
               </div>
 
               <div class="condition-card">
-                <h4>Er spenningshodepine farlig?</h4>
+                <h3>Er spenningshodepine farlig?</h3>
                 <p>Nei, spenningshodepine er ikke farlig i seg selv. Det er en primår hodepine - altså en tilstand i seg selv, ikke et symptom på underliggende sykdom. Røde flagg bør likevel tas på alvor.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Hva er forskjellen på spenningshodepine og migrene?</h4>
+                <h3>Hva er forskjellen på spenningshodepine og migrene?</h3>
                 <p>Migrene er ofte ensidig og pulserende, forverres av fysisk aktivitet, og kommer gjerne med kvalme og både lys- og lydskyhet. Spenningshodepine er tosidig, pressende/strammende, forverres ikke av aktivitet, og gir sjelden kvalme.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Kan kiropraktor hjelpe mot spenningshodepine?</h4>
+                <h3>Kan kiropraktor hjelpe mot spenningshodepine?</h3>
                 <p>Ja, det finnes moderat til god dokumentasjon for at manuell behandling hjelper ved spenningshodepine. Bløtvevsbehandling og triggerpunktterapi har vist stor effekt i systematiske oversikter (SMD -0.86 til -1.45).</p>
               </div>
 
               <div class="condition-card">
-                <h4>Hvor ofte bør jeg gå til behandling?</h4>
+                <h3>Hvor ofte bør jeg gå til behandling?</h3>
                 <p>Ved aktive plager er 1-2 ganger per uke vanlig i starten. De fleste merker bedring etter 4-6 behandlinger. Ved kronisk hodepine kan det ta lengre tid.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Bør jeg ta MR av hodet?</h4>
+                <h3>Bør jeg ta MR av hodet?</h3>
                 <p>Vanligvis ikke. Spenningshodepine diagnostiseres klinisk, og bildediagnostikk er kun aktuelt ved atypiske symptomer eller røde flagg. MR viser ofte "normalfunn" som ikke forklarer hodepinen.</p>
               </div>
             </section>

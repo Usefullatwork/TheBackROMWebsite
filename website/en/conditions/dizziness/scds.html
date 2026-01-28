@@ -82,59 +82,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section ul { font-size: 0.85rem; color: #64748b; }
-    .sources-section li { margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -142,7 +90,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -233,7 +181,7 @@
             </nav>
 
             <div class="red-flag-alert">
-              <h4>When should you contact an ENT specialist?</h4>
+              <h3>When should you contact an ENT specialist?</h3>
               <p>Dizziness triggered by loud sounds, you hear your own eye movements, footsteps or heartbeat abnormally clearly, dizziness when straining, coughing or blowing your nose.</p>
             </div>
           </section>
@@ -289,12 +237,12 @@
             <h3>Vestibular Symptoms (Balance Disturbances)</h3>
 
             <div class="condition-card">
-              <h4>Sound-Induced Dizziness (Tullio Phenomenon)</h4>
+              <h3>Sound-Induced Dizziness (Tullio Phenomenon)</h3>
               <p>Occurs in 42-43% of patients. Loud sounds (typically 500 Hz-2 kHz at 100-110 dB) trigger spinning dizziness or unsteadiness. Examples include loud music, barking dogs, or construction noise.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Pressure-Induced Dizziness (Hennebert Sign)</h4>
+              <h3>Pressure-Induced Dizziness (Hennebert Sign)</h3>
               <p>Affects 37% and is triggered by Valsalva maneuver (straining), coughing, sneezing, heavy lifting or nose blowing.</p>
             </div>
 
@@ -303,7 +251,7 @@
             <h3>Auditory Symptoms (Hearing Disturbances)</h3>
 
             <div class="condition-card">
-              <h4>Autophony</h4>
+              <h3>Autophony</h3>
               <p>The most characteristic symptom, affecting 42-60% of patients. Patients describe their own voice as sounding distorted or "metallic," and many hear their own body sounds abnormally loud - such as eye movements, footsteps, heartbeat and even bowel sounds. This is almost diagnostic for SCDS when present.</p>
             </div>
 
@@ -323,17 +271,17 @@
             <p>SCDS is called "the great imitator of the ear" because symptoms can resemble several other conditions:</p>
 
             <div class="condition-card">
-              <h4><a href="menieres-disease.html">Meniere's Disease</a></h4>
+              <h3><a href="menieres-disease.html">Meniere's Disease</a></h3>
               <p>Also causes hearing loss and dizziness, but attacks come spontaneously and last 20 minutes to several hours. In SCDS, symptoms are temporally related to specific sound or pressure triggers.</p>
             </div>
 
             <div class="condition-card">
-              <h4><a href="bppv-crystal-disease.html">BPPV (Crystal Disease)</a></h4>
+              <h3><a href="bppv-crystal-disease.html">BPPV (Crystal Disease)</a></h3>
               <p>Triggered by head movements and causes brief spinning dizziness that diminishes with repeated movements. SCDS is triggered by sound and pressure, not head position.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Otosclerosis</h4>
+              <h3>Otosclerosis</h3>
               <p>Also causes hearing loss in low frequencies, but in otosclerosis the stapedius reflex is absent - in SCDS it is normal. This difference is important because stapedectomy (surgery for otosclerosis) is contraindicated in SCDS.</p>
             </div>
           </section>
@@ -357,17 +305,17 @@
             <p>For the diagnosis of SCDS, all three of the following are required:</p>
 
             <div class="info-box">
-              <h4>A. At Least One Characteristic Symptom</h4>
+              <h3>A. At Least One Characteristic Symptom</h3>
               <p>Bone conduction hypersensitivity (autophony for internal body sounds), sound-induced dizziness/oscillopsia, pressure-induced dizziness/oscillopsia, or pulsatile tinnitus.</p>
             </div>
 
             <div class="info-box">
-              <h4>B. At Least One Physiological Finding</h4>
+              <h3>B. At Least One Physiological Finding</h3>
               <p>Nystagmus in the plane of the superior canal triggered by sound or pressure, negative bone conduction thresholds on audiometry in low frequencies, or enhanced VEMP responses.</p>
             </div>
 
             <div class="info-box">
-              <h4>C. High-Resolution CT</h4>
+              <h3>C. High-Resolution CT</h3>
               <p>Showing dehiscence with 0.5-0.63 mm slice thickness or less and reformatted images in Poschl and Stenvers planes.</p>
             </div>
 
@@ -394,7 +342,7 @@
             <p>For patients with mild to moderate symptoms, conservative treatment is often first choice. Approximately 80% of diagnosed patients do not undergo surgery. Conservative measures include:</p>
 
             <div class="treatment-box">
-              <h4>Conservative Measures</h4>
+              <h3>Conservative Measures</h3>
               <ul>
                 <li>Avoid triggering factors (loud sounds, straining, heavy lifting)</li>
                 <li>Hearing protection in noisy environments</li>
@@ -420,7 +368,7 @@
             <p>After SCDS surgery, 39-80% develop transient <a href="vestibular-hypofunction.html">vestibular weakness</a>, and 4.5-24% get BPPV. Here a chiropractor with vestibular competence can contribute with:</p>
 
             <div class="treatment-box">
-              <h4>Vestibular Rehabilitation After Surgery</h4>
+              <h3>Vestibular Rehabilitation After Surgery</h3>
               <ul>
                 <li>Gaze stabilization exercises</li>
                 <li>Balance training</li>

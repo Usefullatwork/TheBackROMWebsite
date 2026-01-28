@@ -142,352 +142,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .hub-content {
-      padding: 32px;
-    }
-
-    @media (max-width: 600px) {
-      .hub-content {
-        padding: 20px;
-      }
-    }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    @media (max-width: 800px) {
-      .intro-tldr-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .intro-text p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #374151;
-    }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .hub-section:first-of-type {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-    }
-
-    .anatomy-box {
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .anatomy-box h4 {
-      color: #92400e;
-      font-size: 15px;
-      margin: 0 0 12px;
-    }
-
-    .anatomy-box p {
-      font-size: 14px;
-      margin-bottom: 8px;
-      color: #78350f;
-    }
-
-    .anatomy-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-      color: #78350f;
-    }
-
-    .anatomy-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .nerve-box {
-      background: #f5f3ff;
-      border: 1px solid #d8b4fe;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .nerve-box h4 {
-      color: var(--hub-purple);
-      font-size: 15px;
-      margin: 0 0 12px;
-    }
-
-    .nerve-box ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .nerve-box li {
-      font-size: 14px;
-      margin-bottom: 8px;
-      color: #5b21b6;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .info-box h4 {
-      color: #1e40af;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .info-box p {
-      font-size: 14px;
-      margin: 0;
-      color: #1e3a8a;
-    }
-
-    .info-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-      color: #1e3a8a;
-    }
-
-    .info-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .red-flag-alert{
-      background: #fff7ed;
-      border-left: 4px solid var(--hub-orange);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .red-flag-alert h4 {
-      color: #c2410c;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .red-flag-alert p {
-      font-size: 14px;
-      margin: 0;
-      color: #9a3412;
-    }
-
-    .red-flag-alert ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-      color: #9a3412;
-    }
-
-    .red-flag-alert li {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .treatment-box h4 {
-      color: #166534;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .treatment-box p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #166534;
-    }
-
-    .treatment-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-    }
-
-    .treatment-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-      color: #166534;
-    }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 {
-      color: #dc2626;
-      margin: 0 0 12px;
-      font-size: 16px;
-    }
-
-    .red-flag-box ul {
-      color: #7f1d1d;
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .red-flag-box li {
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-
-    .red-flag-box .note {
-      font-style: italic;
-      margin-top: 12px;
-      color: #991b1b;
-      font-size: 13px;
-    }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-
-    .faq-question {
-      padding: 14px 16px;
-      font-weight: 600;
-      background: #fafafa;
-      font-size: 14px;
-      color: var(--hub-dark);
-    }
-
-    .faq-answer {
-      padding: 14px 16px;
-      color: #6b7280;
-      border-top: 1px solid #e5e7eb;
-      font-size: 14px;
-    }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: #6b7280;
-      font-size: 15px;
-      margin-bottom: 12px;
-    }
-
-    .sources-section ul {
-      font-size: 12px;
-      color: #6b7280;
-      line-height: 1.6;
-      padding-left: 20px;
-    }
-
-    .sources-section li {
-      margin-bottom: 4px;
-    }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-    }
-
-    .hub-content h3 {
-      font-size: 17px;
-      color: var(--hub-dark);
-      margin: 22px 0 10px;
-    }
-
-    .hub-content p {
-      margin-bottom: 14px;
-      font-size: 15px;
-    }
-
-    .hub-content ul,
-    .hub-content ol {
-      margin: 14px 0;
-      padding-left: 24px;
-    }
-
-    .hub-content li {
-      margin-bottom: 6px;
-      font-size: 15px;
-    }
-
-    .hub-content strong {
-      color: var(--hub-dark);
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -495,7 +150,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -661,7 +316,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Bakody's Sign - Relief from Raising the Arm</h4>
+                <h3>Bakody's Sign - Relief from Raising the Arm</h3>
                 <p>A characteristic finding in cervical radiculopathy is that pain is relieved when you place your hand
                   on your head. This reduces tension on the nerve root and is a useful diagnostic sign.</p>
               </div>
@@ -726,7 +381,7 @@
               </table>
 
               <div class="red-flag-alert">
-                <h4>Double Crush Syndrome</h4>
+                <h3>Double Crush Syndrome</h3>
                 <p>In some cases, you can have both conditions simultaneously. The nerve can be irritated both in the
                   neck and at the wrist. This is called "double crush syndrome" and requires treatment of both locations
                   for optimal recovery.</p>
@@ -735,13 +390,13 @@
               <h3>Other Conditions to Rule Out</h3>
 
               <div class="condition-card">
-                <h4>Thoracic Outlet Syndrome (TOS)</h4>
+                <h3>Thoracic Outlet Syndrome (TOS)</h3>
                 <p>The nerve is compressed between neck muscles and ribs. Symptoms can be similar, but often worsen when
                   raising the arm overhead (opposite of Bakody's sign).</p>
               </div>
 
               <div class="condition-card">
-                <h4>Shoulder Pathology</h4>
+                <h3>Shoulder Pathology</h3>
                 <p>Rotator cuff injuries or impingement can cause radiation to the arm. Shoulder mobility is usually
                   normal with pure neck problems.</p>
               </div>
@@ -775,7 +430,7 @@
               <h3>What Affects Prognosis?</h3>
 
               <div class="treatment-box">
-                <h4>Good Prognostic Factors</h4>
+                <h3>Good Prognostic Factors</h3>
                 <ul>
                   <li>Early treatment initiation</li>
                   <li>Younger age (under 50)</li>
@@ -786,7 +441,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Factors That May Prolong Recovery</h4>
+                <h3>Factors That May Prolong Recovery</h3>
                 <ul>
                   <li>Delayed treatment initiation</li>
                   <li>Concurrent depression or anxiety</li>
@@ -819,7 +474,7 @@
               <h3>Acute Phase (Week 1-2)</h3>
 
               <div class="treatment-box">
-                <h4>Pain Management and Modified Activity</h4>
+                <h3>Pain Management and Modified Activity</h3>
                 <ul>
                   <li>Avoid provoking positions (backward bending, rotation toward painful side)</li>
                   <li>Short-term use of pain medication as needed</li>
@@ -831,7 +486,7 @@
               <h3>Subacute Phase (Week 2-8)</h3>
 
               <div class="treatment-box">
-                <h4>Manual Treatment</h4>
+                <h3>Manual Treatment</h3>
                 <p>Chiropractic treatment may include:</p>
                 <ul>
                   <li>Joint mobilization of the cervical spine</li>
@@ -842,7 +497,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Exercises</h4>
+                <h3>Exercises</h3>
                 <ul>
                   <li><strong>Isometric neck exercises:</strong> Strengthening without movement</li>
                   <li><strong>Neck retractions:</strong> The "chin tuck" exercise</li>
@@ -897,7 +552,7 @@
                 the nerve root. This is more serious than pure radiculopathy and requires faster evaluation.</p>
 
               <div class="info-box">
-                <h4>Signs of Myelopathy</h4>
+                <h3>Signs of Myelopathy</h3>
                 <ul>
                   <li>Unsteady gait, especially in the dark</li>
                   <li>Difficulty with fine motor skills (writing, buttoning buttons)</li>

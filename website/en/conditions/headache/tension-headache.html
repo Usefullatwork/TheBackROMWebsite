@@ -146,91 +146,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    /* Premium Summary Card - TL;DR */
-    .premium-summary-card .btn-cta {
-      display: block;
-      background: linear-gradient(135deg, var(--hub-accent, #F26522) 0%, #e85a10 100%);
-      color: white;
-      padding: 12px 20px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-align: center;
-      margin-top: 16px;
-      transition: all 0.3s ease;
-      box-shadow: 0 3px 12px rgba(242, 101, 34, 0.25);
-    }
-
-    .premium-summary-card .btn-cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 16px rgba(242, 101, 34, 0.35);
-    }
-
-    /* Mobile sticky CTA */
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-
-    @media (max-width: 1024px) {
-      .mobile-sticky-cta { display: flex; }
-      .hub-main { margin-bottom: 80px; }
-    }
-
-    .mobile-sticky-cta .btn {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .mobile-sticky-cta .btn-primary { background: #F26522; color: #fff; }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -238,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -424,33 +340,33 @@
               <p>There is rarely just one cause. Tension headache most often develops through an interplay of several factors:</p>
 
               <div class="condition-card">
-                <h4>1. Muscular Tension and Trigger Points</h4>
+                <h3>1. Muscular Tension and Trigger Points</h3>
                 <p>Tender knots (<a href="trigger-point-headache.html">trigger points</a>) in neck and jaw muscles are the most consistent finding. A meta-analysis from 2022 (Pain Physician) found that chronic patients had significantly increased tenderness in pericranial muscles (SMD 1.57).</p>
                 <p>In people with chronic tension headache, research has found an average of <strong>3.9 trigger points per patient</strong>, compared to 1.4 in healthy controls (Couppe et al., 2007).</p>
               </div>
 
               <div class="condition-card">
-                <h4>2. Stress and Mental Strain</h4>
+                <h3>2. Stress and Mental Strain</h3>
                 <p>Stress activates the sympathetic nervous system and automatically increases muscle tension. One study found that headache frequency increased by 4.3% for every 10-point increase on the stress scale. Many recognize that shoulders rise and jaw clenches during demanding periods.</p>
               </div>
 
               <div class="condition-card">
-                <h4>3. Sleep Disturbances</h4>
+                <h3>3. Sleep Disturbances</h3>
                 <p>About <strong>50%</strong> of patients with tension headache have sleep problems (Odegard et al., 2010). Poor sleep quality lowers the pain threshold and is an independent risk factor for chronification. Many therefore experience <a href="morning-headache.html">morning headache</a> as a result of poor night sleep.</p>
               </div>
 
               <div class="condition-card">
-                <h4>4. Central Sensitization</h4>
+                <h3>4. Central Sensitization</h3>
                 <p>With prolonged tension headache, changes occur in the central nervous system. The pain system becomes "overactive" - the brain registers pain signals more strongly than normal. This explains why the headache can persist even after the original triggers are gone.</p>
               </div>
 
               <div class="condition-card">
-                <h4>5. Posture and Ergonomics</h4>
+                <h3>5. Posture and Ergonomics</h3>
                 <p>Forward head posture ("text neck") is associated with increased occurrence of active trigger points and tension headache. Static work in front of a screen without variation increases the risk.</p>
               </div>
 
               <div class="condition-card">
-                <h4>6. Genetic Factors and Hormones</h4>
+                <h3>6. Genetic Factors and Hormones</h3>
                 <p>The heritability for frequent tension headache is estimated at <strong>44-48%</strong> in twin studies. First-degree relatives have a 3.1 times higher risk of developing the condition. In women, hormonal fluctuations can also play a role - read more about <a href="hormonal-headache.html">hormonal headache</a>.</p>
               </div>
 
@@ -491,7 +407,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Seek medical attention immediately if:</h4>
+                <h3>Seek medical attention immediately if:</h3>
                 <ul>
                   <li><strong>Sudden, intense headache</strong> - "the worst headache of my life"</li>
                   <li><strong>Fever and neck stiffness</strong> - may indicate meningitis</li>
@@ -603,27 +519,27 @@
               </div>
 
               <div class="condition-card">
-                <h4>Is tension headache dangerous?</h4>
+                <h3>Is tension headache dangerous?</h3>
                 <p>No, tension headache is not dangerous in itself. It is a primary headache - meaning a condition in itself, not a symptom of underlying disease. However, red flags should always be taken seriously.</p>
               </div>
 
               <div class="condition-card">
-                <h4>What is the difference between tension headache and migraine?</h4>
+                <h3>What is the difference between tension headache and migraine?</h3>
                 <p>Migraine is often one-sided and pulsating, worsens with physical activity, and typically comes with nausea and both light and sound sensitivity. Tension headache is bilateral, pressing/tightening, does not worsen with activity, and rarely causes nausea.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Can a chiropractor help with tension headache?</h4>
+                <h3>Can a chiropractor help with tension headache?</h3>
                 <p>Yes, there is moderate to good evidence that manual treatment helps with tension headache. Soft tissue treatment and trigger point therapy have shown large effects in systematic reviews (SMD -0.86 to -1.45).</p>
               </div>
 
               <div class="condition-card">
-                <h4>How often should I have treatment?</h4>
+                <h3>How often should I have treatment?</h3>
                 <p>For active complaints, 1-2 times per week is common initially. Most notice improvement after 4-6 treatments. For chronic headache, it may take longer.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Should I get an MRI of my head?</h4>
+                <h3>Should I get an MRI of my head?</h3>
                 <p>Usually not. Tension headache is diagnosed clinically, and imaging is only relevant for atypical symptoms or red flags. MRI often shows "normal findings" that do not explain the headache.</p>
               </div>
             </section>

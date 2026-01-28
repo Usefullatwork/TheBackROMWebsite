@@ -138,71 +138,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .cycle-box {
-      background: linear-gradient(135deg, var(--color-amber-light) 0%, #fde68a 100%);
-      border: 2px solid var(--hub-orange);
-      border-radius: 12px;
-      padding: 24px;
-      margin: 20px 0;
-      text-align: center;
-    }
-
-    .cycle-box h4 { color: #92400e; font-size: 16px; margin: 0 0 16px; }
-
-    .cycle-steps {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .cycle-step {
-      background: #fff;
-      border-radius: 8px;
-      padding: 12px 16px;
-      font-size: 13px;
-      color: #78350f;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .cycle-arrow {
-      font-size: 20px;
-      color: var(--hub-orange);
-    }
-
-    @media (max-width: 600px) {
-      .cycle-steps { flex-direction: column; }
-      .cycle-arrow { transform: rotate(90deg); }
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -210,7 +146,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -351,7 +287,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Triptaner (Imigran, Zomig, etc.)</h4>
+                  <h3 class="condition-title">Triptaner (Imigran, Zomig, etc.)</h3>
                   <span class="condition-badge">10+ dager/mnd</span>
                 </div>
                 <p>Migrenespesifikke medikamenter. Risiko for MOH ved bruk 10 eller flere dager per måned i 3+ måneder.</p>
@@ -363,7 +299,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Kombinasjonspreparater og opioider</h4>
+                  <h3 class="condition-title">Kombinasjonspreparater og opioider</h3>
                   <span class="condition-badge">10+ dager/mnd</span>
                 </div>
                 <p>Kombinasjoner som inneholder koffein, kodein eller andre opioider. Høy risiko for avhengighet og MOH.</p>
@@ -376,7 +312,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Vanlige smertestillende (NSAID, paracetamol)</h4>
+                  <h3 class="condition-title">Vanlige smertestillende (NSAID, paracetamol)</h3>
                   <span class="condition-badge">15+ dager/mnd</span>
                 </div>
                 <p>Ibuprofen, naproxen, paracetamol og lignende. Risiko ved bruk 15 eller flere dager per måned.</p>
@@ -388,7 +324,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Viktig å vite</h4>
+                <h3>Viktig å vite</h3>
                 <p>MOH utvikles kun hos personer som allerede har en primår hodepinediagnose (migrene, spenningshodepine). Personer som tar smertestillende regelmessig for andre tilstander (leddgikt, ryggplager) utvikler ikke MOH med mindre de også har hodepine i utgangspunktet.</p>
               </div>
             </section>
@@ -403,7 +339,7 @@
               <p>MOH-diagnosen stilles nær følgende kriterier er oppfylt (ICHD-3):</p>
 
               <div class="info-box">
-                <h4>Diagnosekriterier</h4>
+                <h3>Diagnosekriterier</h3>
                 <ul>
                   <li>Hodepine 15+ dager per måned hos pasient med kjent primår hodepine</li>
                   <li>Regelmessig overforbruk av akutte hodepinemedikamenter i mer enn 3 måneder</li>
@@ -452,7 +388,7 @@
               <h3>Steg 2: Seponering</h3>
 
               <div class="treatment-box">
-                <h4>Metoder for seponering</h4>
+                <h3>Metoder for seponering</h3>
                 <ul>
                   <li><strong>Brå seponering:</strong> Anbefales for triptaner og vanlige smertestillende. Trygt å gjøre hjemme med god planlegging</li>
                   <li><strong>Gradvis nedtrapping:</strong> Anbefales for opioider og kombinasjonspreparater. Bør gjøres under veiledning av lege</li>
@@ -461,7 +397,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Forvent reboundhodepine</h4>
+                <h3>Forvent reboundhodepine</h3>
                 <p>De første 1-2 ukene etter seponering vil hodepinen typisk forverres betydelig. Dette er normalt og midlertidig. Andre symptomer kan inkludere:</p>
                 <ul>
                   <li>Kvalme og oppkast</li>
@@ -483,7 +419,7 @@
               <h3>Steg 4: Forebygging av tilbakefall</h3>
 
               <div class="treatment-box">
-                <h4>Livsstilsendringer for å forebygge tilbakefall</h4>
+                <h3>Livsstilsendringer for å forebygge tilbakefall</h3>
                 <ul>
                   <li><strong>Hodepinedagbok:</strong> Fortsett å føre dagbok for å fange opp økt forbruk tidlig</li>
                   <li><strong>10-dagers-regelen:</strong> Aldri bruk akutte smertestillende mer enn 10 dager per måned</li>
@@ -532,7 +468,7 @@
               <p>30-40% før tilbakefall det første året etter seponering. Risikoen er høyest de første 6 månedene. Derfor er oppfølging og forebyggende strategier viktig.</p>
 
               <div class="info-box">
-                <h4>Den underliggende hodepinen</h4>
+                <h3>Den underliggende hodepinen</h3>
                 <p>Husk at seponering ikke kurerer den primøre hodepinen (migrene/spenningshodepine). Mølet er å gå tilbake til den opprinnelige tilstanden med episodisk hodepine som kan behandles effektivt med begrenset medikamentbruk. <a href="triggerpunkter-hodepine.html">Triggerpunktbehandling</a> kan være et nyttig supplement for å håndtere muskelspenninger under seponeringsfasen.</p>
               </div>
             </section>

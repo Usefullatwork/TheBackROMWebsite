@@ -106,64 +106,7 @@
   <link rel="stylesheet" href="../../../css/conditions-combined.min.css?v=20260118">
   <link rel="stylesheet" href="../../../css/hub-article.css">
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-alert{ background: #fff7ed; border: 1px solid #fed7aa; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-alert h4 { color: var(--hub-orange); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -171,7 +114,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -260,7 +203,7 @@
             </nav>
 
             <div class="treatment-box">
-              <h4>The Most Important First: Clicking Is Rarely Dangerous</h4>
+              <h3>The Most Important First: Clicking Is Rarely Dangerous</h3>
               <p>If your jaw clicks but you <strong>don't have pain</strong> and can open your mouth normally, you probably don't need to worry. About 30% of the population has clicking sounds in the jaw joint - most people live perfectly fine with it.</p>
             </div>
           </section>
@@ -307,7 +250,7 @@
             <p>There are several types of sounds from the jaw joint, and they mean different things:</p>
 
             <div class="condition-card">
-              <h4>1. Clicking (Click)</h4>
+              <h3>1. Clicking (Click)</h3>
               <p>A clear, distinct sound - like "clicking" your fingers:</p>
               <ul>
                 <li>Often happens when opening, but can also occur when closing</li>
@@ -319,12 +262,12 @@
             </div>
 
             <div class="info-box">
-              <h4>What Painless Clicking Means</h4>
+              <h3>What Painless Clicking Means</h3>
               <p>If you have clicking without pain, it means the disc is probably slightly displaced, but the joint adapts and functions normally. No reason for concern or treatment.</p>
             </div>
 
             <div class="condition-card">
-              <h4>2. Crepitation (Grinding/Scraping)</h4>
+              <h3>2. Crepitation (Grinding/Scraping)</h3>
               <p>A continuous, raspy sound - like sand between fingertips:</p>
               <ul>
                 <li>May indicate wear in the joint surface (osteoarthritis)</li>
@@ -335,7 +278,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>3. Popping (Sudden Snap)</h4>
+              <h3>3. Popping (Sudden Snap)</h3>
               <ul>
                 <li>Loud, sudden sound - like cracking a finger</li>
                 <li>Often caused by cavitation (gas bubble in joint fluid)</li>
@@ -354,7 +297,7 @@
             <p>Many become worried when they hear that the disc is "displaced". But here's what's important to know:</p>
 
             <div class="red-flag-alert">
-              <h4>Surprising MRI Research</h4>
+              <h3>Surprising MRI Research</h3>
               <ul>
                 <li><strong>33% of completely symptom-free people</strong> have disc displacement on MRI</li>
                 <li>Disc displacement is often a <strong>normal finding</strong>, not a disease</li>
@@ -381,7 +324,7 @@
             <p>When the jaw locks, the disc sits in front of the joint head and prevents normal opening:</p>
 
             <div class="condition-card">
-              <h4>Acute Jaw Lock</h4>
+              <h3>Acute Jaw Lock</h3>
               <ul>
                 <li>Suddenly occurring limited opening</li>
                 <li>Can often pinpoint exactly when it happened</li>
@@ -391,7 +334,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Chronic Jaw Lock</h4>
+              <h3>Chronic Jaw Lock</h3>
               <ul>
                 <li>Gradually developed limitation</li>
                 <li>Persistent stiffness and limited opening</li>
@@ -400,7 +343,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>95% Improve Without Surgery</h4>
+              <h3>95% Improve Without Surgery</h3>
               <p>Research shows that <strong>95% of acute jaw lock cases</strong> resolve within 12 weeks with conservative treatment:</p>
               <ul>
                 <li>Joint mobilization and manipulation</li>
@@ -455,7 +398,7 @@
             <p>This is first-line treatment and works for the vast majority:</p>
 
             <div class="treatment-box">
-              <h4>1. Joint Mobilization</h4>
+              <h3>1. Joint Mobilization</h3>
               <ul>
                 <li><strong>Distraction techniques:</strong> Gentle stretching of the joint</li>
                 <li><strong>Glide mobilization:</strong> Restoring normal gliding</li>
@@ -464,7 +407,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>2. Muscle Treatment</h4>
+              <h3>2. Muscle Treatment</h3>
               <ul>
                 <li><strong>Trigger point therapy:</strong> Masseter, temporalis, pterygoid</li>
                 <li><strong>Intraoral treatment:</strong> Treatment of lateral pterygoid from inside</li>
@@ -475,7 +418,7 @@
             <h3>3. Exercises (Most Important for Long-term Results)</h3>
 
             <div class="condition-card">
-              <h4>For Clicking:</h4>
+              <h3>For Clicking:</h3>
               <ul>
                 <li>Usually no treatment necessary</li>
                 <li>Avoid "testing" the clicking - it can irritate the joint</li>
@@ -484,7 +427,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>For Locking - Gradual Opening Training:</h4>
+              <h3>For Locking - Gradual Opening Training:</h3>
               <ol>
                 <li><strong>Passive stretch:</strong> Use your fingers to gently press down on the lower jaw</li>
                 <li><strong>Hold 20-30 seconds:</strong> At maximum, pain-free opening</li>
@@ -494,7 +437,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Resistance Exercises:</h4>
+              <h3>Resistance Exercises:</h3>
               <ol>
                 <li><strong>Opening against resistance:</strong> Press chin down against palm, hold 5 sec</li>
                 <li><strong>Closing against resistance:</strong> Press teeth against finger between teeth, hold 5 sec</li>
@@ -520,7 +463,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>For Painless Clicking</h4>
+              <h3>For Painless Clicking</h3>
               <ul>
                 <li><strong>Don't do anything special:</strong> Learn to live with the sound</li>
                 <li><strong>Avoid "testing":</strong> Stop clicking intentionally</li>
@@ -529,7 +472,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>For Painful Clicking</h4>
+              <h3>For Painful Clicking</h3>
               <ul>
                 <li><strong>Soft diet:</strong> Avoid chewy, hard food for a period</li>
                 <li><strong>Heat:</strong> Warm cloth on the jaw 10-15 min</li>
@@ -540,7 +483,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>For Acute Locking</h4>
+              <h3>For Acute Locking</h3>
               <ul>
                 <li><strong>Heat:</strong> Warm cloth 10-15 min to loosen muscles</li>
                 <li><strong>Gentle movement:</strong> Try careful side movements with the jaw</li>
@@ -573,7 +516,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Rule</h4>
+              <h3>Rule</h3>
               <p>If clicking disappears AND you can open normally without pain, it's probably good. If clicking disappears AND you have problems, seek help.</p>
             </div>
           </section>
@@ -588,7 +531,7 @@
             <p>What can you expect over time?</p>
 
             <div class="condition-card">
-              <h4>For Clicking</h4>
+              <h3>For Clicking</h3>
               <ul>
                 <li>Most remain stable without worsening</li>
                 <li>Some experience clicking disappearing on its own</li>
@@ -597,7 +540,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>For Locking</h4>
+              <h3>For Locking</h3>
               <ul>
                 <li>95% improve with conservative treatment</li>
                 <li>Most regain normal or near-normal function</li>
@@ -701,7 +644,7 @@
 
           <!-- Related Scientific Articles -->
           <div class="info-box">
-            <h4>Related Scientific Articles</h4>
+            <h3>Related Scientific Articles</h3>
             <p style="color: #334155; margin-bottom: 16px;">Want to learn more about rare causes of jaw and facial pain?</p>
             <ul style="list-style: none; padding: 0; margin: 0;">
               <li style="margin-bottom: 10px;"><a href="eagle-syndrome.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Eagle Syndrome</a> - Elongated styloid process as cause of neck and jaw pain</li>

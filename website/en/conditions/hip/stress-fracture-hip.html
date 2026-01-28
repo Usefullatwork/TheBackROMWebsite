@@ -93,33 +93,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -127,7 +101,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -198,7 +172,7 @@
                   women</span></div>
             </div>
             <div class="red-flag-alert">
-              <h4>Critically Important</h4>
+              <h3>Critically Important</h3>
               <p>Femoral neck stress fractures are a medical priority. If not detected and treated properly, they can
                 develop into a complete fracture - with potentially serious consequences including the need for hip
                 replacement.</p>
@@ -212,21 +186,21 @@
             <p>Stress fractures occur when cumulative loading on the bone exceeds its ability to repair itself. In the
               hip region, stress fractures can occur in:</p>
             <div class="condition-card">
-              <h4>Femoral Neck (collum femoris)</h4>
+              <h3>Femoral Neck (collum femoris)</h3>
               <p><strong>High-risk location.</strong> Can develop into a complete fracture and require surgical
                 treatment.</p>
             </div>
             <div class="condition-card">
-              <h4>Pelvis (os pubis, ramus)</h4>
+              <h3>Pelvis (os pubis, ramus)</h3>
               <p>Common in runners. Causes pain in the groin/lower abdomen. Good prognosis with conservative treatment.
               </p>
             </div>
             <div class="condition-card">
-              <h4>Sacrum</h4>
+              <h3>Sacrum</h3>
               <p>Often overlooked. Causes diffuse lower back pain that worsens with sitting and running.</p>
             </div>
             <div class="condition-card">
-              <h4>Femoral Shaft</h4>
+              <h3>Femoral Shaft</h3>
               <p>Less common. Causes pain on the outside of the thigh that worsens with loading.</p>
             </div>
           </section>
@@ -260,7 +234,7 @@
               <li>Poor running technique</li>
             </ul>
             <div class="info-box">
-              <h4>Female Athlete Triad / RED-S</h4>
+              <h3>Female Athlete Triad / RED-S</h3>
               <p>Women with stress fractures should be screened for RED-S (Relative Energy Deficiency in Sport). This
                 includes low energy availability, menstrual disturbances and low bone mineral density.</p>
             </div>
@@ -272,15 +246,15 @@
             </div>
             <h3>Symptom Development Over Time</h3>
             <div class="condition-card">
-              <h4>Early Signs (weeks 1-2)</h4>
+              <h3>Early Signs (weeks 1-2)</h3>
               <p>Vague, diffuse pain that comes on gradually. Typically pain only during activity.</p>
             </div>
             <div class="condition-card">
-              <h4>Progression (weeks 2-6)</h4>
+              <h3>Progression (weeks 2-6)</h3>
               <p>Pain becomes more localized. Comes earlier in activity and lasts longer afterward.</p>
             </div>
             <div class="condition-card">
-              <h4>Established Stress Fracture (week 6+)</h4>
+              <h3>Established Stress Fracture (week 6+)</h3>
               <p>Constant pain, even at rest. Night pain common. Limping.</p>
             </div>
             <h3>Symptoms by Location</h3>
@@ -323,16 +297,16 @@
             </div>
             <h3>Clinical Examination</h3>
             <div class="condition-card">
-              <h4>Hop Test</h4>
+              <h3>Hop Test</h3>
               <p>Hopping on one leg provokes pain. Simple but sensitive test.</p>
             </div>
             <div class="condition-card">
-              <h4>Fulcrum Test</h4>
+              <h3>Fulcrum Test</h3>
               <p>Pain with pressure while bending the thigh. Specific for femoral shaft.</p>
             </div>
             <h3>Imaging</h3>
             <div class="info-box">
-              <h4>MRI (Gold Standard)</h4>
+              <h3>MRI (Gold Standard)</h3>
               <p>High sensitivity, shows bone marrow edema and stress fracture early. Ordered when suspected.</p>
             </div>
             <ul>
@@ -360,7 +334,7 @@
                 screws.</p>
             </div>
             <div class="treatment-box">
-              <h4>The Chiropractor's Role</h4>
+              <h3>The Chiropractor's Role</h3>
               <p>Identify risk factors such as muscle weakness and biomechanical deviations. Refer for imaging when
                 suspected.</p>
             </div>

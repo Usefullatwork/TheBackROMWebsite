@@ -136,33 +136,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -170,7 +144,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -280,7 +254,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Kjånnsfordeling</h4>
+                <h3>Kjånnsfordeling</h3>
                 <p>En norsk registerstudie fra 2024 viste en kvinne:mann-ratio på 1,2:1. Dette avviker fra eldre studier som viste 4:1 overvekt av menn. Forskjellen skyldes trolig at kvinner tidligere ble feildiagnostisert med migrene.</p>
               </div>
             </section>
@@ -307,7 +281,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>Det viktigste kjennetegnet: Uro og agitasjon</h4>
+                <h3>Det viktigste kjennetegnet: Uro og agitasjon</h3>
                 <p>Her skiller klasehodepine seg dramatisk fra <a href="migrene.html">migrene</a>. Mens migrenepasientene søker mårke og ro, blir klasehodepinepasienter <strong>ekstremt urolige</strong> under anfall.</p>
                 <p>De vandrer hvilelåst rundt, vugger frem og tilbake, holder seg for åyet, eller banker hodet i veggen. Denne agitasjonen ses hos opptil 90% av pasientene.</p>
               </div>
@@ -329,7 +303,7 @@
               <p><strong>Kronisk klasehodepine (10-20% av tilfellene):</strong> Anfallene vedvarer i over ett år uten tilstrekkelige pauser, eller med remisjoner under 3 måneder.</p>
 
               <div class="info-box">
-                <h4>Progresjon mellom formene</h4>
+                <h3>Progresjon mellom formene</h3>
                 <p>Omtrent 4-13% av episodiske pasienter utvikler kronisk form over tid. Heldigvis går 25-33% av kroniske pasienter andre veien - tilbake til episodisk form.</p>
               </div>
             </section>
@@ -346,7 +320,7 @@
               <p>Under et anfall aktiveres det trigeminovaskulare systemet, og det frigjøres store mengder <strong>CGRP</strong> (calcitonin gene-related peptide) - et smertesignalstoff.</p>
 
               <div class="red-flag-alert">
-                <h4>Hvorfor virker ikke vanlige smertestillende?</h4>
+                <h3>Hvorfor virker ikke vanlige smertestillende?</h3>
                 <p>Anfallene nær maksimal intensitet på 5-10 minutter og varer bare 15-180 minutter. Paracetamol og ibuprofen trenger 30-60 minutter for å virke. Innen de kunne hatt effekt, er anfallet ofte over av seg selv.</p>
                 <p><strong>Selv morfin har ingen effekt.</strong> Derfor kreves spesifikke, hurtigvirkende behandlinger.</p>
               </div>
@@ -371,7 +345,7 @@
               <p>Gjennomsnittlig tar det <strong>5-7 år</strong> fra første anfall til korrekt diagnose. Hele 77% før feil diagnose først.</p>
 
               <div class="info-box">
-                <h4>Vanlige feildiagnoser</h4>
+                <h3>Vanlige feildiagnoser</h3>
                 <ul>
                   <li>Trigeminusnevralgi - 22% - se <a href="occipital-nevralgi.html">occipital nevralgi</a> for lignende nevralgi</li>
                   <li><a href="migrene.html">Migrene</a> - 19%</li>
@@ -391,7 +365,7 @@
               <h3>Akuttbehandling - bryt anfallet</h3>
 
               <div class="treatment-box">
-                <h4>1. Høyflow oksygen (gullstandarden)</h4>
+                <h3>1. Høyflow oksygen (gullstandarden)</h3>
                 <p>100% ren oksygen på minst 12-15 liter/minutt gjennom en ikke-gjenpustingsmaske i 15-20 minutter.</p>
                 <ul>
                   <li>78% ble smertefrie etter 15 minutter (vs 20% med placebo)</li>
@@ -401,7 +375,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>2. Subkutan sumatriptan (Imigran)</h4>
+                <h3>2. Subkutan sumatriptan (Imigran)</h3>
                 <p>En injeksjon (6 mg) i læret gir raskest medikamentell lindring.</p>
                 <ul>
                   <li>75% oppnådde ingen eller mild smerte</li>

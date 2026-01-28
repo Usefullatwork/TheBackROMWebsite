@@ -113,250 +113,8 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .hub-intro {
-      margin-bottom: 40px;
-    }
-
-    .intro-text {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: #374151;
-      margin-bottom: 24px;
-    }
-
-    .intro-text p {
-      margin-bottom: 14px;
-    }
-
-    .hub-section {
-      margin-bottom: 40px;
-      scroll-margin-top: 100px;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-
-    .section-number {
-      background: var(--hub-primary);
-      color: white;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 1rem;
-      flex-shrink: 0;
-    }
-
-    .hub-section h2 {
-      color: var(--hub-dark);
-      margin: 0;
-    }
-
-    .hub-section h3 {
-      font-size: 1.15rem;
-      color: var(--hub-dark);
-      margin: 24px 0 12px;
-    }
-
-    .hub-section p {
-      color: #374151;
-      line-height: 1.7;
-      margin-bottom: 14px;
-    }
-
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      margin: 24px 0;
-    }
-
-    .stat-item {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .stat-number {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--hub-primary);
-    }
-
-    .stat-label {
-      color: #64748b;
-      font-size: 0.75rem;
-      margin-top: 4px;
-    }
-
-    .condition-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 16px 0;
-    }
-
-    .condition-card h4 {
-      color: var(--hub-primary);
-      margin-bottom: 10px;
-    }
-
-    .treatment-box {
-      background: #ecfdf5;
-      border: 1px solid #6ee7b7;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .treatment-box h4 {
-      color: var(--hub-green);
-      margin-bottom: 12px;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border: 1px solid #93c5fd;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .info-box h4 {
-      color: var(--hub-blue);
-      margin-bottom: 12px;
-    }
-
-    .red-flag-alert{
-      background: #fffbeb;
-      border: 1px solid #fbbf24;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-alert h4 {
-      color: #92400e;
-      margin-bottom: 12px;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid #e5e7eb;
-      padding: 16px 0;
-    }
-
-    .faq-item:last-child {
-      border-bottom: none;
-    }
-
-    .faq-question {
-      color: var(--hub-dark);
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .faq-answer {
-      color: #4b5563;
-      line-height: 1.6;
-    }
-
-    .sources-section {
-      margin-top: 32px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: var(--hub-dark);
-      margin-bottom: 12px;
-      font-size: 1.1rem;
-    }
-
-    .sources-section ul {
-      font-size: 0.85rem;
-      color: #64748b;
-    }
-
-    .sources-section li {
-      margin-bottom: 6px;
-    }
-
-    .disclaimer {
-      font-size: 0.85rem;
-      color: #64748b;
-      margin-top: 24px;
-      font-style: italic;
-    }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #F26522;
-      padding: 12px 16px;
-      z-index: 100;
-    }
-
-    .mobile-sticky-cta a {
-      display: inline-block;
-      background: white;
-      color: #F26522;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: 600;
-      text-decoration: none;
-      margin-right: 8px;
-    }
-
-    @media (max-width: 900px) {
-      .mobile-sticky-cta {
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-      }
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
-
-  <!-- FAQPage Schema -->
+  <link rel="stylesheet" href="../../../css/hub-article.css">
+<!-- FAQPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -412,7 +170,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -471,7 +229,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li><strong>86%</strong> hereditary component</li>
                 <li><strong>10-15x</strong> more common in women</li>
@@ -545,23 +303,23 @@
             </div>
 
             <div class="condition-card">
-              <h4>Genetics (86% hereditary)</h4>
+              <h3>Genetics (86% hereditary)</h3>
               <p>Heredity is by far the most important factor. If your mother has thumb arthritis, your risk is
                 significantly increased.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Gender</h4>
+              <h3>Gender</h3>
               <p>Women are affected 10-15 times more often than men. Hormones and joint laxity play a role.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Age</h4>
+              <h3>Age</h3>
               <p>Most common after 50, but X-ray findings can be found as early as the 40s.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Load</h4>
+              <h3>Load</h3>
               <p>Heavy manual work and repetitive gripping movements over time increase risk somewhat. This is similar
                 to the causation pattern for <a href="mouse-arm.html">mouse arm</a> and other <a
                   href="elbow-arm.html">overuse conditions in the arm</a>.</p>
@@ -584,7 +342,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>X-ray findings don't always mean pain</h4>
+              <h3>X-ray findings don't always mean pain</h3>
               <p>Research shows that <strong>72% of those with X-ray changes have no symptoms</strong>. Wear on the
                 image is normal with age and doesn't always explain the pain you experience. Treatment should therefore
                 focus on symptoms, not X-ray images.</p>
@@ -598,7 +356,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Conservative treatment is first choice</h4>
+              <h3>Conservative treatment is first choice</h3>
               <ul>
                 <li>Most people get good relief without surgery</li>
                 <li>Hand exercises and strengthening of stabilizing muscles</li>
@@ -610,28 +368,28 @@
             <h3>Treatment plan</h3>
 
             <div class="condition-card">
-              <h4>1. Splinting</h4>
+              <h3>1. Splinting</h3>
               <p>Thumb splint stabilizes the joint and reduces load. Can be used as needed or continuously.</p>
             </div>
 
             <div class="condition-card">
-              <h4>2. Hand exercises</h4>
+              <h3>2. Hand exercises</h3>
               <p>Strengthening exercises for thumb stabilizing muscles. Increases stability and reduces pain.</p>
             </div>
 
             <div class="condition-card">
-              <h4>3. Activity modification</h4>
+              <h3>3. Activity modification</h3>
               <p>Ergonomic aids, changing grip technique, and break strategies.</p>
             </div>
 
             <div class="condition-card">
-              <h4>4. Manual treatment</h4>
+              <h3>4. Manual treatment</h3>
               <p>Soft tissue treatment of overloaded musculature, gentle mobilization. Treatment of <a
                   href="trigger-points-arm.html">trigger points</a> in thumb muscles can also be helpful.</p>
             </div>
 
             <div class="red-flag-alert">
-              <h4>Cortisone for thumb arthritis</h4>
+              <h3>Cortisone for thumb arthritis</h3>
               <p>Unlike some other conditions, cortisone has <strong>limited effect</strong> for thumb arthritis. The
                 effect is often short-lived (2-3 weeks), and repeated injections are not recommended. Hand exercises
                 provide better long-term results.</p>

@@ -138,33 +138,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -172,7 +146,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Majorstua"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Majorstua" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -231,7 +205,7 @@
               </div>
 
               <aside class="premium-summary-card">
-                <h3>Quick Summary</h3>
+                <h2>Quick Summary</h2>
                 <ul>
                   <li>Stabbing/burning pain from <strong>neck to crown</strong></li>
                   <li>Caused by irritation of the <strong>occipital nerve</strong></li>
@@ -255,7 +229,7 @@
               <p>The condition can cause attacks of intense pain lasting from seconds to minutes, or more constant, aching pain with overlying shock-like episodes.</p>
 
               <div class="condition-card">
-                <h4>The Anatomy</h4>
+                <h3>The Anatomy</h3>
                 <p>There are three occipital nerves on each side:</p>
                 <ul>
                   <li><strong>Greater occipital nerve:</strong> Comes from the C2 nerve root. Passes through the neck muscles and supplies the largest part of the back of the head. Most commonly involved in occipital neuralgia.</li>
@@ -319,27 +293,27 @@
               <p>Occipital neuralgia can have many causes, but in many cases no clear underlying cause is found (idiopathic). The most common known causes include:</p>
 
               <div class="condition-card">
-                <h4>Muscle Tension and Trigger Points (Most Common)</h4>
+                <h3>Muscle Tension and Trigger Points (Most Common)</h3>
                 <p>Tight muscles in the upper neck can compress the occipital nerves where they pass through the musculature. Particularly semispinalis capitis, trapezius, and sternocleidomastoid. Read more about <a href="trigger-point-headache.html">trigger points and headache</a>.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Neck Injuries (Whiplash)</h4>
+                <h3>Neck Injuries (Whiplash)</h3>
                 <p>Trauma to the neck can damage or irritate the occipital nerves, either directly or through subsequent muscle spasms and scarring.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Osteoarthritis in Upper Cervical Vertebrae</h4>
+                <h3>Osteoarthritis in Upper Cervical Vertebrae</h3>
                 <p>Degenerative changes in C1-C3 can affect the nerves that form the occipital nerves. Osteoarthritis or bone spurs can compress the nerves.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Prolonged Poor Posture</h4>
+                <h3>Prolonged Poor Posture</h3>
                 <p>Forward head posture (e.g., from office work) can over time lead to muscle tension and nerve involvement in the upper neck. This can also contribute to <a href="cervicogenic-headache.html">cervicogenic headache</a>.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Other Causes</h4>
+                <h3>Other Causes</h3>
                 <ul>
                   <li>Inflammation (gout, diabetes, vasculitis)</li>
                   <li>Infections</li>
@@ -357,7 +331,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>SEE A DOCTOR FOR:</h4>
+                <h3>SEE A DOCTOR FOR:</h3>
                 <ul>
                   <li><strong>Neurological deficits:</strong> Weakness, numbness in arms/legs, balance problems or <a href="headache-dizziness.html">dizziness</a></li>
                   <li><strong>New headache after age 50</strong></li>
@@ -367,7 +341,7 @@
                   <li><strong>Pain that wakes you at night</strong> (see also <a href="morning-headache.html">morning headache</a>)</li>
                 </ul>
 
-                <h4>CALL EMERGENCY SERVICES FOR:</h4>
+                <h3>CALL EMERGENCY SERVICES FOR:</h3>
                 <ul>
                   <li><strong>Sudden, very intense headache</strong> ("worst headache of my life")</li>
                   <li><strong>Altered consciousness or confusion</strong></li>
@@ -427,7 +401,7 @@
               <h3>Conservative Treatment</h3>
 
               <div class="condition-card">
-                <h4>What Can the Chiropractor Do?</h4>
+                <h3>What Can the Chiropractor Do?</h3>
                 <p>Manual treatment can be effective for occipital neuralgia, especially when the condition is caused by muscle tension or dysfunction in the upper neck:</p>
                 <ul>
                   <li><strong>Soft tissue treatment:</strong> Soften tight muscles that may be compressing the nerve</li>
@@ -439,7 +413,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>Self-Help</h4>
+                <h3>Self-Help</h3>
                 <ul>
                   <li><strong>Heat treatment:</strong> Heat pack on the neck can loosen muscles</li>
                   <li><strong>Ergonomics:</strong> Adjust your workstation to avoid forward head posture</li>

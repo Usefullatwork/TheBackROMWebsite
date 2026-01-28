@@ -119,220 +119,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .hub-content {
-      padding: 32px;
-    }
-
-    @media (max-width: 600px) {
-      .hub-content {
-        padding: 20px;
-      }
-    }
-
-    .content-section {
-      margin-bottom: 32px;
-      scroll-margin-top: calc(var(--header-height, 80px) + 20px);
-    }
-
-    .content-section h2 {
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--hub-dark);
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #f3f4f6;
-    }
-
-    .content-section h3 {
-      font-size: 17px;
-      font-weight: 600;
-      color: var(--hub-dark);
-      margin: 20px 0 10px;
-    }
-
-    .content-section p {
-      font-size: 15px;
-      line-height: 1.7;
-      color: #374151;
-      margin-bottom: 14px;
-    }
-
-    .content-section ul,
-    .content-section ol {
-      margin: 14px 0;
-      padding-left: 24px;
-    }
-
-    .content-section li {
-      font-size: 15px;
-      line-height: 1.6;
-      color: #374151;
-      margin-bottom: 8px;
-    }
-
-    .red-flag-alert{
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border-left: 4px solid var(--hub-red);
-      border-radius: 0 10px 10px 0;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-alert h4 {
-      color: var(--hub-red);
-      font-size: 15px;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .red-flag-alert ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .red-flag-alert li {
-      font-size: 14px;
-      color: #7f1d1d;
-      margin-bottom: 6px;
-    }
-
-    .info-box {
-      background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .info-box h4 {
-      color: var(--hub-blue);
-      font-size: 15px;
-      margin-bottom: 10px;
-    }
-
-    .info-box p {
-      font-size: 14px;
-      color: #1e40af;
-      margin: 0;
-    }
-
-    .faq-section {
-      background: #f9fafb;
-      border-radius: 12px;
-      padding: 24px;
-      margin: 28px 0;
-    }
-
-    .faq-section h2 {
-      border: none;
-      padding-bottom: 0;
-      margin-bottom: 20px;
-    }
-
-    .faq-item {
-      background: #fff;
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 12px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    }
-
-    .faq-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .faq-item h4 {
-      font-size: 15px;
-      color: var(--hub-dark);
-      margin-bottom: 8px;
-    }
-
-    .faq-item p {
-      font-size: 14px;
-      color: #6b7280;
-      margin: 0;
-      line-height: 1.6;
-    }
-
-    .sources-section {
-      background: #f9fafb;
-      border-radius: 12px;
-      padding: 24px;
-      margin-top: 32px;
-    }
-
-    .sources-section h3 {
-      font-size: 16px;
-      color: var(--hub-dark);
-      margin-bottom: 14px;
-    }
-
-    .sources-section ol {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .sources-section li {
-      font-size: 13px;
-      color: #6b7280;
-      margin-bottom: 6px;
-      line-height: 1.5;
-    }
-
-    .cause-category {
-      margin-bottom: 20px;
-    }
-
-    .cause-category h4 {
-      font-size: 15px;
-      color: var(--hub-primary);
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-
-    @media (max-width: 1000px) {
-      .hub-content {
-        padding-bottom: 100px;
-      }
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -340,7 +127,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -479,7 +266,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Facet joint vs. discogenic torticollis</h4>
+                <h3>Facet joint vs. discogenic torticollis</h3>
                 <p>With facet joint problems, symptom onset is sudden and you can find a comfortable position. With
                   discogenic cause, pain comes on more gradually, and it's difficult to find rest.</p>
               </div>
@@ -504,7 +291,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Important to know</h4>
+                <h3>Important to know</h3>
                 <p>MRI and X-ray often show "findings" like wear and degenerative changes - this is normal in most
                   adults and rarely explains your pain. Clinical examination often provides more useful information than
                   images.</p>
@@ -551,7 +338,7 @@
                 4-8 weeks (Cetilar).</p>
 
               <div class="info-box">
-                <h4>Honest expectation</h4>
+                <h3>Honest expectation</h3>
                 <p>A control study showed that 79% of patients who didn't receive treatment also reported improvement
                   after one year (Pain Medicine, 2021). Treatment can speed up improvement, but most people get better
                   regardless.</p>
@@ -563,7 +350,7 @@
                 <h2>Red Flags</h2>
               </div>
               <div class="red-flag-alert">
-                <h4>Seek medical attention or emergency room if you have:</h4>
+                <h3>Seek medical attention or emergency room if you have:</h3>
                 <ul>
                   <li>Fever combined with sore throat and headache</li>
                   <li>Increased drooling or difficulty swallowing</li>
@@ -596,44 +383,44 @@
               <h2>Frequently Asked Questions</h2>
 
               <div class="faq-item">
-                <h4>How long does wry neck last?</h4>
+                <h3>How long does wry neck last?</h3>
                 <p>Most people experience significant improvement within 2-7 days, and full recovery within 1-2 weeks.
                   With discogenic cause, it may take 4-8 weeks.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Should I keep my neck still?</h4>
+                <h3>Should I keep my neck still?</h3>
                 <p>No. Gentle movement is better than stillness. Keeping the neck completely still weakens muscles and
                   can prolong healing. Move within your pain tolerance.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Is acute torticollis dangerous?</h4>
+                <h3>Is acute torticollis dangerous?</h3>
                 <p>In the vast majority of cases, it is completely harmless. Rare cases with fever, neurological
                   symptoms, or trauma should be examined by a doctor to rule out more serious conditions.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Do I need X-ray or MRI?</h4>
+                <h3>Do I need X-ray or MRI?</h3>
                 <p>Usually not. The diagnosis is made clinically. Imaging is only appropriate for red flags, persistent
                   symptoms beyond 2 weeks, or neurological deficits.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Does a chiropractor help with wry neck?</h4>
+                <h3>Does a chiropractor help with wry neck?</h3>
                 <p>The Cochrane review from 2025 shows moderate evidence that manual therapy combined with exercises can
                   provide somewhat faster improvement in function and pain. Most people recover regardless, but
                   treatment can speed up the process.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Can I prevent recurrence?</h4>
+                <h3>Can I prevent recurrence?</h3>
                 <p>Yes, partially. Good sleeping position with the right pillow, regular movement, ergonomic workplace,
                   and strengthening exercises for neck/shoulders can reduce the risk of new episodes.</p>
               </div>
 
               <div class="faq-item">
-                <h4>When should I seek help?</h4>
+                <h3>When should I seek help?</h3>
                 <p>You don't need to wait to seek help - a chiropractor can evaluate you promptly. Early treatment can
                   provide faster pain relief. For red flags (fever, neurological symptoms, trauma), you should see a
                   doctor the same day.</p>

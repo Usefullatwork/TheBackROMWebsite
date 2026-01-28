@@ -130,33 +130,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -164,7 +138,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -248,7 +222,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Tension Headache</h4>
+                  <h3 class="condition-title">Tension Headache</h3>
                   <span class="condition-badge">Most common - 26-33%</span>
                 </div>
                 <p><a href="tension-headache.html">Tension headache</a> is the most frequent cause of temple pain. The pain is typically described as a pressing band around the head, often bilateral. It peaks in the 30-39 age range and is somewhat more common in women.</p>
@@ -257,7 +231,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Migraine</h4>
+                  <h3 class="condition-title">Migraine</h3>
                   <span class="condition-badge">11-15%</span>
                 </div>
                 <p><a href="migraine.html">Migraine</a> affects 11-15% of the population annually. Women are affected about three times as often as men. Migraine pain is typically pulsating and often unilateral, commonly localized to the temple.</p>
@@ -266,7 +240,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">TMJ Disorders (TMD)</h4>
+                  <h3 class="condition-title">TMJ Disorders (TMD)</h3>
                   <span class="condition-badge">5-10%</span>
                 </div>
                 <p>Temporomandibular disorders (TMD) cause clinically significant symptoms in 5-10% of the population. Women are affected 2-4 times more often than men, with highest prevalence in the 20-40 age range.</p>
@@ -276,7 +250,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Cervicogenic Headache</h4>
+                  <h3 class="condition-title">Cervicogenic Headache</h3>
                   <span class="condition-badge">0.4-4%</span>
                 </div>
                 <p><a href="neck-headache.html">Cervicogenic headache</a> originates from structures in the neck and refers pain to the head, including the temple. Population prevalence is 0.4-4%, but accounts for 15-20% of <a href="chronic-daily-headache.html">chronic headache cases</a> in clinical practice.</p>
@@ -284,7 +258,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Temporal Arteritis - rare but serious</h4>
+                <h3>Temporal Arteritis - rare but serious</h3>
                 <p>Temporal arteritis (giant cell arteritis) is rare but requires immediate attention. Scandinavian populations have the world's highest prevalence: 28-33 per 100,000. Untreated, temporal arteritis can lead to permanent vision loss in up to 20% of patients.</p>
               </div>
             </section>
@@ -332,7 +306,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Overlapping Causes</h4>
+                <h3>Overlapping Causes</h3>
                 <p>Many patients have overlapping causes. Studies show that trigger points in the temporalis muscle can refer pain to the temple, eyebrow and even the teeth - which can be confused with dental problems or sinus infections.</p>
               </div>
             </section>
@@ -352,7 +326,7 @@
               <p>For TMD-related headache, diagnostic criteria (DC/TMD) have shown 89% sensitivity and 87% specificity: headache in the temple region that is affected by jaw movement, and which can be reproduced by palpation of the chewing musculature.</p>
 
               <div class="info-box">
-                <h4>When is imaging appropriate?</h4>
+                <h3>When is imaging appropriate?</h3>
                 <p>MRI or CT of the head is not indicated for typical primary headache with normal neurological examination and stable pattern. Only 0.3% of headache patients with normal screening have significant findings on imaging.</p>
                 <p>Imaging is appropriate for thunderclap headache, new headache after age 50, neurological deficits, or progressive worsening.</p>
               </div>
@@ -389,34 +363,34 @@
               <p>Treatment approach depends on the underlying cause. Early treatment can often provide faster improvement than waiting.</p>
 
               <div class="treatment-box">
-                <h4>For Cervicogenic Headache</h4>
+                <h3>For Cervicogenic Headache</h3>
                 <p>Evidence is strongest here. A systematic review of 20 RCT studies found moderate evidence that manipulation provides significant short-term effect on pain intensity. One important study showed that 72% of patients achieved at least 50% reduction in headache frequency at 12-month follow-up.</p>
               </div>
 
               <div class="treatment-box">
-                <h4>For Tension Headache</h4>
+                <h3>For Tension Headache</h3>
                 <p>Evidence is weaker for manipulation alone. A meta-analysis found that soft tissue techniques were better than no treatment (low evidence), while manipulation did not show significant effect compared to control. Dry needling showed moderate evidence for effect.</p>
               </div>
 
               <div class="treatment-box">
-                <h4>For TMD-Related Headache</h4>
+                <h3>For TMD-Related Headache</h3>
                 <p>Research suggests that combined treatment of jaw and neck is more effective than neck treatment alone. Trigger point treatment of temporalis and masseter can reduce both local tenderness and referred temple pain.</p>
               </div>
 
               <h3>What Can You Do Yourself?</h3>
 
               <div class="treatment-box">
-                <h4>Self-Examination of Temporalis</h4>
+                <h3>Self-Examination of Temporalis</h3>
                 <p>Place your fingertips on the temple, above and in front of the ear. Clench your teeth - you should feel the muscle tighten. Press with moderate force for 2 seconds on the front, middle and back parts. Assess tenderness. Then massage with circular movements for 30-60 seconds.</p>
               </div>
 
               <div class="treatment-box">
-                <h4>Jaw Exercises</h4>
+                <h3>Jaw Exercises</h3>
                 <p>Controlled mouth opening with tongue relaxed against the palate, sideways jaw movements, and relaxation exercises ("lips together, teeth apart") have moderate evidence from international consensus.</p>
               </div>
 
               <div class="treatment-box">
-                <h4>Neck Exercises</h4>
+                <h3>Neck Exercises</h3>
                 <p>Craniocervical flexion exercise (deep neck flexion) has moderate to high evidence for cervicogenic headache. Lie on your back, perform gentle chin tuck, hold 10 seconds, 10 repetitions.</p>
               </div>
 
@@ -440,7 +414,7 @@
               <p>Without treatment, the condition tends to persist. With treatment, most achieve significant improvement, but long-term maintenance strategies are often necessary.</p>
 
               <div class="info-box">
-                <h4>Important to Remember</h4>
+                <h3>Important to Remember</h3>
                 <p>Long-term results are often comparable between different treatment methods after 6 months. The most important thing is to find an approach that works for you and that you can follow up over time.</p>
               </div>
             </section>

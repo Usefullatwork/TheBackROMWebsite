@@ -166,173 +166,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    @media (max-width: 800px) {
-      .intro-tldr-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .intro-text p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #374151;
-    }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .hub-section:first-of-type {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-    }
-
-    .hub-content {
-      padding: 32px;
-    }
-
-    @media (max-width: 600px) {
-      .hub-content {
-        padding: 20px;
-      }
-    }
-
-    .hub-content h3 {
-      font-size: 17px;
-      color: var(--hub-dark);
-      margin: 22px 0 10px;
-    }
-
-    .hub-content p {
-      margin-bottom: 14px;
-      font-size: 15px;
-    }
-
-    .hub-content ul,
-    .hub-content ol {
-      margin: 14px 0;
-      padding-left: 24px;
-    }
-
-    .hub-content li {
-      margin-bottom: 6px;
-      font-size: 15px;
-    }
-
-    .hub-content strong {
-      color: var(--hub-dark);
-    }
-
-    .exercise-card {
-      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 14px 0;
-    }
-
-    .exercise-card h4 {
-      color: #166534;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .exercise-card p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #166534;
-    }
-
-    .exercise-card .duration {
-      font-size: 12px;
-      color: #15803d;
-      font-weight: 600;
-    }
-
-    .checklist-box {
-      background: #f0fdf4;
-      border: 2px solid var(--hub-green);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 16px 0;
-    }
-
-    .checklist-box h4 {
-      color: #166534;
-      font-size: 15px;
-      margin: 0 0 12px;
-    }
-
-    .checklist-box ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .checklist-box li {
-      padding: 8px 0 8px 28px;
-      position: relative;
-      font-size: 14px;
-      color: #166534;
-      border-bottom: 1px solid #bbf7d0;
-    }
-
-    .checklist-box li:last-child {
-      border-bottom: none;
-    }
-
-    .checklist-box li::before {
-      content: "[ ]";
-      position: absolute;
-      left: 0;
-      font-family: monospace;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -340,7 +174,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -405,7 +239,7 @@
               </div>
 
               <aside class="premium-summary-card">
-                <h3>Quick Summary</h3>
+                <h2>Quick Summary</h2>
                 <ul>
                   <li>Screen at <strong>eye level</strong>, directly in front</li>
                   <li>Mouse and keyboard <strong>close to body</strong></li>
@@ -428,26 +262,26 @@
                 happen that strain the shoulders:</p>
 
               <div class="condition-card">
-                <h4 class="condition-title">Static muscle work</h4>
+                <h3 class="condition-title">Static muscle work</h3>
                 <p>When you hold your arms in front of you to use the keyboard and mouse, the shoulder muscles
                   constantly work to stabilize. Without rest, this leads to fatigue, tension and eventually pain.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Forward-leaning posture</h4>
+                <h3 class="condition-title">Forward-leaning posture</h3>
                 <p>Many lean forward toward the screen. This causes the head to come in front of the shoulders, which
                   significantly increases the load on neck and shoulder muscles.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Raised shoulders</h4>
+                <h3 class="condition-title">Raised shoulders</h3>
                 <p>Stress, concentration or incorrect desk height causes us to unconsciously raise our shoulders. Over
                   time, this leads to chronic tension in the trapezius muscle. This can also affect <a
                     href="sleep-shoulder-pain.html">sleep quality</a>.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">One-sided strain</h4>
+                <h3 class="condition-title">One-sided strain</h3>
                 <p>Using the mouse with the same arm all day, the keyboard too far to one side - such asymmetries strain
                   one shoulder more than the other. Over time, this can contribute to conditions like <a
                     href="biceps-tendinopathy.html">biceps tendinopathy</a> or <a href="ac-joint-arthritis.html">AC
@@ -548,7 +382,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Compact keyboard</h4>
+                  <h3 class="condition-title">Compact keyboard</h3>
                   <span class="condition-badge">Recommended</span>
                 </div>
                 <p>A keyboard without a numeric keypad (tenkeyless) allows you to place the mouse closer to the midline.
@@ -595,7 +429,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Back support</h4>
+                <h3 class="condition-title">Back support</h3>
                 <p>The backrest should support the lower back (lumbar region). Good lumbar support helps you maintain
                   natural curvature in the back, which in turn makes it easier to maintain a relaxed shoulder position.
                 </p>
@@ -633,7 +467,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Sit-stand desk</h4>
+                <h3 class="condition-title">Sit-stand desk</h3>
                 <p>A sit-stand desk allows you to alternate between sitting and standing work. It's not about standing
                   all day (that's not good either), but about variation.</p>
                 <ul>

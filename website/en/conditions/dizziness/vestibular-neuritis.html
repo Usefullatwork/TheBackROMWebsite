@@ -83,57 +83,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .nerve-box { background: #fffbeb; border: 1px solid #fbbf24; border-radius: 10px; padding: 16px; margin: 16px 0; }
-    .nerve-box h4 { color: #92400e; margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -141,7 +91,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -229,7 +179,7 @@
             </nav>
 
             <div class="red-flag-alert">
-              <h4>When should you seek immediate help?</h4>
+              <h3>When should you seek immediate help?</h3>
               <p>For double vision, speech difficulties, swallowing problems, severe headache or sudden hearing loss - call emergency services or go to the emergency room.</p>
             </div>
           </section>
@@ -267,7 +217,7 @@
             <p>The exact cause is not fully understood, but several factors have been identified:</p>
 
             <div class="condition-card">
-              <h4>Viral Cause (Main Hypothesis)</h4>
+              <h3>Viral Cause (Main Hypothesis)</h3>
               <p>Reactivation of herpes simplex virus type 1 (HSV-1) in the balance nerve ganglion is the most accepted theory. HSV-1 - the same virus that causes cold sores - has been found in approximately two-thirds of human vestibular ganglia in autopsy studies. The virus can lie dormant in the nerve for years, then reactivate and create inflammation and swelling.</p>
             </div>
 
@@ -317,17 +267,17 @@
             <p>HINTS (Head Impulse, Nystagmus, Test of Skew) is a three-step eye examination that, in cases of acute dizziness, has proven more sensitive than MRI for detecting stroke in the first 24-48 hours. Performed by trained clinicians, HINTS is 96.5% sensitive and 84-96% specific.</p>
 
             <div class="condition-card">
-              <h4>Head Impulse Test</h4>
+              <h3>Head Impulse Test</h3>
               <p>Rapid passive head rotation while the patient focuses. In vestibular neuritis, the gaze will "slip" and must be corrected.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Nystagmus</h4>
+              <h3>Nystagmus</h3>
               <p>In vestibular neuritis, nystagmus is unidirectional - the eyes beat the same direction regardless of gaze direction.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Test of Skew</h4>
+              <h3>Test of Skew</h3>
               <p>Alternating covering of the eyes. Vertical readjustment indicates brainstem lesion.</p>
             </div>
           </section>
@@ -370,7 +320,7 @@
             </ul>
 
             <div class="treatment-box">
-              <h4>Exercises - Start Day 3-4</h4>
+              <h3>Exercises - Start Day 3-4</h3>
               <p><strong>1. Gaze stabilization (VOR x1):</strong> Hold a finger in front of you. Focus sharply on the target. Rotate your head calmly from side to side while gaze is locked. Start slowly, increase speed gradually. 1-2 minutes, 3-5 times daily.</p>
               <p><strong>2. Balance training:</strong> Stand with feet together, hold onto a chair back if needed. Try closing your eyes. Progression: Stand on one leg, walk on soft surface.</p>
               <p><strong>3. Movement provocation:</strong> Perform movements that make you dizzy. Repeat in a controlled manner until dizziness decreases.</p>
@@ -381,7 +331,7 @@
 
             <h3>What Can the Chiropractor Contribute?</h3>
             <div class="info-box">
-              <h4>Chiropractor's Role</h4>
+              <h3>Chiropractor's Role</h3>
               <ul>
                 <li><strong>Diagnostics:</strong> Perform HINTS examination to distinguish vestibular neuritis from stroke and crystal disease (BPPV)</li>
                 <li><strong>Vestibular rehabilitation:</strong> Guide in individually tailored exercises, especially important with <a href="vestibular-hypofunction.html">persistent vestibular hypofunction</a></li>
@@ -421,7 +371,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Interesting Finding</h4>
+              <h3>Interesting Finding</h3>
               <p>Long-term prognosis does not depend on how much nerve function is restored. Even if caloric testing still shows significant asymmetry, patients can become completely symptom-free because the brain compensates effectively.</p>
             </div>
 

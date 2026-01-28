@@ -146,72 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .nerve-box { background: var(--color-amber-light); border: 1px solid #fbbf24; border-radius: 10px; padding: 16px; margin: 16px 0; }
-    .nerve-box h4 { color: #92400e; margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-    .comparison-table th, .comparison-table td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
-    .comparison-table th { background: #f8fafc; color: var(--hub-dark); font-weight: 600; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section ul { font-size: 0.85rem; color: #64748b; }
-    .sources-section li { margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -219,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -274,7 +209,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Definisjon:</strong> Vedvarende ansiktssmerte >2 timer/dag, >3 måneder, uten identifiserbar årsak</li>
                 <li><strong>Prevalens:</strong> Ca. 0,03% - sjelden, men ofte underdiagnostisert</li>
@@ -310,7 +245,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Viktig ved ansiktssmerte</h4>
+              <h3>Viktig ved ansiktssmerte</h3>
               <p>PIFP er en eksklusjonsdiagnose. Plutselig innsettende ansiktssmerte, synsforstyrrelser, eller smerter sammen med feber krever rask medisinsk vurdering for å utelukke alvorligere Årsaker.</p>
               <a href="../nakke/rode-flagg-nakkesmerter.html">Les mer om røde flagg</a>
             </div>
@@ -326,13 +261,13 @@
               <p>Persistent Idiopatisk Ansiktssmerte (PIFP) defineres av ICHD-3 (International Classification of Headache Disorders) som:</p>
 
               <div class="info-box">
-                <h4>ICHD-3 definisjon</h4>
+                <h3>ICHD-3 definisjon</h3>
                 <p><em>"Vedvarende ansiktssmerte og/eller oral smerte med varierende presentasjon, som oppstar daglig i mer enn 2 timer per dag i mer enn 3 måneder, uten kliniske nevrologiske funn."</em></p>
               </div>
 
               <h3>Historisk terminologi</h3>
               <div class="condition-card">
-                <h4>Tidligere navn for tilstanden</h4>
+                <h3>Tidligere navn for tilstanden</h3>
                 <ul>
                   <li><strong>Atypisk ansiktssmerte:</strong> Eldre term, fremdeles brukt</li>
                   <li><strong>Atypisk odontalgi:</strong> Nær smerten oppleves i tenner/tannkjott</li>
@@ -351,7 +286,7 @@
               <p>For diagnose må <strong>alle</strong> følgende kriterier være oppfylt:</p>
 
               <div class="condition-card">
-                <h4>Obligatoriske kriterier</h4>
+                <h3>Obligatoriske kriterier</h3>
                 <ol>
                   <li>Ansikts- og/eller oral smerte som oppfyller kriterium B og C</li>
                   <li>Tilbakevendende daglig i >2 timer/dag i >3 måneder</li>
@@ -368,7 +303,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Viktig poeng</h4>
+                <h3>Viktig poeng</h3>
                 <p>PIFP er en <strong>eksklusjonsdiagnose</strong>. Dette betyr at andre mulige Årsaker må utelukkes først. Derfor kan utredningen ta tid og involvere flere spesialister.</p>
               </div>
             </section>
@@ -417,7 +352,7 @@
               <p>Den eksakte mekanismen bak PIFP er ukjent, men flere teorier finnes:</p>
 
               <div class="condition-card">
-                <h4>Sentral sensitisering</h4>
+                <h3>Sentral sensitisering</h3>
                 <ul>
                   <li>økt eksitabilitet i sentralnervesystemet</li>
                   <li>Endret smertemodulering</li>
@@ -426,7 +361,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>Nevropatisk komponent</h4>
+                <h3>Nevropatisk komponent</h3>
                 <ul>
                   <li>Subklinisk nerveskade (f.eks. etter tannbehandling)</li>
                   <li>Perifer sensitisering som vedlikeholdes sentralt</li>
@@ -435,7 +370,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>Psykososiale faktorer</h4>
+                <h3>Psykososiale faktorer</h3>
                 <ul>
                   <li>Høy forekomst av psykiatrisk komorbiditet</li>
                   <li>Stress som forverrende faktor</li>
@@ -444,7 +379,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Viktig perspektiv</h4>
+                <h3>Viktig perspektiv</h3>
                 <p>Selv om psykososiale faktorer kan spille en rolle, betyr ikke dette at smerten er "innbilt". PIFP er en <strong>reell biologisk tilstand</strong> med forandringer i nervesystemets smerteprosessering.</p>
               </div>
             </section>
@@ -486,7 +421,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Typisk sykehistorie</h4>
+                <h3>Typisk sykehistorie</h3>
                 <p>Mange pasienter har en karakteristisk bakgrunn med smertedebut etter dental prosedyre (ekstraksjon, rotfylling, implantat), ofte multiple tannbehandlinger i forsøk på lindring, gjentatte konsultasjoner uten diagnose, og frustrasjon over å ikke bli trodd.</p>
               </div>
             </section>
@@ -501,7 +436,7 @@
               <p>PIFP er en eksklusjonsdiagnose. Følgende må utelukkes:</p>
 
               <div class="condition-card">
-                <h4>Odontogene Årsaker</h4>
+                <h3>Odontogene Årsaker</h3>
                 <ul>
                   <li>Pulpitt/periodontitt</li>
                   <li>Sprekk i tann</li>
@@ -511,7 +446,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>Nevralgier</h4>
+                <h3>Nevralgier</h3>
                 <ul>
                   <li>Trigeminal nevralgi</li>
                   <li><a href="glossopharyngeal-nevralgi.html">Glossopharyngeal nevralgi</a></li>
@@ -521,7 +456,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>TMD (Temporomandibular disorders)</h4>
+                <h3>TMD (Temporomandibular disorders)</h3>
                 <ul>
                   <li>Myalgi i kjevemuskulatur</li>
                   <li>Artralgi i kjeveledd</li>
@@ -530,7 +465,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>Andre Årsaker</h4>
+                <h3>Andre Årsaker</h3>
                 <ul>
                   <li>Sinusitt</li>
                   <li>Giant cell arteritt</li>
@@ -591,7 +526,7 @@
 
               <h3>Klinisk undersøkelse</h3>
               <div class="condition-card">
-                <h4>Undersøkelser som må gjøres</h4>
+                <h3>Undersøkelser som må gjøres</h3>
                 <ul>
                   <li>Full nevrologisk undersøkelse (skal være normal ved PIFP)</li>
                   <li>Kranienervefunksjon</li>
@@ -603,7 +538,7 @@
 
               <h3>Bildediagnostikk</h3>
               <div class="info-box">
-                <h4>Aktuelle undersøkelser</h4>
+                <h3>Aktuelle undersøkelser</h3>
                 <ul>
                   <li><strong>Dental røntgen:</strong> Utelukke odontogen patologi</li>
                   <li><strong>MR hjerne:</strong> Ved atypiske trekk, utelukke tumor/MS</li>
@@ -621,7 +556,7 @@
 
               <h3>Generelle prinsipper</h3>
               <div class="treatment-box">
-                <h4>Viktige behandlingsprinsipper</h4>
+                <h3>Viktige behandlingsprinsipper</h3>
                 <ul>
                   <li><strong>Validering:</strong> Anerkjenn at smerten er reell</li>
                   <li><strong>Unngå ytterligere inngrep:</strong> Spesielt tannekstraksjoner</li>
@@ -637,7 +572,7 @@
 
               <h3>Medikamentell behandling</h3>
               <div class="condition-card">
-                <h4>Aktuelle medikamenter</h4>
+                <h3>Aktuelle medikamenter</h3>
                 <ul>
                   <li><strong>Trisykliske antidepressiva:</strong> Amitriptylin 10-75 mg, førstevalg</li>
                   <li><strong>SNRI:</strong> Duloxetin, venlafaxin</li>
@@ -648,7 +583,7 @@
 
               <h3>Ikke-medikamentell behandling</h3>
               <div class="condition-card">
-                <h4>Tilleggsbehandling</h4>
+                <h3>Tilleggsbehandling</h3>
                 <ul>
                   <li><strong>Kognitiv atferdsterapi (CBT):</strong> Beste evidens</li>
                   <li><strong>Mindfulness-basert stressreduksjon</strong></li>
@@ -673,7 +608,7 @@
               </ul>
 
               <div class="treatment-box">
-                <h4>Hva kan kiropraktoren bidra med?</h4>
+                <h3>Hva kan kiropraktoren bidra med?</h3>
                 <ul>
                   <li>Utelukke <a href="../kjevesmerte.html">TMD</a> som primår årsak</li>
                   <li>Behandle medfolgende <a href="nakke-kjeve-sammenheng.html">nakke-/kjevekomponenter</a></li>
@@ -683,7 +618,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Begrensninger</h4>
+                <h3>Begrensninger</h3>
                 <p>PIFP responderer vanligvis ikke godt på manuell behandling alene. Medikamentell behandling er ofte nødvendig, og psykologisk ståtte er viktig for mange pasienter.</p>
               </div>
             </section>
@@ -705,7 +640,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Positive faktorer for prognose</h4>
+                <h3>Positive faktorer for prognose</h3>
                 <ul>
                   <li>Tidlig diagnose og behandlingsstart</li>
                   <li>God terapeutisk allianse</li>

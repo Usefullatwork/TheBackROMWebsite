@@ -146,92 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-red-light: #fef2f2;
-      --hub-green: #059669;
-      --hub-green-light: #f0fdf4;
-      --hub-blue: #2563eb;
-      --hub-blue-light: #eff6ff;
-      --hub-purple: #7c3aed;
-      --hub-purple-light: #f5f3ff;
-      --hub-orange: #ea580c;
-      --hub-pink: #ec4899;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    /* TL;DR sidebar styling */
-    .premium-summary-card ul { list-style: none; padding: 0; margin: 0; }
-    .premium-summary-card li {
-      padding: 6px 0 6px 28px;
-      position: relative;
-      font-size: 14px;
-      line-height: 1.5;
-    }
-    .premium-summary-card li::before {
-      content: attr(data-icon);
-      position: absolute;
-      left: 0;
-      font-size: 14px;
-    }
-
-    /* Colored boxes */
-    .red-flag-box { background: linear-gradient(135deg, var(--hub-red-light) 0%, #fee2e2 100%); border: 2px solid var(--hub-red); border-radius: 10px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-    .red-flag-box .note { font-style: italic; margin-top: 12px; color: #991b1b; font-size: 13px; }
-
-    .treatment-box { background: var(--hub-green-light); border: 1px solid #86efac; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p, .treatment-box li { font-size: 14px; color: #166534; }
-
-    .info-box { background: var(--hub-blue-light); border-left: 4px solid var(--hub-blue); border-radius: 0 10px 10px 0; padding: 16px; margin: 16px 0; }
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p, .info-box li { font-size: 14px; color: #1e3a8a; }
-
-    .red-flag-alert{ background: var(--color-amber-light); border: 1px solid #fbbf24; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .red-flag-alert h4 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
-    .red-flag-alert p, .red-flag-alert li { font-size: 14px; color: #78350f; }
-
-    .anatomy-box { background: var(--hub-purple-light); border: 1px solid #d8b4fe; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .anatomy-box h4 { color: #7c3aed; font-size: 15px; margin: 0 0 12px; }
-    .anatomy-box p, .anatomy-box li { font-size: 14px; color: #5b21b6; }
-
-    .faq-item { border: 1px solid #e5e7eb; border-radius: 8px; margin: 10px 0; overflow: hidden; }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .sources-section { margin-top: 28px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-
-    .disclaimer { font-size: 12px; color: #6b7280; font-style: italic; margin: 20px 0; padding: 14px; background: #f9fafb; border-radius: 8px; }
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -239,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -295,7 +210,7 @@
             <p>TOS er en utfordrende diagnose fordi symptomene kan ligne på mange andre tilstander. Men med riktig undersøkelse og behandling kan de fleste oppna god bedring uten kirurgi.</p>
 
             <aside class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li data-icon="&#128290;"><strong>90-97%</strong> har nevrogen TOS (nervekompresjon)</li>
                 <li data-icon="&#9792;">Kvinner rammes <strong>3-4x</strong> oftere enn menn</li>
@@ -357,7 +272,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">1. Nevrogen TOS (nTOS)</h4>
+                  <h3 class="condition-title">1. Nevrogen TOS (nTOS)</h3>
                   <span class="condition-badge">90-97% av tilfellene</span>
                 </div>
                 <p>Den desidert vanligste formen. Nervene i plexus brachialis (nervefletningen som forsyner armen) blir komprimert.</p>
@@ -373,7 +288,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">2. Venos TOS (vTOS)</h4>
+                  <h3 class="condition-title">2. Venos TOS (vTOS)</h3>
                   <span class="condition-badge">2-3% av tilfellene</span>
                 </div>
                 <p>Kompresjon av vena subclavia (blodøren som fører blod fra armen).</p>
@@ -389,7 +304,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">3. Arteriell TOS (aTOS)</h4>
+                  <h3 class="condition-title">3. Arteriell TOS (aTOS)</h3>
                   <span class="condition-badge">1% av tilfellene</span>
                 </div>
                 <p>Kompresjon av arteria subclavia (pulsaren som forsyner armen med blod). Sjelden, men potensielt alvorlig.</p>
@@ -441,7 +356,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Hvorfor rammes kvinner oftere?</h4>
+                <h3>Hvorfor rammes kvinner oftere?</h3>
                 <p>Flere faktorer kan forklare kjånnsforskjellen: Kvinner har generelt slankere skuldre og trangere thoracic outlet, hormonelle faktorer kan påvirke bindevev, og visse yrker med repetitive oppgaver har tradisjonelt vårt kvinnedominerte.</p>
               </div>
 
@@ -467,7 +382,7 @@
               <h3>Vanlige nevrogene symptomer</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Smerte</h4>
+                <h3 class="condition-title">Smerte</h3>
                 <ul>
                   <li>Diffus smerte i nakke, skulder og arm</li>
                   <li>Kan stråle til bryst eller rygg</li>
@@ -477,7 +392,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Sensoriske forstyrrelser</h4>
+                <h3 class="condition-title">Sensoriske forstyrrelser</h3>
                 <ul>
                   <li>Nummenhet og prikking, ofte i 4. og 5. finger (ulnaris-distribusjon)</li>
                   <li>Følelse av at armen "sovner"</li>
@@ -487,7 +402,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Motoriske symptomer</h4>
+                <h3 class="condition-title">Motoriske symptomer</h3>
                 <ul>
                   <li>Svakhet i handen</li>
                   <li>Redusert grepstyrke</li>
@@ -497,7 +412,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Stillings-avhengige symptomer</h4>
+                <h3>Stillings-avhengige symptomer</h3>
                 <p>Et karakteristisk trekk ved TOS er at symptomene ofte forverres i visse stillinger:</p>
                 <ul>
                   <li>Armer over hodet (vasking av har, male tak)</li>
@@ -522,27 +437,27 @@
               <p>Jeg bruker flere provokasjonstester for å reprodusere symptomene:</p>
 
               <div class="condition-card">
-                <h4 class="condition-title">Adson's test</h4>
+                <h3 class="condition-title">Adson's test</h3>
                 <p>Hodet roteres mot den affiserte siden mens pasienten puster dypt inn. Positiv test: Redusert/fravarende puls eller reproduserte symptomer.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Wright's test (hyperabduksjonstest)</h4>
+                <h3 class="condition-title">Wright's test (hyperabduksjonstest)</h3>
                 <p>Armen låftes over hodet i 90 graders abduksjon og utadrotasjon. Positiv test: Symptomer eller pulsendring.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Roos' test (EAST-test)</h4>
+                <h3 class="condition-title">Roos' test (EAST-test)</h3>
                 <p>Pasient holder armene i 90 graders abduksjon og Åpner/lukker hendene i 3 minutter. Positiv test: Rask tretthet, smerte eller parestesier.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Costoclavicular manover</h4>
+                <h3 class="condition-title">Costoclavicular manover</h3>
                 <p>Skuldrene trekkes bakover og nedover ("militaerholdning"). Positiv test: Symptomer eller pulsendring.</p>
               </div>
 
               <div class="info-box">
-                <h4>Viktig om provokasjonstester</h4>
+                <h3>Viktig om provokasjonstester</h3>
                 <p>Ingen enkelttest er diagnostisk for TOS. Mange friske personer har positive tester uten symptomer. Testene må tolkes i sammenheng med sykehistorie og andre funn.</p>
               </div>
 
@@ -577,7 +492,7 @@
               <p>Konservativ behandling er førstevalg for nevrogen TOS, med kirurgi reservert for tilfeller som ikke responderer etter 3-6 måneder.</p>
 
               <div class="treatment-box">
-                <h4>Konservativ behandling (førstevalg)</h4>
+                <h3>Konservativ behandling (førstevalg)</h3>
                 <p>Mølet er å Åpne thoracic outlet og redusere kompresjon gjennom:</p>
                 <ul>
                   <li><strong>Holdningskorrigering:</strong> Redusere fremoverfalt hode og runde skuldre</li>
@@ -591,22 +506,22 @@
               <h3>Spesifikke øvelser</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Scalene-toying</h4>
+                <h3 class="condition-title">Scalene-toying</h3>
                 <p>Tipp hodet til motsatt side av den stramme muskelen. Hold i 30-60 sekunder. Gjenta 3-4 ganger daglig.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Corner stretch (pectoralis minor)</h4>
+                <h3 class="condition-title">Corner stretch (pectoralis minor)</h3>
                 <p>Stå i et hjårne med underarmene mot veggen. Len deg forsiktig inn til du kjenner strekk i brystet. Hold 30-60 sekunder.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Skulderbladsknip</h4>
+                <h3 class="condition-title">Skulderbladsknip</h3>
                 <p>Trekk skulderbladene sammen og ned. Hold 5-10 sekunder. Gjenta 10-15 ganger, flere ganger daglig.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Chin tucks (hakeinntrekk)</h4>
+                <h3 class="condition-title">Chin tucks (hakeinntrekk)</h3>
                 <p>Trekk haken rett bakover som om du lager "dobbelhake". Hold 5 sekunder. Gjenta 10-15 ganger.</p>
               </div>
 
@@ -627,7 +542,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Prognose ved konservativ behandling</h4>
+                <h3>Prognose ved konservativ behandling</h3>
                 <p>Studier viser at <strong>50-90%</strong> av pasienter med nevrogen TOS Oppnær tilfredsstillende bedring med konservativ behandling. Suksessraten avhenger av tidlig diagnose, pasientens engasjement og underliggende årsak.</p>
               </div>
             </section>
@@ -666,7 +581,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>Aktiviteter å unngå/modifisere</h4>
+                <h3>Aktiviteter å unngå/modifisere</h3>
                 <ul>
                   <li>Langvarig arbeid med armene over hodet</li>
                   <li>Tunge låft med armene ut fra kroppen</li>

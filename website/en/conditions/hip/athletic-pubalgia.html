@@ -156,33 +156,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -190,7 +164,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -292,7 +266,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>When should you seek help immediately?</h4>
+              <h3>When should you seek help immediately?</h3>
               <p>If you have a visible lump in the groin (true hernia), sudden intense pain with nausea (incarcerated
                 hernia), or fever combined with groin pain - seek medical attention or emergency care.</p>
             </div>
@@ -339,18 +313,18 @@
             <h3>Sports with highest risk</h3>
 
             <div class="condition-card">
-              <h4>Soccer (highest incidence)</h4>
+              <h3>Soccer (highest incidence)</h3>
               <p>A systematic review showed 32.5% season prevalence for groin pain, and up to 19% of professional
                 players sustain injuries requiring absence from training or matches per season.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Ice Hockey</h4>
+              <h3>Ice Hockey</h3>
               <p>Groin strains represent 10-11% of all injuries and 43% of all muscle strains in the sport.</p>
             </div>
 
             <div class="condition-card">
-              <h4>American Football</h4>
+              <h3>American Football</h3>
               <p>4.2% prevalence of athletic pubalgia repair among NFL Combine participants. Soccer, hockey, and
                 American football together account for over 70% of all cases.</p>
             </div>
@@ -408,7 +382,7 @@
             </ol>
 
             <div class="condition-card">
-              <h4>Resisted adduction sit-up test (RASUT)</h4>
+              <h3>Resisted adduction sit-up test (RASUT)</h3>
               <p><strong>78% sensitivity and 88% negative predictive value.</strong> A valuable test to support the
                 diagnosis in a clinical setting.</p>
             </div>
@@ -419,7 +393,7 @@
               adductor tendon injury.</p>
 
             <div class="info-box">
-              <h4>Important to remember</h4>
+              <h3>Important to remember</h3>
               <p>MRI findings must be interpreted cautiously. Studies have shown that asymptomatic ice hockey players
                 often have MRI changes resembling athletic pubalgia.</p>
             </div>
@@ -440,7 +414,7 @@
               electrotherapy).</p>
 
             <div class="treatment-box">
-              <h4>What can a chiropractor do?</h4>
+              <h3>What can a chiropractor do?</h3>
               <ul>
                 <li><strong>Thorough examination</strong> to distinguish athletic pubalgia from other causes of groin
                   pain</li>
@@ -455,19 +429,19 @@
             <h3>What can you do yourself? (Modified Holmich protocol)</h3>
 
             <div class="condition-card">
-              <h4>Phase 1 (weeks 0-4)</h4>
+              <h3>Phase 1 (weeks 0-4)</h3>
               <p>Rest from triggering activities, pain relief, gentle mobility exercises, core awareness, and
                 transversus abdominis activation.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Phase 2 (weeks 4-8)</h4>
+              <h3>Phase 2 (weeks 4-8)</h3>
               <p>Progressive strength training of adductors, abdominal muscles, and hip muscles. Balance and
                 coordination exercises. Gradual jogging.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Phase 3 (weeks 8-12)</h4>
+              <h3>Phase 3 (weeks 8-12)</h3>
               <p>Sport-specific training, rotational exercises, single-leg exercises, plyometrics and speed training.
                 Gradual return to full activity.</p>
             </div>

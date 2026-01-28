@@ -163,235 +163,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-red-light: #fef2f2;
-      --hub-green: #059669;
-      --hub-green-light: #f0fdf4;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-purple-light: #f5f3ff;
-      --hub-orange: #ea580c;
-      --hub-pink: #ec4899;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .hub-content {
-      padding: 32px;
-    }
-
-    @media (max-width: 600px) {
-      .hub-content {
-        padding: 20px;
-      }
-    }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    @media (max-width: 800px) {
-      .intro-tldr-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .hub-section:first-of-type {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-    }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-
-    .faq-question {
-      padding: 14px 16px;
-      font-weight: 600;
-      background: #fafafa;
-      font-size: 14px;
-      color: var(--hub-dark);
-    }
-
-    .faq-answer {
-      padding: 14px 16px;
-      color: #6b7280;
-      border-top: 1px solid #e5e7eb;
-      font-size: 14px;
-    }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: #6b7280;
-      font-size: 15px;
-      margin-bottom: 12px;
-    }
-
-    .sources-section ul {
-      font-size: 12px;
-      color: #6b7280;
-      line-height: 1.6;
-      padding-left: 20px;
-    }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-    }
-
-    .exercise-box {
-      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-      border: 2px solid var(--hub-green);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 16px 0;
-    }
-
-    .exercise-box h4 {
-      color: #166534;
-      font-size: 15px;
-      margin: 0 0 12px;
-    }
-
-    .exercise-box ol {
-      margin: 0;
-      padding-left: 20px;
-      color: #166534;
-    }
-
-    .exercise-box li {
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-
-    .exercise-box .note {
-      font-style: italic;
-      margin-top: 12px;
-      color: #166534;
-      font-size: 13px;
-    }
-
-    .pillow-card {
-      background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
-      border: 1px solid #c4b5fd;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 14px 0;
-    }
-
-    .pillow-card h4 {
-      color: #5b21b6;
-      font-size: 15px;
-      margin: 0 0 10px;
-    }
-
-    .pillow-card p {
-      font-size: 14px;
-      color: #5b21b6;
-      margin: 0;
-    }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-
-    @media (max-width: 900px) {
-      .mobile-sticky-cta {
-        display: flex;
-      }
-
-      .hub-main {
-        margin-bottom: 80px;
-      }
-    }
-
-    .mobile-sticky-cta .btn {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .mobile-sticky-cta .btn-primary {
-      background: #F26522;
-      color: #fff;
-    }
-
-    .mobile-sticky-cta .btn-outline {
-      background: #fff;
-      border: 2px solid #F26522;
-      color: var(--hub-dark);
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -399,7 +171,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -476,7 +248,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Wrong Sleeping Position</h4>
+                  <h3 class="condition-title">Wrong Sleeping Position</h3>
                   <span class="condition-badge">Most Common</span>
                 </div>
                 <p>If the neck lies in an unfavorable position for several hours, muscles adapt to this position. When
@@ -485,7 +257,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Unsuitable Pillow</h4>
+                  <h3 class="condition-title">Unsuitable Pillow</h3>
                 </div>
                 <p>A pillow that is too high, too low, too hard, or too soft doesn't give the neck the support it needs.
                   Over time, this can lead to chronic morning stiffness.</p>
@@ -493,7 +265,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Reduced Movement During Sleep</h4>
+                  <h3 class="condition-title">Reduced Movement During Sleep</h3>
                 </div>
                 <p>You naturally move less when sleeping. This lack of movement causes joints to become "stiff" and
                   synovial fluid (joint lubrication) to distribute poorly.</p>
@@ -501,7 +273,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Underlying Neck Problems</h4>
+                  <h3 class="condition-title">Underlying Neck Problems</h3>
                 </div>
                 <p>If you have existing problems like muscle tightness, joint irritation, or <a
                     href="neck-disc-herniation.html">disc problems</a>, these are often most noticeable in the morning
@@ -510,14 +282,14 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Degenerative Changes (Wear and Tear)</h4>
+                  <h3 class="condition-title">Degenerative Changes (Wear and Tear)</h3>
                 </div>
                 <p>With age, normal degenerative changes develop in the neck. These often cause increased stiffness,
                   especially in the morning. Usually improves with movement.</p>
               </div>
 
               <div class="info-box">
-                <h4>The Good News</h4>
+                <h3>The Good News</h3>
                 <p>Normal morning stiffness typically eases within 30-60 minutes after you get up and start moving. If
                   stiffness lasts longer, it may indicate an underlying condition.</p>
               </div>
@@ -531,7 +303,7 @@
               <p>Your sleeping position has a major impact on how your neck feels in the morning.</p>
 
               <div class="treatment-box">
-                <h4>Side Sleeping - Best Choice for Most</h4>
+                <h3>Side Sleeping - Best Choice for Most</h3>
                 <ul>
                   <li>Keep spine in a straight line from head to hips</li>
                   <li>Use a pillow that fills the space between ear and mattress</li>
@@ -541,7 +313,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Back Sleeping - Also a Good Choice</h4>
+                <h3>Back Sleeping - Also a Good Choice</h3>
                 <ul>
                   <li>Keeps neck in natural lordosis (curve)</li>
                   <li>Requires lower pillow than side sleeping</li>
@@ -551,7 +323,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Stomach Sleeping - Avoid if Possible</h4>
+                <h3>Stomach Sleeping - Avoid if Possible</h3>
                 <p>Stomach sleeping forces you to turn your head completely to the side to breathe. This extreme
                   rotation over several hours puts significant stress on neck structures and is the most common cause of
                   waking up with a "kink in neck" (<a href="torticollis.html">torticollis</a>).</p>
@@ -596,7 +368,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Memory Foam</h4>
+                  <h3 class="condition-title">Memory Foam</h3>
                 </div>
                 <p>Adapts to head shape and provides even support. Can get warm. Good for those who stay still at night.
                 </p>
@@ -604,7 +376,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Latex</h4>
+                  <h3 class="condition-title">Latex</h3>
                 </div>
                 <p>Responsive and supportive. Keeps shape better than memory foam. Cooler to sleep on. Often more
                   expensive.</p>
@@ -612,14 +384,14 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Down/Feather</h4>
+                  <h3 class="condition-title">Down/Feather</h3>
                 </div>
                 <p>Soft and moldable. Often loses support throughout the night. Requires regular fluffing to restore
                   volume.</p>
               </div>
 
               <div class="info-box">
-                <h4>When to Replace Your Pillow?</h4>
+                <h3>When to Replace Your Pillow?</h3>
                 <p>Most pillows should be replaced every 1-2 years. Signs that your pillow is worn out: It no longer
                   keeps its shape, you wake up more often with neck pain, or you have to "stack" pillows to get enough
                   height.</p>
@@ -635,7 +407,7 @@
               </p>
 
               <div class="exercise-box">
-                <h4>1. Gentle Neck Rotation</h4>
+                <h3>1. Gentle Neck Rotation</h3>
                 <ol>
                   <li>Lie on your back or sit upright</li>
                   <li>Slowly turn your head to the right as far as comfortable</li>
@@ -647,7 +419,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>2. Neck Flexion and Extension</h4>
+                <h3>2. Neck Flexion and Extension</h3>
                 <ol>
                   <li>Sit upright with relaxed shoulders</li>
                   <li>Gently bend head forward, chin toward chest</li>
@@ -659,7 +431,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>3. Shoulder Rolls</h4>
+                <h3>3. Shoulder Rolls</h3>
                 <ol>
                   <li>Sit or stand with arms at sides</li>
                   <li>Roll shoulders backward in large, slow circles</li>
@@ -671,7 +443,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>4. Neck Retractions in Bed</h4>
+                <h3>4. Neck Retractions in Bed</h3>
                 <ol>
                   <li>Lie on your back without pillow</li>
                   <li>Gently press back of head down toward mattress</li>
@@ -682,7 +454,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Timing</h4>
+                <h3>Timing</h3>
                 <p>Do the exercises before getting up, or within the first 10 minutes after waking. It only takes 2-3
                   minutes and can make a big difference for the rest of the day.</p>
               </div>
@@ -713,7 +485,7 @@
               <h3>What the Chiropractor Can Help With</h3>
 
               <div class="treatment-box">
-                <h4>For Chronic Morning Stiffness</h4>
+                <h3>For Chronic Morning Stiffness</h3>
                 <ul>
                   <li>Evaluate underlying causes of stiffness</li>
                   <li>Joint mobilization to improve mobility</li>

@@ -138,187 +138,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    .condition-card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 14px 0;
-      transition: all 0.2s;
-    }
-    .condition-card:hover { border-color: var(--hub-primary); box-shadow: 0 4px 12px rgba(26, 95, 122, 0.12); }
-
-    .condition-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 8px;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .condition-title { font-size: 16px; font-weight: 700; color: var(--hub-dark); margin: 0; }
-    .condition-badge {
-      background: var(--hub-primary);
-      color: #fff;
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 11px;
-      font-weight: 700;
-    }
-    .condition-card p { font-size: 14px; margin-bottom: 10px; }
-    .condition-card ul { margin: 10px 0; padding-left: 20px; }
-    .condition-card li { font-size: 13px; margin-bottom: 4px; }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-    .red-flag-box .note { font-style: italic; margin-top: 12px; color: #991b1b; font-size: 13px; }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p { font-size: 14px; margin: 0 0 8px; color: #166534; }
-    .treatment-box ul { margin: 8px 0 0 0; padding-left: 20px; }
-    .treatment-box li { font-size: 14px; margin-bottom: 4px; color: #166534; }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p { font-size: 14px; margin: 0; color: #1e3a8a; }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-    @media (max-width: 900px) {
-      .mobile-sticky-cta { display: flex; }
-      .hub-main { margin-bottom: 80px; }
-    }
-    .mobile-sticky-cta .btn {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .mobile-sticky-cta .btn-primary { background: #F26522; color: #fff; }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -326,7 +146,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -386,7 +206,7 @@
               </div>
 
               <aside class="premium-summary-card">
-                <h3>Quick Summary</h3>
+                <h2>Quick Summary</h2>
                 <ul>
                   <li>Tension headache most common (<strong>26-38%</strong>)</li>
                   <li>Often related to <strong>neck and muscles</strong></li>
@@ -407,7 +227,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Tension Headache</h4>
+                  <h3 class="condition-title">Tension Headache</h3>
                   <span class="condition-badge">Most Common - 26-38%</span>
                 </div>
                 <p><a href="tension-headache.html">Tension headache</a> is by far the most common type of headache. The pain is typically described as a band around the head that extends into the back of the head.</p>
@@ -417,7 +237,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Migraine</h4>
+                  <h3 class="condition-title">Migraine</h3>
                   <span class="condition-badge">14% of population</span>
                 </div>
                 <p><a href="migraine.html">Migraine</a> affects approximately 14.4% of the global population. Although migraine is often associated with pain in the <a href="headache-temple.html">temple</a> or forehead, the pain starts in the back of the head in about 18% of patients.</p>
@@ -426,7 +246,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Cervicogenic Headache (from the neck)</h4>
+                  <h3 class="condition-title">Cervicogenic Headache (from the neck)</h3>
                   <span class="condition-badge">2.5-4% of population</span>
                 </div>
                 <p><a href="neck-headache.html">Cervicogenic headache</a> has a special place in Norwegian medical history. The Norwegian neurologist Ottar Sjaastad was among the first to systematically describe the condition.</p>
@@ -435,7 +255,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Occipital Neuralgia</h4>
+                  <h3 class="condition-title">Occipital Neuralgia</h3>
                   <span class="condition-badge">Rare</span>
                 </div>
                 <p><a href="occipital-neuralgia.html">Occipital neuralgia</a> is relatively rare, with an incidence of only 3.2 per 100,000 people. The condition is characterized by sharp, electric shock-like pain in the back of the head along the occipital nerve.</p>
@@ -444,13 +264,13 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">TMJ Disorders (TMD)</h4>
+                  <h3 class="condition-title">TMJ Disorders (TMD)</h3>
                 </div>
                 <p>Problems in the jaw joint can cause referred pain to the back of the head. Many patients with TMD also have neck problems and tension headache.</p>
               </div>
 
               <div class="info-box">
-                <h4>Temporal Arteritis - Red Flag in People Over 50</h4>
+                <h3>Temporal Arteritis - Red Flag in People Over 50</h3>
                 <p>Temporal arteritis is an inflammatory condition of blood vessels that requires urgent evaluation. Scandinavian populations have higher prevalence than the global average.</p>
                 <p><strong>Warning signs:</strong> New-onset headache in people over 50, tenderness in the temple, jaw pain when chewing, visual disturbances, general feeling of illness.</p>
               </div>
@@ -509,7 +329,7 @@
               <p>For cervicogenic headache, the CHISG criteria are used: unilateral headache that doesn't switch sides, pain triggered by neck movements or pressure on the upper neck, reduced neck mobility, and pain that starts in the neck and radiates forward.</p>
 
               <div class="info-box">
-                <h4>When is Imaging Necessary?</h4>
+                <h3>When is Imaging Necessary?</h3>
                 <p>X-ray and MRI are rarely necessary for common headache. The American Headache Society does not recommend routine imaging for typical tension headache or migraine with normal neurological examination.</p>
                 <p>It's important to know that MRI and X-ray often show "normal findings" such as wear and degeneration - these are common age-related changes that rarely explain the headache.</p>
               </div>
@@ -546,7 +366,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>What Can the Chiropractor Do?</h4>
+                <h3>What Can the Chiropractor Do?</h3>
                 <p>Chiropractic treatment of headache focuses on the neck and upper back. Treatment may include:</p>
                 <ul>
                   <li><strong>Joint mobilization or manipulation</strong></li>
@@ -562,12 +382,12 @@
               <p><strong>Tension headache:</strong> The evidence is more nuanced. A meta-analysis found that high-velocity manipulation alone was not effective for tension headache, but soft tissue treatment showed good effect. Trigger point treatment in the suboccipital muscles may be useful for chronic tension headache.</p>
 
               <div class="info-box">
-                <h4>Realistic Expectations</h4>
+                <h3>Realistic Expectations</h3>
                 <p>Approximately 50-70% of patients with cervicogenic headache experience clinically meaningful improvement. It's important to be aware that relapse is common - several guidelines point out that cervicogenic headache tends to recur.</p>
               </div>
 
               <div class="treatment-box">
-                <h4>What Can You Do Yourself?</h4>
+                <h3>What Can You Do Yourself?</h3>
                 <ul>
                   <li><strong>Chin tucks:</strong> Pull your chin backward as if making a "double chin," hold for 5 seconds, repeat 10 times. Do this 5-7 times daily.</li>
                   <li><strong>Deep neck flexor exercises:</strong> Lie on your back with slightly bent knees. Make a gentle nodding motion. Hold for 10-15 seconds, repeat 10 times.</li>

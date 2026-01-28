@@ -165,278 +165,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-red-light: #fef2f2;
-      --hub-green: #059669;
-      --hub-green-light: #f0fdf4;
-      --hub-blue: #2563eb;
-      --hub-blue-light: #eff6ff;
-      --hub-purple: #7c3aed;
-      --hub-purple-light: #f5f3ff;
-      --hub-orange: #ea580c;
-      --hub-pink: #ec4899;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .hub-hero__subtitle {
-      color: rgba(255, 255, 255, 0.9) !important;
-    }
-
-    .hub-hero .author {
-      font-style: italic;
-      color: rgba(255, 255, 255, 0.8) !important;
-      font-size: 0.95rem;
-      margin-top: 12px;
-    }
-
-    .premium-summary-card {
-      margin-bottom: 32px;
-    }
-
-    .premium-summary-card h3 {
-      margin-bottom: 16px;
-    }
-
-    .premium-summary-card li[data-icon]::before {
-      content: attr(data-icon);
-      margin-right: 8px;
-    }
-
-    .section-header {
-      margin-bottom: 20px;
-    }
-
-    .section-header h2 {
-      color: var(--hub-dark);
-      margin: 0;
-      font-weight: 700;
-    }
-
-    .research-box {
-      background: var(--hub-purple-light);
-      border: 2px solid var(--hub-purple);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .research-box h4 {
-      color: var(--hub-purple);
-      font-size: 1rem;
-      margin: 0 0 12px;
-      font-weight: 700;
-    }
-
-    .research-box p {
-      font-size: 0.95rem;
-      margin: 0 0 10px;
-      color: #5b21b6;
-    }
-
-    .research-box ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .research-box li {
-      font-size: 0.95rem;
-      margin-bottom: 8px;
-      color: #5b21b6;
-    }
-
-    .treatment-box {
-      background: var(--hub-green-light);
-      border: 1px solid #86efac;
-      border-radius: 12px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .treatment-box h4 {
-      color: #166534;
-      font-size: 1rem;
-      margin: 0 0 8px;
-      font-weight: 700;
-    }
-
-    .treatment-box p,
-    .treatment-box li {
-      font-size: 0.95rem;
-      color: #166534;
-    }
-
-    .info-box {
-      background: var(--hub-blue-light);
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 12px 12px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .info-box h4 {
-      color: #1e40af;
-      font-size: 1rem;
-      margin: 0 0 8px;
-      font-weight: 700;
-    }
-
-    .info-box p,
-    .info-box li {
-      font-size: 0.95rem;
-      color: #1e3a8a;
-    }
-
-    .red-flag-alert{
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 12px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .red-flag-alert h4 {
-      color: #92400e;
-      font-size: 1rem;
-      margin: 0 0 8px;
-      font-weight: 700;
-    }
-
-    .red-flag-alert p,
-    .red-flag-alert li {
-      font-size: 0.95rem;
-      color: #78350f;
-    }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-
-    .faq-question {
-      padding: 14px 16px;
-      font-weight: 600;
-      background: #fafafa;
-      font-size: 0.95rem;
-      color: var(--hub-dark);
-    }
-
-    .faq-answer {
-      padding: 14px 16px;
-      color: #6b7280;
-      border-top: 1px solid #e5e7eb;
-      font-size: 0.95rem;
-    }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: #6b7280;
-      font-size: 1rem;
-      margin-bottom: 12px;
-    }
-
-    .sources-section ul {
-      font-size: 0.85rem;
-      color: #6b7280;
-      line-height: 1.6;
-      padding-left: 20px;
-    }
-
-    .disclaimer {
-      font-size: 0.85rem;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated {
-      font-size: 0.85rem;
-      color: #6b7280;
-      font-style: italic;
-    }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-
-    @media (max-width: 1024px) {
-      .mobile-sticky-cta {
-        display: flex;
-      }
-
-      .hub-main {
-        margin-bottom: 80px;
-      }
-    }
-
-    .mobile-sticky-cta .btn {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-
-    .mobile-sticky-cta .btn-primary {
-      background: var(--hub-accent, #F26522);
-      color: white;
-    }
-
-    .mobile-sticky-cta .btn-outline {
-      background: #fff;
-      border: 2px solid #F26522;
-      color: var(--hub-dark);
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -444,7 +173,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -490,7 +219,7 @@
       <div class="hub-wrapper">
         <article class="hub-main">
           <div class="premium-summary-card">
-            <h3>Quick Summary</h3>
+            <h2>Quick Summary</h2>
             <ul>
               <li data-icon="&#128300;">Norwegian study: Surgery = sham (placebo)</li>
               <li data-icon="&#10004;"><strong>78%</strong> return to sports conservatively</li>
@@ -531,7 +260,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Type I - Degenerative changes</h4>
+                  <h3 class="condition-title">Type I - Degenerative changes</h3>
                 </div>
                 <p>Wear and fraying in the labrum without detachment. Common age-related change. Rarely requires
                   treatment.</p>
@@ -539,7 +268,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Type II - Detachment of labrum and biceps attachment</h4>
+                  <h3 class="condition-title">Type II - Detachment of labrum and biceps attachment</h3>
                   <span class="condition-badge">Most common</span>
                 </div>
                 <p>The labrum and biceps attachment detach from the socket. This is the most clinically relevant type
@@ -548,7 +277,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Type III - "Bucket handle" tear</h4>
+                  <h3 class="condition-title">Type III - "Bucket handle" tear</h3>
                 </div>
                 <p>A part of the labrum tears off and can hang down into the joint like a bucket handle. Can cause
                   mechanical symptoms.</p>
@@ -556,7 +285,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Type IV - Tear involving the biceps tendon</h4>
+                  <h3 class="condition-title">Type IV - Tear involving the biceps tendon</h3>
                 </div>
                 <p>Combination of type III where the tear extends into the biceps tendon.</p>
               </div>
@@ -597,7 +326,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Repetitive overhead activity</h4>
+                  <h3 class="condition-title">Repetitive overhead activity</h3>
                   <span class="condition-badge">Main cause</span>
                 </div>
                 <p>Throwing movements and overhead sports expose the biceps attachment to repeated pulling forces. Over
@@ -622,7 +351,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Important perspective</h4>
+                <h3>Important perspective</h3>
                 <p>Many have SLAP lesions on MRI without symptoms. A study found that up to 55% of asymptomatic
                   shoulders in people over 45 years had labrum changes. This means an MRI finding does not necessarily
                   explain your pain.</p>
@@ -650,7 +379,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>Symptoms that may point to SLAP</h4>
+                <h3>Symptoms that may point to SLAP</h3>
                 <ul>
                   <li>Pain at the end of the throwing motion</li>
                   <li>Clicking at specific shoulder positions</li>
@@ -660,7 +389,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Diagnostic challenge</h4>
+                <h3>Diagnostic challenge</h3>
                 <p>SLAP lesions are notoriously difficult to diagnose clinically. Symptoms overlap with many conditions
                   (impingement, rotator cuff problems, biceps tendinopathy), and no single test is sufficiently
                   reliable. Shoulder pain can also be worsened by poor <a
@@ -687,7 +416,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Limitations of tests</h4>
+                <h3>Limitations of tests</h3>
                 <p>A meta-analysis showed that even the best clinical tests have limited accuracy. Combination of
                   several positive tests increases the probability, but the diagnosis can rarely be made clinically
                   alone.</p>
@@ -696,19 +425,19 @@
               <h3>Imaging</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">MR arthrography (gold standard)</h4>
+                <h3 class="condition-title">MR arthrography (gold standard)</h3>
                 <p>MRI with contrast injected into the joint. Provides the best visualization of the labrum and can
                   distinguish between different types of SLAP lesions. Sensitivity around 80-90%.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Regular MRI</h4>
+                <h3 class="condition-title">Regular MRI</h3>
                 <p>Can detect SLAP lesions, but has lower sensitivity than MR arthrography. Useful for looking for
                   concomitant pathology (rotator cuff, etc.).</p>
               </div>
 
               <div class="red-flag-alert">
-                <h4>Important caveats</h4>
+                <h3>Important caveats</h3>
                 <ul>
                   <li>Even MR arthrography has false-positive findings</li>
                   <li>SLAP changes are common in asymptomatic individuals</li>
@@ -758,7 +487,7 @@
               </div>
 
               <div class="info-box">
-                <h4>What does this mean?</h4>
+                <h3>What does this mean?</h3>
                 <ul>
                   <li>Conservative treatment should be first choice for most SLAP lesions</li>
                   <li>Surgery gives no better results than sham in many patients</li>
@@ -781,7 +510,7 @@
               <h3>Conservative treatment (first choice)</h3>
 
               <div class="treatment-box">
-                <h4>Rehabilitation program</h4>
+                <h3>Rehabilitation program</h3>
                 <ul>
                   <li><strong>Phase 1 (0-4 weeks):</strong> Pain relief, restore mobility, avoid provoking activities
                   </li>
@@ -792,7 +521,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Focus areas in rehabilitation</h4>
+                <h3>Focus areas in rehabilitation</h3>
                 <ul>
                   <li><strong>Rotator cuff strength:</strong> Especially external rotators and scapula muscles</li>
                   <li><strong>Scapula control:</strong> Improve shoulder blade movement and stability</li>
@@ -807,7 +536,7 @@
               <p>Surgery is only considered in selected cases:</p>
 
               <div class="red-flag-alert">
-                <h4>Possible indications for surgery</h4>
+                <h3>Possible indications for surgery</h3>
                 <ul>
                   <li>Significant mechanical symptoms (locking, clicking affecting function)</li>
                   <li>Type III/IV lesions with free fragment in the joint</li>
@@ -818,7 +547,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Surgical options</h4>
+                <h3 class="condition-title">Surgical options</h3>
                 <ul>
                   <li><strong>SLAP repair:</strong> Labrum is sewn back to the socket. Traditional approach.</li>
                   <li><strong>Biceps tenodesis:</strong> Biceps tendon is moved and attached to the upper arm bone.
@@ -838,7 +567,7 @@
               <p>The prognosis for SLAP lesion is generally good, especially with conservative treatment.</p>
 
               <div class="treatment-box">
-                <h4>Conservative treatment</h4>
+                <h3>Conservative treatment</h3>
                 <ul>
                   <li>78% of athletes return to sports</li>
                   <li>Good function is achieved in most</li>
@@ -848,7 +577,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>After surgery</h4>
+                <h3>After surgery</h3>
                 <ul>
                   <li>Rehabilitation takes 4-6 months for return to sports</li>
                   <li>Full return to throwing may take 9-12 months</li>
@@ -875,7 +604,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>In the acute phase</h4>
+                <h3>In the acute phase</h3>
                 <ul>
                   <li>Avoid activities that provoke pain, especially overhead</li>
                   <li>Ice as needed for pain relief</li>
@@ -885,7 +614,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Rehabilitation phase</h4>
+                <h3>Rehabilitation phase</h3>
                 <ul>
                   <li><strong>Sleeper stretch:</strong> For posterior capsule/GIRD</li>
                   <li><strong>External rotation with band:</strong> Strengthen the rotator cuff</li>

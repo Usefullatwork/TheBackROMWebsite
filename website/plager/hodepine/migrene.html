@@ -154,181 +154,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .section-title { font-size: 20px; font-weight: 700; color: var(--hub-dark); margin: 0; }
-    @media (max-width: 600px) { .section-title { font-size: 18px; } }
-
-    .condition-badge {
-      background: var(--hub-primary);
-      color: #fff;
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 11px;
-      font-weight: 700;
-    }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box h4 { color: #dc2626; margin: 16px 0 8px; font-size: 14px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-    .red-flag-box .note { font-style: italic; margin-top: 12px; color: #991b1b; font-size: 13px; }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p { font-size: 14px; margin: 0 0 8px; color: #166534; }
-    .treatment-box ul { margin: 8px 0 0 0; padding-left: 20px; }
-    .treatment-box li { font-size: 14px; margin-bottom: 4px; color: #166534; }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p { font-size: 14px; margin: 0; color: #1e3a8a; }
-    .info-box ul { margin: 8px 0 0 0; padding-left: 20px; color: #1e3a8a; }
-    .info-box li { font-size: 14px; margin-bottom: 4px; }
-
-    .red-flag-alert{
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .red-flag-alert h4 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
-    .red-flag-alert p { font-size: 14px; margin: 0 0 8px; color: #78350f; }
-    .red-flag-alert ul { margin: 8px 0 0 0; padding-left: 20px; color: #78350f; }
-    .red-flag-alert li { font-size: 14px; margin-bottom: 4px; }
-
-    .phase-box {
-      background: #f5f3ff;
-      border: 1px solid #d8b4fe;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .phase-box h4 { color: var(--hub-purple); font-size: 15px; margin: 0 0 8px; }
-    .phase-box p { font-size: 14px; margin: 0; color: #5b21b6; }
-
-    .trigger-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      margin: 16px 0;
-    }
-    .trigger-item {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 14px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .trigger-name { font-size: 14px; color: var(--hub-dark); }
-    .trigger-percent { font-size: 14px; font-weight: 700; color: var(--hub-primary); }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -336,7 +162,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -395,7 +221,7 @@
               </div>
 
               <aside class="premium-summary-card">
-                <h3>Kort oppsummert</h3>
+                <h2>Kort oppsummert</h2>
                 <ul>
                   <li><strong>12-13%</strong> av nordmenn rammes årlig</li>
                   <li>Kvinner <strong>3x</strong> mer utsatt enn menn</li>
@@ -451,7 +277,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Migrene uten aura</h4>
+                  <h3 class="condition-title">Migrene uten aura</h3>
                   <span class="condition-badge">~75% av tilfellene</span>
                 </div>
                 <p>Den vanligste formen. Hodepine uten forutgående varselsymptomer. Diagnosen krever minst fem anfall med hodepine som varer 4-72 timer (StatPearls, 2024).</p>
@@ -459,7 +285,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Migrene med aura</h4>
+                  <h3 class="condition-title">Migrene med aura</h3>
                   <span class="condition-badge">25-30%</span>
                 </div>
                 <p>Forbigående synsforstyrrelser, nummenhet eller talevansker 5-60 minutter før hodepinen. Typisk ser man flimrende sikksakklinjer, blinde flekker eller lysglimt (ICHD-3, 2018).</p>
@@ -467,7 +293,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Kronisk migrene</h4>
+                  <h3 class="condition-title">Kronisk migrene</h3>
                   <span class="condition-badge">1-2% av befolkningen</span>
                 </div>
                 <p>Hodepine 15 eller flere dager per måned i mer enn 3 måneder, hvorav minst 8 dager med migrenetrekk. årlig progredierer 2,5-3% fra episodisk til kronisk migrene. Les mer om <a href="kronisk-daglig-hodepine.html">kronisk daglig hodepine</a>.</p>
@@ -475,20 +301,20 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title"><a href="vestibulær-migrene.html">Vestibular migrene</a></h4>
+                  <h3 class="condition-title"><a href="vestibulær-migrene.html">Vestibular migrene</a></h3>
                 </div>
                 <p><a href="hodepine-svimmelhet.html">Svimmelhet</a> og balanseforstyrrelser som hovedsymptom. Kan forekomme med eller uten hodepine.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Menstruell migrene</h4>
+                  <h3 class="condition-title">Menstruell migrene</h3>
                 </div>
                 <p>Anfall knyttet til menstruasjonssyklus (dag -2 til +3). Skyldes hormonelle svingninger, særlig åstrogennivået. Les mer om <a href="hormonhodepine.html">hormonhodepine</a>.</p>
               </div>
 
               <div class="info-box">
-                <h4>Risiko for kronifisering</h4>
+                <h3>Risiko for kronifisering</h3>
                 <p>Faktorer som øker risikoen for at episodisk migrene utvikler seg til kronisk: høy anfallsfrekvens (10+ dager/måned), <a href="medikamentoverforbruk-hodepine.html">overforbruk av smertestillende</a>, og samtidig depresjon.</p>
               </div>
             </section>
@@ -534,7 +360,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Triggere virker ofte i kombinasjon</h4>
+                <h3>Triggere virker ofte i kombinasjon</h3>
                 <p>En enkelt eksponering utlåser ikke nødvendigvis anfall - det er gjerne summen av flere faktorer som tipper balansen. Streng unngaelse av alle mulige triggere er sjelden nødvendig eller hensiktsmessig.</p>
               </div>
             </section>
@@ -587,7 +413,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Trenger jeg MR?</h4>
+                <h3>Trenger jeg MR?</h3>
                 <p>Bildediagnostikk er sjelden nødvendig ved typisk migrene. MR eller CT er først aktuelt ved alarmsymptomer (se røde flagg), plutselig endret hodepinekarakter, nevrologiske utfall, eller ny hodepine hos personer over 50 år. Normale funn på bilder bekrefter ikke migrene - de utelukker andre Årsaker som <a href="occipital-nevralgi.html">occipital nevralgi</a> eller <a href="bihule-migrene.html">bihulerelatert hodepine</a>.</p>
               </div>
             </section>
@@ -632,7 +458,7 @@
               <p>Det er viktig å være årlig om hva forskningen viser: Evidensen for spinal manipulasjonsbehandling ved migrene er klassifisert som <strong>lav til svårt lav sikkerhet</strong> ifølge GRADE-kriterier (Posadzki et al., Systematic Reviews 2024).</p>
 
               <div class="red-flag-alert">
-                <h4>Viktig om evidens</h4>
+                <h3>Viktig om evidens</h3>
                 <p>Den best designede norske studien (Chaibi et al., European Journal of Neurology 2017) fra Akershus Universitetssykehus fant <strong>ingen signifikant forskjell</strong> mellom kiropraktisk behandling og placebo.</p>
                 <p>Dette betyr ikke at manuell terapi er uten verdi - mange pasienter opplever bedring, men man kan ikke sikkert si om effekten skyldes selve behandlingen eller andre faktorer.</p>
               </div>
@@ -650,7 +476,7 @@
               <p>Flere selvhjelpsstrategier har faktisk <strong>sterkere evidens</strong> enn manuell behandling:</p>
 
               <div class="treatment-box">
-                <h4>Livsstilstiltak med dokumentert effekt</h4>
+                <h3>Livsstilstiltak med dokumentert effekt</h3>
                 <ul>
                   <li><strong>Regelmessig såvn:</strong> Hold faste legge- og stå-opp-tider, også i helgene. To tredjedeler av migrenepasienter har dørlig såvnkvalitet</li>
                   <li><strong>Regelmessige maltider:</strong> Ikke hopp over maltider - faste utlåser anfall hos 57%</li>
@@ -661,7 +487,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Kosttilskudd</h4>
+                <h3>Kosttilskudd</h3>
                 <p>Magnesium (400-500 mg/dag) og riboflavin/vitamin B2 (400 mg/dag) har moderat evidens for forebygging ifølge AAN Guidelines (2012). Snakk med legen din før du starter.</p>
               </div>
             </section>
@@ -693,7 +519,7 @@
               <p>Det er altså mulig å bli bedre - og kronisk migrene kan også reverseres. Studier viser at <strong>26-27% av pasienter</strong> med kronisk migrene går tilbake til episodisk form innen 2 år (Manack et al., Neurology 2011).</p>
 
               <div class="info-box">
-                <h4>Faktorer som bedrer prognosen</h4>
+                <h3>Faktorer som bedrer prognosen</h3>
                 <ul>
                   <li>Lavere baseline-frekvens</li>
                   <li>Fravar av medikamentoverforbruk</li>
@@ -704,7 +530,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4><a href="medikamentoverforbruk-hodepine.html">Medikamentoverforbrukshodepine</a></h4>
+                <h3><a href="medikamentoverforbruk-hodepine.html">Medikamentoverforbrukshodepine</a></h3>
                 <p>Regelmessig bruk av triptaner 10+ dager/måned eller vanlige smertestillende 15+ dager/måned over 3 måneder kan gi medikamentoverforbrukshodepine (MOH). Dette rammer opptil 78-80% av pasienter med kronisk daglig hodepine.</p>
               </div>
             </section>

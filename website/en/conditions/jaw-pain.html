@@ -174,71 +174,7 @@
     <link rel="stylesheet" href="../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .hub-toc-card a {
-      display: block;
-      padding: 10px 14px;
-      color: #475569;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 14px;
-      transition: all 0.2s ease;
-      border-left: 3px solid transparent;
-    }
-
-    .hub-toc-card a:hover {
-      background: #e2e8f0;
-      color: var(--hub-primary);
-    }
-
-    .hub-toc-card a.active {
-      background: #e0f2fe;
-      color: var(--hub-primary);
-      border-left-color: var(--hub-primary);
-      font-weight: 500;
-    }
-
-    .section-quick-link {
-      margin: 0 0 16px;
-    }
-
-    .section-quick-link a {
-      color: var(--hub-primary);
-      font-weight: 600;
-      font-size: 0.95rem;
-      text-decoration: none;
-    }
-
-    .section-quick-link a:hover {
-      text-decoration: underline;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -246,7 +182,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../images/logo-header.webp"
+        <a href="../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -309,7 +245,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li><strong>34%</strong> experience symptoms in life, 5-12% need treatment</li>
                 <li><strong>Women</strong> are affected twice as often as men</li>
@@ -377,7 +313,7 @@
 
             <!-- Red Flag Alert Box -->
             <div class="red-flag-alert">
-              <h4>When must you call 999?</h4>
+              <h3>When must you call 999?</h3>
               <p>With chest pain radiating to the jaw, sudden facial weakness, or breathing difficulties together with
                 jaw pain – call 999 immediately.</p>
               <a href="#redflags">Read more about red flags →</a>
@@ -465,13 +401,13 @@
             </div>
 
             <div class="condition-card">
-              <h4>1. Muscle-related problems (myofascial pain) –45% of cases</h4>
+              <h3>1. Muscle-related problems (myofascial pain) –45% of cases</h3>
               <p>Clearly the most common (ScienceDirect 2021). The chewing muscles become tight, overloaded or develop
                 tender points that can send pain to the temple, eye or neck.</p>
             </div>
 
             <div class="condition-card">
-              <h4>2. Joint-related problems</h4>
+              <h3>2. Joint-related problems</h3>
               <p class="section-quick-link"><a href="jaw/clicking-locking-joint-problems.html">Go to full article on
                   clicking and locking →</a></p>
               <p>Affects the jaw joint itself. Clicking sounds, locking or feeling that the jaw "gets stuck". Can be due
@@ -479,7 +415,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>3. Combined problems</h4>
+              <h3>3. Combined problems</h3>
               <p>Many have elements of both. Muscle tension can cause joint problems over time, and vice versa.</p>
             </div>
           </section>
@@ -508,14 +444,14 @@
             <h3>What causes it?</h3>
 
             <div class="condition-card">
-              <h4>Stress and muscle tension</h4>
+              <h3>Stress and muscle tension</h3>
               <p class="section-quick-link"><a href="jaw/stress-jaw-pain.html">Go to full article on stress and jaw pain
                   →</a></p>
               <p>Most common factor. Under stress, many clench their teeth unconsciously – day and night.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Poor posture</h4>
+              <h3>Poor posture</h3>
               <p class="section-quick-link"><a href="jaw/text-neck-jaw.html">Go to full article on text neck and jaw
                   →</a></p>
               <p>Forward-leaning head during screen work pulls the jaw backwards and compresses the joint. <strong>76%
@@ -523,7 +459,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Teeth grinding (bruxism)</h4>
+              <h3>Teeth grinding (bruxism)</h3>
               <p class="section-quick-link"><a href="jaw/teeth-grinding-bruxism.html">Go to full article on teeth
                   grinding →</a></p>
               <p>8-10% have night-time bruxism (Zielinski 2024). But the connection with TMD pain is more complicated
@@ -531,7 +467,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Neck problems</h4>
+              <h3>Neck problems</h3>
               <p class="section-quick-link"><a href="jaw/neck-jaw-connection.html">Go to full article on neck-jaw
                   connection →</a></p>
               <p>Nerve connections between jaw and upper neck (trigeminocervical nucleus) mean that problems in one
@@ -550,7 +486,7 @@
               treatment should be first choice –surgery is relevant for less than 5% (Dentistry Journal 2024). <strong>75-90% respond to conservative treatment</strong>, about <strong>40% experience spontaneous improvement</strong>, and <strong>less than 5% need surgery</strong>.</p>
 
             <div class="treatment-box">
-              <h4>Treatment approach</h4>
+              <h3>Treatment approach</h3>
               <ul>
                 <li><strong>Examination:</strong> Assessment of jaw, neck, posture and mobility</li>
                 <li><strong>Muscle treatment:</strong> Release of tight chewing muscles and trigger points</li>
@@ -606,22 +542,22 @@
             <h3>What you can do yourself</h3>
 
             <div class="condition-card">
-              <h4>Resting position for the jaw</h4>
+              <h3>Resting position for the jaw</h3>
               <p>Tongue tip against the palate, teeth 2-3 mm apart, lips closed. Reduces unconscious clenching.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Heat or cold</h4>
+              <h3>Heat or cold</h3>
               <p>Warm cloth for tight muscles. Ice for acute pain.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Soft diet</h4>
+              <h3>Soft diet</h3>
               <p>Cut food into smaller pieces. Avoid chewing gum when it hurts.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Three simple exercises</h4>
+              <h3>Three simple exercises</h3>
               <p class="section-quick-link"><a href="jaw/jaw-exercises-tmd.html">Go to full article on jaw exercises
                   →</a></p>
               <ul>
@@ -642,38 +578,38 @@
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Are jaw joint problems serious?</h4>
+              <h3 class="faq-question">Are jaw joint problems serious?</h3>
               <p class="faq-answer">Usually not. TMD is a benign condition. About 40% experience spontaneous improvement
                 without treatment (AAFP 2015). But persistent problems should be examined –early treatment gives faster
                 improvement.</p>
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Will the problems come back?</h4>
+              <h3 class="faq-question">Will the problems come back?</h3>
               <p class="faq-answer">It varies. If you manage stress, improve ergonomics and do exercises regularly,
                 relapses are less likely. If you change nothing, the problems often return.</p>
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Do I need a bite splint?</h4>
+              <h3 class="faq-question">Do I need a bite splint?</h3>
               <p class="faq-answer">Maybe. The splint protects the teeth, but evidence for pain relief is limited. It
                 doesn't replace active treatment.</p>
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Does neck treatment help the jaw?</h4>
+              <h3 class="faq-question">Does neck treatment help the jaw?</h3>
               <p class="faq-answer">Yes, often. 70% of TMD patients have concurrent neck problems. Nerve connections
                 mean that treatment of the upper neck can reduce jaw symptoms.</p>
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Do I need surgery?</h4>
+              <h3 class="faq-question">Do I need surgery?</h3>
               <p class="faq-answer">Very rarely. Less than 5% need surgery –and then only after prolonged conservative
                 treatment without results.</p>
             </div>
 
             <div class="faq-item">
-              <h4 class="faq-question">Are clicking sounds dangerous?</h4>
+              <h3 class="faq-question">Are clicking sounds dangerous?</h3>
               <p class="faq-answer">Pain-free clicking sounds are almost always harmless. About 33% of the population
                 have them. If they're accompanied by pain or locking, you should get it checked.</p>
             </div>

@@ -114,87 +114,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Sub-article color overrides */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    /* Layout fixes */
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    /* Hub content area */
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    /* Section styling */
-    .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; scroll-margin-top: 100px; }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    /* Content typography */
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; line-height: 1.7; color: #374151; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 8px; font-size: 15px; line-height: 1.6; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    /* Info boxes */
-    .red-flag-alert{ background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left: 4px solid var(--hub-red); border-radius: 0 10px 10px 0; padding: 20px; margin: 20px 0; }
-    .red-flag-alert h4 { color: #dc2626; font-size: 15px; margin-bottom: 10px; }
-    .red-flag-alert ul { margin: 0; padding-left: 20px; }
-    .red-flag-alert li { font-size: 14px; color: #7f1d1d; margin-bottom: 6px; }
-
-    .info-box { background: #eff6ff; border-left: 4px solid var(--hub-blue); border-radius: 0 10px 10px 0; padding: 16px; margin: 16px 0; }
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p { font-size: 14px; margin: 0; color: #1e3a8a; }
-
-    .success-box { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid var(--hub-green); border-radius: 0 10px 10px 0; padding: 20px; margin: 20px 0; }
-    .success-box h4 { color: #166534; font-size: 15px; margin-bottom: 10px; }
-    .success-box p, .success-box li { font-size: 14px; color: #166534; }
-    .success-box ul { margin: 10px 0 0 0; padding-left: 20px; }
-
-    /* Stat grid */
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 20px 0; }
-    .stat-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; text-align: center; }
-    .stat-card .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); display: block; }
-    .stat-card .stat-label { font-size: 0.75rem; color: #6b7280; margin-top: 4px; }
-
-    /* FAQ items */
-    .faq-item { border: 1px solid #e5e7eb; border-radius: 8px; margin: 10px 0; overflow: hidden; }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    /* Sources section */
-    .sources-section { background: #f9fafb; border-radius: 12px; padding: 24px; margin-top: 32px; }
-    .sources-section h3 { font-size: 16px; color: var(--hub-dark); margin-bottom: 14px; }
-    .sources-section ol { margin: 0; padding-left: 20px; }
-    .sources-section li { font-size: 13px; color: #6b7280; margin-bottom: 6px; line-height: 1.5; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -202,7 +122,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -295,7 +215,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Viktig å vite</h4>
+                <h3>Viktig å vite</h3>
                 <p>Mange har labrumskader på MR uten å ha symptomer. Studier viser at opptil 69% av symptomfrie personer har labrum-forandringer. Funn på MR betyr ikke automatisk at du trenger behandling.</p>
               </div>
             </section>
@@ -355,7 +275,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>Nær bør du oppsøke hjelp?</h4>
+                <h3>Nær bør du oppsøke hjelp?</h3>
                 <ul>
                   <li>Vedvarende lyskesmerter over 4-6 uker</li>
                   <li>Klikking eller låsing som påvirker daglige aktiviteter</li>
@@ -389,7 +309,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Bildediagnostikk er ikke alltid nødvendig</h4>
+                <h3>Bildediagnostikk er ikke alltid nødvendig</h3>
                 <p>Hvis du responderer godt på konservativ behandling, er det ofte ikke nødvendig med MR. Vi behandler symptomer og funksjon - ikke bilder. MR er mest aktuelt nær konservativ behandling ikke gir tilstrekkelig bedring.</p>
               </div>
             </section>
@@ -433,7 +353,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Rehabilitering etter operasjon</h4>
+                <h3>Rehabilitering etter operasjon</h3>
                 <p>Selv etter vellykket operasjon er rehabilitering avgjørende. Full tilbakeføring til idrett tar typisk 6-12 måneder. Uten ordentlig opptrening er risikoen for dørlig resultat høyere.</p>
               </div>
             </section>
@@ -469,7 +389,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>Nær er prognosen dørligere?</h4>
+                <h3>Nær er prognosen dørligere?</h3>
                 <ul>
                   <li>Betydelig artrose i hoften</li>
                   <li>Store bruskskader</li>

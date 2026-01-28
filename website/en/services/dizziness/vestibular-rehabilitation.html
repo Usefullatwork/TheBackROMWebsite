@@ -117,71 +117,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .nerve-box { background: #fffbeb; border: 1px solid #fbbf24; border-radius: 10px; padding: 16px; margin: 16px 0; }
-    .nerve-box h4 { color: #92400e; margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-    .comparison-table th, .comparison-table td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
-    .comparison-table th { background: #f8fafc; color: var(--hub-dark); font-weight: 600; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section ul { font-size: 0.85rem; color: #64748b; }
-    .sources-section li { margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -189,7 +125,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../../images/logo-header.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Majorstua Oslo logo"><img src="../../../images/logo-header.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
             <button class="language-toggle__button" data-lang="no" aria-label="Switch to Norwegian" aria-pressed="false">NO</button>
@@ -239,7 +175,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li><strong>What it is:</strong> Specific training that teaches the brain to interpret balance signals anew</li>
                 <li><strong>Who it helps:</strong> <a href="../../conditions/dizziness/bppv-crystal-disease.html">BPPV/crystal disease</a>, <a href="../../conditions/dizziness/vestibular-neuritis.html">vestibular neuritis</a>, concussion dizziness, PPPD</li>
@@ -273,7 +209,7 @@
             </nav>
 
             <div class="red-flag-alert">
-              <h4>Red Flags - Call 113</h4>
+              <h3>Red Flags - Call 113</h3>
               <p>Sudden dizziness with double vision, speech difficulties, unsteady gait, or severe headache may indicate stroke.</p>
               <a href="../../conditions/dizziness.html">Read more about dizziness</a>
             </div>
@@ -291,7 +227,7 @@
             <p>VRT forces the brain to use the remaining signals better, rely more on other senses (vision and proprioception), and stop reacting to erroneous signals.</p>
 
             <div class="info-box">
-              <h4>Strong Evidence</h4>
+              <h3>Strong Evidence</h3>
               <p>The updated clinical guidelines from the Academy of Neurologic Physical Therapy (2022) give vestibular rehabilitation a <strong>strong recommendation (Grade A)</strong> for treatment of both acute and chronic vestibular hypofunction.</p>
             </div>
 
@@ -321,22 +257,22 @@
             <p>VRT is effective for several common causes of dizziness:</p>
 
             <div class="condition-card">
-              <h4>1. BPPV / Crystal Disease (Most Common)</h4>
+              <h3>1. BPPV / Crystal Disease (Most Common)</h3>
               <p>Lifetime prevalence 2.4%, accounts for 17-42% of all dizziness consultations. Small calcium crystals become loose in the inner ear and cause intense, brief dizziness episodes with head movements. Treated primarily with the <strong>Epley maneuver (90-97% success rate)</strong>, but VRT can be useful for residual symptoms.</p>
             </div>
 
             <div class="condition-card">
-              <h4>2. Vestibular Neuritis / Labyrinthitis</h4>
+              <h3>2. Vestibular Neuritis / Labyrinthitis</h3>
               <p>Annual incidence 3.5-15.5 per 100,000. Viral inflammation of the balance nerve causes sudden, intense dizziness lasting for days. A Norwegian study from Haukeland showed that <strong>early VRT initiation gave statistically significant improvement</strong> at both 3 and 12 months.</p>
             </div>
 
             <div class="condition-card">
-              <h4>3. Dizziness After Concussion</h4>
+              <h3>3. Dizziness After Concussion</h3>
               <p>50-84% of athletes report dizziness after concussion. VRT started within 30 days is associated with faster return to sports and school.</p>
             </div>
 
             <div class="condition-card">
-              <h4>4. PPPD (Persistent Postural-Perceptual Dizziness)</h4>
+              <h3>4. PPPD (Persistent Postural-Perceptual Dizziness)</h3>
               <p>15-20% of patients with vestibular symptoms. Chronic unsteadiness that persists after the original cause is gone. Often requires combination treatment with VRT, cognitive therapy, and possibly medication.</p>
             </div>
           </section>
@@ -355,17 +291,17 @@
             <h3>The Three Main Principles</h3>
 
             <div class="treatment-box">
-              <h4>Adaptation</h4>
+              <h3>Adaptation</h3>
               <p>Trains the VOR reflex (vestibulo-ocular reflex) - the ability to keep your gaze stable while the head moves. This is fundamental for being able to read, drive, and walk without getting dizzy.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Habituation</h4>
+              <h3>Habituation</h3>
               <p>Gradual exposure to movements that trigger dizziness. Through repeated exposure, the brain learns that these movements are not dangerous, and symptoms decrease.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Substitution</h4>
+              <h3>Substitution</h3>
               <p>Training to use vision and proprioception to compensate for reduced function in the balance organ.</p>
             </div>
           </section>
@@ -409,7 +345,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Important Principle</h4>
+              <h3>Important Principle</h3>
               <p>The exercises should provoke mild to moderate dizziness. If you don't notice anything, the exercises are too easy. The dizziness should subside within 15-30 minutes after the exercise session.</p>
             </div>
           </section>
@@ -433,7 +369,7 @@
             </div>
 
             <div class="info-box">
-              <h4>The HINTS Examination</h4>
+              <h3>The HINTS Examination</h3>
               <p>The HINTS examination (Head Impulse, Nystagmus, Test of Skew) has 96-100% sensitivity for detecting stroke in acute dizziness - better than CT or MRI in the acute phase.</p>
             </div>
           </section>
@@ -471,7 +407,7 @@
             <p>At TheBackROM we offer:</p>
 
             <div class="treatment-box">
-              <h4>Assessment and Diagnostics</h4>
+              <h3>Assessment and Diagnostics</h3>
               <ul>
                 <li>Thorough dizziness history and clinical examination</li>
                 <li><a href="vng-examination.html">VNG examination</a> (videonystagmography) for objective measurement</li>
@@ -481,7 +417,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Treatment</h4>
+              <h3>Treatment</h3>
               <ul>
                 <li>Epley maneuver and other repositioning maneuvers</li>
                 <li>Individually tailored training program</li>
@@ -616,16 +552,16 @@
       <div class="footer__container">
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link" aria-label="Follow TheBackROM on Facebook">
               <img loading="lazy" decoding="async" src="../../../images/Media iconer/facebook_media_social_icon.png" alt="Follow TheBackROM on Facebook" />
             </a>
-            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link">
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link" aria-label="Follow chiropractor Mads Finstad on Instagram">
               <img src="../../../images/Media iconer/instagramlogo.png" alt="Follow chiropractor Mads Finstad on Instagram" loading="lazy" decoding="async" />
             </a>
-            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link">
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link" aria-label="Watch videos from TheBackROM on YouTube">
               <img src="../../../images/Media iconer/youtube_icon.png" alt="Watch videos from TheBackROM on YouTube" loading="lazy" decoding="async"/>
             </a>
-            <a href="../../contact.html" class="footer__social-link">
+            <a href="../../contact.html" class="footer__social-link" aria-label="Send email to TheBackROM">
               <img loading="lazy" decoding="async" src="../../../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send email to TheBackROM" />
             </a>
           </div>
@@ -633,7 +569,7 @@
 
         <div class="footer__center">
           <div class="footer__logo">
-            <a href="../../index.html" class="logo"><img src="../../../images/logo-footer.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+            <a href="../../index.html" class="logo" aria-label="Klinikk for alle Chiropractor Majorstua Oslo logo"><img src="../../../images/logo-footer.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
           </div>
           <div class="back-to-top-wrapper">
             <p class="back-to-top-text">Back to top</p>

@@ -109,33 +109,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -143,7 +117,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img loading="lazy" src="../../images/logo-header.webp"
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -243,7 +217,7 @@
 
             <!-- Red Flag Alert Box -->
             <div class="red-flag-alert">
-              <h4>When Should You Call 113 or Go to A&E?</h4>
+              <h3>When Should You Call 113 or Go to A&E?</h3>
               <p>For severe chest pain with breathing difficulties, radiation to arm/jaw, or sudden weakness - seek help immediately.</p>
               <a href="#redflags">Read more about red flags</a>
             </div>
@@ -271,7 +245,7 @@
             </div>
 
             <div class="info-box">
-              <h4>How Common is Thoracic Back Pain?</h4>
+              <h3>How Common is Thoracic Back Pain?</h3>
               <p>Thoracic back pain is less studied than neck and lower back pain, but research shows it affects many people. A systematic review from 2009 (Briggs et al., BMC Musculoskeletal Disorders) found:</p>
               <ul>
                 <li><strong>Lifetime prevalence:</strong> 15-20% experience thoracic back pain at some point</li>
@@ -311,58 +285,58 @@
             <h3>Common Causes (90%+ of cases)</h3>
 
             <div class="condition-card">
-              <h4>Prolonged Sitting and "Office Back"</h4>
+              <h3>Prolonged Sitting and "Office Back"</h3>
               <p>People sit more than ever. Studies show that prolonged sitting (over 7 hours daily) is associated with reduced mobility in the thoracic spine and increased risk of pain. A forward-leaning posture in front of a PC or mobile phone significantly increases the load on the upper back muscles.</p>
               <p><em>Among office workers, up to 34% report upper back complaints within a year (Briggs et al., 2009).</em></p>
             </div>
 
             <div class="condition-card">
-              <h4>Stress and Breathing Patterns - The "Invisible" Cause</h4>
+              <h3>Stress and Breathing Patterns - The "Invisible" Cause</h3>
               <p>Stress often manifests physically in the body. With high stress, breathing patterns change to become more shallow - so-called chest breathing. This overloads the accessory muscles in the neck and thoracic spine.</p>
               <p>The result is a vicious cycle: Tension leads to pain, pain leads to altered breathing patterns, altered breathing leads to more tension.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Joint Dysfunction (Facet Joints and Costovertebral Joints)</h4>
+              <h3>Joint Dysfunction (Facet Joints and Costovertebral Joints)</h3>
               <p>Stiff or irritated joints in the spine or where the ribs attach can cause sharp, localised pain. Many call this "rib lock" - a condition that responds well to treatment.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Posture-Related Problems</h4>
+              <h3>Posture-Related Problems</h3>
               <p>Increased kyphosis (forward-leaning posture) puts unnecessary strain on the thoracic spine. Screen work, mobile use and prolonged sitting are common triggering factors.</p>
             </div>
 
             <h3>Less Common Causes</h3>
 
             <div class="condition-card">
-              <h4>Costochondritis and Tietze's Syndrome</h4>
+              <h3>Costochondritis and Tietze's Syndrome</h3>
               <p>Inflammation of the cartilage connecting the ribs to the sternum. Causes pain at the front of the chest that can mimic heart disease, but has a musculoskeletal cause.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Scheuermann's Disease</h4>
+              <h3>Scheuermann's Disease</h3>
               <p>A developmental disorder causing increased kyphosis in adolescents. Affects 1-8% of the population. Usually diagnosed between ages 12-17.</p>
             </div>
 
             <div class="condition-card">
-              <h4>T4 Syndrome</h4>
+              <h3>T4 Syndrome</h3>
               <p>Dysfunction in the upper thoracic spine that can cause radiation to arms and hands, often together with numbness or tingling. Usually responds well to manipulation.</p>
             </div>
 
             <h3>Rare Causes (under 1%)</h3>
 
             <div class="condition-card">
-              <h4>Thoracic Disc Herniation</h4>
+              <h3>Thoracic Disc Herniation</h3>
               <p>Accounts for only 0.25-1% of all disc herniations. Most are asymptomatic and discovered incidentally on MRI. Symptomatic cases are very rare - about 1 per million per year.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Compression Fractures</h4>
+              <h3>Compression Fractures</h3>
               <p>Associated with osteoporosis, especially in older women. Can occur after minimal loading or without obvious trauma.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Serious Disease</h4>
+              <h3>Serious Disease</h3>
               <p>In very rare cases, thoracic back pain can be caused by infection, tumour or inflammatory disease such as ankylosing spondylitis. These are usually accompanied by other symptoms (see red flags below).</p>
             </div>
           </section>
@@ -387,7 +361,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Heart Pain vs. Rib Pain - How to Tell the Difference</h4>
+              <h3>Heart Pain vs. Rib Pain - How to Tell the Difference</h3>
               <p><strong>Heart pain:</strong> Often diffuse/pressing, often comes with exertion, accompanied by sweating, nausea, breathing difficulties. Often radiates to arm, jaw or back. Does NOT change with movement or pressure on the chest.</p>
               <p><strong>Rib/muscle pain:</strong> Often sharp/stabbing, comes with certain movements or breathing. You can often point to exactly where it hurts. Worsens with pressure on the spot, rotation or deep breathing.</p>
               <p style="margin-top: 16px; font-style: italic; color: #64748b;">If in doubt? It's always safe to call 113 or A&E for an assessment. Better one trip too many than one too few.</p>
@@ -410,22 +384,22 @@
             <p>Treatment is tailored to the individual, but may include:</p>
 
             <div class="treatment-box">
-              <h4>Joint Manipulation/Mobilisation</h4>
+              <h3>Joint Manipulation/Mobilisation</h3>
               <p>Specific techniques to restore normal joint function. A systematic review (Gevers-Montoro et al., 2022) shows that thoracic manipulation has significant effect on pain and function compared to mobilisation alone.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Soft Tissue Treatment</h4>
+              <h3>Soft Tissue Treatment</h3>
               <p>Massage, trigger point treatment or instrument-assisted treatment to loosen tight muscles.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Exercises and Guidance</h4>
+              <h3>Exercises and Guidance</h3>
               <p>Specific exercises to strengthen and stabilise, as well as advice on ergonomics and work posture.</p>
             </div>
 
             <div class="treatment-box">
-              <h4>Breathing Guidance</h4>
+              <h3>Breathing Guidance</h3>
               <p>For stress-related complaints, conscious work on breathing patterns can be an important part of treatment.</p>
             </div>
 
@@ -444,22 +418,22 @@
             <p>Activity is often the best medicine. Here are three exercises that can relieve stiffness in the thoracic spine:</p>
 
             <div class="exercise-box">
-              <h4>1. Cat-Camel</h4>
+              <h3>1. Cat-Camel</h3>
               <p>Start on all fours. Round your back up while exhaling (like an angry cat), then arch your back while inhaling. Repeat calmly 10-15 times. Good for mobility throughout the spine.</p>
             </div>
 
             <div class="exercise-box">
-              <h4>2. Thread the Needle</h4>
+              <h3>2. Thread the Needle</h3>
               <p>Lie on your side with bent knees. Stretch your top arm forward, then guide it in an arc over your head and backwards while following your hand with your gaze. Hold for a few seconds and feel the stretch in your chest. 10 repetitions on each side.</p>
             </div>
 
             <div class="exercise-box">
-              <h4>3. Thoracic Extension Over Foam Roller</h4>
+              <h3>3. Thoracic Extension Over Foam Roller</h3>
               <p>Lie with your thoracic spine over a foam roller (avoid the lower back). Hold your hands behind your head and lean back gently. Roll carefully back and forth. 1-2 minutes daily.</p>
             </div>
 
             <div class="info-box">
-              <h4>Tips</h4>
+              <h3>Tips</h3>
               <p>Do the exercises daily for 2-3 weeks for best effect. Stop if the exercises worsen your pain.</p>
             </div>
           </section>
@@ -472,32 +446,32 @@
             </div>
 
             <div class="faq-item">
-              <h4>Is it dangerous when my back cracks?</h4>
+              <h3>Is it dangerous when my back cracks?</h3>
               <p>No. The sound during manipulation is due to the release of gas bubbles in the joint fluid - completely harmless and usually painless.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can thoracic back pain come from the heart?</h4>
+              <h3>Can thoracic back pain come from the heart?</h3>
               <p>Pain from the heart can be felt in the chest and back, but is usually accompanied by other symptoms such as breathing difficulties, nausea or radiation to arm/jaw. When in doubt, contact a doctor.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Do I need X-ray or MRI?</h4>
+              <h3>Do I need X-ray or MRI?</h3>
               <p>Rarely. Imaging is only necessary when there's suspicion of serious underlying cause (red flags). For most musculoskeletal complaints, clinical examination provides sufficient information.</p>
             </div>
 
             <div class="faq-item">
-              <h4>How long do the complaints last?</h4>
+              <h3>How long do the complaints last?</h3>
               <p>Acute complaints often improve within 2-6 weeks. For chronic complaints (over 12 weeks), it may take longer, and a combination of treatment and self-effort is important.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can stress cause back pain?</h4>
+              <h3>Can stress cause back pain?</h3>
               <p>Yes, absolutely. Mental stress leads to increased muscle tension and altered breathing patterns, which in turn can cause physical pain in the neck and thoracic spine. The connection is well documented.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Should I rest or be active?</h4>
+              <h3>Should I rest or be active?</h3>
               <p>Moderate activity is usually better than bed rest. Movement promotes blood circulation and prevents muscles from stiffening further.</p>
             </div>
           </section>

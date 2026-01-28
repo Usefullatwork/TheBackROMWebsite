@@ -136,69 +136,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .myth-box { background: var(--color-amber-light); border: 1px solid #fbbf24; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .myth-box h4 { color: #92400e; margin-bottom: 10px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section ul { font-size: 0.85rem; color: #64748b; }
-    .sources-section li { margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -206,7 +144,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Oslo"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Oslo" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -261,7 +199,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li><strong>56%</strong> of the population has malocclusion, only <strong>5-12%</strong> have TMD</li>
                 <li><strong>Weak connection:</strong> Only 2 of 40 occlusal factors show consistent link to TMJ problems</li>
@@ -297,7 +235,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>When should you seek help immediately?</h4>
+              <h3>When should you seek help immediately?</h3>
               <p>For jaw pain combined with chest pain (call emergency services), sudden intense headache, or jaw fatigue when chewing if you're over 50 with vision disturbances.</p>
             </div>
           </section>
@@ -329,7 +267,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Important point</h4>
+              <h3>Important point</h3>
               <p>Even though 56% have bite deviation and only 5-12% have TMD, this doesn't mean bite deviation causes TMD. Most people with "wrong bite" never have jaw problems. The body is remarkably good at adapting.</p>
             </div>
           </section>
@@ -346,22 +284,22 @@
             <h3>Most common causes (well documented)</h3>
 
             <div class="condition-card">
-              <h4>Muscle tension and myofascial pain</h4>
+              <h3>Muscle tension and myofascial pain</h3>
               <p>Tight chewing muscles are the most common cause of jaw pain.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Stress, anxiety, and sleep problems</h4>
+              <h3>Stress, anxiety, and sleep problems</h3>
               <p>Psychological factors are strongly associated with TMD. See our article on <a href="stress-jaw-pain.html">stress and jaw pain</a>.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Bruxism (teeth grinding/clenching)</h4>
+              <h3>Bruxism (teeth grinding/clenching)</h3>
               <p>Often nocturnal and unconscious, especially during stress. Read more about <a href="teeth-grinding-bruxism.html">teeth grinding</a>.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Neck problems (cervicogenic component)</h4>
+              <h3>Neck problems (cervicogenic component)</h3>
               <p>Close connection between neck and jaw.</p>
             </div>
 
@@ -390,7 +328,7 @@
             <p>For decades it was assumed that "wrong bite" was the main cause of jaw problems. This view has been fundamentally challenged by modern research.</p>
 
             <div class="info-box">
-              <h4>What the research says</h4>
+              <h3>What the research says</h3>
               <ul>
                 <li><strong>Manfredini et al. (2017):</strong> "Clinicians are encouraged to abandon the old gnathological paradigm in TMD practice."</li>
                 <li><strong>Cochrane review (2024):</strong> No evidence that occlusion treatment treats or prevents TMD.</li>
@@ -449,7 +387,7 @@
             <p>Imaging (MRI/X-ray) is rarely necessary for typical TMD symptoms. Studies show that imaging findings often don't correlate with symptoms - many without problems have "abnormal" findings on MRI, and many with problems have normal images. Clinical examination is therefore more important than images in most cases.</p>
 
             <div class="info-box">
-              <h4>When is imaging relevant?</h4>
+              <h3>When is imaging relevant?</h3>
               <p>Imaging may be relevant when structural changes are suspected, after trauma, or if conservative treatment doesn't work over time.</p>
             </div>
           </section>
@@ -466,7 +404,7 @@
             <p>Manual therapy for TMD has moderate to high quality evidence for pain relief and increased jaw opening. A study published in PMC (2015) showed 81% improvement in pain scores with chiropractic treatment.</p>
 
             <div class="treatment-box">
-              <h4>Treatment may include:</h4>
+              <h3>Treatment may include:</h3>
               <ul>
                 <li>Soft tissue treatment of chewing and neck muscles</li>
                 <li>Mobilization of TMJ and cervical vertebrae</li>
@@ -481,7 +419,7 @@
             <h3>What can you do yourself?</h3>
 
             <div class="condition-card">
-              <h4>Home remedies</h4>
+              <h3>Home remedies</h3>
               <ul>
                 <li><strong>Heat or cold:</strong> Warm cloth on chewing muscles can relieve tension</li>
                 <li><strong>Avoid extreme jaw opening:</strong> Be careful with large sandwiches, prolonged dental visits</li>
@@ -502,7 +440,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Good prognosis</h4>
+              <h3>Good prognosis</h3>
               <p><strong>90-95% of TMD cases</strong> improve with conservative treatment or without treatment (Norwegian Directorate of Health, 2016). The prognosis is generally good, but relapses are common - especially during stress or changed life situations.</p>
             </div>
           </section>
@@ -536,7 +474,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Chiropractor can help with:</h4>
+              <h3>Chiropractor can help with:</h3>
               <ul>
                 <li>Muscle and joint-related jaw problems</li>
                 <li>TMD with neck component</li>
@@ -546,7 +484,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Dentist first for:</h4>
+              <h3>Dentist first for:</h3>
               <ul>
                 <li>Suspected tooth decay, abscess, or cracked tooth</li>
                 <li>Visible wear patterns on teeth</li>
@@ -555,7 +493,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Doctor for:</h4>
+              <h3>Doctor for:</h3>
               <ul>
                 <li>Systemic symptoms (fever, weight loss, fatigue)</li>
                 <li>Neurological symptoms (numbness, weakness)</li>

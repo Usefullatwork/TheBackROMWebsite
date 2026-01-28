@@ -138,33 +138,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -172,7 +146,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Majorstua"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Majorstua" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -261,7 +235,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Sleep apnea</h4>
+                  <h3 class="condition-title">Sleep apnea</h3>
                   <span class="condition-badge">Very common cause</span>
                 </div>
                 <p>Obstructive sleep apnea causes repeated breathing stops at night. This leads to oxygen deficiency and carbon dioxide buildup that dilates blood vessels in the brain.</p>
@@ -275,7 +249,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Bruxism (teeth grinding)</h4>
+                  <h3 class="condition-title">Bruxism (teeth grinding)</h3>
                 </div>
                 <p>Grinding or clenching teeth at night strains jaw muscles and can cause headache upon awakening.</p>
                 <ul>
@@ -288,7 +262,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Poor sleep position and pillow</h4>
+                  <h3 class="condition-title">Poor sleep position and pillow</h3>
                 </div>
                 <p>Wrong position at night can cause muscle tension in neck and head.</p>
                 <ul>
@@ -301,7 +275,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Medication overuse headache (MOH)</h4>
+                  <h3 class="condition-title">Medication overuse headache (MOH)</h3>
                 </div>
                 <p>Regular use of painkillers can paradoxically cause daily headache - often most pronounced in the morning.</p>
                 <ul>
@@ -313,7 +287,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title"><a href="migraine.html">Migraine</a> and tension headache</h4>
+                  <h3 class="condition-title"><a href="migraine.html">Migraine</a> and tension headache</h3>
                 </div>
                 <p>Primary headache disorders can start at night or early morning.</p>
                 <ul>
@@ -325,7 +299,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Other causes</h4>
+                  <h3 class="condition-title">Other causes</h3>
                 </div>
                 <ul>
                   <li><strong>Caffeine withdrawal:</strong> If you're used to lots of coffee, absence at night can cause headache</li>
@@ -370,7 +344,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Brain tumors and intracranial pressure</h4>
+                <h3>Brain tumors and intracranial pressure</h3>
                 <p>It's important to know that morning headache can be a symptom of increased pressure in the brain (e.g., from a tumor), but this is <strong>very rare</strong>. Typical for this is:</p>
                 <ul>
                   <li>Gradually worsening headache over weeks/months</li>
@@ -394,7 +368,7 @@
 
               <h3>For sleep-related causes</h3>
               <div class="treatment-box">
-                <h4>Sleep apnea</h4>
+                <h3>Sleep apnea</h3>
                 <ul>
                   <li>Evaluation with sleep study (polysomnography)</li>
                   <li>CPAP treatment is first choice for moderate to severe sleep apnea</li>
@@ -404,7 +378,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Bruxism (teeth grinding)</h4>
+                <h3>Bruxism (teeth grinding)</h3>
                 <ul>
                   <li>Bite guards fitted by dentist</li>
                   <li>Stress management (stress often worsens grinding)</li>
@@ -415,7 +389,7 @@
 
               <h3>Improve sleeping conditions</h3>
               <div class="treatment-box">
-                <h4>Sleep position and equipment</h4>
+                <h3>Sleep position and equipment</h3>
                 <ul>
                   <li><strong>Avoid stomach sleeping:</strong> Causes neck torsion</li>
                   <li><strong>Right pillow:</strong> Keep neck in neutral position</li>
@@ -426,7 +400,7 @@
 
               <h3>Lifestyle measures</h3>
               <div class="treatment-box">
-                <h4>Sleep hygiene</h4>
+                <h3>Sleep hygiene</h3>
                 <ul>
                   <li><strong>Regular sleep pattern:</strong> Go to bed and get up at the same time</li>
                   <li><strong>Sufficient sleep:</strong> Most need 7-9 hours</li>
@@ -447,12 +421,12 @@
               </ul>
 
               <div class="info-box">
-                <h4>When do you need to see a doctor?</h4>
+                <h3>When do you need to see a doctor?</h3>
                 <p>If you suspect sleep apnea, hypertension, or other medical causes, it's important to get a medical evaluation. The chiropractor can help with muscle and joint-related components, but not treat underlying medical conditions.</p>
               </div>
 
               <div class="info-box">
-                <h4>Differential diagnoses</h4>
+                <h3>Differential diagnoses</h3>
                 <p>Morning headache can be confused with other headache types. <a href="sinus-migraine.html">Sinus headache</a> can give pressing pain upon awakening, while <a href="cluster-headache.html">cluster headache</a> often comes early in the morning. <a href="hormonal-headache.html">Hormonal headache</a> in women can also have a morning pattern. For sharp pain in the back of the head, <a href="occipital-neuralgia.html">occipital neuralgia</a> should be considered.</p>
               </div>
             </section>

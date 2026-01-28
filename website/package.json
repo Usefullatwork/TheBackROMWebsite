@@ -17,6 +17,7 @@
     "grammar": "node scripts/grammar-check.js",
     "check-images": "node scripts/check-images.js",
     "check-links": "node scripts/check-links.js",
+    "full-audit": "node scripts/full-audit.js",
     "audit": "npm run spellcheck:hub && npm run validate:hubs && npm run check-sitemap && npm run check-images en/ && npm run check-links en/",
     "test": "echo \"No tests configured\" && exit 0"
   },

@@ -116,72 +116,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .purple-box { background: #f5f3ff; border: 1px solid #c4b5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .purple-box h4 { color: var(--hub-purple); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-    .comparison-table th, .comparison-table td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
-    .comparison-table th { background: #f8fafc; color: var(--hub-dark); font-weight: 600; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section ul { font-size: 0.85rem; color: #64748b; }
-    .sources-section li { margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -189,7 +124,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -246,7 +181,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>52-58%</strong> av TMD-pasienter har tinnitus, 55% har åresmerter, 75% har orefullhet</li>
                 <li><strong>35-46%</strong> av uforklarlig oreverk skyldes kjeveproblemer</li>
@@ -292,12 +227,12 @@
             <p>Kjeveleddet ligger bare 1-2 millimeter fra oregangen. Men nærheten alene forklarer ikke symptomene - det er tre anatomiske forbindelser som gjør at problemer i kjeven kan kjennes i året:</p>
 
             <div class="condition-card">
-              <h4>Diskomalleoligamentet (Pintos Ligament)</h4>
+              <h3>Diskomalleoligamentet (Pintos Ligament)</h3>
               <p>Dette er en bindevevsstreng som forbinder kjeveleddets bruskskive direkte med hammeren (malleus) i mellomoret. Anatomiske studier har påvist dette ligamentet hos alle undersokte personer. Nær kjeven beveger seg unormalt eller bruskskiven forskyves, kan dette dra i orebeinene og gi lydforstyrrelser.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Felles nerveinnervering</h4>
+              <h3>Felles nerveinnervering</h3>
               <p>Trigeminusnerven forsyner både kjevemuskulaturen og to viktige muskler i mellomoret:</p>
               <ul>
                 <li><strong>Tensor tympani:</strong> Kontrollerer trommehinnespenningen</li>
@@ -307,7 +242,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Auriculotemporalnerven og henviste smerter</h4>
+              <h3>Auriculotemporalnerven og henviste smerter</h3>
               <p>Auriculotemporalnerven forsyner både kjeveleddet og ytre oregang med følelse. Smerter fra kjeveleddet kan derfor oppleves som åresmerter gjennom sakalt "referred pain". Du kjenner smerten i året, men kilden sitter i kjeven.</p>
             </div>
           </section>
@@ -472,7 +407,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Nær bør du gå til ONH-lege først?</h4>
+              <h3>Nær bør du gå til ONH-lege først?</h3>
               <p>Ved usikkerhet er det fornuftig å utelukke primår orepatologi hos ONH-lege først. Hvis undersøkelsen er normal og du samtidig har kjevesymptomer, peker det mot TMD som årsak - og da er kiropraktor riktig neste steg.</p>
             </div>
           </section>
@@ -488,7 +423,7 @@
             <p>En fersk systematisk oversikt fra 2025 fant at manuell terapi kombinert med <a href="øvelser-tmd.html">øvelser</a> rettet mot nakke og kjeve reduserte tinnitus-alvorlighet og bedret livskvalitet - både umiddelbart og ved 3- og 6-måneders oppfølg.</p>
 
             <div class="treatment-box">
-              <h4>Imponerende behandlingsresultater</h4>
+              <h3>Imponerende behandlingsresultater</h3>
               <ul>
                 <li>Wright og Bifano (1997): <strong>52,5% oppnadde fullstendig bedring</strong> av tinnitus, ytterligere 30% ble betydelig bedre - totalt 82,5% responsrate</li>
                 <li>Wright (2007): Hos 200 pasienter rapporterte <strong>83% betydelig bedring</strong> eller fullstendig fravaer av tinnitus etter TMD-behandling</li>
@@ -528,7 +463,7 @@
             <p>Typisk behandlingsforløp er 6-12 behandlinger over 4-8 uker.</p>
 
             <div class="info-box">
-              <h4>Viktig om tidsforløp</h4>
+              <h3>Viktig om tidsforløp</h3>
               <p style="margin-bottom: 0;">Bedring av tinnitus kommer ofte <strong>2-3 uker etter at kjevesmertene begynner å avta</strong>. Full effekt kan ta 3-6 måneder. Orefullhet er ofte det symptomet som responderer raskest.</p>
             </div>
 
@@ -638,7 +573,7 @@
 
           <!-- Relaterte Fagartikler -->
           <div class="info-box">
-            <h4>Relaterte fagartikler</h4>
+            <h3>Relaterte fagartikler</h3>
             <p style="color: #334155; margin-bottom: 16px;">Vil du lære mer om sjeldne Årsaker til kjeve- og ansiktssmerter?</p>
             <ul style="list-style: none; padding: 0; margin: 0;">
               <li style="margin-bottom: 10px;"><a href="eagle-syndrom.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Eagle syndrom</a> - Forlenget styloidutloper som årsak til hals- og kjevesmerter</li>

@@ -138,33 +138,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -172,7 +146,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -298,7 +272,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">1. Kronisk <a href="migrene.html">migrene</a></h4>
+                  <h3 class="condition-title">1. Kronisk <a href="migrene.html">migrene</a></h3>
                   <span class="condition-badge">Vanligst</span>
                 </div>
                 <p>Hodepine 15+ dager/måned, hvorav minst 8 dager med migrenetrekk (ensidig, pulserende, kvalme, lys-/lydfølsomhet). Utvikles gradvis fra episodisk migrene - ca. 2,5-3% progredierer årlig.</p>
@@ -311,7 +285,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">2. Kronisk <a href="spenningshodepine.html">spenningshodepine</a></h4>
+                  <h3 class="condition-title">2. Kronisk <a href="spenningshodepine.html">spenningshodepine</a></h3>
                 </div>
                 <p>Bilateral, trykkende/strammende smerte som ikke forverres av aktivitet. Mild til moderat intensitet. Ingen kvalme, høyst ån av lys- eller lydfølsomhet.</p>
                 <ul>
@@ -323,7 +297,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">3. <a href="medikamentoverforbruk-hodepine.html">Medikamentoverforbrukshodepine</a> (MOH)</h4>
+                  <h3 class="condition-title">3. <a href="medikamentoverforbruk-hodepine.html">Medikamentoverforbrukshodepine</a> (MOH)</h3>
                   <span class="condition-badge">78-80% av CDH</span>
                 </div>
                 <p>Den store elefanten i rommet. Regelmessig bruk av smertestillende kan paradoksalt føre til mer hodepine. Finnes hos opptil 78-80% av alle med kronisk daglig hodepine.</p>
@@ -336,14 +310,14 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">4. Ny daglig vedvarende hodepine (NDPH)</h4>
+                  <h3 class="condition-title">4. Ny daglig vedvarende hodepine (NDPH)</h3>
                   <span class="condition-badge">Sjelden</span>
                 </div>
                 <p>Plutselig debut med daglig, uopphårlig hodepine fra dag ån. Pasienten husker ofte nåyaktig nær det startet. Kan minne om spenningshodepine eller migrene, men skilles ut ved den akutte starten.</p>
               </div>
 
               <div class="red-flag-alert">
-                <h4>Viktig å huske</h4>
+                <h3>Viktig å huske</h3>
                 <p>De fleste med kronisk daglig hodepine har ikke kun ån type - mange har overlappende diagnoser. For eksempel kan en person ha kronisk migrene komplisert av medikamentoverforbruk.</p>
               </div>
             </section>
@@ -375,7 +349,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Sentral sensitisering</h4>
+                <h3>Sentral sensitisering</h3>
                 <p>Ved kronisk hodepine skjer det forandringer i hjernens smertesystem - en "sensitisering" som gjør at nervesystemet reagerer sterkere på stimuli som normalt ikke ville gitt smerte. Denne prosessen kan reverseres, men det tar tid.</p>
               </div>
             </section>
@@ -423,14 +397,14 @@
               <p>Dette er ofte det viktigste første steget. Hos opptil 80% av pasienter med kronisk daglig hodepine foreligger medikamentoverforbruk. Uten å adressere dette vil annen behandling ha begrenset effekt.</p>
 
               <div class="red-flag-alert">
-                <h4>Seponering av smertestillende</h4>
+                <h3>Seponering av smertestillende</h3>
                 <p>Nedtrapping eller brå seponering av smertestillende må skje under veiledning av lege. Forvent at hodepinen forverres de første 1-2 ukene ("reboundhodepine") før bedring inntrer. De fleste opplever betydelig bedring etter 6-8 uker.</p>
               </div>
 
               <h3>Steg 2: Livsstilsintervensjoner</h3>
 
               <div class="treatment-box">
-                <h4>Livsstilstiltak med dokumentert effekt</h4>
+                <h3>Livsstilstiltak med dokumentert effekt</h3>
                 <ul>
                   <li><strong>Regelmessig såvn:</strong> Faste legge- og stå-opp-tider, også i helger</li>
                   <li><strong>Regelmessige måltider:</strong> Ikke hopp over måltider</li>
@@ -460,7 +434,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>årlig om evidens</h4>
+                <h3>årlig om evidens</h3>
                 <p>Evidensen for manuell behandling ved kronisk daglig hodepine er begrenset. Det som fungerer best er en multimodal tilnærming som kombinerer livsstilsendringer, medikamentseponering ved behov, og eventuelt forebyggende behandling. Manuell terapi kan være et nyttig supplement for noen pasienter.</p>
               </div>
             </section>
@@ -496,7 +470,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Det tar tid</h4>
+                <h3>Det tar tid</h3>
                 <p>Bedring skjer ikke over natten. Forvent gradvis bedring over uker til måneder. Det viktigste er konsistens i livsstilsendringer og tølmodighet med prosessen.</p>
               </div>
             </section>

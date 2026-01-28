@@ -146,175 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .section-title { font-size: 20px; font-weight: 700; color: var(--hub-dark); margin: 0; }
-    @media (max-width: 600px) { .section-title { font-size: 18px; } }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-    .red-flag-box .note { font-style: italic; margin-top: 12px; color: #991b1b; font-size: 13px; }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p { font-size: 14px; margin: 0 0 8px; color: #166534; }
-    .treatment-box ul { margin: 8px 0 0 0; padding-left: 20px; }
-    .treatment-box li { font-size: 14px; margin-bottom: 4px; color: #166534; }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p { font-size: 14px; margin: 0; color: #1e3a8a; }
-    .info-box ul { margin: 8px 0 0 0; padding-left: 20px; color: #1e3a8a; }
-    .info-box li { font-size: 14px; margin-bottom: 4px; }
-
-    .nerve-box {
-      background: #f5f3ff;
-      border: 1px solid #d8b4fe;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .nerve-box h4 { color: var(--hub-purple); font-size: 15px; margin: 0 0 12px; }
-    .nerve-box ul { margin: 0; padding-left: 20px; }
-    .nerve-box li { font-size: 14px; margin-bottom: 8px; color: #5b21b6; }
-
-    .timeline-box {
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .timeline-box h4 { color: #92400e; font-size: 15px; margin: 0 0 12px; }
-    .timeline-box p { font-size: 14px; margin-bottom: 8px; color: #78350f; }
-
-    .research-box {
-      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
-      border: 2px solid #10b981;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-    .research-box h4 { color: #047857; font-size: 15px; margin: 0 0 12px; }
-    .research-box p { font-size: 14px; margin-bottom: 8px; color: #065f46; }
-    .research-box strong { color: #047857; }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .sources-section { margin-top: 28px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-    @media (max-width: 900px) {
-      .mobile-sticky-cta { display: flex; }
-      .hub-main { margin-bottom: 80px; }
-    }
-    .mobile-sticky-cta .button {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .mobile-sticky-cta .button--primary { background: #F26522; color: #fff; }
-    .mobile-sticky-cta .button--outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -322,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -374,7 +206,7 @@
 
             <!-- Premium Summary Card -->
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Sterkest:</strong> PCL er kneets kraftigste band</li>
                 <li>De fleste behandles <strong>uten</strong> operasjon</li>
@@ -407,7 +239,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>PCL vs. ACL - Viktige forskjeller</h4>
+                <h3>PCL vs. ACL - Viktige forskjeller</h3>
                 <ul>
                   <li><strong>Styrke:</strong> PCL er ca. dobbelt så sterkt som ACL</li>
                   <li><strong>Blodforsyning:</strong> PCL har bedre blodtilførsel og helingsevne</li>
@@ -428,7 +260,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Dashboard-skade</h4>
+                  <h3 class="condition-title">Dashboard-skade</h3>
                   <span class="condition-badge">Vanligst</span>
                 </div>
                 <p>Ved trafikkulykker kan kneet slå mot dashbordet, noe som presser leggbenet bakover og skader PCL.</p>
@@ -436,7 +268,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Idrettsskader</h4>
+                  <h3 class="condition-title">Idrettsskader</h3>
                   <span class="condition-badge">Kontaktidretter</span>
                 </div>
                 <p>Fall på båyd kne med foten i plantar-fleksjon (tåspissen ned), eller direkte slag mot forsiden av leggen.</p>
@@ -449,7 +281,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Hyperekstensjonsskade</h4>
+                  <h3 class="condition-title">Hyperekstensjonsskade</h3>
                 </div>
                 <p>Overstrekning av kneet kan skade både ACL og PCL, spesielt ved landing etter hopp.</p>
               </div>
@@ -533,7 +365,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Bakre skuff-test</h4>
+                  <h3 class="condition-title">Bakre skuff-test</h3>
                   <span class="condition-badge">Hovedtest</span>
                 </div>
                 <p>Pasienten ligger med kneet båyd 90 grader. Undersøkeren presser leggbenet bakover. økt bevegelse sammenlignet med frisk side indikerer PCL-skade.</p>
@@ -541,14 +373,14 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Posterior sag sign</h4>
+                  <h3 class="condition-title">Posterior sag sign</h3>
                 </div>
                 <p>Med kneet båyd 90 grader ses det at leggbenet "henger" bakover sammenlignet med frisk side.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Quadriceps active test</h4>
+                  <h3 class="condition-title">Quadriceps active test</h3>
                 </div>
                 <p>Nær pasienten strammer quadriceps, flytter leggbenet seg fremover ved PCL-skade.</p>
               </div>
@@ -561,7 +393,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Viktig å vurdere</h4>
+                <h3>Viktig å vurdere</h3>
                 <p>PCL-skader forekommer ofte sammen med andre skader. Undersøkelsen bør også vurdere:</p>
                 <ul>
                   <li>Bakre lateralt hjårne (posterolateral corner)</li>
@@ -583,7 +415,7 @@
               <h3>Konservativ behandling (førstevalg)</h3>
 
               <div class="treatment-box">
-                <h4>Akuttfase (0-2 uker)</h4>
+                <h3>Akuttfase (0-2 uker)</h3>
                 <ul>
                   <li>POLICE-prinsippet: Protect, Optimal Loading, Ice, Compression, Elevation</li>
                   <li>Krykker ved behov for å avlaste</li>
@@ -592,7 +424,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Rehabiliteringsfase</h4>
+                <h3>Rehabiliteringsfase</h3>
                 <ul>
                   <li><strong>Quadriceps-fokus:</strong> Styrking av fremre lærmuskel er helt sentralt - den ståtter PCLs funksjon</li>
                   <li><strong>Hamstrings forsiktig:</strong> Unngå isolert hamstrings-trening først da dette kan åke bakre skuff</li>
@@ -678,7 +510,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Viktige prinsipper</h4>
+                <h3>Viktige prinsipper</h3>
                 <ul>
                   <li>Quadriceps-trening er viktigere enn hamstrings først</li>
                   <li>Unngå øvelser som gir bakre skuff de første ukene</li>

@@ -130,71 +130,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .premium-summary-card {
-      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-      border-left: 4px solid var(--hub-primary);
-      border-radius: 0 10px 10px 0;
-      padding: 18px;
-      align-self: start;
-    }
-    .premium-summary-card h3 { font-size: 15px; color: var(--hub-dark); margin-bottom: 12px; }
-    .premium-summary-card ul { list-style: none; padding: 0; margin: 0; }
-    .premium-summary-card li { padding: 5px 0 5px 22px; position: relative; font-size: 13px; line-height: 1.5; }
-    .premium-summary-card li::before { content: attr(data-icon); position: absolute; left: 0; font-size: 12px; }
-    .premium-summary-card .btn-small {
-      display: block;
-      background: var(--hub-primary);
-      color: #fff;
-      padding: 10px 14px;
-      border-radius: 6px;
-      font-weight: 700;
-      text-decoration: none;
-      text-align: center;
-      font-size: 13px;
-      margin-top: 14px;
-    }
-    .premium-summary-card .btn-small:hover { background: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -202,7 +138,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -284,7 +220,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Spenningshodepine</h4>
+                  <h3 class="condition-title">Spenningshodepine</h3>
                   <span class="condition-badge">Vanligst - 46% livstid</span>
                 </div>
                 <p><a href="spenningshodepine.html">Spenningshodepine</a> er den desidert vanligste årsaken til hodepine på toppen av hodet. Livstidsprevalensen er 46% globalt, og danske studier viser opptil 78%. Kvinner rammes dobbelt så ofte som menn.</p>
@@ -294,7 +230,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Triggerpunkter i nakkemuskulatur</h4>
+                  <h3 class="condition-title">Triggerpunkter i nakkemuskulatur</h3>
                   <span class="condition-badge">Referert smerte</span>
                 </div>
                 <p>Muskler i nakken kan referere smerte til toppen av hodet gjennom et fenomen kalt "referred pain". Les mer om <a href="triggerpunkter-hodepine.html">triggerpunkter og hodepine</a>.</p>
@@ -304,7 +240,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Cervikogen hodepine</h4>
+                  <h3 class="condition-title">Cervikogen hodepine</h3>
                   <span class="condition-badge">2,5-4,1% av befolkningen</span>
                 </div>
                 <p><a href="nakkehodepine.html">Cervikogen hodepine</a> skyldes dysfunksjon i øvre nakkevirvler (C1-C3) og omliggende strukturer. Den norske Vaga-studien fant 4,1% prevalens.</p>
@@ -313,7 +249,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Occipitalnevralgi</h4>
+                  <h3 class="condition-title">Occipitalnevralgi</h3>
                   <span class="condition-badge">Sjelden</span>
                 </div>
                 <p><a href="occipital-nevralgi.html">Occipitalnevralgi</a> gir skarp, skytende smerte fra <a href="hodepine-bakhodet.html">bakhodet</a> som kan stråle til toppen av hodet. Smerten følger forløpet til occipitalnerven og er ofte ensidig med perioder av intense "lyn"-lignende smerter.</p>
@@ -321,7 +257,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Medikamentoverforbrukshodepine</h4>
+                  <h3 class="condition-title">Medikamentoverforbrukshodepine</h3>
                   <span class="condition-badge">0,5-7,2%</span>
                 </div>
                 <p>Ved hyppig bruk av smertestillende - spesielt paracetamol, NSAIDs eller triptaner mer enn 10-15 dager per måned - kan hodepinen paradoksalt nok forverres og bli daglig. Les mer om <a href="medikamentoverforbruk-hodepine.html">medikamentoverforbrukshodepine</a>.</p>
@@ -353,7 +289,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Splenius capitis - smerte til issen</h4>
+                <h3>Splenius capitis - smerte til issen</h3>
                 <p>Vanlige Årsaker til splenius-triggerpunkter er arbeid med flere skjermer (krever hodedreining), fremoverlent hodestilling og å sove på magen med tykk pute.</p>
               </div>
             </section>
@@ -380,7 +316,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>KONTAKT LEGE ELLER LEGEVAKT UMIDDELBART VED:</h4>
+                <h3>KONTAKT LEGE ELLER LEGEVAKT UMIDDELBART VED:</h3>
                 <ul>
                   <li><strong>Plutselig, intens hodepine</strong> ("den verste hodepinen i mitt liv") - kan være hjerneblodning</li>
                   <li><strong>Nevrologiske symptomer:</strong> Synsforstyrrelser, dobbeltsyn, nummenhet, svakhet, talevansker</li>
@@ -403,35 +339,35 @@
               <p>Behandling av hodepine på toppen av hodet fokuserer på de underliggende årsakene - spesielt nakkestrukturer og muskulatur.</p>
 
               <div class="condition-card">
-                <h4>Ved cervikogen hodepine</h4>
+                <h3>Ved cervikogen hodepine</h3>
                 <p>Manuell behandling har moderat evidens for korttidseffekt. En systematisk oversikt fra 2022 med 20 studier og 1439 pasienter fant stor effekt på smerteintensitet på kort sikt sammenlignet med placebo.</p>
                 <p><strong>Viktig å merke seg:</strong> Ved 12 måneders oppfølg viste manuell behandling alene ikke bedre effekt enn placebo. Nakkeøvelser viste derimot vedvarende effekt.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Ved spenningshodepine</h4>
+                <h3>Ved spenningshodepine</h3>
                 <p>Evidensen for manuell behandling er mer begrenset. Retningslinjer fra 2011 konkluderte med at manipulasjon ikke kan anbefales for episodisk spenningshodepine, men at lavintensitets mobilisering kan være nyttig ved kroniske plager.</p>
               </div>
 
               <h3>Hva kan du gjøre selv?</h3>
 
               <div class="condition-card">
-                <h4>Holdningskorrigering</h4>
+                <h3>Holdningskorrigering</h3>
                 <p>Unngå fremoverlent hode ved skjermarbeid. Sårg for at skjermen er i åyehøyde og ta regelmessige pauser.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Nakkeøvelser</h4>
+                <h3>Nakkeøvelser</h3>
                 <p>Forsiktige tåyninger og styrkeøvelser for nakken har dokumentert effekt. Spesielt øvelser som styrker de dype nakkefleksorene kan være nyttige.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Stresshåndtering</h4>
+                <h3>Stresshåndtering</h3>
                 <p>Ved spenningshodepine kan avspenning, mindfulness eller andre stressmestringsteknikker hjelpe.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Begrens smertestillende</h4>
+                <h3>Begrens smertestillende</h3>
                 <p>Unngå daglig bruk av paracetamol eller NSAIDs for å forebygge medikamentoverforbrukshodepine.</p>
               </div>
 

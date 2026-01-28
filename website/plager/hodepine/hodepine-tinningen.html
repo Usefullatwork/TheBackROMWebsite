@@ -130,33 +130,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -164,7 +138,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -248,7 +222,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Spenningshodepine</h4>
+                  <h3 class="condition-title">Spenningshodepine</h3>
                   <span class="condition-badge">Vanligst - 26-33%</span>
                 </div>
                 <p><a href="spenningshodepine.html">Spenningshodepine</a> er den hyppigste årsaken til tinningssmerte. Smerten beskrives typisk som et pressende band rundt hodet, ofte bilateralt. Den topper seg i alderen 30-39 år og er noe vanligere hos kvinner.</p>
@@ -257,7 +231,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Migrene</h4>
+                  <h3 class="condition-title">Migrene</h3>
                   <span class="condition-badge">11-15%</span>
                 </div>
                 <p><a href="migrene.html">Migrene</a> rammer 11-15% av befolkningen årlig. Kvinner rammes omtrent tre ganger så ofte som menn. Migrenesmerte er typisk pulserende og ofte ensidig, gjerne lokalisert til tinningen.</p>
@@ -266,7 +240,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Kjeveleddsplager (TMD)</h4>
+                  <h3 class="condition-title">Kjeveleddsplager (TMD)</h3>
                   <span class="condition-badge">5-10%</span>
                 </div>
                 <p>Temporomandibulære dysfunksjoner (TMD) gir klinisk signifikante symptomer hos 5-10% av befolkningen. Kvinner rammes 2-4 ganger oftere enn menn, med høyest forekomst i alderen 20-40 år.</p>
@@ -276,7 +250,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Cervikogen hodepine</h4>
+                  <h3 class="condition-title">Cervikogen hodepine</h3>
                   <span class="condition-badge">0,4-4%</span>
                 </div>
                 <p><a href="nakkehodepine.html">Cervikogen hodepine</a> utgår fra strukturer i nakken og refererer smerte til hodet, inkludert tinningen. Forekomsten i befolkningen er 0,4-4%, men utgjør 15-20% av <a href="kronisk-daglig-hodepine.html">kroniske hodepinetilfeller</a> i klinisk praksis.</p>
@@ -284,7 +258,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Temporal arteritt - sjelden, men alvorlig</h4>
+                <h3>Temporal arteritt - sjelden, men alvorlig</h3>
                 <p>Temporal arteritt (storkarsvaskulitt) er sjelden, men krever åyeblikkelig oppmerksomhet. Skandinaviske befolkninger har verdens høyeste forekomst: 28-33 per 100 000. Ubehandlet kan temporal arteritt føre til permanent synstap hos opptil 20% av pasientene.</p>
               </div>
             </section>
@@ -332,7 +306,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Overlappende Årsaker</h4>
+                <h3>Overlappende Årsaker</h3>
                 <p>Mange pasienter har overlappende Årsaker. Studier viser at triggerpunkter i temporalis-muskelen kan referere smerte til tinningen, åyenbrynet og til og med tennene - noe som kan forveksles med tannproblemer eller bihulebetennelse.</p>
               </div>
             </section>
@@ -352,7 +326,7 @@
               <p>For TMD-relatert hodepine har diagnostiske kriterier (DC/TMD) vist 89% sensitivitet og 87% spesifisitet: hodepine i tinningregionen som påvirkes av kjevebevegelse, og som kan reproduseres ved palpasjon av tyggmuskulaturen.</p>
 
               <div class="info-box">
-                <h4>Nær er bildediagnostikk aktuelt?</h4>
+                <h3>Nær er bildediagnostikk aktuelt?</h3>
                 <p>MR eller CT av hodet er ikke indisert ved typisk primår hodepine med normal nevrologisk undersøkelse og stabilt månster. Kun 0,3% av hodepinepasienter med normal screening har signifikante funn på bildediagnostikk.</p>
                 <p>Bilder er aktuelt ved tordenskrallhodepine, ny hodepine etter 50 år, nevrologiske utfall, eller progressiv forverring.</p>
               </div>
@@ -389,34 +363,34 @@
               <p>Behandlingstilnærmingen avhenger av underliggende årsak. Tidlig behandling kan ofte gi raskere bedring enn å vente og se.</p>
 
               <div class="treatment-box">
-                <h4>Ved cervikogen hodepine</h4>
+                <h3>Ved cervikogen hodepine</h3>
                 <p>Her er evidensen sterkest. En systematisk oversikt av 20 RCT-studier fant moderat evidens for at manipulasjon gir betydelig korttidseffekt på smerteintensitet. En viktig studie viste at 72% av pasientene oppnådde minst 50% reduksjon i hodepinefrekvens ved 12-måneders oppfølging.</p>
               </div>
 
               <div class="treatment-box">
-                <h4>Ved spenningshodepine</h4>
+                <h3>Ved spenningshodepine</h3>
                 <p>Evidensen er svakere for manipulasjon alene. En metaanalyse fant at bløtvevsteknikker var bedre enn ingen behandling (lav evidens), mens manipulasjon ikke viste signifikant effekt sammenlignet med kontroll. Nølebehandling (dry needling) viste moderat evidens for effekt.</p>
               </div>
 
               <div class="treatment-box">
-                <h4>Ved TMD-relatert hodepine</h4>
+                <h3>Ved TMD-relatert hodepine</h3>
                 <p>Forskning tyder på at kombinert behandling av kjeve og nakke er mer effektivt enn nakkebehandling alene. Triggerpunktbehandling av temporalis og masseter kan redusere både lokal omhet og referert tinningssmerte.</p>
               </div>
 
               <h3>Hva kan du gjøre selv?</h3>
 
               <div class="treatment-box">
-                <h4>Selvundersøkelse av temporalis</h4>
+                <h3>Selvundersøkelse av temporalis</h3>
                 <p>Plasser fingertuppene på tinningen, over og foran året. Bit tennene sammen - du skal kjenne muskelen stramme seg. Trykk med moderat kraft i 2 sekunder på fremre, midtre og bakre del. Vurder omhet. Masser deretter med sirkulære bevegelser i 30-60 sekunder.</p>
               </div>
 
               <div class="treatment-box">
-                <h4>Kjeveøvelser</h4>
+                <h3>Kjeveøvelser</h3>
                 <p>Kontrollert gaping med tungen avslappet mot ganen, sideveis kjevebevegelser, og avspenningsøvelser ("leppene sammen, tennene fra hverandre") har moderat evidens fra internasjonal konsensus.</p>
               </div>
 
               <div class="treatment-box">
-                <h4>Nakkeøvelser</h4>
+                <h3>Nakkeøvelser</h3>
                 <p>Kraniocervikal fleksjonsovelse (dyp nakkefleksjon) har moderat til høy evidens for cervikogen hodepine. Ligg på ryggen, utfør forsiktig hakeknikk, hold 10 sekunder, 10 repetisjoner.</p>
               </div>
 
@@ -440,7 +414,7 @@
               <p>Uten behandling har tilstanden tendens til å vedvare. Med behandling oppnær de fleste betydelig bedring, men langsiktige vedlikeholdsstrategier er ofte nødvendige.</p>
 
               <div class="info-box">
-                <h4>Viktig å huske</h4>
+                <h3>Viktig å huske</h3>
                 <p>Langtidsresultater er ofte sammenlignbare mellom ulike behandlingsmetoder etter 6 måneder. Det viktigste er å finne en tilnærming som fungerer for deg og som du kan følge opp over tid.</p>
               </div>
             </section>

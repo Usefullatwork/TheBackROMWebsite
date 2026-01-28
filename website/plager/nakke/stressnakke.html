@@ -115,68 +115,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .stress-cycle-box { background: linear-gradient(135deg, var(--color-amber-light) 0%, #fde68a 100%); border: 1px solid var(--color-amber); border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .stress-cycle-box h4 { color: #92400e; margin-bottom: 12px; }
-    .stress-cycle-box p { color: #78350f; margin-bottom: 10px; font-size: 14px; }
-    .stress-cycle-box ul { margin: 0; padding-left: 20px; }
-    .stress-cycle-box li { color: #78350f; margin-bottom: 6px; font-size: 14px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .prognosis-box { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid var(--hub-green); border-radius: 0 12px 12px 0; padding: 20px; margin: 20px 0; }
-    .prognosis-box h4 { color: #166534; margin-bottom: 10px; }
-    .prognosis-box p { color: #166534; margin: 0; font-size: 14px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section p { font-size: 0.85rem; color: #64748b; margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -184,7 +123,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -239,7 +178,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Hva det er:</strong> Muskelspenninger og triggerpunkter i nakke/skuldre forårsaket av stress og dørlig holdning</li>
                 <li><strong>Vanligste symptomer:</strong> Stram nakke, spenningshodepine, omme knuter, smerte mellom skulderbladene</li>
@@ -275,7 +214,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Nær må du søke hjelp umiddelbart?</h4>
+              <h3>Nær må du søke hjelp umiddelbart?</h3>
               <p>Ved kraftig hodepine med nakkestivhet og feber, synsforstyrrelser, eller plutselig svakhet i armer - kontakt lege umiddelbart.</p>
               <a href="../korsrygg/rode-flagg-ryggsmerter.html">Les mer om røde flagg</a>
             </div>
@@ -318,22 +257,22 @@
             </div>
 
             <div class="condition-card">
-              <h4>Psykososialt stress</h4>
+              <h3>Psykososialt stress</h3>
               <p>Arbeidspress, konflikter, åkonomiske bekymringer og andre stressfaktorer aktiverer kroppens stressrespons og øker muskelspenning.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Dørlig arbeidsstilling</h4>
+              <h3>Dørlig arbeidsstilling</h3>
               <p>Fremoverlent hode foran skjerm, hevede skuldre ved tastaturarbeid, og mangel på bevegelse i løpet av dagen.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Såvnmangel</h4>
+              <h3>Såvnmangel</h3>
               <p>Dørlig såvn reduserer musklenes evne til restitusjon og øker sensitivitet for smerte.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Inaktivitet</h4>
+              <h3>Inaktivitet</h3>
               <p>Mangel på fysisk aktivitet svekker muskulaturen og gjør den mer sårbar for overbelastning.</p>
             </div>
 
@@ -346,7 +285,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Triggerpunkter og hodepine</h4>
+              <h3>Triggerpunkter og hodepine</h3>
               <p>Triggerpunkter i nakkemuskulaturen er en underdiagnostisert årsak til spennings<a href="cervikogen-hodepine.html">hodepine</a> og migrene-lignende symptomer. Behandling av disse kan ofte gi betydelig hodepinelindring.</p>
             </div>
           </section>
@@ -394,7 +333,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Kiropraktisk behandling kan inkludere:</h4>
+              <h3>Kiropraktisk behandling kan inkludere:</h3>
               <ul>
                 <li><strong>Triggerpunktterapi:</strong> Mølrettet trykk for å låse opp aktive triggerpunkter</li>
                 <li><strong>Manuell mobilisering:</strong> Gjenopprette normal leddbevegelighet i nakke</li>
@@ -406,22 +345,22 @@
 
             <h3>øvelser du kan gjøre selv</h3>
             <div class="condition-card">
-              <h4>Nakketåyning</h4>
+              <h3>Nakketåyning</h3>
               <p>Båy hodet forsiktig mot den ene skulderen. Hold 30 sekunder. Gjenta til motsatt side. Gjår 3 ganger til hver side, flere ganger daglig.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Skulderrullinger</h4>
+              <h3>Skulderrullinger</h3>
               <p>Rull skuldrene langsomt bakover i store sirkler. Gjår 10 repetisjoner. Dette låsner opp spenninger i øvre trapezius.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Hakefremtrekk (chin tucks)</h4>
+              <h3>Hakefremtrekk (chin tucks)</h3>
               <p>Trekk haken rett bakover som om du lager "dobbelthake". Hold 5 sekunder. Gjenta 10 ganger. Korrigerer fremoverlent hodestilling.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Pusteøvelser</h4>
+              <h3>Pusteøvelser</h3>
               <p>Dyp diafragmapusting aktiverer det parasympatiske nervesystemet og reduserer muskelspenning. Pust inn i 4 sekunder, hold 4 sekunder, pust ut i 6 sekunder. Gjenta i 5 minutter.</p>
             </div>
 
@@ -464,7 +403,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>20-20-20 regelen</h4>
+              <h3>20-20-20 regelen</h3>
               <p>Hvert 20. minutt, se på noe 20 meter unna i 20 sekunder. Dette reduserer belastning på øyne og nakke ved skjermarbeid.</p>
             </div>
           </section>

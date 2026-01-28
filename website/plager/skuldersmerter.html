@@ -25,6 +25,7 @@
   <meta property="og:image" content="https://thebackrom.com/images/plager skuldersmerter/skulder smerter.png">
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Kiropraktor">
   <meta property="og:locale" content="nb_NO">
+  <meta property="og:description" content="Skuldersmerter? Få oversikt over Årsaker og behandling hos kiropraktor. 60-85% blir bedre uten operasjon. Direkte tilgang på Majorstua – ingen henvisning.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Skuldersmerter – Behandling hos Kiropraktor på Majorstua">
   <meta name="twitter:image" content="https://thebackrom.com/images/plager skuldersmerter/skulder smerter.png">
@@ -186,113 +187,7 @@
   <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-toc-card a { display: block; padding: 10px 14px; color: #475569; text-decoration: none; border-radius: 8px; font-size: 14px; transition: all 0.2s ease; border-left: 3px solid transparent; }
-    .hub-toc-card a:hover { background: #e2e8f0; color: var(--hub-primary); }
-    .hub-toc-card a.active { background: #e0f2fe; color: var(--hub-primary); border-left-color: var(--hub-primary); font-weight: 500; }
-    .hub-intro { margin-bottom: 48px; }
-    .hub-intro h1 { font-size: 2.5rem; color: var(--hub-dark); margin-bottom: 24px; line-height: 1.2; }
-    .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
-    .intro-text p { margin-bottom: 16px; }
-    .key-points { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--hub-primary); }
-    .key-points h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 1.1rem; }
-    .key-points ul { margin: 0; padding-left: 20px; }
-    .key-points li { margin-bottom: 10px; color: #334155; line-height: 1.5; }
-    .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
-    .condition-card ul { margin: 12px 0; padding-left: 20px; }
-    .condition-card li { margin-bottom: 6px; color: #4b5563; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .treatment-box ul { margin: 0; padding-left: 20px; }
-    .treatment-box li { margin-bottom: 8px; color: #065f46; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
-    .red-flag-box ul { margin: 0; padding-left: 20px; }
-    .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
-    .symptom-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin: 16px 0; }
-    .symptom-list li { background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--hub-primary); list-style: none; color: #334155; }
-    .phase-box { background: #fefce8; border: 1px solid #fde047; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .phase-box h4 { color: #a16207; margin-bottom: 8px; }
-    .phase-box p { margin: 0; color: #713f12; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .timeline-box { background: #f0fdf4; border: 1px solid #86efac; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .timeline-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .timeline-box ul { margin: 0; padding-left: 20px; }
-    .timeline-box li { margin-bottom: 8px; color: #14532d; }
-    .exercise-box { background: #faf5ff; border: 1px solid #c4b5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .exercise-box h4 { color: var(--hub-purple); margin-bottom: 12px; }
-    .exercise-box p { color: #4c1d95; margin-bottom: 8px; }
-    .prognosis-highlight { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid var(--hub-green); }
-    .prognosis-highlight p { color: #065f46; font-weight: 500; margin: 0; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
-    .faq-item p { color: #4b5563; margin: 0; line-height: 1.6; }
-    .hub-cta { background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%); color: white; border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
-    .hub-cta h3 { color: white !important; font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; }
-    .hub-cta p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
-    .hub-cta .button { background: white; color: var(--hub-primary); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s ease; }
-    .hub-cta .button:hover { transform: translateY(-2px); }
-    .related-box { background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 32px; }
-    .related-box h3 { color: var(--hub-dark); margin-bottom: 16px; }
-    .related-box a { display: block; padding: 12px 0; color: var(--hub-primary); text-decoration: none; border-bottom: 1px solid #e5e7eb; transition: padding-left 0.2s ease; }
-    .related-box a:last-child { border-bottom: none; }
-    .related-box a:hover { padding-left: 8px; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
-    .mobile-sticky-cta a { display: block; background: white; color: #F26522; text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; }
-    @media (max-width: 900px) {
-      .hub-wrapper { flex-direction: column; padding: 20px; }
-      .hub-sidebar { display: none; }
-      .hub-main { max-width: 100%; padding-bottom: 100px; }
-      .hub-intro h1 { font-size: 1.8rem; }
-      .mobile-sticky-cta { display: block; }
-      .stat-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    .medical-disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 32px; font-size: 0.85rem; color: #64748b; }
-    .sources-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; }
-    .sources-section p { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
-    .section-quick-link { margin: 0 0 16px; }
-    .section-quick-link a { color: var(--hub-primary); font-weight: 600; font-size: 0.95rem; text-decoration: none; }
-    .section-quick-link a:hover { text-decoration: underline; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -300,7 +195,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -357,7 +252,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Forekomst:</strong> Ca. 16% av voksne opplever skuldersmerter i løpet av et år</li>
                 <li><strong>Vanligste Årsaker:</strong> Rotatorrelaterte skuldersmerter (ca. 70-85%), frossen skulder, referert fra nakke</li>
@@ -414,7 +309,7 @@
 
             <!-- Red Flag Alert Box - Immediately Visible -->
             <div class="red-flag-alert">
-              <h4>Når må du ringe 113 eller dra til legevakt?</h4>
+              <h3>Når må du ringe 113 eller dra til legevakt?</h3>
               <p>Ved kraftig smerte etter fall (spesielt hvis du ikke kan løfte armen), skulder som ser deformert ut, feber sammen med skuldersmerter, eller brystsmerter og pustebesvær – søk hjelp umiddelbart.</p>
               <a href="#rodeflagg">Les mer om røde flagg</a>
             </div>
@@ -453,7 +348,7 @@
             <p>RCRSP (Rotator Cuff-Related Shoulder Pain) er det moderne paraplybegrepet som erstatter det utdaterte «impingement syndrom». Rotatorcuffen er fire små muskler som holder overarmsbeinet stabilt i leddskålen.</p>
 
             <div class="info-box">
-              <h4>Hvorfor byttet man navn?</h4>
+              <h3>Hvorfor byttet man navn?</h3>
               <p>Forskning har vist at den gamle «klem-teorien» – at sener blir klemt under skulderens tak – ikke stemmer. Store kirurgiske studier fra 2018 (CSAW, FIMPACT) viste at operasjon for å fjerne bensporer ikke gå bedre resultat enn placebokirurgi.</p>
             </div>
 
@@ -466,7 +361,7 @@
             </ul>
 
             <div class="condition-card">
-              <h4>Typiske symptomer</h4>
+              <h3>Typiske symptomer</h3>
               <ul>
                 <li>Smerte ved løfting av armen, særlig ut til siden eller over hodet</li>
                 <li>«Painful arc» – smerter mellom 60-120 graders løft</li>
@@ -505,7 +400,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Hvem får frossen skulder?</h4>
+              <h3>Hvem får frossen skulder?</h3>
               <p><strong>Diabetes øker risikoen betydelig</strong> – diabetikere har 5 ganger høyere sannsynlighet for å utvikle frossen skulder. Andre risikofaktorer er skjoldbruskkjertellidelser og langvarig inaktivitet etter skade eller operasjon.</p>
             </div>
 
@@ -524,7 +419,7 @@
             <p>Mange skulderproblemer har sammenheng med stivhet eller dysfunksjon i nakke og brystrygg. Nervene som forsyner skulderen kommer fra nakken (C4-C6), og irritasjon her kan gi smerter som kjennes ut som de kommer fra skulderen selv.</p>
 
             <div class="treatment-box">
-              <h4>Helhetlig tilnærming</h4>
+              <h3>Helhetlig tilnærming</h3>
               <p>Derfor undersøker jeg alltid nakke og brystrygg nær du kommer med skulderplager – ikke bare skulderen isolert. Ofte gir behandling av stivhet i brystryggen og nakken rask bedring av skuldersmertene.</p>
             </div>
           </section>
@@ -550,7 +445,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Book time for vurdering ved:</h4>
+              <h3>Book time for vurdering ved:</h3>
               <ul>
                 <li>Smerter som varer over 2-3 uker uten bedring</li>
                 <li>Nattesmerter som forstyrrer søvnen regelmessig</li>
@@ -570,7 +465,7 @@
             <p>På TheBackROM kombinerer jeg manuell behandling med aktiv rehabilitering. Forskning viser at denne kombinasjonen gir best resultater for de fleste skulderplager.</p>
 
             <div class="treatment-box">
-              <h4>Manuell behandling</h4>
+              <h3>Manuell behandling</h3>
               <p>Jeg bruker ulike teknikker for å forbedre ledd- og muskelfunksjon:</p>
               <ul>
                 <li>Leddmobilisering for bedre bevegelighet</li>
@@ -580,7 +475,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Aktiv rehabilitering</h4>
+              <h3>Aktiv rehabilitering</h3>
               <p>Øvelser er selve hjørnesteinen i effektiv skulderbehandling. Forskning viser at strukturerte øvelsesprogrammer er like effektive som kirurgi for mange tilstander (Kukkonen et al., 2014). Du får:</p>
               <ul>
                 <li>Spesifikke styrkeøvelser tilpasset din diagnose</li>
@@ -593,7 +488,7 @@
             <h3>Hva kan du forvente?</h3>
 
             <div class="condition-card">
-              <h4>Første konsultasjon (45 minutter)</h4>
+              <h3>Første konsultasjon (45 minutter)</h3>
               <p>Jeg starter alltid med grundig undersøkelse:</p>
               <ul>
                 <li>Samtale om symptomene dine og hvordan de påvirker hverdagen</li>
@@ -625,24 +520,24 @@
             <p>Mens du venter på time, eller hvis plagene er milde:</p>
 
             <div class="info-box">
-              <h4>Hold deg i bevegelse</h4>
+              <h3>Hold deg i bevegelse</h3>
               <p>Total hvile er sjelden den beste løsningen. Beveg skulderen forsiktig innenfor det som er komfortabelt. Unngå aktiviteter som gir kraftig forverring, men ikke bli redd for å bruke armen.</p>
             </div>
 
             <h3>Enkle øvelser du kan starte med</h3>
 
             <div class="exercise-box">
-              <h4>Pendulumøvelse</h4>
+              <h3>Pendulumøvelse</h3>
               <p>Len deg fremover med frisk arm støttet på bord. La den vonde armen henge ned. Lag små sirkler med armen – 10 hver retning, 3-4 ganger daglig.</p>
             </div>
 
             <div class="exercise-box">
-              <h4>Skulderbladklemmer</h4>
+              <h3>Skulderbladklemmer</h3>
               <p>Sitt eller stå rett. Trekk skulderbladene bakover og ned mot hverandre. Hold 5 sekunder, slipp. 10 repetisjoner, 3 ganger daglig.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Viktig</h4>
+              <h3>Viktig</h3>
               <p>Stopp hvis øvelsene gir kraftig forverring. Litt ubehag er normalt, men smerte som ikke avtar er et tegn på at du bør søke hjelp.</p>
             </div>
           </section>
@@ -774,22 +669,22 @@
             </div>
 
             <div class="faq-item">
-              <h4>Trenger jeg henvisning fra lege?</h4>
+              <h3>Trenger jeg henvisning fra lege?</h3>
               <p>Nei. Som autorisert kiropraktor kan du komme direkte til meg uten henvisning. Jeg kan undersøke, diagnostisere og behandle skulderplager. Hvis du trenger videre utredning eller spesialistbehandling, kan jeg henvise deg.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Må jeg ta MR eller røntgen først?</h4>
+              <h3>Må jeg ta MR eller røntgen først?</h3>
               <p>Vanligvis ikke. En grundig klinisk undersøkelse er ofte tilstrekkelig for å stille diagnose og starte behandling. Billeddiagnostikk vurderes kun ved mistanke om alvorlig skade eller hvis plagene ikke bedres etter 6-12 uker med behandling. Det er viktig å vite at funn på MR ikke alltid forklarer smerten – mange helt smertefrie personer har rotatorcuff-forandringer på bilder.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Dekker forsikringen behandling?</h4>
+              <h3>Dekker forsikringen behandling?</h3>
               <p>De fleste private helseforsikringer dekker kiropraktisk behandling, typisk 6-12 behandlinger per år. Sjekk din egen forsikringsavtale for detaljer.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Hva hvis plagene kommer tilbake?</h4>
+              <h3>Hva hvis plagene kommer tilbake?</h3>
               <p>40-50% opplever tilbakefall innen 1-5 år. Derfor er det viktig å fortsette med øvelser etter at den akutte smerten er borte. Ta kontakt tidlig hvis plagene starter igjen – det gir bedre resultat enn å vente.</p>
             </div>
           </section>

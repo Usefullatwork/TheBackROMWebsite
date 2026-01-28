@@ -146,165 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .anatomy-box {
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .anatomy-box h4 { color: #92400e; font-size: 15px; margin: 0 0 12px; }
-    .anatomy-box p { font-size: 14px; margin-bottom: 8px; color: #78350f; }
-    .anatomy-box ul { margin: 8px 0 0 0; padding-left: 20px; color: #78350f; }
-    .anatomy-box li { font-size: 14px; margin-bottom: 4px; }
-
-    .nerve-box {
-      background: #f5f3ff;
-      border: 1px solid #d8b4fe;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .nerve-box h4 { color: var(--hub-purple); font-size: 15px; margin: 0 0 12px; }
-    .nerve-box ul { margin: 0; padding-left: 20px; }
-    .nerve-box li { font-size: 14px; margin-bottom: 8px; color: #5b21b6; }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p { font-size: 14px; margin: 0; color: #1e3a8a; }
-    .info-box ul { margin: 8px 0 0 0; padding-left: 20px; color: #1e3a8a; }
-    .info-box li { font-size: 14px; margin-bottom: 4px; }
-
-    .red-flag-alert{
-      background: #fff7ed;
-      border-left: 4px solid var(--hub-orange);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-    .red-flag-alert h4 { color: #c2410c; font-size: 15px; margin: 0 0 8px; }
-    .red-flag-alert p { font-size: 14px; margin: 0; color: #9a3412; }
-    .red-flag-alert ul { margin: 8px 0 0 0; padding-left: 20px; color: #9a3412; }
-    .red-flag-alert li { font-size: 14px; margin-bottom: 4px; }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p { font-size: 14px; margin: 0 0 8px; color: #166534; }
-    .treatment-box ul { margin: 8px 0 0 0; padding-left: 20px; }
-    .treatment-box li { font-size: 14px; margin-bottom: 4px; color: #166534; }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-    .red-flag-box .note { font-style: italic; margin-top: 12px; color: #991b1b; font-size: 13px; }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -312,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -372,7 +214,7 @@
               </div>
 
               <aside class="premium-summary-card">
-                <h3>Kort oppsummert</h3>
+                <h2>Kort oppsummert</h2>
                 <ul>
                   <li>C5-C6 = <strong>25%</strong> av cervikal radikulopati</li>
                   <li>Symptom: Nummen tommel/pekefinger, svak biceps</li>
@@ -463,7 +305,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Bakody's tegn - lindring ved å låfte armen</h4>
+                <h3>Bakody's tegn - lindring ved å låfte armen</h3>
                 <p>Et karakteristisk funn ved cervikal radikulopati er at smerten lindres nær du legger handen på hodet. Dette reduserer strekket på nerveroten og er et nyttig diagnostisk tegn.</p>
               </div>
 
@@ -524,19 +366,19 @@
               </table>
 
               <div class="red-flag-alert">
-                <h4>Dobbel klemme-syndrom</h4>
+                <h3>Dobbel klemme-syndrom</h3>
                 <p>I noen tilfeller kan du ha begge tilstander samtidig. Nerven kan være irritert både i nakken og i handleddet. Dette kalles "double crush syndrome" og krever behandling av begge steder for optimal bedring.</p>
               </div>
 
               <h3>Andre tilstander å utelukke</h3>
 
               <div class="condition-card">
-                <h4>Thoracic Outlet Syndrome (TOS)</h4>
+                <h3>Thoracic Outlet Syndrome (TOS)</h3>
                 <p>Nerven klemmes mellom nakkemuskulatur og ribbein. Symptomene kan ligne, men forverres ofte av å låfte armen over hodet (motsatt av Bakody's tegn).</p>
               </div>
 
               <div class="condition-card">
-                <h4>Skulderpatologi</h4>
+                <h3>Skulderpatologi</h3>
                 <p>Rotatormansjettskader eller impingement kan gi utstaling til armen. Skulderbevegelighet er vanligvis normal ved ren nakkeproblematikk.</p>
               </div>
             </section>
@@ -568,7 +410,7 @@
               <h3>Hva påvirker prognosen?</h3>
 
               <div class="treatment-box">
-                <h4>Gode prognostiske faktorer</h4>
+                <h3>Gode prognostiske faktorer</h3>
                 <ul>
                   <li>Tidlig behandlingsstart</li>
                   <li>Ung alder (under 50)</li>
@@ -579,7 +421,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Faktorer som kan forlenge forløpet</h4>
+                <h3>Faktorer som kan forlenge forløpet</h3>
                 <ul>
                   <li>Forsinket behandlingsstart</li>
                   <li>Samtidig depresjon eller angst</li>
@@ -608,7 +450,7 @@
               <h3>Akuttfasen (uke 1-2)</h3>
 
               <div class="treatment-box">
-                <h4>Smertehandtering og modifisert aktivitet</h4>
+                <h3>Smertehandtering og modifisert aktivitet</h3>
                 <ul>
                   <li>Unngå provoserende stillinger (bakover-båyning, rotasjon mot smertefull side)</li>
                   <li>Kortvarig bruk av smertestillende ved behov</li>
@@ -620,7 +462,7 @@
               <h3>Subakutt fase (uke 2-8)</h3>
 
               <div class="treatment-box">
-                <h4>Manuell behandling</h4>
+                <h3>Manuell behandling</h3>
                 <p>Kiropraktisk behandling kan inkludere:</p>
                 <ul>
                   <li>Leddmobilisering av cervikalcolumna</li>
@@ -631,7 +473,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>øvelser</h4>
+                <h3>øvelser</h3>
                 <ul>
                   <li><strong>Isometriske nakkeøvelser:</strong> Styrker uten bevegelse</li>
                   <li><strong>Nakkeretraksjoner:</strong> "Dobbelhake"-åvelsen</li>
@@ -682,7 +524,7 @@
               <p>Myelopati oppstar nær prolapsen eller degenerative forandringer trykker på selve ryggmargen, ikke bare nerveroten. Dette er mer alvorlig enn ren radikulopati og krever raskere utredning.</p>
 
               <div class="info-box">
-                <h4>Tegn på myelopati</h4>
+                <h3>Tegn på myelopati</h3>
                 <ul>
                   <li>Usto gange, særlig i morke</li>
                   <li>Vansker med finmotorikk (skrive, kneppe knapper)</li>

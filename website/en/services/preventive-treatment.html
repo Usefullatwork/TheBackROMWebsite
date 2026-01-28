@@ -80,94 +80,10 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-alert{ background: var(--color-amber-light); border: 1px solid #fbbf24; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-alert h4 { color: #92400e; margin-bottom: 12px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .cycle-visual { background: #f0f9ff; border-radius: 12px; padding: 24px; margin: 20px 0; text-align: center; }
-    .cycle-visual__title { font-weight: 600; color: var(--hub-dark); margin-bottom: 16px; }
-    .cycle-visual__steps { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; }
-    .cycle-visual__step { background: white; padding: 10px 16px; border-radius: 8px; font-size: 0.9rem; border: 1px solid #e5e7eb; }
-    .cycle-visual__arrow { color: var(--hub-primary); font-size: 1.25rem; }
-    .cycle-visual__break { background: var(--hub-primary); color: white; padding: 10px 20px; border-radius: 8px; font-weight: 600; margin-top: 16px; display: inline-block; }
-    .criteria-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 20px 0; }
-    .criteria-card { background: white; border: 1px solid #e5e7eb; border-radius: 10px; padding: 16px; display: flex; align-items: flex-start; gap: 12px; }
-    .criteria-card__icon { font-size: 1.25rem; flex-shrink: 0; }
-    .criteria-card__text { font-size: 0.9rem; color: #374151; line-height: 1.5; }
-    .process-flow { display: grid; gap: 16px; margin: 20px 0; }
-    .process-step { display: flex; gap: 16px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; }
-    .process-step__number { width: 44px; height: 44px; border-radius: 50%; background: var(--hub-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600; flex-shrink: 0; }
-    .process-step__content { flex: 1; }
-    .process-step__title { font-weight: 600; color: var(--hub-dark); margin-bottom: 8px; }
-    .process-step__text { color: #374151; font-size: 0.9rem; line-height: 1.6; }
-    .process-step__list { list-style: none; padding: 0; margin: 12px 0 0; }
-    .process-step__list li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem; color: #374151; margin-bottom: 6px; }
-    .process-step__list li::before { content: "\2713"; color: var(--hub-primary); font-weight: bold; flex-shrink: 0; }
-    .treatment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 20px 0; }
-    .treatment-card { background: white; border: 1px solid #e5e7eb; border-radius: 10px; padding: 16px; text-align: center; text-decoration: none; display: block; transition: all 0.2s ease; }
-    .treatment-card:hover { border-color: var(--hub-primary); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(26, 95, 122, 0.15); }
-    .treatment-card__icon { font-size: 1.5rem; margin-bottom: 8px; }
-    .treatment-card__title { font-weight: 600; font-size: 0.9rem; color: var(--hub-dark); }
-    .price-box { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .price-box__title { font-weight: 600; color: var(--hub-dark); margin-bottom: 12px; }
-    .price-box__grid { display: grid; gap: 10px; }
-    .price-box__item { display: flex; justify-content: space-between; align-items: center; padding: 12px; background: #f8fafc; border-radius: 8px; }
-    .price-box__service { font-size: 0.9rem; color: #374151; }
-    .price-box__amount { font-weight: 600; color: var(--hub-dark); }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section ul { font-size: 0.85rem; color: #64748b; }
-    .sources-section li { margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
+
+  <meta property="og:title" content="Preventive Chiropractic Treatment Oslo | Maintenance Care | Klinikk for alle">
+  <meta property="og:description" content="Break the cycle of recurring back pain. Preventive treatment with chiropractor at Majorstua Oslo. Documented effect: 13 fewer pain days per year. Book appointment.">
 </head>
 
 <body id="top">
@@ -175,7 +91,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img src="../../images/logo-header.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Majorstua Oslo logo"><img src="../../images/logo-header.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
             <button class="language-toggle__button" data-lang="no" aria-label="Switch to Norwegian" aria-pressed="false">NO</button>
@@ -224,7 +140,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li><strong>What:</strong> Regular follow-up after good response to treatment</li>
                 <li><strong>For whom:</strong> Those with recurring back or neck pain</li>
@@ -286,7 +202,7 @@
             <p>The largest study on preventive chiropractic care comes from Scandinavia. The Nordic Maintenance Care program (published 2018) followed 328 patients with recurring low back pain over one year. All had responded well to initial treatment and were then divided into two groups.</p>
 
             <div class="treatment-box">
-              <h4>Documented Effect</h4>
+              <h3>Documented Effect</h3>
               <div class="stat-grid">
                 <div class="stat-item">
                   <span class="stat-number">12.8</span>
@@ -303,7 +219,7 @@
             <p>This cost only 1.7 extra consultations per year. A systematic review from 2019 confirms that preventive chiropractic care can now be considered documented treatment for selected patients with recurring back problems who respond well to initial treatment.</p>
 
             <div class="red-flag-alert">
-              <h4>Important Nuance</h4>
+              <h3>Important Nuance</h3>
               <p>Research is clear that this is <strong>not</strong> for everyone. Preventive treatment is only recommended for patients who have had recurring episodes and who have responded well to treatment.</p>
             </div>
           </section>
@@ -512,16 +428,16 @@
       <div class="footer__container">
         <div class="footer__left">
           <div class="footer__social">
-            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link">
+            <a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer" class="footer__social-link" aria-label="Follow TheBackROM on Facebook">
               <img loading="lazy" decoding="async" src="../../images/Media iconer/facebook_media_social_icon.png" alt="Follow TheBackROM on Facebook" />
             </a>
-            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link">
+            <a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link" aria-label="Follow chiropractor Mads Finstad on Instagram">
               <img src="../../images/Media iconer/instagramlogo.png" alt="Follow chiropractor Mads Finstad on Instagram" loading="lazy" decoding="async" />
             </a>
-            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link">
+            <a href="https://www.youtube.com/@TheBackROM" rel="noopener noreferrer" class="footer__social-link" aria-label="Watch videos from TheBackROM on YouTube">
               <img src="../../images/Media iconer/youtube_icon.png" alt="Watch videos from TheBackROM on YouTube" loading="lazy" decoding="async" />
             </a>
-            <a href="../contact.html" class="footer__social-link">
+            <a href="../contact.html" class="footer__social-link" aria-label="Send email to TheBackROM">
               <img loading="lazy" decoding="async" src="../../images/Logo og identitet/ms-outlook-svgrepo-com.svg" alt="Send email to TheBackROM" />
             </a>
           </div>
@@ -529,7 +445,7 @@
 
         <div class="footer__center">
           <div class="footer__logo">
-            <a href="../index.html" class="logo"><img src="../../images/logo-footer.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
+            <a href="../index.html" class="logo" aria-label="Klinikk for alle Chiropractor Majorstua Oslo logo"><img src="../../images/logo-footer.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" loading="lazy" decoding="async" /></a>
           </div>
           <div class="back-to-top-wrapper">
             <p class="back-to-top-text">Back to top</p>

@@ -166,374 +166,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .premium-summary-card {
-      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-      border-left: 4px solid var(--hub-primary);
-      border-radius: 0 12px 12px 0;
-      padding: 20px;
-      margin-bottom: 28px;
-    }
-
-    .premium-summary-card h3 {
-      font-size: 15px;
-      color: var(--hub-dark);
-      margin-bottom: 12px;
-    }
-
-    .premium-summary-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 14px 0;
-    }
-
-    .premium-summary-card li {
-      padding: 5px 0 5px 22px;
-      position: relative;
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    .premium-summary-card li::before {
-      content: attr(data-icon);
-      position: absolute;
-      left: 0;
-      font-size: 12px;
-    }
-
-    .premium-summary-card .button {
-      display: inline-block;
-      background: var(--hub-primary);
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 13px;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    .condition-card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 14px 0;
-    }
-
-    .condition-card h4 {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--hub-dark);
-      margin: 0 0 8px;
-    }
-
-    .condition-card p {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .condition-card ul {
-      margin: 10px 0;
-      padding-left: 20px;
-    }
-
-    .condition-card li {
-      font-size: 13px;
-      margin-bottom: 4px;
-    }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .treatment-box h4 {
-      color: #166534;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .treatment-box p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #166534;
-    }
-
-    .treatment-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-    }
-
-    .treatment-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-      color: #166534;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .info-box h4 {
-      color: #1e40af;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .info-box p {
-      font-size: 14px;
-      margin: 0;
-      color: #1e3a8a;
-    }
-
-    .info-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-      color: #1e3a8a;
-    }
-
-    .info-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .red-flag-alert{
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .red-flag-alert h4 {
-      color: #92400e;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .red-flag-alert ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-      color: #78350f;
-    }
-
-    .red-flag-alert li {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .phase-box {
-      background: #f5f3ff;
-      border: 1px solid #d8b4fe;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .phase-box h4 {
-      color: var(--hub-purple);
-      font-size: 15px;
-      margin: 0 0 12px;
-    }
-
-    .phase-box p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #5b21b6;
-    }
-
-    .phase-box ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .phase-box li {
-      font-size: 14px;
-      margin-bottom: 8px;
-      color: #5b21b6;
-    }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 {
-      color: var(--hub-red);
-      margin: 0 0 12px;
-      font-size: 16px;
-    }
-
-    .red-flag-box ul {
-      color: #7f1d1d;
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .red-flag-box li {
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-
-    .red-flag-box .note {
-      font-style: italic;
-      margin-top: 12px;
-      color: #991b1b;
-      font-size: 13px;
-    }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-
-    .faq-question {
-      padding: 14px 16px;
-      font-weight: 600;
-      background: #fafafa;
-      font-size: 14px;
-      color: var(--hub-dark);
-    }
-
-    .faq-answer {
-      padding: 14px 16px;
-      color: #6b7280;
-      border-top: 1px solid #e5e7eb;
-      font-size: 14px;
-    }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: #6b7280;
-      font-size: 15px;
-      margin-bottom: 12px;
-    }
-
-    .sources-section ul {
-      font-size: 12px;
-      color: #6b7280;
-      line-height: 1.6;
-      padding-left: 20px;
-    }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-    }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-
-    @media (max-width: 1024px) {
-      .mobile-sticky-cta {
-        display: flex;
-      }
-
-      .hub-main {
-        margin-bottom: 80px;
-      }
-    }
-
-    .mobile-sticky-cta .btn {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .mobile-sticky-cta .btn-primary {
-      background: #F26522;
-      color: #fff;
-    }
-
-    .mobile-sticky-cta .btn-outline {
-      background: #fff;
-      border: 2px solid #F26522;
-      color: var(--hub-dark);
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -541,7 +174,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -626,31 +259,31 @@
                 practical factors contribute to this:</p>
 
               <div class="condition-card">
-                <h4 class="condition-title">Changed blood flow</h4>
+                <h3 class="condition-title">Changed blood flow</h3>
                 <p>When you lie down, blood flow to the shoulder increases. This can intensify inflammatory reactions
                   and cause more swelling and pain, especially in acute conditions.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Pressure on structures</h4>
+                <h3 class="condition-title">Pressure on structures</h3>
                 <p>Lying position, especially on your side, puts direct pressure on the shoulder. This compresses
                   tendons, bursae and other structures that are already irritated.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Lack of distraction</h4>
+                <h3 class="condition-title">Lack of distraction</h3>
                 <p>During the day, the brain is occupied with other things. At night, when it is quiet and dark, pain
                   signals get more attention. We become more aware of the discomfort.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Cortisol decline</h4>
+                <h3 class="condition-title">Cortisol decline</h3>
                 <p>Cortisol levels, the body's natural anti-inflammatory hormone, are lowest at night. This can make
                   inflammatory reactions feel stronger.</p>
               </div>
 
               <div class="info-box">
-                <h4>Which conditions cause the most night pain?</h4>
+                <h3>Which conditions cause the most night pain?</h3>
                 <ul>
                   <li><strong>Calcific tendinitis in resorption phase</strong> - often intense night pain</li>
                   <li><strong>Rotator cuff tendinopathy</strong> - typically worst when lying on affected side, may
@@ -673,7 +306,7 @@
                 shoulder pain. Here are the recommended options:</p>
 
               <div class="treatment-box">
-                <h4>Option 1: Sleep on your back</h4>
+                <h3>Option 1: Sleep on your back</h3>
                 <p>This is often the best position for shoulder pain because it puts the least pressure on the shoulder.
                 </p>
                 <ul>
@@ -685,7 +318,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Option 2: Sleep on the healthy side</h4>
+                <h3>Option 2: Sleep on the healthy side</h3>
                 <p>If you prefer to sleep on your side, lie on the shoulder that does not hurt.</p>
                 <ul>
                   <li>Place a pillow in front of you and rest the painful arm on it</li>
@@ -696,7 +329,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Avoid this:</h4>
+                <h3>Avoid this:</h3>
                 <ul>
                   <li><strong>Do not sleep on the painful shoulder</strong> - this increases pressure and worsens pain
                   </li>
@@ -738,7 +371,7 @@
               </ul>
 
               <div class="condition-card">
-                <h4 class="condition-title">Support pillows for the arm</h4>
+                <h3 class="condition-title">Support pillows for the arm</h3>
                 <p>In addition to the head pillow, you should use extra pillows to support the painful arm:</p>
                 <ul>
                   <li><strong>When on back:</strong> Small pillow under the upper arm for slight elevation</li>
@@ -748,7 +381,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Tip: Create a "pillow fortress"</h4>
+                <h3>Tip: Create a "pillow fortress"</h3>
                 <p>Many experience unconsciously rolling onto the painful shoulder during the night. Place pillows
                   strategically around you to prevent this. A pillow behind your back and one in front of your body can
                   help you maintain position.</p>
@@ -773,7 +406,7 @@
               <p>What you do in the last hour before bed can affect how well you sleep with shoulder pain.</p>
 
               <div class="treatment-box">
-                <h4>Heat or cold</h4>
+                <h3>Heat or cold</h3>
                 <ul>
                   <li><strong>Cold (ice):</strong> Best for acute inflammation and swelling. Use for 10-15 minutes with
                     a towel between ice and skin.</li>
@@ -784,7 +417,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Gentle stretches</h4>
+                <h3>Gentle stretches</h3>
                 <p>Light stretching can help reduce tension before bed:</p>
                 <ul>
                   <li>Pendulum exercises: Let the arm hang and swing gently in circles (30 seconds)</li>
@@ -795,7 +428,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Medications</h4>
+                <h3 class="condition-title">Medications</h3>
                 <p>Talk to your doctor or pharmacist about timing of pain relievers:</p>
                 <ul>
                   <li>NSAIDs (Ibuprofen, Diclofenac) taken 1-2 hours before bedtime can be effective through the night
@@ -806,7 +439,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Relaxation techniques</h4>
+                <h3>Relaxation techniques</h3>
                 <p>Pain and anxiety about pain can create a negative spiral. Relaxation techniques can help:</p>
                 <ul>
                   <li>Deep breathing: 4 seconds in, 4 seconds hold, 6 seconds out</li>
@@ -826,7 +459,7 @@
               </p>
 
               <div class="treatment-box">
-                <h4>Acute pain relief</h4>
+                <h3>Acute pain relief</h3>
                 <ul>
                   <li><strong>Change position:</strong> Check if you have rolled onto the painful side</li>
                   <li><strong>Adjust pillows:</strong> Make sure the arm is supported</li>
@@ -836,13 +469,13 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Cold or heat</h4>
+                <h3 class="condition-title">Cold or heat</h3>
                 <p>Have a cold or heat pack ready on the nightstand. 10-15 minutes with ice (wrapped in towel) or heat
                   can provide enough relief to fall back asleep.</p>
               </div>
 
               <div class="red-flag-alert">
-                <h4>Do not do this:</h4>
+                <h3>Do not do this:</h3>
                 <ul>
                   <li>Do not force yourself to sleep on the painful shoulder hoping to "get used to it"</li>
                   <li>Do not lie awake stressing - it makes the pain worse</li>
@@ -874,7 +507,7 @@
               </div>
 
               <div class="info-box">
-                <h4>What can a chiropractor do?</h4>
+                <h3>What can a chiropractor do?</h3>
                 <ul>
                   <li>Identify the cause of shoulder pain through examination</li>
                   <li>Provide manual treatment that reduces pain and stiffness</li>

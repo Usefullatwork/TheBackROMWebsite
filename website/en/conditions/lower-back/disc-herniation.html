@@ -167,281 +167,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .hub-intro {
-      margin-bottom: 40px;
-    }
-
-    .intro-text {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: #374151;
-      margin-bottom: 24px;
-    }
-
-    .intro-text p {
-      margin-bottom: 14px;
-    }
-
-    .hub-section {
-      margin-bottom: 40px;
-      scroll-margin-top: 100px;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-
-    .section-number {
-      background: var(--hub-primary);
-      color: white;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 1rem;
-      flex-shrink: 0;
-    }
-
-    .hub-section h2 {
-      color: var(--hub-dark);
-      margin: 0;
-    }
-
-    .hub-section h3 {
-      font-size: 1.15rem;
-      color: var(--hub-dark);
-      margin: 24px 0 12px;
-    }
-
-    .hub-section p {
-      color: #374151;
-      line-height: 1.7;
-      margin-bottom: 14px;
-    }
-
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      margin: 24px 0;
-    }
-
-    .stat-item {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .stat-number {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--hub-primary);
-    }
-
-    .stat-label {
-      color: #64748b;
-      font-size: 0.75rem;
-      margin-top: 4px;
-    }
-
-    .condition-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 16px 0;
-    }
-
-    .condition-card h4 {
-      color: var(--hub-primary);
-      margin-bottom: 10px;
-    }
-
-    .nerve-box {
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .nerve-box h4 {
-      color: #92400e;
-      margin-bottom: 10px;
-    }
-
-    .treatment-box {
-      background: #ecfdf5;
-      border: 1px solid #6ee7b7;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .treatment-box h4 {
-      color: var(--hub-green);
-      margin-bottom: 12px;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border: 1px solid #93c5fd;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .info-box h4 {
-      color: var(--hub-blue);
-      margin-bottom: 12px;
-    }
-
-    .red-flag-box {
-      background: #fef2f2;
-      border: 2px solid #fca5a5;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 {
-      color: var(--hub-red);
-      margin-bottom: 12px;
-    }
-
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
-
-    .comparison-table th,
-    .comparison-table td {
-      padding: 12px;
-      text-align: left;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .comparison-table th {
-      background: #f8fafc;
-      color: var(--hub-dark);
-      font-weight: 600;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid #e5e7eb;
-      padding: 16px 0;
-    }
-
-    .faq-item:last-child {
-      border-bottom: none;
-    }
-
-    .faq-question {
-      color: var(--hub-dark);
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .faq-answer {
-      color: #4b5563;
-      line-height: 1.6;
-    }
-
-    .sources-section {
-      margin-top: 32px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: var(--hub-dark);
-      margin-bottom: 12px;
-      font-size: 1.1rem;
-    }
-
-    .sources-section ul {
-      font-size: 0.85rem;
-      color: #64748b;
-    }
-
-    .sources-section li {
-      margin-bottom: 6px;
-    }
-
-    .disclaimer {
-      font-size: 0.85rem;
-      color: #64748b;
-      margin-top: 24px;
-      font-style: italic;
-    }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #F26522;
-      padding: 12px 16px;
-      z-index: 100;
-    }
-
-    .mobile-sticky-cta a {
-      display: inline-block;
-      background: white;
-      color: #F26522;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: 600;
-      text-decoration: none;
-      margin-right: 8px;
-    }
-
-    @media (max-width: 900px) {
-      .mobile-sticky-cta {
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-      }
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -449,7 +175,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -515,7 +241,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li><strong>1-3%</strong> lifetime risk, 95% affect L4-L5 or L5-S1</li>
                 <li><strong>66-77%</strong> resolve without surgery</li>
@@ -551,7 +277,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>When should you seek help immediately?</h4>
+              <h3>When should you seek help immediately?</h3>
               <p>For numbness in the groin, problems with urination/bowel control, or increasing weakness in both legs -
                 call emergency services or go to the ER.</p>
               <a href="red-flags-back-pain.html">Read more about red flags</a>
@@ -598,19 +324,19 @@
             <p>From most to least common:</p>
 
             <div class="condition-card">
-              <h4>Degenerative Changes (Most Common)</h4>
+              <h3>Degenerative Changes (Most Common)</h3>
               <p>With age, the disc loses fluid and elasticity. The nucleus pulposus changes composition with reduced
                 water retention, while the annulus fibrosus gradually weakens.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Genetic Predisposition</h4>
+              <h3>Genetic Predisposition</h3>
               <p>Twin studies show up to <strong>74% heritability</strong> for disc degeneration (Seminars in Spine
                 Surgery, 2016). If you have close family with herniation, your risk is higher.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Mechanical Load</h4>
+              <h3>Mechanical Load</h3>
               <p>Heavy work with repeated lifting and twisting increases the risk. Prolonged sitting also significantly
                 increases disc pressure.</p>
             </div>
@@ -664,20 +390,20 @@
             <p>A thorough clinical examination is the foundation for diagnosis.</p>
 
             <div class="condition-card">
-              <h4>Straight Leg Raise (Lasegue)</h4>
+              <h3>Straight Leg Raise (Lasegue)</h3>
               <p><strong>Sensitivity 92%, specificity 28%</strong> (Cochrane, 2010). High sensitivity means the test
                 rarely misses a herniation. Positive when pain radiates below the knee with leg elevation between 30-70
                 degrees.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Crossed SLR</h4>
+              <h3>Crossed SLR</h3>
               <p><strong>Sensitivity 28%, specificity 90%</strong> (Cochrane, 2010). When this is positive, there is
                 very high probability of herniation.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Slump Test</h4>
+              <h3>Slump Test</h3>
               <p><strong>Sensitivity 84%</strong>. Performed sitting and combines neck flexion with knee extension.</p>
             </div>
 
@@ -687,7 +413,7 @@
               picture - not the MRI finding alone - that determines the diagnosis.</p>
 
             <div class="info-box">
-              <h4>When is MRI Appropriate?</h4>
+              <h3>When is MRI Appropriate?</h3>
               <p>MRI is usually considered after 4-6 weeks if symptoms don't improve with conservative treatment, or
                 earlier with worsening neurological deficits.</p>
             </div>
@@ -704,7 +430,7 @@
                 remarkable ability to resorb herniated disc material.</strong> Multiple meta-analyses confirm this.</p>
 
             <div class="info-box">
-              <h4>Resorption Rates by Type</h4>
+              <h3>Resorption Rates by Type</h3>
               <p>A recent meta-analysis of 31 studies with 2233 patients (Zou et al., Clinical Spine Surgery 2023) shows
                 clear patterns:</p>
             </div>
@@ -754,7 +480,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Symptoms Improve BEFORE MRI Images Change</h4>
+              <h3>Symptoms Improve BEFORE MRI Images Change</h3>
               <p>An important point that often confuses patients: Clinical improvement typically comes 4-6 weeks before
                 MRI shows changes. You can feel much better even if the herniation still shows on images.</p>
             </div>
@@ -773,7 +499,7 @@
               neurological dysfunction.</p>
 
             <div class="treatment-box">
-              <h4>What Can the Chiropractor Do?</h4>
+              <h3>What Can the Chiropractor Do?</h3>
               <ul>
                 <li><strong>Manual treatment:</strong> Mobilization and manipulation can contribute to pain relief and
                   improved function</li>
@@ -786,7 +512,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Chiropractic Treatment and Reduced Need for Surgery</h4>
+              <h3>Chiropractic Treatment and Reduced Need for Surgery</h3>
               <p>A 2022 study with over 100 million health records found that adults who received chiropractic treatment
                 for newly diagnosed herniation had reduced chance of needing surgery over 1-2 years of follow-up (BMJ
                 Open, 2022).</p>
@@ -795,7 +521,7 @@
             <h3>What Can You Do Yourself?</h3>
 
             <div class="condition-card">
-              <h4>In the Acute Phase (0-2 weeks)</h4>
+              <h3>In the Acute Phase (0-2 weeks)</h3>
               <ul>
                 <li>Avoid complete bed rest - movement is important</li>
                 <li>Walking is often the best exercise</li>
@@ -805,7 +531,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>After the Acute Phase</h4>
+              <h3>After the Acute Phase</h3>
               <ul>
                 <li>McKenzie extension exercises if they centralize pain</li>
                 <li>Gradual increase in activity level</li>
@@ -822,7 +548,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Important About Surgery vs. Conservative Treatment</h4>
+              <h3>Important About Surgery vs. Conservative Treatment</h3>
               <p>Most studies show that conservative treatment and surgery give <strong>equally good long-term results
                   after 1-2 years</strong>, but surgery may provide faster improvement for some.</p>
             </div>

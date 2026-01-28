@@ -163,33 +163,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -197,7 +171,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img loading="lazy" src="../../images/logo-header.webp"
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -257,7 +231,7 @@
 
             <!-- Premium Summary Card -->
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li>Approx. <strong>24% of adults over 45</strong> have frequent foot problems (Thomas et al. 2011)</li>
                 <li>Most common causes: Plantar fasciopathy, Achilles tendinopathy, ankle sprain, metatarsalgia</li>
@@ -309,7 +283,7 @@
 
             <!-- Red Flag Alert Box -->
             <div class="red-flag-alert">
-              <h4>When Must You Seek Medical Attention Immediately?</h4>
+              <h3>When Must You Seek Medical Attention Immediately?</h3>
               <p>With fever and a warm, red and swollen foot, inability to bear weight on the foot after injury, or sudden severe pain with discolouration.</p>
               <a href="#redflags">Read more about red flags</a>
             </div>
@@ -338,7 +312,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Psychological Factors</h4>
+              <h3>Psychological Factors</h3>
               <p>A systematic review from 2022 found that people with foot and ankle pain have 48% increased prevalence
                 of depressive symptoms compared to 20% in the general population. Foot problems affect more than just
                 the foot.</p>
@@ -379,7 +353,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Plantar Fasciopathy (Heel Pain)</h4>
+                <h3 class="condition-title">Plantar Fasciopathy (Heel Pain)</h3>
                 <span class="condition-badge">10% lifetime risk</span>
               </div>
               <p class="section-quick-link"><a href="foot/plantar-fasciopathy.html">Go to full article on plantar fasciopathy</a></p>
@@ -414,7 +388,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Ankle Sprains and Chronic Instability</h4>
+                <h3 class="condition-title">Ankle Sprains and Chronic Instability</h3>
                 <span class="condition-badge orange">19-27 per 1000/year</span>
               </div>
               <p class="section-quick-link"><a href="foot/ankle-sprains.html">Go to full article on ankle sprains</a></p>
@@ -443,7 +417,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Achilles Tendinopathy</h4>
+                <h3 class="condition-title">Achilles Tendinopathy</h3>
                 <span class="condition-badge blue">6% of active people</span>
               </div>
               <p class="section-quick-link"><a href="foot/achilles-tendinopathy.html">Go to full article on Achilles tendinopathy</a></p>
@@ -516,7 +490,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Evidence for Manual Treatment</h4>
+              <h3>Evidence for Manual Treatment</h3>
               <p>A systematic review from 2014 found that manual treatment combined with exercises gives significantly
                 better results than exercises alone for ankle sprains - with <strong>improvement in dorsiflexion of 6.8
                   degrees</strong> that persists at 6-month follow-up. For plantar fasciopathy, a 2012 review showed
@@ -534,27 +508,27 @@
             <p>Activity and targeted exercises are often the most important treatment for foot problems. Here are evidence-based exercises for common conditions:</p>
 
             <div class="exercise-box">
-              <h4>1. Calf Stretching (Plantar Fasciopathy)</h4>
+              <h3>1. Calf Stretching (Plantar Fasciopathy)</h3>
               <p>Stand with your forefoot on a step, letting the heel hang over the edge. Lower slowly until you feel a stretch in the calf and Achilles. Hold 30-60 seconds. Repeat 3 times on each side. Do twice daily.</p>
             </div>
 
             <div class="exercise-box">
-              <h4>2. Eccentric Heel Raises (Achilles Tendinopathy)</h4>
+              <h3>2. Eccentric Heel Raises (Achilles Tendinopathy)</h3>
               <p>Stand on tiptoes with both feet. Lift one foot and lower slowly on the affected side until the heel is below the step. Use the healthy leg to push up again. 3 sets of 15 repetitions, twice daily for 12 weeks.</p>
             </div>
 
             <div class="exercise-box">
-              <h4>3. Balance Training (Ankle Instability)</h4>
+              <h3>3. Balance Training (Ankle Instability)</h3>
               <p>Stand on one leg with eyes open. Progress to: eyes closed, unstable surface, catching/throwing a ball. 3 sets of 30 seconds on each leg, daily. Reduces re-injury risk by 35%.</p>
             </div>
 
             <div class="exercise-box">
-              <h4>4. Towel Scrunches (General Foot Strength)</h4>
+              <h3>4. Towel Scrunches (General Foot Strength)</h3>
               <p>Sit with a towel under your foot. Use your toes to scrunch the towel towards you. Repeat 10-15 times, 2-3 sets. Strengthens the intrinsic muscles of the foot.</p>
             </div>
 
             <div class="info-box">
-              <h4>The Key: Optimal Loading</h4>
+              <h3>The Key: Optimal Loading</h3>
               <p>The goal is "optimal loading": enough load to stimulate healing, but not so much that you worsen the injury. Complete rest is rarely the solution. I provide specific advice tailored to your situation.</p>
             </div>
           </section>
@@ -577,7 +551,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Seek Professional Help If:</h4>
+              <h3>Seek Professional Help If:</h3>
               <ul>
                 <li>Pain that wakes you at night without load</li>
                 <li>Unexplained weight loss together with foot pain</li>
@@ -597,7 +571,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Metatarsalgia (Forefoot Pain)</h4>
+                <h3 class="condition-title">Metatarsalgia (Forefoot Pain)</h3>
                 <span class="condition-badge purple">5-36% prevalence</span>
               </div>
               <p class="section-quick-link"><a href="foot/metatarsalgia.html">Go to full article on metatarsalgia</a></p>
@@ -608,7 +582,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Hallux Valgus ("Bunion")</h4>
+                <h3 class="condition-title">Hallux Valgus ("Bunion")</h3>
                 <span class="condition-badge">19% prevalence</span>
               </div>
               <p class="section-quick-link"><a href="foot/hallux-valgus.html">Go to full article on hallux valgus</a></p>
@@ -621,7 +595,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Morton's Neuroma</h4>
+                <h3 class="condition-title">Morton's Neuroma</h3>
                 <span class="condition-badge blue">5-8x women</span>
               </div>
               <p class="section-quick-link"><a href="foot/mortons-neuroma.html">Go to full article on Morton's neuroma</a></p>
@@ -633,7 +607,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Hallux Rigidus (Stiff Big Toe)</h4>
+                <h3 class="condition-title">Hallux Rigidus (Stiff Big Toe)</h3>
                 <span class="condition-badge purple">2.5% over 50</span>
               </div>
               <p class="section-quick-link"><a href="foot/hallux-rigidus.html">Go to full article on hallux rigidus</a></p>
@@ -652,37 +626,37 @@
             </div>
 
             <div class="faq-item">
-              <h4>Do I need a referral?</h4>
+              <h3>Do I need a referral?</h3>
               <p>No. Chiropractors have primary contact status in Norway. You can book an appointment directly without a
                 referral from a doctor.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can you refer me onwards?</h4>
+              <h3>Can you refer me onwards?</h3>
               <p>Yes. I can refer to X-ray, MRI, CT and ultrasound covered by National Insurance. I can also refer to
                 physiotherapy and specialists (orthopaedic surgeon, rheumatologist, neurologist).</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can I get a sick note?</h4>
+              <h3>Can I get a sick note?</h3>
               <p>Yes, chiropractors with documented competence can issue sick notes for up to 12 weeks.</p>
             </div>
 
             <div class="faq-item">
-              <h4>How long does it take to recover?</h4>
+              <h3>How long does it take to recover?</h3>
               <p>It varies by condition: Ankle sprain grade I-II: 1-6 weeks. Plantar fasciopathy: 6-12 weeks active
                 treatment (80-90% better within 12 months). Metatarsalgia: 6-8 weeks. Achilles tendinopathy: 6-12
                 months. Morton's neuroma: 3-6 months with conservative treatment.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can I train while in treatment?</h4>
+              <h3>Can I train while in treatment?</h3>
               <p>Often yes - The goal is "optimal loading": enough load to stimulate healing, but not so much that you
                 worsen the injury. Complete rest is rarely the solution. I give specific advice tailored to your situation.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Do insoles help?</h4>
+              <h3>Do insoles help?</h3>
               <p>Can provide relief for some, but evidence is moderate. Important: prefabricated insoles work just as
                 well as expensive custom-made ones for plantar fasciopathy. Stretching and strength training have better documentation.</p>
             </div>

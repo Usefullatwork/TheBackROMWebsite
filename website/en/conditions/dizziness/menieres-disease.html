@@ -83,55 +83,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -139,7 +91,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -226,7 +178,7 @@
             </nav>
 
             <div class="red-flag-alert">
-              <h4>When should you seek immediate help?</h4>
+              <h3>When should you seek immediate help?</h3>
               <p>For sudden, total hearing loss, dizziness with double vision, swallowing or speech difficulties, fainting, or severe headache with dizziness - call emergency services or go to the emergency room.</p>
             </div>
           </section>
@@ -266,7 +218,7 @@
             <p>In Meniere's disease, too much fluid is produced, or drainage does not work properly. This causes the pressure to rise. At high pressure, a thin membrane (Reissner's membrane) can rupture, and fluids with different chemical compositions mix. This disrupts the signals to the brain and triggers the characteristic attack.</p>
 
             <div class="info-box">
-              <h4>Genetic Component</h4>
+              <h3>Genetic Component</h3>
               <p>Approximately 7-10% of patients with Meniere's disease have a family history of the condition.</p>
             </div>
           </section>
@@ -280,7 +232,7 @@
             <h3>The Classic Symptoms:</h3>
 
             <div class="condition-card">
-              <h4>1. Vertigo (Rotational Dizziness)</h4>
+              <h3>1. Vertigo (Rotational Dizziness)</h3>
               <ul>
                 <li>Sudden, intense attacks where the world "spins"</li>
                 <li>Duration typically 20 minutes to 12 hours</li>
@@ -289,7 +241,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>2. Hearing Loss</h4>
+              <h3>2. Hearing Loss</h3>
               <ul>
                 <li>Fluctuating, sensorineural hearing loss</li>
                 <li>Typically affects low frequencies first ("bass loss")</li>
@@ -298,7 +250,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>3. Tinnitus (Ear Ringing)</h4>
+              <h3>3. Tinnitus (Ear Ringing)</h3>
               <ul>
                 <li>Usually low-frequency, "humming" or "buzzing" sound</li>
                 <li>May become stronger before and during attacks</li>
@@ -355,13 +307,13 @@
 
             <h3>Conservative Treatment and Lifestyle</h3>
             <div class="treatment-box">
-              <h4>Salt Reduction</h4>
+              <h3>Salt Reduction</h3>
               <p>A stable, low salt intake (&lt;1500-2000 mg sodium daily) is often recommended as first-line treatment. The theory is that this can stabilize the fluid balance in the inner ear. The Cochrane review from 2018 found no randomized studies supporting this, but many patients report improvement.</p>
             </div>
 
             <h3>Medical Treatment</h3>
             <div class="condition-card">
-              <h4>Betahistine (Betaserc)</h4>
+              <h3>Betahistine (Betaserc)</h3>
               <p>The most commonly used medication in Europe. The BEMED study (2016) found no significant difference between betahistine and placebo, but the medication is well tolerated and is often tried for 3-6 months.</p>
             </div>
 
@@ -369,7 +321,7 @@
             <p>AAO-HNS recommends vestibular rehabilitation for patients with chronic unsteadiness between attacks. A meta-analysis from 2023 found moderate effect on quality of life.</p>
 
             <div class="info-box">
-              <h4>Important About Vestibular Rehabilitation</h4>
+              <h3>Important About Vestibular Rehabilitation</h3>
               <p>Vestibular rehabilitation is not recommended during acute attacks - it is most effective when vertigo episodes are under control.</p>
             </div>
 

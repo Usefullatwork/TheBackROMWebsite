@@ -136,531 +136,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #ef4444;
-      --hub-red-light: #fef2f2;
-      --hub-green: #22c55e;
-      --hub-green-light: #f0fdf4;
-      --hub-purple: #8b5cf6;
-      --hub-purple-light: #f5f3ff;
-      --hub-blue: #3b82f6;
-      --hub-pink: #ec4899;
-      --hub-orange: #f97316;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-hero {
-      background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%);
-      color: #fff;
-      padding: 40px 32px 40px 32px;
-      padding-top: calc(var(--header-height, 80px) + 40px);
-    }
-
-    .hub-hero__container {
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    @media (min-width: 1600px) {
-      .hub-hero__container { max-width: 1600px; }
-    }
-
-    @media (max-width: 600px) {
-      .hub-hero { padding: 28px 20px 28px 20px; padding-top: calc(var(--header-height, 80px) + 28px); }
-    }
-
-    .hub-hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 12px; line-height: 1.2; }
-    @media (max-width: 600px) { .hub-hero h1 { font-size: 26px; } }
-
-    .hub-hero__subtitle { font-size: 18px; color: rgba(255,255,255,0.8); margin-bottom: 0; }
-
-    .hub-wrapper {
-      display: flex;
-      align-items: stretch;
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 40px 20px 40px;
-      gap: 40px;
-    }
-
-    @media (min-width: 1600px) {
-      .hub-wrapper { max-width: 1600px; padding: 0 60px 20px 60px; }
-    }
-
-    .hub-main {
-      flex: 1;
-      min-width: 0;
-      max-width: 1000px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      overflow: hidden;
-    }
-
-    @media (min-width: 1200px) { .hub-main { max-width: 1100px; } }
-
-    .hub-sidebar {
-      width: 220px;
-      flex-shrink: 0;
-      position: relative;
-      align-self: stretch;
-    }
-
-    .hub-sidebar .sidenav-inner {
-      position: sticky;
-      top: calc(var(--header-height, 80px) + 20px);
-    }
-
-    @media (min-width: 1400px) { .hub-sidebar { width: 260px; } }
-
-    @media (max-width: 1000px) {
-      .hub-sidebar { display: none; }
-      .hub-wrapper { padding: 0 16px; }
-      .hub-main { max-width: 100%; }
-    }
-
-    .sidenav-inner {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    }
-
-    .hub-conversion-card {
-      background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-dark-light) 100%);
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 16px;
-      color: #fff;
-    }
-
-    .hub-conversion-card h4 {
-      color: #fff;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .hub-conversion-card p {
-      color: rgba(255,255,255,0.8);
-      font-size: 13px;
-      margin: 0 0 12px;
-    }
-
-    .hub-conversion-card .btn {
-      display: block;
-      background: var(--hub-primary);
-      color: var(--hub-dark);
-      padding: 10px 14px;
-      border-radius: 6px;
-      font-weight: 700;
-      text-decoration: none;
-      text-align: center;
-      font-size: 13px;
-    }
-
-    .hub-conversion-card .btn:hover { background: var(--hub-primary-dark); }
-
-    .hub-toc-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    }
-
-    .sidenav-title {
-      font-size: 11px;
-      font-weight: 700;
-      color: #6b7280;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 12px;
-    }
-
-    .sidenav-link {
-      display: block;
-      padding: 8px 10px;
-      margin: 3px 0;
-      color: #6b7280;
-      text-decoration: none;
-      font-size: 13px;
-      border-radius: 6px;
-      transition: all 0.2s;
-      border-left: 2px solid transparent;
-    }
-
-    .sidenav-link:hover { background: #f3f4f6; color: var(--hub-dark); }
-
-    .sidenav-link.active {
-      background: #fff9e6;
-      color: var(--hub-primary-dark);
-      border-left-color: var(--hub-primary);
-      font-weight: 600;
-    }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .premium-summary-card {
-      background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%);
-      border-left: 4px solid var(--hub-primary);
-      border-radius: 0 10px 10px 0;
-      padding: 18px;
-      align-self: start;
-    }
-
-    .premium-summary-card h3 { font-size: 15px; color: var(--hub-dark); margin-bottom: 12px; }
-    .premium-summary-card ul { list-style: none; padding: 0; margin: 0; }
-
-    .premium-summary-card li {
-      padding: 5px 0 5px 22px;
-      position: relative;
-      font-size: 13px;
-      line-height: 1.5;
-    }
-
-    .premium-summary-card li::before {
-      content: attr(data-icon);
-      position: absolute;
-      left: 0;
-      font-size: 12px;
-    }
-
-    .premium-summary-card .btn-small {
-      display: block;
-      background: var(--hub-primary);
-      color: var(--hub-dark);
-      padding: 10px 14px;
-      border-radius: 6px;
-      font-weight: 700;
-      text-decoration: none;
-      text-align: center;
-      font-size: 13px;
-      margin-top: 14px;
-    }
-
-    .premium-summary-card .btn-small:hover { background: var(--hub-primary-dark); }
-
-    .red-flag-alert {
-      background: linear-gradient(135deg, var(--hub-red-light) 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 16px;
-      margin-top: 20px;
-    }
-
-    .red-flag-alert h4 { color: #dc2626; margin: 0 0 8px; font-size: 15px; }
-    .red-flag-alert p { color: #7f1d1d; margin: 0 0 8px; font-size: 14px; }
-    .red-flag-alert å { color: #dc2626; font-weight: 600; font-size: 14px; }
-
-    .hub-subnav { margin-top: 24px; }
-    .hub-subnav h3 { font-size: 15px; color: var(--hub-dark); margin-bottom: 12px; }
-
-    .hub-subnav__grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-    }
-
-    .hub-subnav__btn {
-      display: block;
-      padding: 14px 16px;
-      background: white;
-      border: 1.5px solid #e2e8f0;
-      border-radius: 8px;
-      color: #0d3d4d;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.2s;
-    }
-
-    .hub-subnav__btn:hover {
-      border-color: var(--hub-primary);
-      box-shadow: 0 4px 12px rgba(26, 95, 122, 0.12);
-    }
-
-    .hub-subnav__btn strong { display: block; margin-bottom: 4px; }
-    .hub-subnav__btn small { color: #64748b; }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    .section-number {
-      width: 32px;
-      height: 32px;
-      background: var(--hub-dark);
-      color: var(--hub-primary);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 15px;
-      flex-shrink: 0;
-    }
-
-    .hub-section h2 { font-weight: 700; color: var(--hub-dark); margin: 0; }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-    .hub-content å { color: var(--hub-primary); text-decoration: underline; }
-    .hub-content a:hover { color: var(--hub-primary-dark); }
-
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      margin: 20px 0;
-    }
-
-    .stat-item {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary-dark); display: block; }
-    .stat-label { font-size: 0.75rem; color: #6b7280; margin-top: 4px; }
-
-    .condition-card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 14px 0;
-      transition: all 0.2s;
-    }
-
-    .condition-card:hover { border-color: var(--hub-primary); box-shadow: 0 4px 12px rgba(232, 168, 56, 0.12); }
-
-    .condition-card h4 { font-size: 16px; font-weight: 700; color: var(--hub-dark); margin: 0 0 8px; }
-    .condition-card p { font-size: 14px; margin: 0; }
-    .condition-card ul { margin: 10px 0 0; padding-left: 20px; }
-    .condition-card li { font-size: 13px; margin-bottom: 4px; }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p { font-size: 14px; margin: 0; color: #1e3a8a; }
-    .info-box ul { margin: 8px 0 0 0; padding-left: 20px; color: #1e3a8a; }
-    .info-box li { font-size: 14px; margin-bottom: 4px; }
-
-    .red-flag-alert{
-      background: var(--color-amber-light);
-      border-left: 4px solid #fbbf24;
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .red-flag-alert h4 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
-    .red-flag-alert p { font-size: 14px; margin: 0; color: #78350f; }
-
-    .treatment-box {
-      background: var(--hub-green-light);
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p { font-size: 14px; margin: 0 0 8px; color: #166534; }
-    .treatment-box ul { margin: 8px 0 0 0; padding-left: 20px; }
-    .treatment-box li { font-size: 14px; margin-bottom: 4px; color: #166534; }
-
-    .exercise-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .exercise-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .exercise-box ul { margin: 0; padding-left: 20px; }
-    .exercise-box li { font-size: 14px; margin-bottom: 4px; color: #166534; }
-
-    .stat-highlight {
-      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-      border-left: 4px solid var(--hub-green);
-    }
-
-    .stat-highlight p { color: #065f46; font-weight: 500; margin: 0; font-size: 14px; }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, var(--hub-red-light) 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-    .red-flag-box .note { font-style: italic; margin-top: 12px; color: #991b1b; font-size: 13px; }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .hub-cta {
-      background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-dark-light) 100%);
-      color: #fff;
-      padding: 28px;
-      border-radius: 12px;
-      margin: 28px 0;
-    }
-
-    .hub-cta h3 { font-size: 18px; margin: 0 0 12px; color: #fff !important; font-weight: 700; }
-    .hub-cta p { color: rgba(255,255,255,0.85); font-size: 14px; margin-bottom: 8px; }
-
-    .hub-cta .btn {
-      display: inline-block;
-      background: var(--hub-primary);
-      color: var(--hub-dark);
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-      margin-top: 16px;
-    }
-
-    .hub-cta .btn:hover { background: var(--hub-primary-dark); }
-
-    .related-box {
-      background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
-      border: 2px solid var(--hub-pink);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 24px 0;
-    }
-
-    .related-box h3 { color: #be185d; font-size: 15px; margin: 0 0 14px; }
-
-    .related-box a {
-      display: block;
-      padding: 10px 0;
-      color: #be185d;
-      text-decoration: none;
-      border-bottom: 1px solid #fbcfe8;
-      font-size: 14px;
-      transition: all 0.2s;
-    }
-
-    .related-box a:last-child { border-bottom: none; }
-    .related-box a:hover { color: var(--hub-pink); padding-left: 8px; }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-
-    @media (max-width: 900px) {
-      .mobile-sticky-cta { display: flex; }
-      .hub-main { margin-bottom: 80px; }
-    }
-
-    .mobile-sticky-cta .btn {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .mobile-sticky-cta .btn-primary { background: #F26522; color: var(--hub-dark); }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  </style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -668,7 +144,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -751,7 +227,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Nær må du søke hjelp umiddelbart?</h4>
+              <h3>Nær må du søke hjelp umiddelbart?</h3>
               <p>Ved nummenhet i skrittet, problemer med vannlating/avforing, eller åkende svakhet i begge bena - ring 113 eller dra til legevakt.</p>
               <a href="rode-flagg-ryggsmerter.html">Les mer om røde flagg</a>
             </div>
@@ -806,7 +282,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Viktig poeng</h4>
+                <h3>Viktig poeng</h3>
                 <p>Wakayamå Spine Study fant at 77,9% av deltakerne hadde moderat sentral stenose på bildene, men bare 17,5% av de med alvorlig stenose hadde faktisk plager. Dette betyr at MR-bilder aldri bør styre behandlingen alene.</p>
               </div>
             </section>
@@ -821,22 +297,22 @@
               <p>Spinal stenose skyldes nesten alltid aldersrelaterte forandringer i ryggen. Over 95% av tilfellene er degenerativ stenose.</p>
 
               <div class="condition-card">
-                <h4>Facettleddartrose</h4>
+                <h3>Facettleddartrose</h3>
                 <p>Slitasje i de små leddene på baksiden av ryggen som fører til fortykning og benpåleiring.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Fortykkelse av ligamentum flavum</h4>
+                <h3>Fortykkelse av ligamentum flavum</h3>
                 <p>Det gule bandet som ligger bak i ryggkanalen kan bli tykkere med alderen og ta plass fra nervene.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Diskdegenerasjon</h4>
+                <h3>Diskdegenerasjon</h3>
                 <p>Skivene mellom ryggvirvlene mister høyde og kan bule inn i kanalen. Dette kan også føre til <a href="skiveprolaps.html">prolaps</a>.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Osteofytter</h4>
+                <h3>Osteofytter</h3>
                 <p>Benpåleiring som vokser inn i ryggkanalen eller nerveutgangene.</p>
               </div>
 
@@ -868,7 +344,7 @@
               <p>Disse symptomene kan minne om <a href="isjias.html">isjias</a>, men ved stenose er månsteret typisk at symptomene forverres ved gange og bedres ved hvile i fremoverlent stilling.</p>
 
               <div class="info-box">
-                <h4>Handlevogn-tegnet</h4>
+                <h3>Handlevogn-tegnet</h3>
                 <p>Dette er så karakteristisk at det brukes diagnostisk verden over. Mange pasienter forteller at de kan gå mye lenger nær de ståtter seg på en handlevogn. Dette skyldes at fremoverleaning utvider ryggkanalen og gir mer plass til nervene.</p>
               </div>
             </section>
@@ -887,7 +363,7 @@
               <p>MR er førstevalgundersøkelse nær bildediagnostikk er indisert. Men her kommer et svårt viktig poeng: <strong>Det er ofte dørlig sammenheng mellom MR-funn og symptomer.</strong></p>
 
               <div class="red-flag-alert">
-                <h4>MR-funn hos symptomfrie</h4>
+                <h3>MR-funn hos symptomfrie</h3>
                 <p>Studier viser at 21% av symptomfrie personer over 60 år har stenose på MR, og at 65% av friske frivillige fikk stenosediagnose av radiologer. Dette betyr at MR-bilder aldri bør styre behandlingen alene.</p>
               </div>
 
@@ -914,7 +390,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Behandlingen kan inneholde</h4>
+                <h3>Behandlingen kan inneholde</h3>
                 <ul>
                   <li>Manuell behandling for å bedre leddbevegelighet</li>
                   <li>Fleksjonsdistraksjon som øker plassen i ryggkanalen</li>
@@ -927,7 +403,7 @@
               <p><strong>Fleksjonsbaserte øvelser</strong> har moderat evidens og utnytter den enkle mekanismen at fremoverleaning gir mer plass til nervene:</p>
 
               <div class="exercise-box">
-                <h4>Kne-til-bryst-strekk</h4>
+                <h3>Kne-til-bryst-strekk</h3>
                 <ul>
                   <li>Liggende på rygg, dra ett eller begge knær mot brystet</li>
                   <li>Hold 20-30 sekunder</li>
@@ -936,7 +412,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>Core-stabilisering</h4>
+                <h3>Core-stabilisering</h3>
                 <ul>
                   <li>øvelser for mage- og ryggmuskulatur</li>
                   <li>Bekkenbru, planke, fuglen</li>
@@ -977,7 +453,7 @@
               <p>Her har jeg gode nyheter: Den naturlige forløpet ved spinal stenose er ofte gunstigere enn mange tror.</p>
 
               <div class="condition-card">
-                <h4>Uten behandling (JAMA Review 2022)</h4>
+                <h3>Uten behandling (JAMA Review 2022)</h3>
                 <p>Omtrent 33% rapporterer spontan bedring, 50% forblir stabile, og 10-20% opplever forverring over 3 år.</p>
               </div>
 

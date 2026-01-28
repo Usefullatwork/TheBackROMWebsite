@@ -138,33 +138,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -172,7 +146,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -298,7 +272,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">1. Chronic <a href="migraine.html">Migraine</a></h4>
+                  <h3 class="condition-title">1. Chronic <a href="migraine.html">Migraine</a></h3>
                   <span class="condition-badge">Most common</span>
                 </div>
                 <p>Headache 15+ days/month, with at least 8 days having migraine features (one-sided, pulsating, nausea, light/sound sensitivity). Develops gradually from episodic migraine - about 2.5-3% progress annually.</p>
@@ -311,7 +285,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">2. Chronic <a href="tension-headache.html">Tension Headache</a></h4>
+                  <h3 class="condition-title">2. Chronic <a href="tension-headache.html">Tension Headache</a></h3>
                 </div>
                 <p>Bilateral, pressing/tightening pain that does not worsen with activity. Mild to moderate intensity. No nausea, at most one of light or sound sensitivity.</p>
                 <ul>
@@ -323,7 +297,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">3. <a href="medication-overuse-headache.html">Medication Overuse Headache</a> (MOH)</h4>
+                  <h3 class="condition-title">3. <a href="medication-overuse-headache.html">Medication Overuse Headache</a> (MOH)</h3>
                   <span class="condition-badge">78-80% of CDH</span>
                 </div>
                 <p>The elephant in the room. Regular use of painkillers can paradoxically lead to more headache. Found in up to 78-80% of all chronic daily headache patients.</p>
@@ -336,14 +310,14 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">4. New Daily Persistent Headache (NDPH)</h4>
+                  <h3 class="condition-title">4. New Daily Persistent Headache (NDPH)</h3>
                   <span class="condition-badge">Rare</span>
                 </div>
                 <p>Sudden onset with daily, unrelenting headache from day one. The patient often remembers exactly when it started. Can resemble tension headache or migraine, but is distinguished by the acute onset.</p>
               </div>
 
               <div class="red-flag-alert">
-                <h4>Important to Remember</h4>
+                <h3>Important to Remember</h3>
                 <p>Most with chronic daily headache do not have just one type - many have overlapping diagnoses. For example, a person may have chronic migraine complicated by medication overuse.</p>
               </div>
             </section>
@@ -375,7 +349,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Central Sensitization</h4>
+                <h3>Central Sensitization</h3>
                 <p>With chronic headache, changes occur in the brain's pain system - a "sensitization" that makes the nervous system react more strongly to stimuli that would not normally cause pain. This process can be reversed, but it takes time.</p>
               </div>
             </section>
@@ -423,14 +397,14 @@
               <p>This is often the most important first step. In up to 80% of patients with chronic daily headache, medication overuse is present. Without addressing this, other treatment will have limited effect.</p>
 
               <div class="red-flag-alert">
-                <h4>Discontinuation of Painkillers</h4>
+                <h3>Discontinuation of Painkillers</h3>
                 <p>Tapering or abrupt discontinuation of painkillers must occur under doctor supervision. Expect headache to worsen the first 1-2 weeks ("rebound headache") before improvement sets in. Most experience significant improvement after 6-8 weeks.</p>
               </div>
 
               <h3>Step 2: Lifestyle Interventions</h3>
 
               <div class="treatment-box">
-                <h4>Lifestyle Measures With Documented Effect</h4>
+                <h3>Lifestyle Measures With Documented Effect</h3>
                 <ul>
                   <li><strong>Regular sleep:</strong> Fixed bedtimes and wake times, even on weekends</li>
                   <li><strong>Regular meals:</strong> Don't skip meals</li>
@@ -460,7 +434,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Honest About Evidence</h4>
+                <h3>Honest About Evidence</h3>
                 <p>Evidence for manual treatment of chronic daily headache is limited. What works best is a multimodal approach that combines lifestyle changes, medication discontinuation when needed, and possibly preventive treatment. Manual therapy can be a useful supplement for some patients.</p>
               </div>
             </section>
@@ -496,7 +470,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>It Takes Time</h4>
+                <h3>It Takes Time</h3>
                 <p>Improvement doesn't happen overnight. Expect gradual improvement over weeks to months. The most important thing is consistency in lifestyle changes and patience with the process.</p>
               </div>
             </section>

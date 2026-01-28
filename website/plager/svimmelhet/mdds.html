@@ -83,66 +83,8 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section ul { font-size: 0.85rem; color: #64748b; }
-    .sources-section li { margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
-
-  <!-- FAQPage Schema -->
+  <link rel="stylesheet" href="../../css/hub-article.css">
+<!-- FAQPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -190,7 +132,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -247,7 +189,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Hva det er:</strong> En sjelden nevrologisk tilstand med vedvarende følelse av gynging/vugge-bevegelse etter sjoreise eller annen passiv transport</li>
                 <li><strong>Vanligste utlosere:</strong> Cruise/batreise (vanligst), flyreise, lang bilreise, spontant uten bevegelsesutloser (sjeldnest)</li>
@@ -282,7 +224,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Nær må du søke hjelp umiddelbart?</h4>
+              <h3>Nær må du søke hjelp umiddelbart?</h3>
               <p>Ved horetap, dobbeltsyn, nummenhet i ansikt/armer/ben, krafttap, talevansker eller plutselig kraftig hodepine - ring 113 eller dra til legevakt.</p>
             </div>
           </section>
@@ -322,7 +264,7 @@
             <h3>Utlåsende faktorer - fra vanligst til sjeldnest</h3>
 
             <div class="condition-card">
-              <h4>Bevegelses-utlost MdDS (vanligst)</h4>
+              <h3>Bevegelses-utlost MdDS (vanligst)</h3>
               <ul>
                 <li>Cruise eller batreise - den klart vanligste utloseren</li>
                 <li>Flyreise</li>
@@ -334,7 +276,7 @@
             <p>Midlertidig "mal de debarquement" etter sjoreise forekommer hos 73-86% av personer, selv blant erfarne sjofolk. Lengre reiser og urolig sjo kan åke risikoen, men varigheten av eksponeringen ser ikke ut til å bestemme alvorlighetsgraden.</p>
 
             <div class="condition-card">
-              <h4>Spontan/ikke-bevegelses-utlost MdDS (sjeldnere)</h4>
+              <h3>Spontan/ikke-bevegelses-utlost MdDS (sjeldnere)</h3>
               <ul>
                 <li>Hormonelle endringer - studier viser at ~44% hadde symptomstart i perimenopause eller menopause</li>
                 <li>Psykologisk stress eller store livshendelser</li>
@@ -385,7 +327,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Det paradoksale: Bedre i bevegelse</h4>
+              <h3>Det paradoksale: Bedre i bevegelse</h3>
               <p>Et viktig kjennetegn ved MdDS er at symptomene ofte bedres nær man er i passiv bevegelse - som å kjore bil eller sitte på et tog. Men symptomene kommer tilbake - og kan midlertidig forverres - nær bevegelsen stopper.</p>
               <p>Dette skiller MdDS fra <a href="pppd-kronisk-svimmelhet.html">PPPD (Persistent Postural-Perceptual Dizziness)</a>, der symptomene typisk forverres ved bevegelse.</p>
             </div>
@@ -442,7 +384,7 @@
             <p>MdDS er en utfordrende tilstand å behandle. Forskningen er begrenset, og det finnes ingen standardbehandling som hjelper alle. En scoping review fra 2023 identifiserte forbedring med flere behandlingsmetoder, men understreket at evidensen fortsatt er begrenset.</p>
 
             <div class="treatment-box">
-              <h4>Spesialisert behandling - VOR-readaptasjon (Dai-protokollen)</h4>
+              <h3>Spesialisert behandling - VOR-readaptasjon (Dai-protokollen)</h3>
               <p>Den mest lovende behandlingen er optokinetisk VOR-readaptasjon, utviklet av Dr. Mingjia Dai ved Mount Sinai Hospital. Behandlingen innebører visuell stimulering med bevegelige striper i synsfeltet, samtidig passiv rulling av hodet fra side til side, over gjentatte sesjoner.</p>
               <p><strong>Resultater:</strong></p>
               <ul>

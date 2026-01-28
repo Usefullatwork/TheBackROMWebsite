@@ -83,39 +83,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -123,7 +91,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -205,21 +173,21 @@
                 stress on several structures:</p>
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Anterior Cruciate Ligament (ACL)</h4>
+                  <h3 class="condition-title">Anterior Cruciate Ligament (ACL)</h3>
                 </div>
                 <p>Valgus loading increases ACL strain by up to 30%. Combined with quadriceps force, ACL forces can
                   double.</p>
               </div>
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Patellofemoral Joint</h4>
+                  <h3 class="condition-title">Patellofemoral Joint</h3>
                 </div>
                 <p>A 10-degree increase in Q-angle (affected by hip position) increases joint pressure by 45%. Femoral
                   internal rotation of 15 degrees gives over 10% increase in lateral contact pressure.</p>
               </div>
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">IT Band</h4>
+                  <h3 class="condition-title">IT Band</h3>
                 </div>
                 <p>Hip adduction during running is strongly associated with <a href="iliotibial-band-syndrome.html">IT
                     band syndrome</a>.</p>
@@ -233,7 +201,7 @@
               <p>Ranked by evidence strength, from strongest to weakest:</p>
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">1. Patellofemoral Pain Syndrome (Anterior Knee Pain)</h4><span
+                  <h3 class="condition-title">1. Patellofemoral Pain Syndrome (Anterior Knee Pain)</h3><span
                     class="condition-badge">Strong evidence</span>
                 </div>
                 <p>The most common form of knee pain, with an annual prevalence of 22.7% in the population and 28.9%
@@ -243,7 +211,7 @@
               </div>
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">2. ACL Injuries and Rehabilitation</h4><span
+                  <h3 class="condition-title">2. ACL Injuries and Rehabilitation</h3><span
                     class="condition-badge">Moderate to strong</span>
                 </div>
                 <p>A prospective study of 501 competitive athletes showed that those with hip weakness had more than
@@ -251,7 +219,7 @@
               </div>
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">3. Iliotibial Band Syndrome</h4><span class="condition-badge">Moderate
+                  <h3 class="condition-title">3. Iliotibial Band Syndrome</h3><span class="condition-badge">Moderate
                     evidence</span>
                 </div>
                 <p>Fredericson et al. found that female runners with <a href="iliotibial-band-syndrome.html">IT band
@@ -298,7 +266,7 @@
               </div>
               <h3>What Can the Chiropractor Do?</h3>
               <div class="treatment-box">
-                <h4>Chiropractic Treatment Includes</h4>
+                <h3>Chiropractic Treatment Includes</h3>
                 <ul>
                   <li><strong>Manual treatment:</strong> Mobilization and soft tissue treatment of hip, pelvis, and knee
                     to improve joint mobility and reduce muscle tension.</li>
@@ -309,14 +277,14 @@
                 </ul>
               </div>
               <div class="info-box">
-                <h4>Strong Evidence for Combined Approach</h4>
+                <h3>Strong Evidence for Combined Approach</h3>
                 <p>A meta-analysis of 14 randomized studies with 673 participants showed that combined hip and knee
                   training gave significantly better results than knee training alone: <strong>1.5 points more pain
                     relief</strong> on a 0-10 scale and effect size of 0.7 for function improvement.</p>
               </div>
               <h3>What Can You Do Yourself?</h3>
               <div class="treatment-box">
-                <h4>Effective Home Exercises for the Hip</h4>
+                <h3>Effective Home Exercises for the Hip</h3>
                 <ul>
                   <li><strong>Side-lying hip abduction:</strong> Lie on your side, lift top leg controlled upward. 3
                     sets x 15 reps.</li>

@@ -22,10 +22,7 @@
     <link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/hip/hip-pointer.html" />
     <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
     <link rel="stylesheet" href="../../css/hub-article.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Meta Pixel Code -->
+<!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -97,120 +94,14 @@
     }
     </script>
 
-    <style>
-        :root {
-            --hub-primary: #1a5f7a;
-            --hub-dark: #0d3d4d;
-            --hub-light: #f0f7fa;
-            --hub-red: #c0392b;
-            --hub-green: #27ae60;
-            --hub-blue: #2980b9;
-            --hub-purple: #8e44ad;
-            --hub-orange: #e67e22;
-            --hub-gray: #7f8c8d;
-        }
-
-        /* Hub Layout */
-        .hub-wrapper{display:grid;grid-template-columns:1fr 280px;gap:3rem;max-width:1400px;margin:0 auto;padding:2rem}
-        .hub-main{min-width:0}
-        .hub-sidebar{position:sticky;top:100px;height:fit-content;background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,.08);border:1px solid #e5e7eb}
-        .hub-sidebar h3{font-size:1rem;color:var(--hub-dark);margin:0 0 1rem;padding-bottom:.75rem;border-bottom:2px solid var(--hub-primary)}
-        .hub-sidebar ul{list-style:none;padding:0;margin:0}
-        .hub-sidebar li{margin-bottom:.5rem}
-        .hub-sidebar a{display:block;padding:.5rem .75rem;color:#4b5563;text-decoration:none;font-size:.9rem;border-radius:6px;transition:all .2s}
-        .hub-sidebar a:hover,.hub-sidebar a.active{background:var(--hub-light);color:var(--hub-primary)}
-
-        /* Sections */
-        .hub-section{margin-bottom:3rem;scroll-margin-top:100px}
-        .section-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
-        .section-number{background:var(--hub-primary);color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem;flex-shrink:0}
-        .section-header h2{margin:0;color:var(--hub-dark);font-size:1.5rem}
-
-        /* Content */
-        .hub-main p{line-height:1.8;margin-bottom:1.25rem;color:#333}
-        .hub-main ul,.hub-main ol{margin-bottom:1.5rem;padding-left:1.5rem}
-        .hub-main li{line-height:1.7;margin-bottom:.5rem}
-
-        /* TLDR Box */
-        .premium-summary-card{background:var(--hub-light);border-left:4px solid var(--hub-primary);padding:1.5rem;margin:0 0 2rem;border-radius:0 8px 8px 0}
-        .premium-summary-card h2{color:var(--hub-dark);font-size:1.25rem;margin:0 0 1rem}
-        .premium-summary-card ul{margin:0;padding-left:1.25rem}
-        .premium-summary-card li{margin-bottom:.75rem;line-height:1.6}
-
-        /* Info/Warning/Treatment Boxes */
-        .info-box{background:#f0f9ff;border-left:4px solid var(--hub-primary);padding:1.5rem;margin:1.5rem 0;border-radius:0 8px 8px 0}
-        .info-box h3{color:var(--hub-primary);margin:0 0 1rem}
-        .red-flag-alert{background:#fff5f5;border-left:4px solid var(--hub-red);padding:1.5rem;margin:1.5rem 0;border-radius:0 8px 8px 0}
-        .red-flag-alert h3{color:var(--hub-red);margin:0 0 1rem;display:flex;align-items:center;gap:.5rem}
-        .treatment-box{background:#f0fff4;border-left:4px solid var(--hub-green);padding:1.5rem;margin:1.5rem 0;border-radius:0 8px 8px 0}
-        .treatment-box h3{color:var(--hub-green);margin:0 0 1rem}
-
-        /* Severity Table */
-        .severity-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.95rem}
-        .severity-table th,.severity-table td{padding:.75rem;text-align:left;border-bottom:1px solid #e0e0e0}
-        .severity-table th{background:var(--hub-light);color:var(--hub-dark);font-weight:600}
-        .severity-table tr:hover{background:#f8f9fa}
-
-        /* FAQ Section */
-        .faq-section{margin:2rem 0}
-        .faq-item{border-bottom:1px solid #e0e0e0;padding:1.5rem 0}
-        .faq-item:first-child{padding-top:0}
-        .faq-item h3{color:var(--hub-dark);margin:0 0 1rem;font-size:1.1rem}
-        .faq-item p{margin:0;color:#555}
-
-        /* CTA Box */
-        .hub-cta{background:linear-gradient(135deg,var(--hub-dark) 0%,var(--hub-primary) 100%);color:#fff;padding:2rem;border-radius:12px;margin:2rem 0;text-align:center}
-        .hub-cta h3{color:#fff;margin:0 0 1rem;font-size:1.5rem}
-        .hub-cta p{color:rgba(255,255,255,.9);margin-bottom:1rem}
-        .hub-cta .btn{display:inline-block;background:#fff;color:var(--hub-dark);padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;transition:transform .2s,box-shadow .2s}
-        .hub-cta .btn:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.2)}
-
-        /* Related Articles */
-        .related-articles{margin:2rem 0;padding:2rem;background:var(--hub-light);border-radius:12px}
-        .related-articles h3{color:var(--hub-dark);margin:0 0 1.5rem}
-        .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
-        .related-card{background:#fff;padding:1rem;border-radius:8px;text-decoration:none;color:inherit;transition:box-shadow .2s}
-        .related-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.1)}
-        .related-card h4{color:var(--hub-primary);margin:0 0 .5rem;font-size:1rem}
-        .related-card p{color:#666;font-size:.9rem;margin:0}
-
-        /* Sources */
-        .sources{background:#f8f9fa;padding:1.5rem;border-radius:8px;margin-top:2rem}
-        .sources h3{color:var(--hub-dark);margin:0 0 1rem}
-        .sources ol{margin:0;padding-left:1.25rem;font-size:.9rem;color:#666}
-
-        /* Mobile Sticky CTA */
-        .mobile-sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#F26522;color:#fff;padding:16px 24px;text-align:center;font-weight:600;text-decoration:none;z-index:1000;gap:8px;align-items:center;justify-content:center;box-shadow:0 -2px 10px rgba(0,0,0,.15)}
-        .mobile-sticky-cta svg{flex-shrink:0}
-
-        /* Location Section */
-        .location-header{background:var(--hub-dark);color:#fff;padding:16px 24px;border-radius:12px 12px 0 0;display:flex;align-items:center;gap:12px}
-        .location-header h3,.location-header h4{margin:0;color:#fff!important;font-size:18px}
-        .location-section{background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:0 4px 6px -1px rgba(0,0,0,.1);overflow:hidden;margin-bottom:32px}
-        .location-content{padding:20px 24px}
-        .location-content p{color:#374151;line-height:1.6;margin-bottom:12px}
-
-        /* Responsive */
-        @media(max-width:1024px){
-            .hub-wrapper{grid-template-columns:1fr;padding:1rem}
-            .hub-sidebar{display:none}
-        }
-        @media(max-width:768px){
-            .mobile-sticky-cta{display:flex}
-            .hub-main{padding-bottom:80px}
-            .severity-table{font-size:.85rem}
-            .severity-table th,.severity-table td{padding:.5rem}
-            .section-header h2{font-size:1.25rem}
-            .section-number{width:32px;height:32px;font-size:.95rem}
-        }
-    </style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 <body id="top">
   <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">

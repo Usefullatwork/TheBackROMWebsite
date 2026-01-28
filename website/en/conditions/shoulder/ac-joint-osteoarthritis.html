@@ -155,437 +155,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .hub-content {
-      padding: 32px;
-    }
-
-    @media (max-width: 600px) {
-      .hub-content {
-        padding: 20px;
-      }
-    }
-
-    .hub-content h3 {
-      font-size: 17px;
-      color: var(--hub-dark);
-      margin: 22px 0 10px;
-    }
-
-    .hub-content p {
-      margin-bottom: 14px;
-      font-size: 15px;
-    }
-
-    .hub-content ul,
-    .hub-content ol {
-      margin: 14px 0;
-      padding-left: 24px;
-    }
-
-    .hub-content li {
-      margin-bottom: 6px;
-      font-size: 15px;
-    }
-
-    .hub-content strong {
-      color: var(--hub-dark);
-    }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    @media (max-width: 800px) {
-      .intro-tldr-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .intro-text p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #374151;
-    }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .hub-section:first-of-type {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-    }
-
-    .condition-card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 14px 0;
-      transition: all 0.2s;
-    }
-
-    .condition-card:hover {
-      border-color: var(--hub-primary);
-      box-shadow: 0 4px 12px rgba(26, 95, 122, 0.12);
-    }
-
-    .condition-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 8px;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .condition-title {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--hub-dark);
-      margin: 0;
-    }
-
-    .condition-badge {
-      background: var(--hub-primary);
-      color: #fff;
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 11px;
-      font-weight: 700;
-    }
-
-    .condition-card p {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .condition-card ul {
-      margin: 10px 0;
-      padding-left: 20px;
-    }
-
-    .condition-card li {
-      font-size: 13px;
-      margin-bottom: 4px;
-    }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 {
-      color: #dc2626;
-      margin: 0 0 12px;
-      font-size: 16px;
-    }
-
-    .red-flag-box ul {
-      color: #7f1d1d;
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .red-flag-box li {
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .treatment-box h4 {
-      color: #166534;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .treatment-box p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #166534;
-    }
-
-    .treatment-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-    }
-
-    .treatment-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-      color: #166534;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .info-box h4 {
-      color: #1e40af;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .info-box p {
-      font-size: 14px;
-      margin: 0;
-      color: #1e3a8a;
-    }
-
-    .info-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-      color: #1e3a8a;
-    }
-
-    .info-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .red-flag-alert{
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .red-flag-alert h4 {
-      color: #92400e;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .red-flag-alert p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #78350f;
-    }
-
-    .red-flag-alert ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-      color: #78350f;
-    }
-
-    .red-flag-alert li {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .stat-card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .stat-card .stat-number {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--hub-primary);
-      display: block;
-    }
-
-    .stat-card .stat-label {
-      font-size: 0.75rem;
-      color: #6b7280;
-      margin-top: 4px;
-    }
-
-    .anatomy-box {
-      background: #f5f3ff;
-      border: 1px solid #d8b4fe;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .anatomy-box h4 {
-      color: var(--hub-purple);
-      font-size: 15px;
-      margin: 0 0 12px;
-    }
-
-    .anatomy-box p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #5b21b6;
-    }
-
-    .anatomy-box ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .anatomy-box li {
-      font-size: 14px;
-      margin-bottom: 8px;
-      color: #5b21b6;
-    }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-
-    .faq-question {
-      padding: 14px 16px;
-      font-weight: 600;
-      background: #fafafa;
-      font-size: 14px;
-      color: var(--hub-dark);
-    }
-
-    .faq-answer {
-      padding: 14px 16px;
-      color: #6b7280;
-      border-top: 1px solid #e5e7eb;
-      font-size: 14px;
-    }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: #6b7280;
-      font-size: 15px;
-      margin-bottom: 12px;
-    }
-
-    .sources-section ul {
-      font-size: 12px;
-      color: #6b7280;
-      line-height: 1.6;
-      padding-left: 20px;
-    }
-
-    .sources-section li {
-      margin-bottom: 4px;
-    }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-    }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 12px 16px;
-      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
-      gap: 10px;
-      z-index: 100;
-    }
-
-    @media (max-width: 900px) {
-      .mobile-sticky-cta {
-        display: flex;
-      }
-
-      .hub-main {
-        margin-bottom: 80px;
-      }
-    }
-
-    .mobile-sticky-cta .btn {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .mobile-sticky-cta .btn-primary {
-      background: #F26522;
-      color: #fff;
-    }
-
-    .mobile-sticky-cta .btn-outline {
-      background: #fff;
-      border: 2px solid #F26522;
-      color: var(--hub-dark);
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -593,7 +163,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Majorstua Oslo"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Majorstua Oslo" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -645,7 +215,7 @@
 
             <!-- Premium Summary Card -->
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li><strong>75%</strong> over 40 have MRI findings</li>
                 <li>Only <strong>10%</strong> have symptoms</li>
@@ -712,7 +282,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Important Perspective</h4>
+                <h3>Important Perspective</h3>
                 <p>Degenerative changes in the AC joint are <strong>normal age-related changes</strong>. Most people who
                   have such findings on X-ray or MRI have no symptoms. Focus on your symptoms, not the image.</p>
               </div>
@@ -729,7 +299,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Age-Related Wear</h4>
+                  <h3 class="condition-title">Age-Related Wear</h3>
                   <span class="condition-badge">Most Common</span>
                 </div>
                 <p>Normal degeneration over time. The AC joint is one of the first joints in the body to show
@@ -738,7 +308,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Overload and Repetitive Activity</h4>
+                  <h3 class="condition-title">Overload and Repetitive Activity</h3>
                 </div>
                 <p>Occupations or sports with lots of overhead work or heavy lifting put extra stress on the joint.
                   Common in:</p>
@@ -751,7 +321,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Previous Injury</h4>
+                  <h3 class="condition-title">Previous Injury</h3>
                 </div>
                 <p>An AC joint separation or collarbone fracture increases the risk of later osteoarthritis in the
                   joint.</p>
@@ -760,7 +330,7 @@
               <h3>Weightlifter's Shoulder (Distal Clavicular Osteolysis)</h3>
 
               <div class="red-flag-alert">
-                <h4>Special Condition in Strength Athletes</h4>
+                <h3>Special Condition in Strength Athletes</h3>
                 <p>Weightlifter's shoulder is a condition where the end of the collarbone breaks down due to repetitive
                   microtrauma. Common in those who train heavy bench press, shoulder press and dips.</p>
                 <ul>
@@ -800,7 +370,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Activities That Typically Provoke</h4>
+                <h3>Activities That Typically Provoke</h3>
                 <ul>
                   <li>Bench press and shoulder press</li>
                   <li>Dips and push-ups</li>
@@ -814,7 +384,7 @@
               <p>AC joint pain can resemble other shoulder conditions but has some distinctive features:</p>
 
               <div class="condition-card">
-                <h4 class="condition-title">Signs That Point to the AC Joint</h4>
+                <h3 class="condition-title">Signs That Point to the AC Joint</h3>
                 <ul>
                   <li>Pain localized directly on top of the shoulder</li>
                   <li>Positive cross-body adduction test</li>
@@ -847,7 +417,7 @@
               <h3>Imaging</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">X-ray</h4>
+                <h3 class="condition-title">X-ray</h3>
                 <p>First choice. Shows:</p>
                 <ul>
                   <li>Narrowed joint space</li>
@@ -858,13 +428,13 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">MRI</h4>
+                <h3 class="condition-title">MRI</h3>
                 <p>Rarely necessary for AC joint osteoarthritis alone. Most useful for ruling out concurrent pathology
                   (rotator cuff, etc.).</p>
               </div>
 
               <div class="red-flag-alert">
-                <h4>Important to Remember</h4>
+                <h3>Important to Remember</h3>
                 <p>75% of people over 40 have arthritic changes in the AC joint on imaging. An imaging finding does
                   <strong>not</strong> necessarily mean this is the pain source. The diagnosis must correlate with
                   clinical findings.
@@ -893,23 +463,23 @@
               <h3>Differential Diagnoses</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Rotator Cuff Tendinopathy</h4>
+                <h3 class="condition-title">Rotator Cuff Tendinopathy</h3>
                 <p>Causes pain more on the outside of the shoulder and with specific movements. Can coexist with AC
                   joint osteoarthritis.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Subacromial Impingement</h4>
+                <h3 class="condition-title">Subacromial Impingement</h3>
                 <p>Pain with abduction 60-120 degrees. Overlapping symptoms possible.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Cervical Radiculopathy</h4>
+                <h3 class="condition-title">Cervical Radiculopathy</h3>
                 <p>Pain from the neck radiating to the shoulder. Neck movements often provoke the pain.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">AC Joint Separation</h4>
+                <h3 class="condition-title">AC Joint Separation</h3>
                 <p>Acute injury with visible deformity. Distinguished from gradual onset osteoarthritis.</p>
               </div>
             </section>
@@ -927,7 +497,7 @@
               <h3>Conservative Treatment (First Choice)</h3>
 
               <div class="treatment-box">
-                <h4>Activity Modification</h4>
+                <h3>Activity Modification</h3>
                 <p>This is the most important intervention, especially for weightlifter's shoulder:</p>
                 <ul>
                   <li>Temporarily avoid exercises that provoke pain</li>
@@ -939,7 +509,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Training Modifications for Strength Athletes</h4>
+                <h3>Training Modifications for Strength Athletes</h3>
                 <ul>
                   <li><strong>Bench press:</strong> Narrower grip, stop before bar reaches chest, floor press</li>
                   <li><strong>Shoulder press:</strong> Replace with lateral raises, face pulls</li>
@@ -949,7 +519,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>What Can the Chiropractor Do?</h4>
+                <h3>What Can the Chiropractor Do?</h3>
                 <ul>
                   <li><strong>Manual treatment:</strong> Mobilization of AC joint, thoracic spine and neck</li>
                   <li><strong>Soft tissue treatment:</strong> Work on musculature around the shoulder</li>
@@ -961,7 +531,7 @@
               <h3>Injection Treatment</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Cortisone Injection</h4>
+                <h3 class="condition-title">Cortisone Injection</h3>
                 <p>Can provide good pain relief during acute flare-ups. The effect is often temporary (weeks to months),
                   but can be combined with activity modification for better long-term results.</p>
               </div>
@@ -972,7 +542,7 @@
                 improvement:</p>
 
               <div class="condition-card">
-                <h4 class="condition-title">Distal Clavicle Resection (Mumford Procedure)</h4>
+                <h3 class="condition-title">Distal Clavicle Resection (Mumford Procedure)</h3>
                 <p>The outer end of the collarbone is removed to eliminate painful bone-on-bone contact. Can be done
                   arthroscopically or open. Good results in those with indication.</p>
               </div>
@@ -988,7 +558,7 @@
               <p>The prognosis for AC joint osteoarthritis is generally good with conservative treatment.</p>
 
               <div class="treatment-box">
-                <h4>The Positive:</h4>
+                <h3>The Positive:</h3>
                 <ul>
                   <li>Most achieve good symptom control without surgery</li>
                   <li>93% with weightlifter's shoulder improve with activity modification</li>
@@ -998,7 +568,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>The Realistic:</h4>
+                <h3>The Realistic:</h3>
                 <ul>
                   <li>The wear itself doesn't disappear</li>
                   <li>Symptoms can vary over time</li>
@@ -1024,7 +594,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>For Acute Symptoms</h4>
+                <h3>For Acute Symptoms</h3>
                 <ul>
                   <li>Ice on the AC joint 15-20 minutes several times daily</li>
                   <li>Avoid activities that provoke pain</li>
@@ -1034,7 +604,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Training Modifications</h4>
+                <h3>Training Modifications</h3>
                 <ul>
                   <li>Reduce weight and increase repetitions</li>
                   <li>Avoid deep movements that stretch the AC joint</li>

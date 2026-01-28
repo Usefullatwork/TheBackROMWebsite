@@ -154,71 +154,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-    .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; scroll-margin-top: 100px; }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
-    .hub-section h3 { font-size: 17px; font-weight: 600; color: var(--hub-dark); margin: 24px 0 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 10px; font-size: 15px; }
-    .info-box p { font-size: 14px; color: #1e40af; margin: 0; }
-    .red-flag-alert{ background: #fef2f2; border: 2px solid #fca5a5; border-radius: 10px; padding: 20px; margin: 20px 0; }
-    .red-flag-alert h4 { color: var(--hub-red); margin-bottom: 12px; font-size: 16px; }
-    .red-flag-alert ul { margin: 0; padding-left: 20px; }
-    .red-flag-alert li { color: #991b1b; margin-bottom: 8px; font-weight: 500; }
-    .nerve-box { background: var(--color-amber-light); border: 1px solid #fbbf24; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .nerve-box h4 { color: #92400e; margin-bottom: 10px; font-size: 15px; }
-    .nerve-box ul { margin: 0; padding-left: 20px; }
-    .nerve-box li { color: #78350f; margin-bottom: 6px; font-size: 14px; }
-    .treatment-box { background: #f0fdf4; border: 1px solid #86efac; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 10px; }
-    .treatment-box ul { margin: 0; padding-left: 20px; }
-    .treatment-box li { color: #166534; margin-bottom: 6px; font-size: 14px; }
-    .prognosis-box { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid var(--hub-green); border-radius: 0 10px 10px 0; padding: 18px; margin: 20px 0; }
-    .prognosis-box h4 { color: #166534; margin-bottom: 10px; }
-    .prognosis-box p { color: #166534; margin: 0; font-size: 14px; }
-    .faq-section { margin-top: 32px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 18px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-item h4 { color: var(--hub-dark); margin-bottom: 10px; font-size: 15px; }
-    .faq-item p { color: #4b5563; margin: 0; font-size: 14px; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 16px; }
-    .sources-section p { font-size: 13px; color: #6b7280; margin-bottom: 6px; }
-    .disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 24px; font-size: 13px; color: #6b7280; }
-    @media (max-width: 768px) { .hub-content { padding-bottom: 100px; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -226,7 +162,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -296,7 +232,7 @@
               <p><strong>Nakkeprolaps</strong> (cervikal diskusprolaps) oppstar nær den myke kjernen i en mellomvirvelskive buler ut eller brister gjennom den ytre ringen. Nær dette materialet presser på en nerverot, før du radikulopati.</p>
 
               <div class="info-box">
-                <h4>Viktig distinksjon</h4>
+                <h3>Viktig distinksjon</h3>
                 <p>Du kan ha prolaps på MR uten symptomer, og du kan ha radikulopati uten tydelig prolaps. En japansk studie av 1211 friske personer fant diskusbuktninger hos 87,6% (Nakashima, Spine 2015). Bildediagnostikk må alltid tolkes sammen med kliniske funn.</p>
               </div>
 
@@ -331,22 +267,22 @@
               <h3>Årsaker rangert fra vanligst til sjeldnest</h3>
 
               <div class="condition-card">
-                <h4>Spondylose og foraminal tranghet (68-75%)</h4>
+                <h3>Spondylose og foraminal tranghet (68-75%)</h3>
                 <p>Aldersrelaterte forandringer fører gradvis til at åpningen der nerven passerer blir trangere. Dominerende årsak hos personer over 50 år.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Diskusprolaps (20-25%)</h4>
+                <h3>Diskusprolaps (20-25%)</h3>
                 <p>Akutt bukling av mellomvirvelskiven som presser på nerveroten. Vanligst hos yngre pasienter i 20-40-årene.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Skade/traume (~15%)</h4>
+                <h3>Skade/traume (~15%)</h3>
                 <p><a href="whiplash.html">Whiplash</a>-lignende skader eller andre nakketraumer.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Myofascielle triggerpunkter</h4>
+                <h3>Myofascielle triggerpunkter</h3>
                 <p>Aktive triggerpunkter i øvre trapezius forekommer hos 30-40% av pasienter med kroniske <a href="../nakkesmerter.html">nakkesmerter</a>. Gir utstråling som kan ligne radikulopati.</p>
               </div>
 
@@ -501,7 +437,7 @@
               </table>
 
               <div class="info-box">
-                <h4>Bakody's tegn</h4>
+                <h3>Bakody's tegn</h3>
                 <p>Dersom symptomene lindres nær du legger hånden på hodet (skulderen i abduksjon), tyder det sterkt på at problemet kommer fra nakken. Testen har 80-100% spesifisitet for cervikal radikulopati.</p>
               </div>
             </section>
@@ -516,17 +452,17 @@
               <p>En grundig klinisk undersøkelse er ofte viktigere enn bilder. Kiropraktoren vurderer nakkebevegelighet, muskelkraft, følsomhet og reflekser.</p>
 
               <div class="condition-card">
-                <h4>Spurlings test</h4>
+                <h3>Spurlings test</h3>
                 <p>Nakken ekstenderes, sideflekteres og roteres mot symptomsiden, deretter påføres trykk. Høy spesifisitet på 92%, men sensitivitet på bare 53%. En positiv test styrker mistanken betydelig, men negativ test utelukker ikke tilstanden.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Upper Limb Tension Test (ULTT)</h4>
+                <h3>Upper Limb Tension Test (ULTT)</h3>
                 <p>97% sensitivitet - en negativ test gjør diagnosen usannsynlig. Mange falske positive (22% spesifisitet).</p>
               </div>
 
               <div class="condition-card">
-                <h4>Arm Squeeze Test</h4>
+                <h3>Arm Squeeze Test</h3>
                 <p>96,7% sensitivitet for å skille nakkeproblemer fra skulderproblemer. Klem på midten av overarmen gir smerte ved nakkepatologi, men ikke ved ren skulderpatologi.</p>
               </div>
 
@@ -534,7 +470,7 @@
               <p>MR er ikke rutine og bør forbeholdes: vedvarende symptomer etter 4-6 uker konservativ behandling, progredierende nevrologisk svikt, mistanke om alvorlig underliggende sykdom, eller før eventuell kirurgisk vurdering.</p>
 
               <div class="info-box">
-                <h4>MR-funn hos symptomfrie personer (Brinjikji, AJNR 2015)</h4>
+                <h3>MR-funn hos symptomfrie personer (Brinjikji, AJNR 2015)</h3>
                 <p>Ved 30 år: 52% har diskedegenerasjon, 40% skivebukning<br>
                 Ved 50 år: 80% har diskedegenerasjon, 60% skivebukning<br>
                 Ved 70 år: 93% har diskedegenerasjon, 77% skivebukning</p>
@@ -553,7 +489,7 @@
               <p>En systematisk oversikt fra 2021 fant at manuell behandling viste effekt i alle inkluderte studier, uavhengig av teknikk. Konsensus er at kombinasjonen av manuell terapi og øvelser gir bedre resultater enn hver behandling alene.</p>
 
               <div class="treatment-box">
-                <h4>Behandlingen kan inkludere:</h4>
+                <h3>Behandlingen kan inkludere:</h3>
                 <ul>
                   <li>Leddmobilisering av nakkevirvler og øvre rygg</li>
                   <li>Bløtvevsbehandling av stram muskulatur i nakke og skulder</li>
@@ -583,7 +519,7 @@
               <p>En norsk randomisert studie fra Oslo universitetssykehus (Grotle, NEJM Evidence 2025) med 180 pasienter viste at ved diskusprolaps gå kirurgi statistisk signifikant bedre resultat etter 12 måneder - men dette var under grensen for klinisk betydningsfull endring. Ved spondylose var det ingen forskjell mellom kirurgi og konservativ behandling.</p>
 
               <div class="condition-card">
-                <h4>Operasjon vurderes ved:</h4>
+                <h3>Operasjon vurderes ved:</h3>
                 <ul>
                   <li>Progredierende nevrologisk svikt (åkende svakhet)</li>
                   <li>Tegn til myelopati (ryggmargspåvirkning)</li>
@@ -600,7 +536,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>OPPSåK LEGE ELLER LEGEVAKT VED:</h4>
+                <h3>OPPSåK LEGE ELLER LEGEVAKT VED:</h3>
                 <ul>
                   <li>Gangvansker eller uståhet (tegn på myelopati)</li>
                   <li>Symptomer i begge armer eller bein samtidig</li>
@@ -673,42 +609,42 @@
               </div>
 
               <div class="faq-item">
-                <h4>Kan kiropraktor hjelpe med nerve i klem i nakken?</h4>
+                <h3>Kan kiropraktor hjelpe med nerve i klem i nakken?</h3>
                 <p>Ja. Systematiske oversikter viser moderat evidens for at manuell behandling kombinert med øvelser kan redusere smerte og bedre funksjon. De aller fleste blir bedre uten kirurgi.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Hvor lang tid tar det før cervikal radikulopati går over?</h4>
+                <h3>Hvor lang tid tar det før cervikal radikulopati går over?</h3>
                 <p>De fleste opplever betydelig bedring innen 4-8 uker med behandling. Komplett bedring kan ta 3-6 måneder, og i noen tilfeller opptil 2-3 år. Tidlig behandling ser ut til å gi raskere bedring.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Er MR nødvendig ved nakke- og armsmerter?</h4>
+                <h3>Er MR nødvendig ved nakke- og armsmerter?</h3>
                 <p>Ikke rutinemessig. Klinisk undersøkelse er ofte tilstrekkelig for diagnose og behandling. MR vurderes først ved manglende bedring etter 4-6 uker, tegn til alvorlig sykdom, eller før kirurgisk vurdering. Husk at 87,6% av symptomfrie har skivebuktninger på MR.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Hva er forskjellen på prolaps og slitasje i nakken?</h4>
+                <h3>Hva er forskjellen på prolaps og slitasje i nakken?</h3>
                 <p>Prolaps er en akutt utbuling av mellomvirvelskiven som presser på nerven. Slitasje (spondylose) er gradvis aldersrelatert tranghet av nervekanalen. Slitasje er mye vanligere (68-75% vs. 20-25%) og ses hovedsakelig hos personer over 50 år.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Hvordan vet jeg om det er nakken eller karpaltunnel?</h4>
+                <h3>Hvordan vet jeg om det er nakken eller karpaltunnel?</h3>
                 <p>Nakkeproblemer gir ofte nakkesmerter, påvirker håndrygg (ikke bare håndflate), kan gi refleksendringer, og har sjeldnere nattlige symptomer. Karpaltunnelsyndrom gir typisk våkner-om-natten-symptomer som bedres av å riste hendene.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Kan jeg trene med nerve i klem?</h4>
+                <h3>Kan jeg trene med nerve i klem?</h3>
                 <p>Ja, men tilpass aktiviteten. Unngå øvelser som forverrer armsmertene. Generell kondisjonstrening og spesifikke nakkeøvelser anbefales - gjerne i samråd med kiropraktor eller fysioterapeut.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Nær bør jeg vurdere operasjon?</h4>
+                <h3>Nær bør jeg vurdere operasjon?</h3>
                 <p>Kirurgi er aktuelt ved progredierende nevrologisk svikt, vedvarende betydelige plager etter 8-12 uker konservativ behandling, eller tegn til ryggmargspåvirkning (myelopati). Hos de fleste er konservativ behandling tilstrekkelig.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Kan tilstanden komme tilbake?</h4>
+                <h3>Kan tilstanden komme tilbake?</h3>
                 <p>Ja, tilbakefall forekommer hos ca. 32% over 5 år. God nakkeergonomi, vedlikeholdsøvelser og tidlig behandling ved nye episoder kan redusere risikoen for langvarige plager.</p>
               </div>
             </section>

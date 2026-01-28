@@ -130,71 +130,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .premium-summary-card {
-      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-      border-left: 4px solid var(--hub-primary);
-      border-radius: 0 10px 10px 0;
-      padding: 18px;
-      align-self: start;
-    }
-    .premium-summary-card h3 { font-size: 15px; color: var(--hub-dark); margin-bottom: 12px; }
-    .premium-summary-card ul { list-style: none; padding: 0; margin: 0; }
-    .premium-summary-card li { padding: 5px 0 5px 22px; position: relative; font-size: 13px; line-height: 1.5; }
-    .premium-summary-card li::before { content: attr(data-icon); position: absolute; left: 0; font-size: 12px; }
-    .premium-summary-card .btn-small {
-      display: block;
-      background: var(--hub-primary);
-      color: #fff;
-      padding: 10px 14px;
-      border-radius: 6px;
-      font-weight: 700;
-      text-decoration: none;
-      text-align: center;
-      font-size: 13px;
-      margin-top: 14px;
-    }
-    .premium-summary-card .btn-small:hover { background: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -202,7 +138,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -284,7 +220,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Tension Headache</h4>
+                  <h3 class="condition-title">Tension Headache</h3>
                   <span class="condition-badge">Most common - 46% lifetime</span>
                 </div>
                 <p><a href="tension-headache.html">Tension headache</a> is by far the most common cause of headache on top of the head. Lifetime prevalence is 46% globally, and Danish studies show up to 78%. Women are affected twice as often as men.</p>
@@ -294,7 +230,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Trigger Points in Neck Musculature</h4>
+                  <h3 class="condition-title">Trigger Points in Neck Musculature</h3>
                   <span class="condition-badge">Referred pain</span>
                 </div>
                 <p>Muscles in the neck can refer pain to the top of the head through a phenomenon called "referred pain." Read more about <a href="trigger-points-headache.html">trigger points and headache</a>.</p>
@@ -304,7 +240,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Cervicogenic Headache</h4>
+                  <h3 class="condition-title">Cervicogenic Headache</h3>
                   <span class="condition-badge">2.5-4.1% of population</span>
                 </div>
                 <p><a href="neck-headache.html">Cervicogenic headache</a> is caused by dysfunction in the upper cervical vertebrae (C1-C3) and surrounding structures. The Norwegian Vaga study found 4.1% prevalence.</p>
@@ -313,7 +249,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Occipital Neuralgia</h4>
+                  <h3 class="condition-title">Occipital Neuralgia</h3>
                   <span class="condition-badge">Rare</span>
                 </div>
                 <p><a href="occipital-neuralgia.html">Occipital neuralgia</a> causes sharp, shooting pain from the <a href="headache-back-of-head.html">back of the head</a> that can radiate to the top of the head. The pain follows the course of the occipital nerve and is often unilateral with periods of intense "lightning-like" pain.</p>
@@ -321,7 +257,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Medication Overuse Headache</h4>
+                  <h3 class="condition-title">Medication Overuse Headache</h3>
                   <span class="condition-badge">0.5-7.2%</span>
                 </div>
                 <p>With frequent use of pain relievers - especially paracetamol, NSAIDs or triptans more than 10-15 days per month - headache can paradoxically worsen and become daily. Read more about <a href="medication-overuse-headache.html">medication overuse headache</a>.</p>
@@ -353,7 +289,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Splenius Capitis - pain to the crown</h4>
+                <h3>Splenius Capitis - pain to the crown</h3>
                 <p>Common causes of splenius trigger points are working with multiple monitors (requires head rotation), forward head posture and sleeping on the stomach with a thick pillow.</p>
               </div>
             </section>
@@ -380,7 +316,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>CONTACT A DOCTOR OR EMERGENCY ROOM IMMEDIATELY IF:</h4>
+                <h3>CONTACT A DOCTOR OR EMERGENCY ROOM IMMEDIATELY IF:</h3>
                 <ul>
                   <li><strong>Sudden, intense headache</strong> ("the worst headache of my life") - may be brain hemorrhage</li>
                   <li><strong>Neurological symptoms:</strong> Visual disturbances, double vision, numbness, weakness, speech difficulties</li>
@@ -403,35 +339,35 @@
               <p>Treatment of headache on top of the head focuses on the underlying causes - especially neck structures and musculature.</p>
 
               <div class="condition-card">
-                <h4>For Cervicogenic Headache</h4>
+                <h3>For Cervicogenic Headache</h3>
                 <p>Manual treatment has moderate evidence for short-term effect. A 2022 systematic review with 20 studies and 1439 patients found large effect on pain intensity in the short term compared to placebo.</p>
                 <p><strong>Important to note:</strong> At 12-month follow-up, manual treatment alone did not show better effect than placebo. Neck exercises, however, showed sustained effect.</p>
               </div>
 
               <div class="condition-card">
-                <h4>For Tension Headache</h4>
+                <h3>For Tension Headache</h3>
                 <p>Evidence for manual treatment is more limited. 2011 guidelines concluded that manipulation cannot be recommended for episodic tension headache, but that low-intensity mobilization may be useful for chronic problems.</p>
               </div>
 
               <h3>What Can You Do Yourself?</h3>
 
               <div class="condition-card">
-                <h4>Posture Correction</h4>
+                <h3>Posture Correction</h3>
                 <p>Avoid forward head posture during screen work. Make sure the screen is at eye level and take regular breaks.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Neck Exercises</h4>
+                <h3>Neck Exercises</h3>
                 <p>Gentle stretches and strengthening exercises for the neck have documented effect. Especially exercises that strengthen the deep neck flexors can be useful.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Stress Management</h4>
+                <h3>Stress Management</h3>
                 <p>For tension headache, relaxation, mindfulness or other stress management techniques can help.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Limit Pain Medication</h4>
+                <h3>Limit Pain Medication</h3>
                 <p>Avoid daily use of paracetamol or NSAIDs to prevent medication overuse headache.</p>
               </div>
 

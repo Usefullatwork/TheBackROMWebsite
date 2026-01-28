@@ -155,118 +155,7 @@
   <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-toc-card a { display: block; padding: 10px 14px; color: #475569; text-decoration: none; border-radius: 8px; font-size: 14px; transition: all 0.2s ease; border-left: 3px solid transparent; }
-    .hub-toc-card a:hover { background: #e2e8f0; color: var(--hub-primary); }
-    .hub-toc-card a.active { background: #e0f2fe; color: var(--hub-primary); border-left-color: var(--hub-primary); font-weight: 500; }
-    .hub-intro { margin-bottom: 48px; }
-    .hub-intro h1 { font-size: 2.5rem; color: var(--hub-dark); margin-bottom: 24px; line-height: 1.2; }
-    .intro-text { font-size: 1.1rem; line-height: 1.8; color: #374151; }
-    .intro-text p { margin-bottom: 16px; }
-    .key-points { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--hub-primary); }
-    .key-points h3 { color: var(--hub-dark); margin-bottom: 16px; font-size: 1.1rem; }
-    .key-points ul { margin: 0; padding-left: 20px; }
-    .key-points li { margin-bottom: 10px; color: #334155; line-height: 1.5; }
-    .hub-section { margin-bottom: 48px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.2rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 16px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 12px; font-size: 1.1rem; }
-    .condition-card ul { margin: 12px 0; padding-left: 20px; }
-    .condition-card li { margin-bottom: 6px; color: #4b5563; }
-    .condition-badge { background: var(--hub-primary); color: white; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; }
-    .condition-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; }
-    .condition-title { font-size: 16px; font-weight: 700; color: var(--hub-dark); margin: 0; }
-    .condition-link { color: var(--hub-primary); font-weight: 600; font-size: 13px; display: inline-block; margin-top: 8px; text-decoration: none; }
-    .condition-link:hover { text-decoration: underline; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .treatment-box ul { margin: 0; padding-left: 20px; }
-    .treatment-box li { margin-bottom: 8px; color: #065f46; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 24px; margin: 24px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 16px; }
-    .red-flag-box ul { margin: 0; padding-left: 20px; }
-    .red-flag-box li { margin-bottom: 10px; color: #7f1d1d; font-weight: 500; }
-    .referral-box { background: #f5f3ff; border: 1px solid #d8b4fe; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .referral-box ul { margin: 0; padding-left: 20px; }
-    .referral-box li { margin-bottom: 8px; color: #5b21b6; }
-    .balance-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 20px 0; }
-    .balance-item { text-align: center; padding: 20px; background: #f8fafc; border-radius: 10px; border: 1px solid #e2e8f0; }
-    .balance-item .icon { font-size: 2rem; margin-bottom: 8px; }
-    .balance-item h4 { color: var(--hub-dark); margin: 0 0 6px; font-size: 15px; }
-    .balance-item p { font-size: 13px; margin: 0; color: #6b7280; }
-    .five-ds-box { background: #fffbeb; border: 1px solid #fbbf24; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .five-ds-box h4 { color: #b45309; margin: 0 0 10px; font-size: 15px; }
-    .five-ds-box ul { margin: 0; padding-left: 20px; }
-    .five-ds-box li { font-size: 14px; margin-bottom: 4px; }
-    .symptom-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin: 16px 0; }
-    .symptom-list li { background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--hub-primary); list-style: none; color: #334155; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-item h4 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.05rem; }
-    .faq-item p { color: #4b5563; margin: 0; line-height: 1.6; }
-    .hub-cta { background: linear-gradient(135deg, var(--hub-primary) 0%, var(--hub-dark) 100%); color: white; border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
-    .hub-cta h3 { color: white !important; font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; }
-    .hub-cta p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
-    .hub-cta .button { background: white; color: var(--hub-primary); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s ease; }
-    .hub-cta .button:hover { transform: translateY(-2px); }
-    .related-box { background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 32px; }
-    .related-box h3 { color: var(--hub-dark); margin-bottom: 16px; }
-    .related-box a { display: block; padding: 12px 0; color: var(--hub-primary); text-decoration: none; border-bottom: 1px solid #e5e7eb; transition: padding-left 0.2s ease; }
-    .related-box a:last-child { border-bottom: none; }
-    .related-box a:hover { padding-left: 8px; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 16px 20px; z-index: 100; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); }
-    .mobile-sticky-cta a { display: block; background: white; color: #F26522; text-align: center; padding: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; }
-    @media (max-width: 900px) {
-      .hub-wrapper { flex-direction: column; padding: 20px; }
-      .hub-sidebar { display: none; }
-      .hub-main { max-width: 100%; padding-bottom: 100px; }
-      .hub-intro h1 { font-size: 1.8rem; }
-      .mobile-sticky-cta { display: block; }
-      .stat-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    .medical-disclaimer { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 32px; font-size: 0.85rem; color: #64748b; }
-    .sources-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 16px; }
-    .sources-section p { font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
-    .section-quick-link { margin: 0 0 16px; }
-    .section-quick-link a { color: var(--hub-primary); font-weight: 600; font-size: 0.95rem; text-decoration: none; }
-    .section-quick-link a:hover { text-decoration: underline; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -274,7 +163,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -329,7 +218,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Symptom</strong> - ikke sykdom - med mange mulige Årsaker</li>
                 <li><strong>Vanligst:</strong> Krystallsyke (BPPV) 17-42% av tilfellene</li>
@@ -374,7 +263,7 @@
 
             <!-- Red Flag Alert Box - Immediately Visible -->
             <div class="red-flag-alert">
-              <h4>Når må du ringe 113 eller dra til legevakt?</h4>
+              <h3>Når må du ringe 113 eller dra til legevakt?</h3>
               <p>Ved plutselig kraftig svimmelhet sammen med talevansker, ansiktslammelse, lammelse i arm/ben, eller dobbeltsyn - søk hjelp umiddelbart.</p>
               <a href="../blogg/sentral-svimmelhet.html">Les mer om røde flagg</a>
             </div>
@@ -468,7 +357,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Krystallsyke (BPPV)</h4>
+                <h3 class="condition-title">Krystallsyke (BPPV)</h3>
                 <span class="condition-badge">17-42% av tilfellene</span>
               </div>
               <p class="section-quick-link"><a href="svimmelhet/krystallsyke-bppv.html">Gå til full artikkel om krystallsyke (BPPV) &rarr;</a></p>
@@ -484,7 +373,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Vestibular migrene</h4>
+                <h3 class="condition-title">Vestibular migrene</h3>
                 <span class="condition-badge">ca. 1-3% av befolkningen</span>
               </div>
               <p class="section-quick-link"><a href="svimmelhet/vestibulaer-migrene.html">Gå til full artikkel om vestibular migrene &rarr;</a></p>
@@ -493,7 +382,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Vestibularisnevritt</h4>
+                <h3 class="condition-title">Vestibularisnevritt</h3>
                 <span class="condition-badge">3-10% i svimmelhetsklinikker</span>
               </div>
               <p class="section-quick-link"><a href="svimmelhet/vestibularisnevritt.html">Gå til full artikkel om vestibularisnevritt &rarr;</a></p>
@@ -502,14 +391,14 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Ortostatisk hypotensjon</h4>
+                <h3 class="condition-title">Ortostatisk hypotensjon</h3>
               </div>
               <p>Fall i blodtrykket når du reiser deg som midlertidig reduserer blodtilførsel til hjernen. Gir svartning for øynene og kort svimmelhet. Vanligvis ufarlig og bedres ved å reise seg saktere.</p>
             </div>
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Cervikogen svimmelhet</h4>
+                <h3 class="condition-title">Cervikogen svimmelhet</h3>
               </div>
               <p class="section-quick-link"><a href="svimmelhet/nakkesvimmelhet.html">Gå til full artikkel om nakkesvimmelhet &rarr;</a></p>
               <p>Her må man være ærlig: Cervikogen svimmelhet er kontroversiell. Barany Society publiserte i 2022 et standpunkt der de "avstar fra å foreslå diagnostiske kriterier for klinisk bruk" på grunn av manglende dokumentasjon for en mekanistisk kobling.</p>
@@ -518,7 +407,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Menieres sykdom</h4>
+                <h3 class="condition-title">Menieres sykdom</h3>
               </div>
               <p class="section-quick-link"><a href="svimmelhet/menieres-sykdom.html">Gå til full artikkel om Menieres sykdom &rarr;</a></p>
               <p>Kronisk tilstand i det indre øret med anfallsvis svimmelhet, fluktuerende hørseltap, øresus og trykkfølelse i øret. Menieres er omtrent 10 ganger sjeldnere enn BPPV (Neuhauser, 2016). Krever evaluering av ONH-spesialist.</p>
@@ -526,7 +415,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">PPPD</h4>
+                <h3 class="condition-title">PPPD</h3>
               </div>
               <p class="section-quick-link"><a href="svimmelhet/pppd-kronisk-svimmelhet.html">Gå til full artikkel om PPPD (kronisk svimmelhet) &rarr;</a></p>
               <p>Persistent Postural-Perceptual Dizziness. Kronisk funksjonell svimmelhetstilstand som ofte utvikler seg etter en akutt vestibular episode. Klassifisert av Barany Society som en funksjonell - ikke psykiatrisk - lidelse (2017). Daglig svimmelhet over minst 3 måneder.</p>
@@ -534,7 +423,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Vestibular hypofunksjon</h4>
+                <h3 class="condition-title">Vestibular hypofunksjon</h3>
               </div>
               <p class="section-quick-link"><a href="svimmelhet/vestibulaer-hypofunksjon.html">Gå til full artikkel om vestibular hypofunksjon &rarr;</a></p>
               <p>Nedsatt eller tapt funksjon i balanseorganet - enten på en side (ensidig) eller begge sider (tosidig). Ved ensidig er vestibularisnevritt vanligste årsak. Vestibular rehabilitering har sterk evidens.</p>
@@ -542,7 +431,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Svimmelhet etter hjernerystelse</h4>
+                <h3 class="condition-title">Svimmelhet etter hjernerystelse</h3>
               </div>
               <p class="section-quick-link"><a href="svimmelhet/post-hjernerystelse.html">Gå til full artikkel om plager etter hjernerystelse &rarr;</a></p>
               <p>50-84% opplever svimmelhet etter hjernerystelse. Post-Commotio Syndrom (PCS) oppstar når symptomene vedvarer over 3 måneder. 73% tilbake i aktivitet innen 8 uker med vestibular rehabilitering.</p>
@@ -550,7 +439,7 @@
 
             <div class="condition-card">
               <div class="condition-header">
-                <h4 class="condition-title">Nakkesleng (Whiplash) og svimmelhet</h4>
+                <h3 class="condition-title">Nakkesleng (Whiplash) og svimmelhet</h3>
               </div>
               <p class="section-quick-link"><a href="svimmelhet/whiplash-svimmelhet.html">Gå til full artikkel om nakkesleng og svimmelhet &rarr;</a></p>
               <p>40-70% av de med vedvarende nakkeslengplager opplever svimmelhet. Kan ha både cervikogen komponent og vestibular dysfunksjon. Multimodal behandling med manuell terapi og øvelser har sterk evidens.</p>
@@ -570,7 +459,7 @@
             <h3>Tilstander med sterk dokumentasjon</h3>
 
             <div class="treatment-box">
-              <h4>Krystallsyke (BPPV)</h4>
+              <h3>Krystallsyke (BPPV)</h3>
               <p class="section-quick-link"><a href="svimmelhet/krystallsyke-bppv.html">Gå til full artikkel om krystallsyke (BPPV) &rarr;</a></p>
               <p>Her har jeg solid evidens. Reposisjonsmanøvrer som Epley og Semont har suksessrater på 80-90% (StatPearls, 2024). Mange pasienter merker umiddelbar bedring etter første behandling.</p>
               <p style="margin-top: 8px;">Nyere data fra 2023 viser at horisontal buegang-BPPV er langt vanligere enn tidligere antatt - opptil 46% av tilfellene (Frontiers in Neurology, 2023).</p>
@@ -695,42 +584,42 @@
             </div>
 
             <div class="faq-item">
-              <h4>Trenger jeg henvisning fra lege?</h4>
+              <h3>Trenger jeg henvisning fra lege?</h3>
               <p>Nei. Kiropraktorer har siden 2006 status som primærkontakt i Norge. Du kan bestille time direkte. Jeg kan også henvise deg videre til spesialist hvis nødvendig.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Hvor mange behandlinger trenger jeg?</h4>
+              <h3>Hvor mange behandlinger trenger jeg?</h3>
               <p>Ved BPPV: Ofte 1-3 behandlinger. De fleste merker bedring etter første gang. Ved andre tilstander: Vanligvis 4-8 uker med behandling og øvelser.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Kan svimmelhet komme tilbake?</h4>
+              <h3>Kan svimmelhet komme tilbake?</h3>
               <p>Ja, spesielt BPPV. Rundt 30% opplever nye episoder innen 1 år, og opptil 50% innen 5 år (Brandt, J Neurol, 2006). D-vitamintilskudd og hjemmeøvelser kan potensielt redusere risikoen.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Trenger jeg MR eller CT?</h4>
+              <h3>Trenger jeg MR eller CT?</h3>
               <p>I de fleste tilfeller er klinisk undersøkelse tilstrekkelig. Bildediagnostikk er kun nødvendig ved røde flagg, mistanke om sentral årsak, eller når behandling ikke gir forventet effekt.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Hjelper medisiner?</h4>
+              <h3>Hjelper medisiner?</h3>
               <p>Medisiner kurerer ikke BPPV - det er et mekanisk problem som krever mekanisk løsning. Vestibulære suppressanter kan brukes kort i akuttfasen, men forsinker hjernens kompensasjon.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Er nakkebehandling farlig?</h4>
+              <h3>Er nakkebehandling farlig?</h3>
               <p>Vertebral arterie-disseksjon er en svært sjelden, men alvorlig komplikasjon. Før behandling gjennomfører jeg screening for vaskulare risikofaktorer. Ved mistanke om vaskular problematikk henviser jeg uten å behandle.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Kan jeg trene med svimmelhet?</h4>
+              <h3>Kan jeg trene med svimmelhet?</h3>
               <p>Ja, tilpasset aktivitet er viktig. Unngå kun bevegelser som gir kraftig forverring. Lett kardiotrening (gange, sykling) er bra. Vær forsiktig med yoga-posisjoner med ekstrem nakkeekstensjon.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Hva er forskjellen på kiropraktor og fysioterapeut for svimmelhet?</h4>
+              <h3>Hva er forskjellen på kiropraktor og fysioterapeut for svimmelhet?</h3>
               <p>Begge kan utføre vestibular rehabilitering og reposisjonsmanøvrer. Kiropraktorer har i tillegg kompetanse på leddbehandling i nakke. Ved kompleks PPPD kan fysioterapeut med vestibular spesialisering være mest hensiktsmessig.</p>
             </div>
           </section>

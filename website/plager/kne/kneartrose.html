@@ -146,140 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .condition-card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 14px 0;
-      transition: all 0.2s;
-    }
-    .condition-card:hover { border-color: var(--hub-primary); box-shadow: 0 4px 12px rgba(26, 95, 122, 0.12); }
-    .condition-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; }
-    .condition-title { font-size: 16px; font-weight: 700; color: var(--hub-dark); margin: 0; }
-    .condition-card p { font-size: 14px; margin-bottom: 10px; }
-    .condition-card ul { margin: 10px 0; padding-left: 20px; }
-    .condition-card li { font-size: 13px; margin-bottom: 4px; }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-    .red-flag-box .note { font-style: italic; margin-top: 12px; color: #991b1b; font-size: 13px; }
-
-    .treatment-box {
-      background: #ecfdf5;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p { font-size: 14px; margin: 0 0 8px; color: #166534; }
-    .treatment-box ul { margin: 8px 0 0 0; padding-left: 20px; }
-    .treatment-box li { font-size: 14px; margin-bottom: 4px; color: #166534; }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p { font-size: 14px; margin: 0; color: #1e3a8a; }
-    .info-box ul { margin: 8px 0 0 0; padding-left: 20px; color: #1e3a8a; }
-    .info-box li { font-size: 14px; margin-bottom: 4px; }
-
-    .myth-box {
-      background: linear-gradient(135deg, var(--color-amber-light) 0%, #fde68a 100%);
-      border: 2px solid var(--color-amber);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-    .myth-box h4 { color: #92400e; font-size: 15px; margin: 0 0 12px; }
-    .myth-box p { font-size: 14px; margin-bottom: 8px; color: #78350f; }
-    .myth-box strong { color: #92400e; }
-
-    .research-box {
-      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
-      border: 2px solid #10b981;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-    .research-box h4 { color: #047857; font-size: 15px; margin: 0 0 12px; }
-    .research-box p { font-size: 14px; margin-bottom: 8px; color: #065f46; }
-    .research-box strong { color: #047857; }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .sources-section { margin-top: 28px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer { font-size: 12px; color: #6b7280; font-style: italic; margin: 20px 0; padding: 14px; background: #f9fafb; border-radius: 8px; }
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -287,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -338,7 +205,7 @@
 
             <!-- Premium Summary Card -->
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>75%</strong> kan unngå protese med trening</li>
                 <li>Låping ruinerer IKKE kneet</li>
@@ -389,7 +256,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Viktig å forstå</h4>
+                <h3>Viktig å forstå</h3>
                 <p>Røntgenforandringer korrelerer dørlig med symptomer. Mange med betydelige forandringer på bilder har lite smerter, mens andre med minimale funn kan ha store plager. Behandlingen bør derfor baseres på <strong>symptomer og funksjon</strong>, ikke bare bilder.</p>
               </div>
             </section>
@@ -417,21 +284,21 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Tidlig fase</h4>
+                  <h3 class="condition-title">Tidlig fase</h3>
                 </div>
                 <p>Periodiske smerter ved belastning. Lett morgenstivhet. Full funksjon mellom episoder.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Moderat fase</h4>
+                  <h3 class="condition-title">Moderat fase</h3>
                 </div>
                 <p>Hyppigere smerter. Vansker med trapper og lange gaturerutiner. Mulig nattsmerter. Her er trening spesielt effektivt!</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Sen fase</h4>
+                  <h3 class="condition-title">Sen fase</h3>
                 </div>
                 <p>Konstante smerter. Betydelig funksjonstap. Hvile-/nattsmerter. Protese kan vurderes hvis konservativ behandling er uttomt.</p>
               </div>
@@ -490,7 +357,7 @@
               <h3>AktivA-programmet</h3>
 
               <div class="treatment-box">
-                <h4>Strukturert treningsprogram</h4>
+                <h3>Strukturert treningsprogram</h3>
                 <p>AktivA er et evidensbasert program utviklet i Sverige og tilpasset i Norge. Det kombinerer:</p>
                 <ul>
                   <li><strong>Pasientopplæring:</strong> Forstå hva artrose er og hvorfor trening hjelper</li>
@@ -511,7 +378,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Eksempel på øvelser</h4>
+                <h3>Eksempel på øvelser</h3>
                 <ul>
                   <li>Kneboyninger (tilpasset dybde)</li>
                   <li>Benstrekk i maskin eller med strikk</li>
@@ -536,7 +403,7 @@
 
               <h3>Manuell behandling</h3>
               <div class="treatment-box">
-                <h4>Kiropraktikk og mobilisering</h4>
+                <h3>Kiropraktikk og mobilisering</h3>
                 <ul>
                   <li>Mobilisering av kneleddet for å bedre bevegelighet</li>
                   <li>Behandling av stram muskulatur rundt kneet, inkludert <a href="iliotibial-band-syndrom.html">iliotibial band</a></li>
@@ -553,7 +420,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Hva med kosttilskudd?</h4>
+                <h3>Hva med kosttilskudd?</h3>
                 <p>Glukosamin og kondroitin er mye brukt, men forskningen viser <strong>liten til ingen effekt</strong> utover placebo for de fleste. Pengene brukes bedre på trening og eventuelt fysioterapi.</p>
               </div>
             </section>
@@ -579,21 +446,21 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Alder</h4>
+                  <h3 class="condition-title">Alder</h3>
                 </div>
                 <p>Proteser har begrenset levetid (15-25 år). Jo yngre du er, desto større sannsynlighet for at du trenger revisjonskirurgi senere. Ideelt sett bør man være over 60-65 år.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Forventninger</h4>
+                  <h3 class="condition-title">Forventninger</h3>
                 </div>
                 <p>En protese gjør deg ikke "som ny". De fleste opplever betydelig smertelindring, men det er begrensninger. 10-20% er ikke helt fornåyd etter operasjon.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Rehabilitering</h4>
+                  <h3 class="condition-title">Rehabilitering</h3>
                 </div>
                 <p>Operasjon krever 3-6 måneders aktiv rehabilitering. De som trener godt før operasjon, før ofte bedre resultat etter.</p>
               </div>
@@ -638,7 +505,7 @@
               </ul>
 
               <div class="treatment-box">
-                <h4>Nåkkel til suksess</h4>
+                <h3>Nåkkel til suksess</h3>
                 <p>Regelmessighet er viktigere enn intensitet. 20-30 minutter daglig aktivitet er bedre enn en hard økt en gang i uka. Finn aktiviteter du liker - da er det lettere å opprettholde.</p>
               </div>
             </section>
@@ -660,7 +527,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Faktorer som gir bedre prognose</h4>
+                <h3>Faktorer som gir bedre prognose</h3>
                 <ul>
                   <li>Regelmessig fysisk aktivitet</li>
                   <li>Normal kroppsvekt</li>

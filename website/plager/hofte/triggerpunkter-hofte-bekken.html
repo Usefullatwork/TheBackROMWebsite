@@ -106,92 +106,14 @@
 
     <link rel="stylesheet" href="../../css/conditions-combined.min.css?v=20260118">
     <link rel="stylesheet" href="../../css/hub-article.css">
-    <style>
-        :root {
-            --hub-primary: #1a5f7a;
-            --hub-dark: #0d3d4d;
-            --hub-light: #f0f7fa;
-            --hub-red: #c0392b;
-            --hub-green: #27ae60;
-            --hub-blue: #2980b9;
-            --hub-purple: #8e44ad;
-            --hub-orange: #e67e22;
-            --hub-gray: #7f8c8d;
-        }
-        .hub-wrapper{display:grid;grid-template-columns:1fr 280px;gap:3rem;max-width:1400px;margin:0 auto;padding:2rem}
-        .hub-main{max-width:900px}
-        .hub-sidebar{position:sticky;top:100px;height:fit-content;background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.08)}
-        .hub-sidebar h3{font-size:1rem;margin-bottom:1rem;color:var(--hub-dark);border-bottom:2px solid var(--hub-primary);padding-bottom:.5rem}
-        .hub-sidebar ul{list-style:none;padding:0;margin:0}
-        .hub-sidebar li{margin-bottom:.5rem}
-        .hub-sidebar a{color:#555;text-decoration:none;font-size:.9rem;display:block;padding:.4rem .8rem;border-radius:6px;transition:all .2s}
-        .hub-sidebar a:hover,.hub-sidebar a.active{background:var(--hub-light);color:var(--hub-primary);font-weight:600}
-        .hub-section{margin-bottom:3rem;scroll-margin-top:100px}
-        .hub-section h2{display:flex;align-items:center;gap:1rem;color:var(--hub-dark);font-size:1.8rem;margin-bottom:1.5rem}
-        .section-number{background:var(--hub-primary);color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}
-        .intro-text{font-size:1.1rem;line-height:1.8;color:#444;margin-bottom:2rem}
-        .intro-text p{margin-bottom:1rem}
-        .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin:2rem 0}
-        .stat-box{background:linear-gradient(135deg,var(--hub-primary),var(--hub-dark));color:#fff;padding:1.5rem;border-radius:12px;text-align:center}
-        .stat-box .number{font-size:2rem;font-weight:700;display:block}
-        .stat-box .label{font-size:.85rem;opacity:.9;margin-top:.3rem}
-        .muscle-card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 3px 15px rgba(0,0,0,.08);border-top:4px solid var(--hub-primary)}
-        .muscle-card h4{color:var(--hub-primary);margin-bottom:1rem;font-size:1.2rem}
-        .muscle-card .location{font-weight:500;color:#555;margin-bottom:.5rem}
-        .muscle-card .referred-pain{color:var(--hub-red);font-weight:500;margin-bottom:.5rem}
-        .muscle-card p{margin-bottom:.5rem;color:#555;line-height:1.6}
-        .info-box{background:var(--hub-light);border-radius:10px;padding:1.5rem;margin:1.5rem 0;border-left:4px solid var(--hub-blue)}
-        .info-box h4{color:var(--hub-blue);margin-bottom:.8rem;display:flex;align-items:center;gap:.5rem}
-        .red-flag-box{background:#fef5f5;border-radius:10px;padding:1.5rem;margin:1.5rem 0;border-left:4px solid var(--hub-red)}
-        .red-flag-box h4{color:var(--hub-red);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
-        .red-flag-box ul{margin:0;padding-left:1.5rem}
-        .red-flag-box li{margin-bottom:.5rem;color:#555}
-        .treatment-box{background:#f0faf5;border-radius:10px;padding:1.5rem;margin:1rem 0;border-left:4px solid var(--hub-green)}
-        .treatment-box h4{color:var(--hub-green);margin-bottom:.8rem}
-        .diagnostic-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.9rem}
-        .diagnostic-table th{background:var(--hub-primary);color:white;padding:.75rem;text-align:left}
-        .diagnostic-table td{padding:.75rem;border-bottom:1px solid #ddd;vertical-align:top}
-        .diagnostic-table tr:nth-child(even){background:var(--hub-light)}
-        .faq-item{background:#fff;border-radius:10px;margin-bottom:1rem;box-shadow:0 2px 10px rgba(0,0,0,.05);overflow:hidden}
-        .faq-item h3{background:var(--hub-light);padding:1.2rem 1.5rem;margin:0;font-size:1.1rem;color:var(--hub-dark)}
-        .faq-item .answer{padding:1.5rem;color:#555;line-height:1.7}
-        .hub-cta{background:linear-gradient(135deg,var(--hub-primary),var(--hub-dark));color:#fff;border-radius:16px;padding:3rem;text-align:center;margin-top:3rem}
-        .hub-cta h2{color:#fff;margin-bottom:1rem}
-        .hub-cta p{opacity:.9;margin-bottom:2rem;font-size:1.1rem}
-        .hub-cta .button{background:#fff;color:var(--hub-primary);padding:1rem 2.5rem;border-radius:30px;text-decoration:none;font-weight:700;display:inline-block;transition:transform .2s}
-        .hub-cta .button:hover{transform:scale(1.05)}
-        .related-box{background:#fff;border-radius:12px;padding:1.5rem;margin:2rem 0;box-shadow:0 3px 15px rgba(0,0,0,.08)}
-        .related-box h4{color:var(--hub-dark);margin-bottom:1rem}
-        .related-box ul{list-style:none;padding:0;margin:0}
-        .related-box li{margin-bottom:.8rem}
-        .related-box a{color:var(--hub-primary);text-decoration:none;display:flex;align-items:center;gap:.5rem}
-        .related-box a:hover{text-decoration:underline}
-        .mobile-sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#F26522;padding:1rem;text-align:center;z-index:100;box-shadow:0 -4px 20px rgba(0,0,0,.15)}
-        .mobile-sticky-cta a{color:#fff;text-decoration:none;font-weight:700;font-size:1.1rem}
-        @media(max-width:1024px){
-            .hub-wrapper{grid-template-columns:1fr;padding:1rem}
-            .hub-sidebar{display:none}
-            .mobile-sticky-cta{display:block}
-        }
-        @media(max-width:600px){
-            .stat-grid{grid-template-columns:repeat(2,1fr)}
-            .hub-section h2{font-size:1.4rem}
-            .section-number{width:32px;height:32px;font-size:.9rem}
-        }
-
-        .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-        .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-        .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-        .location-content { padding: 20px 24px; }
-        .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-    </style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 <body id="top">
   <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -272,7 +194,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Myofasciell smertesyndrom</h4>
+              <h3>Myofasciell smertesyndrom</h3>
               <p>
                 Når triggerpunkter gir vedvarende smerte og funksjonsbegrensning, kalles tilstanden
                 <strong>myofasciell smertesyndrom</strong>. Dette er en av de vanligste årsakene til
@@ -335,7 +257,7 @@
             <h2><span class="section-number">3</span> Hvorfor utvikles triggerpunkter?</h2>
 
             <div class="treatment-box">
-              <h4>Akutte utløsende faktorer</h4>
+              <h3>Akutte utløsende faktorer</h3>
               <ul>
                 <li><strong>Akutt overbelastning:</strong> Løfte noe tungt, uvant aktivitet</li>
                 <li><strong>Direkte traume:</strong> Fall, slag mot muskelen</li>
@@ -344,7 +266,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Kroniske vedlikeholdsfaktorer</h4>
+              <h3>Kroniske vedlikeholdsfaktorer</h3>
               <ul>
                 <li><strong>Langvarig stillesitting:</strong> Forkorter hoftefleksorer</li>
                 <li><strong>Repetitive bevegelser:</strong> Samme aktivitet dag etter dag</li>
@@ -417,7 +339,7 @@
             </p>
 
             <div class="info-box">
-              <h4>Kliniske kriterier</h4>
+              <h3>Kliniske kriterier</h3>
               <ol>
                 <li><strong>Palpabel knute:</strong> Følbar stram bånd i muskelen</li>
                 <li><strong>Punktømhet:</strong> Markert smerte ved trykk på knutepunktet</li>
@@ -428,7 +350,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Kiropraktorens tilnærming</h4>
+              <h3>Kiropraktorens tilnærming</h3>
               <p>
                 En grundig undersøkelse inkluderer systematisk palpasjon av alle relevante muskler,
                 testing av refererte smertemønstre, og utelukkelse av andre Årsaker.
@@ -443,7 +365,7 @@
             <h2><span class="section-number">6</span> Behandling av triggerpunkter</h2>
 
             <div class="treatment-box">
-              <h4>Manuelle teknikker</h4>
+              <h3>Manuelle teknikker</h3>
               <ul>
                 <li><strong>Iskemisk kompresjon:</strong> Vedvarende trykk på triggerpunktet (60-90 sekunder)</li>
                 <li><strong>Myofasciell frigjøring:</strong> Strekk og trykk kombinert</li>
@@ -453,7 +375,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Egenbehandling</h4>
+              <h3>Egenbehandling</h3>
               <ul>
                 <li><strong>Tennisball/lacrosseball:</strong> Selvmassasje mot vegg eller gulv</li>
                 <li><strong>Foam roller:</strong> Bredere trykkfordeling for store muskelgrupper</li>
@@ -463,7 +385,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Forebygging</h4>
+              <h3>Forebygging</h3>
               <ul>
                 <li>Regelmessige pauser fra stillesitting (hver 30-45 min)</li>
                 <li>Styrketrening for hofte- og kjernemuskulatur</li>

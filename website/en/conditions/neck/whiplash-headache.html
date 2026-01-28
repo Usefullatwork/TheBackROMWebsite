@@ -32,41 +32,7 @@
     <link rel="stylesheet" href="../../../css/index-2026-fixes.css">
   </noscript>
   <link rel="stylesheet" href="../../../css/hub-article.css" />
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-accent: #F26522;
-      --hub-accent-hover: #e05a1a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-      --hub-light-bg: #f8fafc;
-      --hub-border: #e2e8f0;
-      --hub-text: #1e293b;
-      --hub-text-muted: #64748b;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -74,7 +40,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -151,11 +117,11 @@
                 (Styrke et al., Spine 2012).</p>
               <p>The International Headache Classification (ICHD-3, 2018) distinguishes between:</p>
               <div class="condition-card">
-                <h4>Acute PTH</h4>
+                <h3>Acute PTH</h3>
                 <p>Headache that starts within 7 days of injury and lasts less than 3 months.</p>
               </div>
               <div class="condition-card">
-                <h4>Persistent (chronic) PTH</h4>
+                <h3>Persistent (chronic) PTH</h3>
                 <p>Headache that continues beyond 3 months after the injury.</p>
               </div>
               <p>The Quebec Task Force classifies whiplash (WAD) into grades from 0-IV, where grades I-II make up
@@ -170,23 +136,23 @@
               </div>
               <h3>Most common causes - from most to least common</h3>
               <div class="condition-card">
-                <h4>1. Facet joint injuries (approx. 60% of chronic cases)</h4>
+                <h3>1. Facet joint injuries (approx. 60% of chronic cases)</h3>
                 <p>Studies with diagnostic blocks show that the facet joints in the neck are the main source of pain in
                   the majority with chronic whiplash (Lord & Barnsley, Spine 1996). The most frequently affected levels
                   are C2-C3 (36%) and C5-C6 (35%).</p>
               </div>
               <div class="condition-card">
-                <h4>2. Muscle and ligament injuries</h4>
+                <h3>2. Muscle and ligament injuries</h3>
                 <p>The deep neck muscles and ligaments - especially around the upper cervical joints (C1-C2) - often
                   sustain microtrauma. MRI studies have shown fatty infiltration in these muscles after whiplash.</p>
               </div>
               <div class="condition-card">
-                <h4>3. Trigeminocervical convergence</h4>
+                <h3>3. Trigeminocervical convergence</h3>
                 <p>Pain nerves from the neck (C1-C3) meet the trigeminal nerve in the brainstem. This explains why neck
                   injury causes headache - pain signals from the neck are "misinterpreted" as headache.</p>
               </div>
               <div class="condition-card">
-                <h4>4. Central sensitization</h4>
+                <h3>4. Central sensitization</h3>
                 <p>In chronic whiplash, the nervous system can become hypersensitive. Systematic reviews confirm that
                   chronic WAD involves central sensitization with lower pain thresholds and enhanced pain perception
                   (Van Oosterwijck et al., 2013).</p>
@@ -201,16 +167,16 @@
               <p>Post-traumatic headache often has a mix of several headache types:</p>
               <h3>Most common headache types (Ashina et al., 2020)</h3>
               <div class="condition-card">
-                <h4>Migraine-like headache (31-61%)</h4>
+                <h3>Migraine-like headache (31-61%)</h3>
                 <p>Pulsating pain, often unilateral, with nausea, light and sound sensitivity. Many experience this for
                   the first time after the injury.</p>
               </div>
               <div class="condition-card">
-                <h4>Tension-type headache (21-40%)</h4>
+                <h3>Tension-type headache (21-40%)</h3>
                 <p>Pressing, squeezing pain like a band around the head.</p>
               </div>
               <div class="condition-card">
-                <h4><a href="cervicogenic-headache.html">Cervicogenic headache</a></h4>
+                <h3><a href="cervicogenic-headache.html">Cervicogenic headache</a></h3>
                 <p>Pain that starts in the neck and radiates up toward the back of the head and temples.</p>
               </div>
               <div class="stat-grid">
@@ -248,7 +214,7 @@
                 65, dangerous injury mechanism, tingling/numbness in arms or legs, or inability to actively move the
                 neck.</p>
               <div class="info-box">
-                <h4>MRI - often misunderstood</h4>
+                <h3>MRI - often misunderstood</h3>
                 <p>MRI in whiplash often shows normal findings or age-related wear that doesn't explain the pain.
                   Studies show that MRI findings in people with whiplash often don't differ from healthy individuals.
                   Clinical examination usually provides better information than imaging.</p>
@@ -264,7 +230,7 @@
               <p>A Cochrane review from 2007 reviewed 23 studies with over 2,300 participants. The main conclusion was
                 clear: Early active mobilization is clearly better than rest and neck collar.</p>
               <div class="treatment-box">
-                <h4>We use gentle techniques adapted to the injury phase:</h4>
+                <h3>We use gentle techniques adapted to the injury phase:</h3>
                 <ul>
                   <li><strong>Mobilization:</strong> Soft techniques to restore movement in locked joints. In acute
                     whiplash, we avoid forceful manipulation.</li>
@@ -282,16 +248,16 @@
                 collar is unnecessary in most cases and can actually prolong symptoms if used for more than 48 hours.
               </p>
               <div class="condition-card">
-                <h4>Early movement</h4>
+                <h3>Early movement</h3>
                 <p>Repeated, gentle neck and head movements provide more relief than rest.</p>
               </div>
               <div class="condition-card">
-                <h4>Deep neck muscles</h4>
+                <h3>Deep neck muscles</h3>
                 <p>Exercises for the deep neck flexors are important. These muscles often "shut off" after whiplash, and
                   the larger superficial muscles take over - which can cause more headache.</p>
               </div>
               <div class="info-box">
-                <h4>Avoid inactivity</h4>
+                <h3>Avoid inactivity</h3>
                 <p>Those who rest and use collar have twice the risk of persistent symptoms as those who move early
                   (McKinney et al., 1989).</p>
               </div>
@@ -318,7 +284,7 @@
                 <h2>Red flags - When to see a doctor immediately</h2>
               </div>
               <div class="red-flag-alert">
-                <h4>Call emergency services or go to emergency room for the following symptoms:</h4>
+                <h3>Call emergency services or go to emergency room for the following symptoms:</h3>
                 <p><strong>Neurological symptoms:</strong></p>
                 <ul>
                   <li>Acute weakness or paralysis in arms/legs</li>

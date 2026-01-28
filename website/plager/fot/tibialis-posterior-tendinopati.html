@@ -70,7 +70,7 @@
             "addressCountry": "NO"
           }
         },
-        "lastReviewed": "2026-12-01"
+        "lastReviewed": "2026-01-28"
       },
       {
         "@type": "FAQPage",
@@ -154,91 +154,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .myth-box { background: #fffbeb; border: 1px solid #fbbf24; border-radius: 10px; padding: 16px; margin: 16px 0; }
-    .myth-box h4 { color: #92400e; margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .exercise-box { background: #f5f3ff; border: 1px solid #c4b5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .exercise-box h4 { color: var(--hub-purple); margin-bottom: 12px; }
-    .stage-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-    .stage-table th, .stage-table td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
-    .stage-table th { background: #f8fafc; color: var(--hub-dark); font-weight: 600; }
-    .risk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 16px 0; }
-    .risk-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; }
-    .risk-card h5 { font-size: 14px; margin: 0 0 6px; color: var(--hub-dark); }
-    .risk-card p { font-size: 12px; margin: 0; color: #6b7280; }
-    .risk-card.high { border-left: 4px solid var(--hub-red); }
-    .risk-card.moderate { border-left: 4px solid var(--hub-orange); }
-    .risk-card.low { border-left: 4px solid var(--hub-blue); }
-    .treatment-list { display: grid; gap: 12px; margin: 16px 0; }
-    .treatment-item { display: flex; align-items: flex-start; gap: 12px; padding: 14px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0; }
-    .treatment-icon { width: 36px; height: 36px; background: var(--hub-primary); color: #fff; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
-    .treatment-item h5 { font-size: 14px; margin: 0 0 4px; color: var(--hub-dark); }
-    .treatment-item p { font-size: 13px; margin: 0; color: #6b7280; }
-    .timeline { margin: 20px 0; padding-left: 20px; border-left: 3px solid var(--hub-primary); }
-    .timeline-item { padding: 12px 0 12px 16px; position: relative; }
-    .timeline-item::before { content: ''; position: absolute; left: -26px; top: 16px; width: 12px; height: 12px; background: var(--hub-primary); border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 2px var(--hub-primary); }
-    .timeline-item h5 { font-size: 14px; margin: 0 0 4px; color: var(--hub-dark); }
-    .timeline-item p { font-size: 13px; margin: 0; color: #6b7280; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section ol { font-size: 0.85rem; color: #64748b; }
-    .sources-section li { margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -246,7 +162,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -301,7 +217,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Hva det er:</strong> Skade på senen som ståtter fotbuen (tibialis posterior)</li>
                 <li><strong>Konsekvens:</strong> Vanligste årsak til ervervet flatfot hos voksne</li>
@@ -350,7 +266,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Senens viktige funksjon</h4>
+                <h3>Senens viktige funksjon</h3>
                 <p>Tibialis posterior-senen jobber som en "vindestokk" som holder fotbuen oppe. Den aktiveres ved hvert skritt for å stabilisere foten under belastning. Nær senen svikter, overtar andre strukturer (ligamenter, leddkapsel), som gradvis toyes ut.</p>
               </div>
             </section>
@@ -380,7 +296,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Diagnostikk</h4>
+                <h3>Diagnostikk</h3>
                 <p>Diagnosen stilles klinisk ved undersøkelse av senen, fotbuen og evnen til å heve seg på ta på ett bein. Ultralyd eller MR kan bekrefte diagnosen og vise graden av seneskade.</p>
               </div>
             </section>
@@ -432,7 +348,7 @@
               </table>
 
               <div class="treatment-box">
-                <h4>Hvorfor tidlig behandling er viktig</h4>
+                <h3>Hvorfor tidlig behandling er viktig</h3>
                 <p>Stadium 1-2 responderer godt på konservativ behandling. Nær tilstanden progredierer til stadium 3-4, blir fotdeformiteten permanent og kirurgi er ofte nødvendig. Derfor er tidlig diagnostikk og behandling avgjørende.</p>
               </div>
             </section>
@@ -539,7 +455,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Ortopediske innlegg</h4>
+                <h3>Ortopediske innlegg</h3>
                 <p>Innlegg som ståtter fotbuen er ofte en viktig del av behandlingen:</p>
                 <ul>
                   <li><strong>Stadium 1:</strong> Prefabrikerte innlegg kan være tilstrekkelig</li>
@@ -551,7 +467,7 @@
               <h3>Hva kan du gjøre selv?</h3>
 
               <div class="exercise-box">
-                <h4>Styrkeovelse for tibialis posterior</h4>
+                <h3>Styrkeovelse for tibialis posterior</h3>
                 <p>Eksentrisk styrketrening har vist gode resultater:</p>
                 <ol>
                   <li>Sitt med et elastisk band rundt forfoten</li>
@@ -563,7 +479,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>Haelhev på ett bein</h4>
+                <h3>Haelhev på ett bein</h3>
                 <p>for å styrke hele fotbue-komplekset:</p>
                 <ol>
                   <li>Stå på ett bein ved en vegg for balanse</li>
@@ -608,7 +524,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Faktorer som påvirker utfallet</h4>
+                <h3>Faktorer som påvirker utfallet</h3>
                 <ul>
                   <li><strong>Tidlig behandling</strong> er den viktigste faktoren</li>
                   <li><strong>Vektreduksjon</strong> ved overvekt forbedrer prognosen</li>

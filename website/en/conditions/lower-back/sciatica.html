@@ -173,299 +173,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .hub-intro {
-      margin-bottom: 40px;
-    }
-
-    .intro-text {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: #374151;
-      margin-bottom: 24px;
-    }
-
-    .intro-text p {
-      margin-bottom: 14px;
-    }
-
-    .hub-section {
-      margin-bottom: 40px;
-      scroll-margin-top: 100px;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-
-    .section-number {
-      background: var(--hub-primary);
-      color: white;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 1rem;
-      flex-shrink: 0;
-    }
-
-    .hub-section h2 {
-      color: var(--hub-dark);
-      margin: 0;
-    }
-
-    .hub-section h3 {
-      font-size: 1.15rem;
-      color: var(--hub-dark);
-      margin: 24px 0 12px;
-    }
-
-    .hub-section p {
-      color: #374151;
-      line-height: 1.7;
-      margin-bottom: 14px;
-    }
-
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      margin: 24px 0;
-    }
-
-    .stat-item {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .stat-number {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--hub-primary);
-    }
-
-    .stat-label {
-      color: #64748b;
-      font-size: 0.75rem;
-      margin-top: 4px;
-    }
-
-    .condition-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 16px 0;
-    }
-
-    .condition-card h4 {
-      color: var(--hub-primary);
-      margin-bottom: 10px;
-    }
-
-    .nerve-box {
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .nerve-box h4 {
-      color: #92400e;
-      margin-bottom: 10px;
-    }
-
-    .treatment-box {
-      background: #ecfdf5;
-      border: 1px solid #6ee7b7;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .treatment-box h4 {
-      color: var(--hub-green);
-      margin-bottom: 12px;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border: 1px solid #93c5fd;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .info-box h4 {
-      color: var(--hub-blue);
-      margin-bottom: 12px;
-    }
-
-    .red-flag-box {
-      background: #fef2f2;
-      border: 2px solid #fca5a5;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 {
-      color: var(--hub-red);
-      margin-bottom: 12px;
-    }
-
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
-
-    .comparison-table th,
-    .comparison-table td {
-      padding: 12px;
-      text-align: left;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .comparison-table th {
-      background: #f8fafc;
-      color: var(--hub-dark);
-      font-weight: 600;
-    }
-
-    .timeline-box {
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .timeline-box h4 {
-      color: #92400e;
-      margin-bottom: 10px;
-    }
-
-    .timeline-box p {
-      color: #78350f;
-      margin-bottom: 8px;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid #e5e7eb;
-      padding: 16px 0;
-    }
-
-    .faq-item:last-child {
-      border-bottom: none;
-    }
-
-    .faq-question {
-      color: var(--hub-dark);
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .faq-answer {
-      color: #4b5563;
-      line-height: 1.6;
-    }
-
-    .sources-section {
-      margin-top: 32px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: var(--hub-dark);
-      margin-bottom: 12px;
-      font-size: 1.1rem;
-    }
-
-    .sources-section ul {
-      font-size: 0.85rem;
-      color: #64748b;
-    }
-
-    .sources-section li {
-      margin-bottom: 6px;
-    }
-
-    .disclaimer {
-      font-size: 0.85rem;
-      color: #64748b;
-      margin-top: 24px;
-      font-style: italic;
-    }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #F26522;
-      padding: 12px 16px;
-      z-index: 100;
-    }
-
-    .mobile-sticky-cta a {
-      display: inline-block;
-      background: white;
-      color: #F26522;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: 600;
-      text-decoration: none;
-      margin-right: 8px;
-    }
-
-    @media (max-width: 900px) {
-      .mobile-sticky-cta {
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-      }
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -473,7 +181,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -578,7 +286,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>When should you seek immediate help?</h4>
+              <h3>When should you seek immediate help?</h3>
               <p>For saddle numbness, problems with urination/bowel control, or increasing weakness in both legs - call
                 emergency services or go to A&E.</p>
               <a href="red-flags-back-pain.html">Read more about red flags</a>
@@ -637,7 +345,7 @@
               common causes, ranked from most to least frequent:</p>
 
             <div class="condition-card">
-              <h4>1. Disc herniation (~90% of cases)</h4>
+              <h3>1. Disc herniation (~90% of cases)</h3>
               <p>The gel material from the disc bulges out and presses on the nerve. About 95% of all lumbar <a
                   href="disc-herniation.html">herniations</a> occur at L4-L5 or L5-S1 level (StatPearls, 2023).</p>
               <figure class="condition-image">
@@ -648,18 +356,18 @@
             </div>
 
             <div class="condition-card">
-              <h4>2. Spinal stenosis</h4>
+              <h3>2. Spinal stenosis</h3>
               <p>Narrowing of the spinal canal, more common in older people. Can cause bilateral symptoms and worsens
                 with walking. <a href="spinal-stenosis.html">Read more about spinal stenosis</a>.</p>
             </div>
 
             <div class="condition-card">
-              <h4>3. Foraminal stenosis</h4>
+              <h3>3. Foraminal stenosis</h3>
               <p>Narrowing at the nerve exit from the vertebrae. Often age-related degeneration.</p>
             </div>
 
             <div class="condition-card">
-              <h4>4. Spondylolisthesis</h4>
+              <h3>4. Spondylolisthesis</h3>
               <p>Slippage of one vertebra in relation to another. Particularly common at L5-S1.</p>
             </div>
 
@@ -669,23 +377,23 @@
               mimic sciatica:</p>
 
             <div class="condition-card">
-              <h4>1. Trigger points and muscular causes (most common)</h4>
+              <h3>1. Trigger points and muscular causes (most common)</h3>
               <p>Tender knots in gluteal muscles, quadratus lumborum or hamstrings can cause referred pain down the leg.
               </p>
             </div>
 
             <div class="condition-card">
-              <h4>2. SI joint dysfunction</h4>
+              <h3>2. SI joint dysfunction</h3>
               <p>Referred pain from the back of the pelvis. Often causes pain to the buttock and back of the thigh.</p>
             </div>
 
             <div class="condition-card">
-              <h4>3. Facet joint syndrome</h4>
+              <h3>3. Facet joint syndrome</h3>
               <p>Referred pain from the joints between the vertebrae. Typically worsened by extension and rotation.</p>
             </div>
 
             <div class="condition-card">
-              <h4>4. Piriformis syndrome (0.3-6% of cases)</h4>
+              <h3>4. Piriformis syndrome (0.3-6% of cases)</h3>
               <p>The piriformis muscle in the buttock compresses the sciatic nerve. The diagnosis is controversial and
                 often considered overdiagnosed (Cleveland Clinic, 2022).</p>
             </div>
@@ -805,7 +513,7 @@
             </div>
 
             <div class="info-box">
-              <h4>What affects recovery time?</h4>
+              <h3>What affects recovery time?</h3>
               <p><strong>Strongest predictor:</strong> The patient's own belief that symptoms will become chronic. Those
                 who believe they will recover have nearly four times higher chance of actually doing so.</p>
               <ul>
@@ -845,7 +553,7 @@
               imaging for new-onset sciatica (European Spine Journal, 2018).</p>
 
             <div class="info-box">
-              <h4>Important to understand</h4>
+              <h3>Important to understand</h3>
               <p>Imaging often shows normal findings like wear and degenerative changes that don't explain the pain.
                 Studies show that up to 20-80% of symptom-free people have MRI findings like disc bulging, degeneration
                 or protrusion (StatPearls, 2023).</p>
@@ -872,7 +580,7 @@
               exercise for lumbar radiculopathy (Stochkendahl et al., European Spine Journal, 2018).</p>
 
             <div class="treatment-box">
-              <h4>What can the chiropractor do?</h4>
+              <h3>What can the chiropractor do?</h3>
               <ul>
                 <li><strong>Manual therapy:</strong> Spinal manipulation and mobilization can relieve pain and improve
                   mobility</li>
@@ -885,7 +593,7 @@
             </div>
 
             <div class="info-box">
-              <h4>What can you do yourself?</h4>
+              <h3>What can you do yourself?</h3>
               <ul>
                 <li><strong>Stay active</strong> - avoid prolonged bed rest. Gentle movement is important.</li>
                 <li><strong>Nerve-glide exercises</strong> - gentle stretching that mobilizes the nerve without
@@ -906,7 +614,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Important about surgery</h4>
+              <h3>Important about surgery</h3>
               <p>Surgery provides faster improvement in the short term, but <strong>after 1-2 years results are equally
                   good with conservative treatment</strong>. A Dutch study showed no significant difference in function
                 or pain after 1 year between early surgery and extended conservative treatment (Peul et al., NEJM,
@@ -956,7 +664,7 @@
               think.</p>
 
             <div class="treatment-box">
-              <h4>The positive:</h4>
+              <h3>The positive:</h3>
               <ul>
                 <li>The majority improve without surgery</li>
                 <li>50% experience significant improvement within 4 weeks</li>
@@ -966,7 +674,7 @@
             </div>
 
             <div class="info-box">
-              <h4>The realistic:</h4>
+              <h3>The realistic:</h3>
               <ul>
                 <li>Median time to improvement is 10-12 weeks - not 6 weeks</li>
                 <li>20-30% have persistent symptoms after 1-2 years</li>

@@ -25,6 +25,7 @@
   <meta property="og:url" content="https://thebackrom.com/en/emergency-treatment.html">
   <meta property="og:site_name" content="Klinikk for alle - Mads Finstad Chiropractor">
   <meta property="og:locale" content="en_US">
+  <meta property="og:description" content="Chiropractor Saturday in Oslo. Emergency treatment for back pain, neck pain and acute back spasms at Majorstua. Saturdays 10am-4pm.">
 
   <link rel="canonical" href="https://thebackrom.com/en/emergency-treatment.html" />
   <link rel="alternate" hreflang="nb" href="https://thebackrom.com/akutt-behandling.html" />
@@ -95,311 +96,7 @@
   <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #2A7B9B;
-      --hub-dark: #1E5F78;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    /* Urgent CTA specific styles for akutt pages */
-    .urgent-cta-section {
-      background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%);
-      padding: 2rem 1.5rem;
-    }
-
-    .urgent-cta-container {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .urgent-cta__title {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.3rem;
-      color: white;
-      margin-bottom: 0.5rem;
-    }
-
-    .urgent-cta__phone {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-
-    .urgent-cta__phone a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .urgent-cta__phone a:hover {
-      text-decoration: underline;
-    }
-
-    .urgent-cta__text {
-      font-size: 0.95rem;
-      color: rgba(255,255,255,0.9);
-      margin-bottom: 1rem;
-    }
-
-    .urgent-cta__buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 1.5rem;
-    }
-
-    .urgent-cta__btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.875rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-    }
-
-    .urgent-cta__btn--primary {
-      background: white;
-      color: var(--hub-dark);
-    }
-
-    .urgent-cta__btn--primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-
-    .urgent-cta__btn--sms {
-      background: #e74c3c;
-      color: white;
-      animation: pulse-sms 2s infinite;
-    }
-
-    .urgent-cta__btn--sms:hover {
-      background: #c0392b;
-    }
-
-    @keyframes pulse-sms {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
-      50% { box-shadow: 0 0 0 8px rgba(231, 76, 60, 0); }
-    }
-
-    .info-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      background: rgba(255,255,255,0.1);
-      padding: 1rem 1.5rem;
-      border-radius: 12px;
-    }
-
-    .info-bar__item {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.9rem;
-      color: white;
-    }
-
-    /* Condition grid */
-    .condition-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .condition-card__title {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.1rem;
-      color: var(--hub-dark);
-      margin-bottom: 0.75rem;
-    }
-
-    .condition-card__text {
-      color: #374151;
-      font-size: 0.9rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-
-    .condition-card__link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--hub-primary);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    .condition-card__link:hover {
-      text-decoration: underline;
-    }
-
-    /* Process/Treatment boxes */
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .process-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    }
-
-    .process-card h4 {
-      color: var(--hub-primary);
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.1rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .process-card p {
-      color: #374151;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin: 0;
-    }
-
-    /* Practical info grid */
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
-
-    .info-card {
-      background: #f8fafc;
-      border-radius: 10px;
-      padding: 1.25rem;
-    }
-
-    .info-card__label {
-      font-size: 0.8rem;
-      color: #6b7280;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.25rem;
-    }
-
-    .info-card__value {
-      font-weight: 600;
-      color: var(--hub-dark);
-      font-size: 1rem;
-    }
-
-    .info-card__note {
-      font-size: 0.85rem;
-      color: #6b7280;
-      margin-top: 0.25rem;
-    }
-
-    /* Safety box */
-    .safety-box {
-      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
-      border: 2px solid #10b981;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-    }
-
-    .safety-box__title {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.1rem;
-      color: #047857;
-      margin-bottom: 0.75rem;
-    }
-
-    .safety-box__text {
-      color: #065f46;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin: 0;
-    }
-
-    /* Mobile sticky SMS CTA */
-    .mobile-sms-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #e74c3c;
-      padding: 1rem;
-      z-index: 100;
-      box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
-    }
-
-    .mobile-sms-cta a {
-      display: block;
-      background: white;
-      color: #e74c3c;
-      text-align: center;
-      padding: 14px;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      .mobile-sms-cta {
-        display: block;
-      }
-
-      .hub-main {
-        padding-bottom: 100px;
-      }
-
-      .urgent-cta__phone {
-        font-size: 1.75rem;
-      }
-    }
-
-    /* Medical disclaimer */
-    .medical-disclaimer {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 16px;
-      margin-top: 32px;
-      font-size: 0.85rem;
-      color: #64748b;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -407,7 +104,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="index.html" class="header__logo logo"><img loading="lazy" src="../images/logo-header.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" width="300" height="229" decoding="async" /></a>
+        <a href="index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Majorstua Oslo logo"><img loading="lazy" src="../images/logo-header.webp" alt="Klinikk for alle Chiropractor Majorstua Oslo logo" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
             <button class="language-toggle__button" data-lang="no" aria-label="Switch to Norwegian" aria-pressed="false">NO</button>
@@ -487,7 +184,7 @@
 
             <!-- Premium Summary Card -->
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li><strong>Open Saturdays</strong> 10am-4pm for acute conditions</li>
                 <li><strong>Sundays by appointment</strong> for urgent needs</li>
@@ -521,7 +218,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>When should you call 113 or emergency services?</h4>
+              <h3>When should you call 113 or emergency services?</h3>
               <p>Sudden weakness in arms or legs, numbness around the rectum, loss of bladder or bowel control, intense pain after a fall or accident, chest pain or difficulty breathing - seek help immediately.</p>
               <a href="conditions/lower-back/red-flags-back-pain.html">Read more about red flags</a>
             </div>

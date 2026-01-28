@@ -146,81 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    .exercise-card {
-      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 14px 0;
-    }
-    .exercise-card h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .exercise-card p { font-size: 14px; margin: 0 0 8px; color: #166534; }
-    .exercise-card .duration { font-size: 12px; color: #15803d; font-weight: 600; }
-
-    .checklist-box {
-      background: #f0fdf4;
-      border: 2px solid var(--hub-green);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 16px 0;
-    }
-    .checklist-box h4 { color: #166534; font-size: 15px; margin: 0 0 12px; }
-    .checklist-box ul { list-style: none; padding: 0; margin: 0; }
-    .checklist-box li { padding: 8px 0 8px 28px; position: relative; font-size: 14px; color: #166534; border-bottom: 1px solid #bbf7d0; }
-    .checklist-box li:last-child { border-bottom: none; }
-    .checklist-box li::before { content: "[ ]"; position: absolute; left: 0; font-family: monospace; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -228,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -290,7 +216,7 @@
               </div>
 
               <aside class="premium-summary-card">
-                <h3>Kort oppsummert</h3>
+                <h2>Kort oppsummert</h2>
                 <ul>
                   <li>Skjerm i <strong>oyehøyde</strong>, rett foran</li>
                   <li>Mus og tastatur <strong>nær kroppen</strong></li>
@@ -312,22 +238,22 @@
               <p>Kroppen var ikke designet for å sitte stille i samme stilling i timevis. Nær vi gjør det, skjer flere ting som belaster skuldrene:</p>
 
               <div class="condition-card">
-                <h4 class="condition-title">Statisk muskelarbeid</h4>
+                <h3 class="condition-title">Statisk muskelarbeid</h3>
                 <p>Nær du holder armene foran deg for å bruke tastatur og mus, jobber skuldermusklene konstant for å stabilisere. Uten hvile fører dette til tretthet, spenninger og til slutt smerte.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Fremoverlent holdning</h4>
+                <h3 class="condition-title">Fremoverlent holdning</h3>
                 <p>Mange lener seg fremover mot skjermen. Dette fører til at hodet kommer foran skuldrene, noe som øker belastningen på nakke- og skuldermuskulatur betydelig.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Loftede skuldre</h4>
+                <h3 class="condition-title">Loftede skuldre</h3>
                 <p>Stress, konsentrasjon eller feil pulthøyde gjør at vi ubevisst låfter skuldrene. Over tid gir dette kroniske spenninger i trapezius-muskelen. Dette kan også påvirke <a href="Såvn-skuldersmerter.html">såvnkvaliteten</a>.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Ensidig belastning</h4>
+                <h3 class="condition-title">Ensidig belastning</h3>
                 <p>Musbruk med samme arm hele dagen, tastaturet for langt til en side - slike asymmetrier belaster den ene skulderen mer enn den andre. Dette kan over tid bidra til tilstander som <a href="biceps-tendinopati.html">biceps tendinopati</a> eller <a href="ac-ledd-artrose.html">AC-ledd-artrose</a>.</p>
               </div>
 
@@ -422,7 +348,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Kompakt tastatur</h4>
+                  <h3 class="condition-title">Kompakt tastatur</h3>
                   <span class="condition-badge">Anbefalt</span>
                 </div>
                 <p>Et tastatur uten numerisk del (tenkeyless) lar deg plassere musen nærmere midtlinjen. Dette reduserer hvor langt du må strekke armen til siden, noe som avlaster skulderen betydelig.</p>
@@ -467,7 +393,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Ryggstotte</h4>
+                <h3 class="condition-title">Ryggstotte</h3>
                 <p>Ryggstotten bør ståtte korsryggen (lendaryggen). En god lendestotte hjelper deg å opprettholde naturlig kurvatur i ryggen, noe som igjen gjør det lettere å holde en avslappet skulderposisjon.</p>
               </div>
 
@@ -496,7 +422,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Heve-senke-pult</h4>
+                <h3 class="condition-title">Heve-senke-pult</h3>
                 <p>En heve-senke-pult lar deg veksle mellom sittende og staende arbeid. Det handler ikke om å stå hele dagen (det er heller ikke bra), men om variasjon.</p>
                 <ul>
                   <li>Start med korte staende perioder (15-30 min)</li>

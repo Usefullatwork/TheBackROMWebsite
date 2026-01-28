@@ -138,142 +138,7 @@
         <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
     </noscript>
 
-    <style>
-        :root {
-            --hub-primary: #1a5f7a;
-            --hub-dark: #0d3d4d;
-            --hub-red: #dc2626;
-            --hub-green: #059669;
-            --hub-blue: #2563eb;
-            --hub-purple: #7c3aed;
-            --hub-orange: #ea580c;
-        }
-
-        /* Specific styles for this page's tables and comparisons */
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .comparison-card {
-            background: #fff;
-            border: 2px solid #ddd;
-            border-radius: 12px;
-            padding: 1.25rem;
-            text-align: center;
-        }
-
-        .comparison-card.rygg {
-            border-color: #28a745;
-        }
-
-        .comparison-card.hofte {
-            border-color: #007bff;
-        }
-
-        .comparison-card.nerve {
-            border-color: #dc3545;
-        }
-
-        .comparison-card h4 {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid currentColor;
-        }
-
-        .comparison-card.rygg h4 {
-            color: #28a745;
-        }
-
-        .comparison-card.hofte h4 {
-            color: #007bff;
-        }
-
-        .comparison-card.nerve h4 {
-            color: #dc3545;
-        }
-
-        .comparison-card ul {
-            text-align: left;
-            padding-left: 1rem;
-            margin: 0;
-            font-size: 0.9rem;
-        }
-
-        .comparison-card li {
-            margin-bottom: 0.5rem;
-        }
-
-        .diagnostic-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            font-size: 0.9rem;
-        }
-
-        .diagnostic-table th {
-            background: var(--hub-dark);
-            color: white;
-            padding: 0.75rem;
-            text-align: left;
-        }
-
-        .diagnostic-table td {
-            padding: 0.75rem;
-            border-bottom: 1px solid #ddd;
-            vertical-align: top;
-        }
-
-        .diagnostic-table tr:nth-child(even) {
-            background: #f8fafc;
-        }
-
-        .anatomy-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .anatomy-card {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 1.5rem;
-        }
-
-        .anatomy-card h4 {
-            color: var(--hub-primary);
-            margin-bottom: 0.75rem;
-        }
-
-        @media (max-width: 768px) {
-
-            .comparison-grid,
-            .anatomy-section {
-                grid-template-columns: 1fr;
-            }
-        }
-    
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -281,7 +146,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+                <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
                         alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229"
                         decoding="async" /></a>
                 <div class="header__navigation">
@@ -455,7 +320,7 @@
                             </table>
 
                             <div class="info-box">
-                                <h4>The C-Sign: A Classic Hip Problem Sign</h4>
+                                <h3>The C-Sign: A Classic Hip Problem Sign</h3>
                                 <p>When patients with hip problems try to point to where it hurts, they often form a "C"
                                     with their hand around the groin and front/lateral hip. This is called the
                                     <strong>C-sign</strong> and is characteristic of intra-articular hip disease
@@ -466,7 +331,7 @@
                             <div class="info-box"
                                 style="display: flex; align-items: center; gap: 16px; background: #eff6ff; border-color: #3b82f6;">
                                 <div style="flex: 1;">
-                                    <h4 style="color: #1e40af; margin-top: 0;">Still not sure?</h4>
+                                    <h3 style="color: #1e40af; margin-top: 0;">Still not sure?</h3>
                                     <p style="color: #1e3a8a;">Try our interactive symptom checker to compare your
                                         specific pain pattern.</p>
                                 </div>
@@ -515,12 +380,12 @@
                             </div>
 
                             <div class="red-flag-alert">
-                                <h4>A Common and Complex Picture</h4>
+                                <h3>A Common and Complex Picture</h3>
                                 <p><strong>Up to 30% of patients</strong> with hip osteoarthritis have simultaneous
                                     significant spinal disease. This is called "hip-spine syndrome" and complicates both
                                     diagnosis and treatment.</p>
 
-                                <h4>Why Does This Occur?</h4>
+                                <h3>Why Does This Occur?</h3>
                                 <ul>
                                     <li><strong>Biomechanical coupling:</strong> A stiff hip increases load on the back
                                     </li>
@@ -531,7 +396,7 @@
                                         hypersensitive</li>
                                 </ul>
 
-                                <h4>Treatment Implications:</h4>
+                                <h3>Treatment Implications:</h3>
                                 <p>When both back and hip are involved, both must be addressed to achieve improvement. A
                                     hip replacement, for example, cannot solve a simultaneous back problem, and vice
                                     versa.</p>
@@ -608,7 +473,7 @@
                             </ul>
 
                             <div class="red-flag-alert">
-                                <h4>Red Flags - Seek Medical Help Immediately</h4>
+                                <h3>Red Flags - Seek Medical Help Immediately</h3>
                                 <ul>
                                     <li>Loss of bladder or bowel control (cauda equina)</li>
                                     <li>Progressive weakness in the leg/foot</li>

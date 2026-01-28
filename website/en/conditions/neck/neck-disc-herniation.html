@@ -174,252 +174,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .hub-content {
-      padding: 32px;
-    }
-
-    @media (max-width: 600px) {
-      .hub-content {
-        padding: 20px;
-      }
-    }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-      scroll-margin-top: 100px;
-    }
-
-    .hub-section:first-of-type {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-    }
-
-    .hub-section p {
-      color: #374151;
-      line-height: 1.7;
-      margin-bottom: 16px;
-    }
-
-    .hub-section h3 {
-      font-size: 17px;
-      font-weight: 600;
-      color: var(--hub-dark);
-      margin: 24px 0 12px;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border: 1px solid #93c5fd;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .info-box h4 {
-      color: var(--hub-blue);
-      margin-bottom: 10px;
-      font-size: 15px;
-    }
-
-    .info-box p {
-      font-size: 14px;
-      color: #1e40af;
-      margin: 0;
-    }
-
-    .red-flag-alert{
-      background: #fef2f2;
-      border: 2px solid #fca5a5;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-alert h4 {
-      color: var(--hub-red);
-      margin-bottom: 12px;
-      font-size: 16px;
-    }
-
-    .red-flag-alert ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .red-flag-alert li {
-      color: #991b1b;
-      margin-bottom: 8px;
-      font-weight: 500;
-    }
-
-    .nerve-box {
-      background: var(--color-amber-light, #fef3c7);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .nerve-box h4 {
-      color: #92400e;
-      margin-bottom: 10px;
-      font-size: 15px;
-    }
-
-    .nerve-box ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .nerve-box li {
-      color: #78350f;
-      margin-bottom: 6px;
-      font-size: 14px;
-    }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .treatment-box h4 {
-      color: var(--hub-green);
-      margin-bottom: 10px;
-    }
-
-    .treatment-box ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .treatment-box li {
-      color: #166534;
-      margin-bottom: 6px;
-      font-size: 14px;
-    }
-
-    .prognosis-box {
-      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-      border-left: 4px solid var(--hub-green);
-      border-radius: 0 10px 10px 0;
-      padding: 18px;
-      margin: 20px 0;
-    }
-
-    .prognosis-box h4 {
-      color: #166534;
-      margin-bottom: 10px;
-    }
-
-    .prognosis-box p {
-      color: #166534;
-      margin: 0;
-      font-size: 14px;
-    }
-
-    .faq-section {
-      margin-top: 32px;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid #e5e7eb;
-      padding: 18px 0;
-    }
-
-    .faq-item:last-child {
-      border-bottom: none;
-    }
-
-    .faq-item h4 {
-      color: var(--hub-dark);
-      margin-bottom: 10px;
-      font-size: 15px;
-    }
-
-    .faq-item p {
-      color: #4b5563;
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .sources-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: var(--hub-dark);
-      margin-bottom: 16px;
-      font-size: 16px;
-    }
-
-    .sources-section p {
-      font-size: 13px;
-      color: #6b7280;
-      margin-bottom: 6px;
-    }
-
-    .disclaimer {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 16px;
-      margin-top: 24px;
-      font-size: 13px;
-      color: #6b7280;
-    }
-
-    @media (max-width: 768px) {
-      .hub-content {
-        padding-bottom: 100px;
-      }
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -427,7 +182,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -506,7 +261,7 @@
                 root, you get radiculopathy.</p>
 
               <div class="info-box">
-                <h4>Important distinction</h4>
+                <h3>Important distinction</h3>
                 <p>You can have a herniation on MRI without symptoms, and you can have radiculopathy without a clear
                   herniation. A Japanese study of 1211 healthy people found disc bulging in 87.6% (Nakashima, Spine
                   2015). Imaging must always be interpreted together with clinical findings.</p>
@@ -544,24 +299,24 @@
               <h3>Causes ranked from most to least common</h3>
 
               <div class="condition-card">
-                <h4>Spondylosis and foraminal stenosis (68-75%)</h4>
+                <h3>Spondylosis and foraminal stenosis (68-75%)</h3>
                 <p>Age-related changes gradually lead to narrowing of the opening where the nerve passes. Dominant cause
                   in people over 50.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Disc herniation (20-25%)</h4>
+                <h3>Disc herniation (20-25%)</h3>
                 <p>Acute bulging of the intervertebral disc pressing on the nerve root. Most common in younger patients
                   in their 20s-40s.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Injury/trauma (~15%)</h4>
+                <h3>Injury/trauma (~15%)</h3>
                 <p><a href="whiplash.html">Whiplash</a>-type injuries or other neck trauma.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Myofascial trigger points</h4>
+                <h3>Myofascial trigger points</h3>
                 <p>Active trigger points in the upper trapezius occur in 30-40% of patients with chronic <a
                     href="../../neck-pain.html">neck pain</a>. Causes radiation that can mimic radiculopathy.</p>
               </div>
@@ -727,7 +482,7 @@
               </table>
 
               <div class="info-box">
-                <h4>Bakody's sign</h4>
+                <h3>Bakody's sign</h3>
                 <p>If symptoms are relieved when you place your hand on your head (shoulder in abduction), it strongly
                   suggests the problem comes from the neck. The test has 80-100% specificity for cervical radiculopathy.
                 </p>
@@ -745,20 +500,20 @@
                 mobility, muscle strength, sensation and reflexes.</p>
 
               <div class="condition-card">
-                <h4>Spurling's test</h4>
+                <h3>Spurling's test</h3>
                 <p>The neck is extended, side-flexed and rotated toward the symptomatic side, then pressure is applied.
                   High specificity of 92%, but sensitivity of only 53%. A positive test strongly increases suspicion,
                   but a negative test does not rule out the condition.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Upper Limb Tension Test (ULTT)</h4>
+                <h3>Upper Limb Tension Test (ULTT)</h3>
                 <p>97% sensitivity - a negative test makes the diagnosis unlikely. Many false positives (22%
                   specificity).</p>
               </div>
 
               <div class="condition-card">
-                <h4>Arm Squeeze Test</h4>
+                <h3>Arm Squeeze Test</h3>
                 <p>96.7% sensitivity for distinguishing neck problems from shoulder problems. Squeezing the middle of
                   the upper arm causes pain in neck pathology, but not in pure shoulder pathology.</p>
               </div>
@@ -769,7 +524,7 @@
                 evaluation.</p>
 
               <div class="info-box">
-                <h4>MRI findings in symptom-free people (Brinjikji, AJNR 2015)</h4>
+                <h3>MRI findings in symptom-free people (Brinjikji, AJNR 2015)</h3>
                 <p>At age 30: 52% have disc degeneration, 40% disc bulging<br>
                   At age 50: 80% have disc degeneration, 60% disc bulging<br>
                   At age 70: 93% have disc degeneration, 77% disc bulging</p>
@@ -792,7 +547,7 @@
                 better results than each treatment alone.</p>
 
               <div class="treatment-box">
-                <h4>Treatment may include:</h4>
+                <h3>Treatment may include:</h3>
                 <ul>
                   <li>Joint mobilization of cervical vertebrae and upper back</li>
                   <li>Soft tissue treatment of tight muscles in neck and shoulder</li>
@@ -828,7 +583,7 @@
                 was no difference between surgery and conservative treatment.</p>
 
               <div class="condition-card">
-                <h4>Surgery is considered for:</h4>
+                <h3>Surgery is considered for:</h3>
                 <ul>
                   <li>Progressive neurological deficit (increasing weakness)</li>
                   <li>Signs of myelopathy (spinal cord involvement)</li>
@@ -845,7 +600,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>SEEK MEDICAL ATTENTION IMMEDIATELY FOR:</h4>
+                <h3>SEEK MEDICAL ATTENTION IMMEDIATELY FOR:</h3>
                 <ul>
                   <li>Walking difficulties or unsteadiness (signs of myelopathy)</li>
                   <li>Symptoms in both arms or legs simultaneously</li>
@@ -922,54 +677,54 @@
               </div>
 
               <div class="faq-item">
-                <h4>Can a chiropractor help with a pinched nerve in the neck?</h4>
+                <h3>Can a chiropractor help with a pinched nerve in the neck?</h3>
                 <p>Yes. Systematic reviews show moderate evidence that manual treatment combined with exercises can
                   reduce pain and improve function. The vast majority recover without surgery.</p>
               </div>
 
               <div class="faq-item">
-                <h4>How long does it take for cervical radiculopathy to resolve?</h4>
+                <h3>How long does it take for cervical radiculopathy to resolve?</h3>
                 <p>Most experience significant improvement within 4-8 weeks with treatment. Complete recovery can take
                   3-6 months, and in some cases up to 2-3 years. Early treatment appears to lead to faster recovery.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Is an MRI necessary for neck and arm pain?</h4>
+                <h3>Is an MRI necessary for neck and arm pain?</h3>
                 <p>Not routinely. Clinical examination is often sufficient for diagnosis and treatment. MRI is
                   considered only with lack of improvement after 4-6 weeks, signs of serious disease, or before surgical
                   evaluation. Remember that 87.6% of asymptomatic people have disc bulging on MRI.</p>
               </div>
 
               <div class="faq-item">
-                <h4>What is the difference between disc herniation and degeneration in the neck?</h4>
+                <h3>What is the difference between disc herniation and degeneration in the neck?</h3>
                 <p>Disc herniation is an acute bulging of the intervertebral disc that presses on the nerve.
                   Degeneration (spondylosis) is gradual age-related narrowing of the nerve canal. Degeneration is much
                   more common (68-75% vs. 20-25%) and is mainly seen in people over 50.</p>
               </div>
 
               <div class="faq-item">
-                <h4>How do I know if it's the neck or carpal tunnel?</h4>
+                <h3>How do I know if it's the neck or carpal tunnel?</h3>
                 <p>Neck problems often cause neck pain, affect the back of the hand (not just the palm), can cause
                   reflex changes, and less commonly have nighttime symptoms. Carpal tunnel syndrome typically causes
                   wake-up-at-night symptoms that improve by shaking the hands.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Can I exercise with a pinched nerve?</h4>
+                <h3>Can I exercise with a pinched nerve?</h3>
                 <p>Yes, but adapt your activity. Avoid exercises that worsen arm pain. General cardiovascular training
                   and specific neck exercises are recommended - preferably in consultation with a chiropractor or
                   physiotherapist.</p>
               </div>
 
               <div class="faq-item">
-                <h4>When should I consider surgery?</h4>
+                <h3>When should I consider surgery?</h3>
                 <p>Surgery is relevant for progressive neurological deficit, persistent significant symptoms after 8-12
                   weeks of conservative treatment, or signs of spinal cord involvement (myelopathy). For most people,
                   conservative treatment is sufficient.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Can the condition come back?</h4>
+                <h3>Can the condition come back?</h3>
                 <p>Yes, recurrence occurs in about 32% over 5 years. Good neck ergonomics, maintenance exercises and
                   early treatment for new episodes can reduce the risk of prolonged symptoms.</p>
               </div>

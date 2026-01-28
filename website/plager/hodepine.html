@@ -159,33 +159,7 @@
   <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -193,7 +167,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -250,7 +224,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>75-90%</strong> av befolkningen har hodepine årlig</li>
                 <li>Spenningshodepine og migrene er <strong>vanligst</strong></li>
@@ -313,7 +287,7 @@
 
             <!-- Red Flag Alert Box -->
             <div class="red-flag-alert">
-              <h4>Når må du ringe 113 eller dra til legevakt?</h4>
+              <h3>Når må du ringe 113 eller dra til legevakt?</h3>
               <p>Ved plutselig maksimal hodepine ("tordenskrall"), hodepine med feber og nakkestivhet, eller nevrologiske utfall - søk hjelp umiddelbart.</p>
               <a href="#s4">Les mer om røde flagg</a>
             </div>
@@ -353,7 +327,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Spenningshodepine</h4>
+              <h3>Spenningshodepine</h3>
               <p class="section-quick-link"><a href="hodepine/spenningshodepine.html">Gå til full artikkel om spenningshodepine →</a></p>
               <p><strong>78% opplever det i livet</strong> - Spenningshodepine er den desidert vanligste hodepinetypen. For de fleste er det en plage som kommer og går, kanskje etter en lang dag foran skjermen. Men for noen blir det kronisk.</p>
               <ul>
@@ -367,7 +341,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Migrene</h4>
+              <h3>Migrene</h3>
               <p class="section-quick-link"><a href="hodepine/migrene.html">Gå til full artikkel om migrene →</a></p>
               <p><strong>900 000 nordmenn</strong> - Migrene er en nevrologisk tilstand som rammer rundt 900.000 nordmenn. Kvinner rammes oftere – omtrent 15% av kvinner og 6-7% av menn i Norge har migrene.</p>
               <ul>
@@ -382,7 +356,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Nakkehodepine (Cervikogen hodepine)</h4>
+              <h3>Nakkehodepine (Cervikogen hodepine)</h3>
               <p class="section-quick-link"><a href="hodepine/nakkehodepine.html">Gå til full artikkel om nakkehodepine →</a></p>
               <p><strong>15-20% av kronisk hodepine</strong> - Nakkehodepine skyldes feilfunksjon i nakkevirvlene (C1-C3) eller bløtvevet i nakken. Tilstanden ble først beskrevet av den norske nevrologen Ottar Sjaastad i 1983. <strong>Dette er hodepineformen som responderer best på kiropraktisk behandling.</strong></p>
               <ul>
@@ -395,13 +369,13 @@
             </div>
 
             <div class="condition-card">
-              <h4>Klasehodepine</h4>
+              <h3>Klasehodepine</h3>
               <p class="section-quick-link"><a href="hodepine/klasehodepine.html">Gå til full artikkel om klasehodepine →</a></p>
               <p><strong>0,1% av befolkningen</strong> - Sjelden, men ekstremt smertefull. Intense anfall som varer 15 minutter til 3 timer, ofte flere ganger daglig i "klaser" over uker. Krever spesialisert behandling.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Vestibulær migrene</h4>
+              <h3>Vestibulær migrene</h3>
               <p class="section-quick-link"><a href="hodepine/vestibulaer-migrene.html">Gå til full artikkel om vestibulær migrene →</a></p>
               <p><strong>1-3% av befolkningen</strong> - En migrenevariant som primært rammer balansesystemet. Gir episodisk svimmelhet som kan vare fra minutter til dager - ofte uten hodepine. Vanligste årsak til anfallsvis svimmelhet.</p>
             </div>
@@ -429,7 +403,7 @@
             </div>
 
             <div class="treatment-box">
-              <h4>Hvor gjør det vondt? Mulige Årsaker:</h4>
+              <h3>Hvor gjør det vondt? Mulige Årsaker:</h3>
               <ul>
                 <li><strong>Bakhodet:</strong> Ofte nakke-relatert, suboccipitale triggerpunkter, occipital nevralgi</li>
                 <li><strong>Tinningen:</strong> Spenningshodepine, trapezius-triggerpunkter, TMJ/kjeveledd, temporal arteritt (>50 år)</li>
@@ -450,37 +424,37 @@
             </div>
 
             <div class="condition-card">
-              <h4>Kronisk daglig hodepine</h4>
+              <h3>Kronisk daglig hodepine</h3>
               <p><strong>3-5% av befolkningen</strong> - Hodepine 15+ dager per måned i mer enn 3 måneder. Omfatter kronisk migrene, kronisk spenningshodepine og medikamentoverforbrukshodepine.</p>
               <p style="margin-top: 12px;"><a href="hodepine/kronisk-daglig-hodepine.html" style="color: var(--hub-primary); font-weight: 600;">Les mer om kronisk daglig hodepine</a></p>
             </div>
 
             <div class="condition-card">
-              <h4>Medikamentoverforbrukshodepine (MOH)</h4>
+              <h3>Medikamentoverforbrukshodepine (MOH)</h3>
               <p><strong>78-80% av kronisk hodepine</strong> - Paradoksal hodepine fra overforbruk av smertestillende. Rammer opptil 80% av de med kronisk daglig hodepine.</p>
               <p style="margin-top: 12px;"><a href="hodepine/medikamentoverforbruk-hodepine.html" style="color: var(--hub-primary); font-weight: 600;">Les mer om MOH</a></p>
             </div>
 
             <div class="condition-card">
-              <h4>Occipital nevralgi</h4>
+              <h3>Occipital nevralgi</h3>
               <p>Intense, stikkende smerter fra nakken til bakhodet og issen. Skyldes irritasjon av occipitalnervene. Responderer ofte godt på manuell behandling.</p>
               <p style="margin-top: 12px;"><a href="hodepine/occipital-nevralgi.html" style="color: var(--hub-primary); font-weight: 600;">Les mer om occipital nevralgi</a></p>
             </div>
 
             <div class="condition-card">
-              <h4>Hormonhodepine og menstruell migrene</h4>
+              <h3>Hormonhodepine og menstruell migrene</h3>
               <p><strong>50%+ av migrenekvinner</strong> - Hodepine knyttet til hormonsyklus, særlig ostrogenfallet for menstruasjon. Rammer over halvparten av kvinner med migrene.</p>
               <p style="margin-top: 12px;"><a href="hodepine/hormonhodepine.html" style="color: var(--hub-primary); font-weight: 600;">Les mer om hormonhodepine</a></p>
             </div>
 
             <div class="condition-card">
-              <h4>Morgenhodepine</h4>
+              <h3>Morgenhodepine</h3>
               <p>Vakner du med hodepine? Vanlige Årsaker inkluderer søvnapne, tanngnissing, dårlig soveposisjon og medikamentoverforbruk.</p>
               <p style="margin-top: 12px;"><a href="hodepine/morgenhodepine.html" style="color: var(--hub-primary); font-weight: 600;">Les mer om morgenhodepine</a></p>
             </div>
 
             <div class="condition-card">
-              <h4>Hodepine og svimmelhet</h4>
+              <h3>Hodepine og svimmelhet</h3>
               <p>Når hodepine og svimmelhet kommer sammen kan det skyldes vestibulær migrene, nakkeproblemer, eller SCM-triggerpunkter. <strong>Over 50% av hodepinepasienter opplever også svimmelhet.</strong></p>
               <p style="margin-top: 12px;"><a href="svimmelhet.html" style="color: var(--hub-primary); font-weight: 600;">Les mer: Svimmelhet og behandling</a></p>
             </div>
@@ -504,7 +478,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Bestill vanlig legetime ved:</h4>
+              <h3>Bestill vanlig legetime ved:</h3>
               <ul>
                 <li>Ny hodepine etter 50 år uten tidligere hodepinehistorikk</li>
                 <li>Hodepine som gradvis forverres over uker</li>
@@ -525,7 +499,7 @@
             <p>Kiropraktikk har dokumentert effekt ved nakkehodepine (cervikogen hodepine) og spenningshodepine med muskulær komponent. En systematisk gjennomgang og metaanalyse (Fernandez et al., 2020) viste moderat evidens for spinalmanipulasjon ved nakkehodepine.</p>
 
             <div class="treatment-box">
-              <h4>Hva jeg gjor</h4>
+              <h3>Hva jeg gjor</h3>
               <ul>
                 <li><strong>Grundig undersøkelse</strong> av nakke, kjeve og skulder</li>
                 <li><strong>Leddmobilisering</strong> og korrigering av Øvre nakkevirvler</li>
@@ -546,7 +520,7 @@
             </ul>
 
             <div class="info-box">
-              <h4>Ta kontakt med fastlegen</h4>
+              <h3>Ta kontakt med fastlegen</h3>
               <p>Hvis du har mer enn 4 migrenedager per måned, bør du diskutere forebyggende behandling med fastlegen din.</p>
             </div>
           </section>
@@ -559,22 +533,22 @@
             </div>
 
             <div class="condition-card">
-              <h4>Hodepinedagbok</h4>
+              <h3>Hodepinedagbok</h3>
               <p>Det viktigste verktøyet for å forstå din hodepine. Noter når hodepinen kommer, intensitet (1-10), symptomer, og mulige triggere. Etter 1-2 måneder ser du ofte mønstre du ikke la merke til før.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Søvn</h4>
+              <h3>Søvn</h3>
               <p>Søvnmangel er den hyppigst rapporterte triggeren for hodepine. Samme legge- og vaknetid hver dag, 7-9 timer søvn, mørkt og stille soverom.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Fysisk aktivitet</h4>
+              <h3>Fysisk aktivitet</h3>
               <p>Moderat aerob trening 3-5 ganger i uken har dokumentert forebyggende effekt mot hodepine – like godt som flere forebyggende medisiner.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Stress og ergonomi</h4>
+              <h3>Stress og ergonomi</h3>
               <p>Langvarig skjermarbeid og dårlig arbeidsergonomi er vanlige Årsaker. Ta jevnlige pauser, og Væroppmerksom på om du spenner i nakke, skuldre eller kjeve.</p>
             </div>
           </section>
@@ -705,32 +679,32 @@
             </div>
 
             <div class="faq-item">
-              <h4>Kan kiropraktor behandle hodepine?</h4>
+              <h3>Kan kiropraktor behandle hodepine?</h3>
               <p>Ja, kiropraktikk har dokumentert effekt ved nakkehodepine (cervikogen hodepine) og spenningshodepine med muskulær komponent. Ved migrene kan kiropraktisk behandling være et supplement, men ofte kreves medisinsk behandling fra fastlege.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Hva er forskjellen på spenningshodepine og migrene?</h4>
+              <h3>Hva er forskjellen på spenningshodepine og migrene?</h3>
               <p>Spenningshodepine kjennes som press eller stramming rundt hodet, er mild til moderat og forverres ikke av aktivitet. Migrene er intens pulserende smerte, ofte ensidig, med kvalme og lys/lyd-folsomhet, og forverres av fysisk aktivitet.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Hva er cervikogen hodepine?</h4>
+              <h3>Hva er cervikogen hodepine?</h3>
               <p>Cervikogen hodepine er hodepine som skyldes feilfunksjon i nakkevirvlene (C1-C3) eller bløtvevet i nakken. Smerten starter i nakken og stråler opp mot panne, tinning eller rundt øyet. Dette er hodepineformen som responderer best på kiropraktisk behandling.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Kan muskelspenninger gi hodepine?</h4>
+              <h3>Kan muskelspenninger gi hodepine?</h3>
               <p>Ja, triggerpunkter i nakke, skulder og kjeve kan gi referert smerte til hodet. Forskning viser at triggerpunkter reproduserer hodepine hos over 90% av pasienter med kronisk spenningshodepine.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Når bør jeg kontakte lege for hodepine?</h4>
+              <h3>Når bør jeg kontakte lege for hodepine?</h3>
               <p>Ring 113 ved plutselig maksimal hodepine, hodepine med feber og nakkestivhet, eller nevrologiske utfall. Bestill legetime ved ny hodepine etter 50 år, hodepine som forverres over uker, eller hodepine som endrer karakter drastisk.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Hvor mange nordmenn har hodepine?</h4>
+              <h3>Hvor mange nordmenn har hodepine?</h3>
               <p>Ifølge PopHEAD-studien fra 2026 rapporterte 75% av menn og nesten 90% av kvinner hodepine i løpet av det siste året. På en hvilken som helst dag har nesten 16% av verdens befolkning hodepine.</p>
             </div>
           </section>

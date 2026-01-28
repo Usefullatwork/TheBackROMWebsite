@@ -144,82 +144,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal variables block - hub-article.css provides all styling */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-red-light: #fef2f2;
-      --hub-green: #059669;
-      --hub-green-light: #f0fdf4;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-purple-light: #f5f3ff;
-      --hub-orange: #ea580c;
-      --hub-pink: #ec4899;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    /* Article-specific content styles */
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .intro-tldr-grid { display: grid; grid-template-columns: 1fr 300px; gap: 28px; margin-bottom: 28px; }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .faq-item { border: 1px solid #e5e7eb; border-radius: 8px; margin: 10px 0; overflow: hidden; }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .sources-section { margin-top: 28px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-
-    .disclaimer { font-size: 12px; color: #6b7280; font-style: italic; margin: 20px 0; padding: 14px; background: #f9fafb; border-radius: 8px; }
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-
-    /* Custom boxes for this article */
-    .exercise-box { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border: 2px solid var(--hub-green); border-radius: 10px; padding: 20px; margin: 16px 0; }
-    .exercise-box h4 { color: #166534; font-size: 15px; margin: 0 0 12px; }
-    .exercise-box ol { margin: 0; padding-left: 20px; color: #166534; }
-    .exercise-box li { font-size: 14px; margin-bottom: 8px; }
-    .exercise-box .note { font-style: italic; margin-top: 12px; color: #166534; font-size: 13px; }
-
-    .pillow-card { background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%); border: 1px solid #c4b5fd; border-radius: 10px; padding: 18px; margin: 14px 0; }
-    .pillow-card h4 { color: #5b21b6; font-size: 15px; margin: 0 0 10px; }
-    .pillow-card p { font-size: 14px; color: #5b21b6; margin: 0; }
-
-    /* Mobile sticky CTA */
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #fff; padding: 12px 16px; box-shadow: 0 -4px 16px rgba(0,0,0,0.1); gap: 10px; z-index: 100; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; } .hub-main { margin-bottom: 80px; } }
-    .mobile-sticky-cta .btn { flex: 1; text-align: center; padding: 12px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 14px; }
-    .mobile-sticky-cta .btn-primary { background: #F26522; color: #fff; }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -227,7 +152,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -280,7 +205,7 @@
                 <p>La oss se på hvorfor dette skjer og hva du kan gjøre for å våkne uthvilt i stedet for vond.</p>
               </div>
               <aside class="premium-summary-card">
-                <h3>Kort oppsummert</h3>
+                <h2>Kort oppsummert</h2>
                 <ul>
                   <li><strong>Vanligste årsak:</strong> Feil sovestilling/pute</li>
                   <li><strong>Normal stivhet:</strong> Letter innen 30-60 min</li>
@@ -301,7 +226,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Feil sovestilling</h4>
+                  <h3 class="condition-title">Feil sovestilling</h3>
                   <span class="condition-badge">Vanligst</span>
                 </div>
                 <p>Hvis nakken ligger i en ugunstig posisjon over flere timer, tilpasser musklene seg denne posisjonen. Nær du så pråver å bevege nakken normalt om morgenen, protesterer de stramme musklene.</p>
@@ -309,34 +234,34 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Uegnet pute</h4>
+                  <h3 class="condition-title">Uegnet pute</h3>
                 </div>
                 <p>En pute som er for høy, for lav, for hard eller for myk gir ikke nakken den ståtten den trenger. Over tid kan dette føre til kronisk morgenstivhet.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Redusert bevegelse under såvn</h4>
+                  <h3 class="condition-title">Redusert bevegelse under såvn</h3>
                 </div>
                 <p>Man beveger seg naturlig mindre nær man sover. Denne mangelen på bevegelse gjør at leddene blir "stive" og synovialvåsken (leddsmåring) fordeler seg dørligere.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Underliggende nakkeplager</h4>
+                  <h3 class="condition-title">Underliggende nakkeplager</h3>
                 </div>
                 <p>Hvis du har eksisterende problemer som muskulære stramheter, leddirritasjon eller <a href="nakkeprolaps.html">diskproblematikk</a>, vil disse ofte være mest merkbare om morgenen før du har beveget deg.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Degenerative forandringer (slitasje)</h4>
+                  <h3 class="condition-title">Degenerative forandringer (slitasje)</h3>
                 </div>
                 <p>Med alderen utvikles normale slitasjeforandringer i nakken. Disse gir ofte økt stivhet, spesielt om morgenen. Bedres typisk med bevegelse.</p>
               </div>
 
               <div class="info-box">
-                <h4>Den gode nyheten</h4>
+                <h3>Den gode nyheten</h3>
                 <p>Normal morgenstivhet letter typisk innen 30-60 minutter etter at du star opp og begynner å bevege deg. Hvis stivheten varer lengre, kan det tyde på en underliggende tilstand.</p>
               </div>
             </section>
@@ -350,7 +275,7 @@
               <p>Sovestillingen din har stor innvirkning på hvordan nakken har det om morgenen.</p>
 
               <div class="treatment-box">
-                <h4>Sideleie - Beste valget for de fleste</h4>
+                <h3>Sideleie - Beste valget for de fleste</h3>
                 <ul>
                   <li>Hold ryggraden i en rett linje fra hodet til hoftene</li>
                   <li>Bruk en pute som fyller rommet mellom året og madrassen</li>
@@ -360,7 +285,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Ryggleie - Også et godt valg</h4>
+                <h3>Ryggleie - Også et godt valg</h3>
                 <ul>
                   <li>Holder nakken i naturlig lordose (kurvatur)</li>
                   <li>Krever lavere pute enn sideleie</li>
@@ -370,7 +295,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Mageleie - Unngå hvis mulig</h4>
+                <h3>Mageleie - Unngå hvis mulig</h3>
                 <p>Mageleie tvinger deg til å vri hodet helt til siden for å puste. Denne ekstreme rotasjonen over flere timer setter betydelig stress på nakkestrukturer og er den vanligste årsaken til å våkne med "kink i nakken" (<a href="torticollis.html">torticollis</a>).</p>
               </div>
 
@@ -410,27 +335,27 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Memory foam</h4>
+                  <h3 class="condition-title">Memory foam</h3>
                 </div>
                 <p>Tilpasser seg hodets form og gir jevn ståtte. Kan bli varmt. God for de som holder seg i ro om natten.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Latex</h4>
+                  <h3 class="condition-title">Latex</h3>
                 </div>
                 <p>Responsiv og ståttende. Holder formen bedre enn memory foam. Kjøligere å sove på. Ofte dyrere.</p>
               </div>
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Dun/fjår</h4>
+                  <h3 class="condition-title">Dun/fjår</h3>
                 </div>
                 <p>Mykt og formbart. Mister ofte ståtten utover natten. Krever regelmessig "dunkende" for å gjenopprette volum.</p>
               </div>
 
               <div class="info-box">
-                <h4>Nær bytte pute?</h4>
+                <h3>Nær bytte pute?</h3>
                 <p>De fleste puter bør byttes hvert 1-2 år. Tegn på at puten er utslitt: Den holder ikke lenger formen, du våkner oftere med nakkesmerter, eller du må "stable" puter for å få nok høyde.</p>
               </div>
             </section>
@@ -444,7 +369,7 @@
               <p>Noen enkle øvelser i sengen eller like etter at du star opp kan gjøre stor forskjell for morgenstivheten.</p>
 
               <div class="exercise-box">
-                <h4>1. Forsiktig nakkerotasjon</h4>
+                <h3>1. Forsiktig nakkerotasjon</h3>
                 <ol>
                   <li>Ligg på ryggen eller sitt oppreist</li>
                   <li>Drei hodet sakte til høyre så langt det er komfortabelt</li>
@@ -456,7 +381,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>2. Nakkefleksjon og ekstensjon</h4>
+                <h3>2. Nakkefleksjon og ekstensjon</h3>
                 <ol>
                   <li>Sitt oppreist med avslappede skuldre</li>
                   <li>Båy hodet forsiktig fremover, haken mot brystet</li>
@@ -468,7 +393,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>3. Skulderrulle</h4>
+                <h3>3. Skulderrulle</h3>
                 <ol>
                   <li>Sitt eller stå med armene langs siden</li>
                   <li>Rull skuldrene bakover i store, langsomme sirkler</li>
@@ -479,7 +404,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>4. Nakkeretraksjoner i sengen</h4>
+                <h3>4. Nakkeretraksjoner i sengen</h3>
                 <ol>
                   <li>Ligg på ryggen uten pute</li>
                   <li>Press bakhodet forsiktig ned mot madrassen</li>
@@ -490,7 +415,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Timing</h4>
+                <h3>Timing</h3>
                 <p>Gjår åvelsene før du star opp, eller i løpet av de første 10 minuttene etter oppvøkning. Det tar bare 2-3 minutter og kan gjøre stor forskjell for resten av dagen.</p>
               </div>
             </section>
@@ -519,7 +444,7 @@
               <h3>Hva kiropraktor kan hjelpe med</h3>
 
               <div class="treatment-box">
-                <h4>Ved kronisk morgenstivhet</h4>
+                <h3>Ved kronisk morgenstivhet</h3>
                 <ul>
                   <li>Vurdere underliggende Årsaker til stivheten</li>
                   <li>Leddmobilisering for å bedre bevegelighet</li>

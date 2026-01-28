@@ -175,33 +175,7 @@
   <link rel="stylesheet" href="../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -209,7 +183,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../index.html" class="header__logo logo"><img src="../images/logo-header.webp"
+        <a href="../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -266,7 +240,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Norge har verdens høyeste forekomst</strong> med 6 151 per 100 000</li>
                 <li>Vanligste Årsaker: Muskel-/fascieplager <strong>(80-90%)</strong>, facettledd, triggerpunkter</li>
@@ -327,7 +301,7 @@
 
             <!-- Red Flag Alert Box - Immediately Visible -->
             <div class="red-flag-alert">
-              <h4>Når må du ringe 113 eller dra til legevakt?</h4>
+              <h3>Når må du ringe 113 eller dra til legevakt?</h3>
               <p>Ved feber med stiv nakke, thunderclap hodepine, økende svakhet i armer/ben, eller klossete hender med gangvansker - søk hjelp umiddelbart.</p>
               <a href="#rodeflagg">Les mer om røde flagg</a>
             </div>
@@ -367,28 +341,28 @@
             </div>
 
             <div class="condition-card">
-              <h4>Uspesifikke nakkesmerter (80-90% av tilfellene)</h4>
+              <h3>Uspesifikke nakkesmerter (80-90% av tilfellene)</h3>
               <p class="section-quick-link"><a href="nakke/stressnakke.html">Gå til full artikkel om stressnakke →</a></p>
               <p>Mellom 80 og 90 prosent av alle nakkesmerter har ingen spesifikk årsak som kan påvises på røntgen eller MR (Kazeminasab et al., 2022). Det betyr ikke at smertene er innbilt - tvert imot kan de være sværtplagsomme.</p>
               <p><strong>Typiske kjennetegn:</strong> Stivhet, omhet og tyngdefølelse i nakke og skuldre. Smertene kommer ofte gradvis og kan henge sammen med stillesittende arbeid, stress, dårlig søvn eller ensidig belastning.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Myofascielt smertesyndrom og triggerpunkter (88,9% har minst ett triggerpunkt)</h4>
+              <h3>Myofascielt smertesyndrom og triggerpunkter (88,9% har minst ett triggerpunkt)</h3>
               <p class="section-quick-link"><a href="nakke/triggerpunkter-nakke.html">Gå til full artikkel om triggerpunkter →</a></p>
               <p>Stramme muskler med triggerpunkter - omme knuter i muskulaturen - er sværtvanlig ved nakkesmerter. En studie fant at hele 88,9% av pasienter med kroniske, uspesifikke nakkesmerter hadde minst ett triggerpunkt (Ezzati et al., 2021).</p>
               <p>De vanligste musklene som rammes er trapezius, infraspinatus og scalene-musklene. Triggerpunktene kan gi både lokal smerte og utstråling til hodet, skuldrene eller ned i armene.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Facettleddsmerter (54-60% av kroniske tilfeller)</h4>
+              <h3>Facettleddsmerter (54-60% av kroniske tilfeller)</h3>
               <p class="section-quick-link"><a href="nakke/degenerative-forandringer.html">Gå til full artikkel om facettledd og slitasje →</a></p>
               <p>Facettleddene er de små leddene på baksiden av nakkevirvlene. Ved kroniske nakkesmerter viser studier at facettleddene er smertekilden hos 54-60% av pasienter (Manchikanti et al., 2006).</p>
               <p>Typisk for facettleddsmerter er at de forverres ved bevegelse - særlig ved å bøye nakken bakover eller rotere hodet. Morgenstivhet er også vanlig.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Tekst-nakke og fremoverlent holdning</h4>
+              <h3>Tekst-nakke og fremoverlent holdning</h3>
               <p class="section-quick-link"><a href="nakke/tekstnakke.html">Gå til full artikkel om tekstnakke →</a></p>
               <p>Moderne smarttelefonbruk kan gi betydelig belastning på nakken. En studie fra Hansraj (2014) viste hvordan vinkelen på hodet påvirker belastningen:</p>
               <table class="comparison-table">
@@ -468,7 +442,7 @@
             </table>
 
             <div class="info-box">
-              <h4>Bakody's tegn</h4>
+              <h3>Bakody's tegn</h3>
               <p>Dersom symptomene lindres nær du legger handen på hodet (skulderen i abduksjon), tyder det sterkt på at problemet kommer fra nakken. Testen har 80-100% spesifisitet for cervikal radikulopati.</p>
             </div>
           </section>
@@ -481,7 +455,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Cervikogen svimmelhet (43% av pasienter med langvarige nakkesmerter)</h4>
+              <h3>Cervikogen svimmelhet (43% av pasienter med langvarige nakkesmerter)</h3>
               <p class="section-quick-link"><a href="svimmelhet/nakkesvimmelhet.html">Gå til full artikkel om nakkesvimmelhet →</a></p>
               <p>En studie fra 2022 fant at 43% av pasienter med langvarige nakkesmerter også rapporterte svimmelhet (Knapstad et al., 2022).</p>
               <p><strong>Mekanismen:</strong> Nakken har en usedvanlig høy tetthet av proprioseptorer - posisjonssensorer som forteller hjernen hvor hodet befinner seg. Når disse sensorene sender feil signaler på grunn av muskelstramhet, leddysfunksjon eller smerte, oppstar en sensorisk konflikt - hjernen mottar motstridende informasjon. Dette skaper svimmelhet, ustohet og kvalme.</p>
@@ -489,7 +463,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Cervikogen hodepine (15-20% av alle hodepiner)</h4>
+              <h3>Cervikogen hodepine (15-20% av alle hodepiner)</h3>
               <p class="section-quick-link"><a href="hodepine/nakkehodepine.html">Gå til full artikkel om cervikogen hodepine →</a></p>
               <p>Hodepine med utgangspunkt i nakken rammer anslagsvis 2,2% av befolkningen, og utgjør 15-20% av alle hodepiner (Sjaastad & Bakketeig, 2008).</p>
               <p>Typisk starter smerten i nakken og stråler frem mot panne eller øye - ofte ensidig. Hodepinen forverres ved nakkebevegelser og kan utloses av trykk over Øvre nakkevirvler. Manuell behandling av nakken gir ofte lindring.</p>
@@ -578,7 +552,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Når er bildediagnostikk nødvendig?</h4>
+              <h3>Når er bildediagnostikk nødvendig?</h3>
               <p>Ved vanlige nakkesmerter er bildediagnostikk som regel ikke nødvendig. Bildediagnostikk er først aktuelt ved mistanke om alvorlig underliggende sykdom, etter betydelig traume, eller dersom du ikke responderer på behandling over tid.</p>
             </div>
           </section>
@@ -597,7 +571,7 @@
             <p>Hos meg på TheBackROM kombinerer jeg leddmobilisering, bløtvevsbehandling og malrettede øvelser tilpasset din situasjon. Manipulasjon av brystvirvelsoylen kan også gi umiddelbar lindring av nakkesmerter.</p>
 
             <div class="treatment-box">
-              <h4>Hvorfor tidlig behandling lønner seg</h4>
+              <h3>Hvorfor tidlig behandling lønner seg</h3>
               <p>En studie fra 2016 sammenlignet pasienter som fikk behandling innen fire uker med dem som ventet lenger. Resultatet var tydelig: <strong>tidlig behandling ga dobbelt så stor sjanse for klinisk betydningsfull bedring</strong> på både smerte og funksjon (Horn et al., 2016). Tidlig innsats var også mer kostnadseffektivt og krevde færre behandlinger totalt.</p>
             </div>
 
@@ -717,42 +691,42 @@
             </div>
 
             <div class="faq-item">
-              <h4>Hvor lenge varer vanlige nakkesmerter?</h4>
+              <h3>Hvor lenge varer vanlige nakkesmerter?</h3>
               <p>De fleste akutte episoder går over i løpet av 2-6 uker. Bedring skjer raskest de første 6-12 ukene. Ved kroniske plager (over 12 uker) kan forløpet variere - mange opplever perioder med bedring og forverring.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Bør jeg vente og se om det går over?</h4>
+              <h3>Bør jeg vente og se om det går over?</h3>
               <p>Nei, tidlig behandling gir ofte bedre resultater. En studie viste dobbelt så stor sjanse for betydelig bedring ved behandling innen 4 uker sammenlignet med å vente (Horn et al., 2016). Du trenger ikke vente på at smertene skal bli verre.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Kan nakkesmerter gi svimmelhet?</h4>
+              <h3>Kan nakkesmerter gi svimmelhet?</h3>
               <p>Ja, 43% av pasienter med langvarige nakkesmerter rapporterer svimmelhet (Knapstad et al., 2022). Cervikogen svimmelhet skyldes forstyrret kommunikasjon mellom nakkemuskulaturens posisjonssensorer og balansesystemet. Behandling av nakkeplagene gir ofte bedring.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Hvordan vet jeg om nummenheten kommer fra nakken eller handleddet?</h4>
+              <h3>Hvordan vet jeg om nummenheten kommer fra nakken eller handleddet?</h3>
               <p>Ved karpaltunnel er symptomene ofte verst om natten og bedres nær du rister handen. Ved cervikal radikulopati forverres symptomene av nakkebevegelser, og lindres nær du løfter armen over hodet (Bakody's tegn).</p>
             </div>
 
             <div class="faq-item">
-              <h4>Trenger jeg henvisning for å gå til kiropraktor?</h4>
+              <h3>Trenger jeg henvisning for å gå til kiropraktor?</h3>
               <p>Nei, kiropraktorer har vært primærhelsepersonell siden 2006. Du kan bestille time direkte uten henvisning fra lege. Jeg kan også sykemelde inntil 12 uker og henvise til bildediagnostikk eller spesialist ved behov.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Hvor mange behandlinger trenger jeg?</h4>
+              <h3>Hvor mange behandlinger trenger jeg?</h3>
               <p>Ved akutte nakkesmerter er det vanlig med 6-12 behandlinger over 4-6 uker. Ved kroniske plager kan forløpet være lengre. Jeg vurderer alltid behandlingsrespons underveis og justerer planen deretter.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Trenger jeg MR av nakken?</h4>
+              <h3>Trenger jeg MR av nakken?</h3>
               <p>Ved vanlige nakkesmerter er MR sjelden nødvendig. Slitasjeforandringer er normalfunn hos voksne - 88,5% av friske mennesker har degenerative forandringer uten symptomer. MR er først aktuelt ved mistanke om alvorlig underliggende tilstand, etter betydelig traume, eller dersom du ikke responderer på behandling.</p>
             </div>
 
             <div class="faq-item">
-              <h4>Er det farlig å fa "knekk" i nakken?</h4>
+              <h3>Er det farlig å fa "knekk" i nakken?</h3>
               <p>Manipulasjon av nakken er trygt når det utføres av kvalifisert helsepersonell. Alvorlige komplikasjoner er ekstremt sjeldne. Jeg vurderer alltid om manipulasjon er egnet for din situasjon, og bruker alternative teknikker der det er mest hensiktsmessig.</p>
             </div>
           </section>
@@ -784,91 +758,91 @@
             </div>
 
             <div class="condition-card">
-              <h4>Nakkeprolaps (cervikal diskherniering)</h4>
+              <h3>Nakkeprolaps (cervikal diskherniering)</h3>
               <p>Når en disk i nakken buker ut og irriterer en nerve. Gir ofte utstraling ned i armen med nummenhet og svakhet. 75-90% blir bedre med konservativ behandling.</p>
               <a href="nakke/nakkeprolaps.html" style="color: var(--hub-primary); font-weight: 600;">Les komplett guide om nakkeprolaps</a>
             </div>
 
             <div class="condition-card">
-              <h4>Whiplash (nakkesleng)</h4>
+              <h3>Whiplash (nakkesleng)</h3>
               <p>Blotdelsskade i nakken etter pakjorsel bakfra eller annet traume. Ca. 50% blir helt bra innen 3 måneder. Tidlig mobilisering er viktig - nakkekrage frarades.</p>
               <a href="nakke/whiplash.html" style="color: var(--hub-primary); font-weight: 600;">Les komplett guide om whiplash</a>
             </div>
 
             <div class="condition-card">
-              <h4>Akutt torticollis (kink i nakken)</h4>
+              <h3>Akutt torticollis (kink i nakken)</h3>
               <p>Plutselig stivhet der hodet blir "last" til en side. Sværtvanlig og ufarlig. De fleste blir helt bra innen 1-2 uker, med eller uten behandling.</p>
               <a href="nakke/torticollis.html" style="color: var(--hub-primary); font-weight: 600;">Les komplett guide om kink i nakken</a>
             </div>
 
             <div class="condition-card">
-              <h4>Kvalme fra nakkesmerter</h4>
+              <h3>Kvalme fra nakkesmerter</h3>
               <p>Nakkeproblemer kan gi kvalme og svimmelhet gjennom forstyrrede signaler til balansesystemet. Samme mekanisme som reisesyke. Behandling av nakken hjelper ofte.</p>
               <a href="nakke/kvalme.html" style="color: var(--hub-primary); font-weight: 600;">Les om kvalme fra nakken</a>
             </div>
 
             <div class="condition-card">
-              <h4>Cervikogen hodepine</h4>
+              <h3>Cervikogen hodepine</h3>
               <p>Hodepine som stammer fra Øvre nakke. Typisk ensidig, starter i nakken og stråler mot panne/tinning. 71-81% Oppnår betydelig bedring med behandling.</p>
               <a href="hodepine/nakkehodepine.html" style="color: var(--hub-primary); font-weight: 600;">Les om cervikogen hodepine</a>
             </div>
 
             <div class="condition-card">
-              <h4>C5-C6 diskprolaps</h4>
+              <h3>C5-C6 diskprolaps</h3>
               <p>Prolaps på C5-C6 niva gir nummenhet i tommel og pekefinger, svak biceps. 85% blir bra uten kirurgi på 8-12 uker.</p>
               <a href="nakke/c5-c6-prolaps.html" style="color: var(--hub-primary); font-weight: 600;">Les om C5-C6 prolaps</a>
             </div>
 
             <div class="condition-card">
-              <h4>C6-C7 diskprolaps</h4>
+              <h3>C6-C7 diskprolaps</h3>
               <p>Den vanligste nakkeprolapsen. Gir nummenhet i langfingeren og tricepssvakhet. 85-90% blir bra konservativt.</p>
               <a href="nakke/c6-c7-prolaps.html" style="color: var(--hub-primary); font-weight: 600;">Les om C6-C7 prolaps</a>
             </div>
 
             <div class="condition-card">
-              <h4>Tekstnakke (text neck)</h4>
+              <h3>Tekstnakke (text neck)</h3>
               <p>Nakkesmerter fra langvarig mobilbruk. 60 grader fremoverlening gir 27 kg belastning på nakken. Øvelser og holdningsendring hjelper.</p>
               <a href="nakke/tekstnakke.html" style="color: var(--hub-primary); font-weight: 600;">Les om tekstnakke</a>
             </div>
 
             <div class="condition-card">
-              <h4>Stiv nakke om morgenen</h4>
+              <h3>Stiv nakke om morgenen</h3>
               <p>Vakner du med vond nakke? Ofte skyldes feil sovestilling eller uegnet pute. Morgenøvelser og riktig pute hjelper.</p>
               <a href="nakke/stiv-nakke-om-morgenen.html" style="color: var(--hub-primary); font-weight: 600;">Les om stiv nakke om morgenen</a>
             </div>
 
             <div class="condition-card">
-              <h4>Smerter mellom skulderbladene</h4>
+              <h3>Smerter mellom skulderbladene</h3>
               <p>Opptil 42% av smerter mellom skulderbladene skyldes facettledd i nakken. Lær om Årsaker, diagnostikk og behandling.</p>
               <a href="brystrygg/mellom-skulderbladene.html" style="color: var(--hub-primary); font-weight: 600;">Les om smerter mellom skulderbladene</a>
             </div>
 
             <div class="condition-card">
-              <h4>Thoracic Outlet Syndrom (TOS)</h4>
+              <h3>Thoracic Outlet Syndrom (TOS)</h3>
               <p>TOS gir nummenhet, prikking og smerter ned i armen. Nerver og blodårer komprimeres i passasjen mellom nakke og skulder.</p>
               <a href="skulder/tos-nummen-arm.html" style="color: var(--hub-primary); font-weight: 600;">Les om thoracic outlet syndrom</a>
             </div>
 
             <div class="condition-card">
-              <h4>Røde flagg ved nakkesmerter</h4>
+              <h3>Røde flagg ved nakkesmerter</h3>
               <p>Når er nakkesmerter alvorlig? Lær å gjenkjenne varseltegn som arteriedisseksjon og myelopati - sjeldne men viktige tilstander.</p>
               <a href="nakke/rode-flagg-nakkesmerter.html" style="color: var(--hub-primary); font-weight: 600;">Les om røde flagg ved nakkesmerter</a>
             </div>
 
             <div class="condition-card">
-              <h4>Triggerpunkter i nakken</h4>
+              <h3>Triggerpunkter i nakken</h3>
               <p>Triggerpunkter - omme knuter i musklene - er sværtvanlig ved nakkesmerter. Kan gi hodepine, skuldersmerter og stivhet.</p>
               <a href="nakke/triggerpunkter-nakke.html" style="color: var(--hub-primary); font-weight: 600;">Les om triggerpunkter i nakken</a>
             </div>
 
             <div class="condition-card">
-              <h4>Occipital nevralgi</h4>
+              <h3>Occipital nevralgi</h3>
               <p>Intense, stikkende eller elektriske smerter fra nakken opp til issen. Rammer occipitalnerven og kan ligne migrene.</p>
               <a href="hodepine/occipital-nevralgi.html" style="color: var(--hub-primary); font-weight: 600;">Les om occipital nevralgi</a>
             </div>
 
             <div class="condition-card">
-              <h4>Hodepine etter nakkesleng</h4>
+              <h3>Hodepine etter nakkesleng</h3>
               <p>Hodepine er sværtvanlig etter nakkesleng (whiplash). Tidlig mobilisering gir bedre prognose enn hvile og nakkekrage.</p>
               <a href="nakke/nakkesleng-hodepine.html" style="color: var(--hub-primary); font-weight: 600;">Les om hodepine etter nakkesleng</a>
             </div>

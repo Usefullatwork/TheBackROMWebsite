@@ -138,83 +138,7 @@
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -222,7 +146,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../../index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -273,7 +197,7 @@
           <div class="hub-content">
 
             <div class="premium-summary-card">
-              <h3>Quick Summary</h3>
+              <h2>Quick Summary</h2>
               <ul>
                 <li>Over <strong>51% of headache patients</strong> also have dizziness</li>
                 <li>Most common: <strong>Vestibular migraine</strong> or neck problems</li>
@@ -329,7 +253,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>1. Vestibular Migraine</h4>
+                <h3>1. Vestibular Migraine</h3>
                 <p><a href="vestibular-migraine.html">Vestibular migraine</a> is the <strong>most common cause of episodic dizziness</strong> in adults, affecting 0.9-2.7% of the population. Among <a href="migraine.html">migraine patients</a>, 10.3% have vestibular migraine.</p>
                 <p>What is unusual about this condition is that headache and dizziness <strong>often do not occur simultaneously</strong>. On average, 8 years pass from the first migraine until vestibular symptoms develop.</p>
                 <ul>
@@ -343,7 +267,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>2. Cervicogenic Dizziness (neck-related)</h4>
+                <h3>2. Cervicogenic Dizziness (neck-related)</h3>
                 <p>Dizziness caused by neck problems affects <strong>40% of patients with neck pain</strong>. Of these, 59.7% were related to myofascial pain syndrome (muscle tension with <a href="trigger-points-headache.html">trigger points</a>). This often overlaps with <a href="neck-headache.html">cervicogenic headache</a>.</p>
                 <p>The neck contains extremely many <strong>proprioceptors</strong> (position sensors) - especially in the small muscles at the top toward the skull. When these send incorrect signals, a conflict arises between what the neck "tells" the brain and what the balance organ in the ear registers.</p>
                 <ul>
@@ -355,18 +279,18 @@
               </div>
 
               <div class="condition-card">
-                <h4>3. BPPV with Secondary Headache</h4>
+                <h3>3. BPPV with Secondary Headache</h3>
                 <p>Benign paroxysmal positional vertigo (BPPV) is the <strong>most common single cause of dizziness</strong> in general - responsible for about 50% of all dizziness consultations.</p>
                 <p>34.8% of BPPV patients also report headache. Migraine patients have <strong>twice the risk</strong> of developing BPPV compared to the general population.</p>
               </div>
 
               <div class="condition-card">
-                <h4>4. Tension Headache with Dizziness</h4>
+                <h3>4. Tension Headache with Dizziness</h3>
                 <p><a href="tension-headache.html">Tension headache</a> is the most common headache type overall. Many experience a nonspecific dizziness or "foggy head" along with the headache - especially with tight neck and shoulder muscles.</p>
               </div>
 
               <div class="condition-card">
-                <h4>5. Medication Side Effects</h4>
+                <h3>5. Medication Side Effects</h3>
                 <p>Over <strong>1000 medications</strong> have dizziness as a known side effect, and over 2000 have headache on the list. Common culprits include:</p>
                 <ul>
                   <li>Blood pressure medication (especially amlodipine)</li>
@@ -377,7 +301,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>6. Less Common Causes</h4>
+                <h3>6. Less Common Causes</h3>
                 <p>Meniere's disease (0.2% of population), vestibular neuritis, and persistent postural-perceptual dizziness (PPPD) are less common causes of the combination.</p>
               </div>
             </section>
@@ -390,7 +314,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>CALL EMERGENCY SERVICES IF:</h4>
+                <h3>CALL EMERGENCY SERVICES IF:</h3>
                 <ul>
                   <li><strong>Thunderclap headache:</strong> Severe headache reaching maximum intensity within seconds ("the worst headache of my life")</li>
                   <li><strong>Problems walking or standing:</strong> Unsteadiness or inability to maintain balance</li>
@@ -495,27 +419,27 @@
               </div>
 
               <div class="condition-card">
-                <h4>Why do headache and dizziness often occur together?</h4>
+                <h3>Why do headache and dizziness often occur together?</h3>
                 <p>Headache and dizziness occur together three times more often than by chance. Over 51% of people with recurring headaches also experience dizziness. The most common causes are vestibular migraine and cervicogenic dizziness from the neck.</p>
               </div>
 
               <div class="condition-card">
-                <h4>What is vestibular migraine?</h4>
+                <h3>What is vestibular migraine?</h3>
                 <p>Vestibular migraine is the most common cause of episodic dizziness in adults and affects 0.9-2.7% of the population. The condition causes dizziness episodes that can last from minutes to hours, often with light and sound sensitivity. Headache and dizziness often do not occur simultaneously.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Can a chiropractor help with dizziness?</h4>
+                <h3>Can a chiropractor help with dizziness?</h3>
                 <p>For cervicogenic dizziness (neck-related), there is moderate evidence that manual treatment is effective. Studies show significant improvement in dizziness intensity and frequency that persists at 12-month follow-up. For BPPV, repositioning maneuvers are highly effective.</p>
               </div>
 
               <div class="condition-card">
-                <h4>What is cervicogenic dizziness?</h4>
+                <h3>What is cervicogenic dizziness?</h3>
                 <p>Cervicogenic dizziness is caused by neck problems and affects about 40% of patients with neck pain. The neck contains many proprioceptors, and when these send incorrect signals, a conflict arises between the neck and the balance organ in the ear.</p>
               </div>
 
               <div class="condition-card">
-                <h4>When should I see a doctor?</h4>
+                <h3>When should I see a doctor?</h3>
                 <p>Seek medical attention immediately for sudden severe headache, problems with walking/balance, double vision, speech difficulties, numbness, fever with neck stiffness, or sudden neck/back of head pain after neck movement.</p>
               </div>
             </section>

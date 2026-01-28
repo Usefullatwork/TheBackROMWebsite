@@ -83,69 +83,8 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    /* Minimal embedded CSS - matches hub pattern. Main styles from hub-article.css */
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-    .hub-intro { margin-bottom: 40px; }
-    .intro-text { font-size: 1.05rem; line-height: 1.7; color: #374151; margin-bottom: 24px; }
-    .intro-text p { margin-bottom: 14px; }
-    .hub-section { margin-bottom: 40px; scroll-margin-top: 100px; }
-    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .section-number { background: var(--hub-primary); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-    .hub-section h2 { color: var(--hub-dark); margin: 0; }
-    .hub-section h3 { font-size: 1.15rem; color: var(--hub-dark); margin: 24px 0 12px; }
-    .hub-section p { color: #374151; line-height: 1.7; margin-bottom: 14px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 24px 0; }
-    .stat-item { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; }
-    .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); }
-    .stat-label { color: #64748b; font-size: 0.75rem; margin-top: 4px; }
-    .condition-card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 16px 0; }
-    .condition-card h4 { color: var(--hub-primary); margin-bottom: 10px; }
-    .treatment-box { background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .treatment-box h4 { color: var(--hub-green); margin-bottom: 12px; }
-    .info-box { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .info-box h4 { color: var(--hub-blue); margin-bottom: 12px; }
-    .red-flag-box { background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: var(--hub-red); margin-bottom: 12px; }
-    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question { color: var(--hub-dark); font-weight: 600; margin-bottom: 8px; }
-    .faq-answer { color: #4b5563; line-height: 1.6; }
-    .sources-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: var(--hub-dark); margin-bottom: 12px; font-size: 1.1rem; }
-    .sources-section ul { font-size: 0.85rem; color: #64748b; }
-    .sources-section li { margin-bottom: 6px; }
-    .disclaimer { font-size: 0.85rem; color: #64748b; margin-top: 24px; font-style: italic; }
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #F26522; padding: 12px 16px; z-index: 100; }
-    .mobile-sticky-cta a { display: inline-block; background: white; color: #F26522; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; margin-right: 8px; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; gap: 8px; justify-content: center; } }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
-
-  <!-- FAQPage Schema -->
+  <link rel="stylesheet" href="../../css/hub-article.css">
+<!-- FAQPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -201,7 +140,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -256,7 +195,7 @@
             </div>
 
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>Hva det er:</strong> Blåtdelsskade i nakken ved rask akselerasjon-deselerasjon, oftest ved bilulykker</li>
                 <li><strong>Svimmelhet:</strong> 40-70% av de med vedvarende nakkeslengplager opplever svimmelhet</li>
@@ -291,7 +230,7 @@
 
             <!-- Red Flag Alert -->
             <div class="red-flag-alert">
-              <h4>Nær må du søke hjelp umiddelbart?</h4>
+              <h3>Nær må du søke hjelp umiddelbart?</h3>
               <p>Ved nevrologiske utfall, endret bevissthet, kraftig hodepine eller blære-/tarmforstyrrelser etter nakkesleng - ring 113 eller dra til legevakt.</p>
             </div>
           </section>
@@ -306,27 +245,27 @@
             <p>90% av nakkeslengskader klassifiseres som WAD grad I-II, altså nakkeplager med eller uten muskuloskeletale funn, men uten nevrologiske tegn.</p>
 
             <div class="condition-card">
-              <h4>Grad 0</h4>
+              <h3>Grad 0</h3>
               <p>Ingen plager, ingen funn</p>
             </div>
 
             <div class="condition-card">
-              <h4>Grad I</h4>
+              <h3>Grad I</h3>
               <p>Nakkesmerter/stivhet, men normale funn ved undersøkelse</p>
             </div>
 
             <div class="condition-card">
-              <h4>Grad II (vanligst)</h4>
+              <h3>Grad II (vanligst)</h3>
               <p>Nakkesmerter OG nedsatt bevegelighet/åmme punkter. De fleste ligger her.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Grad III</h4>
+              <h3>Grad III</h3>
               <p>Nakkesmerter OG nevrologiske utfall (svekkede reflekser, nummenhet i armen)</p>
             </div>
 
             <div class="condition-card">
-              <h4>Grad IV</h4>
+              <h3>Grad IV</h3>
               <p>Brudd eller dislokasjon - krever sykehusbehandling</p>
             </div>
           </section>
@@ -341,27 +280,27 @@
             <p><strong>Fra vanligst til sjeldnest:</strong></p>
 
             <div class="condition-card">
-              <h4>1. Bilulykker</h4>
+              <h3>1. Bilulykker</h3>
               <p>Særlig påkjørsler bakfra - den vanligste årsaken</p>
             </div>
 
             <div class="condition-card">
-              <h4>2. Idrettsskader</h4>
+              <h3>2. Idrettsskader</h3>
               <p>Ishockey, bryting, kontaktidretter</p>
             </div>
 
             <div class="condition-card">
-              <h4>3. Fall</h4>
+              <h3>3. Fall</h3>
               <p>Fra høyde eller på glatt underlag</p>
             </div>
 
             <div class="condition-card">
-              <h4>4. Vold/overfall</h4>
+              <h3>4. Vold/overfall</h3>
               <p>Direkte traumer mot nakken</p>
             </div>
 
             <div class="condition-card">
-              <h4>5. Fritidsaktiviteter</h4>
+              <h3>5. Fritidsaktiviteter</h3>
               <p>Sjeldne tilfeller fra berg-og-dal-baner o.l.</p>
             </div>
           </section>
@@ -395,7 +334,7 @@
             <p>Ved nakkesleng kan disse sensorene bli skadet. Suboccipitalmusklene har ekstremt høy muskelspoltethet - 242 spoler per gram sammenlignet med kun 2,2 per gram i trapezius. Nær disse skades, sender nakken feilsignaler til hjernen.</p>
 
             <div class="info-box">
-              <h4>Sensorisk mismatch</h4>
+              <h3>Sensorisk mismatch</h3>
               <p>øynene sier "man star stille", året sier "man star stille", men nakken sier "hodet beveger seg!". Hjernen tolker dette som svimmelhet - som å være sjåsyk på land.</p>
             </div>
           </section>
@@ -410,7 +349,7 @@
             <p>Dette er kanskje det viktigste spørsmålet man må besvare. <a href="nakkesvimmelhet.html">Cervikogen svimmelhet</a> (nakkesvimmelhet) er en eksklusjonsdiagnose - man må først utelukke andre Årsaker.</p>
 
             <div class="condition-card">
-              <h4>Tegn på cervikogen svimmelhet (nakken)</h4>
+              <h3>Tegn på cervikogen svimmelhet (nakken)</h3>
               <ul>
                 <li>Svimmelheten øker ved nakkebevegelser eller nær du sitter stille lenge</li>
                 <li>Føles som "gynging" eller "uståhet" - ikke roterende</li>
@@ -421,7 +360,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Tegn på <a href="krystallsyke-bppv.html">BPPV (krystallsyke)</a></h4>
+              <h3>Tegn på <a href="krystallsyke-bppv.html">BPPV (krystallsyke)</a></h3>
               <ul>
                 <li>Roterende vertigo som varer sekunder til under ett minutt</li>
                 <li>Utlåses av spesifikke hodestillinger (snu seg i sengen, se opp)</li>
@@ -431,7 +370,7 @@
             </div>
 
             <div class="condition-card">
-              <h4>Tegn på <a href="post-hjernerystelse.html">hjernerystelse</a></h4>
+              <h3>Tegn på <a href="post-hjernerystelse.html">hjernerystelse</a></h3>
               <ul>
                 <li>Problemer med hukommelse eller konsentrasjon</li>
                 <li>Lys- eller lydsensitivitet</li>
@@ -441,7 +380,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Viktig</h4>
+              <h3>Viktig</h3>
               <p>Ved bilulykker kan opptil 40% ha både nakkesleng og <a href="post-hjernerystelse.html">hjernerystelse</a> samtidig. Da må begge behandles.</p>
             </div>
           </section>
@@ -478,7 +417,7 @@
             <p>Systematiske oversikter viser at <strong>multimodal behandling</strong> - kombinasjonen av manuell terapi, øvelser og pasientinformasjon - har sterkest evidensgrunnlag.</p>
 
             <div class="treatment-box">
-              <h4>Behandlingsmetoder</h4>
+              <h3>Behandlingsmetoder</h3>
               <ul>
                 <li><strong>Manuell terapi:</strong> Forsiktig mobilisering av ledd, mykvevsbehandling av stramme muskler. En metaanalyse fant signifikant smertelindring på mellomlang sikt.</li>
                 <li><strong>Trening av dype nakkemuskler:</strong> De små musklene som stabiliserer nakken "skrur seg ofte av" etter skade. Motorisk kontrolltrening har sterk evidens.</li>
@@ -490,7 +429,7 @@
             <h3>Hva kan du gjøre selv?</h3>
 
             <div class="condition-card">
-              <h4>Selvhjelp</h4>
+              <h3>Selvhjelp</h3>
               <ul>
                 <li><strong>Hold deg i bevegelse:</strong> Tidlig mobilisering er viktig. Gå turer - armene svinger naturlig og låser opp nakken.</li>
                 <li><strong>Unngå statiske stillinger:</strong> Ikke sitt med mobilen i fanget i lange perioder, spesielt de første ukene.</li>
@@ -506,7 +445,7 @@
             <p>Kiropraktisk behandling er ofte effektiv for mekanisk nakkesvimmelhet - nær svimmelheten kommer fordi leddene i nakken ikke beveger seg som de skal, eller nær muskelsmerter trigger symptomene.</p>
 
             <div class="info-box">
-              <h4>Kiropraktikk alene er ikke tilstrekkelig hvis:</h4>
+              <h3>Kiropraktikk alene er ikke tilstrekkelig hvis:</h3>
               <ul>
                 <li>Du har en aktiv hjernerystelse (trenger hvile/pacing først)</li>
                 <li>Du har BPPV/krystallsyke (trenger Epley-manåver, ikke nakkebehandling)</li>
@@ -541,7 +480,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Viktig å vite</h4>
+              <h3>Viktig å vite</h3>
               <p>En studie viste at 86% av pasienter som fortsatt hadde symptomer ved 3 måneder, fortsatt hadde plager ved 2 år - mens 93% av de symptomfrie ved 3 måneder forble friske. Dette understreker betydningen av tidlig og effektiv behandling.</p>
             </div>
 

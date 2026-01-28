@@ -33,41 +33,7 @@
     <link rel="stylesheet" href="../../../css/index-2026-fixes.css">
   </noscript>
   <link rel="stylesheet" href="../../../css/hub-article.css" />
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-accent: #F26522;
-      --hub-accent-hover: #e05a1a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-      --hub-light-bg: #f8fafc;
-      --hub-border: #e2e8f0;
-      --hub-text: #1e293b;
-      --hub-text-muted: #64748b;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -75,7 +41,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -183,21 +149,21 @@
 
               <div class="condition-card"
                 style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 14px 0;">
-                <h4 style="color: var(--hub-primary); margin-bottom: 10px;">Spondylosis (Wear and Tear)</h4>
+                <h3 style="color: var(--hub-primary); margin-bottom: 10px;">Spondylosis (Wear and Tear)</h3>
                 <p>The most common cause. Over time, the vertebrae can develop bone spurs (osteophytes) that grow into
                   the foramen and make the opening narrower.</p>
               </div>
 
               <div class="condition-card"
                 style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 14px 0;">
-                <h4 style="color: var(--hub-primary); margin-bottom: 10px;">Disc Changes</h4>
+                <h3 style="color: var(--hub-primary); margin-bottom: 10px;">Disc Changes</h3>
                 <p>Disc bulging or <a href="neck-disc-herniation.html">herniation</a> can press on the nerve root. A
                   "hard" herniation with bone spurs is more common in stenosis than "soft" disc herniation.</p>
               </div>
 
               <div class="condition-card"
                 style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 14px 0;">
-                <h4 style="color: var(--hub-primary); margin-bottom: 10px;">Facet Joint Osteoarthritis</h4>
+                <h3 style="color: var(--hub-primary); margin-bottom: 10px;">Facet Joint Osteoarthritis</h3>
                 <p>Wear in the facet joints leads to thickening of the joint capsule and bone spurs that reduce space in
                   the foramen.</p>
               </div>
@@ -231,7 +197,7 @@
 
               <div class="info-box"
                 style="background: #eff6ff; border: 1px solid #93c5fd; border-radius: 10px; padding: 18px; margin: 16px 0;">
-                <h4 style="color: var(--hub-blue); margin-bottom: 10px;">Spurling's Test</h4>
+                <h3 style="color: var(--hub-blue); margin-bottom: 10px;">Spurling's Test</h3>
                 <p style="font-size: 14px; color: #1e40af; margin: 0;">A classic test for foraminal stenosis: The head
                   is bent backward and rotated toward the painful side, then light pressure is applied downward. A
                   positive test reproduces radiation to the arm. This "closes" the foramen and provokes symptoms.</p>
@@ -249,7 +215,7 @@
 
               <div class="treatment-box"
                 style="background: #f0fdf4; border: 1px solid #86efac; border-radius: 10px; padding: 18px; margin: 16px 0;">
-                <h4 style="color: var(--hub-green); margin-bottom: 10px;">Chiropractic treatment may include:</h4>
+                <h3 style="color: var(--hub-green); margin-bottom: 10px;">Chiropractic treatment may include:</h3>
                 <ul style="margin: 0; padding-left: 20px; color: #166534;">
                   <li><strong>Manual mobilization:</strong> Gentle mobilization of neck joints to improve mobility</li>
                   <li><strong>Manual traction:</strong> "Stretching" of the neck that opens the foramen and provides
@@ -263,14 +229,14 @@
               <h3>Exercises That Often Help</h3>
               <div class="condition-card"
                 style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 14px 0;">
-                <h4 style="color: var(--hub-primary); margin-bottom: 10px;">Cervical Retractions (Chin Tuck)</h4>
+                <h3 style="color: var(--hub-primary); margin-bottom: 10px;">Cervical Retractions (Chin Tuck)</h3>
                 <p>Pull your chin straight back as if making a "double chin." Hold for 5 seconds. This exercise
                   centralizes neck discs and can open the foramen.</p>
               </div>
 
               <div class="condition-card"
                 style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 14px 0;">
-                <h4 style="color: var(--hub-primary); margin-bottom: 10px;">Side Bend Away from Painful Side</h4>
+                <h3 style="color: var(--hub-primary); margin-bottom: 10px;">Side Bend Away from Painful Side</h3>
                 <p>Gently bend your head toward the shoulder on the pain-free side. This opens the foramen on the
                   painful side and can provide immediate relief.</p>
               </div>
@@ -292,7 +258,7 @@
 
               <div class="red-flag-alert"
                 style="background: #fef2f2; border: 2px solid #fca5a5; border-radius: 10px; padding: 20px; margin: 20px 0;">
-                <h4 style="color: var(--hub-red); margin-bottom: 12px;">CONTACT A DOCTOR IMMEDIATELY IF:</h4>
+                <h3 style="color: var(--hub-red); margin-bottom: 12px;">CONTACT A DOCTOR IMMEDIATELY IF:</h3>
                 <ul style="margin: 0; padding-left: 20px; color: #991b1b;">
                   <li>Progressive weakness in arm or hand that is worsening</li>
                   <li>Visible muscle wasting (atrophy)</li>
@@ -323,8 +289,8 @@
               </div>
 
               <div class="faq-item" style="border-bottom: 1px solid #e5e7eb; padding: 18px 0;">
-                <h4 style="color: var(--hub-dark); margin-bottom: 10px;">What is the difference between foraminal
-                  stenosis and central stenosis?</h4>
+                <h3 style="color: var(--hub-dark); margin-bottom: 10px;">What is the difference between foraminal
+                  stenosis and central stenosis?</h3>
                 <p style="color: #4b5563; margin: 0; font-size: 14px; line-height: 1.6;">Foraminal stenosis affects the
                   nerve openings on the sides of the spine where nerves exit, causing symptoms in the arm/hand. Central
                   stenosis affects the spinal canal itself and can cause symptoms in both arms and legs, as well as gait
@@ -332,23 +298,23 @@
               </div>
 
               <div class="faq-item" style="border-bottom: 1px solid #e5e7eb; padding: 18px 0;">
-                <h4 style="color: var(--hub-dark); margin-bottom: 10px;">Can cervical foraminal stenosis be treated
-                  without surgery?</h4>
+                <h3 style="color: var(--hub-dark); margin-bottom: 10px;">Can cervical foraminal stenosis be treated
+                  without surgery?</h3>
                 <p style="color: #4b5563; margin: 0; font-size: 14px; line-height: 1.6;">Yes, most people with cervical
                   foraminal stenosis respond well to conservative treatment. Studies show that 75-90% get good relief
                   without surgery through manual treatment, traction exercises, and strength training.</p>
               </div>
 
               <div class="faq-item" style="border-bottom: 1px solid #e5e7eb; padding: 18px 0;">
-                <h4 style="color: var(--hub-dark); margin-bottom: 10px;">What exercises help with foraminal stenosis in
-                  the neck?</h4>
+                <h3 style="color: var(--hub-dark); margin-bottom: 10px;">What exercises help with foraminal stenosis in
+                  the neck?</h3>
                 <p style="color: #4b5563; margin: 0; font-size: 14px; line-height: 1.6;">Cervical retraction exercises
                   (chin tucks), neck traction exercises, and scapular stabilization are often effective. Exercises that
                   open the foramen (gentle side bending away from the painful side) can provide immediate relief.</p>
               </div>
 
               <div class="faq-item" style="padding: 18px 0;">
-                <h4 style="color: var(--hub-dark); margin-bottom: 10px;">Is cervical foraminal stenosis dangerous?</h4>
+                <h3 style="color: var(--hub-dark); margin-bottom: 10px;">Is cervical foraminal stenosis dangerous?</h3>
                 <p style="color: #4b5563; margin: 0; font-size: 14px; line-height: 1.6;">Foraminal stenosis itself is
                   not dangerous, but untreated it can lead to progressive nerve damage. Seek medical attention for
                   increasing weakness, muscle wasting, or problems with fine motor skills.</p>

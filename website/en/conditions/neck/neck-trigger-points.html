@@ -32,250 +32,8 @@
     <link rel="stylesheet" href="../../../css/index-2026-fixes.css">
   </noscript>
   <link rel="stylesheet" href="../../../css/hub-article.css">
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .hub-intro {
-      margin-bottom: 40px;
-    }
-
-    .intro-text {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: #374151;
-      margin-bottom: 24px;
-    }
-
-    .intro-text p {
-      margin-bottom: 14px;
-    }
-
-    .hub-section {
-      margin-bottom: 40px;
-      scroll-margin-top: 100px;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-
-    .section-number {
-      background: var(--hub-primary);
-      color: white;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 1rem;
-      flex-shrink: 0;
-    }
-
-    .hub-section h2 {
-      color: var(--hub-dark);
-      margin: 0;
-    }
-
-    .hub-section h3 {
-      font-size: 1.15rem;
-      color: var(--hub-dark);
-      margin: 24px 0 12px;
-    }
-
-    .hub-section p {
-      color: #374151;
-      line-height: 1.7;
-      margin-bottom: 14px;
-    }
-
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      margin: 24px 0;
-    }
-
-    .stat-item {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .stat-number {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--hub-primary);
-    }
-
-    .stat-label {
-      color: #64748b;
-      font-size: 0.75rem;
-      margin-top: 4px;
-    }
-
-    .condition-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 16px 0;
-    }
-
-    .condition-card h4 {
-      color: var(--hub-primary);
-      margin-bottom: 10px;
-    }
-
-    .treatment-box {
-      background: #ecfdf5;
-      border: 1px solid #6ee7b7;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .treatment-box h4 {
-      color: var(--hub-green);
-      margin-bottom: 12px;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border: 1px solid #93c5fd;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .info-box h4 {
-      color: var(--hub-blue);
-      margin-bottom: 12px;
-    }
-
-    .red-flag-box {
-      background: #fef2f2;
-      border: 2px solid #fca5a5;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 {
-      color: var(--hub-red);
-      margin-bottom: 12px;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid #e5e7eb;
-      padding: 16px 0;
-    }
-
-    .faq-item:last-child {
-      border-bottom: none;
-    }
-
-    .faq-question {
-      color: var(--hub-dark);
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .faq-answer {
-      color: #4b5563;
-      line-height: 1.6;
-    }
-
-    .sources-section {
-      margin-top: 32px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: var(--hub-dark);
-      margin-bottom: 12px;
-      font-size: 1.1rem;
-    }
-
-    .sources-section ul {
-      font-size: 0.85rem;
-      color: #64748b;
-    }
-
-    .sources-section li {
-      margin-bottom: 6px;
-    }
-
-    .disclaimer {
-      font-size: 0.85rem;
-      color: #64748b;
-      margin-top: 24px;
-      font-style: italic;
-    }
-
-    .mobile-sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #F26522;
-      padding: 12px 16px;
-      z-index: 100;
-    }
-
-    .mobile-sticky-cta a {
-      display: inline-block;
-      background: white;
-      color: #F26522;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: 600;
-      text-decoration: none;
-      margin-right: 8px;
-    }
-
-    @media (max-width: 900px) {
-      .mobile-sticky-cta {
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-      }
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
-
-  <!-- FAQPage Schema -->
+  <link rel="stylesheet" href="../../../css/hub-article.css">
+<!-- FAQPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -339,7 +97,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -439,7 +197,7 @@
             </nav>
 
             <div class="red-flag-alert">
-              <h4>When to seek help immediately?</h4>
+              <h3>When to seek help immediately?</h3>
               <p>For unexplained weight loss, fever, neurological symptoms or gait disturbances - contact a doctor for
                 evaluation.</p>
               <a href="neck-pain-red-flags.html">Read more about red flags for neck pain</a>
@@ -457,24 +215,24 @@
               ranked by frequency:</p>
 
             <div class="condition-card">
-              <h4>Static Loading and Poor Ergonomics (Most Common)</h4>
+              <h3>Static Loading and Poor Ergonomics (Most Common)</h3>
               <p>Prolonged desk work, screen use with forward head position, and repetitive work are by far the most
                 common causes. Office workers and manual laborers have similar trigger point distribution, with an
                 average of 6 active and 10-11 latent trigger points (Fernandez-De-Las-Penas 2012).</p>
             </div>
 
             <div class="condition-card">
-              <h4>Muscular Overload</h4>
+              <h3>Muscular Overload</h3>
               <p>Repetitive movements, heavy lifting, or sudden increased training load.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Stress and Tension</h4>
+              <h3>Stress and Tension</h3>
               <p>Psychological stress often leads to chronic muscle tension, especially in the neck and shoulders.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Other Factors</h4>
+              <h3>Other Factors</h3>
               <ul>
                 <li><strong>Sleep problems and fatigue:</strong> Poor sleep reduces the muscles' ability to recover</li>
                 <li><strong>Vitamin D deficiency:</strong> About one-third of MPS patients have low vitamin D levels
@@ -485,7 +243,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Who is affected?</h4>
+              <h3>Who is affected?</h3>
               <p>MPS occurs most often in the 27-50 age group. Women are affected more often than men - 65% versus 37%
                 among middle-aged adults (Steen, Muscle & Nerve 2025).</p>
             </div>
@@ -501,29 +259,29 @@
             <p>Trigger points in the neck produce a characteristic symptom pattern:</p>
 
             <div class="condition-card">
-              <h4>Local Tenderness</h4>
+              <h3>Local Tenderness</h3>
               <p>A distinct point that is very tender to pressure.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Referred Pain</h4>
+              <h3>Referred Pain</h3>
               <p>Pain radiates in a predictable pattern. Upper trapezius often causes pain toward the back of the head
                 and temple. Sternocleidomastoid can cause pain around the eye and forehead.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Stiffness and Reduced Mobility</h4>
+              <h3>Stiffness and Reduced Mobility</h3>
               <p>Difficulty turning the head or looking up.</p>
             </div>
 
             <div class="condition-card">
-              <h4><a href="cervicogenic-headache.html">Headache</a></h4>
+              <h3><a href="cervicogenic-headache.html">Headache</a></h3>
               <p>80% of patients with chronic tension headache have active trigger points in the upper trapezius
                 (Alonso-Blanco 2011).</p>
             </div>
 
             <div class="condition-card">
-              <h4>"Stiff Neck" Sensation</h4>
+              <h3>"Stiff Neck" Sensation</h3>
               <p>Typical with trigger points in levator scapulae, with pain at the angle between neck and shoulder.</p>
             </div>
           </section>
@@ -551,25 +309,25 @@
             </div>
 
             <div class="condition-card">
-              <h4>Upper Trapezius (93% of chronic neck pain patients)</h4>
+              <h3>Upper Trapezius (93% of chronic neck pain patients)</h3>
               <p>Causes pain along the neck, up toward the back of the head, temple and behind the eye. The classic
                 "tension headache."</p>
             </div>
 
             <div class="condition-card">
-              <h4>Levator Scapulae (55-65%)</h4>
+              <h3>Levator Scapulae (55-65%)</h3>
               <p>Causes the typical "stiff neck" sensation with pain at the neck-shoulder junction and along the inner
                 border of the shoulder blade.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Sternocleidomastoid (SCM)</h4>
+              <h3>Sternocleidomastoid (SCM)</h3>
               <p>Can cause headache in the forehead and around the eye, as well as dizziness and balance disturbances.
               </p>
             </div>
 
             <div class="condition-card">
-              <h4>Scalene Muscles</h4>
+              <h3>Scalene Muscles</h3>
               <p>Can cause radiation to the chest, shoulder, arm and thumb - sometimes mistaken for heart symptoms or
                 nerve root involvement.</p>
             </div>
@@ -588,7 +346,7 @@
               2018).</p>
 
             <div class="info-box">
-              <h4>Important to know</h4>
+              <h3>Important to know</h3>
               <p>There are no internationally validated diagnostic criteria for MPS. Inter-examiner reliability is only
                 moderate. This means that two practitioners examining the same patient may find trigger points in
                 slightly different locations. We therefore use the clinical examination as a starting point, but also
@@ -611,19 +369,19 @@
             <p>It's important to distinguish trigger points from other conditions that can cause similar symptoms:</p>
 
             <div class="condition-card">
-              <h4>Cervical Radiculopathy (Nerve Root Involvement)</h4>
+              <h3>Cervical Radiculopathy (Nerve Root Involvement)</h3>
               <p>Follows dermatomal patterns (specific skin areas), often with tingling/numbness and weakness. Trigger
                 points follow muscle-specific radiation patterns.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Fibromyalgia</h4>
+              <h3>Fibromyalgia</h3>
               <p>Widespread pain for more than 3 months, with tenderness in many areas of the body, often with fatigue
                 and sleep problems.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Cervical Facet Joint Arthrosis</h4>
+              <h3>Cervical Facet Joint Arthrosis</h3>
               <p>Pain from the joints between vertebrae, often with morning stiffness that improves throughout the day.
               </p>
             </div>
@@ -644,7 +402,7 @@
               relevant for many patients.</p>
 
             <div class="treatment-box">
-              <h4>Treatment I offer includes:</h4>
+              <h3>Treatment I offer includes:</h3>
               <ul>
                 <li><strong>Ischemic compression:</strong> Sustained pressure on the trigger point. A 2022 meta-analysis
                   shows significant improvement in pressure pain threshold (Lu et al. 2022)</li>
@@ -659,7 +417,7 @@
             </div>
 
             <div class="info-box">
-              <h4>Honest expectations</h4>
+              <h3>Honest expectations</h3>
               <p>Short-term treatment effects are well documented. Long-term effects (6-12 months) are less well
                 studied, and at this time horizon there is little difference between different treatment methods. What
                 gives the best lasting effect is combining treatment with self-exercise and addressing underlying
@@ -672,30 +430,30 @@
               myofascial pain (Mata Diz et al. 2017):</p>
 
             <div class="condition-card">
-              <h4>Stretching</h4>
+              <h3>Stretching</h3>
               <p>Hold for 30 seconds - this is the optimal duration according to research (Mansoori et al. 2021).
                 Stretch trapezius, levator scapulae and scalenes daily.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Strength Training</h4>
+              <h3>Strength Training</h3>
               <p>Exercises for deep neck muscles and shoulder blade stabilizers. I'll show you specific exercises
                 tailored to your trigger points.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Ergonomics</h4>
+              <h3>Ergonomics</h3>
               <p>Screen at eye level, forearms supported, regular breaks. Avoid forward head position.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Self-massage</h4>
+              <h3>Self-massage</h3>
               <p>Use a tennis ball or lacrosse ball against the wall for gentle pressure on tender points. 30-60 seconds
                 per point.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Heat and Stress Management</h4>
+              <h3>Heat and Stress Management</h3>
               <p>Heat can provide temporary relief and increase blood flow. Chronic stress maintains muscle tension -
                 consider breathing techniques, mindfulness or other relaxation methods.</p>
             </div>
@@ -712,12 +470,12 @@
               see:</p>
 
             <div class="condition-card">
-              <h4>Acute Problems (&lt;6 weeks)</h4>
+              <h3>Acute Problems (&lt;6 weeks)</h3>
               <p>Often 3-6 treatments over 2-4 weeks, with gradual transition to self-exercise.</p>
             </div>
 
             <div class="condition-card">
-              <h4>Chronic Problems (&gt;12 weeks)</h4>
+              <h3>Chronic Problems (&gt;12 weeks)</h3>
               <p>May require longer treatment period. Focus on identifying and addressing maintaining factors.</p>
             </div>
 
@@ -756,7 +514,7 @@
               Short-term treatment effects are well documented in research.</p>
 
             <div class="info-box">
-              <h4>Recurrence is common</h4>
+              <h3>Recurrence is common</h3>
               <p>Without addressing underlying factors like ergonomics, stress, inactivity and potential nutritional
                 deficiencies, trigger points often return. This is why we place great emphasis on self-exercise and
                 lifestyle factors.</p>

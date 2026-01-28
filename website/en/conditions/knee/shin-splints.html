@@ -66,33 +66,8 @@
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
-
-  <!-- MedicalWebPage Schema -->
+  <link rel="stylesheet" href="../../../css/hub-article.css">
+<!-- MedicalWebPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -115,7 +90,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -249,7 +224,7 @@
                 <h2 class="section-title">Treatment</h2>
               </div>
               <div class="treatment-box">
-                <h4>Acute Phase</h4>
+                <h3>Acute Phase</h3>
                 <ul>
                   <li><strong>Relative rest:</strong> Reduce running, don't stop completely</li>
                   <li><strong>Cross-train:</strong> Swimming, cycling, elliptical (if pain-free)</li>
@@ -258,7 +233,7 @@
                 </ul>
               </div>
               <div class="treatment-box">
-                <h4>Rehabilitation</h4>
+                <h3>Rehabilitation</h3>
                 <ul>
                   <li><strong>Calf strengthening:</strong> Heel raises, single-leg variations</li>
                   <li><strong>Hip strengthening:</strong> Reduces tibial stress through better mechanics</li>
@@ -268,7 +243,7 @@
               </div>
               <h3>Do Orthotics Help?</h3>
               <div class="info-box">
-                <h4>Evidence is Mixed</h4>
+                <h3>Evidence is Mixed</h3>
                 <p>Shock-absorbing insoles may help some people with shin splints, but they're not a cure-all. If you
                   have significant overpronation, custom orthotics could be considered. But strengthening and training
                   modification are more important.</p>
@@ -390,8 +365,8 @@
       <div class="footer__container">
         <div class="footer__left">
           <div class="footer__social"><a href="https://www.facebook.com/profile.php?id=61551540184975" rel="noopener noreferrer"
-              class="footer__social-link"><img src="../../../images/Media iconer/facebook_media_social_icon.png"
-                alt="Facebook" width="512" height="512" loading="lazy" /></a><a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link"><img
+              class="footer__social-link" aria-label="Facebook"><img src="../../../images/Media iconer/facebook_media_social_icon.png"
+                alt="Facebook" width="512" height="512" loading="lazy" /></a><a href="https://www.instagram.com/chiro_mads/" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram"><img
                 src="../../../images/Media iconer/instagramlogo.png" alt="Instagram" width="512" height="512"
                 loading="lazy" /></a></div>
         </div>

@@ -166,371 +166,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper {
-      overflow: visible !important;
-    }
-
-    .page {
-      padding-top: 0 !important;
-    }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    @media (max-width: 800px) {
-      .intro-tldr-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .intro-text p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #374151;
-    }
-
-    .hub-content {
-      padding: 32px;
-    }
-
-    @media (max-width: 600px) {
-      .hub-content {
-        padding: 20px;
-      }
-    }
-
-    .hub-content h3 {
-      font-size: 17px;
-      color: var(--hub-dark);
-      margin: 22px 0 10px;
-    }
-
-    .hub-content p {
-      margin-bottom: 14px;
-      font-size: 15px;
-    }
-
-    .hub-content ul,
-    .hub-content ol {
-      margin: 14px 0;
-      padding-left: 24px;
-    }
-
-    .hub-content li {
-      margin-bottom: 6px;
-      font-size: 15px;
-    }
-
-    .hub-content strong {
-      color: var(--hub-dark);
-    }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .hub-section:first-of-type {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-    }
-
-    .section-title {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--hub-dark);
-      margin: 0;
-    }
-
-    @media (max-width: 600px) {
-      .section-title {
-        font-size: 18px;
-      }
-    }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-
-    .faq-question {
-      padding: 14px 16px;
-      font-weight: 600;
-      background: #fafafa;
-      font-size: 14px;
-      color: var(--hub-dark);
-    }
-
-    .faq-answer {
-      padding: 14px 16px;
-      color: #6b7280;
-      border-top: 1px solid #e5e7eb;
-      font-size: 14px;
-    }
-
-    .anatomy-box {
-      background: #f5f3ff;
-      border: 1px solid #d8b4fe;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .anatomy-box h4 {
-      color: var(--hub-purple);
-      font-size: 15px;
-      margin: 0 0 12px;
-    }
-
-    .anatomy-box p {
-      font-size: 14px;
-      margin-bottom: 8px;
-      color: #5b21b6;
-    }
-
-    .anatomy-box ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .anatomy-box li {
-      font-size: 14px;
-      margin-bottom: 8px;
-      color: #5b21b6;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .info-box h4 {
-      color: #1e40af;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .info-box p {
-      font-size: 14px;
-      margin: 0;
-      color: #1e3a8a;
-    }
-
-    .info-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-      color: #1e3a8a;
-    }
-
-    .info-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .red-flag-alert{
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .red-flag-alert h4 {
-      color: #92400e;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .red-flag-alert p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #78350f;
-    }
-
-    .red-flag-alert ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-    }
-
-    .red-flag-alert li {
-      font-size: 14px;
-      margin-bottom: 4px;
-      color: #78350f;
-    }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .treatment-box h4 {
-      color: #166534;
-      font-size: 15px;
-      margin: 0 0 8px;
-    }
-
-    .treatment-box p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #166534;
-    }
-
-    .treatment-box ul {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-    }
-
-    .treatment-box li {
-      font-size: 14px;
-      margin-bottom: 4px;
-      color: #166534;
-    }
-
-    .exercise-box {
-      background: #ecfdf5;
-      border: 1px solid #6ee7b7;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .exercise-box h4 {
-      color: #047857;
-      font-size: 15px;
-      margin: 0 0 10px;
-    }
-
-    .exercise-box p {
-      font-size: 14px;
-      margin: 0 0 8px;
-      color: #065f46;
-    }
-
-    .exercise-box ol {
-      margin: 8px 0 0 0;
-      padding-left: 20px;
-    }
-
-    .exercise-box li {
-      font-size: 14px;
-      margin-bottom: 6px;
-      color: #065f46;
-    }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 {
-      color: #dc2626;
-      margin: 0 0 12px;
-      font-size: 16px;
-    }
-
-    .red-flag-box ul {
-      color: #7f1d1d;
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .red-flag-box li {
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-
-    .red-flag-box .note {
-      font-style: italic;
-      margin-top: 12px;
-      color: #991b1b;
-      font-size: 13px;
-    }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 {
-      color: #6b7280;
-      font-size: 15px;
-      margin-bottom: 12px;
-    }
-
-    .sources-section ul {
-      font-size: 12px;
-      color: #6b7280;
-      line-height: 1.6;
-      padding-left: 20px;
-    }
-
-    .sources-section li {
-      margin-bottom: 4px;
-    }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -538,7 +174,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -601,7 +237,7 @@
               </div>
 
               <aside class="premium-summary-card">
-                <h3>Quick Summary</h3>
+                <h2>Quick Summary</h2>
                 <ul>
                   <li><strong>72%</strong> of handball/volleyball players have GIRD</li>
                   <li><strong>90%</strong> improve with conservative treatment</li>
@@ -640,7 +276,7 @@
                   volleyball players</strong> have measurable GIRD. But here's the important thing:</p>
 
               <div class="info-box">
-                <h4>When is GIRD normal vs. problematic?</h4>
+                <h3>When is GIRD normal vs. problematic?</h3>
                 <p>A certain degree of GIRD is <strong>normal adaptation</strong> to throwing sports and doesn't
                   necessarily cause problems. GIRD only becomes problematic when:</p>
                 <ul>
@@ -684,19 +320,19 @@
               <h3>Adaptive process</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">1. Capsular changes</h4>
+                <h3 class="condition-title">1. Capsular changes</h3>
                 <p>The posterior joint capsule gradually becomes tighter and thicker in response to repetitive stretch
                   loads on the anterior capsule during throwing.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">2. Bone changes</h4>
+                <h3 class="condition-title">2. Bone changes</h3>
                 <p>Young throwers may develop retroversion (backward tilt) of the humeral head. This contributes to
                   increased external rotation and reduced internal rotation.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">3. Muscular imbalances</h4>
+                <h3 class="condition-title">3. Muscular imbalances</h3>
                 <p>The throwing muscles (anterior shoulder, chest muscles) often become stronger than the posterior
                   stabilizers, reinforcing the imbalance.</p>
               </div>
@@ -715,7 +351,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>Risk factors for developing symptomatic GIRD</h4>
+                <h3>Risk factors for developing symptomatic GIRD</h3>
                 <ul>
                   <li>Rapid increase in training volume or intensity</li>
                   <li>Lack of periodization and recovery</li>
@@ -737,7 +373,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Throwing sports</h4>
+                  <h3 class="condition-title">Throwing sports</h3>
                   <span class="condition-badge">Highest risk</span>
                 </div>
                 <ul>
@@ -750,7 +386,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Striking sports</h4>
+                  <h3 class="condition-title">Striking sports</h3>
                 </div>
                 <ul>
                   <li><strong>Volleyball:</strong> Especially attackers and servers</li>
@@ -761,7 +397,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Other sports</h4>
+                  <h3 class="condition-title">Other sports</h3>
                 </div>
                 <ul>
                   <li><strong>Swimming:</strong> Especially freestyle and butterfly</li>
@@ -771,7 +407,7 @@
               </div>
 
               <div class="info-box">
-                <h4>When do symptoms debut?</h4>
+                <h3>When do symptoms debut?</h3>
                 <p>Many develop GIRD already in their teenage years, but symptoms often first appear when training load
                   increases (e.g., transition to senior team) or when recovery becomes insufficient.</p>
               </div>
@@ -797,7 +433,7 @@
               <h3>More developed symptoms</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Pain during throwing</h4>
+                <h3 class="condition-title">Pain during throwing</h3>
                 <ul>
                   <li>Especially in late cocking phase (arm back) and early acceleration</li>
                   <li>Sharp pain deep in the shoulder</li>
@@ -806,7 +442,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Posterior shoulder pain</h4>
+                <h3 class="condition-title">Posterior shoulder pain</h3>
                 <ul>
                   <li>Localized behind the shoulder</li>
                   <li>Aching pain after activity</li>
@@ -816,7 +452,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Reduced performance</h4>
+                <h3 class="condition-title">Reduced performance</h3>
                 <ul>
                   <li>Reduced throwing speed ("dead arm")</li>
                   <li>Poorer control and accuracy</li>
@@ -850,7 +486,7 @@
               <h3>Movement assessment</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Rotation measurement</h4>
+                <h3 class="condition-title">Rotation measurement</h3>
                 <p>Both shoulders are measured at 90 degrees abduction:</p>
                 <ul>
                   <li><strong>Internal rotation (IR):</strong> Normally about 70-90 degrees</li>
@@ -860,7 +496,7 @@
               </div>
 
               <div class="info-box">
-                <h4>GIRD criteria</h4>
+                <h3>GIRD criteria</h3>
                 <p><strong>Asymptomatic GIRD:</strong> Reduced IR on dominant side, but total ROM is preserved
                   (increased ER compensates).</p>
                 <p><strong>Symptomatic GIRD:</strong> Reduced total ROM (>5 degrees) compared to opposite side, or pain
@@ -870,18 +506,18 @@
               <h3>Clinical tests</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Posterior impingement test</h4>
+                <h3 class="condition-title">Posterior impingement test</h3>
                 <p>The arm is brought into maximum external rotation and abduction. Pain in the back of the shoulder
                   indicates internal impingement.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Sleeper stretch position</h4>
+                <h3 class="condition-title">Sleeper stretch position</h3>
                 <p>Test internal rotation with patient lying on side. Compare with opposite side.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title"><a href="slap-tear.html">SLAP tests</a></h4>
+                <h3 class="condition-title"><a href="slap-tear.html">SLAP tests</a></h3>
                 <p>O'Brien's test, anterior slide, biceps load II to assess labral pathology.</p>
               </div>
 
@@ -909,7 +545,7 @@
                 goals are to restore normal movement and strength.</p>
 
               <div class="treatment-box">
-                <h4>Treatment principles</h4>
+                <h3>Treatment principles</h3>
                 <ul>
                   <li><strong>Posterior capsule stretching:</strong> Sleeper stretch is the main intervention</li>
                   <li><strong>Posterior rotator cuff strengthening:</strong> Infraspinatus, teres minor</li>
@@ -945,7 +581,7 @@
               <h3>Main exercises</h3>
 
               <div class="exercise-box">
-                <h4>Sleeper Stretch (main exercise for GIRD)</h4>
+                <h3>Sleeper Stretch (main exercise for GIRD)</h3>
                 <ol>
                   <li>Lie on the affected side with shoulder at 90 degrees flexion</li>
                   <li>Elbow bent 90 degrees, forearm pointing up</li>
@@ -958,7 +594,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>Cross-body stretch</h4>
+                <h3>Cross-body stretch</h3>
                 <ol>
                   <li>Stand or sit upright</li>
                   <li>Pull the affected arm across your chest with the opposite hand</li>
@@ -968,7 +604,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>Side-lying external rotation (strengthening)</h4>
+                <h3>Side-lying external rotation (strengthening)</h3>
                 <ol>
                   <li>Lie on opposite side with light weight or band</li>
                   <li>Elbow bent 90 degrees and supported against body</li>
@@ -978,7 +614,7 @@
               </div>
 
               <div class="info-box">
-                <h4>When surgery?</h4>
+                <h3>When surgery?</h3>
                 <p>Surgery is rarely needed for isolated GIRD. It may be indicated for:</p>
                 <ul>
                   <li>Structural SLAP lesion not responding to conservative treatment</li>
@@ -1001,7 +637,7 @@
               <h3>Daily routines</h3>
 
               <div class="treatment-box">
-                <h4>Recommended maintenance program</h4>
+                <h3>Recommended maintenance program</h3>
                 <ul>
                   <li><strong>Sleeper stretch:</strong> 3x30 sec, daily (especially after training)</li>
                   <li><strong>Cross-body stretch:</strong> 3x30 sec, daily</li>
@@ -1027,7 +663,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>Warning signs to watch for</h4>
+                <h3>Warning signs to watch for</h3>
                 <ul>
                   <li>Stiffness in shoulder that doesn't ease with warm-up</li>
                   <li>Pain persisting more than 24 hours after training</li>

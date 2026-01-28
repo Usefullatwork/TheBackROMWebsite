@@ -138,91 +138,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -230,7 +146,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -289,7 +205,7 @@
               </div>
 
               <aside class="premium-summary-card">
-                <h3>Kort oppsummert</h3>
+                <h2>Kort oppsummert</h2>
                 <ul>
                   <li>Stikkende/brennende smerte fra <strong>nakke til isse</strong></li>
                   <li>Skyldes irritasjon av <strong>occipitalnerven</strong></li>
@@ -313,7 +229,7 @@
               <p>Tilstanden kan gi anfall av intens smerte som varer fra sekunder til minutter, eller mer konstant, verkende smerte med overliggende støt-lignende episoder.</p>
 
               <div class="condition-card">
-                <h4>Anatomien</h4>
+                <h3>Anatomien</h3>
                 <p>Det finnes tre occipitalnerver på hver side:</p>
                 <ul>
                   <li><strong>Nervus occipitalis major (store occipitalnerven):</strong> Kommer fra C2-nerveroten. Passerer gjennom nakkemuskulaturen og forsyner den stårste delen av bakhodet. Mest vanlig involvert ved occipital nevralgi.</li>
@@ -377,27 +293,27 @@
               <p>Occipital nevralgi kan ha mange Årsaker, men i mange tilfeller finner man ingen tydelig underliggende årsak (idiopatisk). De vanligste kjente årsakene inkluderer:</p>
 
               <div class="condition-card">
-                <h4>Muskelspenninger og triggerpunkter (Vanligst)</h4>
+                <h3>Muskelspenninger og triggerpunkter (Vanligst)</h3>
                 <p>Stramme muskler i øvre nakke kan komprimere occipitalnervene der de passerer gjennom muskulaturen. Særlig semispinalis capitis, trapezius og sternocleidomastoideus. Les mer om <a href="triggerpunkter-hodepine.html">triggerpunkter og hodepine</a>.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Nakkeskader (whiplash)</h4>
+                <h3>Nakkeskader (whiplash)</h3>
                 <p>Traumer mot nakken kan skade eller irritere occipitalnervene, enten direkte eller gjennom påfølgende muskelspasmer og arrdannelse.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Artrose i øvre nakkevirvler</h4>
+                <h3>Artrose i øvre nakkevirvler</h3>
                 <p>Degenerative forandringer i C1-C3 kan påvirke nervene som danner occipitalnervene. Osteoartritt eller beinsporer kan komprimere nervene.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Langvarig dørlig holdning</h4>
+                <h3>Langvarig dørlig holdning</h3>
                 <p>Fremoverlent hode (f.eks. ved kontorarbeid) kan over tid føre til muskelspenninger og nerveaffeksjon i øvre nakke. Dette kan også bidra til <a href="nakkehodepine.html">nakkehodepine</a>.</p>
               </div>
 
               <div class="condition-card">
-                <h4>Andre Årsaker</h4>
+                <h3>Andre Årsaker</h3>
                 <ul>
                   <li>Betennelse (gikt, diabetes, vaskulitt)</li>
                   <li>Infeksjoner</li>
@@ -415,7 +331,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>OPPSåK LEGE VED:</h4>
+                <h3>OPPSåK LEGE VED:</h3>
                 <ul>
                   <li><strong>Nevrologiske utfall:</strong> Svakhet, nummenhet i armer/ben, balanseproblemer eller <a href="hodepine-svimmelhet.html">svimmelhet</a></li>
                   <li><strong>Nyoppstøtt hodepine etter 50 år</strong></li>
@@ -425,7 +341,7 @@
                   <li><strong>Smerter som vekker deg om natten</strong> (se også <a href="morgenhodepine.html">morgenhodepine</a>)</li>
                 </ul>
 
-                <h4>RING 113 VED:</h4>
+                <h3>RING 113 VED:</h3>
                 <ul>
                   <li><strong>Plutselig, svårt intens hodepine</strong> ("verste hodepine i livet")</li>
                   <li><strong>Bevissthetspåvirkning eller forvirring</strong></li>
@@ -485,7 +401,7 @@
               <h3>Konservativ behandling</h3>
 
               <div class="condition-card">
-                <h4>Hva kan kiropraktoren gjøre?</h4>
+                <h3>Hva kan kiropraktoren gjøre?</h3>
                 <p>Manuell behandling kan være effektivt ved occipital nevralgi, særlig nær tilstanden skyldes muskelspenninger eller dysfunksjon i øvre nakke:</p>
                 <ul>
                   <li><strong>Bløtvevsbehandling:</strong> Myke opp stramme muskler som kan komprimere nerven</li>
@@ -497,7 +413,7 @@
               </div>
 
               <div class="condition-card">
-                <h4>Selvhjelp</h4>
+                <h3>Selvhjelp</h3>
                 <ul>
                   <li><strong>Varmebehandling:</strong> Varmepakning på nakken kan låsne muskler</li>
                   <li><strong>Ergonomi:</strong> Juster arbeidsplassen for å unngå fremoverlent hode</li>

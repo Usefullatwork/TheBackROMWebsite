@@ -146,113 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    .intro-tldr-grid { display: grid; grid-template-columns: 1fr 300px; gap: 28px; margin-bottom: 28px; }
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .hub-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .condition-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 14px 0; transition: all 0.2s; }
-    .condition-card:hover { border-color: var(--hub-primary); box-shadow: 0 4px 12px rgba(26, 95, 122, 0.12); }
-    .condition-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; }
-    .condition-title { font-size: 16px; font-weight: 700; color: var(--hub-dark); margin: 0; }
-    .condition-badge { background: var(--hub-primary); color: #fff; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; }
-    .condition-card p { font-size: 14px; margin-bottom: 10px; }
-    .condition-card ul { margin: 10px 0; padding-left: 20px; }
-    .condition-card li { font-size: 13px; margin-bottom: 4px; }
-
-    .red-flag-box { background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border: 2px solid var(--hub-red); border-radius: 10px; padding: 20px; margin: 20px 0; }
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-
-    .treatment-box { background: #f0fdf4; border: 1px solid #86efac; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p { font-size: 14px; margin: 0 0 8px; color: #166534; }
-    .treatment-box ul { margin: 8px 0 0 0; padding-left: 20px; }
-    .treatment-box li { font-size: 14px; margin-bottom: 4px; color: #166534; }
-
-    .info-box { background: #eff6ff; border-left: 4px solid var(--hub-blue); border-radius: 0 10px 10px 0; padding: 16px; margin: 16px 0; }
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p { font-size: 14px; margin: 0; color: #1e3a8a; }
-    .info-box ul { margin: 8px 0 0 0; padding-left: 20px; color: #1e3a8a; }
-    .info-box li { font-size: 14px; margin-bottom: 4px; }
-
-    .red-flag-alert{ background: var(--color-amber-light); border: 1px solid #fbbf24; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .red-flag-alert h4 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
-    .red-flag-alert p { font-size: 14px; margin: 0 0 8px; color: #78350f; }
-    .red-flag-alert ul { margin: 8px 0 0 0; padding-left: 20px; color: #78350f; }
-    .red-flag-alert li { font-size: 14px; margin-bottom: 4px; }
-
-    .stat-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; text-align: center; }
-    .stat-card .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--hub-primary); display: block; }
-    .stat-card .stat-label { font-size: 0.75rem; color: #6b7280; margin-top: 4px; }
-
-    .anatomy-box { background: #f5f3ff; border: 1px solid #d8b4fe; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    .anatomy-box h4 { color: var(--hub-purple); font-size: 15px; margin: 0 0 12px; }
-    .anatomy-box p { font-size: 14px; margin: 0 0 8px; color: #5b21b6; }
-    .anatomy-box ul { margin: 0; padding-left: 20px; }
-    .anatomy-box li { font-size: 14px; margin-bottom: 8px; color: #5b21b6; }
-
-    .faq-item { border: 1px solid #e5e7eb; border-radius: 8px; margin: 10px 0; overflow: hidden; }
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .sources-section { margin-top: 28px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer { font-size: 12px; color: #6b7280; font-style: italic; margin: 20px 0; padding: 14px; background: #f9fafb; border-radius: 8px; }
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-
-    .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #fff; padding: 12px 16px; box-shadow: 0 -4px 16px rgba(0,0,0,0.1); gap: 10px; z-index: 100; }
-    @media (max-width: 900px) { .mobile-sticky-cta { display: flex; } .hub-main { margin-bottom: 80px; } }
-    .mobile-sticky-cta .btn { flex: 1; text-align: center; padding: 12px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 14px; }
-    .mobile-sticky-cta .btn-primary { background: #F26522; color: #fff; }
-    .mobile-sticky-cta .btn-outline { background: #fff; border: 2px solid #F26522; color: var(--hub-dark); }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -260,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -312,7 +206,7 @@
 
             <!-- Premium Summary Card -->
             <div class="premium-summary-card">
-              <h3>Kort oppsummert</h3>
+              <h2>Kort oppsummert</h2>
               <ul>
                 <li><strong>75%</strong> over 40 har MR-funn</li>
                 <li>Kun <strong>10%</strong> har symptomer</li>
@@ -371,7 +265,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Viktig perspektiv</h4>
+                <h3>Viktig perspektiv</h3>
                 <p>Slitasjeforandringer i AC-leddet er <strong>normale aldersforandringer</strong>. De fleste som har slike funn på røntgen eller MR har ingen symptomer. Fokuser på symptomene dine, ikke på bildet.</p>
               </div>
             </section>
@@ -387,7 +281,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Aldersrelatert slitasje</h4>
+                  <h3 class="condition-title">Aldersrelatert slitasje</h3>
                   <span class="condition-badge">Vanligst</span>
                 </div>
                 <p>Normal degenerasjon over tid. AC-leddet er et av de første leddene i kroppen som viser aldersrelaterte forandringer, ofte fra 20-30-årsalderen.</p>
@@ -395,7 +289,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Overbelastning og repeterende aktivitet</h4>
+                  <h3 class="condition-title">Overbelastning og repeterende aktivitet</h3>
                 </div>
                 <p>Yrker eller idretter med mye overhead-arbeid eller tungt låft setter ekstra belastning på leddet. Vanlig hos:</p>
                 <ul>
@@ -407,7 +301,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Tidligere skade</h4>
+                  <h3 class="condition-title">Tidligere skade</h3>
                 </div>
                 <p>En AC-leddsforskyvning (AC-ledd separasjon) eller kragebeinbrudd øker risikoen for senere artrose i leddet.</p>
               </div>
@@ -415,7 +309,7 @@
               <h3>Vektlåfterskulder (Distal clavicular osteolysis)</h3>
 
               <div class="red-flag-alert">
-                <h4>Spesiell tilstand hos styrketrenende</h4>
+                <h3>Spesiell tilstand hos styrketrenende</h3>
                 <p>Vektlåfterskulder er en tilstand der enden av kragebenet brytes ned på grunn av repeterende mikrotraumer. Vanlig hos de som trener tungt benkpress, skulderpress og dips.</p>
                 <ul>
                   <li>Smerte på toppen av skulderen</li>
@@ -454,7 +348,7 @@
               </ul>
 
               <div class="info-box">
-                <h4>Aktiviteter som typisk provoserer</h4>
+                <h3>Aktiviteter som typisk provoserer</h3>
                 <ul>
                   <li>Benkpress og skulderpress</li>
                   <li>Dips og push-ups</li>
@@ -468,7 +362,7 @@
               <p>AC-ledd-smerte kan ligne på andre skuldertilstander, men har noen saertrekk:</p>
 
               <div class="condition-card">
-                <h4 class="condition-title">Tegn som peker mot AC-leddet</h4>
+                <h3 class="condition-title">Tegn som peker mot AC-leddet</h3>
                 <ul>
                   <li>Smerte lokalisert helt på toppen av skulderen</li>
                   <li>Positiv cross-body adduction test</li>
@@ -499,7 +393,7 @@
               <h3>Bildediagnostikk</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Røntgen</h4>
+                <h3 class="condition-title">Røntgen</h3>
                 <p>Førstevalg. Viser:</p>
                 <ul>
                   <li>Smalnet leddspalte</li>
@@ -510,12 +404,12 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">MR</h4>
+                <h3 class="condition-title">MR</h3>
                 <p>Sjelden nødvendig for AC-ledd-artrose alene. Mest nyttig for å utelukke samtidig patologi (rotatormansjett, etc.).</p>
               </div>
 
               <div class="red-flag-alert">
-                <h4>Viktig å huske</h4>
+                <h3>Viktig å huske</h3>
                 <p>75% av personer over 40 år har artrotiske forandringer i AC-leddet på bilder. Et bildede funn betyr <strong>ikke</strong> nødvendigvis at dette er smertekilden. Diagnosen må korreleres med kliniske funn.</p>
               </div>
             </section>
@@ -541,22 +435,22 @@
               <h3>Differensialdiagnoser</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Rotatormansjett-tendinopati</h4>
+                <h3 class="condition-title">Rotatormansjett-tendinopati</h3>
                 <p>Gir smerte mer på utsiden av skulderen og ved spesifikke bevegelser. Kan eksistere samtidig med AC-ledd-artrose. Relatert tilstand: <a href="kalkskulder.html">kalkskulder</a>.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Subacromial impingement</h4>
+                <h3 class="condition-title">Subacromial impingement</h3>
                 <p>Smerte ved abduksjon 60-120 grader. Overlappende symptomer mulig.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Cervikal radikulopati</h4>
+                <h3 class="condition-title">Cervikal radikulopati</h3>
                 <p>Smerter fra nakken som stråler til skulderen. Nakkebevegelser provoserer ofte smerten.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">AC-leddsseparasjon</h4>
+                <h3 class="condition-title">AC-leddsseparasjon</h3>
                 <p>Akutt skade med synlig deformitet. Skiller seg fra gradvis oppstående artrose.</p>
               </div>
             </section>
@@ -573,7 +467,7 @@
               <h3>Konservativ behandling (førstevalg)</h3>
 
               <div class="treatment-box">
-                <h4>Aktivitetsmodifisering</h4>
+                <h3>Aktivitetsmodifisering</h3>
                 <p>Dette er det viktigste tiltaket, særlig ved vektlåfterskulder:</p>
                 <ul>
                   <li>unngå øvelser som provoserer smerte midlertidig</li>
@@ -585,7 +479,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Treningsmodifikasjoner for styrketrenende</h4>
+                <h3>Treningsmodifikasjoner for styrketrenende</h3>
                 <ul>
                   <li><strong>Benkpress:</strong> Smalere grep, stopp for stangen nær baken, gulvpress</li>
                   <li><strong>Skulderpress:</strong> Erstatt med lateral raise, face pulls</li>
@@ -595,7 +489,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Hva kan kiropraktoren gjøre?</h4>
+                <h3>Hva kan kiropraktoren gjøre?</h3>
                 <ul>
                   <li><strong>Manuell behandling:</strong> Mobilisering av AC-ledd, brysthvirvelsåylen og nakken</li>
                   <li><strong>Bløtvevsbehandling:</strong> Arbeid med muskulatur rundt skulderen</li>
@@ -607,7 +501,7 @@
               <h3>Injeksjonsbehandling</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Kortisoninjeksjon</h4>
+                <h3 class="condition-title">Kortisoninjeksjon</h3>
                 <p>Kan gi god smertelindring ved akutte oppbluss. Effekten er ofte midlertidig (uker til måneder), men kan kombineres med aktivitetsmodifisering for bedre langtidsresultat. Les mer om <a href="kortison-skulder.html">kortisonbehandling ved skuldersmerter</a>.</p>
               </div>
 
@@ -616,7 +510,7 @@
               <p>Kirurgi vurderes kun nær konservativ behandling over 3-6 måneder ikke gir tilfredsstillende bedring:</p>
 
               <div class="condition-card">
-                <h4 class="condition-title">Distal clavikula-reseksjon (Mumford-prosedyre)</h4>
+                <h3 class="condition-title">Distal clavikula-reseksjon (Mumford-prosedyre)</h3>
                 <p>Den ytre enden av kragebenet fjernes for å eliminere smertefull bein-mot-bein kontakt. Kan gjøres artroskopisk eller apent. Gode resultater hos de som har indikasjon.</p>
               </div>
             </section>
@@ -631,7 +525,7 @@
               <p>Prognosen for AC-ledd-artrose er generelt god med konservativ behandling.</p>
 
               <div class="treatment-box">
-                <h4>Det positive:</h4>
+                <h3>Det positive:</h3>
                 <ul>
                   <li>De fleste før god kontroll på symptomene uten operasjon</li>
                   <li>93% med vektlåfterskulder blir bedre med aktivitetsmodifisering</li>
@@ -641,7 +535,7 @@
               </div>
 
               <div class="red-flag-alert">
-                <h4>Det realistiske:</h4>
+                <h3>Det realistiske:</h3>
                 <ul>
                   <li>Slitasjen i seg selv forsvinner ikke</li>
                   <li>Symptomene kan variere over tid</li>
@@ -667,7 +561,7 @@
               </div>
 
               <div class="treatment-box">
-                <h4>Ved akutte symptomer</h4>
+                <h3>Ved akutte symptomer</h3>
                 <ul>
                   <li>Is på AC-leddet 15-20 minutter flere ganger daglig</li>
                   <li>unngå aktiviteter som provoserer smerte</li>
@@ -677,7 +571,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Treningsmodifikasjoner</h4>
+                <h3>Treningsmodifikasjoner</h3>
                 <ul>
                   <li>Reduser vekt og ok repetisjoner</li>
                   <li>unngå dype bevegelser som strekker AC-leddet</li>

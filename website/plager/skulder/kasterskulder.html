@@ -146,179 +146,7 @@
   <link rel="stylesheet" href="../../css/font-awesome-minimal.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../../css/font-awesome-minimal.css"></noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-primary-dark: #0f4f68;
-      --hub-dark: #0d3d4d;
-      --hub-dark-light: #1a5f7a;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-
-    .wrapper { overflow: visible !important; }
-    .page { padding-top: 0 !important; }
-
-    .intro-tldr-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    @media (max-width: 800px) { .intro-tldr-grid { grid-template-columns: 1fr; } }
-
-    .intro-text p { font-size: 16px; margin-bottom: 14px; color: #374151; }
-
-    .hub-content { padding: 32px; }
-    @media (max-width: 600px) { .hub-content { padding: 20px; } }
-
-    .hub-content h3 { font-size: 17px; color: var(--hub-dark); margin: 22px 0 10px; }
-    .hub-content p { margin-bottom: 14px; font-size: 15px; }
-    .hub-content ul, .hub-content ol { margin: 14px 0; padding-left: 24px; }
-    .hub-content li { margin-bottom: 6px; font-size: 15px; }
-    .hub-content strong { color: var(--hub-dark); }
-
-    .hub-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .hub-section:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
-
-    .section-title { font-size: 20px; font-weight: 700; color: var(--hub-dark); margin: 0; }
-    @media (max-width: 600px) { .section-title { font-size: 18px; } }
-
-    .faq-item {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      margin: 10px 0;
-      overflow: hidden;
-    }
-
-    .faq-question { padding: 14px 16px; font-weight: 600; background: #fafafa; font-size: 14px; color: var(--hub-dark); }
-    .faq-answer { padding: 14px 16px; color: #6b7280; border-top: 1px solid #e5e7eb; font-size: 14px; }
-
-    .anatomy-box {
-      background: #f5f3ff;
-      border: 1px solid #d8b4fe;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .anatomy-box h4 { color: var(--hub-purple); font-size: 15px; margin: 0 0 12px; }
-    .anatomy-box p { font-size: 14px; margin-bottom: 8px; color: #5b21b6; }
-    .anatomy-box ul { margin: 0; padding-left: 20px; }
-    .anatomy-box li { font-size: 14px; margin-bottom: 8px; color: #5b21b6; }
-
-    .info-box {
-      background: #eff6ff;
-      border-left: 4px solid var(--hub-blue);
-      border-radius: 0 10px 10px 0;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    .info-box h4 { color: #1e40af; font-size: 15px; margin: 0 0 8px; }
-    .info-box p { font-size: 14px; margin: 0; color: #1e3a8a; }
-    .info-box ul { margin: 8px 0 0 0; padding-left: 20px; color: #1e3a8a; }
-    .info-box li { font-size: 14px; margin-bottom: 4px; }
-
-    .red-flag-alert{
-      background: var(--color-amber-light);
-      border: 1px solid #fbbf24;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .red-flag-alert h4 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
-    .red-flag-alert p { font-size: 14px; margin: 0 0 8px; color: #78350f; }
-    .red-flag-alert ul { margin: 8px 0 0 0; padding-left: 20px; }
-    .red-flag-alert li { font-size: 14px; margin-bottom: 4px; color: #78350f; }
-
-    .treatment-box {
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .treatment-box h4 { color: #166534; font-size: 15px; margin: 0 0 8px; }
-    .treatment-box p { font-size: 14px; margin: 0 0 8px; color: #166534; }
-    .treatment-box ul { margin: 8px 0 0 0; padding-left: 20px; }
-    .treatment-box li { font-size: 14px; margin-bottom: 4px; color: #166534; }
-
-    .exercise-box {
-      background: #ecfdf5;
-      border: 1px solid #6ee7b7;
-      border-radius: 10px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .exercise-box h4 { color: #047857; font-size: 15px; margin: 0 0 10px; }
-    .exercise-box p { font-size: 14px; margin: 0 0 8px; color: #065f46; }
-    .exercise-box ol { margin: 8px 0 0 0; padding-left: 20px; }
-    .exercise-box li { font-size: 14px; margin-bottom: 6px; color: #065f46; }
-
-    .red-flag-box {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-      border: 2px solid var(--hub-red);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .red-flag-box h3 { color: #dc2626; margin: 0 0 12px; font-size: 16px; }
-    .red-flag-box ul { color: #7f1d1d; margin: 0; padding-left: 20px; }
-    .red-flag-box li { font-size: 14px; margin-bottom: 6px; }
-    .red-flag-box .note { font-style: italic; margin-top: 12px; color: #991b1b; font-size: 13px; }
-
-    .sources-section {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .sources-section h3 { color: #6b7280; font-size: 15px; margin-bottom: 12px; }
-    .sources-section ul { font-size: 12px; color: #6b7280; line-height: 1.6; padding-left: 20px; }
-    .sources-section li { margin-bottom: 4px; }
-
-    .disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-      font-style: italic;
-      margin: 20px 0;
-      padding: 14px;
-      background: #f9fafb;
-      border-radius: 8px;
-    }
-
-    .updated { font-size: 12px; color: #6b7280; font-style: italic; }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -326,7 +154,7 @@
   <div class="wrapper">
         <header class="header">
       <div class="header__container">
-        <a href="../../index.html" class="header__logo logo"><img src="../../images/logo-header.webp"
+        <a href="../../index.html" class="header__logo logo" aria-label="Klinikk for alle Kiropraktor Mads Finstad"><img src="../../images/logo-header.webp"
             alt="Klinikk for alle Kiropraktor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle" role="group" aria-label="Språkvalg">
@@ -385,7 +213,7 @@
               </div>
 
               <aside class="premium-summary-card">
-                <h3>Kort oppsummert</h3>
+                <h2>Kort oppsummert</h2>
                 <ul>
                   <li><strong>72%</strong> av handball-/volleyballspillere har GIRD</li>
                   <li><strong>90%</strong> blir bedre med konservativ behandling</li>
@@ -419,7 +247,7 @@
               <p>GIRD er ekstremt vanlig hos kasteutovere. Studier viser at <strong>opptil 72% av handball- og volleyballspillere</strong> har malebart GIRD. Men her er det viktige:</p>
 
               <div class="info-box">
-                <h4>Nær er GIRD normalt vs. problematisk?</h4>
+                <h3>Nær er GIRD normalt vs. problematisk?</h3>
                 <p>En viss grad av GIRD er <strong>normal tilpasning</strong> til kasteidretter og gir ikke nødvendigvis problemer. GIRD blir først problematisk nær:</p>
                 <ul>
                   <li>Totalt bevegelsesutslag (innadrotasjon + utadrotasjon) er redusert sammenlignet med motsatt side</li>
@@ -460,17 +288,17 @@
               <h3>Adaptiv prosess</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">1. Kapselforandringer</h4>
+                <h3 class="condition-title">1. Kapselforandringer</h3>
                 <p>Den bakre leddkapselen blir gradvis strammere og tykkere som respons på repetitive strekkbelastninger i den fremre kapselen ved kasting.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">2. Benforandringer</h4>
+                <h3 class="condition-title">2. Benforandringer</h3>
                 <p>Unge kastere kan utvikle retroversjon (bakovertipping) av overarmshodet. Dette bidrar til økt utadrotasjon og redusert innadrotasjon.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">3. Muskulære ubalanser</h4>
+                <h3 class="condition-title">3. Muskulære ubalanser</h3>
                 <p>Kastermuskulaturen (fremre skulder, brystmuskler) blir ofte sterkere enn de bakre stabilisatorene, noe som førsterker ubalansen.</p>
               </div>
 
@@ -485,7 +313,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>Risikofaktorer for å utvikle symptomatisk GIRD</h4>
+                <h3>Risikofaktorer for å utvikle symptomatisk GIRD</h3>
                 <ul>
                   <li>Hurtig økning i treningsvolum eller intensitet</li>
                   <li>Manglende periodisering og restitusjon</li>
@@ -507,7 +335,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Kasteidretter</h4>
+                  <h3 class="condition-title">Kasteidretter</h3>
                   <span class="condition-badge">Høyest risiko</span>
                 </div>
                 <ul>
@@ -520,7 +348,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Slagidretter</h4>
+                  <h3 class="condition-title">Slagidretter</h3>
                 </div>
                 <ul>
                   <li><strong>Volleyball:</strong> Spesielt angripere og servere</li>
@@ -531,7 +359,7 @@
 
               <div class="condition-card">
                 <div class="condition-header">
-                  <h4 class="condition-title">Andre idretter</h4>
+                  <h3 class="condition-title">Andre idretter</h3>
                 </div>
                 <ul>
                   <li><strong>Svomming:</strong> Spesielt freestyle og butterfly</li>
@@ -541,7 +369,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Nær debuterer symptomene?</h4>
+                <h3>Nær debuterer symptomene?</h3>
                 <p>Mange utvikler GIRD allerede i ungdomsarene, men symptomer oppstar ofte først nær treningsbelastningen øker(f.eks. overgang til seniorlag) eller nær restitusjon blir utilstrekkelig.</p>
               </div>
             </section>
@@ -566,7 +394,7 @@
               <h3>Mer utviklede symptomer</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Smerte ved kasting</h4>
+                <h3 class="condition-title">Smerte ved kasting</h3>
                 <ul>
                   <li>Spesielt i sen cock-fase (armen bakover) og tidlig akselerasjon</li>
                   <li>Skarp smerte dypt i skulderen</li>
@@ -575,7 +403,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Bakre skuldersmerter</h4>
+                <h3 class="condition-title">Bakre skuldersmerter</h3>
                 <ul>
                   <li>Lokalisert bak i skulderen</li>
                   <li>Verkende smerte etter aktivitet</li>
@@ -584,7 +412,7 @@
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Redusert prestasjon</h4>
+                <h3 class="condition-title">Redusert prestasjon</h3>
                 <ul>
                   <li>Nedsatt kastefart ("dead arm")</li>
                   <li>Dørligere kontroll og presisjon</li>
@@ -616,7 +444,7 @@
               <h3>Bevegelsesvurdering</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Maling av rotasjon</h4>
+                <h3 class="condition-title">Maling av rotasjon</h3>
                 <p>Begge skuldre males i 90 graders abduksjon:</p>
                 <ul>
                   <li><strong>Innadrotasjon (IR):</strong> Normalt ca. 70-90</li>
@@ -626,7 +454,7 @@
               </div>
 
               <div class="info-box">
-                <h4>GIRD-kriterier</h4>
+                <h3>GIRD-kriterier</h3>
                 <p><strong>Asymptomatisk GIRD:</strong> Redusert IR på dominansiden, men totalt ROM er bevart (økt ER kompenserer).</p>
                 <p><strong>Symptomatisk GIRD:</strong> Redusert totalt ROM (>5) sammenlignet med motsatt side, eller smerter ved testing.</p>
               </div>
@@ -634,17 +462,17 @@
               <h3>Kliniske tester</h3>
 
               <div class="condition-card">
-                <h4 class="condition-title">Posteriort impingement-test</h4>
+                <h3 class="condition-title">Posteriort impingement-test</h3>
                 <p>Armen føres i maksimal utadrotasjon og abduksjon. Smerte bak i skulderen indikerer intern impingement.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title">Sleeper stretch-stilling</h4>
+                <h3 class="condition-title">Sleeper stretch-stilling</h3>
                 <p>Test innadrotasjon med pasienten liggende på siden. Sammenlign med motsatt side.</p>
               </div>
 
               <div class="condition-card">
-                <h4 class="condition-title"><a href="slap-lesjon.html">SLAP-tester</a></h4>
+                <h3 class="condition-title"><a href="slap-lesjon.html">SLAP-tester</a></h3>
                 <p>O'Brien's test, anterior slide, biceps load II for å vurdere labrum-patologi.</p>
               </div>
 
@@ -670,7 +498,7 @@
               <p>Konservativ behandling er svårteffektivt for kasterskulder, med over 90% suksessrate. Hovedmalene er å gjenopprette normal bevegelse og styrke.</p>
 
               <div class="treatment-box">
-                <h4>Behandlingsprinsipper</h4>
+                <h3>Behandlingsprinsipper</h3>
                 <ul>
                   <li><strong>Toying av bakre kapsel:</strong> Sleeper stretch er hovediintervensjon</li>
                   <li><strong>Styrke bakre rotatorcuff:</strong> Infraspinatus, teres minor</li>
@@ -706,7 +534,7 @@
               <h3>Hovedøvelser</h3>
 
               <div class="exercise-box">
-                <h4>Sleeper Stretch (hovedovelse for GIRD)</h4>
+                <h3>Sleeper Stretch (hovedovelse for GIRD)</h3>
                 <ol>
                   <li>Ligg på den affiserte siden med skulderen 90 flektert</li>
                   <li>Albuen båyd 90 grader, underarmen peker opp</li>
@@ -718,7 +546,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>Cross-body stretch</h4>
+                <h3>Cross-body stretch</h3>
                 <ol>
                   <li>Stå eller sitt oppreist</li>
                   <li>Trekk den affiserte armen over brystet med motsatt hand</li>
@@ -728,7 +556,7 @@
               </div>
 
               <div class="exercise-box">
-                <h4>Sidelliggende utadrotasjon (styrke)</h4>
+                <h3>Sidelliggende utadrotasjon (styrke)</h3>
                 <ol>
                   <li>Ligg på motsatt side med en lett vekt eller strikk</li>
                   <li>Albuen båyd 90 og stottet mot kroppen</li>
@@ -738,7 +566,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Nær kirurgi?</h4>
+                <h3>Nær kirurgi?</h3>
                 <p>Kirurgi er sjelden nødvendig for isolert GIRD. Det kan være aktuelt ved:</p>
                 <ul>
                   <li>Strukturell SLAP-lesjon som ikke responderer på konservativ behandling</li>
@@ -760,7 +588,7 @@
               <h3>Daglige rutiner</h3>
 
               <div class="treatment-box">
-                <h4>Anbefalt vedlikeholdsprogram</h4>
+                <h3>Anbefalt vedlikeholdsprogram</h3>
                 <ul>
                   <li><strong>Sleeper stretch:</strong> 3x30 sek, daglig (spesielt etter trening)</li>
                   <li><strong>Cross-body stretch:</strong> 3x30 sek, daglig</li>
@@ -786,7 +614,7 @@
               </ul>
 
               <div class="red-flag-alert">
-                <h4>Varseltegn å være oppmerksom på</h4>
+                <h3>Varseltegn å være oppmerksom på</h3>
                 <ul>
                   <li>Stivhet i skulderen som ikke letter med oppvarming</li>
                   <li>Smerte som vedvarer mer enn 24 timer etter trening</li>

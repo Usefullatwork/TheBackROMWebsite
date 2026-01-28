@@ -142,33 +142,7 @@
     <link rel="stylesheet" href="../../../css/font-awesome-minimal.css">
   </noscript>
 
-  <style>
-    :root {
-      --hub-primary: #1a5f7a;
-      --hub-dark: #0d3d4d;
-      --hub-red: #dc2626;
-      --hub-green: #059669;
-      --hub-blue: #2563eb;
-      --hub-purple: #7c3aed;
-      --hub-orange: #ea580c;
-    }
-  
-    .location-header { background: var(--hub-dark); color: #fff; padding: 16px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 12px; }
-    .location-header h3, .location-header h4 { margin: 0; color: #fff !important; font-size: 18px; }
-    .location-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 32px; }
-    .location-content { padding: 20px 24px; }
-    .location-content p { color: #374151; line-height: 1.6; margin-bottom: 12px; }
-  
-    /* Hub Hero Section */
-    .hub-hero { background: linear-gradient(135deg, var(--hub-dark) 0%, var(--hub-primary) 100%); color: #ffffff !important; padding: 150px 20px 60px; margin: 0; text-align: center; }
-    .hub-hero__container { max-width: 900px; margin: 0 auto; }
-    .hub-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #ffffff !important; }
-    .hub-hero__subtitle { font-size: 1.1rem; color: #ffffff !important; opacity: 0.95; margin-bottom: 16px; }
-    .hub-hero .blog-post__category { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-    .hub-hero .blog-post__meta { display: flex; justify-content: center; gap: 24px; margin-top: 20px; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-    .hub-hero .blog-post__date, .hub-hero .blog-post__author { color: rgba(255,255,255,0.85); }
-    @media (max-width: 900px) { .hub-hero { padding: 120px 20px 40px; } .hub-hero h1 { font-size: 1.8rem; } .hub-hero .blog-post__meta { flex-direction: column; gap: 8px; } }
-</style>
+  <link rel="stylesheet" href="../../../css/hub-article.css">
 </head>
 
 <body id="top">
@@ -176,7 +150,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="../../../en/index.html" class="header__logo logo"><img loading="lazy" src="../../../images/logo-header.webp"
+        <a href="../../../en/index.html" class="header__logo logo" aria-label="Klinikk for alle Chiropractor Mads Finstad"><img loading="lazy" src="../../../images/logo-header.webp"
             alt="Klinikk for alle Chiropractor Mads Finstad" width="300" height="229" decoding="async" /></a>
         <div class="header__navigation">
           <div class="language-toggle english-active" role="group" aria-label="Language selection">
@@ -257,7 +231,7 @@
                 completely harmless.</p>
 
               <div class="info-box">
-                <h4>Did you know?</h4>
+                <h3>Did you know?</h3>
                 <p>The characteristic "pop" sound when a joint cracks is caused by gas bubbles (mainly nitrogen and
                   carbon dioxide) being released from the joint fluid. This is called cavitation and is completely
                   harmless. It takes about 20 minutes for the gas bubbles to form again.</p>
@@ -276,27 +250,27 @@
               <h3>Harmless Causes</h3>
 
               <div class="condition-card">
-                <h4>1. Cavitation (gas bubbles)</h4>
+                <h3>1. Cavitation (gas bubbles)</h3>
                 <p>When a joint is stretched, the pressure in the joint capsule drops. This causes gases dissolved in
                   the joint fluid to be released as bubbles, creating an audible "pop" or click sound. This is the same
                   mechanism as when a chiropractor adjusts a joint.</p>
               </div>
 
               <div class="condition-card">
-                <h4>2. Tendons and ligaments</h4>
+                <h3>2. Tendons and ligaments</h3>
                 <p>Tendons and ligaments can slide over bony structures or each other during movement. This often
                   creates a "snapping" or sliding sound, especially when the neck has been in the same position for a
                   long time.</p>
               </div>
 
               <div class="condition-card">
-                <h4>3. Facet joints</h4>
+                <h3>3. Facet joints</h3>
                 <p>The neck has many small joints (facet joints) between the vertebrae. When these joints move, they can
                   produce sounds - especially if the joints are stiff or there is slight asymmetry in movement.</p>
               </div>
 
               <div class="condition-card">
-                <h4>4. Age-related changes</h4>
+                <h3>4. Age-related changes</h3>
                 <p>With age, the cartilage surface in joints becomes slightly rougher, and this can cause a grinding or
                   crunching sound during movement. This is normal and does not mean you have "worn out" your neck.</p>
               </div>
@@ -334,7 +308,7 @@
               </div>
 
               <div class="info-box">
-                <h4>Research shows</h4>
+                <h3>Research shows</h3>
                 <p>Studies have found no connection between joint sounds and increased risk of osteoarthritis or other
                   degenerative conditions. In other words: the sound itself does no harm.</p>
               </div>
@@ -350,7 +324,7 @@
                 between incidental cracking during movement and actively manipulating the neck to make it crack.</p>
 
               <div class="red-flag-alert">
-                <h4>Not recommended: Actively cracking your own neck</h4>
+                <h3>Not recommended: Actively cracking your own neck</h3>
                 <ul>
                   <li>Repeated self-manipulation can lead to <strong>hypermobility</strong> over time</li>
                   <li>You risk overstretching <strong>ligaments and capsules</strong></li>
@@ -363,7 +337,7 @@
                 compensate by being too mobile. A chiropractor can assess this and treat the actual problem areas.</p>
 
               <div class="treatment-box">
-                <h4>Better alternatives:</h4>
+                <h3>Better alternatives:</h3>
                 <ul>
                   <li>Gentle stretching exercises for the neck</li>
                   <li>Regular movement breaks during screen work</li>
@@ -382,7 +356,7 @@
               <p>Although cracking is usually harmless, there are some situations where you should be examined:</p>
 
               <div class="red-flag-alert">
-                <h4>See a healthcare professional if the cracking is accompanied by:</h4>
+                <h3>See a healthcare professional if the cracking is accompanied by:</h3>
                 <ul>
                   <li><strong>Pain</strong> - especially if it is new or worsening</li>
                   <li><strong>Swelling</strong> or warmth over the neck</li>
@@ -410,7 +384,7 @@
 
               <h3>What Can the Chiropractor Do?</h3>
               <div class="treatment-box">
-                <h4>Treatment may include:</h4>
+                <h3>Treatment may include:</h3>
                 <ul>
                   <li><strong>Examination:</strong> Identify the cause of cracking and rule out underlying problems</li>
                   <li><strong>Manual treatment:</strong> Mobilization of stiff joints to improve movement patterns</li>
@@ -438,39 +412,39 @@
               </div>
 
               <div class="faq-item">
-                <h4>Is neck cracking dangerous?</h4>
+                <h3>Is neck cracking dangerous?</h3>
                 <p>No, usually not. Crepitus (cracking) in the neck is very common and often caused by gas bubbles being
                   released from joints, tendons sliding over bone, or normal age-related changes. It is rarely a sign of
                   anything serious.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Why does my neck make sounds?</h4>
+                <h3>Why does my neck make sounds?</h3>
                 <p>The most common causes are: 1) Gas bubbles being released from joint fluid (cavitation), 2) Tendons
                   or ligaments sliding over bony structures, 3) Facet joints moving, 4) Mild degeneration which is
                   completely normal with age.</p>
               </div>
 
               <div class="faq-item">
-                <h4>When should I seek help for neck cracking?</h4>
+                <h3>When should I seek help for neck cracking?</h3>
                 <p>You should seek help if the cracking is accompanied by pain, swelling, reduced mobility, numbness or
                   weakness in the arms, or if it occurred after an injury.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Can I crack my own neck?</h4>
+                <h3>Can I crack my own neck?</h3>
                 <p>It is not recommended to actively crack your own neck. While the occasional sound during movement is
                   harmless, repeated self-manipulation can lead to hypermobility and instability over time.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Does cracking mean I have osteoarthritis?</h4>
+                <h3>Does cracking mean I have osteoarthritis?</h3>
                 <p>No, not necessarily. Cracking alone is not a sign of osteoarthritis. Osteoarthritis usually also
                   causes other symptoms such as pain, stiffness and reduced mobility.</p>
               </div>
 
               <div class="faq-item">
-                <h4>Why do I feel relief when my neck cracks?</h4>
+                <h3>Why do I feel relief when my neck cracks?</h3>
                 <p>When a joint "pops," endorphins are released that provide a short-term feeling of relief.
                   Additionally, stretching of the joint capsule can lead to reflex relaxation of surrounding muscles.
                 </p>

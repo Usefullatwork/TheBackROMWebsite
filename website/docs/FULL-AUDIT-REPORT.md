@@ -1,0 +1,8905 @@
+# Full Site Audit Report
+
+**Generated:** 2026-01-28
+**Pages scanned:** 491
+**Total issues:** 4424
+
+## Summary
+
+| Severity | Count |
+|----------|-------|
+| 🔴 Critical | 0 |
+| 🟡 Warning | 691 |
+| 🔵 Info | 3733 |
+
+## Warnings
+
+- **priser.html** [Meta Tags] Title too long (72 chars)
+- **priser.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **contact.html** [Accessibility] Heading skip: h1 → h3
+- **services.html** [Meta Tags] Description too long (161 chars)
+- **services.html** [Accessibility] Heading skip: h1 → h3
+- **plager.html** [Meta Tags] Title too long (72 chars)
+- **plager.html** [Meta Tags] Description too long (168 chars)
+- **plager.html** [Schema Markup] No JSON-LD schema found
+- **plager.html** [Accessibility] Heading skip: h1 → h3
+- **404.html** [Meta Tags] Missing canonical link
+- **404.html** [Schema Markup] No JSON-LD schema found
+- **index.html** [Meta Tags] Description too long (161 chars)
+- **akutt-svimmelhet-helg.html** [Meta Tags] Title too long (78 chars)
+- **akutt-svimmelhet-helg.html** [Meta Tags] Description too long (161 chars)
+- **akutt-svimmelhet-helg.html** [Accessibility] Heading skip: h2 → h4
+- **privacy-policy.html** [Schema Markup] No JSON-LD schema found
+- **akutt-behandling.html** [Meta Tags] Title too long (80 chars)
+- **akutt-behandling.html** [Accessibility] Heading skip: h2 → h4
+- **personvern.html** [Meta Tags] Description too long (161 chars)
+- **personvern.html** [Schema Markup] No JSON-LD schema found
+- **about.html** [Accessibility] Heading skip: h2 → h4
+- **blogg\index.html** [Schema Markup] No JSON-LD schema found
+- **blogg\index.html** [Performance] Inline CSS 3699 chars (>2000)
+- **blogg\index.html** [Performance] 9 external scripts (>8)
+- **blogg\nakkesmerter-gravid.html** [Meta Tags] Title too long (71 chars)
+- **blogg\nakkesmerter-gravid.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **blogg\eldre-svimmelhet-fallrisiko.html** [Schema Markup] No JSON-LD schema found
+- **blogg\piriformissyndrom-falsk-isjias.html** [Meta Tags] Title too long (83 chars)
+- **blogg\piriformissyndrom-falsk-isjias.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **blogg\piriformissyndrom-falsk-isjias.html** [Accessibility] Heading skip: h1 → h3
+- **blogg\kiropraktor-vs-fysioterapeut.html** [Meta Tags] Title too long (74 chars)
+- **blogg\kiropraktor-vs-fysioterapeut.html** [Schema Markup] No JSON-LD schema found
+- **blogg\l4-l5-prolaps.html** [Meta Tags] Title too long (78 chars)
+- **blogg\l4-l5-prolaps.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **blogg\l4-l5-prolaps.html** [Accessibility] Heading skip: h1 → h3
+- **blogg\svimmel-og-kvalm.html** [Meta Tags] Title too long (87 chars)
+- **blogg\svimmelhet-behandling.html** [Meta Tags] Title too long (73 chars)
+- **blogg\sentral-svimmelhet.html** [Schema Markup] No JSON-LD schema found
+- **blogg\kjeve-nakke-svimmelhet.html** [Schema Markup] No JSON-LD schema found
+- **blogg\diskogen-smerte.html** [Meta Tags] Title too long (76 chars)
+- **blogg\diskogen-smerte.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **blogg\diskogen-smerte.html** [Accessibility] Heading skip: h1 → h3
+- **blogg\ovelser-isjias.html** [Meta Tags] Title too long (83 chars)
+- **blogg\ovelser-isjias.html** [Schema Markup] No JSON-LD schema found
+- **blogg\leve-med-svimmelhet.html** [Schema Markup] No JSON-LD schema found
+- **blogg\tmd-ibs-mage-kjeve.html** [Schema Markup] No JSON-LD schema found
+- **blogg\tmd-ibs-mage-kjeve.html** [Accessibility] Heading skip: h1 → h3
+- **blogg\svimmelhet-ikke-bppv.html** [Meta Tags] Title too long (86 chars)
+- **blogg\svimmelhet-ikke-bppv.html** [Schema Markup] No JSON-LD schema found
+- **blogg\subtil-krystallsyke.html** [Meta Tags] Title too long (74 chars)
+- **blogg\subtil-krystallsyke.html** [Schema Markup] No JSON-LD schema found
+- **blogg\musikere-kjevesmerter.html** [Meta Tags] Title too long (80 chars)
+- **blogg\musikere-kjevesmerter.html** [Schema Markup] No JSON-LD schema found
+- **blogg\musikere-kjevesmerter.html** [Accessibility] Heading skip: h2 → h4
+- **blogg\facettleddssyndrom.html** [Meta Tags] Title too long (78 chars)
+- **blogg\facettleddssyndrom.html** [Schema Markup] No JSON-LD schema found
+- **blogg\graviditet-kjevesmerter.html** [Schema Markup] No JSON-LD schema found
+- **blogg\graviditet-kjevesmerter.html** [Accessibility] Heading skip: h2 → h4
+- **blogg\bittfeil-myter-fakta.html** [Schema Markup] No JSON-LD schema found
+- **blogg\l5-s1-prolaps.html** [Meta Tags] Title too long (78 chars)
+- **blogg\l5-s1-prolaps.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **blogg\l5-s1-prolaps.html** [Accessibility] Heading skip: h1 → h3
+- **blogg\kampsport-kjeveskader.html** [Schema Markup] No JSON-LD schema found
+- **blogg\svimmelhet-myter.html** [Meta Tags] Title too long (79 chars)
+- **blogg\svimmelhet-myter.html** [Schema Markup] No JSON-LD schema found
+- **blogg\svimmel-naar-du-staar-opp.html** [Meta Tags] Title too long (76 chars)
+- **blogg\svimmel-naar-du-staar-opp.html** [Schema Markup] No JSON-LD schema found
+- **blogg\styrkeovelser-korsrygg.html** [Meta Tags] Title too long (76 chars)
+- **blogg\styrkeovelser-korsrygg.html** [Schema Markup] No JSON-LD schema found
+- **blogg\triggerpunkter-nakken.html** [Meta Tags] Title too long (75 chars)
+- **blogg\stress-kjevesmerter.html** [Schema Markup] No JSON-LD schema found
+- **blogg\hjernerystelse-idrett.html** [Meta Tags] Title too long (73 chars)
+- **blogg\hjernerystelse-idrett.html** [Schema Markup] No JSON-LD schema found
+- **blogg\svimmel-i-senga.html** [Meta Tags] Title too long (84 chars)
+- **blogg\svimmel-i-senga.html** [Schema Markup] No JSON-LD schema found
+- **blogg\svimmelhet-stress-angst.html** [Schema Markup] No JSON-LD schema found
+- **blogg\kjeveovelser-hjemme.html** [Meta Tags] Title too long (72 chars)
+- **blogg\kjeveovelser-hjemme.html** [Schema Markup] No JSON-LD schema found
+- **blogg\kjeveovelser-hjemme.html** [Accessibility] Heading skip: h2 → h4
+- **blogg\tekstnakke-kjevesmerter.html** [Schema Markup] No JSON-LD schema found
+- **blogg\tekstnakke-kjevesmerter.html** [Accessibility] Heading skip: h1 → h3
+- **blogg\nummenhet-fingre-nakke-hand.html** [Meta Tags] Title too long (74 chars)
+- **blogg\hypermobilitet-eds-kjeve.html** [Meta Tags] Title too long (76 chars)
+- **blogg\hypermobilitet-eds-kjeve.html** [Schema Markup] No JSON-LD schema found
+- **blogg\hypermobilitet-eds-kjeve.html** [Accessibility] Heading skip: h2 → h4
+- **blogg\kjevesmerter-barn-ungdom.html** [Schema Markup] No JSON-LD schema found
+- **blogg\kjevesmerter-barn-ungdom.html** [Accessibility] Heading skip: h2 → h4
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Meta Tags] Title too long (87 chars)
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Accessibility] Heading skip: h1 → h3
+- **blogg\muskelsmerte-vs-nervesmerte.html** [Meta Tags] Title too long (75 chars)
+- **blogg\muskelsmerte-vs-nervesmerte.html** [Schema Markup] No JSON-LD schema found
+- **blogg\stressnakke-triggerpunkter.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **blogg\adhd-autisme-kjevesmerter.html** [Meta Tags] Title too long (77 chars)
+- **blogg\adhd-autisme-kjevesmerter.html** [Schema Markup] No JSON-LD schema found
+- **blogg\akutt-ryggsmerte-selvhjelp.html** [Meta Tags] Title too long (73 chars)
+- **blogg\akutt-ryggsmerte-selvhjelp.html** [Schema Markup] No JSON-LD schema found
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Meta Tags] Title too long (92 chars)
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Schema Markup] No JSON-LD schema found
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Accessibility] Heading skip: h2 → h4
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Meta Tags] Title too long (85 chars)
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Accessibility] Heading skip: h1 → h3
+- **faq\ryggsmerter-faq.html** [Meta Tags] Title too long (72 chars)
+- **faq\ryggsmerter-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\svimmelhet-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\arm-pain-faq.html** [Meta Tags] Title too long (75 chars)
+- **faq\arm-pain-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\korsryggsmerter-faq.html** [Meta Tags] Title too long (80 chars)
+- **faq\korsryggsmerter-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\brystryggsmerter-faq.html** [Meta Tags] Title too long (82 chars)
+- **faq\brystryggsmerter-faq.html** [Meta Tags] Description too long (168 chars)
+- **faq\brystryggsmerter-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\fotsmerter-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\knee-pain-faq.html** [Meta Tags] Title too long (77 chars)
+- **faq\knee-pain-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\jaw-pain-faq.html** [Meta Tags] Title too long (83 chars)
+- **faq\jaw-pain-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\hip-pain-faq.html** [Meta Tags] Title too long (75 chars)
+- **faq\hip-pain-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\dizziness-faq.html** [Meta Tags] Title too long (77 chars)
+- **faq\dizziness-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\neck-pain-faq.html** [Meta Tags] Title too long (77 chars)
+- **faq\neck-pain-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\foot-pain-faq.html** [Meta Tags] Title too long (77 chars)
+- **faq\foot-pain-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\hoftesmerter-faq.html** [Meta Tags] Title too long (74 chars)
+- **faq\hoftesmerter-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\headache-faq.html** [Meta Tags] Title too long (76 chars)
+- **faq\headache-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\chest-pain-faq.html** [Meta Tags] Title too long (79 chars)
+- **faq\chest-pain-faq.html** [Meta Tags] Description too long (171 chars)
+- **faq\chest-pain-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\knesmerter-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\nakkesmerter-faq.html** [Meta Tags] Title too long (74 chars)
+- **faq\nakkesmerter-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\armsmerter-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\shoulder-pain-faq.html** [Meta Tags] Title too long (85 chars)
+- **faq\shoulder-pain-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\back-pain-faq.html** [Meta Tags] Title too long (77 chars)
+- **faq\back-pain-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\kjevesmerter-faq.html** [Meta Tags] Title too long (81 chars)
+- **faq\kjevesmerter-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\skuldersmerter-faq.html** [Meta Tags] Title too long (78 chars)
+- **faq\skuldersmerter-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\lower-back-pain-faq.html** [Meta Tags] Title too long (89 chars)
+- **faq\lower-back-pain-faq.html** [Meta Tags] Description too long (164 chars)
+- **faq\lower-back-pain-faq.html** [Accessibility] Heading skip: h1 → h3
+- **faq\hodepine-faq.html** [Meta Tags] Title too long (77 chars)
+- **faq\hodepine-faq.html** [Accessibility] Heading skip: h1 → h3
+- **plager\skuldersmerter.html** [Accessibility] Heading skip: h2 → h4
+- **plager\nakkesmerter.html** [Meta Tags] Title too long (73 chars)
+- **plager\nakkesmerter.html** [Accessibility] Heading skip: h2 → h4
+- **plager\kjevesmerte.html** [Meta Tags] Title too long (86 chars)
+- **plager\idrettsskader.html** [Performance] Inline CSS 3235 chars (>2000)
+- **plager\albue-arm.html** [Accessibility] Heading skip: h2 → h4
+- **plager\brystryggsmerter.html** [Meta Tags] Title too long (74 chars)
+- **plager\brystryggsmerter.html** [Meta Tags] Description too long (165 chars)
+- **plager\korsryggsmerte.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hodepine.html** [Meta Tags] Title too long (80 chars)
+- **plager\hodepine.html** [Accessibility] Heading skip: h2 → h4
+- **plager\fotsmerte.html** [Accessibility] Heading skip: h3 → h5
+- **plager\svimmelhet.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hofte-og-bekkensmerter.html** [Meta Tags] Title too long (72 chars)
+- **plager\hofte-og-bekkensmerter.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hofte\bursitt-myte.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hofte\iliopsoas-tendinopati.html** [Accessibility] Heading skip: h1 → h3
+- **plager\hofte\rygg-hofte-isjias.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hofte\stressbrudd-hofte.html** [Meta Tags] Title too long (80 chars)
+- **plager\hofte\labrum-skade.html** [Accessibility] Heading skip: h1 → h3
+- **plager\hofte\idrettsskader-hofte.html** [Meta Tags] Title too long (71 chars)
+- **plager\hofte\idrettsskader-hofte.html** [Meta Tags] Description too long (163 chars)
+- **plager\hofte\idrettsskader-hofte.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hofte\fai-hofteklem.html** [Accessibility] Heading skip: h1 → h3
+- **plager\hofte\snapping-hip.html** [Meta Tags] Title too long (72 chars)
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Meta Tags] Title too long (99 chars)
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Meta Tags] Description too long (166 chars)
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hofte\gtps-gluteal-tendinopati.html** [Accessibility] Heading skip: h1 → h3
+- **plager\hofte\bekkenleddsmerter-graviditet.html** [Accessibility] Heading skip: h1 → h3
+- **plager\hofte\hofteartrose.html** [Accessibility] Heading skip: h1 → h3
+- **plager\hofte\proksimal-hamstringtendinopati.html** [Meta Tags] Title too long (79 chars)
+- **plager\hofte\vondt-i-hoften.html** [Meta Tags] Title too long (72 chars)
+- **plager\hofte\vondt-i-hoften.html** [Accessibility] Heading skip: h1 → h3
+- **plager\hofte\triggerpunkter-hofte-bekken.html** [Meta Tags] Title too long (72 chars)
+- **plager\hofte\triggerpunkter-hofte-bekken.html** [Meta Tags] Description too long (168 chars)
+- **plager\hofte\triggerpunkter-hofte-bekken.html** [Accessibility] Heading skip: h2 → h4
+- **plager\fot\stressfraktur-fot.html** [Meta Tags] Title too long (84 chars)
+- **plager\fot\stressfraktur-fot.html** [Meta Tags] Description too long (169 chars)
+- **plager\fot\mortons-nevrom.html** [Meta Tags] Description too short (30 chars)
+- **plager\fot\mortons-nevrom.html** [Accessibility] Heading skip: h2 → h4
+- **plager\fot\metatarsalgi.html** [Meta Tags] Description too long (163 chars)
+- **plager\fot\plantar-fasciopati.html** [Meta Tags] Description too long (162 chars)
+- **plager\fot\plantar-fasciopati.html** [Accessibility] Heading skip: h2 → h5
+- **plager\fot\severs-syndrom.html** [Meta Tags] Title too long (73 chars)
+- **plager\fot\severs-syndrom.html** [Meta Tags] Description too long (167 chars)
+- **plager\fot\severs-syndrom.html** [Accessibility] Heading skip: h2 → h5
+- **plager\fot\hallux-valgus.html** [Meta Tags] Title too long (80 chars)
+- **plager\fot\hallux-valgus.html** [Meta Tags] Description too long (174 chars)
+- **plager\fot\hallux-valgus.html** [Accessibility] Heading skip: h3 → h5
+- **plager\fot\akillestendinopati.html** [Accessibility] Heading skip: h2 → h4
+- **plager\fot\ankelforstuinger.html** [Meta Tags] Title too long (75 chars)
+- **plager\fot\ankelforstuinger.html** [Accessibility] Heading skip: h2 → h5
+- **plager\fot\ankelinstabilitet.html** [Meta Tags] Title too long (77 chars)
+- **plager\fot\hallux-rigidus.html** [Meta Tags] Title too long (91 chars)
+- **plager\fot\hallux-rigidus.html** [Meta Tags] Description too long (174 chars)
+- **plager\fot\hallux-rigidus.html** [Accessibility] Heading skip: h2 → h4
+- **plager\fot\tibialis-posterior-tendinopati.html** [Meta Tags] Title too long (91 chars)
+- **plager\fot\tibialis-posterior-tendinopati.html** [Meta Tags] Description too long (169 chars)
+- **plager\fot\tibialis-posterior-tendinopati.html** [Accessibility] Heading skip: h2 → h5
+- **plager\fot\fottrening.html** [Meta Tags] Title too long (79 chars)
+- **plager\fot\fottrening.html** [Accessibility] Heading skip: h3 → h5
+- **plager\fot\innleggssaler.html** [Accessibility] Heading skip: h2 → h4
+- **plager\fot\minimalistsko.html** [Meta Tags] Title too long (82 chars)
+- **plager\fot\minimalistsko.html** [Accessibility] Heading skip: h2 → h5
+- **plager\fot\nar-innleggssaler-hjelper.html** [Accessibility] Heading skip: h2 → h4
+- **plager\fot\ortose-nedtrapping.html** [Accessibility] Heading skip: h2 → h4
+- **plager\fot\overpronasjon.html** [Meta Tags] Title too long (72 chars)
+- **plager\fot\overpronasjon.html** [Accessibility] Heading skip: h2 → h4
+- **plager\fot\svake-fotter.html** [Meta Tags] Title too long (71 chars)
+- **plager\fot\svake-fotter.html** [Accessibility] Heading skip: h2 → h4
+- **plager\skulder\ac-ledd-artrose.html** [Meta Tags] Title too long (73 chars)
+- **plager\skulder\ac-ledd-artrose.html** [Accessibility] Heading skip: h2 → h4
+- **plager\skulder\kortison-skulder.html** [Meta Tags] Title too long (87 chars)
+- **plager\skulder\kortison-skulder.html** [Performance] Inline CSS 6677 chars (>2000)
+- **plager\skulder\slap-lesjon.html** [Performance] Inline CSS 6117 chars (>2000)
+- **plager\skulder\slap-lesjon.html** [Accessibility] Heading skip: h2 → h4
+- **plager\skulder\ergonomi-skulder.html** [Meta Tags] Title too long (91 chars)
+- **plager\skulder\ergonomi-skulder.html** [Accessibility] Heading skip: h2 → h4
+- **plager\skulder\klikking-skulder.html** [Meta Tags] Title too long (84 chars)
+- **plager\skulder\klikking-skulder.html** [Performance] Inline CSS 2164 chars (>2000)
+- **plager\skulder\klikking-skulder.html** [Accessibility] Heading skip: h2 → h4
+- **plager\skulder\biceps-tendinopati.html** [Meta Tags] Title too long (76 chars)
+- **plager\skulder\biceps-tendinopati.html** [Performance] Inline CSS 5741 chars (>2000)
+- **plager\skulder\biceps-tendinopati.html** [Accessibility] Heading skip: h2 → h4
+- **plager\skulder\tos-sovende-arm.html** [Meta Tags] Title too long (79 chars)
+- **plager\skulder\tos-sovende-arm.html** [Accessibility] Heading skip: h2 → h4
+- **plager\skulder\kalkskulder.html** [Accessibility] Heading skip: h2 → h4
+- **plager\skulder\kasterskulder.html** [Meta Tags] Title too long (74 chars)
+- **plager\skulder\kasterskulder.html** [Accessibility] Heading skip: h2 → h4
+- **plager\skulder\skulderartrose.html** [Meta Tags] Title too long (72 chars)
+- **plager\skulder\sovn-skuldersmerter.html** [Meta Tags] Title too long (82 chars)
+- **plager\hodepine\migrene.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hodepine\medikamentoverforbruk-hodepine.html** [Meta Tags] Title too long (85 chars)
+- **plager\hodepine\medikamentoverforbruk-hodepine.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hodepine\hodepine-toppen.html** [Meta Tags] Title too long (74 chars)
+- **plager\hodepine\hodepine-toppen.html** [Accessibility] Heading skip: h1 → h3
+- **plager\hodepine\hodepine-svimmelhet.html** [Meta Tags] Title too long (84 chars)
+- **plager\hodepine\hodepine-svimmelhet.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hodepine\occipital-nevralgi.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hodepine\spenningshodepine.html** [Meta Tags] Title too long (71 chars)
+- **plager\hodepine\spenningshodepine.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hodepine\hodepine-tinningen.html** [Accessibility] Heading skip: h1 → h3
+- **plager\hodepine\bihule-migrene.html** [Meta Tags] Title too long (73 chars)
+- **plager\hodepine\bihule-migrene.html** [Performance] Inline CSS 5572 chars (>2000)
+- **plager\hodepine\hormonhodepine.html** [Meta Tags] Title too long (85 chars)
+- **plager\hodepine\hormonhodepine.html** [Accessibility] Heading skip: h2 → h4
+- **plager\hodepine\nakkehodepine.html** [Accessibility] Heading skip: h1 → h3
+- **plager\hodepine\triggerpunkter-hodepine.html** [Accessibility] Heading skip: h2 → h4
+- **plager\nakke\kvalme.html** [Meta Tags] Title too long (74 chars)
+- **plager\nakke\kvalme.html** [Meta Tags] Description too long (162 chars)
+- **plager\nakke\kvalme.html** [Accessibility] Heading skip: h1 → h3
+- **plager\nakke\stressnakke.html** [Accessibility] Heading skip: h2 → h4
+- **plager\nakke\knaser-nakke.html** [Meta Tags] Title too long (79 chars)
+- **plager\nakke\knaser-nakke.html** [Accessibility] Heading skip: h1 → h3
+- **plager\nakke\c6-c7-prolaps.html** [Accessibility] Heading skip: h2 → h4
+- **plager\nakke\c5-c6-prolaps.html** [Meta Tags] Title too long (75 chars)
+- **plager\nakke\c5-c6-prolaps.html** [Accessibility] Heading skip: h2 → h4
+- **plager\nakke\nakkeprolaps.html** [Meta Tags] Title too long (73 chars)
+- **plager\nakke\nakkeprolaps.html** [Accessibility] Heading skip: h1 → h3
+- **plager\nakke\torticollis.html** [Meta Tags] Title too long (79 chars)
+- **plager\nakke\torticollis.html** [Meta Tags] Description too long (164 chars)
+- **plager\nakke\torticollis.html** [Accessibility] Heading skip: h1 → h3
+- **plager\nakke\cervikal-foraminal-stenose.html** [Meta Tags] Title too long (73 chars)
+- **plager\nakke\cervikal-foraminal-stenose.html** [Accessibility] Heading skip: h2 → h4
+- **plager\nakke\degenerative-forandringer.html** [Meta Tags] Title too long (78 chars)
+- **plager\nakke\degenerative-forandringer.html** [Accessibility] Heading skip: h2 → h4
+- **plager\nakke\stiv-nakke-om-morgenen.html** [Meta Tags] Title too long (75 chars)
+- **plager\nakke\stiv-nakke-om-morgenen.html** [Accessibility] Heading skip: h2 → h4
+- **plager\nakke\tekstnakke.html** [Performance] Inline CSS 4677 chars (>2000)
+- **plager\nakke\nakkesleng-hodepine.html** [Meta Tags] Title too long (72 chars)
+- **plager\nakke\triggerpunkter-nakke.html** [Meta Tags] Title too long (81 chars)
+- **plager\kjeve\bittfeil-myter.html** [Accessibility] Heading skip: h2 → h4
+- **plager\kjeve\eagle-syndrom.html** [Meta Tags] Title too long (89 chars)
+- **plager\kjeve\eagle-syndrom.html** [Accessibility] Heading skip: h2 → h4
+- **plager\kjeve\glossopharyngeal-nevralgi.html** [Meta Tags] Title too long (71 chars)
+- **plager\kjeve\icr-intern-carotis.html** [Meta Tags] Title too long (81 chars)
+- **plager\kjeve\icr-intern-carotis.html** [Meta Tags] Description too long (164 chars)
+- **plager\kjeve\icr-syndrom.html** [Accessibility] Heading skip: h2 → h4
+- **plager\kjeve\oresmerter-tinnitus.html** [Meta Tags] Title too long (84 chars)
+- **plager\kjeve\oresmerter-tinnitus.html** [Accessibility] Heading skip: h2 → h4
+- **plager\kjeve\tanngnissing-bruksisme.html** [Meta Tags] Description too long (168 chars)
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Meta Tags] Description too long (170 chars)
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Meta Tags] Description too long (163 chars)
+- **plager\kjeve\pifp-ansiktssmerte.html** [Meta Tags] Title too long (92 chars)
+- **plager\kne\loperkne.html** [Meta Tags] Title too long (78 chars)
+- **plager\kne\loperkne.html** [Performance] Inline CSS 6295 chars (>2000)
+- **plager\kne\kneartrose.html** [Accessibility] Heading skip: h2 → h4
+- **plager\kne\pes-anserine-bursitt.html** [Meta Tags] Title too long (74 chars)
+- **plager\kne\meniskskade.html** [Accessibility] Heading skip: h2 → h4
+- **plager\kne\prepatellar-bursitt.html** [Meta Tags] Title too long (85 chars)
+- **plager\kne\iliotibial-band-syndrom.html** [Accessibility] Heading skip: h2 → h4
+- **plager\kne\knesmerte-fra-hoften.html** [Meta Tags] Title too long (74 chars)
+- **plager\kne\knesmerte-fra-hoften.html** [Performance] Inline CSS 5880 chars (>2000)
+- **plager\kne\knesmerte-fra-hoften.html** [Accessibility] Heading skip: h2 → h4
+- **plager\kne\pcl-skade.html** [Meta Tags] Title too long (76 chars)
+- **plager\kne\pcl-skade.html** [Accessibility] Heading skip: h2 → h4
+- **plager\kne\korsbandskade.html** [Accessibility] Heading skip: h2 → h4
+- **plager\brystrygg\t4-syndrom.html** [Accessibility] Heading skip: h2 → h4
+- **plager\brystrygg\fibromyalgi-brystsmerter.html** [Meta Tags] Description too long (179 chars)
+- **plager\brystrygg\fibromyalgi-brystsmerter.html** [Accessibility] Heading skip: h2 → h4
+- **plager\brystrygg\pust-stress-rygg.html** [Meta Tags] Title too long (76 chars)
+- **plager\brystrygg\osteoporose.html** [Accessibility] Heading skip: h2 → h4
+- **plager\brystrygg\stiv-rygg-idrett.html** [Meta Tags] Title too long (71 chars)
+- **plager\brystrygg\krum-rygg.html** [Accessibility] Heading skip: h2 → h4
+- **plager\brystrygg\kostokondritt.html** [Meta Tags] Title too long (71 chars)
+- **plager\svimmelhet\scds.html** [Meta Tags] Title too long (84 chars)
+- **plager\svimmelhet\vestibulaer-hypofunksjon.html** [Meta Tags] Description too long (164 chars)
+- **plager\svimmelhet\nakkesvimmelhet.html** [Meta Tags] Title too long (71 chars)
+- **plager\svimmelhet\mdds.html** [Meta Tags] Title too long (77 chars)
+- **plager\svimmelhet\whiplash-svimmelhet.html** [Meta Tags] Title too long (78 chars)
+- **plager\svimmelhet\krystallsyke-bppv.html** [Meta Tags] Title too long (72 chars)
+- **plager\svimmelhet\krystallsyke-bppv.html** [Accessibility] Heading skip: h2 → h4
+- **plager\svimmelhet\vestibularisnevritt.html** [Meta Tags] Title too long (79 chars)
+- **plager\svimmelhet\post-hjernerystelse.html** [Meta Tags] Title too long (81 chars)
+- **plager\svimmelhet\post-hjernerystelse.html** [Accessibility] Heading skip: h2 → h4
+- **plager\svimmelhet\pppd-kronisk-svimmelhet.html** [Meta Tags] Description too long (163 chars)
+- **plager\svimmelhet\pots-syndrom.html** [Meta Tags] Title too long (75 chars)
+- **plager\albue-arm\musearm.html** [Meta Tags] Title too long (74 chars)
+- **plager\albue-arm\musearm.html** [Meta Tags] Description too long (167 chars)
+- **plager\albue-arm\tommelartrose.html** [Meta Tags] Title too long (74 chars)
+- **plager\albue-arm\triggerpunkter-arm.html** [Meta Tags] Title too long (77 chars)
+- **plager\albue-arm\triggerpunkter-arm.html** [Meta Tags] Description too long (173 chars)
+- **plager\albue-arm\triggerpunkter-arm.html** [Accessibility] Heading skip: h2 → h4
+- **plager\albue-arm\triggerfinger.html** [Meta Tags] Description too long (172 chars)
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Meta Tags] Title too long (72 chars)
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Meta Tags] Description too long (162 chars)
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Accessibility] Heading skip: h2 → h4
+- **plager\albue-arm\golfalbue.html** [Meta Tags] Title too long (74 chars)
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Meta Tags] Title too long (75 chars)
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Accessibility] Heading skip: h2 → h4
+- **plager\albue-arm\tennisalbue.html** [Meta Tags] Title too long (77 chars)
+- **plager\korsrygg\si-ledd.html** [Meta Tags] Title too long (73 chars)
+- **plager\korsrygg\isjias.html** [Accessibility] Heading skip: h2 → h4
+- **plager\korsrygg\spondylolistese.html** [Meta Tags] Title too long (95 chars)
+- **plager\korsrygg\spondylolistese.html** [Accessibility] Heading skip: h1 → h3
+- **plager\korsrygg\bekhterevs-sykdom.html** [Meta Tags] Title too long (93 chars)
+- **plager\korsrygg\bekhterevs-sykdom.html** [Accessibility] Heading skip: h1 → h3
+- **plager\korsrygg\skiveprolaps.html** [Meta Tags] Title too long (85 chars)
+- **plager\korsrygg\skiveprolaps.html** [Accessibility] Heading skip: h2 → h4
+- **plager\korsrygg\spinal-stenose.html** [Accessibility] Heading skip: h1 → h3
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Meta Tags] Title too long (73 chars)
+- **plager\korsrygg\hekseskudd.html** [Meta Tags] Title too long (80 chars)
+- **plager\korsrygg\hekseskudd.html** [Accessibility] Heading skip: h1 → h3
+- **plager\korsrygg\nociplastisk-smerte.html** [Meta Tags] Title too long (91 chars)
+- **plager\korsrygg\nociplastisk-smerte.html** [Hreflang & Language] Missing hreflang="en"
+- **plager\korsrygg\nociplastisk-smerte.html** [Accessibility] Heading skip: h1 → h3
+- **plager\ryggsmerter.html** [Accessibility] Heading skip: h2 → h4
+- **tjeneste\graston.html** [Meta Tags] Title too long (92 chars)
+- **tjeneste\graston.html** [Meta Tags] Description too long (178 chars)
+- **tjeneste\graston.html** [Accessibility] Heading skip: h2 → h4
+- **tjeneste\kiropraktikk.html** [Accessibility] Heading skip: h2 → h4
+- **tjeneste\blotvevsteknikker.html** [Meta Tags] Title too long (78 chars)
+- **tjeneste\blotvevsteknikker.html** [Meta Tags] Description too long (170 chars)
+- **tjeneste\blotvevsteknikker.html** [Accessibility] Heading skip: h2 → h4
+- **tjeneste\svimmelhet.html** [Meta Tags] Title too long (106 chars)
+- **tjeneste\svimmelhet.html** [Meta Tags] Description too long (205 chars)
+- **tjeneste\svimmelhet.html** [Schema Markup] No JSON-LD schema found
+- **tjeneste\svimmelhet.html** [Accessibility] Heading skip: h2 → h4
+- **tjeneste\fasciemanipulasjon.html** [Meta Tags] Title too long (84 chars)
+- **tjeneste\fasciemanipulasjon.html** [Meta Tags] Description too long (178 chars)
+- **tjeneste\fasciemanipulasjon.html** [Accessibility] Heading skip: h2 → h4
+- **tjeneste\akutt-behandling.html** [Accessibility] Heading skip: h2 → h4
+- **tjeneste\rehabilitering.html** [Meta Tags] Title too long (85 chars)
+- **tjeneste\rehabilitering.html** [Meta Tags] Description too long (203 chars)
+- **tjeneste\dry-needling.html** [Meta Tags] Title too long (83 chars)
+- **tjeneste\dry-needling.html** [Meta Tags] Description too long (188 chars)
+- **tjeneste\dry-needling.html** [Accessibility] Heading skip: h2 → h4
+- **tjeneste\forebyggende-behandling.html** [Meta Tags] Title too long (77 chars)
+- **tjeneste\forebyggende-behandling.html** [Meta Tags] Description too long (165 chars)
+- **tjeneste\trykkbolge.html** [Meta Tags] Title too long (75 chars)
+- **tjeneste\trykkbolge.html** [Meta Tags] Description too long (185 chars)
+- **tjeneste\trykkbolge.html** [Accessibility] Heading skip: h2 → h4
+- **tjeneste\svimmelhet\balansesystemet.html** [Meta Tags] Title too long (93 chars)
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Meta Tags] Title too long (76 chars)
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Meta Tags] Description too long (161 chars)
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Accessibility] Heading skip: h2 → h4
+- **tjeneste\svimmelhet\vng-undersokelse.html** [Meta Tags] Title too long (76 chars)
+- **tjeneste\svimmelhet\vng-undersokelse.html** [Meta Tags] Description too long (162 chars)
+- **en\conditions\arm-pain.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\headache.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot-pain.html** [Accessibility] Heading skip: h3 → h5
+- **en\conditions\hip-pain.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\knee-pain.html** [Meta Tags] Description too short (63 chars)
+- **en\conditions\knee-pain.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\knee-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\thoracic-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\lower-back-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\shoulder-pain.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\neck-pain.html** [Meta Tags] Description too short (31 chars)
+- **en\conditions\neck-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\sports-injuries.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\athletic-pubalgia.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\back-hip-sciatica.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\bursitis-myth.html** [Meta Tags] Description too long (161 chars)
+- **en\conditions\hip\bursitis-myth.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\fai-hip-impingement.html** [Meta Tags] Description too long (161 chars)
+- **en\conditions\hip\fai-hip-impingement.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\gtps-gluteal-tendinopathy.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\hip\gtps-gluteal-tendinopathy.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\hip-osteoarthritis.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\hip\hip-osteoarthritis.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\iliopsoas-tendinopathy.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\labrum-tear.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\osteitis-pubis.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\pelvic-pain-pregnancy.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\proximal-hamstring-tendinopathy.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\si-joint-problems.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\snapping-hip.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\stress-fracture-hip.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\hip-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\hip-pointer.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\hip\sports-injuries-hip.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\c5-c6-disc-herniation.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\neck\c6-c7-disc-herniation.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\cervical-foraminal-stenosis.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\conditions\neck\cervical-foraminal-stenosis.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\cracking-neck.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\degenerative-changes.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\finger-numbness.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\conditions\neck\finger-numbness.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\nausea-neck.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\neck-disc-herniation.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\neck-trigger-points.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\red-flags-neck-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\stiff-neck-morning.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\neck\stress-neck.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\conditions\neck\stress-neck.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\text-neck.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\conditions\neck\text-neck.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\torticollis.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\whiplash-headache.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\conditions\neck\whiplash-headache.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\neck\whiplash.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\conditions\neck\whiplash.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\jaw\bite-myths.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\jaw\bruxism.html** [Meta Tags] Description too long (162 chars)
+- **en\conditions\jaw\bruxism.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\jaw\clicking-locking-joint-problems.html** [Meta Tags] Description too short (64 chars)
+- **en\conditions\jaw\clicking-locking-joint-problems.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\jaw\eagle-syndrome.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\jaw\ear-pain-tinnitus.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\jaw\glossopharyngeal-neuralgia.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\jaw\icr-syndrome.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\jaw\jaw-headache.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\jaw\neck-jaw-connection.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\jaw\pifp-facial-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\jaw\tmd-exercises.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\elbow-arm\de-quervains.html** [Meta Tags] Description too short (29 chars)
+- **en\conditions\elbow-arm\golfers-elbow.html** [Meta Tags] Description too short (24 chars)
+- **en\conditions\elbow-arm\trigger-points-arm.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\knee\jumpers-knee.html** [Meta Tags] Description too short (6 chars)
+- **en\conditions\knee\knee-pain-from-hip.html** [Meta Tags] Description too short (30 chars)
+- **en\conditions\knee\knee-pain-from-hip.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\knee\meniscus-injury.html** [Meta Tags] Description too short (45 chars)
+- **en\conditions\knee\runners-knee.html** [Meta Tags] Description too short (6 chars)
+- **en\conditions\knee\runners-knee.html** [Performance] Inline CSS 7538 chars (>2000)
+- **en\conditions\foot\achilles-tendinopathy.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\achilles-tendinopathy.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\ankle-instability.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\ankle-instability.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\ankle-sprains.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\ankle-sprains.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\foot-exercises.html** [Meta Tags] Title too long (73 chars)
+- **en\conditions\foot\foot-exercises.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\hallux-rigidus.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\hallux-rigidus.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\hallux-valgus.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\hallux-valgus.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\metatarsalgia.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\metatarsalgia.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\minimalist-shoes.html** [Meta Tags] Title too long (87 chars)
+- **en\conditions\foot\minimalist-shoes.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\mortons-neuroma.html** [Meta Tags] Description too short (29 chars)
+- **en\conditions\foot\mortons-neuroma.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\mortons-neuroma.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\orthotic-weaning.html** [Performance] Inline CSS 2606 chars (>2000)
+- **en\conditions\foot\orthotic-weaning.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\orthotics.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\overpronation.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\plantar-fasciopathy.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\plantar-fasciopathy.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\severs-disease.html** [Meta Tags] Description too short (44 chars)
+- **en\conditions\foot\severs-disease.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\severs-disease.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\stress-fracture-foot.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\stress-fracture-foot.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\tibialis-posterior-tendinopathy.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\tibialis-posterior-tendinopathy.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\weak-feet.html** [Meta Tags] Title too long (76 chars)
+- **en\conditions\foot\weak-feet.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\foot\weak-feet.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\foot\when-orthotics-help.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\headache\cervicogenic-headache.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\headache\headache-dizziness.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\headache\headache-temple.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\headache\headache-top-of-head.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\headache\hormonal-headache.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\headache\medication-overuse-headache.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\headache\migraine.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\headache\occipital-neuralgia.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\headache\sinus-migraine.html** [Performance] Inline CSS 5572 chars (>2000)
+- **en\conditions\headache\tension-headache.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\headache\trigger-point-headache.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\thoracic\between-shoulder-blades.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\thoracic\breathing-stress-back.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\thoracic\costochondritis.html** [Meta Tags] Description too short (15 chars)
+- **en\conditions\thoracic\costochondritis.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\thoracic\flat-back.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\thoracic\flat-back.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\thoracic\kyphosis.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\thoracic\osteoporosis.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\thoracic\rib-dislocation.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\thoracic\scheuermanns-disease.html** [Meta Tags] Description too short (11 chars)
+- **en\conditions\thoracic\scheuermanns-disease.html** [Content Quality] Norwegian word in EN page: "nakke"
+- **en\conditions\thoracic\stiff-back-sports.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] Inline CSS 2115 chars (>2000)
+- **en\conditions\thoracic\t4-syndrome.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\bppv\anterior-canal.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\bppv\horizontal-canal.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\bppv\posterior-canal.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\bppv-crystal-disease.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\cervicogenic-dizziness.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\mdds.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\menieres-disease.html** [Meta Tags] Description too short (7 chars)
+- **en\conditions\dizziness\menieres-disease.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\post-concussion.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\pots-syndrome.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\pppd-chronic-dizziness.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\scds.html** [Meta Tags] Description too long (161 chars)
+- **en\conditions\dizziness\scds.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\vestibular-hypofunction.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\vestibular-migraine.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\vestibular-neuritis.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\dizziness\whiplash-dizziness.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\shoulder\ac-joint-osteoarthritis.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] Inline CSS 6784 chars (>2000)
+- **en\conditions\shoulder\biceps-tendinopathy.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\shoulder\calcific-tendinitis.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\shoulder\clicking-shoulder.html** [Performance] Inline CSS 2239 chars (>2000)
+- **en\conditions\shoulder\clicking-shoulder.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\shoulder\cortisone-shoulder.html** [Performance] Inline CSS 8016 chars (>2000)
+- **en\conditions\shoulder\shoulder-ergonomics.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\shoulder\slap-lesion.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\shoulder\throwers-shoulder.html** [Meta Tags] Description too short (7 chars)
+- **en\conditions\shoulder\throwers-shoulder.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\shoulder\tos-numb-arm.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\lower-back\disc-herniation.html** [Accessibility] Heading skip: h2 → h4
+- **en\conditions\lower-back\sciatica.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\lower-back\spinal-stenosis.html** [Meta Tags] Description too short (59 chars)
+- **en\conditions\lower-back\spinal-stenosis.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\lower-back\acute-back-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\lower-back\ankylosing-spondylitis.html** [Accessibility] Heading skip: h1 → h3
+- **en\conditions\lower-back\spondylolisthesis.html** [Accessibility] Heading skip: h1 → h3
+- **en\services\dizziness\vestibular-rehabilitation.html** [Accessibility] Heading skip: h2 → h4
+- **en\services\acute-treatment.html** [Meta Tags] Title too long (75 chars)
+- **en\services\acute-treatment.html** [Accessibility] Heading skip: h2 → h4
+- **en\services\chiropractic.html** [Accessibility] Heading skip: h2 → h4
+- **en\services\dizziness-treatment.html** [Schema Markup] No JSON-LD schema found
+- **en\services\dizziness-treatment.html** [Accessibility] Heading skip: h2 → h4
+- **en\services\dry-needling.html** [Accessibility] Heading skip: h2 → h4
+- **en\services\fascia-manipulation.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\services\fascia-manipulation.html** [Accessibility] Heading skip: h2 → h4
+- **en\services\graston.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\services\graston.html** [Accessibility] Heading skip: h2 → h4
+- **en\services\preventive-treatment.html** [Meta Tags] Title too long (76 chars)
+- **en\services\preventive-treatment.html** [Meta Tags] Description too long (163 chars)
+- **en\services\soft-tissue.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\services\soft-tissue.html** [Accessibility] Heading skip: h2 → h4
+- **en\services\rehabilitation.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\services\shockwave.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\services\shockwave.html** [Accessibility] Heading skip: h2 → h4
+- **en\blog\acute-back-pain-self-help.html** [Meta Tags] Description too short (25 chars)
+- **en\blog\acute-back-pain-self-help.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\adhd-autism-jaw-pain.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\adhd-autism-jaw-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\bite-problems-myths-facts.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\bite-problems-myths-facts.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\botox-vs-manual-treatment-jaw.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\botox-vs-manual-treatment-jaw.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\hypermobility-eds-jaw.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\hypermobility-eds-jaw.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\index.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\index.html** [Performance] Inline CSS 4280 chars (>2000)
+- **en\blog\index.html** [Performance] 9 external scripts (>8)
+- **en\blog\jaw-exercises-home.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\jaw-exercises-home.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\jaw-pain-children-adolescents.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\jaw-pain-children-adolescents.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\martial-arts-jaw-injuries.html** [Meta Tags] Description too long (161 chars)
+- **en\blog\martial-arts-jaw-injuries.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\martial-arts-jaw-injuries.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\musicians-jaw-pain.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\musicians-jaw-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\pregnancy-jaw-pain.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\pregnancy-jaw-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\stress-jaw-pain.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\stress-jaw-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\text-neck-jaw-pain.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\text-neck-jaw-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\tmd-ibs-gut-jaw.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\tmd-ibs-gut-jaw.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\text-neck-phone-neck.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\trigger-points-neck.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\neck-pain-pregnancy.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\blog\neck-pain-pregnancy.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\numbness-fingers-neck-hand.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\stress-neck-trigger-points.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\blog\stress-neck-trigger-points.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\sciatica-prolapse-lumbago-difference.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\blog\sciatica-prolapse-lumbago-difference.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\strengthening-exercises-lower-back.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\subtle-bppv.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\subtle-bppv.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\central-dizziness.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\central-dizziness.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\chiropractor-vs-physiotherapist.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\concussion-sports.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\concussion-sports.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\discogenic-pain.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\blog\discogenic-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\dizziness-myths.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\dizziness-myths.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\dizziness-not-bppv.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\dizziness-not-bppv.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\dizziness-stress-anxiety.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\dizziness-stress-anxiety.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\dizziness-treatment.html** [Meta Tags] Description too short (51 chars)
+- **en\blog\dizziness-treatment.html** [Accessibility] Heading skip: h2 → h4
+- **en\blog\dizzy-and-nauseous.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\dizzy-and-nauseous.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\dizzy-in-bed.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\dizzy-in-bed.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\dizzy-when-standing-up.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\dizzy-when-standing-up.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\elderly-dizziness-fall-risk.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\elderly-dizziness-fall-risk.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\exercises-sciatica.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\exercises-sciatica.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\facet-joint-syndrome.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\jaw-neck-dizziness.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\jaw-neck-dizziness.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\l4-l5-disc-herniation.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\blog\l4-l5-disc-herniation.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\l5-s1-disc-herniation.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\blog\l5-s1-disc-herniation.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\living-with-dizziness.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\living-with-dizziness.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\mri-imaging-back-pain.html** [Meta Tags] Title too long (72 chars)
+- **en\blog\mri-imaging-back-pain.html** [Schema Markup] FAQ section found but no FAQPage schema
+- **en\blog\mri-imaging-back-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\muscle-pain-vs-nerve-pain.html** [Schema Markup] No JSON-LD schema found
+- **en\blog\muscle-pain-vs-nerve-pain.html** [Accessibility] Heading skip: h1 → h3
+- **en\blog\piriformis-syndrome-false-sciatica.html** [Accessibility] Heading skip: h1 → h3
+- **en\prices.html** [Schema Markup] No JSON-LD schema found
+- **en\404.html** [Meta Tags] Description too short (18 chars)
+- **en\404.html** [Schema Markup] No JSON-LD schema found
+- **en\conditions.html** [Schema Markup] No JSON-LD schema found
+- **en\conditions.html** [Accessibility] Heading skip: h1 → h3
+- **en\contact.html** [Accessibility] Heading skip: h1 → h3
+- **en\emergency-dizziness.html** [Accessibility] Heading skip: h2 → h4
+- **en\emergency-treatment.html** [Accessibility] Heading skip: h2 → h4
+- **en\emergency.html** [Schema Markup] No JSON-LD schema found
+- **en\new-patients.html** [Schema Markup] No JSON-LD schema found
+- **en\privacy-policy.html** [Schema Markup] No JSON-LD schema found
+- **en\about.html** [Schema Markup] No JSON-LD schema found
+- **en\about.html** [Accessibility] Heading skip: h2 → h4
+- **en\services.html** [Schema Markup] No JSON-LD schema found
+- **en\services.html** [Accessibility] Heading skip: h1 → h3
+
+## Info
+
+- **priser.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **priser.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **priser.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **contact.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **contact.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **contact.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **contact.html** [Content Quality] Low word count: 166 (<300)
+- **services.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **services.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **services.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **services.html** [Content Quality] Low word count: 136 (<300)
+- **plager.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager.html** [Content Quality] Low word count: 146 (<300)
+- **404.html** [Meta Tags] Missing og:image
+- **404.html** [Performance] Image missing loading attribute: logo-header.webp
+- **404.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **404.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **404.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **404.html** [Content Quality] Low word count: 96 (<300)
+- **404.html** [Structural Consistency] Missing breadcrumb navigation
+- **index.html** [Performance] Image missing loading attribute: logo-header.webp
+- **index.html** [Performance] Image missing loading attribute: meg.webp
+- **index.html** [Performance] Image missing decoding="async": meg.webp
+- **index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **index.html** [Structural Consistency] Missing breadcrumb navigation
+- **akutt-svimmelhet-helg.html** [Performance] Image missing loading attribute: logo-header.webp
+- **akutt-svimmelhet-helg.html** [Performance] Image missing loading attribute: meg.webp
+- **akutt-svimmelhet-helg.html** [Performance] Image missing decoding="async": meg.webp
+- **akutt-svimmelhet-helg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **akutt-svimmelhet-helg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **akutt-svimmelhet-helg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **akutt-svimmelhet-helg.html** [Performance] CSS missing version hash: hub-article.css
+- **akutt-svimmelhet-helg.html** [Structural Consistency] Missing mobile sticky CTA
+- **privacy-policy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **privacy-policy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **privacy-policy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **akutt-behandling.html** [Performance] Image missing loading attribute: logo-header.webp
+- **akutt-behandling.html** [Performance] Image missing loading attribute: meg.webp
+- **akutt-behandling.html** [Performance] Image missing decoding="async": meg.webp
+- **akutt-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **akutt-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **akutt-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **akutt-behandling.html** [Performance] CSS missing version hash: hub-article.css
+- **akutt-behandling.html** [Structural Consistency] Missing mobile sticky CTA
+- **personvern.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **personvern.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **personvern.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **nye-pasienter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **nye-pasienter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **nye-pasienter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq.html** [Performance] CSS missing version hash: hub-article.css
+- **faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **about.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **about.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **about.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\index.html** [Performance] Image missing loading attribute: instagramlogo.png
+- **blogg\index.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **blogg\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\index.html** [Content Quality] Low word count: 104 (<300)
+- **blogg\index.html** [Structural Consistency] Missing mobile sticky CTA
+- **blogg\nakkesmerter-gravid.html** [Meta Tags] Missing og:image
+- **blogg\nakkesmerter-gravid.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\nakkesmerter-gravid.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\nakkesmerter-gravid.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\nakkesmerter-gravid.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\nakkesmerter-gravid.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\nakkesmerter-gravid.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\nakkesmerter-gravid.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\eldre-svimmelhet-fallrisiko.html** [Meta Tags] Missing og:image
+- **blogg\eldre-svimmelhet-fallrisiko.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\eldre-svimmelhet-fallrisiko.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\eldre-svimmelhet-fallrisiko.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\eldre-svimmelhet-fallrisiko.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\eldre-svimmelhet-fallrisiko.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\eldre-svimmelhet-fallrisiko.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\eldre-svimmelhet-fallrisiko.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\piriformissyndrom-falsk-isjias.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\piriformissyndrom-falsk-isjias.html** [Performance] Image missing decoding="async": Piriformis Syndrome False Sciatica Explained.webp
+- **blogg\piriformissyndrom-falsk-isjias.html** [Performance] Image missing decoding="async": piriformis-syndrome-false-sciatica-explained.webp
+- **blogg\piriformissyndrom-falsk-isjias.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\piriformissyndrom-falsk-isjias.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\piriformissyndrom-falsk-isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\piriformissyndrom-falsk-isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\piriformissyndrom-falsk-isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\piriformissyndrom-falsk-isjias.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\kiropraktor-vs-fysioterapeut.html** [Meta Tags] Missing og:image
+- **blogg\kiropraktor-vs-fysioterapeut.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\kiropraktor-vs-fysioterapeut.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\kiropraktor-vs-fysioterapeut.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\kiropraktor-vs-fysioterapeut.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kiropraktor-vs-fysioterapeut.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kiropraktor-vs-fysioterapeut.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kiropraktor-vs-fysioterapeut.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\l4-l5-prolaps.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\l4-l5-prolaps.html** [Performance] Image missing decoding="async": Guide to L4-L5 Disc Herniation.webp
+- **blogg\l4-l5-prolaps.html** [Performance] Image missing decoding="async": guide-to-l4-l5-disc-herniation.webp
+- **blogg\l4-l5-prolaps.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\l4-l5-prolaps.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\l4-l5-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\l4-l5-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\l4-l5-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\l4-l5-prolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\svimmel-og-kvalm.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\svimmel-og-kvalm.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\svimmel-og-kvalm.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\svimmel-og-kvalm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmel-og-kvalm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmel-og-kvalm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmel-og-kvalm.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\svimmelhet-behandling.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\svimmelhet-behandling.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\svimmelhet-behandling.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\svimmelhet-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-behandling.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\sentral-svimmelhet.html** [Meta Tags] Missing og:image
+- **blogg\sentral-svimmelhet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\sentral-svimmelhet.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\sentral-svimmelhet.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\sentral-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\sentral-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\sentral-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\sentral-svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\kjeve-nakke-svimmelhet.html** [Meta Tags] Missing og:image
+- **blogg\kjeve-nakke-svimmelhet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\kjeve-nakke-svimmelhet.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\kjeve-nakke-svimmelhet.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\kjeve-nakke-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kjeve-nakke-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kjeve-nakke-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kjeve-nakke-svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\diskogen-smerte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\diskogen-smerte.html** [Performance] Image missing decoding="async": Discogenic Pain Sitting and Movement.webp
+- **blogg\diskogen-smerte.html** [Performance] Image missing decoding="async": discogenic-pain-sitting-and-movement.webp
+- **blogg\diskogen-smerte.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\diskogen-smerte.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\diskogen-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\diskogen-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\diskogen-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\diskogen-smerte.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\ovelser-isjias.html** [Meta Tags] Missing og:image
+- **blogg\ovelser-isjias.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\ovelser-isjias.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\ovelser-isjias.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\ovelser-isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\ovelser-isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\ovelser-isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\ovelser-isjias.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\leve-med-svimmelhet.html** [Meta Tags] Missing og:image
+- **blogg\leve-med-svimmelhet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\leve-med-svimmelhet.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\leve-med-svimmelhet.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\leve-med-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\leve-med-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\leve-med-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\leve-med-svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\tmd-ibs-mage-kjeve.html** [Meta Tags] Missing og:image
+- **blogg\tmd-ibs-mage-kjeve.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\tmd-ibs-mage-kjeve.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\tmd-ibs-mage-kjeve.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\tmd-ibs-mage-kjeve.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\tmd-ibs-mage-kjeve.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\tmd-ibs-mage-kjeve.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\tmd-ibs-mage-kjeve.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\svimmelhet-ikke-bppv.html** [Meta Tags] Missing og:image
+- **blogg\svimmelhet-ikke-bppv.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\svimmelhet-ikke-bppv.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\svimmelhet-ikke-bppv.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\svimmelhet-ikke-bppv.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-ikke-bppv.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-ikke-bppv.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-ikke-bppv.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\subtil-krystallsyke.html** [Meta Tags] Missing og:image
+- **blogg\subtil-krystallsyke.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\subtil-krystallsyke.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\subtil-krystallsyke.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\subtil-krystallsyke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\subtil-krystallsyke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\subtil-krystallsyke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\subtil-krystallsyke.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\musikere-kjevesmerter.html** [Meta Tags] Missing og:image
+- **blogg\musikere-kjevesmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\musikere-kjevesmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\musikere-kjevesmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\musikere-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\musikere-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\musikere-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\musikere-kjevesmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\facettleddssyndrom.html** [Meta Tags] Missing og:image
+- **blogg\facettleddssyndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\facettleddssyndrom.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\facettleddssyndrom.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\facettleddssyndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\facettleddssyndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\facettleddssyndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\facettleddssyndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\graviditet-kjevesmerter.html** [Meta Tags] Missing og:image
+- **blogg\graviditet-kjevesmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\graviditet-kjevesmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\graviditet-kjevesmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\graviditet-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\graviditet-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\graviditet-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\graviditet-kjevesmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\bittfeil-myter-fakta.html** [Meta Tags] Missing og:image
+- **blogg\bittfeil-myter-fakta.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\bittfeil-myter-fakta.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\bittfeil-myter-fakta.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\bittfeil-myter-fakta.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\bittfeil-myter-fakta.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\bittfeil-myter-fakta.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\bittfeil-myter-fakta.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\l5-s1-prolaps.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\l5-s1-prolaps.html** [Performance] Image missing decoding="async": L5-S1 Disc Herniation Symptoms and Recovery.webp
+- **blogg\l5-s1-prolaps.html** [Performance] Image missing decoding="async": l5-s1-disc-herniation-symptoms-and-recovery.webp
+- **blogg\l5-s1-prolaps.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\l5-s1-prolaps.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\l5-s1-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\l5-s1-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\l5-s1-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\l5-s1-prolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\kampsport-kjeveskader.html** [Meta Tags] Missing og:image
+- **blogg\kampsport-kjeveskader.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\kampsport-kjeveskader.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\kampsport-kjeveskader.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\kampsport-kjeveskader.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kampsport-kjeveskader.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kampsport-kjeveskader.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kampsport-kjeveskader.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\svimmelhet-myter.html** [Meta Tags] Missing og:image
+- **blogg\svimmelhet-myter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\svimmelhet-myter.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\svimmelhet-myter.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\svimmelhet-myter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-myter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-myter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-myter.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\svimmel-naar-du-staar-opp.html** [Meta Tags] Missing og:image
+- **blogg\svimmel-naar-du-staar-opp.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\svimmel-naar-du-staar-opp.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\svimmel-naar-du-staar-opp.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\svimmel-naar-du-staar-opp.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmel-naar-du-staar-opp.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmel-naar-du-staar-opp.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmel-naar-du-staar-opp.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\styrkeovelser-korsrygg.html** [Meta Tags] Missing og:image
+- **blogg\styrkeovelser-korsrygg.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\styrkeovelser-korsrygg.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\styrkeovelser-korsrygg.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\styrkeovelser-korsrygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\styrkeovelser-korsrygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\styrkeovelser-korsrygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\styrkeovelser-korsrygg.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\triggerpunkter-nakken.html** [Meta Tags] Missing og:image
+- **blogg\triggerpunkter-nakken.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\triggerpunkter-nakken.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\triggerpunkter-nakken.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\triggerpunkter-nakken.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\triggerpunkter-nakken.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\triggerpunkter-nakken.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\triggerpunkter-nakken.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\stress-kjevesmerter.html** [Meta Tags] Missing og:image
+- **blogg\stress-kjevesmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\stress-kjevesmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\stress-kjevesmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\stress-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\stress-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\stress-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\stress-kjevesmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\hjernerystelse-idrett.html** [Meta Tags] Missing og:image
+- **blogg\hjernerystelse-idrett.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\hjernerystelse-idrett.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\hjernerystelse-idrett.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\hjernerystelse-idrett.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\hjernerystelse-idrett.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\hjernerystelse-idrett.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\hjernerystelse-idrett.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\svimmel-i-senga.html** [Meta Tags] Missing og:image
+- **blogg\svimmel-i-senga.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\svimmel-i-senga.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\svimmel-i-senga.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\svimmel-i-senga.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmel-i-senga.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmel-i-senga.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmel-i-senga.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\svimmelhet-stress-angst.html** [Meta Tags] Missing og:image
+- **blogg\svimmelhet-stress-angst.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\svimmelhet-stress-angst.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\svimmelhet-stress-angst.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\svimmelhet-stress-angst.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-stress-angst.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-stress-angst.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\svimmelhet-stress-angst.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\kjeveovelser-hjemme.html** [Meta Tags] Missing og:image
+- **blogg\kjeveovelser-hjemme.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\kjeveovelser-hjemme.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\kjeveovelser-hjemme.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\kjeveovelser-hjemme.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kjeveovelser-hjemme.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kjeveovelser-hjemme.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kjeveovelser-hjemme.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\tekstnakke-kjevesmerter.html** [Meta Tags] Missing og:image
+- **blogg\tekstnakke-kjevesmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\tekstnakke-kjevesmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\tekstnakke-kjevesmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\tekstnakke-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\tekstnakke-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\tekstnakke-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\tekstnakke-kjevesmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\nummenhet-fingre-nakke-hand.html** [Meta Tags] Missing og:image
+- **blogg\nummenhet-fingre-nakke-hand.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\nummenhet-fingre-nakke-hand.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\nummenhet-fingre-nakke-hand.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\nummenhet-fingre-nakke-hand.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\nummenhet-fingre-nakke-hand.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\nummenhet-fingre-nakke-hand.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\nummenhet-fingre-nakke-hand.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\hypermobilitet-eds-kjeve.html** [Meta Tags] Missing og:image
+- **blogg\hypermobilitet-eds-kjeve.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\hypermobilitet-eds-kjeve.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\hypermobilitet-eds-kjeve.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\hypermobilitet-eds-kjeve.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\hypermobilitet-eds-kjeve.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\hypermobilitet-eds-kjeve.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\hypermobilitet-eds-kjeve.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\kjevesmerter-barn-ungdom.html** [Meta Tags] Missing og:image
+- **blogg\kjevesmerter-barn-ungdom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\kjevesmerter-barn-ungdom.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\kjevesmerter-barn-ungdom.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\kjevesmerter-barn-ungdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kjevesmerter-barn-ungdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kjevesmerter-barn-ungdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\kjevesmerter-barn-ungdom.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Meta Tags] Missing og:image
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Performance] Image missing decoding="async": Smart Approach to Back Pain MRIs.webp
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Performance] Image missing decoding="async": smart-approach-to-back-pain-mris.webp
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\mr-bildediagnostikk-ryggsmerte.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\muskelsmerte-vs-nervesmerte.html** [Meta Tags] Missing og:image
+- **blogg\muskelsmerte-vs-nervesmerte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\muskelsmerte-vs-nervesmerte.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\muskelsmerte-vs-nervesmerte.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\muskelsmerte-vs-nervesmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\muskelsmerte-vs-nervesmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\muskelsmerte-vs-nervesmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\muskelsmerte-vs-nervesmerte.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\stressnakke-triggerpunkter.html** [Meta Tags] Missing og:image
+- **blogg\stressnakke-triggerpunkter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\stressnakke-triggerpunkter.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\stressnakke-triggerpunkter.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\stressnakke-triggerpunkter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\stressnakke-triggerpunkter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\stressnakke-triggerpunkter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\stressnakke-triggerpunkter.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\tekstnakke-mobilnakke.html** [Meta Tags] Missing og:image
+- **blogg\tekstnakke-mobilnakke.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\tekstnakke-mobilnakke.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\tekstnakke-mobilnakke.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\tekstnakke-mobilnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\tekstnakke-mobilnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\tekstnakke-mobilnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\tekstnakke-mobilnakke.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\adhd-autisme-kjevesmerter.html** [Meta Tags] Missing og:image
+- **blogg\adhd-autisme-kjevesmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\adhd-autisme-kjevesmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\adhd-autisme-kjevesmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\adhd-autisme-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\adhd-autisme-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\adhd-autisme-kjevesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\adhd-autisme-kjevesmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\akutt-ryggsmerte-selvhjelp.html** [Meta Tags] Missing og:image
+- **blogg\akutt-ryggsmerte-selvhjelp.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\akutt-ryggsmerte-selvhjelp.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\akutt-ryggsmerte-selvhjelp.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\akutt-ryggsmerte-selvhjelp.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\akutt-ryggsmerte-selvhjelp.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\akutt-ryggsmerte-selvhjelp.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\akutt-ryggsmerte-selvhjelp.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Meta Tags] Missing og:image
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\botox-vs-manuell-behandling-kjeve.html** [Performance] CSS missing version hash: hub-article.css
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Performance] Image missing loading attribute: logo-header.webp
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Performance] Image missing decoding="async": Decoding Sciatica Pain and Recovery.webp
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Performance] Image missing decoding="async": back-pain-lumbago-sciatica-disc.webp
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Performance] Image missing loading attribute: meg.webp
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Performance] Image missing decoding="async": meg.webp
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **blogg\isjias-prolaps-hekseskudd-forskjell.html** [Performance] CSS missing version hash: hub-article.css
+- **faq\ryggsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\ryggsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\ryggsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\svimmelhet-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\svimmelhet-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\svimmelhet-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\arm-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\arm-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\arm-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\korsryggsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\korsryggsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\korsryggsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\brystryggsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\brystryggsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\brystryggsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\fotsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\fotsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\fotsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\knee-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\knee-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\knee-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\jaw-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\jaw-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\jaw-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\hip-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\hip-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\hip-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\dizziness-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\dizziness-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\dizziness-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\neck-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\neck-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\neck-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\foot-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\foot-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\foot-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\hoftesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\hoftesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\hoftesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\headache-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\headache-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\headache-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\chest-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\chest-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\chest-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\knesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\knesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\knesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\nakkesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\nakkesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\nakkesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\armsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\armsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\armsmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\shoulder-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\shoulder-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\shoulder-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\back-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\back-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\back-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\kjevesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\kjevesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\kjevesmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\skuldersmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\skuldersmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\skuldersmerter-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\lower-back-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\lower-back-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\lower-back-pain-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\hodepine-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\hodepine-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **faq\hodepine-faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skuldersmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skuldersmerter.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **plager\skuldersmerter.html** [Performance] Image missing decoding="async": skulder.webp
+- **plager\skuldersmerter.html** [Performance] Image missing decoding="async": skulder1.webp
+- **plager\skuldersmerter.html** [Performance] Image missing decoding="async": Triggerpunkt skulder rygg.webp
+- **plager\skuldersmerter.html** [Performance] Image missing decoding="async": skulder undersøkelse.webp
+- **plager\skuldersmerter.html** [Performance] Image missing decoding="async": skulder-impingement.webp
+- **plager\skuldersmerter.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **plager\skuldersmerter.html** [Performance] Image missing decoding="async": skulder.webp
+- **plager\skuldersmerter.html** [Performance] Image missing decoding="async": skulder1.webp
+- **plager\skuldersmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\skuldersmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\skuldersmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skuldersmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skuldersmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skuldersmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakkesmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakkesmerter.html** [Performance] Image missing decoding="async": nakkesmerte.webp
+- **plager\nakkesmerter.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **plager\nakkesmerter.html** [Performance] Image missing decoding="async": nakkesmerte-optimized.webp
+- **plager\nakkesmerter.html** [Performance] Image missing decoding="async": nakkesmerte-2-optimized.webp
+- **plager\nakkesmerter.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **plager\nakkesmerter.html** [Performance] Image missing decoding="async": hodepine-optimized.webp
+- **plager\nakkesmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\nakkesmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\nakkesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakkesmerter.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **plager\nakkesmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakkesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakkesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakkesmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\knesmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\knesmerter.html** [Performance] Image missing loading attribute: knee smerte.png
+- **plager\knesmerter.html** [Performance] Image missing decoding="async": knee smerte.png
+- **plager\knesmerter.html** [Performance] Image missing decoding="async": kne-menisk-frontal.webp
+- **plager\knesmerter.html** [Performance] Image missing decoding="async": Løpekne.webp
+- **plager\knesmerter.html** [Performance] Image missing decoding="async": 4 kne.webp
+- **plager\knesmerter.html** [Performance] Image missing decoding="async": kne korsband-forfra.webp
+- **plager\knesmerter.html** [Performance] Image missing decoding="async": jumpers-knee.webp
+- **plager\knesmerter.html** [Performance] Image missing decoding="async": runners-knee.webp
+- **plager\knesmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\knesmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\knesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\knesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\knesmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\knesmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjevesmerte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjevesmerte.html** [Performance] Image missing loading attribute: Kjeve.webp
+- **plager\kjevesmerte.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **plager\kjevesmerte.html** [Performance] Image missing decoding="async": kjeve 1.webp
+- **plager\kjevesmerte.html** [Performance] Image missing decoding="async": kjeve 2.webp
+- **plager\kjevesmerte.html** [Performance] Image missing decoding="async": kjeve 3.webp
+- **plager\kjevesmerte.html** [Performance] Image missing decoding="async": kjeve-optimized.webp
+- **plager\kjevesmerte.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjevesmerte.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjevesmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjevesmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjevesmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjevesmerte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\idrettsskader.html** [Meta Tags] Missing og:image
+- **plager\idrettsskader.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\idrettsskader.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\idrettsskader.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\idrettsskader.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\idrettsskader.html** [Content Quality] Low word count: 281 (<300)
+- **plager\albue-arm.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\albue-arm.html** [Performance] Image missing decoding="async": Bein i hånd.webp
+- **plager\albue-arm.html** [Performance] Image missing decoding="async": albue (1).webp
+- **plager\albue-arm.html** [Performance] Image missing decoding="async": albue (2).webp
+- **plager\albue-arm.html** [Performance] Image missing decoding="async": hånledd justering.webp
+- **plager\albue-arm.html** [Performance] Image missing decoding="async": Hånledd 3.webp
+- **plager\albue-arm.html** [Performance] Image missing decoding="async": hånledd-optimized.webp
+- **plager\albue-arm.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\albue-arm.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\albue-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystryggsmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystryggsmerter.html** [Performance] Image missing loading attribute: vondt i brystryggen.jpg
+- **plager\brystryggsmerter.html** [Performance] Image missing decoding="async": vondt i brystryggen.jpg
+- **plager\brystryggsmerter.html** [Performance] Image missing decoding="async": vondt i brystryggen.jpg
+- **plager\brystryggsmerter.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **plager\brystryggsmerter.html** [Performance] Image missing decoding="async": nakkesmerte.webp
+- **plager\brystryggsmerter.html** [Performance] Image missing decoding="async": korsrygg smerte (2).webp
+- **plager\brystryggsmerter.html** [Performance] Image missing decoding="async": korsrygg smerte (3).webp
+- **plager\brystryggsmerter.html** [Performance] Image missing decoding="async": korsryggplager.webp
+- **plager\brystryggsmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystryggsmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystryggsmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsryggsmerte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsryggsmerte.html** [Performance] Image missing loading attribute: A Practical Guide to Lower Back Pain.png
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": A Practical Guide to Lower Back Pain.png
+- **plager\korsryggsmerte.html** [Performance] Image missing loading attribute: korsrygg smerte (1).webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **plager\korsryggsmerte.html** [Performance] Image missing loading attribute: korsrygg-smerte-2-optimized.webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg-smerte-2-optimized.webp
+- **plager\korsryggsmerte.html** [Performance] Image missing loading attribute: korsrygg-optimized.webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg-optimized.webp
+- **plager\korsryggsmerte.html** [Performance] Image missing loading attribute: korsrygg-8-2-optimized.webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg-8-2-optimized.webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg smerte (2).webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg smerte (3).webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg 8 (1).webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg 8 (2).webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsryggplager.webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg-optimized.webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **plager\korsryggsmerte.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\korsryggsmerte.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\korsryggsmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsryggsmerte.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **plager\korsryggsmerte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsryggsmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsryggsmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsryggsmerte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine.html** [Performance] Image missing decoding="async": hodepine.webp
+- **plager\hodepine.html** [Performance] Image missing decoding="async": hodepine 5.webp
+- **plager\hodepine.html** [Performance] Image missing decoding="async": hodepine-5-optimized.webp
+- **plager\hodepine.html** [Performance] Image missing decoding="async": hodepine-optimized.webp
+- **plager\hodepine.html** [Performance] Image missing decoding="async": hodepine.jpg
+- **plager\hodepine.html** [Performance] Image missing decoding="async": hodepine-symptomer.jpg
+- **plager\hodepine.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hodepine.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **plager\hodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fotsmerte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fotsmerte.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **plager\fotsmerte.html** [Performance] Image missing decoding="async": ankel (1).webp
+- **plager\fotsmerte.html** [Performance] Image missing decoding="async": ankel (2).webp
+- **plager\fotsmerte.html** [Performance] Image missing decoding="async": ankel (3).webp
+- **plager\fotsmerte.html** [Performance] Image missing decoding="async": ankel justering.webp
+- **plager\fotsmerte.html** [Performance] Image missing decoding="async": fot-behandling.jpg
+- **plager\fotsmerte.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fotsmerte.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fotsmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fotsmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fotsmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fotsmerte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet.html** [Performance] Image missing loading attribute: svimmelhet-symptomer.webp
+- **plager\svimmelhet.html** [Performance] Image missing decoding="async": svimmelhet-symptomer.webp
+- **plager\svimmelhet.html** [Performance] Image missing loading attribute: svimmelhet-undersokelse.jpg
+- **plager\svimmelhet.html** [Performance] Image missing decoding="async": svimmelhet-undersokelse.jpg
+- **plager\svimmelhet.html** [Performance] Image missing loading attribute: svimmelhet-behandling.jpg
+- **plager\svimmelhet.html** [Performance] Image missing decoding="async": svimmelhet-behandling.jpg
+- **plager\svimmelhet.html** [Performance] Image missing decoding="async": svimmelhet-behandling.jpg
+- **plager\svimmelhet.html** [Performance] Image missing decoding="async": simmelhet.webp
+- **plager\svimmelhet.html** [Performance] Image missing decoding="async": svimmel 4 (1).webp
+- **plager\svimmelhet.html** [Performance] Image missing decoding="async": Fall risiko.webp
+- **plager\svimmelhet.html** [Performance] Image missing decoding="async": svimmelhet-undersokelse.jpg
+- **plager\svimmelhet.html** [Performance] Image missing decoding="async": svimmel 4 (2).webp
+- **plager\svimmelhet.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte-og-bekkensmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte-og-bekkensmerter.html** [Performance] Image missing decoding="async": hip-pain.webp
+- **plager\hofte-og-bekkensmerter.html** [Performance] Image missing decoding="async": bekken - symfyse.webp
+- **plager\hofte-og-bekkensmerter.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **plager\hofte-og-bekkensmerter.html** [Performance] Image missing decoding="async": hofte strekk.webp
+- **plager\hofte-og-bekkensmerter.html** [Performance] Image missing decoding="async": Funksjonelle_hofteleddstester.webp
+- **plager\hofte-og-bekkensmerter.html** [Performance] Image missing decoding="async": posterior hofte smerte referal.webp
+- **plager\hofte-og-bekkensmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hofte-og-bekkensmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hofte-og-bekkensmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte-og-bekkensmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte-og-bekkensmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte-og-bekkensmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\hip-pointer.html** [Meta Tags] Missing og:image
+- **plager\hofte\hip-pointer.html** [Performance] No CSS preload found
+- **plager\hofte\hip-pointer.html** [Performance] Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\hofte\hip-pointer.html** [Performance] Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\hofte\hip-pointer.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\hip-pointer.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\hip-pointer.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\bursitt-myte.html** [Meta Tags] Missing og:image
+- **plager\hofte\bursitt-myte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\bursitt-myte.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hofte\bursitt-myte.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hofte\bursitt-myte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\bursitt-myte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\bursitt-myte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\bursitt-myte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\bursitt-myte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\iliopsoas-tendinopati.html** [Meta Tags] Missing og:image
+- **plager\hofte\iliopsoas-tendinopati.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\iliopsoas-tendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\iliopsoas-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\iliopsoas-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\iliopsoas-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\iliopsoas-tendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\rygg-hofte-isjias.html** [Meta Tags] Missing og:image
+- **plager\hofte\rygg-hofte-isjias.html** [Performance] No CSS preload found
+- **plager\hofte\rygg-hofte-isjias.html** [Performance] Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\hofte\rygg-hofte-isjias.html** [Performance] Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\hofte\rygg-hofte-isjias.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\rygg-hofte-isjias.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\rygg-hofte-isjias.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\stressbrudd-hofte.html** [Meta Tags] Missing og:image
+- **plager\hofte\stressbrudd-hofte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\stressbrudd-hofte.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hofte\stressbrudd-hofte.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hofte\stressbrudd-hofte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\stressbrudd-hofte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\stressbrudd-hofte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\stressbrudd-hofte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\stressbrudd-hofte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\labrum-skade.html** [Meta Tags] Missing og:image
+- **plager\hofte\labrum-skade.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\labrum-skade.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\labrum-skade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\labrum-skade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\labrum-skade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\labrum-skade.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\meralgia-paresthetica.html** [Meta Tags] Missing og:image
+- **plager\hofte\meralgia-paresthetica.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\meralgia-paresthetica.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\meralgia-paresthetica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\meralgia-paresthetica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\meralgia-paresthetica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\meralgia-paresthetica.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\idrettsskader-hofte.html** [Meta Tags] Missing og:image
+- **plager\hofte\idrettsskader-hofte.html** [Performance] No CSS preload found
+- **plager\hofte\idrettsskader-hofte.html** [Performance] Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\hofte\idrettsskader-hofte.html** [Performance] Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\hofte\idrettsskader-hofte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\idrettsskader-hofte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\idrettsskader-hofte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\fai-hofteklem.html** [Meta Tags] Missing og:image
+- **plager\hofte\fai-hofteklem.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\fai-hofteklem.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\fai-hofteklem.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\fai-hofteklem.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\fai-hofteklem.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\fai-hofteklem.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\snapping-hip.html** [Meta Tags] Missing og:image
+- **plager\hofte\snapping-hip.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\snapping-hip.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hofte\snapping-hip.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hofte\snapping-hip.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\snapping-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\snapping-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\snapping-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\snapping-hip.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Meta Tags] Missing og:image
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\athletic-pubalgia-lyskebrokk.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\gtps-gluteal-tendinopati.html** [Meta Tags] Missing og:image
+- **plager\hofte\gtps-gluteal-tendinopati.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\gtps-gluteal-tendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\gtps-gluteal-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\gtps-gluteal-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\gtps-gluteal-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\gtps-gluteal-tendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\bekkenleddsmerter-graviditet.html** [Meta Tags] Missing og:image
+- **plager\hofte\bekkenleddsmerter-graviditet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\bekkenleddsmerter-graviditet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\bekkenleddsmerter-graviditet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\bekkenleddsmerter-graviditet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\bekkenleddsmerter-graviditet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\bekkenleddsmerter-graviditet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\hofteartrose.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\hofteartrose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\hofteartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\hofteartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\hofteartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\hofteartrose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\osteitis-pubis.html** [Meta Tags] Missing og:image
+- **plager\hofte\osteitis-pubis.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\osteitis-pubis.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hofte\osteitis-pubis.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hofte\osteitis-pubis.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\osteitis-pubis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\osteitis-pubis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\osteitis-pubis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\osteitis-pubis.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\proksimal-hamstringtendinopati.html** [Meta Tags] Missing og:image
+- **plager\hofte\proksimal-hamstringtendinopati.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\proksimal-hamstringtendinopati.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hofte\proksimal-hamstringtendinopati.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hofte\proksimal-hamstringtendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\proksimal-hamstringtendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\proksimal-hamstringtendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\proksimal-hamstringtendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\proksimal-hamstringtendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\vondt-i-hoften.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\vondt-i-hoften.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\vondt-i-hoften.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\vondt-i-hoften.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\vondt-i-hoften.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\vondt-i-hoften.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\si-ledd-bekkenproblemer.html** [Meta Tags] Missing og:image
+- **plager\hofte\si-ledd-bekkenproblemer.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\si-ledd-bekkenproblemer.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hofte\si-ledd-bekkenproblemer.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hofte\si-ledd-bekkenproblemer.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\si-ledd-bekkenproblemer.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\si-ledd-bekkenproblemer.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\si-ledd-bekkenproblemer.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hofte\si-ledd-bekkenproblemer.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\triggerpunkter-hofte-bekken.html** [Meta Tags] Missing og:image
+- **plager\hofte\triggerpunkter-hofte-bekken.html** [Performance] No CSS preload found
+- **plager\hofte\triggerpunkter-hofte-bekken.html** [Performance] Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\hofte\triggerpunkter-hofte-bekken.html** [Performance] Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\hofte\triggerpunkter-hofte-bekken.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hofte\triggerpunkter-hofte-bekken.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hofte\triggerpunkter-hofte-bekken.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\stressfraktur-fot.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\stressfraktur-fot.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\stressfraktur-fot.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\stressfraktur-fot.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\stressfraktur-fot.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\stressfraktur-fot.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\stressfraktur-fot.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\stressfraktur-fot.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\mortons-nevrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\mortons-nevrom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\mortons-nevrom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\mortons-nevrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\mortons-nevrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\mortons-nevrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\mortons-nevrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\mortons-nevrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\metatarsalgi.html** [Meta Tags] Missing og:image
+- **plager\fot\metatarsalgi.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\metatarsalgi.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\metatarsalgi.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\metatarsalgi.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\metatarsalgi.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\metatarsalgi.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\metatarsalgi.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\metatarsalgi.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\plantar-fasciopati.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\plantar-fasciopati.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\plantar-fasciopati.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\plantar-fasciopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\plantar-fasciopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\plantar-fasciopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\plantar-fasciopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\plantar-fasciopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\severs-syndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\severs-syndrom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\severs-syndrom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\severs-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\severs-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\severs-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\severs-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\severs-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\hallux-valgus.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\hallux-valgus.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\hallux-valgus.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\hallux-valgus.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\hallux-valgus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\hallux-valgus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\hallux-valgus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\hallux-valgus.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\akillestendinopati.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\akillestendinopati.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\akillestendinopati.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\akillestendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\akillestendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\akillestendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\akillestendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\akillestendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\ankelforstuinger.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\ankelforstuinger.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\ankelforstuinger.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\ankelforstuinger.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\ankelforstuinger.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\ankelforstuinger.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\ankelforstuinger.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\ankelforstuinger.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\ankelinstabilitet.html** [Meta Tags] Missing og:image
+- **plager\fot\ankelinstabilitet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\ankelinstabilitet.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\ankelinstabilitet.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\ankelinstabilitet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\ankelinstabilitet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\ankelinstabilitet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\ankelinstabilitet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\ankelinstabilitet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\hallux-rigidus.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\hallux-rigidus.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\hallux-rigidus.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\hallux-rigidus.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\hallux-rigidus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\hallux-rigidus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\hallux-rigidus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\hallux-rigidus.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\tibialis-posterior-tendinopati.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\tibialis-posterior-tendinopati.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\tibialis-posterior-tendinopati.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\tibialis-posterior-tendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\tibialis-posterior-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\tibialis-posterior-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\tibialis-posterior-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\tibialis-posterior-tendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\fottrening.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\fottrening.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\fottrening.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\fottrening.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\fottrening.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\fottrening.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\fottrening.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\fottrening.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\innleggssaler.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\innleggssaler.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\innleggssaler.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\innleggssaler.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\innleggssaler.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\innleggssaler.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\innleggssaler.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\innleggssaler.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\minimalistsko.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\minimalistsko.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\minimalistsko.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\minimalistsko.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\minimalistsko.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\minimalistsko.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\minimalistsko.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\minimalistsko.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\nar-innleggssaler-hjelper.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\nar-innleggssaler-hjelper.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\nar-innleggssaler-hjelper.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\nar-innleggssaler-hjelper.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\nar-innleggssaler-hjelper.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\nar-innleggssaler-hjelper.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\nar-innleggssaler-hjelper.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\nar-innleggssaler-hjelper.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\ortose-nedtrapping.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\ortose-nedtrapping.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\ortose-nedtrapping.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\ortose-nedtrapping.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\ortose-nedtrapping.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\ortose-nedtrapping.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\ortose-nedtrapping.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\ortose-nedtrapping.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\overpronasjon.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\overpronasjon.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\overpronasjon.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\overpronasjon.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\overpronasjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\overpronasjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\overpronasjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\overpronasjon.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\svake-fotter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\fot\svake-fotter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\fot\svake-fotter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\fot\svake-fotter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\fot\svake-fotter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\svake-fotter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\svake-fotter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\fot\svake-fotter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\ac-ledd-artrose.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\ac-ledd-artrose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\ac-ledd-artrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\ac-ledd-artrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\ac-ledd-artrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\ac-ledd-artrose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\kortison-skulder.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\kortison-skulder.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\kortison-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\kortison-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\kortison-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\slap-lesjon.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\slap-lesjon.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\slap-lesjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\slap-lesjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\slap-lesjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\ergonomi-skulder.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\ergonomi-skulder.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\ergonomi-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\ergonomi-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\ergonomi-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\ergonomi-skulder.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\klikking-skulder.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\klikking-skulder.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\klikking-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\klikking-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\klikking-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\biceps-tendinopati.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\biceps-tendinopati.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\biceps-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\biceps-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\biceps-tendinopati.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\tos-sovende-arm.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\tos-sovende-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\tos-sovende-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\tos-sovende-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\tos-sovende-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\tos-sovende-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\kalkskulder.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\kalkskulder.html** [Performance] Image missing loading attribute: mads-finstad-kiropraktor-portrett.webp
+- **plager\skulder\kalkskulder.html** [Performance] Image missing decoding="async": mads-finstad-kiropraktor-portrett.webp
+- **plager\skulder\kalkskulder.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\kalkskulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\kalkskulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\kalkskulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\kalkskulder.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\kasterskulder.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\kasterskulder.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\kasterskulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\kasterskulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\kasterskulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\kasterskulder.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\skulderartrose.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\skulderartrose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\skulderartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\skulderartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\skulderartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\skulderartrose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\sovn-skuldersmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\sovn-skuldersmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\sovn-skuldersmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\sovn-skuldersmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\sovn-skuldersmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\sovn-skuldersmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\smerter-bak-skulder.html** [Meta Tags] Missing og:image
+- **plager\skulder\smerter-bak-skulder.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\skulder\smerter-bak-skulder.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\skulder\smerter-bak-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\smerter-bak-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\smerter-bak-skulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\skulder\smerter-bak-skulder.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\migrene.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\migrene.html** [Performance] Image missing decoding="async": mads-finstad-kiropraktor-portrett.webp
+- **plager\hodepine\migrene.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\migrene.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\medikamentoverforbruk-hodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\medikamentoverforbruk-hodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\medikamentoverforbruk-hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\medikamentoverforbruk-hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\medikamentoverforbruk-hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\medikamentoverforbruk-hodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\hodepine-toppen.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\hodepine-toppen.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\hodepine-toppen.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-toppen.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-toppen.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-toppen.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\hodepine-svimmelhet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\hodepine-svimmelhet.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hodepine\hodepine-svimmelhet.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hodepine\hodepine-svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\hodepine-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\morgenhodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\morgenhodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\morgenhodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\morgenhodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\morgenhodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\morgenhodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\occipital-nevralgi.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\occipital-nevralgi.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\occipital-nevralgi.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\occipital-nevralgi.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\occipital-nevralgi.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\occipital-nevralgi.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\hodepine-bakhodet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\hodepine-bakhodet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\hodepine-bakhodet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-bakhodet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-bakhodet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-bakhodet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\klasehodepine.html** [Meta Tags] Missing og:image
+- **plager\hodepine\klasehodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\klasehodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\klasehodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\klasehodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\klasehodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\klasehodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\spenningshodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\spenningshodepine.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hodepine\spenningshodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\spenningshodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\spenningshodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\spenningshodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\spenningshodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\hodepine-tinningen.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\hodepine-tinningen.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\hodepine-tinningen.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-tinningen.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-tinningen.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hodepine-tinningen.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\vestibulaer-migrene.html** [Meta Tags] Missing og:image
+- **plager\hodepine\vestibulaer-migrene.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\vestibulaer-migrene.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\hodepine\vestibulaer-migrene.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\hodepine\vestibulaer-migrene.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\vestibulaer-migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\vestibulaer-migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\vestibulaer-migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\vestibulaer-migrene.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\bihule-migrene.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\bihule-migrene.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\bihule-migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\bihule-migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\bihule-migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hormonhodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\hormonhodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\hormonhodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hormonhodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hormonhodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\hormonhodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\kronisk-daglig-hodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\kronisk-daglig-hodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\kronisk-daglig-hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\kronisk-daglig-hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\kronisk-daglig-hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\kronisk-daglig-hodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\nakkehodepine.html** [Meta Tags] Missing og:image
+- **plager\hodepine\nakkehodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\nakkehodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\nakkehodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\nakkehodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\nakkehodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\nakkehodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\triggerpunkter-hodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\hodepine\triggerpunkter-hodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\hodepine\triggerpunkter-hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\triggerpunkter-hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\triggerpunkter-hodepine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\hodepine\triggerpunkter-hodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\kvalme.html** [Meta Tags] Missing og:image
+- **plager\nakke\kvalme.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\kvalme.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\kvalme.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\kvalme.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\kvalme.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\kvalme.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\whiplash.html** [Meta Tags] Missing og:image
+- **plager\nakke\whiplash.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\whiplash.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\nakke\whiplash.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\nakke\whiplash.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\whiplash.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\whiplash.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\whiplash.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\whiplash.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\stressnakke.html** [Meta Tags] Missing og:image
+- **plager\nakke\stressnakke.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\stressnakke.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\nakke\stressnakke.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\nakke\stressnakke.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\stressnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\stressnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\stressnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\stressnakke.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\knaser-nakke.html** [Meta Tags] Missing og:image
+- **plager\nakke\knaser-nakke.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\knaser-nakke.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\knaser-nakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\knaser-nakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\knaser-nakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\knaser-nakke.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\c6-c7-prolaps.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\c6-c7-prolaps.html** [Performance] Image missing decoding="async": mads-finstad-kiropraktor-portrett.webp
+- **plager\nakke\c6-c7-prolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\c6-c7-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\c6-c7-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\c6-c7-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\c6-c7-prolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\nummenhet-fingre.html** [Meta Tags] Missing og:image
+- **plager\nakke\nummenhet-fingre.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\nummenhet-fingre.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\nakke\nummenhet-fingre.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\nummenhet-fingre.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\nummenhet-fingre.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\nummenhet-fingre.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\nummenhet-fingre.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\c5-c6-prolaps.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\c5-c6-prolaps.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\nakke\c5-c6-prolaps.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\nakke\c5-c6-prolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\c5-c6-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\c5-c6-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\c5-c6-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\c5-c6-prolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\nakkeprolaps.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\nakkeprolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\nakkeprolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\nakkeprolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\nakkeprolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\nakkeprolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\torticollis.html** [Meta Tags] Missing og:image
+- **plager\nakke\torticollis.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\torticollis.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\torticollis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\torticollis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\torticollis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\torticollis.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\cervikal-foraminal-stenose.html** [Meta Tags] Missing og:image
+- **plager\nakke\cervikal-foraminal-stenose.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\cervikal-foraminal-stenose.html** [Performance] Image missing decoding="async": mads-finstad-kiropraktor-portrett.webp
+- **plager\nakke\cervikal-foraminal-stenose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\cervikal-foraminal-stenose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\cervikal-foraminal-stenose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\cervikal-foraminal-stenose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\cervikal-foraminal-stenose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\degenerative-forandringer.html** [Meta Tags] Missing og:image
+- **plager\nakke\degenerative-forandringer.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\degenerative-forandringer.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\nakke\degenerative-forandringer.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\nakke\degenerative-forandringer.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\degenerative-forandringer.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\degenerative-forandringer.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\degenerative-forandringer.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\degenerative-forandringer.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\stiv-nakke-om-morgenen.html** [Meta Tags] Missing og:image
+- **plager\nakke\stiv-nakke-om-morgenen.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\stiv-nakke-om-morgenen.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\stiv-nakke-om-morgenen.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\stiv-nakke-om-morgenen.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\stiv-nakke-om-morgenen.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\stiv-nakke-om-morgenen.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\tekstnakke.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\tekstnakke.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\tekstnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\tekstnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\tekstnakke.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\nakke\nakkesleng-hodepine.html** [Meta Tags] Missing og:image
+- **plager\nakke\nakkesleng-hodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\nakkesleng-hodepine.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\nakke\nakkesleng-hodepine.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\nakke\nakkesleng-hodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\nakkesleng-hodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\nakkesleng-hodepine.html** [Structural Consistency] Missing Facebook Pixel
+- **plager\nakke\triggerpunkter-nakke.html** [Meta Tags] Missing og:image
+- **plager\nakke\triggerpunkter-nakke.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\triggerpunkter-nakke.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\nakke\triggerpunkter-nakke.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\nakke\triggerpunkter-nakke.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\triggerpunkter-nakke.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\triggerpunkter-nakke.html** [Structural Consistency] Missing Facebook Pixel
+- **plager\nakke\rode-flagg-nakkesmerter.html** [Meta Tags] Missing og:image
+- **plager\nakke\rode-flagg-nakkesmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\nakke\rode-flagg-nakkesmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\nakke\rode-flagg-nakkesmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\nakke\rode-flagg-nakkesmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\rode-flagg-nakkesmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\nakke\rode-flagg-nakkesmerter.html** [Structural Consistency] Missing Facebook Pixel
+- **plager\kjeve\bittfeil-myter.html** [Meta Tags] Missing og:image
+- **plager\kjeve\bittfeil-myter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\bittfeil-myter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\bittfeil-myter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\bittfeil-myter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\bittfeil-myter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\bittfeil-myter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\bittfeil-myter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\bittfeil-myter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\eagle-syndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\eagle-syndrom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\eagle-syndrom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\eagle-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\eagle-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\eagle-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\eagle-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\eagle-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\glossopharyngeal-nevralgi.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\glossopharyngeal-nevralgi.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\glossopharyngeal-nevralgi.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\glossopharyngeal-nevralgi.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\glossopharyngeal-nevralgi.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\glossopharyngeal-nevralgi.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\glossopharyngeal-nevralgi.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\glossopharyngeal-nevralgi.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\ovelser-tmd.html** [Meta Tags] Missing og:image
+- **plager\kjeve\ovelser-tmd.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\ovelser-tmd.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\ovelser-tmd.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\ovelser-tmd.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\ovelser-tmd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\ovelser-tmd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\ovelser-tmd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\ovelser-tmd.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\ovelser-tmd.html** [Structural Consistency] Missing Facebook Pixel
+- **plager\kjeve\icr-intern-carotis.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\icr-intern-carotis.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\icr-intern-carotis.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\icr-intern-carotis.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\icr-intern-carotis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\icr-intern-carotis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\icr-intern-carotis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\icr-intern-carotis.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\icr-syndrom.html** [Meta Tags] Missing og:image
+- **plager\kjeve\icr-syndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\icr-syndrom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\icr-syndrom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\icr-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\icr-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\icr-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\icr-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\icr-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\oresmerter-tinnitus.html** [Meta Tags] Missing og:image
+- **plager\kjeve\oresmerter-tinnitus.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\oresmerter-tinnitus.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\oresmerter-tinnitus.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\oresmerter-tinnitus.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\oresmerter-tinnitus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\oresmerter-tinnitus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\oresmerter-tinnitus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\oresmerter-tinnitus.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\oresmerter-tinnitus.html** [Structural Consistency] Missing Facebook Pixel
+- **plager\kjeve\tanngnissing-bruksisme.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\tanngnissing-bruksisme.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\tanngnissing-bruksisme.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\tanngnissing-bruksisme.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\tanngnissing-bruksisme.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\tanngnissing-bruksisme.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\tanngnissing-bruksisme.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\tanngnissing-bruksisme.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Meta Tags] Missing og:image
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\klikking-lasing-leddproblemer.html** [Structural Consistency] Missing Facebook Pixel
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Meta Tags] Missing og:image
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\nakke-kjeve-sammenheng.html** [Structural Consistency] Missing Facebook Pixel
+- **plager\kjeve\pifp-ansiktssmerte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\pifp-ansiktssmerte.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\pifp-ansiktssmerte.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\pifp-ansiktssmerte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\pifp-ansiktssmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\pifp-ansiktssmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\pifp-ansiktssmerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kjeve\pifp-ansiktssmerte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\kjevehodepine.html** [Meta Tags] Missing og:image
+- **plager\kjeve\kjevehodepine.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kjeve\kjevehodepine.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\kjeve\kjevehodepine.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kjeve\kjevehodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\kjevehodepine.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kjeve\kjevehodepine.html** [Structural Consistency] Missing Facebook Pixel
+- **plager\kne\loperkne.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\loperkne.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\loperkne.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\loperkne.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\loperkne.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\kneartrose.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\kneartrose.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kne\kneartrose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\kneartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\kneartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\kneartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\kneartrose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\pes-anserine-bursitt.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\pes-anserine-bursitt.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\pes-anserine-bursitt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\pes-anserine-bursitt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\pes-anserine-bursitt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\pes-anserine-bursitt.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\meniskskade.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\meniskskade.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kne\meniskskade.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\meniskskade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\meniskskade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\meniskskade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\meniskskade.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\beinhinnebetennelse.html** [Meta Tags] Missing og:image
+- **plager\kne\beinhinnebetennelse.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\beinhinnebetennelse.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\beinhinnebetennelse.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\beinhinnebetennelse.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\beinhinnebetennelse.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\beinhinnebetennelse.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\hopperkne.html** [Meta Tags] Missing og:image
+- **plager\kne\hopperkne.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\hopperkne.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\hopperkne.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\hopperkne.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\hopperkne.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\hopperkne.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\prepatellar-bursitt.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\prepatellar-bursitt.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kne\prepatellar-bursitt.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\prepatellar-bursitt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\prepatellar-bursitt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\prepatellar-bursitt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\prepatellar-bursitt.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\iliotibial-band-syndrom.html** [Meta Tags] Missing og:image
+- **plager\kne\iliotibial-band-syndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\iliotibial-band-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\iliotibial-band-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\iliotibial-band-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\iliotibial-band-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\iliotibial-band-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\knesmerte-fra-hoften.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\knesmerte-fra-hoften.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\knesmerte-fra-hoften.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\knesmerte-fra-hoften.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\knesmerte-fra-hoften.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\pcl-skade.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\pcl-skade.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\kne\pcl-skade.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\pcl-skade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\pcl-skade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\pcl-skade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\pcl-skade.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\popliteus-syndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\popliteus-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\popliteus-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\popliteus-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\popliteus-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\popliteus-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\korsbandskade.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\kne\korsbandskade.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\kne\korsbandskade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\korsbandskade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\korsbandskade.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\kne\korsbandskade.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\bh-stropp-syndrom.html** [Meta Tags] Missing og:image
+- **plager\brystrygg\bh-stropp-syndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\bh-stropp-syndrom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\bh-stropp-syndrom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\bh-stropp-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\bh-stropp-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\bh-stropp-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\bh-stropp-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\bh-stropp-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\t4-syndrom.html** [Performance] Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\brystrygg\t4-syndrom.html** [Performance] Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\brystrygg\t4-syndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\t4-syndrom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\t4-syndrom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\t4-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\t4-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\t4-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\t4-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\t4-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\fibromyalgi-brystsmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\fibromyalgi-brystsmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\fibromyalgi-brystsmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\fibromyalgi-brystsmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\fibromyalgi-brystsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\fibromyalgi-brystsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\fibromyalgi-brystsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\fibromyalgi-brystsmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\pust-stress-rygg.html** [Performance] Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\brystrygg\pust-stress-rygg.html** [Performance] Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- **plager\brystrygg\pust-stress-rygg.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\pust-stress-rygg.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\pust-stress-rygg.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\pust-stress-rygg.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\pust-stress-rygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\pust-stress-rygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\pust-stress-rygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\pust-stress-rygg.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\flat-rygg.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\flat-rygg.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\flat-rygg.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\flat-rygg.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\flat-rygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\flat-rygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\flat-rygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\flat-rygg.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\ribbeinslasning.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\ribbeinslasning.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\ribbeinslasning.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\ribbeinslasning.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\ribbeinslasning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\ribbeinslasning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\ribbeinslasning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\ribbeinslasning.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\brystryggsmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\brystryggsmerter.html** [Performance] Image missing loading attribute: vondt i brystryggen.jpg
+- **plager\brystrygg\brystryggsmerter.html** [Performance] Image missing decoding="async": vondt i brystryggen.jpg
+- **plager\brystrygg\brystryggsmerter.html** [Performance] Image missing decoding="async": vondt i brystryggen.jpg
+- **plager\brystrygg\brystryggsmerter.html** [Performance] Image missing decoding="async": Ryggsmerte.jpg
+- **plager\brystrygg\brystryggsmerter.html** [Performance] Image missing decoding="async": upper back and neck.jpg
+- **plager\brystrygg\brystryggsmerter.html** [Performance] Image missing decoding="async": vondt i brystryggen.jpg
+- **plager\brystrygg\brystryggsmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\brystryggsmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\brystryggsmerter.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **plager\brystrygg\brystryggsmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\brystryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\brystryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\brystryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\brystryggsmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\osteoporose.html** [Meta Tags] Missing og:image
+- **plager\brystrygg\osteoporose.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\osteoporose.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\osteoporose.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\osteoporose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\osteoporose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\osteoporose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\osteoporose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\osteoporose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\thorakalt-prolaps.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\thorakalt-prolaps.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\thorakalt-prolaps.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\thorakalt-prolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\thorakalt-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\thorakalt-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\thorakalt-prolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\thorakalt-prolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\scheuermanns-sykdom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\scheuermanns-sykdom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\scheuermanns-sykdom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\scheuermanns-sykdom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\scheuermanns-sykdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\scheuermanns-sykdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\scheuermanns-sykdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\scheuermanns-sykdom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\stiv-rygg-idrett.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\stiv-rygg-idrett.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\stiv-rygg-idrett.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\stiv-rygg-idrett.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\stiv-rygg-idrett.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\stiv-rygg-idrett.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\stiv-rygg-idrett.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\stiv-rygg-idrett.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\krum-rygg.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\krum-rygg.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\krum-rygg.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\krum-rygg.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\krum-rygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\krum-rygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\krum-rygg.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\krum-rygg.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\mellom-skulderbladene.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\mellom-skulderbladene.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\mellom-skulderbladene.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\mellom-skulderbladene.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\mellom-skulderbladene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\mellom-skulderbladene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\mellom-skulderbladene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\mellom-skulderbladene.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\kostokondritt.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\brystrygg\kostokondritt.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\brystrygg\kostokondritt.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\brystrygg\kostokondritt.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\brystrygg\kostokondritt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\kostokondritt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\kostokondritt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\brystrygg\kostokondritt.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\scds.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\scds.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\scds.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\scds.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\scds.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\scds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\scds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\scds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\scds.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\vestibulaer-hypofunksjon.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\vestibulaer-hypofunksjon.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\vestibulaer-hypofunksjon.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\vestibulaer-hypofunksjon.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\vestibulaer-hypofunksjon.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\vestibulaer-hypofunksjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\vestibulaer-hypofunksjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\vestibulaer-hypofunksjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\vestibulaer-hypofunksjon.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\nakkesvimmelhet.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\nakkesvimmelhet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\nakkesvimmelhet.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\nakkesvimmelhet.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\nakkesvimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\nakkesvimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\nakkesvimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\nakkesvimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\nakkesvimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\menieres-sykdom.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\menieres-sykdom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\menieres-sykdom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\menieres-sykdom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\menieres-sykdom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\menieres-sykdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\menieres-sykdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\menieres-sykdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\menieres-sykdom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\mdds.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\mdds.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\mdds.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\mdds.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\mdds.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\mdds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\mdds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\mdds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\mdds.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\whiplash-svimmelhet.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\whiplash-svimmelhet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\whiplash-svimmelhet.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\whiplash-svimmelhet.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\whiplash-svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\whiplash-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\whiplash-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\whiplash-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\whiplash-svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\krystallsyke-bppv.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\krystallsyke-bppv.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\krystallsyke-bppv.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\krystallsyke-bppv.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\krystallsyke-bppv.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\krystallsyke-bppv.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke-bppv.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke-bppv.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke-bppv.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\vestibularisnevritt.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\vestibularisnevritt.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\vestibularisnevritt.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\vestibularisnevritt.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\vestibularisnevritt.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\vestibularisnevritt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\vestibularisnevritt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\vestibularisnevritt.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\vestibularisnevritt.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\post-hjernerystelse.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\post-hjernerystelse.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\post-hjernerystelse.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\post-hjernerystelse.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\post-hjernerystelse.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\post-hjernerystelse.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\post-hjernerystelse.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\post-hjernerystelse.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\post-hjernerystelse.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\vestibulaer-migrene.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\vestibulaer-migrene.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\vestibulaer-migrene.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\vestibulaer-migrene.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\vestibulaer-migrene.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\vestibulaer-migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\vestibulaer-migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\vestibulaer-migrene.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\vestibulaer-migrene.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\pppd-kronisk-svimmelhet.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\pppd-kronisk-svimmelhet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\pppd-kronisk-svimmelhet.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\pppd-kronisk-svimmelhet.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\pppd-kronisk-svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\pppd-kronisk-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\pppd-kronisk-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\pppd-kronisk-svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\pppd-kronisk-svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\krystallsyke\bakre-kanal.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\krystallsyke\bakre-kanal.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\krystallsyke\bakre-kanal.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\krystallsyke\bakre-kanal.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\krystallsyke\bakre-kanal.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\krystallsyke\bakre-kanal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke\bakre-kanal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke\bakre-kanal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke\bakre-kanal.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\krystallsyke\fremre-kanal.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\krystallsyke\fremre-kanal.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\krystallsyke\fremre-kanal.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\krystallsyke\fremre-kanal.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\krystallsyke\fremre-kanal.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\krystallsyke\fremre-kanal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke\fremre-kanal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke\fremre-kanal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke\fremre-kanal.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\krystallsyke\horisontal-kanal.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\krystallsyke\horisontal-kanal.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\krystallsyke\horisontal-kanal.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\krystallsyke\horisontal-kanal.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\krystallsyke\horisontal-kanal.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\krystallsyke\horisontal-kanal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke\horisontal-kanal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke\horisontal-kanal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\krystallsyke\horisontal-kanal.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\pots-syndrom.html** [Meta Tags] Missing og:image
+- **plager\svimmelhet\pots-syndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\svimmelhet\pots-syndrom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\svimmelhet\pots-syndrom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\svimmelhet\pots-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\svimmelhet\pots-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\pots-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\pots-syndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\svimmelhet\pots-syndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\musearm.html** [Meta Tags] Missing og:image
+- **plager\albue-arm\musearm.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\albue-arm\musearm.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\albue-arm\musearm.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\albue-arm\musearm.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\musearm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\musearm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\musearm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\musearm.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\tommelartrose.html** [Meta Tags] Missing og:image
+- **plager\albue-arm\tommelartrose.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\albue-arm\tommelartrose.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\albue-arm\tommelartrose.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\albue-arm\tommelartrose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\tommelartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\tommelartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\tommelartrose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\tommelartrose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\triggerpunkter-arm.html** [Meta Tags] Missing og:image
+- **plager\albue-arm\triggerpunkter-arm.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\albue-arm\triggerpunkter-arm.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\albue-arm\triggerpunkter-arm.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\albue-arm\triggerpunkter-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\triggerpunkter-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\triggerpunkter-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\triggerpunkter-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\triggerpunkter-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\triggerfinger.html** [Meta Tags] Missing og:image
+- **plager\albue-arm\triggerfinger.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\albue-arm\triggerfinger.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\albue-arm\triggerfinger.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\albue-arm\triggerfinger.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\triggerfinger.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\triggerfinger.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\triggerfinger.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\triggerfinger.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Meta Tags] Missing og:image
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Performance] Image missing loading attribute: tr?id=1020647599498498&ev=PageView&noscript=1
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Performance] Image missing decoding="async": tr?id=1020647599498498&ev=PageView&noscript=1
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\karpaltunnelsyndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\golfalbue.html** [Meta Tags] Missing og:image
+- **plager\albue-arm\golfalbue.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\albue-arm\golfalbue.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\albue-arm\golfalbue.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\albue-arm\golfalbue.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\golfalbue.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\golfalbue.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\golfalbue.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\golfalbue.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Meta Tags] Missing og:image
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Performance] Image missing loading attribute: tr?id=1020647599498498&ev=PageView&noscript=1
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Performance] Image missing decoding="async": tr?id=1020647599498498&ev=PageView&noscript=1
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\kubitaltunnelsyndrom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\tennisalbue.html** [Meta Tags] Missing og:image
+- **plager\albue-arm\tennisalbue.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\albue-arm\tennisalbue.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\albue-arm\tennisalbue.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\albue-arm\tennisalbue.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\tennisalbue.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\tennisalbue.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\tennisalbue.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\albue-arm\tennisalbue.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\de-quervains.html** [Meta Tags] Missing og:image
+- **plager\albue-arm\de-quervains.html** [Performance] No CSS preload found
+- **plager\albue-arm\de-quervains.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\albue-arm\de-quervains.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\albue-arm\de-quervains.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\si-ledd.html** [Meta Tags] Missing og:image
+- **plager\korsrygg\si-ledd.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\si-ledd.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\korsrygg\si-ledd.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\korsrygg\si-ledd.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\si-ledd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\si-ledd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\si-ledd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\si-ledd.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\isjias.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\isjias.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\korsrygg\isjias.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\korsrygg\isjias.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\isjias.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\isjias.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\spondylolistese.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\spondylolistese.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\spondylolistese.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\spondylolistese.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\spondylolistese.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\spondylolistese.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\bekhterevs-sykdom.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\bekhterevs-sykdom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\bekhterevs-sykdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\bekhterevs-sykdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\bekhterevs-sykdom.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\bekhterevs-sykdom.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\graviditet.html** [Meta Tags] Missing og:image
+- **plager\korsrygg\graviditet.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\graviditet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\graviditet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\graviditet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\graviditet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\graviditet.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\graviditet.html** [Structural Consistency] Missing Facebook Pixel
+- **plager\korsrygg\skiveprolaps.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\skiveprolaps.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\korsrygg\skiveprolaps.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\korsrygg\skiveprolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\skiveprolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\skiveprolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\skiveprolaps.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\skiveprolaps.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\spinal-stenose.html** [Meta Tags] Missing og:image
+- **plager\korsrygg\spinal-stenose.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\spinal-stenose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\spinal-stenose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\spinal-stenose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\spinal-stenose.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\spinal-stenose.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Meta Tags] Missing og:image
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Performance] Image missing loading attribute: meg.webp
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Performance] Image missing decoding="async": meg.webp
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\rode-flagg-ryggsmerter.html** [Structural Consistency] Missing Facebook Pixel
+- **plager\korsrygg\hekseskudd.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\hekseskudd.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\hekseskudd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\hekseskudd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\hekseskudd.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\hekseskudd.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\korsrygg\nociplastisk-smerte.html** [Performance] CSS missing version hash: hub-article.css
+- **plager\ryggsmerter.html** [Performance] Image missing loading attribute: logo-header.webp
+- **plager\ryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\ryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\ryggsmerter.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **plager\ryggsmerter.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\graston.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\graston.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\graston.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\graston.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\graston.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\graston.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\kiropraktikk.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\kiropraktikk.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\kiropraktikk.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\kiropraktikk.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\kiropraktikk.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\kiropraktikk.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\blotvevsteknikker.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\blotvevsteknikker.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\blotvevsteknikker.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\blotvevsteknikker.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\blotvevsteknikker.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\blotvevsteknikker.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\svimmelhet.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\svimmelhet.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\fasciemanipulasjon.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\fasciemanipulasjon.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\fasciemanipulasjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\fasciemanipulasjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\fasciemanipulasjon.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\fasciemanipulasjon.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\akutt-behandling.html** [Meta Tags] Missing og:image
+- **tjeneste\akutt-behandling.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\akutt-behandling.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\akutt-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\akutt-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\akutt-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\akutt-behandling.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\rehabilitering.html** [Meta Tags] Missing og:image
+- **tjeneste\rehabilitering.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\rehabilitering.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\rehabilitering.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\rehabilitering.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\rehabilitering.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\rehabilitering.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\dry-needling.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\dry-needling.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\dry-needling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\dry-needling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\dry-needling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\dry-needling.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\forebyggende-behandling.html** [Meta Tags] Missing og:image
+- **tjeneste\forebyggende-behandling.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\forebyggende-behandling.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\forebyggende-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\forebyggende-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\forebyggende-behandling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\forebyggende-behandling.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\trykkbolge.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\trykkbolge.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\trykkbolge.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\trykkbolge.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\trykkbolge.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\trykkbolge.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\svimmelhet\balansesystemet.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\svimmelhet\balansesystemet.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\svimmelhet\balansesystemet.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\svimmelhet\balansesystemet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet\balansesystemet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet\balansesystemet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet\balansesystemet.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\svimmelhet\balansesystemet.html** [Structural Consistency] Missing Facebook Pixel
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\svimmelhet\vestibular-rehabilitering.html** [Structural Consistency] Missing Facebook Pixel
+- **tjeneste\svimmelhet\vng-undersokelse.html** [Performance] Image missing loading attribute: meg.webp
+- **tjeneste\svimmelhet\vng-undersokelse.html** [Performance] Image missing decoding="async": meg.webp
+- **tjeneste\svimmelhet\vng-undersokelse.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\svimmelhet\vng-undersokelse.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet\vng-undersokelse.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet\vng-undersokelse.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **tjeneste\svimmelhet\vng-undersokelse.html** [Performance] CSS missing version hash: hub-article.css
+- **tjeneste\svimmelhet\vng-undersokelse.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\arm-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\arm-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\arm-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\arm-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\arm-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\arm-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache.html** [Performance] Image missing decoding="async": tr?id=540166625752174&ev=PageView&noscript=1
+- **en\conditions\headache.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\headache.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\headache.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness.html** [Performance] Image missing decoding="async": svimmelhet-undersokelse.jpg
+- **en\conditions\dizziness.html** [Performance] Image missing decoding="async": svimmelhet-behandling.jpg
+- **en\conditions\dizziness.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw-pain.html** [Performance] Image missing decoding="async": kjeve 1.webp
+- **en\conditions\jaw-pain.html** [Performance] Image missing decoding="async": kjeve 2.webp
+- **en\conditions\jaw-pain.html** [Performance] Image missing decoding="async": kjeve 3.webp
+- **en\conditions\jaw-pain.html** [Performance] Image missing decoding="async": kjeve-optimized.webp
+- **en\conditions\jaw-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\jaw-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\knee-pain.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee-pain.html** [Performance] Image missing decoding="async": sciatica-nerve-pain-vs-muscle.webp
+- **en\conditions\knee-pain.html** [Performance] Image missing decoding="async": back-pain-lumbago-sciatica-disc.webp
+- **en\conditions\knee-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\knee-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\knee-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\lower-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\shoulder-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\sports-injuries.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\sports-injuries.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\sports-injuries.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\sports-injuries.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\sports-injuries.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\sports-injuries.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\athletic-pubalgia.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\athletic-pubalgia.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\athletic-pubalgia.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\athletic-pubalgia.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\athletic-pubalgia.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\athletic-pubalgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\athletic-pubalgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\athletic-pubalgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\athletic-pubalgia.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\back-hip-sciatica.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\back-hip-sciatica.html** [Performance] Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- **en\conditions\hip\back-hip-sciatica.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\back-hip-sciatica.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\back-hip-sciatica.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\back-hip-sciatica.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\back-hip-sciatica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\back-hip-sciatica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\back-hip-sciatica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\back-hip-sciatica.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\back-hip-sciatica.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\hip\bursitis-myth.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\bursitis-myth.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\bursitis-myth.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\bursitis-myth.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\bursitis-myth.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\bursitis-myth.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\bursitis-myth.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\bursitis-myth.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\bursitis-myth.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\bursitis-myth.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\hip\fai-hip-impingement.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\fai-hip-impingement.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\fai-hip-impingement.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\fai-hip-impingement.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\fai-hip-impingement.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\fai-hip-impingement.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\fai-hip-impingement.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\fai-hip-impingement.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\fai-hip-impingement.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\gtps-gluteal-tendinopathy.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\gtps-gluteal-tendinopathy.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\gtps-gluteal-tendinopathy.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\gtps-gluteal-tendinopathy.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\gtps-gluteal-tendinopathy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\gtps-gluteal-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\gtps-gluteal-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\gtps-gluteal-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\hip-osteoarthritis.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\hip-osteoarthritis.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\hip-osteoarthritis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\hip-osteoarthritis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\hip-osteoarthritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\hip-osteoarthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\hip-osteoarthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\hip-osteoarthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\iliopsoas-tendinopathy.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\iliopsoas-tendinopathy.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\iliopsoas-tendinopathy.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\iliopsoas-tendinopathy.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\iliopsoas-tendinopathy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\iliopsoas-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\iliopsoas-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\iliopsoas-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\iliopsoas-tendinopathy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\labrum-tear.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\labrum-tear.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\labrum-tear.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\labrum-tear.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\labrum-tear.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\labrum-tear.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\labrum-tear.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\labrum-tear.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\labrum-tear.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\meralgia-paresthetica.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\meralgia-paresthetica.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\meralgia-paresthetica.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\meralgia-paresthetica.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\meralgia-paresthetica.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\meralgia-paresthetica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\meralgia-paresthetica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\meralgia-paresthetica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\meralgia-paresthetica.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\osteitis-pubis.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\osteitis-pubis.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\osteitis-pubis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\osteitis-pubis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\osteitis-pubis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\osteitis-pubis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\osteitis-pubis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\osteitis-pubis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\osteitis-pubis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\pelvic-pain-pregnancy.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\pelvic-pain-pregnancy.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\pelvic-pain-pregnancy.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\pelvic-pain-pregnancy.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\pelvic-pain-pregnancy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\pelvic-pain-pregnancy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\pelvic-pain-pregnancy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\pelvic-pain-pregnancy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\pelvic-pain-pregnancy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\proximal-hamstring-tendinopathy.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\proximal-hamstring-tendinopathy.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\proximal-hamstring-tendinopathy.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\proximal-hamstring-tendinopathy.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\proximal-hamstring-tendinopathy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\proximal-hamstring-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\proximal-hamstring-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\proximal-hamstring-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\proximal-hamstring-tendinopathy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\si-joint-problems.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\si-joint-problems.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\si-joint-problems.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\si-joint-problems.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\si-joint-problems.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\si-joint-problems.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\si-joint-problems.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\si-joint-problems.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\si-joint-problems.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\snapping-hip.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\snapping-hip.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\snapping-hip.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\snapping-hip.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\snapping-hip.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\snapping-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\snapping-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\snapping-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\snapping-hip.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\stress-fracture-hip.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\stress-fracture-hip.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\stress-fracture-hip.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\stress-fracture-hip.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\stress-fracture-hip.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\stress-fracture-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\stress-fracture-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\stress-fracture-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\stress-fracture-hip.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\stress-fracture-hip.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Performance] Image missing decoding="async": tr?id=540166625752174&ev=PageView&noscript=1
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\trigger-points-hip-pelvis.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\hip\hip-pain.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\hip-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\hip-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\hip-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\hip-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\hip-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\hip\hip-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\hip-pointer.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\hip-pointer.html** [Performance] No CSS preload found
+- **en\conditions\hip\hip-pointer.html** [Performance] Image missing decoding="async": tr?id=540166625752174&ev=PageView&noscript=1
+- **en\conditions\hip\hip-pointer.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\hip-pointer.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\hip-pointer.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\hip-pointer.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\hip-pointer.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\hip-pointer.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\hip\sports-injuries-hip.html** [Meta Tags] Missing og:image
+- **en\conditions\hip\sports-injuries-hip.html** [Performance] No CSS preload found
+- **en\conditions\hip\sports-injuries-hip.html** [Performance] Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- **en\conditions\hip\sports-injuries-hip.html** [Performance] Image missing decoding="async": hofte smerte.webp
+- **en\conditions\hip\sports-injuries-hip.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\hip\sports-injuries-hip.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\hip\sports-injuries-hip.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\sports-injuries-hip.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\hip\sports-injuries-hip.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\neck\c5-c6-disc-herniation.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\c5-c6-disc-herniation.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\c5-c6-disc-herniation.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\c5-c6-disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\c5-c6-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\c5-c6-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\c5-c6-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\c5-c6-disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\c5-c6-disc-herniation.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\neck\c6-c7-disc-herniation.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\c6-c7-disc-herniation.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\c6-c7-disc-herniation.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\c6-c7-disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\c6-c7-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\c6-c7-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\c6-c7-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\c6-c7-disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\c6-c7-disc-herniation.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\neck\cervical-foraminal-stenosis.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\cervical-foraminal-stenosis.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\cervical-foraminal-stenosis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\cervical-foraminal-stenosis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\cervical-foraminal-stenosis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\cervical-foraminal-stenosis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\cervical-foraminal-stenosis.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\neck\cracking-neck.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\cracking-neck.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\cracking-neck.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\cracking-neck.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\cracking-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\cracking-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\cracking-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\cracking-neck.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\degenerative-changes.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\degenerative-changes.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\degenerative-changes.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\degenerative-changes.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\degenerative-changes.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\degenerative-changes.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\degenerative-changes.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\degenerative-changes.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\degenerative-changes.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\finger-numbness.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\finger-numbness.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\finger-numbness.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\finger-numbness.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\finger-numbness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\finger-numbness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\finger-numbness.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\neck\nausea-neck.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\nausea-neck.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\nausea-neck.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\nausea-neck.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\nausea-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\nausea-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\nausea-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\nausea-neck.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\neck-disc-herniation.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\neck-disc-herniation.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\neck-disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\neck-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\neck-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\neck-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\neck-disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\neck-trigger-points.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\neck-trigger-points.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\neck-trigger-points.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\neck-trigger-points.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\neck-trigger-points.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\neck-trigger-points.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\neck-trigger-points.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\neck\red-flags-neck-pain.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\red-flags-neck-pain.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\red-flags-neck-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\red-flags-neck-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\red-flags-neck-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\red-flags-neck-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\red-flags-neck-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\neck\stiff-neck-morning.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\stiff-neck-morning.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\stress-neck.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\stress-neck.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\stress-neck.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\stress-neck.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\stress-neck.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\stress-neck.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\stress-neck.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\neck\text-neck.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\text-neck.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\text-neck.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\text-neck.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\text-neck.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\text-neck.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\text-neck.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\neck\torticollis.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\torticollis.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\torticollis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\torticollis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\torticollis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\torticollis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\torticollis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\neck\torticollis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\torticollis.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\neck\whiplash-headache.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\whiplash-headache.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\whiplash-headache.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\whiplash-headache.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\whiplash-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\whiplash-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\whiplash-headache.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\neck\whiplash.html** [Meta Tags] Missing og:image
+- **en\conditions\neck\whiplash.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\neck\whiplash.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\neck\whiplash.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\neck\whiplash.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\whiplash.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\neck\whiplash.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\jaw\bite-myths.html** [Meta Tags] Missing og:image
+- **en\conditions\jaw\bite-myths.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\bite-myths.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\bite-myths.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\bite-myths.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\bite-myths.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\bite-myths.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\bite-myths.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\bruxism.html** [Meta Tags] Missing og:image
+- **en\conditions\jaw\bruxism.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\bruxism.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\bruxism.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\bruxism.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\bruxism.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\jaw\bruxism.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\jaw\clicking-locking-joint-problems.html** [Meta Tags] Missing og:image
+- **en\conditions\jaw\clicking-locking-joint-problems.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\clicking-locking-joint-problems.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\clicking-locking-joint-problems.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\clicking-locking-joint-problems.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\clicking-locking-joint-problems.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\jaw\clicking-locking-joint-problems.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\jaw\eagle-syndrome.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\eagle-syndrome.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\eagle-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\eagle-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\eagle-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\eagle-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\eagle-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\eagle-syndrome.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\jaw\ear-pain-tinnitus.html** [Meta Tags] Missing og:image
+- **en\conditions\jaw\ear-pain-tinnitus.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\ear-pain-tinnitus.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\ear-pain-tinnitus.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\ear-pain-tinnitus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\ear-pain-tinnitus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\ear-pain-tinnitus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\ear-pain-tinnitus.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\ear-pain-tinnitus.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\jaw\glossopharyngeal-neuralgia.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\glossopharyngeal-neuralgia.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\glossopharyngeal-neuralgia.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\glossopharyngeal-neuralgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\glossopharyngeal-neuralgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\glossopharyngeal-neuralgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\glossopharyngeal-neuralgia.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\icr-internal-carotid.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\icr-internal-carotid.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\icr-internal-carotid.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\icr-internal-carotid.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\icr-internal-carotid.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\icr-internal-carotid.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\icr-internal-carotid.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\icr-syndrome.html** [Meta Tags] Missing og:image
+- **en\conditions\jaw\icr-syndrome.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\icr-syndrome.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\icr-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\icr-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\icr-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\icr-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\icr-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\jaw-headache.html** [Meta Tags] Missing og:image
+- **en\conditions\jaw\jaw-headache.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\jaw-headache.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\jaw-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\jaw-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\jaw-headache.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\jaw\jaw-headache.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\jaw\neck-jaw-connection.html** [Meta Tags] Missing og:image
+- **en\conditions\jaw\neck-jaw-connection.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\neck-jaw-connection.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\neck-jaw-connection.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\neck-jaw-connection.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\neck-jaw-connection.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\jaw\pifp-facial-pain.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\pifp-facial-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\pifp-facial-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\pifp-facial-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\pifp-facial-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\pifp-facial-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\pifp-facial-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\tmd-exercises.html** [Meta Tags] Missing og:image
+- **en\conditions\jaw\tmd-exercises.html** [Performance] Image missing decoding="async": Kjeve.webp
+- **en\conditions\jaw\tmd-exercises.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\jaw\tmd-exercises.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\tmd-exercises.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\tmd-exercises.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\tmd-exercises.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\jaw\tmd-exercises.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\jaw\tmd-exercises.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Meta Tags] Missing og:image
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Performance] Image missing decoding="async": tr?id=1020647599498498&ev=PageView&noscript=1
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Performance] Image missing decoding="async": albue-1-optimized.webp
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Meta Tags] Missing og:image
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Performance] Image missing decoding="async": tr?id=1020647599498498&ev=PageView&noscript=1
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Performance] Image missing decoding="async": albue-1-optimized.webp
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\de-quervains.html** [Meta Tags] Missing og:image
+- **en\conditions\elbow-arm\de-quervains.html** [Performance] No CSS preload found
+- **en\conditions\elbow-arm\de-quervains.html** [Performance] Image missing decoding="async": albue-1-optimized.webp
+- **en\conditions\elbow-arm\de-quervains.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\elbow-arm\de-quervains.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\de-quervains.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\golfers-elbow.html** [Meta Tags] Missing og:image
+- **en\conditions\elbow-arm\golfers-elbow.html** [Performance] Image missing decoding="async": albue-1-optimized.webp
+- **en\conditions\elbow-arm\golfers-elbow.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\elbow-arm\golfers-elbow.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\elbow-arm\golfers-elbow.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\golfers-elbow.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\golfers-elbow.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\golfers-elbow.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\golfers-elbow.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\mouse-arm.html** [Meta Tags] Missing og:image
+- **en\conditions\elbow-arm\mouse-arm.html** [Performance] Image missing decoding="async": albue-1-optimized.webp
+- **en\conditions\elbow-arm\mouse-arm.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\elbow-arm\mouse-arm.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\elbow-arm\mouse-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\mouse-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\mouse-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\mouse-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\mouse-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\tennis-elbow.html** [Meta Tags] Missing og:image
+- **en\conditions\elbow-arm\tennis-elbow.html** [Performance] Image missing decoding="async": albue-1-optimized.webp
+- **en\conditions\elbow-arm\tennis-elbow.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\elbow-arm\tennis-elbow.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\elbow-arm\tennis-elbow.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\tennis-elbow.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\tennis-elbow.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\tennis-elbow.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\tennis-elbow.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\thumb-arthritis.html** [Meta Tags] Missing og:image
+- **en\conditions\elbow-arm\thumb-arthritis.html** [Performance] Image missing decoding="async": albue-1-optimized.webp
+- **en\conditions\elbow-arm\thumb-arthritis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\elbow-arm\thumb-arthritis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\elbow-arm\thumb-arthritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\thumb-arthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\thumb-arthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\thumb-arthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\thumb-arthritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\trigger-finger.html** [Meta Tags] Missing og:image
+- **en\conditions\elbow-arm\trigger-finger.html** [Performance] Image missing decoding="async": albue-1-optimized.webp
+- **en\conditions\elbow-arm\trigger-finger.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\elbow-arm\trigger-finger.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\elbow-arm\trigger-finger.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\trigger-finger.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\trigger-finger.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\trigger-finger.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\trigger-finger.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\trigger-points-arm.html** [Meta Tags] Missing og:image
+- **en\conditions\elbow-arm\trigger-points-arm.html** [Performance] Image missing decoding="async": albue-1-optimized.webp
+- **en\conditions\elbow-arm\trigger-points-arm.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\elbow-arm\trigger-points-arm.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\elbow-arm\trigger-points-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\elbow-arm\trigger-points-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\trigger-points-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\trigger-points-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\elbow-arm\trigger-points-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\acl-injury.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\acl-injury.html** [Performance] No CSS preload found
+- **en\conditions\knee\acl-injury.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\acl-injury.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\knee\acl-injury.html** [Performance] Image missing decoding="async": facebook_media_social_icon.png
+- **en\conditions\knee\acl-injury.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\conditions\knee\acl-injury.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\knee\acl-injury.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\acl-injury.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\acl-injury.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\acl-injury.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Performance] No CSS preload found
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Performance] Image missing decoding="async": facebook_media_social_icon.png
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\iliotibial-band-syndrome.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\knee\jumpers-knee.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\jumpers-knee.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\jumpers-knee.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\knee\jumpers-knee.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\jumpers-knee.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\jumpers-knee.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\jumpers-knee.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\jumpers-knee.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\knee-osteoarthritis.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\knee-osteoarthritis.html** [Performance] No CSS preload found
+- **en\conditions\knee\knee-osteoarthritis.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\knee-osteoarthritis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\knee\knee-osteoarthritis.html** [Performance] Image missing decoding="async": facebook_media_social_icon.png
+- **en\conditions\knee\knee-osteoarthritis.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\conditions\knee\knee-osteoarthritis.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\knee\knee-osteoarthritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\knee-osteoarthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\knee-osteoarthritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\knee-osteoarthritis.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\knee\knee-pain-from-hip.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\knee-pain-from-hip.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\knee-pain-from-hip.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\knee\knee-pain-from-hip.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\knee-pain-from-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\knee-pain-from-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\knee-pain-from-hip.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\knee-pain-from-hip.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\meniscus-injury.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\meniscus-injury.html** [Performance] No CSS preload found
+- **en\conditions\knee\meniscus-injury.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\meniscus-injury.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\knee\meniscus-injury.html** [Performance] Image missing decoding="async": facebook_media_social_icon.png
+- **en\conditions\knee\meniscus-injury.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\conditions\knee\meniscus-injury.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\knee\meniscus-injury.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\meniscus-injury.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\meniscus-injury.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\meniscus-injury.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\knee\pcl-injury.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\pcl-injury.html** [Performance] No CSS preload found
+- **en\conditions\knee\pcl-injury.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\pcl-injury.html** [Performance] Image missing decoding="async": facebook_media_social_icon.png
+- **en\conditions\knee\pcl-injury.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\conditions\knee\pcl-injury.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\knee\pcl-injury.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\pcl-injury.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\pcl-injury.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\pcl-injury.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\knee\pes-anserine-bursitis.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\pes-anserine-bursitis.html** [Performance] No CSS preload found
+- **en\conditions\knee\pes-anserine-bursitis.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\pes-anserine-bursitis.html** [Performance] Image missing decoding="async": facebook_media_social_icon.png
+- **en\conditions\knee\pes-anserine-bursitis.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\conditions\knee\pes-anserine-bursitis.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\knee\pes-anserine-bursitis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\pes-anserine-bursitis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\pes-anserine-bursitis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\pes-anserine-bursitis.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\knee\popliteus-syndrome.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\popliteus-syndrome.html** [Performance] No CSS preload found
+- **en\conditions\knee\popliteus-syndrome.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\popliteus-syndrome.html** [Performance] Image missing decoding="async": facebook_media_social_icon.png
+- **en\conditions\knee\popliteus-syndrome.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\conditions\knee\popliteus-syndrome.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\knee\popliteus-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\popliteus-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\popliteus-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\popliteus-syndrome.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\knee\prepatellar-bursitis.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\prepatellar-bursitis.html** [Performance] No CSS preload found
+- **en\conditions\knee\prepatellar-bursitis.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\prepatellar-bursitis.html** [Performance] Image missing decoding="async": facebook_media_social_icon.png
+- **en\conditions\knee\prepatellar-bursitis.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\conditions\knee\prepatellar-bursitis.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\knee\prepatellar-bursitis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\prepatellar-bursitis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\prepatellar-bursitis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\prepatellar-bursitis.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\knee\runners-knee.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\runners-knee.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\knee\runners-knee.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\knee\runners-knee.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\runners-knee.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\runners-knee.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\runners-knee.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\shin-splints.html** [Meta Tags] Missing og:image
+- **en\conditions\knee\shin-splints.html** [Performance] No CSS preload found
+- **en\conditions\knee\shin-splints.html** [Performance] Image missing decoding="async": knee smerte.webp
+- **en\conditions\knee\shin-splints.html** [Performance] Image missing decoding="async": facebook_media_social_icon.png
+- **en\conditions\knee\shin-splints.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\conditions\knee\shin-splints.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\conditions\knee\shin-splints.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\shin-splints.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\knee\shin-splints.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\knee\shin-splints.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\foot\achilles-tendinopathy.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\achilles-tendinopathy.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\achilles-tendinopathy.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\achilles-tendinopathy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\achilles-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\achilles-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\achilles-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\ankle-instability.html** [Meta Tags] Missing og:image
+- **en\conditions\foot\ankle-instability.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\ankle-instability.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\ankle-instability.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\ankle-instability.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\ankle-instability.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\ankle-instability.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\ankle-instability.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\ankle-sprains.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\ankle-sprains.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\ankle-sprains.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\ankle-sprains.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\ankle-sprains.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\ankle-sprains.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\ankle-sprains.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\foot-exercises.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\foot-exercises.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\foot-exercises.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\foot-exercises.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\foot-exercises.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\foot-exercises.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\foot-exercises.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\hallux-rigidus.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\hallux-rigidus.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\hallux-rigidus.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\hallux-rigidus.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\hallux-rigidus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\hallux-rigidus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\hallux-rigidus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\hallux-valgus.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\hallux-valgus.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\hallux-valgus.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\hallux-valgus.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\hallux-valgus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\hallux-valgus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\hallux-valgus.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\hallux-valgus.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\foot\metatarsalgia.html** [Meta Tags] Missing og:image
+- **en\conditions\foot\metatarsalgia.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\metatarsalgia.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\metatarsalgia.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\metatarsalgia.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\metatarsalgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\metatarsalgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\metatarsalgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\minimalist-shoes.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\minimalist-shoes.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\minimalist-shoes.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\minimalist-shoes.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\minimalist-shoes.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\minimalist-shoes.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\minimalist-shoes.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\mortons-neuroma.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\mortons-neuroma.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\mortons-neuroma.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\mortons-neuroma.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\mortons-neuroma.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\mortons-neuroma.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\mortons-neuroma.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\orthotic-weaning.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\orthotic-weaning.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\orthotic-weaning.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\orthotic-weaning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\orthotic-weaning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\orthotic-weaning.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\orthotics.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\orthotics.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\orthotics.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\orthotics.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\orthotics.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\orthotics.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\orthotics.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\overpronation.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\overpronation.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\overpronation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\overpronation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\overpronation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\overpronation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\overpronation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\plantar-fasciopathy.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\plantar-fasciopathy.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\plantar-fasciopathy.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\plantar-fasciopathy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\plantar-fasciopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\plantar-fasciopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\plantar-fasciopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\severs-disease.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\severs-disease.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\severs-disease.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\severs-disease.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\severs-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\severs-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\severs-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\stress-fracture-foot.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\stress-fracture-foot.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\stress-fracture-foot.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\stress-fracture-foot.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\stress-fracture-foot.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\stress-fracture-foot.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\stress-fracture-foot.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\tibialis-posterior-tendinopathy.html** [Performance] Image missing decoding="async": ankel-smerte-behandling.jpg
+- **en\conditions\foot\tibialis-posterior-tendinopathy.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\tibialis-posterior-tendinopathy.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\tibialis-posterior-tendinopathy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\tibialis-posterior-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\tibialis-posterior-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\tibialis-posterior-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\weak-feet.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\weak-feet.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\weak-feet.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\weak-feet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\weak-feet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\weak-feet.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\when-orthotics-help.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\foot\when-orthotics-help.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\foot\when-orthotics-help.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\foot\when-orthotics-help.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\when-orthotics-help.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\when-orthotics-help.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\foot\when-orthotics-help.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\cervicogenic-headache.html** [Meta Tags] Missing og:image
+- **en\conditions\headache\cervicogenic-headache.html** [Performance] Image missing decoding="async": hodepine.webp
+- **en\conditions\headache\cervicogenic-headache.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\headache\cervicogenic-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\cervicogenic-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\cervicogenic-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\cervicogenic-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\cervicogenic-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\cervicogenic-headache.html** [Structural Consistency] Missing mobile sticky CTA
+- **en\conditions\headache\chronic-daily-headache.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\chronic-daily-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\chronic-daily-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\chronic-daily-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\chronic-daily-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\chronic-daily-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\cluster-headache.html** [Meta Tags] Missing og:image
+- **en\conditions\headache\cluster-headache.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\cluster-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\cluster-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\cluster-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\cluster-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\cluster-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\headache-back-of-head.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\headache-back-of-head.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\headache-back-of-head.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-back-of-head.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-back-of-head.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-back-of-head.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\headache-dizziness.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\headache-dizziness.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\headache\headache-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\headache-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\headache-temple.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\headache-temple.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\headache-temple.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-temple.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-temple.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-temple.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\headache-top-of-head.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\headache-top-of-head.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\headache-top-of-head.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-top-of-head.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-top-of-head.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\headache-top-of-head.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\hormonal-headache.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\hormonal-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\hormonal-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\hormonal-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\hormonal-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\hormonal-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\medication-overuse-headache.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\medication-overuse-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\medication-overuse-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\medication-overuse-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\medication-overuse-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\medication-overuse-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\migraine.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\migraine.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\headache\migraine.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\migraine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\migraine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\migraine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\migraine.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\morning-headache.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\morning-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\morning-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\morning-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\morning-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\morning-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\occipital-neuralgia.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\occipital-neuralgia.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\occipital-neuralgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\occipital-neuralgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\occipital-neuralgia.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\occipital-neuralgia.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\sinus-migraine.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\sinus-migraine.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\sinus-migraine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\sinus-migraine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\sinus-migraine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\tension-headache.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\tension-headache.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\headache\tension-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\tension-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\tension-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\tension-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\tension-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\trigger-point-headache.html** [Performance] Image missing decoding="async": Hodepine.webp
+- **en\conditions\headache\trigger-point-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\headache\trigger-point-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\trigger-point-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\trigger-point-headache.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\headache\trigger-point-headache.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\between-shoulder-blades.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Meta Tags] Missing og:image
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\bra-strap-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\breathing-stress-back.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\costochondritis.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\costochondritis.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\costochondritis.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\costochondritis.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\costochondritis.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\costochondritis.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\costochondritis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\costochondritis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\costochondritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\costochondritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\costochondritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\costochondritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\fibromyalgia-chest-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\flat-back.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\flat-back.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\flat-back.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\flat-back.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\flat-back.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\flat-back.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\flat-back.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\flat-back.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\flat-back.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\flat-back.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\flat-back.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\flat-back.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\kyphosis.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\kyphosis.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\kyphosis.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\kyphosis.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\kyphosis.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\kyphosis.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\kyphosis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\kyphosis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\kyphosis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\kyphosis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\kyphosis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\kyphosis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\kyphosis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\osteoporosis.html** [Meta Tags] Missing og:image
+- **en\conditions\thoracic\osteoporosis.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\osteoporosis.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\osteoporosis.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\osteoporosis.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\osteoporosis.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\osteoporosis.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\osteoporosis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\osteoporosis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\osteoporosis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\osteoporosis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\osteoporosis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\osteoporosis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\osteoporosis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\rib-dislocation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\scheuermanns-disease.html** [Meta Tags] Missing og:image
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\scheuermanns-disease.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\stiff-back-sports.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\t4-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\thoracic-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] Image missing decoding="async": mid-back.jpg
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] Image missing decoding="async": Nakkesmerte 2.webp
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] Image missing decoding="async": Ryggrad anatomi.webp
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] Image missing decoding="async": skulder.webp
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] Image missing decoding="async": Ryggsmerte.webp
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] Image missing decoding="async": korsrygg.webp
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\thoracic\thoracic-disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\bppv\anterior-canal.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\bppv\anterior-canal.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\bppv\anterior-canal.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\bppv\anterior-canal.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\bppv\anterior-canal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv\anterior-canal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv\anterior-canal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv\anterior-canal.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\bppv\horizontal-canal.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\bppv\horizontal-canal.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\bppv\horizontal-canal.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\bppv\horizontal-canal.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\bppv\horizontal-canal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv\horizontal-canal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv\horizontal-canal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv\horizontal-canal.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\bppv\horizontal-canal.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\dizziness\bppv\posterior-canal.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\bppv\posterior-canal.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\bppv\posterior-canal.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\bppv\posterior-canal.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\bppv\posterior-canal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv\posterior-canal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv\posterior-canal.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv\posterior-canal.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\bppv\posterior-canal.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\dizziness\bppv-crystal-disease.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\bppv-crystal-disease.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\bppv-crystal-disease.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\bppv-crystal-disease.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\bppv-crystal-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv-crystal-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv-crystal-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\bppv-crystal-disease.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\cervicogenic-dizziness.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\cervicogenic-dizziness.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\cervicogenic-dizziness.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\cervicogenic-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\cervicogenic-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\cervicogenic-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\cervicogenic-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\cervicogenic-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\cervicogenic-dizziness.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\dizziness\mdds.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\mdds.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\mdds.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\mdds.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\mdds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\mdds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\mdds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\mdds.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\menieres-disease.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\menieres-disease.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\menieres-disease.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\menieres-disease.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\menieres-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\menieres-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\menieres-disease.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\menieres-disease.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\menieres-disease.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\dizziness\post-concussion.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\post-concussion.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\post-concussion.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\post-concussion.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\post-concussion.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\post-concussion.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\post-concussion.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\post-concussion.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\post-concussion.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\dizziness\pots-syndrome.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\pots-syndrome.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\pots-syndrome.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\pots-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\pots-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\pots-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\pots-syndrome.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\pots-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\pots-syndrome.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\dizziness\pppd-chronic-dizziness.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\pppd-chronic-dizziness.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\pppd-chronic-dizziness.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\pppd-chronic-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\pppd-chronic-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\pppd-chronic-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\pppd-chronic-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\pppd-chronic-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\pppd-chronic-dizziness.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\dizziness\scds.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\scds.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\scds.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\scds.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\scds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\scds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\scds.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\scds.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\vestibular-hypofunction.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\vestibular-hypofunction.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\vestibular-hypofunction.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\vestibular-hypofunction.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\vestibular-hypofunction.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\vestibular-hypofunction.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\vestibular-hypofunction.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\vestibular-hypofunction.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\vestibular-hypofunction.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\dizziness\vestibular-migraine.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\vestibular-migraine.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\vestibular-migraine.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\vestibular-migraine.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\vestibular-migraine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\vestibular-migraine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\vestibular-migraine.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\vestibular-migraine.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\vestibular-migraine.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\dizziness\vestibular-neuritis.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\vestibular-neuritis.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\vestibular-neuritis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\vestibular-neuritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\vestibular-neuritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\vestibular-neuritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\vestibular-neuritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\vestibular-neuritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\vestibular-neuritis.html** [Content Quality] Medical page missing source/reference section
+- **en\conditions\dizziness\whiplash-dizziness.html** [Meta Tags] Missing og:image
+- **en\conditions\dizziness\whiplash-dizziness.html** [Performance] Image missing decoding="async": svimmelhet-behandling.webp
+- **en\conditions\dizziness\whiplash-dizziness.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\dizziness\whiplash-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\dizziness\whiplash-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\whiplash-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\whiplash-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\dizziness\whiplash-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\ac-joint-osteoarthritis.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\ac-joint-osteoarthritis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\ac-joint-osteoarthritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\ac-joint-osteoarthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\ac-joint-osteoarthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\ac-joint-osteoarthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\ac-joint-osteoarthritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\biceps-tendinopathy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\calcific-tendinitis.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\calcific-tendinitis.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\shoulder\calcific-tendinitis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\calcific-tendinitis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\calcific-tendinitis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\calcific-tendinitis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\calcific-tendinitis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\calcific-tendinitis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\clicking-shoulder.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\clicking-shoulder.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\clicking-shoulder.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\clicking-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\clicking-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\clicking-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\cortisone-shoulder.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\cortisone-shoulder.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\cortisone-shoulder.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\cortisone-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\cortisone-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\cortisone-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\pain-behind-shoulder.html** [Meta Tags] Missing og:image
+- **en\conditions\shoulder\pain-behind-shoulder.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\pain-behind-shoulder.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\pain-behind-shoulder.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\pain-behind-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\pain-behind-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\pain-behind-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\pain-behind-shoulder.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\shoulder-ergonomics.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\shoulder-ergonomics.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\shoulder-ergonomics.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\shoulder-ergonomics.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\shoulder-ergonomics.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\shoulder-ergonomics.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\shoulder-ergonomics.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\shoulder-osteoarthritis.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\shoulder-osteoarthritis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\shoulder-osteoarthritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\shoulder-osteoarthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\shoulder-osteoarthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\shoulder-osteoarthritis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\shoulder-osteoarthritis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\slap-lesion.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\slap-lesion.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\slap-lesion.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\slap-lesion.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\slap-lesion.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\slap-lesion.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\slap-lesion.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\sleep-shoulder-pain.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\sleep-shoulder-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\sleep-shoulder-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\sleep-shoulder-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\sleep-shoulder-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\sleep-shoulder-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\sleep-shoulder-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\throwers-shoulder.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\throwers-shoulder.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\throwers-shoulder.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\throwers-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\throwers-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\throwers-shoulder.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\throwers-shoulder.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\tos-numb-arm.html** [Performance] Image missing decoding="async": skulder smerter.webp
+- **en\conditions\shoulder\tos-numb-arm.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\shoulder\tos-numb-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\shoulder\tos-numb-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\tos-numb-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\tos-numb-arm.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\shoulder\tos-numb-arm.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\disc-herniation.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **en\conditions\lower-back\disc-herniation.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\lower-back\disc-herniation.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\lower-back\disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\disc-herniation.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\lower-back\red-flags-back-pain.html** [Meta Tags] Missing og:image
+- **en\conditions\lower-back\red-flags-back-pain.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **en\conditions\lower-back\red-flags-back-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\lower-back\red-flags-back-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\lower-back\red-flags-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\red-flags-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\red-flags-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\red-flags-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\red-flags-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\red-flags-back-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\lower-back\sciatica.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **en\conditions\lower-back\sciatica.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\lower-back\sciatica.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\lower-back\sciatica.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\sciatica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\sciatica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\sciatica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\sciatica.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\si-joint.html** [Meta Tags] Missing og:image
+- **en\conditions\lower-back\si-joint.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **en\conditions\lower-back\si-joint.html** [Performance] Image missing decoding="async": meg.webp
+- **en\conditions\lower-back\si-joint.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\lower-back\si-joint.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\si-joint.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\si-joint.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\si-joint.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\si-joint.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\si-joint.html** [Structural Consistency] Missing Facebook Pixel
+- **en\conditions\lower-back\spinal-stenosis.html** [Meta Tags] Missing og:image
+- **en\conditions\lower-back\spinal-stenosis.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **en\conditions\lower-back\spinal-stenosis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\lower-back\spinal-stenosis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\spinal-stenosis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\spinal-stenosis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\spinal-stenosis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\spinal-stenosis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\acute-back-pain.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **en\conditions\lower-back\acute-back-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\lower-back\acute-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\acute-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\acute-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\acute-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\acute-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\ankylosing-spondylitis.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **en\conditions\lower-back\ankylosing-spondylitis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\lower-back\ankylosing-spondylitis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\ankylosing-spondylitis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\ankylosing-spondylitis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\ankylosing-spondylitis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\ankylosing-spondylitis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\spondylolisthesis.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **en\conditions\lower-back\spondylolisthesis.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\lower-back\spondylolisthesis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\spondylolisthesis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\spondylolisthesis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\spondylolisthesis.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\spondylolisthesis.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\pregnancy-back-pain.html** [Meta Tags] Missing og:image
+- **en\conditions\lower-back\pregnancy-back-pain.html** [Performance] Image missing decoding="async": korsrygg smerte (1).webp
+- **en\conditions\lower-back\pregnancy-back-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions\lower-back\pregnancy-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\pregnancy-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\pregnancy-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\pregnancy-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions\lower-back\pregnancy-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\conditions\lower-back\pregnancy-back-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\dizziness\vestibular-rehabilitation.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\dizziness\vestibular-rehabilitation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\dizziness\vestibular-rehabilitation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness\vestibular-rehabilitation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness\vestibular-rehabilitation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness\vestibular-rehabilitation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\dizziness\vestibular-rehabilitation.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\dizziness\vestibular-system.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\dizziness\vestibular-system.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\services\dizziness\vestibular-system.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\dizziness\vestibular-system.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness\vestibular-system.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness\vestibular-system.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness\vestibular-system.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\dizziness\vestibular-system.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\dizziness\vng-examination.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\dizziness\vng-examination.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\dizziness\vng-examination.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness\vng-examination.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness\vng-examination.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness\vng-examination.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\dizziness\vng-examination.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\acute-treatment.html** [Meta Tags] Missing og:image
+- **en\services\acute-treatment.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\acute-treatment.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\acute-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\acute-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\acute-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\acute-treatment.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\chiropractic.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\chiropractic.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\services\chiropractic.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\chiropractic.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\chiropractic.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\chiropractic.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\chiropractic.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\chiropractic.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\dizziness-treatment.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\dizziness-treatment.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\services\dizziness-treatment.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\dizziness-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dizziness-treatment.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\dizziness-treatment.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\dry-needling.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\dry-needling.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\services\dry-needling.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\dry-needling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dry-needling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dry-needling.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\dry-needling.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\dry-needling.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\fascia-manipulation.html** [Meta Tags] Missing og:image
+- **en\services\fascia-manipulation.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\fascia-manipulation.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\services\fascia-manipulation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\fascia-manipulation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\fascia-manipulation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\fascia-manipulation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\fascia-manipulation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\fascia-manipulation.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\graston.html** [Meta Tags] Missing og:image
+- **en\services\graston.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\graston.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\services\graston.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\graston.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\graston.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\graston.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\graston.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\graston.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\preventive-treatment.html** [Meta Tags] Missing og:image
+- **en\services\preventive-treatment.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\preventive-treatment.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\preventive-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\preventive-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\preventive-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\preventive-treatment.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\soft-tissue.html** [Meta Tags] Missing og:image
+- **en\services\soft-tissue.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\soft-tissue.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\services\soft-tissue.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\soft-tissue.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\soft-tissue.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\soft-tissue.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\soft-tissue.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\soft-tissue.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\rehabilitation.html** [Meta Tags] Missing og:image
+- **en\services\rehabilitation.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\rehabilitation.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\services\rehabilitation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\rehabilitation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\rehabilitation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\rehabilitation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\rehabilitation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\rehabilitation.html** [Structural Consistency] Missing Facebook Pixel
+- **en\services\shockwave.html** [Performance] Image missing decoding="async": meg.webp
+- **en\services\shockwave.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\services\shockwave.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\shockwave.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\shockwave.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\shockwave.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services\shockwave.html** [Performance] CSS missing version hash: hub-article.css
+- **en\services\shockwave.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\acute-back-pain-self-help.html** [Meta Tags] Missing og:image
+- **en\blog\acute-back-pain-self-help.html** [Performance] No CSS preload found
+- **en\blog\acute-back-pain-self-help.html** [Performance] Image missing decoding="async": Guide to Acute Low Back Pain.webp
+- **en\blog\acute-back-pain-self-help.html** [Performance] Image missing decoding="async": meg.webp
+- **en\blog\acute-back-pain-self-help.html** [Performance] Image missing decoding="async": facebook_media_social_icon.png
+- **en\blog\acute-back-pain-self-help.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\blog\acute-back-pain-self-help.html** [Performance] Image missing decoding="async": logo-footer.webp
+- **en\blog\acute-back-pain-self-help.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\acute-back-pain-self-help.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\acute-back-pain-self-help.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\acute-back-pain-self-help.html** [Structural Consistency] Missing breadcrumb navigation
+- **en\blog\acute-back-pain-self-help.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\adhd-autism-jaw-pain.html** [Meta Tags] Missing og:image
+- **en\blog\adhd-autism-jaw-pain.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\adhd-autism-jaw-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\blog\adhd-autism-jaw-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\adhd-autism-jaw-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\bite-problems-myths-facts.html** [Meta Tags] Missing og:image
+- **en\blog\bite-problems-myths-facts.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\bite-problems-myths-facts.html** [Performance] Image missing decoding="async": Bruxism Day and Night Grinding.webp
+- **en\blog\bite-problems-myths-facts.html** [Performance] Image missing decoding="async": meg.webp
+- **en\blog\bite-problems-myths-facts.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\blog\bite-problems-myths-facts.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\bite-problems-myths-facts.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\botox-vs-manual-treatment-jaw.html** [Meta Tags] Missing og:image
+- **en\blog\botox-vs-manual-treatment-jaw.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\botox-vs-manual-treatment-jaw.html** [Performance] Image missing decoding="async": meg.webp
+- **en\blog\botox-vs-manual-treatment-jaw.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\blog\botox-vs-manual-treatment-jaw.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\botox-vs-manual-treatment-jaw.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\hypermobility-eds-jaw.html** [Meta Tags] Missing og:image
+- **en\blog\hypermobility-eds-jaw.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\hypermobility-eds-jaw.html** [Performance] Image missing decoding="async": meg.webp
+- **en\blog\hypermobility-eds-jaw.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\hypermobility-eds-jaw.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\index.html** [Meta Tags] Missing og:image
+- **en\blog\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\index.html** [Content Quality] Low word count: 126 (<300)
+- **en\blog\index.html** [Structural Consistency] Missing mobile sticky CTA
+- **en\blog\jaw-exercises-home.html** [Meta Tags] Missing og:image
+- **en\blog\jaw-exercises-home.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\jaw-exercises-home.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\blog\jaw-exercises-home.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\jaw-exercises-home.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\jaw-pain-children-adolescents.html** [Meta Tags] Missing og:image
+- **en\blog\jaw-pain-children-adolescents.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\jaw-pain-children-adolescents.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\blog\jaw-pain-children-adolescents.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\jaw-pain-children-adolescents.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\martial-arts-jaw-injuries.html** [Meta Tags] Missing og:image
+- **en\blog\martial-arts-jaw-injuries.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\martial-arts-jaw-injuries.html** [Performance] Image missing decoding="async": meg.webp
+- **en\blog\martial-arts-jaw-injuries.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\martial-arts-jaw-injuries.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\musicians-jaw-pain.html** [Meta Tags] Missing og:image
+- **en\blog\musicians-jaw-pain.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\musicians-jaw-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\blog\musicians-jaw-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\blog\musicians-jaw-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\musicians-jaw-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\pregnancy-jaw-pain.html** [Meta Tags] Missing og:image
+- **en\blog\pregnancy-jaw-pain.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\pregnancy-jaw-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\blog\pregnancy-jaw-pain.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\blog\pregnancy-jaw-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\pregnancy-jaw-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\stress-jaw-pain.html** [Meta Tags] Missing og:image
+- **en\blog\stress-jaw-pain.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\stress-jaw-pain.html** [Performance] Image missing decoding="async": Understanding and Managing Jaw Pain (TMD).webp
+- **en\blog\stress-jaw-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\blog\stress-jaw-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\stress-jaw-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\text-neck-jaw-pain.html** [Meta Tags] Missing og:image
+- **en\blog\text-neck-jaw-pain.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\text-neck-jaw-pain.html** [Performance] Image missing decoding="async": The Jaw-Headache Connection Guide to TMD.webp
+- **en\blog\text-neck-jaw-pain.html** [Performance] Image missing decoding="async": meg.webp
+- **en\blog\text-neck-jaw-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\text-neck-jaw-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\tmd-ibs-gut-jaw.html** [Meta Tags] Missing og:image
+- **en\blog\tmd-ibs-gut-jaw.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\tmd-ibs-gut-jaw.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\tmd-ibs-gut-jaw.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\text-neck-phone-neck.html** [Meta Tags] Missing og:image
+- **en\blog\text-neck-phone-neck.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\blog\text-neck-phone-neck.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\text-neck-phone-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\text-neck-phone-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\text-neck-phone-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\text-neck-phone-neck.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\trigger-points-neck.html** [Meta Tags] Missing og:image
+- **en\blog\trigger-points-neck.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\blog\trigger-points-neck.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\trigger-points-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\trigger-points-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\trigger-points-neck.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\neck-pain-pregnancy.html** [Meta Tags] Missing og:image
+- **en\blog\neck-pain-pregnancy.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\neck-pain-pregnancy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\neck-pain-pregnancy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\neck-pain-pregnancy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\neck-pain-pregnancy.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\numbness-fingers-neck-hand.html** [Meta Tags] Missing og:image
+- **en\blog\numbness-fingers-neck-hand.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\numbness-fingers-neck-hand.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\numbness-fingers-neck-hand.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\numbness-fingers-neck-hand.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\numbness-fingers-neck-hand.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\stress-neck-trigger-points.html** [Meta Tags] Missing og:image
+- **en\blog\stress-neck-trigger-points.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\blog\stress-neck-trigger-points.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\stress-neck-trigger-points.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\stress-neck-trigger-points.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\stress-neck-trigger-points.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\stress-neck-trigger-points.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\sciatica-prolapse-lumbago-difference.html** [Performance] Image missing decoding="async": Decoding Sciatica Pain and Recovery.webp
+- **en\blog\sciatica-prolapse-lumbago-difference.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\blog\sciatica-prolapse-lumbago-difference.html** [Performance] Image missing decoding="async": ryggmassasje-klinikk.png
+- **en\blog\sciatica-prolapse-lumbago-difference.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\sciatica-prolapse-lumbago-difference.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\sciatica-prolapse-lumbago-difference.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\sciatica-prolapse-lumbago-difference.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\sciatica-prolapse-lumbago-difference.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\strengthening-exercises-lower-back.html** [Meta Tags] Missing og:image
+- **en\blog\strengthening-exercises-lower-back.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\strengthening-exercises-lower-back.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\strengthening-exercises-lower-back.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\strengthening-exercises-lower-back.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\subtle-bppv.html** [Meta Tags] Missing og:image
+- **en\blog\subtle-bppv.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\subtle-bppv.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\subtle-bppv.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\subtle-bppv.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\central-dizziness.html** [Meta Tags] Missing og:image
+- **en\blog\central-dizziness.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\central-dizziness.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\central-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\central-dizziness.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\chiropractor-vs-physiotherapist.html** [Meta Tags] Missing og:image
+- **en\blog\chiropractor-vs-physiotherapist.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\chiropractor-vs-physiotherapist.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\chiropractor-vs-physiotherapist.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\chiropractor-vs-physiotherapist.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\concussion-sports.html** [Meta Tags] Missing og:image
+- **en\blog\concussion-sports.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\concussion-sports.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\concussion-sports.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\concussion-sports.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\discogenic-pain.html** [Performance] Image missing decoding="async": Discogenic Pain Sitting and Movement.webp
+- **en\blog\discogenic-pain.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\blog\discogenic-pain.html** [Performance] Image missing decoding="async": ryggmassasje-klinikk.png
+- **en\blog\discogenic-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\discogenic-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\discogenic-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\discogenic-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\discogenic-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\dizziness-myths.html** [Meta Tags] Missing og:image
+- **en\blog\dizziness-myths.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizziness-myths.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizziness-myths.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\dizziness-myths.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\dizziness-not-bppv.html** [Meta Tags] Missing og:image
+- **en\blog\dizziness-not-bppv.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizziness-not-bppv.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizziness-not-bppv.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\dizziness-not-bppv.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\dizziness-stress-anxiety.html** [Meta Tags] Missing og:image
+- **en\blog\dizziness-stress-anxiety.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizziness-stress-anxiety.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizziness-stress-anxiety.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\dizziness-stress-anxiety.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\dizziness-treatment.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\blog\dizziness-treatment.html** [Performance] Image missing decoding="async": ryggmassasje-klinikk.png
+- **en\blog\dizziness-treatment.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\dizziness-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\dizziness-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\dizziness-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\dizziness-treatment.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\dizzy-and-nauseous.html** [Meta Tags] Missing og:image
+- **en\blog\dizzy-and-nauseous.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizzy-and-nauseous.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizzy-and-nauseous.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\dizzy-and-nauseous.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\dizzy-in-bed.html** [Meta Tags] Missing og:image
+- **en\blog\dizzy-in-bed.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizzy-in-bed.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizzy-in-bed.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\dizzy-in-bed.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\dizzy-when-standing-up.html** [Meta Tags] Missing og:image
+- **en\blog\dizzy-when-standing-up.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizzy-when-standing-up.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\dizzy-when-standing-up.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\dizzy-when-standing-up.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\elderly-dizziness-fall-risk.html** [Meta Tags] Missing og:image
+- **en\blog\elderly-dizziness-fall-risk.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\elderly-dizziness-fall-risk.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\elderly-dizziness-fall-risk.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\elderly-dizziness-fall-risk.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\exercises-sciatica.html** [Meta Tags] Missing og:image
+- **en\blog\exercises-sciatica.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\exercises-sciatica.html** [Performance] Image missing decoding="async": Five Exercises to Relieve Sciatica Pain.webp
+- **en\blog\exercises-sciatica.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\exercises-sciatica.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\exercises-sciatica.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\facet-joint-syndrome.html** [Meta Tags] Missing og:image
+- **en\blog\facet-joint-syndrome.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\facet-joint-syndrome.html** [Performance] Image missing decoding="async": Facet Joint Syndrome Causes and Management.webp
+- **en\blog\facet-joint-syndrome.html** [Performance] Image missing decoding="async": meg.webp
+- **en\blog\facet-joint-syndrome.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\facet-joint-syndrome.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\facet-joint-syndrome.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\jaw-neck-dizziness.html** [Meta Tags] Missing og:image
+- **en\blog\jaw-neck-dizziness.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\jaw-neck-dizziness.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\jaw-neck-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\jaw-neck-dizziness.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\l4-l5-disc-herniation.html** [Performance] Image missing decoding="async": Guide to L4-L5 Disc Herniation.webp
+- **en\blog\l4-l5-disc-herniation.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\blog\l4-l5-disc-herniation.html** [Performance] Image missing decoding="async": ryggmassasje-klinikk.png
+- **en\blog\l4-l5-disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\l4-l5-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\l4-l5-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\l4-l5-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\l5-s1-disc-herniation.html** [Performance] Image missing decoding="async": L5-S1 Disc Herniation Symptoms and Recovery.webp
+- **en\blog\l5-s1-disc-herniation.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\blog\l5-s1-disc-herniation.html** [Performance] Image missing decoding="async": ryggmassasje-klinikk.png
+- **en\blog\l5-s1-disc-herniation.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\l5-s1-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\l5-s1-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\l5-s1-disc-herniation.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\l5-s1-disc-herniation.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\living-with-dizziness.html** [Meta Tags] Missing og:image
+- **en\blog\living-with-dizziness.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\living-with-dizziness.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\living-with-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\living-with-dizziness.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\mri-imaging-back-pain.html** [Meta Tags] Missing og:image
+- **en\blog\mri-imaging-back-pain.html** [Performance] Image missing decoding="async": Smart Approach to Back Pain MRIs.webp
+- **en\blog\mri-imaging-back-pain.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\blog\mri-imaging-back-pain.html** [Performance] Image missing decoding="async": ryggmassasje-klinikk.png
+- **en\blog\mri-imaging-back-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\mri-imaging-back-pain.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\mri-imaging-back-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\muscle-pain-vs-nerve-pain.html** [Meta Tags] Missing og:image
+- **en\blog\muscle-pain-vs-nerve-pain.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\muscle-pain-vs-nerve-pain.html** [Performance] Image missing decoding="async": Final Transparent Logo.webp
+- **en\blog\muscle-pain-vs-nerve-pain.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\muscle-pain-vs-nerve-pain.html** [Structural Consistency] Missing Facebook Pixel
+- **en\blog\piriformis-syndrome-false-sciatica.html** [Performance] Image missing decoding="async": Piriformis Syndrome False Sciatica Explained.webp
+- **en\blog\piriformis-syndrome-false-sciatica.html** [Performance] Image missing decoding="async": instagramlogo.png
+- **en\blog\piriformis-syndrome-false-sciatica.html** [Performance] Image missing decoding="async": ryggmassasje-klinikk.png
+- **en\blog\piriformis-syndrome-false-sciatica.html** [Performance] CSS missing version hash: hub-article.css
+- **en\blog\piriformis-syndrome-false-sciatica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\piriformis-syndrome-false-sciatica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\piriformis-syndrome-false-sciatica.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\blog\piriformis-syndrome-false-sciatica.html** [Structural Consistency] Missing Facebook Pixel
+- **en\prices.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\prices.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\prices.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\prices.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\prices.html** [Performance] CSS missing version hash: improvements-2026.css
+- **en\prices.html** [Performance] CSS missing version hash: improvements-2026.css
+- **en\prices.html** [Content Quality] Low word count: 241 (<300)
+- **en\404.html** [Meta Tags] Missing og:image
+- **en\404.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\404.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\404.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\404.html** [Content Quality] Low word count: 89 (<300)
+- **en\404.html** [Structural Consistency] Missing mobile sticky CTA
+- **en\conditions.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\conditions.html** [Performance] CSS missing version hash: conditions-premium.css
+- **en\conditions.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\conditions.html** [Content Quality] Low word count: 150 (<300)
+- **en\contact.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\contact.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\contact.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\contact.html** [Performance] CSS missing version hash: improvements-2026.css
+- **en\contact.html** [Performance] CSS missing version hash: improvements-2026.css
+- **en\contact.html** [Content Quality] Low word count: 172 (<300)
+- **en\emergency-dizziness.html** [Meta Tags] Missing og:image
+- **en\emergency-dizziness.html** [Performance] Image missing decoding="async": meg.webp
+- **en\emergency-dizziness.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\emergency-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\emergency-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\emergency-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\emergency-dizziness.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\emergency-dizziness.html** [Performance] CSS missing version hash: hub-article.css
+- **en\emergency-dizziness.html** [Structural Consistency] Missing mobile sticky CTA
+- **en\emergency-treatment.html** [Meta Tags] Missing og:image
+- **en\emergency-treatment.html** [Performance] Image missing decoding="async": meg.webp
+- **en\emergency-treatment.html** [Performance] CSS missing version hash: hub-article.css
+- **en\emergency-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\emergency-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\emergency-treatment.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\emergency-treatment.html** [Performance] CSS missing version hash: hub-article.css
+- **en\emergency-treatment.html** [Structural Consistency] Missing mobile sticky CTA
+- **en\emergency.html** [Meta Tags] Missing og:image
+- **en\emergency.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\emergency.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\emergency.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\faq.html** [Performance] CSS missing version hash: hub-article.css
+- **en\faq.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\faq.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\new-patients.html** [Meta Tags] Missing og:image
+- **en\new-patients.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\new-patients.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\new-patients.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\privacy-policy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\privacy-policy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\privacy-policy.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\about.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\about.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\about.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\about.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\about.html** [Performance] CSS missing version hash: improvements-2026.css
+- **en\about.html** [Performance] CSS missing version hash: improvements-2026.css
+- **en\index.html** [Performance] Image missing decoding="async": meg.webp
+- **en\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\index.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\index.html** [Performance] CSS missing version hash: improvements-2026.css
+- **en\index.html** [Performance] CSS missing version hash: improvements-2026.css
+- **en\index.html** [Structural Consistency] Missing mobile sticky CTA
+- **en\index.html** [Structural Consistency] Missing breadcrumb navigation
+- **en\services.html** [Performance] CSS missing version hash: index-2026-fixes.css
+- **en\services.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services.html** [Performance] CSS missing version hash: font-awesome-minimal.css
+- **en\services.html** [Performance] CSS missing version hash: improvements-2026.css
+- **en\services.html** [Performance] CSS missing version hash: improvements-2026.css
+- **en\services.html** [Content Quality] Low word count: 143 (<300)
+
+## By Category
+
+### Accessibility
+
+Critical: 0 | Warnings: 325 | Info: 0
+
+- 🟡 **contact.html** Heading skip: h1 → h3
+- 🟡 **services.html** Heading skip: h1 → h3
+- 🟡 **plager.html** Heading skip: h1 → h3
+- 🟡 **akutt-svimmelhet-helg.html** Heading skip: h2 → h4
+- 🟡 **akutt-behandling.html** Heading skip: h2 → h4
+- 🟡 **about.html** Heading skip: h2 → h4
+- 🟡 **blogg\piriformissyndrom-falsk-isjias.html** Heading skip: h1 → h3
+- 🟡 **blogg\l4-l5-prolaps.html** Heading skip: h1 → h3
+- 🟡 **blogg\diskogen-smerte.html** Heading skip: h1 → h3
+- 🟡 **blogg\tmd-ibs-mage-kjeve.html** Heading skip: h1 → h3
+- 🟡 **blogg\musikere-kjevesmerter.html** Heading skip: h2 → h4
+- 🟡 **blogg\graviditet-kjevesmerter.html** Heading skip: h2 → h4
+- 🟡 **blogg\l5-s1-prolaps.html** Heading skip: h1 → h3
+- 🟡 **blogg\kjeveovelser-hjemme.html** Heading skip: h2 → h4
+- 🟡 **blogg\tekstnakke-kjevesmerter.html** Heading skip: h1 → h3
+- 🟡 **blogg\hypermobilitet-eds-kjeve.html** Heading skip: h2 → h4
+- 🟡 **blogg\kjevesmerter-barn-ungdom.html** Heading skip: h2 → h4
+- 🟡 **blogg\mr-bildediagnostikk-ryggsmerte.html** Heading skip: h1 → h3
+- 🟡 **blogg\botox-vs-manuell-behandling-kjeve.html** Heading skip: h2 → h4
+- 🟡 **blogg\isjias-prolaps-hekseskudd-forskjell.html** Heading skip: h1 → h3
+- 🟡 **faq\ryggsmerter-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\svimmelhet-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\arm-pain-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\korsryggsmerter-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\brystryggsmerter-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\fotsmerter-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\knee-pain-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\jaw-pain-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\hip-pain-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\dizziness-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\neck-pain-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\foot-pain-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\hoftesmerter-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\headache-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\chest-pain-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\knesmerter-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\nakkesmerter-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\armsmerter-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\shoulder-pain-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\back-pain-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\kjevesmerter-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\skuldersmerter-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\lower-back-pain-faq.html** Heading skip: h1 → h3
+- 🟡 **faq\hodepine-faq.html** Heading skip: h1 → h3
+- 🟡 **plager\skuldersmerter.html** Heading skip: h2 → h4
+- 🟡 **plager\nakkesmerter.html** Heading skip: h2 → h4
+- 🟡 **plager\albue-arm.html** Heading skip: h2 → h4
+- 🟡 **plager\korsryggsmerte.html** Heading skip: h2 → h4
+- 🟡 **plager\hodepine.html** Heading skip: h2 → h4
+- 🟡 **plager\fotsmerte.html** Heading skip: h3 → h5
+- 🟡 **plager\svimmelhet.html** Heading skip: h2 → h4
+- 🟡 **plager\hofte-og-bekkensmerter.html** Heading skip: h2 → h4
+- 🟡 **plager\hofte\bursitt-myte.html** Heading skip: h2 → h4
+- 🟡 **plager\hofte\iliopsoas-tendinopati.html** Heading skip: h1 → h3
+- 🟡 **plager\hofte\rygg-hofte-isjias.html** Heading skip: h2 → h4
+- 🟡 **plager\hofte\labrum-skade.html** Heading skip: h1 → h3
+- 🟡 **plager\hofte\idrettsskader-hofte.html** Heading skip: h2 → h4
+- 🟡 **plager\hofte\fai-hofteklem.html** Heading skip: h1 → h3
+- 🟡 **plager\hofte\athletic-pubalgia-lyskebrokk.html** Heading skip: h2 → h4
+- 🟡 **plager\hofte\gtps-gluteal-tendinopati.html** Heading skip: h1 → h3
+- 🟡 **plager\hofte\bekkenleddsmerter-graviditet.html** Heading skip: h1 → h3
+- 🟡 **plager\hofte\hofteartrose.html** Heading skip: h1 → h3
+- 🟡 **plager\hofte\vondt-i-hoften.html** Heading skip: h1 → h3
+- 🟡 **plager\hofte\triggerpunkter-hofte-bekken.html** Heading skip: h2 → h4
+- 🟡 **plager\fot\mortons-nevrom.html** Heading skip: h2 → h4
+- 🟡 **plager\fot\plantar-fasciopati.html** Heading skip: h2 → h5
+- 🟡 **plager\fot\severs-syndrom.html** Heading skip: h2 → h5
+- 🟡 **plager\fot\hallux-valgus.html** Heading skip: h3 → h5
+- 🟡 **plager\fot\akillestendinopati.html** Heading skip: h2 → h4
+- 🟡 **plager\fot\ankelforstuinger.html** Heading skip: h2 → h5
+- 🟡 **plager\fot\hallux-rigidus.html** Heading skip: h2 → h4
+- 🟡 **plager\fot\tibialis-posterior-tendinopati.html** Heading skip: h2 → h5
+- 🟡 **plager\fot\fottrening.html** Heading skip: h3 → h5
+- 🟡 **plager\fot\innleggssaler.html** Heading skip: h2 → h4
+- 🟡 **plager\fot\minimalistsko.html** Heading skip: h2 → h5
+- 🟡 **plager\fot\nar-innleggssaler-hjelper.html** Heading skip: h2 → h4
+- 🟡 **plager\fot\ortose-nedtrapping.html** Heading skip: h2 → h4
+- 🟡 **plager\fot\overpronasjon.html** Heading skip: h2 → h4
+- 🟡 **plager\fot\svake-fotter.html** Heading skip: h2 → h4
+- 🟡 **plager\skulder\ac-ledd-artrose.html** Heading skip: h2 → h4
+- 🟡 **plager\skulder\slap-lesjon.html** Heading skip: h2 → h4
+- 🟡 **plager\skulder\ergonomi-skulder.html** Heading skip: h2 → h4
+- 🟡 **plager\skulder\klikking-skulder.html** Heading skip: h2 → h4
+- 🟡 **plager\skulder\biceps-tendinopati.html** Heading skip: h2 → h4
+- 🟡 **plager\skulder\tos-sovende-arm.html** Heading skip: h2 → h4
+- 🟡 **plager\skulder\kalkskulder.html** Heading skip: h2 → h4
+- 🟡 **plager\skulder\kasterskulder.html** Heading skip: h2 → h4
+- 🟡 **plager\hodepine\migrene.html** Heading skip: h2 → h4
+- 🟡 **plager\hodepine\medikamentoverforbruk-hodepine.html** Heading skip: h2 → h4
+- 🟡 **plager\hodepine\hodepine-toppen.html** Heading skip: h1 → h3
+- 🟡 **plager\hodepine\hodepine-svimmelhet.html** Heading skip: h2 → h4
+- 🟡 **plager\hodepine\occipital-nevralgi.html** Heading skip: h2 → h4
+- 🟡 **plager\hodepine\spenningshodepine.html** Heading skip: h2 → h4
+- 🟡 **plager\hodepine\hodepine-tinningen.html** Heading skip: h1 → h3
+- 🟡 **plager\hodepine\hormonhodepine.html** Heading skip: h2 → h4
+- 🟡 **plager\hodepine\nakkehodepine.html** Heading skip: h1 → h3
+- 🟡 **plager\hodepine\triggerpunkter-hodepine.html** Heading skip: h2 → h4
+- 🟡 **plager\nakke\kvalme.html** Heading skip: h1 → h3
+- 🟡 **plager\nakke\stressnakke.html** Heading skip: h2 → h4
+- 🟡 **plager\nakke\knaser-nakke.html** Heading skip: h1 → h3
+- 🟡 **plager\nakke\c6-c7-prolaps.html** Heading skip: h2 → h4
+- 🟡 **plager\nakke\c5-c6-prolaps.html** Heading skip: h2 → h4
+- 🟡 **plager\nakke\nakkeprolaps.html** Heading skip: h1 → h3
+- 🟡 **plager\nakke\torticollis.html** Heading skip: h1 → h3
+- 🟡 **plager\nakke\cervikal-foraminal-stenose.html** Heading skip: h2 → h4
+- 🟡 **plager\nakke\degenerative-forandringer.html** Heading skip: h2 → h4
+- 🟡 **plager\nakke\stiv-nakke-om-morgenen.html** Heading skip: h2 → h4
+- 🟡 **plager\kjeve\bittfeil-myter.html** Heading skip: h2 → h4
+- 🟡 **plager\kjeve\eagle-syndrom.html** Heading skip: h2 → h4
+- 🟡 **plager\kjeve\icr-syndrom.html** Heading skip: h2 → h4
+- 🟡 **plager\kjeve\oresmerter-tinnitus.html** Heading skip: h2 → h4
+- 🟡 **plager\kne\kneartrose.html** Heading skip: h2 → h4
+- 🟡 **plager\kne\meniskskade.html** Heading skip: h2 → h4
+- 🟡 **plager\kne\iliotibial-band-syndrom.html** Heading skip: h2 → h4
+- 🟡 **plager\kne\knesmerte-fra-hoften.html** Heading skip: h2 → h4
+- 🟡 **plager\kne\pcl-skade.html** Heading skip: h2 → h4
+- 🟡 **plager\kne\korsbandskade.html** Heading skip: h2 → h4
+- 🟡 **plager\brystrygg\t4-syndrom.html** Heading skip: h2 → h4
+- 🟡 **plager\brystrygg\fibromyalgi-brystsmerter.html** Heading skip: h2 → h4
+- 🟡 **plager\brystrygg\osteoporose.html** Heading skip: h2 → h4
+- 🟡 **plager\brystrygg\krum-rygg.html** Heading skip: h2 → h4
+- 🟡 **plager\svimmelhet\krystallsyke-bppv.html** Heading skip: h2 → h4
+- 🟡 **plager\svimmelhet\post-hjernerystelse.html** Heading skip: h2 → h4
+- 🟡 **plager\albue-arm\triggerpunkter-arm.html** Heading skip: h2 → h4
+- 🟡 **plager\albue-arm\karpaltunnelsyndrom.html** Heading skip: h2 → h4
+- 🟡 **plager\albue-arm\kubitaltunnelsyndrom.html** Heading skip: h2 → h4
+- 🟡 **plager\korsrygg\isjias.html** Heading skip: h2 → h4
+- 🟡 **plager\korsrygg\spondylolistese.html** Heading skip: h1 → h3
+- 🟡 **plager\korsrygg\bekhterevs-sykdom.html** Heading skip: h1 → h3
+- 🟡 **plager\korsrygg\skiveprolaps.html** Heading skip: h2 → h4
+- 🟡 **plager\korsrygg\spinal-stenose.html** Heading skip: h1 → h3
+- 🟡 **plager\korsrygg\hekseskudd.html** Heading skip: h1 → h3
+- 🟡 **plager\korsrygg\nociplastisk-smerte.html** Heading skip: h1 → h3
+- 🟡 **plager\ryggsmerter.html** Heading skip: h2 → h4
+- 🟡 **tjeneste\graston.html** Heading skip: h2 → h4
+- 🟡 **tjeneste\kiropraktikk.html** Heading skip: h2 → h4
+- 🟡 **tjeneste\blotvevsteknikker.html** Heading skip: h2 → h4
+- 🟡 **tjeneste\svimmelhet.html** Heading skip: h2 → h4
+- 🟡 **tjeneste\fasciemanipulasjon.html** Heading skip: h2 → h4
+- 🟡 **tjeneste\akutt-behandling.html** Heading skip: h2 → h4
+- 🟡 **tjeneste\dry-needling.html** Heading skip: h2 → h4
+- 🟡 **tjeneste\trykkbolge.html** Heading skip: h2 → h4
+- 🟡 **tjeneste\svimmelhet\vestibular-rehabilitering.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\arm-pain.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\headache.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot-pain.html** Heading skip: h3 → h5
+- 🟡 **en\conditions\hip-pain.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\knee-pain.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\thoracic-pain.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\lower-back-pain.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\shoulder-pain.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\neck-pain.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\sports-injuries.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\athletic-pubalgia.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\back-hip-sciatica.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\bursitis-myth.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\fai-hip-impingement.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\gtps-gluteal-tendinopathy.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\hip-osteoarthritis.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\iliopsoas-tendinopathy.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\labrum-tear.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\osteitis-pubis.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\pelvic-pain-pregnancy.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\proximal-hamstring-tendinopathy.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\si-joint-problems.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\snapping-hip.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\stress-fracture-hip.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\trigger-points-hip-pelvis.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\hip-pain.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\hip-pointer.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\hip\sports-injuries-hip.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\c5-c6-disc-herniation.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\neck\c6-c7-disc-herniation.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\cervical-foraminal-stenosis.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\cracking-neck.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\degenerative-changes.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\finger-numbness.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\nausea-neck.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\neck-disc-herniation.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\neck-trigger-points.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\red-flags-neck-pain.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\stiff-neck-morning.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\neck\stress-neck.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\text-neck.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\torticollis.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\whiplash-headache.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\neck\whiplash.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\jaw\bite-myths.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\jaw\bruxism.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\jaw\clicking-locking-joint-problems.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\jaw\eagle-syndrome.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\jaw\ear-pain-tinnitus.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\jaw\glossopharyngeal-neuralgia.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\jaw\icr-syndrome.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\jaw\jaw-headache.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\jaw\neck-jaw-connection.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\jaw\pifp-facial-pain.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\jaw\tmd-exercises.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\elbow-arm\trigger-points-arm.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\knee\iliotibial-band-syndrome.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\knee\knee-pain-from-hip.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\foot\achilles-tendinopathy.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\ankle-instability.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\ankle-sprains.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\foot-exercises.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\hallux-rigidus.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\hallux-valgus.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\metatarsalgia.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\minimalist-shoes.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\mortons-neuroma.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\orthotic-weaning.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\orthotics.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\overpronation.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\plantar-fasciopathy.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\severs-disease.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\stress-fracture-foot.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\tibialis-posterior-tendinopathy.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\weak-feet.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\foot\when-orthotics-help.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\headache\cervicogenic-headache.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\headache\headache-dizziness.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\headache\headache-temple.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\headache\headache-top-of-head.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\headache\hormonal-headache.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\headache\medication-overuse-headache.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\headache\migraine.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\headache\occipital-neuralgia.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\headache\tension-headache.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\headache\trigger-point-headache.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\thoracic\between-shoulder-blades.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\thoracic\breathing-stress-back.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\thoracic\fibromyalgia-chest-pain.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\thoracic\flat-back.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\thoracic\kyphosis.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\thoracic\osteoporosis.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\thoracic\rib-dislocation.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\thoracic\stiff-back-sports.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\thoracic\t4-syndrome.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\thoracic\thoracic-disc-herniation.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\bppv\anterior-canal.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\bppv\horizontal-canal.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\bppv\posterior-canal.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\bppv-crystal-disease.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\cervicogenic-dizziness.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\mdds.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\menieres-disease.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\post-concussion.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\pots-syndrome.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\pppd-chronic-dizziness.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\scds.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\vestibular-hypofunction.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\vestibular-migraine.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\vestibular-neuritis.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\dizziness\whiplash-dizziness.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\shoulder\ac-joint-osteoarthritis.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\shoulder\biceps-tendinopathy.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\shoulder\calcific-tendinitis.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\shoulder\clicking-shoulder.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\shoulder\shoulder-ergonomics.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\shoulder\slap-lesion.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\shoulder\throwers-shoulder.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\shoulder\tos-numb-arm.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\lower-back\disc-herniation.html** Heading skip: h2 → h4
+- 🟡 **en\conditions\lower-back\sciatica.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\lower-back\spinal-stenosis.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\lower-back\acute-back-pain.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\lower-back\ankylosing-spondylitis.html** Heading skip: h1 → h3
+- 🟡 **en\conditions\lower-back\spondylolisthesis.html** Heading skip: h1 → h3
+- 🟡 **en\services\dizziness\vestibular-rehabilitation.html** Heading skip: h2 → h4
+- 🟡 **en\services\acute-treatment.html** Heading skip: h2 → h4
+- 🟡 **en\services\chiropractic.html** Heading skip: h2 → h4
+- 🟡 **en\services\dizziness-treatment.html** Heading skip: h2 → h4
+- 🟡 **en\services\dry-needling.html** Heading skip: h2 → h4
+- 🟡 **en\services\fascia-manipulation.html** Heading skip: h2 → h4
+- 🟡 **en\services\graston.html** Heading skip: h2 → h4
+- 🟡 **en\services\soft-tissue.html** Heading skip: h2 → h4
+- 🟡 **en\services\shockwave.html** Heading skip: h2 → h4
+- 🟡 **en\blog\acute-back-pain-self-help.html** Heading skip: h1 → h3
+- 🟡 **en\blog\adhd-autism-jaw-pain.html** Heading skip: h1 → h3
+- 🟡 **en\blog\bite-problems-myths-facts.html** Heading skip: h1 → h3
+- 🟡 **en\blog\botox-vs-manual-treatment-jaw.html** Heading skip: h1 → h3
+- 🟡 **en\blog\hypermobility-eds-jaw.html** Heading skip: h1 → h3
+- 🟡 **en\blog\jaw-exercises-home.html** Heading skip: h1 → h3
+- 🟡 **en\blog\jaw-pain-children-adolescents.html** Heading skip: h1 → h3
+- 🟡 **en\blog\martial-arts-jaw-injuries.html** Heading skip: h1 → h3
+- 🟡 **en\blog\musicians-jaw-pain.html** Heading skip: h1 → h3
+- 🟡 **en\blog\pregnancy-jaw-pain.html** Heading skip: h1 → h3
+- 🟡 **en\blog\stress-jaw-pain.html** Heading skip: h1 → h3
+- 🟡 **en\blog\text-neck-jaw-pain.html** Heading skip: h1 → h3
+- 🟡 **en\blog\tmd-ibs-gut-jaw.html** Heading skip: h1 → h3
+- 🟡 **en\blog\text-neck-phone-neck.html** Heading skip: h1 → h3
+- 🟡 **en\blog\trigger-points-neck.html** Heading skip: h1 → h3
+- 🟡 **en\blog\neck-pain-pregnancy.html** Heading skip: h1 → h3
+- 🟡 **en\blog\numbness-fingers-neck-hand.html** Heading skip: h1 → h3
+- 🟡 **en\blog\stress-neck-trigger-points.html** Heading skip: h1 → h3
+- 🟡 **en\blog\sciatica-prolapse-lumbago-difference.html** Heading skip: h1 → h3
+- 🟡 **en\blog\subtle-bppv.html** Heading skip: h1 → h3
+- 🟡 **en\blog\central-dizziness.html** Heading skip: h1 → h3
+- 🟡 **en\blog\concussion-sports.html** Heading skip: h1 → h3
+- 🟡 **en\blog\discogenic-pain.html** Heading skip: h1 → h3
+- 🟡 **en\blog\dizziness-myths.html** Heading skip: h1 → h3
+- 🟡 **en\blog\dizziness-not-bppv.html** Heading skip: h1 → h3
+- 🟡 **en\blog\dizziness-stress-anxiety.html** Heading skip: h1 → h3
+- 🟡 **en\blog\dizziness-treatment.html** Heading skip: h2 → h4
+- 🟡 **en\blog\dizzy-and-nauseous.html** Heading skip: h1 → h3
+- 🟡 **en\blog\dizzy-in-bed.html** Heading skip: h1 → h3
+- 🟡 **en\blog\dizzy-when-standing-up.html** Heading skip: h1 → h3
+- 🟡 **en\blog\elderly-dizziness-fall-risk.html** Heading skip: h1 → h3
+- 🟡 **en\blog\exercises-sciatica.html** Heading skip: h1 → h3
+- 🟡 **en\blog\jaw-neck-dizziness.html** Heading skip: h1 → h3
+- 🟡 **en\blog\l4-l5-disc-herniation.html** Heading skip: h1 → h3
+- 🟡 **en\blog\l5-s1-disc-herniation.html** Heading skip: h1 → h3
+- 🟡 **en\blog\living-with-dizziness.html** Heading skip: h1 → h3
+- 🟡 **en\blog\mri-imaging-back-pain.html** Heading skip: h1 → h3
+- 🟡 **en\blog\muscle-pain-vs-nerve-pain.html** Heading skip: h1 → h3
+- 🟡 **en\blog\piriformis-syndrome-false-sciatica.html** Heading skip: h1 → h3
+- 🟡 **en\conditions.html** Heading skip: h1 → h3
+- 🟡 **en\contact.html** Heading skip: h1 → h3
+- 🟡 **en\emergency-dizziness.html** Heading skip: h2 → h4
+- 🟡 **en\emergency-treatment.html** Heading skip: h2 → h4
+- 🟡 **en\about.html** Heading skip: h2 → h4
+- 🟡 **en\services.html** Heading skip: h1 → h3
+
+### Content Quality
+
+Critical: 0 | Warnings: 1 | Info: 41
+
+- 🔵 **contact.html** Low word count: 166 (<300)
+- 🔵 **services.html** Low word count: 136 (<300)
+- 🔵 **plager.html** Low word count: 146 (<300)
+- 🔵 **404.html** Low word count: 96 (<300)
+- 🔵 **blogg\index.html** Low word count: 104 (<300)
+- 🔵 **plager\idrettsskader.html** Low word count: 281 (<300)
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** Medical page missing source/reference section
+- 🔵 **en\conditions\hip\bursitis-myth.html** Medical page missing source/reference section
+- 🔵 **en\conditions\hip\stress-fracture-hip.html** Medical page missing source/reference section
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** Medical page missing source/reference section
+- 🔵 **en\conditions\hip\hip-pointer.html** Medical page missing source/reference section
+- 🔵 **en\conditions\hip\sports-injuries-hip.html** Medical page missing source/reference section
+- 🔵 **en\conditions\jaw\bruxism.html** Medical page missing source/reference section
+- 🔵 **en\conditions\jaw\clicking-locking-joint-problems.html** Medical page missing source/reference section
+- 🔵 **en\conditions\jaw\jaw-headache.html** Medical page missing source/reference section
+- 🔵 **en\conditions\knee\acl-injury.html** Medical page missing source/reference section
+- 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** Medical page missing source/reference section
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** Medical page missing source/reference section
+- 🔵 **en\conditions\knee\meniscus-injury.html** Medical page missing source/reference section
+- 🔵 **en\conditions\knee\pcl-injury.html** Medical page missing source/reference section
+- 🔵 **en\conditions\knee\pes-anserine-bursitis.html** Medical page missing source/reference section
+- 🔵 **en\conditions\knee\popliteus-syndrome.html** Medical page missing source/reference section
+- 🔵 **en\conditions\knee\prepatellar-bursitis.html** Medical page missing source/reference section
+- 🔵 **en\conditions\knee\shin-splints.html** Medical page missing source/reference section
+- 🔵 **en\conditions\foot\hallux-valgus.html** Medical page missing source/reference section
+- 🟡 **en\conditions\thoracic\scheuermanns-disease.html** Norwegian word in EN page: "nakke"
+- 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** Medical page missing source/reference section
+- 🔵 **en\conditions\dizziness\bppv\posterior-canal.html** Medical page missing source/reference section
+- 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** Medical page missing source/reference section
+- 🔵 **en\conditions\dizziness\menieres-disease.html** Medical page missing source/reference section
+- 🔵 **en\conditions\dizziness\post-concussion.html** Medical page missing source/reference section
+- 🔵 **en\conditions\dizziness\pots-syndrome.html** Medical page missing source/reference section
+- 🔵 **en\conditions\dizziness\pppd-chronic-dizziness.html** Medical page missing source/reference section
+- 🔵 **en\conditions\dizziness\vestibular-hypofunction.html** Medical page missing source/reference section
+- 🔵 **en\conditions\dizziness\vestibular-migraine.html** Medical page missing source/reference section
+- 🔵 **en\conditions\dizziness\vestibular-neuritis.html** Medical page missing source/reference section
+- 🔵 **en\blog\index.html** Low word count: 126 (<300)
+- 🔵 **en\prices.html** Low word count: 241 (<300)
+- 🔵 **en\404.html** Low word count: 89 (<300)
+- 🔵 **en\conditions.html** Low word count: 150 (<300)
+- 🔵 **en\contact.html** Low word count: 172 (<300)
+- 🔵 **en\services.html** Low word count: 143 (<300)
+
+### Hreflang & Language
+
+Critical: 0 | Warnings: 1 | Info: 0
+
+- 🟡 **plager\korsrygg\nociplastisk-smerte.html** Missing hreflang="en"
+
+### Meta Tags
+
+Critical: 0 | Warnings: 221 | Info: 249
+
+- 🟡 **priser.html** Title too long (72 chars)
+- 🟡 **services.html** Description too long (161 chars)
+- 🟡 **plager.html** Title too long (72 chars)
+- 🟡 **plager.html** Description too long (168 chars)
+- 🟡 **404.html** Missing canonical link
+- 🔵 **404.html** Missing og:image
+- 🟡 **index.html** Description too long (161 chars)
+- 🟡 **akutt-svimmelhet-helg.html** Title too long (78 chars)
+- 🟡 **akutt-svimmelhet-helg.html** Description too long (161 chars)
+- 🟡 **akutt-behandling.html** Title too long (80 chars)
+- 🟡 **personvern.html** Description too long (161 chars)
+- 🟡 **blogg\nakkesmerter-gravid.html** Title too long (71 chars)
+- 🔵 **blogg\nakkesmerter-gravid.html** Missing og:image
+- 🔵 **blogg\eldre-svimmelhet-fallrisiko.html** Missing og:image
+- 🟡 **blogg\piriformissyndrom-falsk-isjias.html** Title too long (83 chars)
+- 🟡 **blogg\kiropraktor-vs-fysioterapeut.html** Title too long (74 chars)
+- 🔵 **blogg\kiropraktor-vs-fysioterapeut.html** Missing og:image
+- 🟡 **blogg\l4-l5-prolaps.html** Title too long (78 chars)
+- 🟡 **blogg\svimmel-og-kvalm.html** Title too long (87 chars)
+- 🟡 **blogg\svimmelhet-behandling.html** Title too long (73 chars)
+- 🔵 **blogg\sentral-svimmelhet.html** Missing og:image
+- 🔵 **blogg\kjeve-nakke-svimmelhet.html** Missing og:image
+- 🟡 **blogg\diskogen-smerte.html** Title too long (76 chars)
+- 🟡 **blogg\ovelser-isjias.html** Title too long (83 chars)
+- 🔵 **blogg\ovelser-isjias.html** Missing og:image
+- 🔵 **blogg\leve-med-svimmelhet.html** Missing og:image
+- 🔵 **blogg\tmd-ibs-mage-kjeve.html** Missing og:image
+- 🟡 **blogg\svimmelhet-ikke-bppv.html** Title too long (86 chars)
+- 🔵 **blogg\svimmelhet-ikke-bppv.html** Missing og:image
+- 🟡 **blogg\subtil-krystallsyke.html** Title too long (74 chars)
+- 🔵 **blogg\subtil-krystallsyke.html** Missing og:image
+- 🟡 **blogg\musikere-kjevesmerter.html** Title too long (80 chars)
+- 🔵 **blogg\musikere-kjevesmerter.html** Missing og:image
+- 🟡 **blogg\facettleddssyndrom.html** Title too long (78 chars)
+- 🔵 **blogg\facettleddssyndrom.html** Missing og:image
+- 🔵 **blogg\graviditet-kjevesmerter.html** Missing og:image
+- 🔵 **blogg\bittfeil-myter-fakta.html** Missing og:image
+- 🟡 **blogg\l5-s1-prolaps.html** Title too long (78 chars)
+- 🔵 **blogg\kampsport-kjeveskader.html** Missing og:image
+- 🟡 **blogg\svimmelhet-myter.html** Title too long (79 chars)
+- 🔵 **blogg\svimmelhet-myter.html** Missing og:image
+- 🟡 **blogg\svimmel-naar-du-staar-opp.html** Title too long (76 chars)
+- 🔵 **blogg\svimmel-naar-du-staar-opp.html** Missing og:image
+- 🟡 **blogg\styrkeovelser-korsrygg.html** Title too long (76 chars)
+- 🔵 **blogg\styrkeovelser-korsrygg.html** Missing og:image
+- 🟡 **blogg\triggerpunkter-nakken.html** Title too long (75 chars)
+- 🔵 **blogg\triggerpunkter-nakken.html** Missing og:image
+- 🔵 **blogg\stress-kjevesmerter.html** Missing og:image
+- 🟡 **blogg\hjernerystelse-idrett.html** Title too long (73 chars)
+- 🔵 **blogg\hjernerystelse-idrett.html** Missing og:image
+- 🟡 **blogg\svimmel-i-senga.html** Title too long (84 chars)
+- 🔵 **blogg\svimmel-i-senga.html** Missing og:image
+- 🔵 **blogg\svimmelhet-stress-angst.html** Missing og:image
+- 🟡 **blogg\kjeveovelser-hjemme.html** Title too long (72 chars)
+- 🔵 **blogg\kjeveovelser-hjemme.html** Missing og:image
+- 🔵 **blogg\tekstnakke-kjevesmerter.html** Missing og:image
+- 🟡 **blogg\nummenhet-fingre-nakke-hand.html** Title too long (74 chars)
+- 🔵 **blogg\nummenhet-fingre-nakke-hand.html** Missing og:image
+- 🟡 **blogg\hypermobilitet-eds-kjeve.html** Title too long (76 chars)
+- 🔵 **blogg\hypermobilitet-eds-kjeve.html** Missing og:image
+- 🔵 **blogg\kjevesmerter-barn-ungdom.html** Missing og:image
+- 🟡 **blogg\mr-bildediagnostikk-ryggsmerte.html** Title too long (87 chars)
+- 🔵 **blogg\mr-bildediagnostikk-ryggsmerte.html** Missing og:image
+- 🟡 **blogg\muskelsmerte-vs-nervesmerte.html** Title too long (75 chars)
+- 🔵 **blogg\muskelsmerte-vs-nervesmerte.html** Missing og:image
+- 🔵 **blogg\stressnakke-triggerpunkter.html** Missing og:image
+- 🔵 **blogg\tekstnakke-mobilnakke.html** Missing og:image
+- 🟡 **blogg\adhd-autisme-kjevesmerter.html** Title too long (77 chars)
+- 🔵 **blogg\adhd-autisme-kjevesmerter.html** Missing og:image
+- 🟡 **blogg\akutt-ryggsmerte-selvhjelp.html** Title too long (73 chars)
+- 🔵 **blogg\akutt-ryggsmerte-selvhjelp.html** Missing og:image
+- 🟡 **blogg\botox-vs-manuell-behandling-kjeve.html** Title too long (92 chars)
+- 🔵 **blogg\botox-vs-manuell-behandling-kjeve.html** Missing og:image
+- 🟡 **blogg\isjias-prolaps-hekseskudd-forskjell.html** Title too long (85 chars)
+- 🟡 **faq\ryggsmerter-faq.html** Title too long (72 chars)
+- 🟡 **faq\arm-pain-faq.html** Title too long (75 chars)
+- 🟡 **faq\korsryggsmerter-faq.html** Title too long (80 chars)
+- 🟡 **faq\brystryggsmerter-faq.html** Title too long (82 chars)
+- 🟡 **faq\brystryggsmerter-faq.html** Description too long (168 chars)
+- 🟡 **faq\knee-pain-faq.html** Title too long (77 chars)
+- 🟡 **faq\jaw-pain-faq.html** Title too long (83 chars)
+- 🟡 **faq\hip-pain-faq.html** Title too long (75 chars)
+- 🟡 **faq\dizziness-faq.html** Title too long (77 chars)
+- 🟡 **faq\neck-pain-faq.html** Title too long (77 chars)
+- 🟡 **faq\foot-pain-faq.html** Title too long (77 chars)
+- 🟡 **faq\hoftesmerter-faq.html** Title too long (74 chars)
+- 🟡 **faq\headache-faq.html** Title too long (76 chars)
+- 🟡 **faq\chest-pain-faq.html** Title too long (79 chars)
+- 🟡 **faq\chest-pain-faq.html** Description too long (171 chars)
+- 🟡 **faq\nakkesmerter-faq.html** Title too long (74 chars)
+- 🟡 **faq\shoulder-pain-faq.html** Title too long (85 chars)
+- 🟡 **faq\back-pain-faq.html** Title too long (77 chars)
+- 🟡 **faq\kjevesmerter-faq.html** Title too long (81 chars)
+- 🟡 **faq\skuldersmerter-faq.html** Title too long (78 chars)
+- 🟡 **faq\lower-back-pain-faq.html** Title too long (89 chars)
+- 🟡 **faq\lower-back-pain-faq.html** Description too long (164 chars)
+- 🟡 **faq\hodepine-faq.html** Title too long (77 chars)
+- 🟡 **plager\nakkesmerter.html** Title too long (73 chars)
+- 🟡 **plager\kjevesmerte.html** Title too long (86 chars)
+- 🔵 **plager\idrettsskader.html** Missing og:image
+- 🟡 **plager\brystryggsmerter.html** Title too long (74 chars)
+- 🟡 **plager\brystryggsmerter.html** Description too long (165 chars)
+- 🟡 **plager\hodepine.html** Title too long (80 chars)
+- 🟡 **plager\hofte-og-bekkensmerter.html** Title too long (72 chars)
+- 🔵 **plager\hofte\hip-pointer.html** Missing og:image
+- 🔵 **plager\hofte\bursitt-myte.html** Missing og:image
+- 🔵 **plager\hofte\iliopsoas-tendinopati.html** Missing og:image
+- 🔵 **plager\hofte\rygg-hofte-isjias.html** Missing og:image
+- 🟡 **plager\hofte\stressbrudd-hofte.html** Title too long (80 chars)
+- 🔵 **plager\hofte\stressbrudd-hofte.html** Missing og:image
+- 🔵 **plager\hofte\labrum-skade.html** Missing og:image
+- 🔵 **plager\hofte\meralgia-paresthetica.html** Missing og:image
+- 🟡 **plager\hofte\idrettsskader-hofte.html** Title too long (71 chars)
+- 🟡 **plager\hofte\idrettsskader-hofte.html** Description too long (163 chars)
+- 🔵 **plager\hofte\idrettsskader-hofte.html** Missing og:image
+- 🔵 **plager\hofte\fai-hofteklem.html** Missing og:image
+- 🟡 **plager\hofte\snapping-hip.html** Title too long (72 chars)
+- 🔵 **plager\hofte\snapping-hip.html** Missing og:image
+- 🟡 **plager\hofte\athletic-pubalgia-lyskebrokk.html** Title too long (99 chars)
+- 🟡 **plager\hofte\athletic-pubalgia-lyskebrokk.html** Description too long (166 chars)
+- 🔵 **plager\hofte\athletic-pubalgia-lyskebrokk.html** Missing og:image
+- 🔵 **plager\hofte\gtps-gluteal-tendinopati.html** Missing og:image
+- 🔵 **plager\hofte\bekkenleddsmerter-graviditet.html** Missing og:image
+- 🔵 **plager\hofte\osteitis-pubis.html** Missing og:image
+- 🟡 **plager\hofte\proksimal-hamstringtendinopati.html** Title too long (79 chars)
+- 🔵 **plager\hofte\proksimal-hamstringtendinopati.html** Missing og:image
+- 🟡 **plager\hofte\vondt-i-hoften.html** Title too long (72 chars)
+- 🔵 **plager\hofte\si-ledd-bekkenproblemer.html** Missing og:image
+- 🟡 **plager\hofte\triggerpunkter-hofte-bekken.html** Title too long (72 chars)
+- 🟡 **plager\hofte\triggerpunkter-hofte-bekken.html** Description too long (168 chars)
+- 🔵 **plager\hofte\triggerpunkter-hofte-bekken.html** Missing og:image
+- 🟡 **plager\fot\stressfraktur-fot.html** Title too long (84 chars)
+- 🟡 **plager\fot\stressfraktur-fot.html** Description too long (169 chars)
+- 🟡 **plager\fot\mortons-nevrom.html** Description too short (30 chars)
+- 🟡 **plager\fot\metatarsalgi.html** Description too long (163 chars)
+- 🔵 **plager\fot\metatarsalgi.html** Missing og:image
+- 🟡 **plager\fot\plantar-fasciopati.html** Description too long (162 chars)
+- 🟡 **plager\fot\severs-syndrom.html** Title too long (73 chars)
+- 🟡 **plager\fot\severs-syndrom.html** Description too long (167 chars)
+- 🟡 **plager\fot\hallux-valgus.html** Title too long (80 chars)
+- 🟡 **plager\fot\hallux-valgus.html** Description too long (174 chars)
+- 🟡 **plager\fot\ankelforstuinger.html** Title too long (75 chars)
+- 🟡 **plager\fot\ankelinstabilitet.html** Title too long (77 chars)
+- 🔵 **plager\fot\ankelinstabilitet.html** Missing og:image
+- 🟡 **plager\fot\hallux-rigidus.html** Title too long (91 chars)
+- 🟡 **plager\fot\hallux-rigidus.html** Description too long (174 chars)
+- 🟡 **plager\fot\tibialis-posterior-tendinopati.html** Title too long (91 chars)
+- 🟡 **plager\fot\tibialis-posterior-tendinopati.html** Description too long (169 chars)
+- 🟡 **plager\fot\fottrening.html** Title too long (79 chars)
+- 🟡 **plager\fot\minimalistsko.html** Title too long (82 chars)
+- 🟡 **plager\fot\overpronasjon.html** Title too long (72 chars)
+- 🟡 **plager\fot\svake-fotter.html** Title too long (71 chars)
+- 🟡 **plager\skulder\ac-ledd-artrose.html** Title too long (73 chars)
+- 🟡 **plager\skulder\kortison-skulder.html** Title too long (87 chars)
+- 🟡 **plager\skulder\ergonomi-skulder.html** Title too long (91 chars)
+- 🟡 **plager\skulder\klikking-skulder.html** Title too long (84 chars)
+- 🟡 **plager\skulder\biceps-tendinopati.html** Title too long (76 chars)
+- 🟡 **plager\skulder\tos-sovende-arm.html** Title too long (79 chars)
+- 🟡 **plager\skulder\kasterskulder.html** Title too long (74 chars)
+- 🟡 **plager\skulder\skulderartrose.html** Title too long (72 chars)
+- 🟡 **plager\skulder\sovn-skuldersmerter.html** Title too long (82 chars)
+- 🔵 **plager\skulder\smerter-bak-skulder.html** Missing og:image
+- 🟡 **plager\hodepine\medikamentoverforbruk-hodepine.html** Title too long (85 chars)
+- 🟡 **plager\hodepine\hodepine-toppen.html** Title too long (74 chars)
+- 🟡 **plager\hodepine\hodepine-svimmelhet.html** Title too long (84 chars)
+- 🔵 **plager\hodepine\klasehodepine.html** Missing og:image
+- 🟡 **plager\hodepine\spenningshodepine.html** Title too long (71 chars)
+- 🔵 **plager\hodepine\vestibulaer-migrene.html** Missing og:image
+- 🟡 **plager\hodepine\bihule-migrene.html** Title too long (73 chars)
+- 🟡 **plager\hodepine\hormonhodepine.html** Title too long (85 chars)
+- 🔵 **plager\hodepine\nakkehodepine.html** Missing og:image
+- 🟡 **plager\nakke\kvalme.html** Title too long (74 chars)
+- 🟡 **plager\nakke\kvalme.html** Description too long (162 chars)
+- 🔵 **plager\nakke\kvalme.html** Missing og:image
+- 🔵 **plager\nakke\whiplash.html** Missing og:image
+- 🔵 **plager\nakke\stressnakke.html** Missing og:image
+- 🟡 **plager\nakke\knaser-nakke.html** Title too long (79 chars)
+- 🔵 **plager\nakke\knaser-nakke.html** Missing og:image
+- 🔵 **plager\nakke\nummenhet-fingre.html** Missing og:image
+- 🟡 **plager\nakke\c5-c6-prolaps.html** Title too long (75 chars)
+- 🟡 **plager\nakke\nakkeprolaps.html** Title too long (73 chars)
+- 🟡 **plager\nakke\torticollis.html** Title too long (79 chars)
+- 🟡 **plager\nakke\torticollis.html** Description too long (164 chars)
+- 🔵 **plager\nakke\torticollis.html** Missing og:image
+- 🟡 **plager\nakke\cervikal-foraminal-stenose.html** Title too long (73 chars)
+- 🔵 **plager\nakke\cervikal-foraminal-stenose.html** Missing og:image
+- 🟡 **plager\nakke\degenerative-forandringer.html** Title too long (78 chars)
+- 🔵 **plager\nakke\degenerative-forandringer.html** Missing og:image
+- 🟡 **plager\nakke\stiv-nakke-om-morgenen.html** Title too long (75 chars)
+- 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** Missing og:image
+- 🟡 **plager\nakke\nakkesleng-hodepine.html** Title too long (72 chars)
+- 🔵 **plager\nakke\nakkesleng-hodepine.html** Missing og:image
+- 🟡 **plager\nakke\triggerpunkter-nakke.html** Title too long (81 chars)
+- 🔵 **plager\nakke\triggerpunkter-nakke.html** Missing og:image
+- 🔵 **plager\nakke\rode-flagg-nakkesmerter.html** Missing og:image
+- 🔵 **plager\kjeve\bittfeil-myter.html** Missing og:image
+- 🟡 **plager\kjeve\eagle-syndrom.html** Title too long (89 chars)
+- 🟡 **plager\kjeve\glossopharyngeal-nevralgi.html** Title too long (71 chars)
+- 🔵 **plager\kjeve\ovelser-tmd.html** Missing og:image
+- 🟡 **plager\kjeve\icr-intern-carotis.html** Title too long (81 chars)
+- 🟡 **plager\kjeve\icr-intern-carotis.html** Description too long (164 chars)
+- 🔵 **plager\kjeve\icr-syndrom.html** Missing og:image
+- 🟡 **plager\kjeve\oresmerter-tinnitus.html** Title too long (84 chars)
+- 🔵 **plager\kjeve\oresmerter-tinnitus.html** Missing og:image
+- 🟡 **plager\kjeve\tanngnissing-bruksisme.html** Description too long (168 chars)
+- 🟡 **plager\kjeve\klikking-lasing-leddproblemer.html** Description too long (170 chars)
+- 🔵 **plager\kjeve\klikking-lasing-leddproblemer.html** Missing og:image
+- 🟡 **plager\kjeve\nakke-kjeve-sammenheng.html** Description too long (163 chars)
+- 🔵 **plager\kjeve\nakke-kjeve-sammenheng.html** Missing og:image
+- 🟡 **plager\kjeve\pifp-ansiktssmerte.html** Title too long (92 chars)
+- 🔵 **plager\kjeve\kjevehodepine.html** Missing og:image
+- 🟡 **plager\kne\loperkne.html** Title too long (78 chars)
+- 🟡 **plager\kne\pes-anserine-bursitt.html** Title too long (74 chars)
+- 🔵 **plager\kne\beinhinnebetennelse.html** Missing og:image
+- 🔵 **plager\kne\hopperkne.html** Missing og:image
+- 🟡 **plager\kne\prepatellar-bursitt.html** Title too long (85 chars)
+- 🔵 **plager\kne\iliotibial-band-syndrom.html** Missing og:image
+- 🟡 **plager\kne\knesmerte-fra-hoften.html** Title too long (74 chars)
+- 🟡 **plager\kne\pcl-skade.html** Title too long (76 chars)
+- 🔵 **plager\brystrygg\bh-stropp-syndrom.html** Missing og:image
+- 🟡 **plager\brystrygg\fibromyalgi-brystsmerter.html** Description too long (179 chars)
+- 🟡 **plager\brystrygg\pust-stress-rygg.html** Title too long (76 chars)
+- 🔵 **plager\brystrygg\osteoporose.html** Missing og:image
+- 🟡 **plager\brystrygg\stiv-rygg-idrett.html** Title too long (71 chars)
+- 🟡 **plager\brystrygg\kostokondritt.html** Title too long (71 chars)
+- 🟡 **plager\svimmelhet\scds.html** Title too long (84 chars)
+- 🔵 **plager\svimmelhet\scds.html** Missing og:image
+- 🟡 **plager\svimmelhet\vestibulaer-hypofunksjon.html** Description too long (164 chars)
+- 🔵 **plager\svimmelhet\vestibulaer-hypofunksjon.html** Missing og:image
+- 🟡 **plager\svimmelhet\nakkesvimmelhet.html** Title too long (71 chars)
+- 🔵 **plager\svimmelhet\nakkesvimmelhet.html** Missing og:image
+- 🔵 **plager\svimmelhet\menieres-sykdom.html** Missing og:image
+- 🟡 **plager\svimmelhet\mdds.html** Title too long (77 chars)
+- 🔵 **plager\svimmelhet\mdds.html** Missing og:image
+- 🟡 **plager\svimmelhet\whiplash-svimmelhet.html** Title too long (78 chars)
+- 🔵 **plager\svimmelhet\whiplash-svimmelhet.html** Missing og:image
+- 🟡 **plager\svimmelhet\krystallsyke-bppv.html** Title too long (72 chars)
+- 🔵 **plager\svimmelhet\krystallsyke-bppv.html** Missing og:image
+- 🟡 **plager\svimmelhet\vestibularisnevritt.html** Title too long (79 chars)
+- 🔵 **plager\svimmelhet\vestibularisnevritt.html** Missing og:image
+- 🟡 **plager\svimmelhet\post-hjernerystelse.html** Title too long (81 chars)
+- 🔵 **plager\svimmelhet\post-hjernerystelse.html** Missing og:image
+- 🔵 **plager\svimmelhet\vestibulaer-migrene.html** Missing og:image
+- 🟡 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** Description too long (163 chars)
+- 🔵 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** Missing og:image
+- 🔵 **plager\svimmelhet\krystallsyke\bakre-kanal.html** Missing og:image
+- 🔵 **plager\svimmelhet\krystallsyke\fremre-kanal.html** Missing og:image
+- 🔵 **plager\svimmelhet\krystallsyke\horisontal-kanal.html** Missing og:image
+- 🟡 **plager\svimmelhet\pots-syndrom.html** Title too long (75 chars)
+- 🔵 **plager\svimmelhet\pots-syndrom.html** Missing og:image
+- 🟡 **plager\albue-arm\musearm.html** Title too long (74 chars)
+- 🟡 **plager\albue-arm\musearm.html** Description too long (167 chars)
+- 🔵 **plager\albue-arm\musearm.html** Missing og:image
+- 🟡 **plager\albue-arm\tommelartrose.html** Title too long (74 chars)
+- 🔵 **plager\albue-arm\tommelartrose.html** Missing og:image
+- 🟡 **plager\albue-arm\triggerpunkter-arm.html** Title too long (77 chars)
+- 🟡 **plager\albue-arm\triggerpunkter-arm.html** Description too long (173 chars)
+- 🔵 **plager\albue-arm\triggerpunkter-arm.html** Missing og:image
+- 🟡 **plager\albue-arm\triggerfinger.html** Description too long (172 chars)
+- 🔵 **plager\albue-arm\triggerfinger.html** Missing og:image
+- 🟡 **plager\albue-arm\karpaltunnelsyndrom.html** Title too long (72 chars)
+- 🟡 **plager\albue-arm\karpaltunnelsyndrom.html** Description too long (162 chars)
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** Missing og:image
+- 🟡 **plager\albue-arm\golfalbue.html** Title too long (74 chars)
+- 🔵 **plager\albue-arm\golfalbue.html** Missing og:image
+- 🟡 **plager\albue-arm\kubitaltunnelsyndrom.html** Title too long (75 chars)
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** Missing og:image
+- 🟡 **plager\albue-arm\tennisalbue.html** Title too long (77 chars)
+- 🔵 **plager\albue-arm\tennisalbue.html** Missing og:image
+- 🔵 **plager\albue-arm\de-quervains.html** Missing og:image
+- 🟡 **plager\korsrygg\si-ledd.html** Title too long (73 chars)
+- 🔵 **plager\korsrygg\si-ledd.html** Missing og:image
+- 🟡 **plager\korsrygg\spondylolistese.html** Title too long (95 chars)
+- 🟡 **plager\korsrygg\bekhterevs-sykdom.html** Title too long (93 chars)
+- 🔵 **plager\korsrygg\graviditet.html** Missing og:image
+- 🟡 **plager\korsrygg\skiveprolaps.html** Title too long (85 chars)
+- 🔵 **plager\korsrygg\spinal-stenose.html** Missing og:image
+- 🟡 **plager\korsrygg\rode-flagg-ryggsmerter.html** Title too long (73 chars)
+- 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** Missing og:image
+- 🟡 **plager\korsrygg\hekseskudd.html** Title too long (80 chars)
+- 🟡 **plager\korsrygg\nociplastisk-smerte.html** Title too long (91 chars)
+- 🟡 **tjeneste\graston.html** Title too long (92 chars)
+- 🟡 **tjeneste\graston.html** Description too long (178 chars)
+- 🟡 **tjeneste\blotvevsteknikker.html** Title too long (78 chars)
+- 🟡 **tjeneste\blotvevsteknikker.html** Description too long (170 chars)
+- 🟡 **tjeneste\svimmelhet.html** Title too long (106 chars)
+- 🟡 **tjeneste\svimmelhet.html** Description too long (205 chars)
+- 🟡 **tjeneste\fasciemanipulasjon.html** Title too long (84 chars)
+- 🟡 **tjeneste\fasciemanipulasjon.html** Description too long (178 chars)
+- 🔵 **tjeneste\akutt-behandling.html** Missing og:image
+- 🟡 **tjeneste\rehabilitering.html** Title too long (85 chars)
+- 🟡 **tjeneste\rehabilitering.html** Description too long (203 chars)
+- 🔵 **tjeneste\rehabilitering.html** Missing og:image
+- 🟡 **tjeneste\dry-needling.html** Title too long (83 chars)
+- 🟡 **tjeneste\dry-needling.html** Description too long (188 chars)
+- 🟡 **tjeneste\forebyggende-behandling.html** Title too long (77 chars)
+- 🟡 **tjeneste\forebyggende-behandling.html** Description too long (165 chars)
+- 🔵 **tjeneste\forebyggende-behandling.html** Missing og:image
+- 🟡 **tjeneste\trykkbolge.html** Title too long (75 chars)
+- 🟡 **tjeneste\trykkbolge.html** Description too long (185 chars)
+- 🟡 **tjeneste\svimmelhet\balansesystemet.html** Title too long (93 chars)
+- 🟡 **tjeneste\svimmelhet\vestibular-rehabilitering.html** Title too long (76 chars)
+- 🟡 **tjeneste\svimmelhet\vestibular-rehabilitering.html** Description too long (161 chars)
+- 🟡 **tjeneste\svimmelhet\vng-undersokelse.html** Title too long (76 chars)
+- 🟡 **tjeneste\svimmelhet\vng-undersokelse.html** Description too long (162 chars)
+- 🟡 **en\conditions\knee-pain.html** Description too short (63 chars)
+- 🟡 **en\conditions\neck-pain.html** Description too short (31 chars)
+- 🔵 **en\conditions\hip\athletic-pubalgia.html** Missing og:image
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** Missing og:image
+- 🟡 **en\conditions\hip\bursitis-myth.html** Description too long (161 chars)
+- 🔵 **en\conditions\hip\bursitis-myth.html** Missing og:image
+- 🟡 **en\conditions\hip\fai-hip-impingement.html** Description too long (161 chars)
+- 🔵 **en\conditions\hip\fai-hip-impingement.html** Missing og:image
+- 🔵 **en\conditions\hip\gtps-gluteal-tendinopathy.html** Missing og:image
+- 🔵 **en\conditions\hip\hip-osteoarthritis.html** Missing og:image
+- 🔵 **en\conditions\hip\iliopsoas-tendinopathy.html** Missing og:image
+- 🔵 **en\conditions\hip\labrum-tear.html** Missing og:image
+- 🔵 **en\conditions\hip\meralgia-paresthetica.html** Missing og:image
+- 🔵 **en\conditions\hip\osteitis-pubis.html** Missing og:image
+- 🔵 **en\conditions\hip\pelvic-pain-pregnancy.html** Missing og:image
+- 🔵 **en\conditions\hip\proximal-hamstring-tendinopathy.html** Missing og:image
+- 🔵 **en\conditions\hip\si-joint-problems.html** Missing og:image
+- 🔵 **en\conditions\hip\snapping-hip.html** Missing og:image
+- 🔵 **en\conditions\hip\stress-fracture-hip.html** Missing og:image
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** Missing og:image
+- 🔵 **en\conditions\hip\hip-pointer.html** Missing og:image
+- 🔵 **en\conditions\hip\sports-injuries-hip.html** Missing og:image
+- 🔵 **en\conditions\neck\cervical-foraminal-stenosis.html** Missing og:image
+- 🔵 **en\conditions\neck\cracking-neck.html** Missing og:image
+- 🔵 **en\conditions\neck\degenerative-changes.html** Missing og:image
+- 🔵 **en\conditions\neck\finger-numbness.html** Missing og:image
+- 🔵 **en\conditions\neck\nausea-neck.html** Missing og:image
+- 🔵 **en\conditions\neck\neck-trigger-points.html** Missing og:image
+- 🔵 **en\conditions\neck\red-flags-neck-pain.html** Missing og:image
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** Missing og:image
+- 🔵 **en\conditions\neck\stress-neck.html** Missing og:image
+- 🔵 **en\conditions\neck\text-neck.html** Missing og:image
+- 🔵 **en\conditions\neck\torticollis.html** Missing og:image
+- 🔵 **en\conditions\neck\whiplash-headache.html** Missing og:image
+- 🔵 **en\conditions\neck\whiplash.html** Missing og:image
+- 🔵 **en\conditions\jaw\bite-myths.html** Missing og:image
+- 🟡 **en\conditions\jaw\bruxism.html** Description too long (162 chars)
+- 🔵 **en\conditions\jaw\bruxism.html** Missing og:image
+- 🟡 **en\conditions\jaw\clicking-locking-joint-problems.html** Description too short (64 chars)
+- 🔵 **en\conditions\jaw\clicking-locking-joint-problems.html** Missing og:image
+- 🔵 **en\conditions\jaw\ear-pain-tinnitus.html** Missing og:image
+- 🔵 **en\conditions\jaw\icr-syndrome.html** Missing og:image
+- 🔵 **en\conditions\jaw\jaw-headache.html** Missing og:image
+- 🔵 **en\conditions\jaw\neck-jaw-connection.html** Missing og:image
+- 🔵 **en\conditions\jaw\tmd-exercises.html** Missing og:image
+- 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** Missing og:image
+- 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** Missing og:image
+- 🟡 **en\conditions\elbow-arm\de-quervains.html** Description too short (29 chars)
+- 🔵 **en\conditions\elbow-arm\de-quervains.html** Missing og:image
+- 🟡 **en\conditions\elbow-arm\golfers-elbow.html** Description too short (24 chars)
+- 🔵 **en\conditions\elbow-arm\golfers-elbow.html** Missing og:image
+- 🔵 **en\conditions\elbow-arm\mouse-arm.html** Missing og:image
+- 🔵 **en\conditions\elbow-arm\tennis-elbow.html** Missing og:image
+- 🔵 **en\conditions\elbow-arm\thumb-arthritis.html** Missing og:image
+- 🔵 **en\conditions\elbow-arm\trigger-finger.html** Missing og:image
+- 🔵 **en\conditions\elbow-arm\trigger-points-arm.html** Missing og:image
+- 🔵 **en\conditions\knee\acl-injury.html** Missing og:image
+- 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** Missing og:image
+- 🟡 **en\conditions\knee\jumpers-knee.html** Description too short (6 chars)
+- 🔵 **en\conditions\knee\jumpers-knee.html** Missing og:image
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** Missing og:image
+- 🟡 **en\conditions\knee\knee-pain-from-hip.html** Description too short (30 chars)
+- 🔵 **en\conditions\knee\knee-pain-from-hip.html** Missing og:image
+- 🟡 **en\conditions\knee\meniscus-injury.html** Description too short (45 chars)
+- 🔵 **en\conditions\knee\meniscus-injury.html** Missing og:image
+- 🔵 **en\conditions\knee\pcl-injury.html** Missing og:image
+- 🔵 **en\conditions\knee\pes-anserine-bursitis.html** Missing og:image
+- 🔵 **en\conditions\knee\popliteus-syndrome.html** Missing og:image
+- 🔵 **en\conditions\knee\prepatellar-bursitis.html** Missing og:image
+- 🟡 **en\conditions\knee\runners-knee.html** Description too short (6 chars)
+- 🔵 **en\conditions\knee\shin-splints.html** Missing og:image
+- 🔵 **en\conditions\foot\ankle-instability.html** Missing og:image
+- 🟡 **en\conditions\foot\foot-exercises.html** Title too long (73 chars)
+- 🔵 **en\conditions\foot\metatarsalgia.html** Missing og:image
+- 🟡 **en\conditions\foot\minimalist-shoes.html** Title too long (87 chars)
+- 🟡 **en\conditions\foot\mortons-neuroma.html** Description too short (29 chars)
+- 🟡 **en\conditions\foot\severs-disease.html** Description too short (44 chars)
+- 🟡 **en\conditions\foot\weak-feet.html** Title too long (76 chars)
+- 🔵 **en\conditions\headache\cervicogenic-headache.html** Missing og:image
+- 🔵 **en\conditions\headache\cluster-headache.html** Missing og:image
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** Missing og:image
+- 🟡 **en\conditions\thoracic\costochondritis.html** Description too short (15 chars)
+- 🔵 **en\conditions\thoracic\osteoporosis.html** Missing og:image
+- 🟡 **en\conditions\thoracic\scheuermanns-disease.html** Description too short (11 chars)
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** Missing og:image
+- 🔵 **en\conditions\dizziness\bppv\anterior-canal.html** Missing og:image
+- 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** Missing og:image
+- 🔵 **en\conditions\dizziness\bppv\posterior-canal.html** Missing og:image
+- 🔵 **en\conditions\dizziness\bppv-crystal-disease.html** Missing og:image
+- 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** Missing og:image
+- 🔵 **en\conditions\dizziness\mdds.html** Missing og:image
+- 🟡 **en\conditions\dizziness\menieres-disease.html** Description too short (7 chars)
+- 🔵 **en\conditions\dizziness\menieres-disease.html** Missing og:image
+- 🔵 **en\conditions\dizziness\post-concussion.html** Missing og:image
+- 🔵 **en\conditions\dizziness\pots-syndrome.html** Missing og:image
+- 🔵 **en\conditions\dizziness\pppd-chronic-dizziness.html** Missing og:image
+- 🟡 **en\conditions\dizziness\scds.html** Description too long (161 chars)
+- 🔵 **en\conditions\dizziness\scds.html** Missing og:image
+- 🔵 **en\conditions\dizziness\vestibular-hypofunction.html** Missing og:image
+- 🔵 **en\conditions\dizziness\vestibular-migraine.html** Missing og:image
+- 🔵 **en\conditions\dizziness\vestibular-neuritis.html** Missing og:image
+- 🔵 **en\conditions\dizziness\whiplash-dizziness.html** Missing og:image
+- 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** Missing og:image
+- 🟡 **en\conditions\shoulder\throwers-shoulder.html** Description too short (7 chars)
+- 🔵 **en\conditions\lower-back\red-flags-back-pain.html** Missing og:image
+- 🔵 **en\conditions\lower-back\si-joint.html** Missing og:image
+- 🟡 **en\conditions\lower-back\spinal-stenosis.html** Description too short (59 chars)
+- 🔵 **en\conditions\lower-back\spinal-stenosis.html** Missing og:image
+- 🔵 **en\conditions\lower-back\pregnancy-back-pain.html** Missing og:image
+- 🟡 **en\services\acute-treatment.html** Title too long (75 chars)
+- 🔵 **en\services\acute-treatment.html** Missing og:image
+- 🔵 **en\services\fascia-manipulation.html** Missing og:image
+- 🔵 **en\services\graston.html** Missing og:image
+- 🟡 **en\services\preventive-treatment.html** Title too long (76 chars)
+- 🟡 **en\services\preventive-treatment.html** Description too long (163 chars)
+- 🔵 **en\services\preventive-treatment.html** Missing og:image
+- 🔵 **en\services\soft-tissue.html** Missing og:image
+- 🔵 **en\services\rehabilitation.html** Missing og:image
+- 🟡 **en\blog\acute-back-pain-self-help.html** Description too short (25 chars)
+- 🔵 **en\blog\acute-back-pain-self-help.html** Missing og:image
+- 🔵 **en\blog\adhd-autism-jaw-pain.html** Missing og:image
+- 🔵 **en\blog\bite-problems-myths-facts.html** Missing og:image
+- 🔵 **en\blog\botox-vs-manual-treatment-jaw.html** Missing og:image
+- 🔵 **en\blog\hypermobility-eds-jaw.html** Missing og:image
+- 🔵 **en\blog\index.html** Missing og:image
+- 🔵 **en\blog\jaw-exercises-home.html** Missing og:image
+- 🔵 **en\blog\jaw-pain-children-adolescents.html** Missing og:image
+- 🟡 **en\blog\martial-arts-jaw-injuries.html** Description too long (161 chars)
+- 🔵 **en\blog\martial-arts-jaw-injuries.html** Missing og:image
+- 🔵 **en\blog\musicians-jaw-pain.html** Missing og:image
+- 🔵 **en\blog\pregnancy-jaw-pain.html** Missing og:image
+- 🔵 **en\blog\stress-jaw-pain.html** Missing og:image
+- 🔵 **en\blog\text-neck-jaw-pain.html** Missing og:image
+- 🔵 **en\blog\tmd-ibs-gut-jaw.html** Missing og:image
+- 🔵 **en\blog\text-neck-phone-neck.html** Missing og:image
+- 🔵 **en\blog\trigger-points-neck.html** Missing og:image
+- 🔵 **en\blog\neck-pain-pregnancy.html** Missing og:image
+- 🔵 **en\blog\numbness-fingers-neck-hand.html** Missing og:image
+- 🔵 **en\blog\stress-neck-trigger-points.html** Missing og:image
+- 🔵 **en\blog\strengthening-exercises-lower-back.html** Missing og:image
+- 🔵 **en\blog\subtle-bppv.html** Missing og:image
+- 🔵 **en\blog\central-dizziness.html** Missing og:image
+- 🔵 **en\blog\chiropractor-vs-physiotherapist.html** Missing og:image
+- 🔵 **en\blog\concussion-sports.html** Missing og:image
+- 🔵 **en\blog\dizziness-myths.html** Missing og:image
+- 🔵 **en\blog\dizziness-not-bppv.html** Missing og:image
+- 🔵 **en\blog\dizziness-stress-anxiety.html** Missing og:image
+- 🟡 **en\blog\dizziness-treatment.html** Description too short (51 chars)
+- 🔵 **en\blog\dizzy-and-nauseous.html** Missing og:image
+- 🔵 **en\blog\dizzy-in-bed.html** Missing og:image
+- 🔵 **en\blog\dizzy-when-standing-up.html** Missing og:image
+- 🔵 **en\blog\elderly-dizziness-fall-risk.html** Missing og:image
+- 🔵 **en\blog\exercises-sciatica.html** Missing og:image
+- 🔵 **en\blog\facet-joint-syndrome.html** Missing og:image
+- 🔵 **en\blog\jaw-neck-dizziness.html** Missing og:image
+- 🔵 **en\blog\living-with-dizziness.html** Missing og:image
+- 🟡 **en\blog\mri-imaging-back-pain.html** Title too long (72 chars)
+- 🔵 **en\blog\mri-imaging-back-pain.html** Missing og:image
+- 🔵 **en\blog\muscle-pain-vs-nerve-pain.html** Missing og:image
+- 🟡 **en\404.html** Description too short (18 chars)
+- 🔵 **en\404.html** Missing og:image
+- 🔵 **en\emergency-dizziness.html** Missing og:image
+- 🔵 **en\emergency-treatment.html** Missing og:image
+- 🔵 **en\emergency.html** Missing og:image
+- 🔵 **en\new-patients.html** Missing og:image
+
+### Performance
+
+Critical: 0 | Warnings: 42 | Info: 3344
+
+- 🔵 **priser.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **priser.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **priser.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **contact.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **contact.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **contact.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **services.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **services.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **services.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **404.html** Image missing loading attribute: logo-header.webp
+- 🔵 **404.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **404.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **404.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **index.html** Image missing loading attribute: logo-header.webp
+- 🔵 **index.html** Image missing loading attribute: meg.webp
+- 🔵 **index.html** Image missing decoding="async": meg.webp
+- 🔵 **index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **akutt-svimmelhet-helg.html** Image missing loading attribute: logo-header.webp
+- 🔵 **akutt-svimmelhet-helg.html** Image missing loading attribute: meg.webp
+- 🔵 **akutt-svimmelhet-helg.html** Image missing decoding="async": meg.webp
+- 🔵 **akutt-svimmelhet-helg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **akutt-svimmelhet-helg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **akutt-svimmelhet-helg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **akutt-svimmelhet-helg.html** CSS missing version hash: hub-article.css
+- 🔵 **privacy-policy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **privacy-policy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **privacy-policy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **akutt-behandling.html** Image missing loading attribute: logo-header.webp
+- 🔵 **akutt-behandling.html** Image missing loading attribute: meg.webp
+- 🔵 **akutt-behandling.html** Image missing decoding="async": meg.webp
+- 🔵 **akutt-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **akutt-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **akutt-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **akutt-behandling.html** CSS missing version hash: hub-article.css
+- 🔵 **personvern.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **personvern.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **personvern.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **nye-pasienter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **nye-pasienter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **nye-pasienter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq.html** CSS missing version hash: hub-article.css
+- 🔵 **faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **about.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **about.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **about.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **blogg\index.html** Inline CSS 3699 chars (>2000)
+- 🟡 **blogg\index.html** 9 external scripts (>8)
+- 🔵 **blogg\index.html** Image missing loading attribute: instagramlogo.png
+- 🔵 **blogg\index.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **blogg\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\nakkesmerter-gravid.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\nakkesmerter-gravid.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\nakkesmerter-gravid.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\nakkesmerter-gravid.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\nakkesmerter-gravid.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\nakkesmerter-gravid.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\nakkesmerter-gravid.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\eldre-svimmelhet-fallrisiko.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\eldre-svimmelhet-fallrisiko.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\eldre-svimmelhet-fallrisiko.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\eldre-svimmelhet-fallrisiko.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\eldre-svimmelhet-fallrisiko.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\eldre-svimmelhet-fallrisiko.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\eldre-svimmelhet-fallrisiko.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\piriformissyndrom-falsk-isjias.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\piriformissyndrom-falsk-isjias.html** Image missing decoding="async": Piriformis Syndrome False Sciatica Explained.webp
+- 🔵 **blogg\piriformissyndrom-falsk-isjias.html** Image missing decoding="async": piriformis-syndrome-false-sciatica-explained.webp
+- 🔵 **blogg\piriformissyndrom-falsk-isjias.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\piriformissyndrom-falsk-isjias.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\piriformissyndrom-falsk-isjias.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\piriformissyndrom-falsk-isjias.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\piriformissyndrom-falsk-isjias.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\piriformissyndrom-falsk-isjias.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\kiropraktor-vs-fysioterapeut.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\kiropraktor-vs-fysioterapeut.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\kiropraktor-vs-fysioterapeut.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\kiropraktor-vs-fysioterapeut.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kiropraktor-vs-fysioterapeut.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kiropraktor-vs-fysioterapeut.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kiropraktor-vs-fysioterapeut.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\l4-l5-prolaps.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\l4-l5-prolaps.html** Image missing decoding="async": Guide to L4-L5 Disc Herniation.webp
+- 🔵 **blogg\l4-l5-prolaps.html** Image missing decoding="async": guide-to-l4-l5-disc-herniation.webp
+- 🔵 **blogg\l4-l5-prolaps.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\l4-l5-prolaps.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\l4-l5-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\l4-l5-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\l4-l5-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\l4-l5-prolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\svimmel-og-kvalm.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\svimmel-og-kvalm.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\svimmel-og-kvalm.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\svimmel-og-kvalm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmel-og-kvalm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmel-og-kvalm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmel-og-kvalm.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\svimmelhet-behandling.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\svimmelhet-behandling.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\svimmelhet-behandling.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\svimmelhet-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-behandling.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\sentral-svimmelhet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\sentral-svimmelhet.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\sentral-svimmelhet.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\sentral-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\sentral-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\sentral-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\sentral-svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\kjeve-nakke-svimmelhet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\kjeve-nakke-svimmelhet.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\kjeve-nakke-svimmelhet.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\kjeve-nakke-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kjeve-nakke-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kjeve-nakke-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kjeve-nakke-svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\diskogen-smerte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\diskogen-smerte.html** Image missing decoding="async": Discogenic Pain Sitting and Movement.webp
+- 🔵 **blogg\diskogen-smerte.html** Image missing decoding="async": discogenic-pain-sitting-and-movement.webp
+- 🔵 **blogg\diskogen-smerte.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\diskogen-smerte.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\diskogen-smerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\diskogen-smerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\diskogen-smerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\diskogen-smerte.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\ovelser-isjias.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\ovelser-isjias.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\ovelser-isjias.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\ovelser-isjias.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\ovelser-isjias.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\ovelser-isjias.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\ovelser-isjias.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\leve-med-svimmelhet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\leve-med-svimmelhet.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\leve-med-svimmelhet.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\leve-med-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\leve-med-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\leve-med-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\leve-med-svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\tmd-ibs-mage-kjeve.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\tmd-ibs-mage-kjeve.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\tmd-ibs-mage-kjeve.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\tmd-ibs-mage-kjeve.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\tmd-ibs-mage-kjeve.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\tmd-ibs-mage-kjeve.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\tmd-ibs-mage-kjeve.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\svimmelhet-ikke-bppv.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\svimmelhet-ikke-bppv.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\svimmelhet-ikke-bppv.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\svimmelhet-ikke-bppv.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-ikke-bppv.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-ikke-bppv.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-ikke-bppv.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\subtil-krystallsyke.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\subtil-krystallsyke.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\subtil-krystallsyke.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\subtil-krystallsyke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\subtil-krystallsyke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\subtil-krystallsyke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\subtil-krystallsyke.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\musikere-kjevesmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\musikere-kjevesmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\musikere-kjevesmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\musikere-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\musikere-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\musikere-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\musikere-kjevesmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\facettleddssyndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\facettleddssyndrom.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\facettleddssyndrom.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\facettleddssyndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\facettleddssyndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\facettleddssyndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\facettleddssyndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\graviditet-kjevesmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\graviditet-kjevesmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\graviditet-kjevesmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\graviditet-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\graviditet-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\graviditet-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\graviditet-kjevesmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\bittfeil-myter-fakta.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\bittfeil-myter-fakta.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\bittfeil-myter-fakta.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\bittfeil-myter-fakta.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\bittfeil-myter-fakta.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\bittfeil-myter-fakta.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\bittfeil-myter-fakta.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\l5-s1-prolaps.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\l5-s1-prolaps.html** Image missing decoding="async": L5-S1 Disc Herniation Symptoms and Recovery.webp
+- 🔵 **blogg\l5-s1-prolaps.html** Image missing decoding="async": l5-s1-disc-herniation-symptoms-and-recovery.webp
+- 🔵 **blogg\l5-s1-prolaps.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\l5-s1-prolaps.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\l5-s1-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\l5-s1-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\l5-s1-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\l5-s1-prolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\kampsport-kjeveskader.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\kampsport-kjeveskader.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\kampsport-kjeveskader.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\kampsport-kjeveskader.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kampsport-kjeveskader.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kampsport-kjeveskader.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kampsport-kjeveskader.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\svimmelhet-myter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\svimmelhet-myter.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\svimmelhet-myter.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\svimmelhet-myter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-myter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-myter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-myter.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\svimmel-naar-du-staar-opp.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\svimmel-naar-du-staar-opp.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\svimmel-naar-du-staar-opp.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\svimmel-naar-du-staar-opp.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmel-naar-du-staar-opp.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmel-naar-du-staar-opp.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmel-naar-du-staar-opp.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\styrkeovelser-korsrygg.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\styrkeovelser-korsrygg.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\styrkeovelser-korsrygg.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\styrkeovelser-korsrygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\styrkeovelser-korsrygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\styrkeovelser-korsrygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\styrkeovelser-korsrygg.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\triggerpunkter-nakken.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\triggerpunkter-nakken.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\triggerpunkter-nakken.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\triggerpunkter-nakken.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\triggerpunkter-nakken.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\triggerpunkter-nakken.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\triggerpunkter-nakken.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\stress-kjevesmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\stress-kjevesmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\stress-kjevesmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\stress-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\stress-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\stress-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\stress-kjevesmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\hjernerystelse-idrett.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\hjernerystelse-idrett.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\hjernerystelse-idrett.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\hjernerystelse-idrett.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\hjernerystelse-idrett.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\hjernerystelse-idrett.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\hjernerystelse-idrett.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\svimmel-i-senga.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\svimmel-i-senga.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\svimmel-i-senga.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\svimmel-i-senga.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmel-i-senga.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmel-i-senga.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmel-i-senga.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\svimmelhet-stress-angst.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\svimmelhet-stress-angst.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\svimmelhet-stress-angst.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\svimmelhet-stress-angst.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-stress-angst.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-stress-angst.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\svimmelhet-stress-angst.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\kjeveovelser-hjemme.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\kjeveovelser-hjemme.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\kjeveovelser-hjemme.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\kjeveovelser-hjemme.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kjeveovelser-hjemme.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kjeveovelser-hjemme.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kjeveovelser-hjemme.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\tekstnakke-kjevesmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\tekstnakke-kjevesmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\tekstnakke-kjevesmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\tekstnakke-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\tekstnakke-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\tekstnakke-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\tekstnakke-kjevesmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\nummenhet-fingre-nakke-hand.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\nummenhet-fingre-nakke-hand.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\nummenhet-fingre-nakke-hand.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\nummenhet-fingre-nakke-hand.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\nummenhet-fingre-nakke-hand.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\nummenhet-fingre-nakke-hand.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\nummenhet-fingre-nakke-hand.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\hypermobilitet-eds-kjeve.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\hypermobilitet-eds-kjeve.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\hypermobilitet-eds-kjeve.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\hypermobilitet-eds-kjeve.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\hypermobilitet-eds-kjeve.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\hypermobilitet-eds-kjeve.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\hypermobilitet-eds-kjeve.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\kjevesmerter-barn-ungdom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\kjevesmerter-barn-ungdom.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\kjevesmerter-barn-ungdom.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\kjevesmerter-barn-ungdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kjevesmerter-barn-ungdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kjevesmerter-barn-ungdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\kjevesmerter-barn-ungdom.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\mr-bildediagnostikk-ryggsmerte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\mr-bildediagnostikk-ryggsmerte.html** Image missing decoding="async": Smart Approach to Back Pain MRIs.webp
+- 🔵 **blogg\mr-bildediagnostikk-ryggsmerte.html** Image missing decoding="async": smart-approach-to-back-pain-mris.webp
+- 🔵 **blogg\mr-bildediagnostikk-ryggsmerte.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\mr-bildediagnostikk-ryggsmerte.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\mr-bildediagnostikk-ryggsmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\mr-bildediagnostikk-ryggsmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\mr-bildediagnostikk-ryggsmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\mr-bildediagnostikk-ryggsmerte.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\muskelsmerte-vs-nervesmerte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\muskelsmerte-vs-nervesmerte.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\muskelsmerte-vs-nervesmerte.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\muskelsmerte-vs-nervesmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\muskelsmerte-vs-nervesmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\muskelsmerte-vs-nervesmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\muskelsmerte-vs-nervesmerte.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\stressnakke-triggerpunkter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\stressnakke-triggerpunkter.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\stressnakke-triggerpunkter.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\stressnakke-triggerpunkter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\stressnakke-triggerpunkter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\stressnakke-triggerpunkter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\stressnakke-triggerpunkter.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\tekstnakke-mobilnakke.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\tekstnakke-mobilnakke.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\tekstnakke-mobilnakke.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\tekstnakke-mobilnakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\tekstnakke-mobilnakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\tekstnakke-mobilnakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\tekstnakke-mobilnakke.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\adhd-autisme-kjevesmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\adhd-autisme-kjevesmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\adhd-autisme-kjevesmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\adhd-autisme-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\adhd-autisme-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\adhd-autisme-kjevesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\adhd-autisme-kjevesmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\akutt-ryggsmerte-selvhjelp.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\akutt-ryggsmerte-selvhjelp.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\akutt-ryggsmerte-selvhjelp.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\akutt-ryggsmerte-selvhjelp.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\akutt-ryggsmerte-selvhjelp.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\akutt-ryggsmerte-selvhjelp.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\akutt-ryggsmerte-selvhjelp.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\botox-vs-manuell-behandling-kjeve.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\botox-vs-manuell-behandling-kjeve.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\botox-vs-manuell-behandling-kjeve.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\botox-vs-manuell-behandling-kjeve.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\botox-vs-manuell-behandling-kjeve.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\botox-vs-manuell-behandling-kjeve.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\botox-vs-manuell-behandling-kjeve.html** CSS missing version hash: hub-article.css
+- 🔵 **blogg\isjias-prolaps-hekseskudd-forskjell.html** Image missing loading attribute: logo-header.webp
+- 🔵 **blogg\isjias-prolaps-hekseskudd-forskjell.html** Image missing decoding="async": Decoding Sciatica Pain and Recovery.webp
+- 🔵 **blogg\isjias-prolaps-hekseskudd-forskjell.html** Image missing decoding="async": back-pain-lumbago-sciatica-disc.webp
+- 🔵 **blogg\isjias-prolaps-hekseskudd-forskjell.html** Image missing loading attribute: meg.webp
+- 🔵 **blogg\isjias-prolaps-hekseskudd-forskjell.html** Image missing decoding="async": meg.webp
+- 🔵 **blogg\isjias-prolaps-hekseskudd-forskjell.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\isjias-prolaps-hekseskudd-forskjell.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\isjias-prolaps-hekseskudd-forskjell.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **blogg\isjias-prolaps-hekseskudd-forskjell.html** CSS missing version hash: hub-article.css
+- 🔵 **faq\ryggsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\ryggsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\ryggsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\svimmelhet-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\svimmelhet-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\svimmelhet-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\arm-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\arm-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\arm-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\korsryggsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\korsryggsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\korsryggsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\brystryggsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\brystryggsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\brystryggsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\fotsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\fotsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\fotsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\knee-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\knee-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\knee-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\jaw-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\jaw-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\jaw-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\hip-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\hip-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\hip-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\dizziness-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\dizziness-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\dizziness-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\neck-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\neck-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\neck-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\foot-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\foot-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\foot-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\hoftesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\hoftesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\hoftesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\headache-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\headache-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\headache-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\chest-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\chest-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\chest-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\knesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\knesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\knesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\nakkesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\nakkesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\nakkesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\armsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\armsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\armsmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\shoulder-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\shoulder-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\shoulder-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\back-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\back-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\back-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\kjevesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\kjevesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\kjevesmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\skuldersmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\skuldersmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\skuldersmerter-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\lower-back-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\lower-back-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\lower-back-pain-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\hodepine-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\hodepine-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **faq\hodepine-faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skuldersmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skuldersmerter.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **plager\skuldersmerter.html** Image missing decoding="async": skulder.webp
+- 🔵 **plager\skuldersmerter.html** Image missing decoding="async": skulder1.webp
+- 🔵 **plager\skuldersmerter.html** Image missing decoding="async": Triggerpunkt skulder rygg.webp
+- 🔵 **plager\skuldersmerter.html** Image missing decoding="async": skulder undersøkelse.webp
+- 🔵 **plager\skuldersmerter.html** Image missing decoding="async": skulder-impingement.webp
+- 🔵 **plager\skuldersmerter.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **plager\skuldersmerter.html** Image missing decoding="async": skulder.webp
+- 🔵 **plager\skuldersmerter.html** Image missing decoding="async": skulder1.webp
+- 🔵 **plager\skuldersmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\skuldersmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\skuldersmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skuldersmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skuldersmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skuldersmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakkesmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakkesmerter.html** Image missing decoding="async": nakkesmerte.webp
+- 🔵 **plager\nakkesmerter.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **plager\nakkesmerter.html** Image missing decoding="async": nakkesmerte-optimized.webp
+- 🔵 **plager\nakkesmerter.html** Image missing decoding="async": nakkesmerte-2-optimized.webp
+- 🔵 **plager\nakkesmerter.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **plager\nakkesmerter.html** Image missing decoding="async": hodepine-optimized.webp
+- 🔵 **plager\nakkesmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\nakkesmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\nakkesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakkesmerter.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **plager\nakkesmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakkesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakkesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakkesmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\knesmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\knesmerter.html** Image missing loading attribute: knee smerte.png
+- 🔵 **plager\knesmerter.html** Image missing decoding="async": knee smerte.png
+- 🔵 **plager\knesmerter.html** Image missing decoding="async": kne-menisk-frontal.webp
+- 🔵 **plager\knesmerter.html** Image missing decoding="async": Løpekne.webp
+- 🔵 **plager\knesmerter.html** Image missing decoding="async": 4 kne.webp
+- 🔵 **plager\knesmerter.html** Image missing decoding="async": kne korsband-forfra.webp
+- 🔵 **plager\knesmerter.html** Image missing decoding="async": jumpers-knee.webp
+- 🔵 **plager\knesmerter.html** Image missing decoding="async": runners-knee.webp
+- 🔵 **plager\knesmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\knesmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\knesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\knesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\knesmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\knesmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjevesmerte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjevesmerte.html** Image missing loading attribute: Kjeve.webp
+- 🔵 **plager\kjevesmerte.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **plager\kjevesmerte.html** Image missing decoding="async": kjeve 1.webp
+- 🔵 **plager\kjevesmerte.html** Image missing decoding="async": kjeve 2.webp
+- 🔵 **plager\kjevesmerte.html** Image missing decoding="async": kjeve 3.webp
+- 🔵 **plager\kjevesmerte.html** Image missing decoding="async": kjeve-optimized.webp
+- 🔵 **plager\kjevesmerte.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjevesmerte.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjevesmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjevesmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjevesmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjevesmerte.html** CSS missing version hash: hub-article.css
+- 🟡 **plager\idrettsskader.html** Inline CSS 3235 chars (>2000)
+- 🔵 **plager\idrettsskader.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\idrettsskader.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\idrettsskader.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\idrettsskader.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\albue-arm.html** Image missing decoding="async": Bein i hånd.webp
+- 🔵 **plager\albue-arm.html** Image missing decoding="async": albue (1).webp
+- 🔵 **plager\albue-arm.html** Image missing decoding="async": albue (2).webp
+- 🔵 **plager\albue-arm.html** Image missing decoding="async": hånledd justering.webp
+- 🔵 **plager\albue-arm.html** Image missing decoding="async": Hånledd 3.webp
+- 🔵 **plager\albue-arm.html** Image missing decoding="async": hånledd-optimized.webp
+- 🔵 **plager\albue-arm.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\albue-arm.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\albue-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystryggsmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystryggsmerter.html** Image missing loading attribute: vondt i brystryggen.jpg
+- 🔵 **plager\brystryggsmerter.html** Image missing decoding="async": vondt i brystryggen.jpg
+- 🔵 **plager\brystryggsmerter.html** Image missing decoding="async": vondt i brystryggen.jpg
+- 🔵 **plager\brystryggsmerter.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **plager\brystryggsmerter.html** Image missing decoding="async": nakkesmerte.webp
+- 🔵 **plager\brystryggsmerter.html** Image missing decoding="async": korsrygg smerte (2).webp
+- 🔵 **plager\brystryggsmerter.html** Image missing decoding="async": korsrygg smerte (3).webp
+- 🔵 **plager\brystryggsmerter.html** Image missing decoding="async": korsryggplager.webp
+- 🔵 **plager\brystryggsmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystryggsmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystryggsmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsryggsmerte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsryggsmerte.html** Image missing loading attribute: A Practical Guide to Lower Back Pain.png
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": A Practical Guide to Lower Back Pain.png
+- 🔵 **plager\korsryggsmerte.html** Image missing loading attribute: korsrygg smerte (1).webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **plager\korsryggsmerte.html** Image missing loading attribute: korsrygg-smerte-2-optimized.webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg-smerte-2-optimized.webp
+- 🔵 **plager\korsryggsmerte.html** Image missing loading attribute: korsrygg-optimized.webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg-optimized.webp
+- 🔵 **plager\korsryggsmerte.html** Image missing loading attribute: korsrygg-8-2-optimized.webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg-8-2-optimized.webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg smerte (2).webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg smerte (3).webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg 8 (1).webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg 8 (2).webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsryggplager.webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg-optimized.webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **plager\korsryggsmerte.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\korsryggsmerte.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\korsryggsmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsryggsmerte.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **plager\korsryggsmerte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsryggsmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsryggsmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsryggsmerte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine.html** Image missing decoding="async": hodepine.webp
+- 🔵 **plager\hodepine.html** Image missing decoding="async": hodepine 5.webp
+- 🔵 **plager\hodepine.html** Image missing decoding="async": hodepine-5-optimized.webp
+- 🔵 **plager\hodepine.html** Image missing decoding="async": hodepine-optimized.webp
+- 🔵 **plager\hodepine.html** Image missing decoding="async": hodepine.jpg
+- 🔵 **plager\hodepine.html** Image missing decoding="async": hodepine-symptomer.jpg
+- 🔵 **plager\hodepine.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hodepine.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **plager\hodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fotsmerte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fotsmerte.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **plager\fotsmerte.html** Image missing decoding="async": ankel (1).webp
+- 🔵 **plager\fotsmerte.html** Image missing decoding="async": ankel (2).webp
+- 🔵 **plager\fotsmerte.html** Image missing decoding="async": ankel (3).webp
+- 🔵 **plager\fotsmerte.html** Image missing decoding="async": ankel justering.webp
+- 🔵 **plager\fotsmerte.html** Image missing decoding="async": fot-behandling.jpg
+- 🔵 **plager\fotsmerte.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fotsmerte.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fotsmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fotsmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fotsmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fotsmerte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet.html** Image missing loading attribute: svimmelhet-symptomer.webp
+- 🔵 **plager\svimmelhet.html** Image missing decoding="async": svimmelhet-symptomer.webp
+- 🔵 **plager\svimmelhet.html** Image missing loading attribute: svimmelhet-undersokelse.jpg
+- 🔵 **plager\svimmelhet.html** Image missing decoding="async": svimmelhet-undersokelse.jpg
+- 🔵 **plager\svimmelhet.html** Image missing loading attribute: svimmelhet-behandling.jpg
+- 🔵 **plager\svimmelhet.html** Image missing decoding="async": svimmelhet-behandling.jpg
+- 🔵 **plager\svimmelhet.html** Image missing decoding="async": svimmelhet-behandling.jpg
+- 🔵 **plager\svimmelhet.html** Image missing decoding="async": simmelhet.webp
+- 🔵 **plager\svimmelhet.html** Image missing decoding="async": svimmel 4 (1).webp
+- 🔵 **plager\svimmelhet.html** Image missing decoding="async": Fall risiko.webp
+- 🔵 **plager\svimmelhet.html** Image missing decoding="async": svimmelhet-undersokelse.jpg
+- 🔵 **plager\svimmelhet.html** Image missing decoding="async": svimmel 4 (2).webp
+- 🔵 **plager\svimmelhet.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte-og-bekkensmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte-og-bekkensmerter.html** Image missing decoding="async": hip-pain.webp
+- 🔵 **plager\hofte-og-bekkensmerter.html** Image missing decoding="async": bekken - symfyse.webp
+- 🔵 **plager\hofte-og-bekkensmerter.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **plager\hofte-og-bekkensmerter.html** Image missing decoding="async": hofte strekk.webp
+- 🔵 **plager\hofte-og-bekkensmerter.html** Image missing decoding="async": Funksjonelle_hofteleddstester.webp
+- 🔵 **plager\hofte-og-bekkensmerter.html** Image missing decoding="async": posterior hofte smerte referal.webp
+- 🔵 **plager\hofte-og-bekkensmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hofte-og-bekkensmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hofte-og-bekkensmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte-og-bekkensmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte-og-bekkensmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte-og-bekkensmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\hip-pointer.html** No CSS preload found
+- 🔵 **plager\hofte\hip-pointer.html** Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\hofte\hip-pointer.html** Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\hofte\hip-pointer.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\hip-pointer.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\hip-pointer.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\bursitt-myte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\bursitt-myte.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hofte\bursitt-myte.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hofte\bursitt-myte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\bursitt-myte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\bursitt-myte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\bursitt-myte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\bursitt-myte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\iliopsoas-tendinopati.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\iliopsoas-tendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\iliopsoas-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\iliopsoas-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\iliopsoas-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\iliopsoas-tendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\rygg-hofte-isjias.html** No CSS preload found
+- 🔵 **plager\hofte\rygg-hofte-isjias.html** Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\hofte\rygg-hofte-isjias.html** Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\hofte\rygg-hofte-isjias.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\rygg-hofte-isjias.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\rygg-hofte-isjias.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\stressbrudd-hofte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\stressbrudd-hofte.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hofte\stressbrudd-hofte.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hofte\stressbrudd-hofte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\stressbrudd-hofte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\stressbrudd-hofte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\stressbrudd-hofte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\stressbrudd-hofte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\labrum-skade.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\labrum-skade.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\labrum-skade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\labrum-skade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\labrum-skade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\labrum-skade.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\meralgia-paresthetica.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\meralgia-paresthetica.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\meralgia-paresthetica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\meralgia-paresthetica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\meralgia-paresthetica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\meralgia-paresthetica.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\idrettsskader-hofte.html** No CSS preload found
+- 🔵 **plager\hofte\idrettsskader-hofte.html** Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\hofte\idrettsskader-hofte.html** Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\hofte\idrettsskader-hofte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\idrettsskader-hofte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\idrettsskader-hofte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\fai-hofteklem.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\fai-hofteklem.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\fai-hofteklem.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\fai-hofteklem.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\fai-hofteklem.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\fai-hofteklem.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\snapping-hip.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\snapping-hip.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hofte\snapping-hip.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hofte\snapping-hip.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\snapping-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\snapping-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\snapping-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\snapping-hip.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\athletic-pubalgia-lyskebrokk.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\athletic-pubalgia-lyskebrokk.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hofte\athletic-pubalgia-lyskebrokk.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hofte\athletic-pubalgia-lyskebrokk.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\athletic-pubalgia-lyskebrokk.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\athletic-pubalgia-lyskebrokk.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\athletic-pubalgia-lyskebrokk.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\athletic-pubalgia-lyskebrokk.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\gtps-gluteal-tendinopati.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\gtps-gluteal-tendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\gtps-gluteal-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\gtps-gluteal-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\gtps-gluteal-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\gtps-gluteal-tendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\bekkenleddsmerter-graviditet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\bekkenleddsmerter-graviditet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\bekkenleddsmerter-graviditet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\bekkenleddsmerter-graviditet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\bekkenleddsmerter-graviditet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\bekkenleddsmerter-graviditet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\hofteartrose.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\hofteartrose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\hofteartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\hofteartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\hofteartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\hofteartrose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\osteitis-pubis.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\osteitis-pubis.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hofte\osteitis-pubis.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hofte\osteitis-pubis.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\osteitis-pubis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\osteitis-pubis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\osteitis-pubis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\osteitis-pubis.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\proksimal-hamstringtendinopati.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\proksimal-hamstringtendinopati.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hofte\proksimal-hamstringtendinopati.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hofte\proksimal-hamstringtendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\proksimal-hamstringtendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\proksimal-hamstringtendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\proksimal-hamstringtendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\proksimal-hamstringtendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\vondt-i-hoften.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\vondt-i-hoften.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\vondt-i-hoften.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\vondt-i-hoften.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\vondt-i-hoften.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\vondt-i-hoften.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\si-ledd-bekkenproblemer.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\si-ledd-bekkenproblemer.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hofte\si-ledd-bekkenproblemer.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hofte\si-ledd-bekkenproblemer.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\si-ledd-bekkenproblemer.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\si-ledd-bekkenproblemer.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\si-ledd-bekkenproblemer.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hofte\si-ledd-bekkenproblemer.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\triggerpunkter-hofte-bekken.html** No CSS preload found
+- 🔵 **plager\hofte\triggerpunkter-hofte-bekken.html** Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\hofte\triggerpunkter-hofte-bekken.html** Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\hofte\triggerpunkter-hofte-bekken.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hofte\triggerpunkter-hofte-bekken.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hofte\triggerpunkter-hofte-bekken.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\stressfraktur-fot.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\stressfraktur-fot.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\stressfraktur-fot.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\stressfraktur-fot.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\stressfraktur-fot.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\stressfraktur-fot.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\stressfraktur-fot.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\stressfraktur-fot.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\mortons-nevrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\mortons-nevrom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\mortons-nevrom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\mortons-nevrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\mortons-nevrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\mortons-nevrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\mortons-nevrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\mortons-nevrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\metatarsalgi.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\metatarsalgi.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\metatarsalgi.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\metatarsalgi.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\metatarsalgi.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\metatarsalgi.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\metatarsalgi.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\metatarsalgi.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\plantar-fasciopati.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\plantar-fasciopati.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\plantar-fasciopati.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\plantar-fasciopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\plantar-fasciopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\plantar-fasciopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\plantar-fasciopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\plantar-fasciopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\severs-syndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\severs-syndrom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\severs-syndrom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\severs-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\severs-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\severs-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\severs-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\severs-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\hallux-valgus.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\hallux-valgus.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\hallux-valgus.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\hallux-valgus.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\hallux-valgus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\hallux-valgus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\hallux-valgus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\hallux-valgus.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\akillestendinopati.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\akillestendinopati.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\akillestendinopati.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\akillestendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\akillestendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\akillestendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\akillestendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\akillestendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\ankelforstuinger.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\ankelforstuinger.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\ankelforstuinger.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\ankelforstuinger.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\ankelforstuinger.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\ankelforstuinger.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\ankelforstuinger.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\ankelforstuinger.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\ankelinstabilitet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\ankelinstabilitet.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\ankelinstabilitet.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\ankelinstabilitet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\ankelinstabilitet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\ankelinstabilitet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\ankelinstabilitet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\ankelinstabilitet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\hallux-rigidus.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\hallux-rigidus.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\hallux-rigidus.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\hallux-rigidus.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\hallux-rigidus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\hallux-rigidus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\hallux-rigidus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\hallux-rigidus.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\tibialis-posterior-tendinopati.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\tibialis-posterior-tendinopati.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\tibialis-posterior-tendinopati.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\tibialis-posterior-tendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\tibialis-posterior-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\tibialis-posterior-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\tibialis-posterior-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\tibialis-posterior-tendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\fottrening.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\fottrening.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\fottrening.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\fottrening.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\fottrening.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\fottrening.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\fottrening.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\fottrening.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\innleggssaler.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\innleggssaler.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\innleggssaler.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\innleggssaler.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\innleggssaler.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\innleggssaler.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\innleggssaler.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\innleggssaler.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\minimalistsko.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\minimalistsko.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\minimalistsko.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\minimalistsko.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\minimalistsko.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\minimalistsko.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\minimalistsko.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\minimalistsko.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\nar-innleggssaler-hjelper.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\nar-innleggssaler-hjelper.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\nar-innleggssaler-hjelper.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\nar-innleggssaler-hjelper.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\nar-innleggssaler-hjelper.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\nar-innleggssaler-hjelper.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\nar-innleggssaler-hjelper.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\nar-innleggssaler-hjelper.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\ortose-nedtrapping.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\ortose-nedtrapping.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\ortose-nedtrapping.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\ortose-nedtrapping.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\ortose-nedtrapping.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\ortose-nedtrapping.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\ortose-nedtrapping.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\ortose-nedtrapping.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\overpronasjon.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\overpronasjon.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\overpronasjon.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\overpronasjon.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\overpronasjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\overpronasjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\overpronasjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\overpronasjon.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\svake-fotter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\fot\svake-fotter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\fot\svake-fotter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\fot\svake-fotter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\fot\svake-fotter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\svake-fotter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\svake-fotter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\fot\svake-fotter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\ac-ledd-artrose.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\ac-ledd-artrose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\ac-ledd-artrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\ac-ledd-artrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\ac-ledd-artrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\ac-ledd-artrose.html** CSS missing version hash: hub-article.css
+- 🟡 **plager\skulder\kortison-skulder.html** Inline CSS 6677 chars (>2000)
+- 🔵 **plager\skulder\kortison-skulder.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\kortison-skulder.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\kortison-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\kortison-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\kortison-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **plager\skulder\slap-lesjon.html** Inline CSS 6117 chars (>2000)
+- 🔵 **plager\skulder\slap-lesjon.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\slap-lesjon.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\slap-lesjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\slap-lesjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\slap-lesjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\ergonomi-skulder.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\ergonomi-skulder.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\ergonomi-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\ergonomi-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\ergonomi-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\ergonomi-skulder.html** CSS missing version hash: hub-article.css
+- 🟡 **plager\skulder\klikking-skulder.html** Inline CSS 2164 chars (>2000)
+- 🔵 **plager\skulder\klikking-skulder.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\klikking-skulder.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\klikking-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\klikking-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\klikking-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **plager\skulder\biceps-tendinopati.html** Inline CSS 5741 chars (>2000)
+- 🔵 **plager\skulder\biceps-tendinopati.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\biceps-tendinopati.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\biceps-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\biceps-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\biceps-tendinopati.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\tos-sovende-arm.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\tos-sovende-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\tos-sovende-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\tos-sovende-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\tos-sovende-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\tos-sovende-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\kalkskulder.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\kalkskulder.html** Image missing loading attribute: mads-finstad-kiropraktor-portrett.webp
+- 🔵 **plager\skulder\kalkskulder.html** Image missing decoding="async": mads-finstad-kiropraktor-portrett.webp
+- 🔵 **plager\skulder\kalkskulder.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\kalkskulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\kalkskulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\kalkskulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\kalkskulder.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\kasterskulder.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\kasterskulder.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\kasterskulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\kasterskulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\kasterskulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\kasterskulder.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\skulderartrose.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\skulderartrose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\skulderartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\skulderartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\skulderartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\skulderartrose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\sovn-skuldersmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\sovn-skuldersmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\sovn-skuldersmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\sovn-skuldersmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\sovn-skuldersmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\sovn-skuldersmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\smerter-bak-skulder.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\skulder\smerter-bak-skulder.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\skulder\smerter-bak-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\smerter-bak-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\smerter-bak-skulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\skulder\smerter-bak-skulder.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\migrene.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\migrene.html** Image missing decoding="async": mads-finstad-kiropraktor-portrett.webp
+- 🔵 **plager\hodepine\migrene.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\migrene.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\medikamentoverforbruk-hodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\medikamentoverforbruk-hodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\medikamentoverforbruk-hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\medikamentoverforbruk-hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\medikamentoverforbruk-hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\medikamentoverforbruk-hodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\hodepine-toppen.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\hodepine-toppen.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\hodepine-toppen.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-toppen.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-toppen.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-toppen.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\hodepine-svimmelhet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\hodepine-svimmelhet.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hodepine\hodepine-svimmelhet.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hodepine\hodepine-svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\hodepine-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\morgenhodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\morgenhodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\morgenhodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\morgenhodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\morgenhodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\morgenhodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\occipital-nevralgi.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\occipital-nevralgi.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\occipital-nevralgi.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\occipital-nevralgi.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\occipital-nevralgi.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\occipital-nevralgi.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\hodepine-bakhodet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\hodepine-bakhodet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\hodepine-bakhodet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-bakhodet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-bakhodet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-bakhodet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\klasehodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\klasehodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\klasehodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\klasehodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\klasehodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\klasehodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\spenningshodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\spenningshodepine.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hodepine\spenningshodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\spenningshodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\spenningshodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\spenningshodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\spenningshodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\hodepine-tinningen.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\hodepine-tinningen.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\hodepine-tinningen.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-tinningen.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-tinningen.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hodepine-tinningen.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\vestibulaer-migrene.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\vestibulaer-migrene.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\hodepine\vestibulaer-migrene.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\hodepine\vestibulaer-migrene.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\vestibulaer-migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\vestibulaer-migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\vestibulaer-migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\vestibulaer-migrene.html** CSS missing version hash: hub-article.css
+- 🟡 **plager\hodepine\bihule-migrene.html** Inline CSS 5572 chars (>2000)
+- 🔵 **plager\hodepine\bihule-migrene.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\bihule-migrene.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\bihule-migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\bihule-migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\bihule-migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hormonhodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\hormonhodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\hormonhodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hormonhodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hormonhodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\hormonhodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\kronisk-daglig-hodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\kronisk-daglig-hodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\kronisk-daglig-hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\kronisk-daglig-hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\kronisk-daglig-hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\kronisk-daglig-hodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\nakkehodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\nakkehodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\nakkehodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\nakkehodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\nakkehodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\nakkehodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\triggerpunkter-hodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\hodepine\triggerpunkter-hodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\hodepine\triggerpunkter-hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\triggerpunkter-hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\triggerpunkter-hodepine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\hodepine\triggerpunkter-hodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\kvalme.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\kvalme.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\kvalme.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\kvalme.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\kvalme.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\kvalme.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\whiplash.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\whiplash.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\nakke\whiplash.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\nakke\whiplash.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\whiplash.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\whiplash.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\whiplash.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\whiplash.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\stressnakke.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\stressnakke.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\nakke\stressnakke.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\nakke\stressnakke.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\stressnakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\stressnakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\stressnakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\stressnakke.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\knaser-nakke.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\knaser-nakke.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\knaser-nakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\knaser-nakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\knaser-nakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\knaser-nakke.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\c6-c7-prolaps.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\c6-c7-prolaps.html** Image missing decoding="async": mads-finstad-kiropraktor-portrett.webp
+- 🔵 **plager\nakke\c6-c7-prolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\c6-c7-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\c6-c7-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\c6-c7-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\c6-c7-prolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\nummenhet-fingre.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\nummenhet-fingre.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\nakke\nummenhet-fingre.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\nummenhet-fingre.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\nummenhet-fingre.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\nummenhet-fingre.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\nummenhet-fingre.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\c5-c6-prolaps.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\c5-c6-prolaps.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\nakke\c5-c6-prolaps.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\nakke\c5-c6-prolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\c5-c6-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\c5-c6-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\c5-c6-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\c5-c6-prolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\nakkeprolaps.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\nakkeprolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\nakkeprolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\nakkeprolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\nakkeprolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\nakkeprolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\torticollis.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\torticollis.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\torticollis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\torticollis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\torticollis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\torticollis.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\cervikal-foraminal-stenose.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\cervikal-foraminal-stenose.html** Image missing decoding="async": mads-finstad-kiropraktor-portrett.webp
+- 🔵 **plager\nakke\cervikal-foraminal-stenose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\cervikal-foraminal-stenose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\cervikal-foraminal-stenose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\cervikal-foraminal-stenose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\cervikal-foraminal-stenose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\degenerative-forandringer.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\degenerative-forandringer.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\nakke\degenerative-forandringer.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\nakke\degenerative-forandringer.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\degenerative-forandringer.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\degenerative-forandringer.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\degenerative-forandringer.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\degenerative-forandringer.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\stiv-nakke-om-morgenen.html** CSS missing version hash: hub-article.css
+- 🟡 **plager\nakke\tekstnakke.html** Inline CSS 4677 chars (>2000)
+- 🔵 **plager\nakke\tekstnakke.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\tekstnakke.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\tekstnakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\tekstnakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\tekstnakke.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\nakke\nakkesleng-hodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\nakkesleng-hodepine.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\nakke\nakkesleng-hodepine.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\nakke\nakkesleng-hodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\nakkesleng-hodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\triggerpunkter-nakke.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\triggerpunkter-nakke.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\nakke\triggerpunkter-nakke.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\nakke\triggerpunkter-nakke.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\triggerpunkter-nakke.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\rode-flagg-nakkesmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\nakke\rode-flagg-nakkesmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\nakke\rode-flagg-nakkesmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\nakke\rode-flagg-nakkesmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\nakke\rode-flagg-nakkesmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\bittfeil-myter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\bittfeil-myter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\bittfeil-myter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\bittfeil-myter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\bittfeil-myter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\bittfeil-myter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\bittfeil-myter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\bittfeil-myter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\eagle-syndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\eagle-syndrom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\eagle-syndrom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\eagle-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\eagle-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\eagle-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\eagle-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\eagle-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\glossopharyngeal-nevralgi.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\glossopharyngeal-nevralgi.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\glossopharyngeal-nevralgi.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\glossopharyngeal-nevralgi.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\glossopharyngeal-nevralgi.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\glossopharyngeal-nevralgi.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\glossopharyngeal-nevralgi.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\glossopharyngeal-nevralgi.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\ovelser-tmd.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\ovelser-tmd.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\ovelser-tmd.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\ovelser-tmd.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\ovelser-tmd.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\ovelser-tmd.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\ovelser-tmd.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\ovelser-tmd.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\icr-intern-carotis.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\icr-intern-carotis.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\icr-intern-carotis.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\icr-intern-carotis.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\icr-intern-carotis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\icr-intern-carotis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\icr-intern-carotis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\icr-intern-carotis.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\icr-syndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\icr-syndrom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\icr-syndrom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\icr-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\icr-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\icr-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\icr-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\icr-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\oresmerter-tinnitus.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\oresmerter-tinnitus.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\oresmerter-tinnitus.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\oresmerter-tinnitus.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\oresmerter-tinnitus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\oresmerter-tinnitus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\oresmerter-tinnitus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\oresmerter-tinnitus.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\tanngnissing-bruksisme.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\tanngnissing-bruksisme.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\tanngnissing-bruksisme.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\tanngnissing-bruksisme.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\tanngnissing-bruksisme.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\tanngnissing-bruksisme.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\tanngnissing-bruksisme.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\tanngnissing-bruksisme.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\klikking-lasing-leddproblemer.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\klikking-lasing-leddproblemer.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\klikking-lasing-leddproblemer.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\klikking-lasing-leddproblemer.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\klikking-lasing-leddproblemer.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\klikking-lasing-leddproblemer.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\klikking-lasing-leddproblemer.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\klikking-lasing-leddproblemer.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\nakke-kjeve-sammenheng.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\nakke-kjeve-sammenheng.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\nakke-kjeve-sammenheng.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\nakke-kjeve-sammenheng.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\nakke-kjeve-sammenheng.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\nakke-kjeve-sammenheng.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\nakke-kjeve-sammenheng.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\nakke-kjeve-sammenheng.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\pifp-ansiktssmerte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\pifp-ansiktssmerte.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\pifp-ansiktssmerte.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\pifp-ansiktssmerte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\pifp-ansiktssmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\pifp-ansiktssmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\pifp-ansiktssmerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kjeve\pifp-ansiktssmerte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\kjevehodepine.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kjeve\kjevehodepine.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\kjeve\kjevehodepine.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kjeve\kjevehodepine.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kjeve\kjevehodepine.html** CSS missing version hash: hub-article.css
+- 🟡 **plager\kne\loperkne.html** Inline CSS 6295 chars (>2000)
+- 🔵 **plager\kne\loperkne.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\loperkne.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\loperkne.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\loperkne.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\loperkne.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\kneartrose.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\kneartrose.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kne\kneartrose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\kneartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\kneartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\kneartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\kneartrose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\pes-anserine-bursitt.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\pes-anserine-bursitt.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\pes-anserine-bursitt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\pes-anserine-bursitt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\pes-anserine-bursitt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\pes-anserine-bursitt.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\meniskskade.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\meniskskade.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kne\meniskskade.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\meniskskade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\meniskskade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\meniskskade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\meniskskade.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\beinhinnebetennelse.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\beinhinnebetennelse.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\beinhinnebetennelse.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\beinhinnebetennelse.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\beinhinnebetennelse.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\beinhinnebetennelse.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\hopperkne.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\hopperkne.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\hopperkne.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\hopperkne.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\hopperkne.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\hopperkne.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\prepatellar-bursitt.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\prepatellar-bursitt.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kne\prepatellar-bursitt.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\prepatellar-bursitt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\prepatellar-bursitt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\prepatellar-bursitt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\prepatellar-bursitt.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\iliotibial-band-syndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\iliotibial-band-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\iliotibial-band-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\iliotibial-band-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\iliotibial-band-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\iliotibial-band-syndrom.html** CSS missing version hash: hub-article.css
+- 🟡 **plager\kne\knesmerte-fra-hoften.html** Inline CSS 5880 chars (>2000)
+- 🔵 **plager\kne\knesmerte-fra-hoften.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\knesmerte-fra-hoften.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\knesmerte-fra-hoften.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\knesmerte-fra-hoften.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\knesmerte-fra-hoften.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\pcl-skade.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\pcl-skade.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\kne\pcl-skade.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\pcl-skade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\pcl-skade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\pcl-skade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\pcl-skade.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\popliteus-syndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\popliteus-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\popliteus-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\popliteus-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\popliteus-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\popliteus-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\korsbandskade.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\kne\korsbandskade.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\kne\korsbandskade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\korsbandskade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\korsbandskade.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\kne\korsbandskade.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\bh-stropp-syndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\bh-stropp-syndrom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\bh-stropp-syndrom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\bh-stropp-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\bh-stropp-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\bh-stropp-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\bh-stropp-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\bh-stropp-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\t4-syndrom.html** Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\brystrygg\t4-syndrom.html** Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\brystrygg\t4-syndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\t4-syndrom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\t4-syndrom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\t4-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\t4-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\t4-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\t4-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\t4-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\fibromyalgi-brystsmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\fibromyalgi-brystsmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\fibromyalgi-brystsmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\fibromyalgi-brystsmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\fibromyalgi-brystsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\fibromyalgi-brystsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\fibromyalgi-brystsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\fibromyalgi-brystsmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\pust-stress-rygg.html** Image missing loading attribute: tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\brystrygg\pust-stress-rygg.html** Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **plager\brystrygg\pust-stress-rygg.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\pust-stress-rygg.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\pust-stress-rygg.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\pust-stress-rygg.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\pust-stress-rygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\pust-stress-rygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\pust-stress-rygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\pust-stress-rygg.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\flat-rygg.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\flat-rygg.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\flat-rygg.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\flat-rygg.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\flat-rygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\flat-rygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\flat-rygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\flat-rygg.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\ribbeinslasning.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\ribbeinslasning.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\ribbeinslasning.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\ribbeinslasning.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\ribbeinslasning.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\ribbeinslasning.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\ribbeinslasning.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\ribbeinslasning.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\brystryggsmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\brystryggsmerter.html** Image missing loading attribute: vondt i brystryggen.jpg
+- 🔵 **plager\brystrygg\brystryggsmerter.html** Image missing decoding="async": vondt i brystryggen.jpg
+- 🔵 **plager\brystrygg\brystryggsmerter.html** Image missing decoding="async": vondt i brystryggen.jpg
+- 🔵 **plager\brystrygg\brystryggsmerter.html** Image missing decoding="async": Ryggsmerte.jpg
+- 🔵 **plager\brystrygg\brystryggsmerter.html** Image missing decoding="async": upper back and neck.jpg
+- 🔵 **plager\brystrygg\brystryggsmerter.html** Image missing decoding="async": vondt i brystryggen.jpg
+- 🔵 **plager\brystrygg\brystryggsmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\brystryggsmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\brystryggsmerter.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **plager\brystrygg\brystryggsmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\brystryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\brystryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\brystryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\brystryggsmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\osteoporose.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\osteoporose.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\osteoporose.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\osteoporose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\osteoporose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\osteoporose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\osteoporose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\osteoporose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\thorakalt-prolaps.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\thorakalt-prolaps.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\thorakalt-prolaps.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\thorakalt-prolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\thorakalt-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\thorakalt-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\thorakalt-prolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\thorakalt-prolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\scheuermanns-sykdom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\scheuermanns-sykdom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\scheuermanns-sykdom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\scheuermanns-sykdom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\scheuermanns-sykdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\scheuermanns-sykdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\scheuermanns-sykdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\scheuermanns-sykdom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\stiv-rygg-idrett.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\stiv-rygg-idrett.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\stiv-rygg-idrett.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\stiv-rygg-idrett.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\stiv-rygg-idrett.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\stiv-rygg-idrett.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\stiv-rygg-idrett.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\stiv-rygg-idrett.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\krum-rygg.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\krum-rygg.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\krum-rygg.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\krum-rygg.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\krum-rygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\krum-rygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\krum-rygg.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\krum-rygg.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\mellom-skulderbladene.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\mellom-skulderbladene.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\mellom-skulderbladene.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\mellom-skulderbladene.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\mellom-skulderbladene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\mellom-skulderbladene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\mellom-skulderbladene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\mellom-skulderbladene.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\kostokondritt.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\brystrygg\kostokondritt.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\brystrygg\kostokondritt.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\brystrygg\kostokondritt.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\brystrygg\kostokondritt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\kostokondritt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\kostokondritt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\brystrygg\kostokondritt.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\scds.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\scds.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\scds.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\scds.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\scds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\scds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\scds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\scds.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\vestibulaer-hypofunksjon.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\vestibulaer-hypofunksjon.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\vestibulaer-hypofunksjon.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\vestibulaer-hypofunksjon.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\vestibulaer-hypofunksjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\vestibulaer-hypofunksjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\vestibulaer-hypofunksjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\vestibulaer-hypofunksjon.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\nakkesvimmelhet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\nakkesvimmelhet.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\nakkesvimmelhet.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\nakkesvimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\nakkesvimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\nakkesvimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\nakkesvimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\nakkesvimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\menieres-sykdom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\menieres-sykdom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\menieres-sykdom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\menieres-sykdom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\menieres-sykdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\menieres-sykdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\menieres-sykdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\menieres-sykdom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\mdds.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\mdds.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\mdds.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\mdds.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\mdds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\mdds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\mdds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\mdds.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\whiplash-svimmelhet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\whiplash-svimmelhet.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\whiplash-svimmelhet.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\whiplash-svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\whiplash-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\whiplash-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\whiplash-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\whiplash-svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\krystallsyke-bppv.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\krystallsyke-bppv.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\krystallsyke-bppv.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\krystallsyke-bppv.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\krystallsyke-bppv.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke-bppv.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke-bppv.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke-bppv.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\vestibularisnevritt.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\vestibularisnevritt.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\vestibularisnevritt.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\vestibularisnevritt.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\vestibularisnevritt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\vestibularisnevritt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\vestibularisnevritt.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\vestibularisnevritt.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\post-hjernerystelse.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\post-hjernerystelse.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\post-hjernerystelse.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\post-hjernerystelse.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\post-hjernerystelse.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\post-hjernerystelse.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\post-hjernerystelse.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\post-hjernerystelse.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\vestibulaer-migrene.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\vestibulaer-migrene.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\vestibulaer-migrene.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\vestibulaer-migrene.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\vestibulaer-migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\vestibulaer-migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\vestibulaer-migrene.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\vestibulaer-migrene.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\pppd-kronisk-svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\krystallsyke\bakre-kanal.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\krystallsyke\bakre-kanal.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\krystallsyke\bakre-kanal.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\krystallsyke\bakre-kanal.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\krystallsyke\bakre-kanal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke\bakre-kanal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke\bakre-kanal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke\bakre-kanal.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\krystallsyke\fremre-kanal.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\krystallsyke\fremre-kanal.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\krystallsyke\fremre-kanal.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\krystallsyke\fremre-kanal.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\krystallsyke\fremre-kanal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke\fremre-kanal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke\fremre-kanal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke\fremre-kanal.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\krystallsyke\horisontal-kanal.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\krystallsyke\horisontal-kanal.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\krystallsyke\horisontal-kanal.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\krystallsyke\horisontal-kanal.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\krystallsyke\horisontal-kanal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke\horisontal-kanal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke\horisontal-kanal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\krystallsyke\horisontal-kanal.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\pots-syndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\svimmelhet\pots-syndrom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\svimmelhet\pots-syndrom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\svimmelhet\pots-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\svimmelhet\pots-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\pots-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\pots-syndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\svimmelhet\pots-syndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\musearm.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\albue-arm\musearm.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\albue-arm\musearm.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\albue-arm\musearm.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\musearm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\musearm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\musearm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\musearm.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\tommelartrose.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\albue-arm\tommelartrose.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\albue-arm\tommelartrose.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\albue-arm\tommelartrose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\tommelartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\tommelartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\tommelartrose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\tommelartrose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\triggerpunkter-arm.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\albue-arm\triggerpunkter-arm.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\albue-arm\triggerpunkter-arm.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\albue-arm\triggerpunkter-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\triggerpunkter-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\triggerpunkter-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\triggerpunkter-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\triggerpunkter-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\triggerfinger.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\albue-arm\triggerfinger.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\albue-arm\triggerfinger.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\albue-arm\triggerfinger.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\triggerfinger.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\triggerfinger.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\triggerfinger.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\triggerfinger.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** Image missing loading attribute: tr?id=1020647599498498&ev=PageView&noscript=1
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** Image missing decoding="async": tr?id=1020647599498498&ev=PageView&noscript=1
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\karpaltunnelsyndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\golfalbue.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\albue-arm\golfalbue.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\albue-arm\golfalbue.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\albue-arm\golfalbue.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\golfalbue.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\golfalbue.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\golfalbue.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\golfalbue.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** Image missing loading attribute: tr?id=1020647599498498&ev=PageView&noscript=1
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** Image missing decoding="async": tr?id=1020647599498498&ev=PageView&noscript=1
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\kubitaltunnelsyndrom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\tennisalbue.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\albue-arm\tennisalbue.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\albue-arm\tennisalbue.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\albue-arm\tennisalbue.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\tennisalbue.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\tennisalbue.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\tennisalbue.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\albue-arm\tennisalbue.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\de-quervains.html** No CSS preload found
+- 🔵 **plager\albue-arm\de-quervains.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\albue-arm\de-quervains.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\albue-arm\de-quervains.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\si-ledd.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\si-ledd.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\korsrygg\si-ledd.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\korsrygg\si-ledd.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\si-ledd.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\si-ledd.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\si-ledd.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\si-ledd.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\isjias.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\isjias.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\korsrygg\isjias.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\korsrygg\isjias.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\isjias.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\isjias.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\isjias.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\isjias.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\spondylolistese.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\spondylolistese.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\spondylolistese.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\spondylolistese.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\spondylolistese.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\spondylolistese.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\bekhterevs-sykdom.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\bekhterevs-sykdom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\bekhterevs-sykdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\bekhterevs-sykdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\bekhterevs-sykdom.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\bekhterevs-sykdom.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\graviditet.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\graviditet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\graviditet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\graviditet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\graviditet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\graviditet.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\skiveprolaps.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\skiveprolaps.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\korsrygg\skiveprolaps.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\korsrygg\skiveprolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\skiveprolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\skiveprolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\skiveprolaps.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\skiveprolaps.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\spinal-stenose.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\spinal-stenose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\spinal-stenose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\spinal-stenose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\spinal-stenose.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\spinal-stenose.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** Image missing loading attribute: meg.webp
+- 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** Image missing decoding="async": meg.webp
+- 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\hekseskudd.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\hekseskudd.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\hekseskudd.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\hekseskudd.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\hekseskudd.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\hekseskudd.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\korsrygg\nociplastisk-smerte.html** CSS missing version hash: hub-article.css
+- 🔵 **plager\ryggsmerter.html** Image missing loading attribute: logo-header.webp
+- 🔵 **plager\ryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\ryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\ryggsmerter.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **plager\ryggsmerter.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\graston.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\graston.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\graston.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\graston.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\graston.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\graston.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\kiropraktikk.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\kiropraktikk.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\kiropraktikk.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\kiropraktikk.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\kiropraktikk.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\kiropraktikk.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\blotvevsteknikker.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\blotvevsteknikker.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\blotvevsteknikker.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\blotvevsteknikker.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\blotvevsteknikker.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\blotvevsteknikker.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\svimmelhet.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\svimmelhet.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\fasciemanipulasjon.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\fasciemanipulasjon.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\fasciemanipulasjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\fasciemanipulasjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\fasciemanipulasjon.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\fasciemanipulasjon.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\akutt-behandling.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\akutt-behandling.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\akutt-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\akutt-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\akutt-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\akutt-behandling.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\rehabilitering.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\rehabilitering.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\rehabilitering.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\rehabilitering.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\rehabilitering.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\rehabilitering.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\dry-needling.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\dry-needling.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\dry-needling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\dry-needling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\dry-needling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\dry-needling.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\forebyggende-behandling.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\forebyggende-behandling.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\forebyggende-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\forebyggende-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\forebyggende-behandling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\forebyggende-behandling.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\trykkbolge.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\trykkbolge.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\trykkbolge.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\trykkbolge.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\trykkbolge.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\trykkbolge.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\svimmelhet\balansesystemet.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\svimmelhet\balansesystemet.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\svimmelhet\balansesystemet.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\svimmelhet\balansesystemet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet\balansesystemet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet\balansesystemet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet\balansesystemet.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\svimmelhet\vestibular-rehabilitering.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\svimmelhet\vestibular-rehabilitering.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\svimmelhet\vestibular-rehabilitering.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\svimmelhet\vestibular-rehabilitering.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet\vestibular-rehabilitering.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet\vestibular-rehabilitering.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet\vestibular-rehabilitering.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\svimmelhet\vng-undersokelse.html** Image missing loading attribute: meg.webp
+- 🔵 **tjeneste\svimmelhet\vng-undersokelse.html** Image missing decoding="async": meg.webp
+- 🔵 **tjeneste\svimmelhet\vng-undersokelse.html** CSS missing version hash: hub-article.css
+- 🔵 **tjeneste\svimmelhet\vng-undersokelse.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet\vng-undersokelse.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet\vng-undersokelse.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **tjeneste\svimmelhet\vng-undersokelse.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\arm-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\arm-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\arm-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\arm-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\arm-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\arm-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache.html** Image missing decoding="async": tr?id=540166625752174&ev=PageView&noscript=1
+- 🔵 **en\conditions\headache.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\headache.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\headache.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness.html** Image missing decoding="async": svimmelhet-undersokelse.jpg
+- 🔵 **en\conditions\dizziness.html** Image missing decoding="async": svimmelhet-behandling.jpg
+- 🔵 **en\conditions\dizziness.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw-pain.html** Image missing decoding="async": kjeve 1.webp
+- 🔵 **en\conditions\jaw-pain.html** Image missing decoding="async": kjeve 2.webp
+- 🔵 **en\conditions\jaw-pain.html** Image missing decoding="async": kjeve 3.webp
+- 🔵 **en\conditions\jaw-pain.html** Image missing decoding="async": kjeve-optimized.webp
+- 🔵 **en\conditions\jaw-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\jaw-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw-pain.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\knee-pain.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\knee-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\knee-pain.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee-pain.html** Image missing decoding="async": sciatica-nerve-pain-vs-muscle.webp
+- 🔵 **en\conditions\knee-pain.html** Image missing decoding="async": back-pain-lumbago-sciatica-disc.webp
+- 🔵 **en\conditions\knee-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\knee-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\knee-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\lower-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\shoulder-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\sports-injuries.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\sports-injuries.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\sports-injuries.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\sports-injuries.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\sports-injuries.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\sports-injuries.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\athletic-pubalgia.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\athletic-pubalgia.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\athletic-pubalgia.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\athletic-pubalgia.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\athletic-pubalgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\athletic-pubalgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\athletic-pubalgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\athletic-pubalgia.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\back-hip-sciatica.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\bursitis-myth.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\bursitis-myth.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\bursitis-myth.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\bursitis-myth.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\bursitis-myth.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\bursitis-myth.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\bursitis-myth.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\bursitis-myth.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\fai-hip-impingement.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\fai-hip-impingement.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\fai-hip-impingement.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\fai-hip-impingement.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\fai-hip-impingement.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\fai-hip-impingement.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\fai-hip-impingement.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\fai-hip-impingement.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\hip\gtps-gluteal-tendinopathy.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\hip\gtps-gluteal-tendinopathy.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\gtps-gluteal-tendinopathy.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\gtps-gluteal-tendinopathy.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\gtps-gluteal-tendinopathy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\gtps-gluteal-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\gtps-gluteal-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\gtps-gluteal-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\hip\hip-osteoarthritis.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\hip\hip-osteoarthritis.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\hip-osteoarthritis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\hip-osteoarthritis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\hip-osteoarthritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\hip-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\hip-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\hip-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\iliopsoas-tendinopathy.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\iliopsoas-tendinopathy.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\iliopsoas-tendinopathy.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\iliopsoas-tendinopathy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\iliopsoas-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\iliopsoas-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\iliopsoas-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\iliopsoas-tendinopathy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\labrum-tear.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\labrum-tear.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\labrum-tear.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\labrum-tear.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\labrum-tear.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\labrum-tear.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\labrum-tear.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\labrum-tear.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\meralgia-paresthetica.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\meralgia-paresthetica.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\meralgia-paresthetica.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\meralgia-paresthetica.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\meralgia-paresthetica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\meralgia-paresthetica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\meralgia-paresthetica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\meralgia-paresthetica.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\osteitis-pubis.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\osteitis-pubis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\osteitis-pubis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\osteitis-pubis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\osteitis-pubis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\osteitis-pubis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\osteitis-pubis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\osteitis-pubis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\pelvic-pain-pregnancy.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\pelvic-pain-pregnancy.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\pelvic-pain-pregnancy.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\pelvic-pain-pregnancy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\pelvic-pain-pregnancy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\pelvic-pain-pregnancy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\pelvic-pain-pregnancy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\pelvic-pain-pregnancy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\proximal-hamstring-tendinopathy.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\proximal-hamstring-tendinopathy.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\proximal-hamstring-tendinopathy.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\proximal-hamstring-tendinopathy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\proximal-hamstring-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\proximal-hamstring-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\proximal-hamstring-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\proximal-hamstring-tendinopathy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\si-joint-problems.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\si-joint-problems.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\si-joint-problems.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\si-joint-problems.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\si-joint-problems.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\si-joint-problems.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\si-joint-problems.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\si-joint-problems.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\snapping-hip.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\snapping-hip.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\snapping-hip.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\snapping-hip.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\snapping-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\snapping-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\snapping-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\snapping-hip.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\stress-fracture-hip.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\stress-fracture-hip.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\stress-fracture-hip.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\stress-fracture-hip.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\stress-fracture-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\stress-fracture-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\stress-fracture-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\stress-fracture-hip.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** Image missing decoding="async": tr?id=540166625752174&ev=PageView&noscript=1
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\trigger-points-hip-pelvis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\hip-pain.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\hip-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\hip-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\hip-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\hip-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\hip-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\hip\hip-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\hip-pointer.html** No CSS preload found
+- 🔵 **en\conditions\hip\hip-pointer.html** Image missing decoding="async": tr?id=540166625752174&ev=PageView&noscript=1
+- 🔵 **en\conditions\hip\hip-pointer.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\hip-pointer.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\hip-pointer.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\hip-pointer.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\hip-pointer.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\sports-injuries-hip.html** No CSS preload found
+- 🔵 **en\conditions\hip\sports-injuries-hip.html** Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **en\conditions\hip\sports-injuries-hip.html** Image missing decoding="async": hofte smerte.webp
+- 🔵 **en\conditions\hip\sports-injuries-hip.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\hip\sports-injuries-hip.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\hip\sports-injuries-hip.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\hip\sports-injuries-hip.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\c5-c6-disc-herniation.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\c5-c6-disc-herniation.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\c5-c6-disc-herniation.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\c5-c6-disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\c5-c6-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\c5-c6-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\c5-c6-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\c5-c6-disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\c6-c7-disc-herniation.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\c6-c7-disc-herniation.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\c6-c7-disc-herniation.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\c6-c7-disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\c6-c7-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\c6-c7-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\c6-c7-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\c6-c7-disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\cervical-foraminal-stenosis.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\cervical-foraminal-stenosis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\cervical-foraminal-stenosis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\cervical-foraminal-stenosis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\cervical-foraminal-stenosis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\cracking-neck.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\cracking-neck.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\cracking-neck.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\cracking-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\cracking-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\cracking-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\cracking-neck.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\degenerative-changes.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\degenerative-changes.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\degenerative-changes.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\degenerative-changes.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\degenerative-changes.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\degenerative-changes.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\degenerative-changes.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\degenerative-changes.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\finger-numbness.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\finger-numbness.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\finger-numbness.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\finger-numbness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\finger-numbness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\nausea-neck.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\nausea-neck.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\nausea-neck.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\nausea-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\nausea-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\nausea-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\nausea-neck.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\neck-disc-herniation.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\neck-disc-herniation.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\neck-disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\neck-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\neck-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\neck-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\neck-disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\neck-trigger-points.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\neck-trigger-points.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\neck-trigger-points.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\neck-trigger-points.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\neck-trigger-points.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\red-flags-neck-pain.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\red-flags-neck-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\red-flags-neck-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\red-flags-neck-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\red-flags-neck-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\stiff-neck-morning.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\stress-neck.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\stress-neck.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\stress-neck.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\stress-neck.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\stress-neck.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\text-neck.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\text-neck.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\text-neck.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\text-neck.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\text-neck.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\torticollis.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\torticollis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\torticollis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\torticollis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\torticollis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\torticollis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\neck\torticollis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\whiplash-headache.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\whiplash-headache.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\whiplash-headache.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\whiplash-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\whiplash-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\whiplash.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\neck\whiplash.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\neck\whiplash.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\neck\whiplash.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\neck\whiplash.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\bite-myths.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\bite-myths.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\bite-myths.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\bite-myths.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\bite-myths.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\bite-myths.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\bite-myths.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\bruxism.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\bruxism.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\bruxism.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\bruxism.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\clicking-locking-joint-problems.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\clicking-locking-joint-problems.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\clicking-locking-joint-problems.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\clicking-locking-joint-problems.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\eagle-syndrome.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\eagle-syndrome.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\eagle-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\eagle-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\eagle-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\eagle-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\eagle-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\ear-pain-tinnitus.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\ear-pain-tinnitus.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\ear-pain-tinnitus.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\ear-pain-tinnitus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\ear-pain-tinnitus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\ear-pain-tinnitus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\ear-pain-tinnitus.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\glossopharyngeal-neuralgia.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\glossopharyngeal-neuralgia.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\glossopharyngeal-neuralgia.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\glossopharyngeal-neuralgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\glossopharyngeal-neuralgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\glossopharyngeal-neuralgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\glossopharyngeal-neuralgia.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\icr-internal-carotid.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\icr-internal-carotid.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\icr-internal-carotid.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\icr-internal-carotid.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\icr-internal-carotid.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\icr-internal-carotid.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\icr-internal-carotid.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\icr-syndrome.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\icr-syndrome.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\icr-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\icr-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\icr-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\icr-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\icr-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\jaw-headache.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\jaw-headache.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\jaw-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\jaw-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\neck-jaw-connection.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\neck-jaw-connection.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\neck-jaw-connection.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\neck-jaw-connection.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\pifp-facial-pain.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\pifp-facial-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\pifp-facial-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\pifp-facial-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\pifp-facial-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\pifp-facial-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\pifp-facial-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\tmd-exercises.html** Image missing decoding="async": Kjeve.webp
+- 🔵 **en\conditions\jaw\tmd-exercises.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\jaw\tmd-exercises.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\jaw\tmd-exercises.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\tmd-exercises.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\tmd-exercises.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\jaw\tmd-exercises.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** Image missing decoding="async": tr?id=1020647599498498&ev=PageView&noscript=1
+- 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** Image missing decoding="async": albue-1-optimized.webp
+- 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\carpal-tunnel-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** Image missing decoding="async": tr?id=1020647599498498&ev=PageView&noscript=1
+- 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** Image missing decoding="async": albue-1-optimized.webp
+- 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\cubital-tunnel-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\de-quervains.html** No CSS preload found
+- 🔵 **en\conditions\elbow-arm\de-quervains.html** Image missing decoding="async": albue-1-optimized.webp
+- 🔵 **en\conditions\elbow-arm\de-quervains.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\elbow-arm\de-quervains.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\de-quervains.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\golfers-elbow.html** Image missing decoding="async": albue-1-optimized.webp
+- 🔵 **en\conditions\elbow-arm\golfers-elbow.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\elbow-arm\golfers-elbow.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\elbow-arm\golfers-elbow.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\golfers-elbow.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\golfers-elbow.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\golfers-elbow.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\golfers-elbow.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\mouse-arm.html** Image missing decoding="async": albue-1-optimized.webp
+- 🔵 **en\conditions\elbow-arm\mouse-arm.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\elbow-arm\mouse-arm.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\elbow-arm\mouse-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\mouse-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\mouse-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\mouse-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\mouse-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\tennis-elbow.html** Image missing decoding="async": albue-1-optimized.webp
+- 🔵 **en\conditions\elbow-arm\tennis-elbow.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\elbow-arm\tennis-elbow.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\elbow-arm\tennis-elbow.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\tennis-elbow.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\tennis-elbow.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\tennis-elbow.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\tennis-elbow.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\thumb-arthritis.html** Image missing decoding="async": albue-1-optimized.webp
+- 🔵 **en\conditions\elbow-arm\thumb-arthritis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\elbow-arm\thumb-arthritis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\elbow-arm\thumb-arthritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\thumb-arthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\thumb-arthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\thumb-arthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\thumb-arthritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\trigger-finger.html** Image missing decoding="async": albue-1-optimized.webp
+- 🔵 **en\conditions\elbow-arm\trigger-finger.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\elbow-arm\trigger-finger.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\elbow-arm\trigger-finger.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\trigger-finger.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\trigger-finger.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\trigger-finger.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\trigger-finger.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\trigger-points-arm.html** Image missing decoding="async": albue-1-optimized.webp
+- 🔵 **en\conditions\elbow-arm\trigger-points-arm.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\elbow-arm\trigger-points-arm.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\elbow-arm\trigger-points-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\elbow-arm\trigger-points-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\trigger-points-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\trigger-points-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\elbow-arm\trigger-points-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\acl-injury.html** No CSS preload found
+- 🔵 **en\conditions\knee\acl-injury.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\acl-injury.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\knee\acl-injury.html** Image missing decoding="async": facebook_media_social_icon.png
+- 🔵 **en\conditions\knee\acl-injury.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\conditions\knee\acl-injury.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\knee\acl-injury.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\acl-injury.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\acl-injury.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** No CSS preload found
+- 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** Image missing decoding="async": facebook_media_social_icon.png
+- 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\iliotibial-band-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\jumpers-knee.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\jumpers-knee.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\knee\jumpers-knee.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\jumpers-knee.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\jumpers-knee.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\jumpers-knee.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\jumpers-knee.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** No CSS preload found
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** Image missing decoding="async": facebook_media_social_icon.png
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\knee-osteoarthritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\knee-pain-from-hip.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\knee-pain-from-hip.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\knee\knee-pain-from-hip.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\knee-pain-from-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\knee-pain-from-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\knee-pain-from-hip.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\knee-pain-from-hip.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\meniscus-injury.html** No CSS preload found
+- 🔵 **en\conditions\knee\meniscus-injury.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\meniscus-injury.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\knee\meniscus-injury.html** Image missing decoding="async": facebook_media_social_icon.png
+- 🔵 **en\conditions\knee\meniscus-injury.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\conditions\knee\meniscus-injury.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\knee\meniscus-injury.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\meniscus-injury.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\meniscus-injury.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\pcl-injury.html** No CSS preload found
+- 🔵 **en\conditions\knee\pcl-injury.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\pcl-injury.html** Image missing decoding="async": facebook_media_social_icon.png
+- 🔵 **en\conditions\knee\pcl-injury.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\conditions\knee\pcl-injury.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\knee\pcl-injury.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\pcl-injury.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\pcl-injury.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\pes-anserine-bursitis.html** No CSS preload found
+- 🔵 **en\conditions\knee\pes-anserine-bursitis.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\pes-anserine-bursitis.html** Image missing decoding="async": facebook_media_social_icon.png
+- 🔵 **en\conditions\knee\pes-anserine-bursitis.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\conditions\knee\pes-anserine-bursitis.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\knee\pes-anserine-bursitis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\pes-anserine-bursitis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\pes-anserine-bursitis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\popliteus-syndrome.html** No CSS preload found
+- 🔵 **en\conditions\knee\popliteus-syndrome.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\popliteus-syndrome.html** Image missing decoding="async": facebook_media_social_icon.png
+- 🔵 **en\conditions\knee\popliteus-syndrome.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\conditions\knee\popliteus-syndrome.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\knee\popliteus-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\popliteus-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\popliteus-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\prepatellar-bursitis.html** No CSS preload found
+- 🔵 **en\conditions\knee\prepatellar-bursitis.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\prepatellar-bursitis.html** Image missing decoding="async": facebook_media_social_icon.png
+- 🔵 **en\conditions\knee\prepatellar-bursitis.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\conditions\knee\prepatellar-bursitis.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\knee\prepatellar-bursitis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\prepatellar-bursitis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\prepatellar-bursitis.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\knee\runners-knee.html** Inline CSS 7538 chars (>2000)
+- 🔵 **en\conditions\knee\runners-knee.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\runners-knee.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\knee\runners-knee.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\knee\runners-knee.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\runners-knee.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\runners-knee.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\runners-knee.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\shin-splints.html** No CSS preload found
+- 🔵 **en\conditions\knee\shin-splints.html** Image missing decoding="async": knee smerte.webp
+- 🔵 **en\conditions\knee\shin-splints.html** Image missing decoding="async": facebook_media_social_icon.png
+- 🔵 **en\conditions\knee\shin-splints.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\conditions\knee\shin-splints.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\conditions\knee\shin-splints.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\knee\shin-splints.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\knee\shin-splints.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\foot\achilles-tendinopathy.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\achilles-tendinopathy.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\achilles-tendinopathy.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\achilles-tendinopathy.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\achilles-tendinopathy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\achilles-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\achilles-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\achilles-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\foot\ankle-instability.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\ankle-instability.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\ankle-instability.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\ankle-instability.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\ankle-instability.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\ankle-instability.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\ankle-instability.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\ankle-instability.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\foot\ankle-sprains.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\ankle-sprains.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\ankle-sprains.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\ankle-sprains.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\ankle-sprains.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\ankle-sprains.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\ankle-sprains.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\ankle-sprains.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\foot-exercises.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\foot-exercises.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\foot-exercises.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\foot-exercises.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\foot-exercises.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\foot-exercises.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\foot-exercises.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\foot\hallux-rigidus.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\hallux-rigidus.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\hallux-rigidus.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\hallux-rigidus.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\hallux-rigidus.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\hallux-rigidus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\hallux-rigidus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\hallux-rigidus.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\foot\hallux-valgus.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\hallux-valgus.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\hallux-valgus.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\hallux-valgus.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\hallux-valgus.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\hallux-valgus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\hallux-valgus.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\hallux-valgus.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\foot\metatarsalgia.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\metatarsalgia.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\metatarsalgia.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\metatarsalgia.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\metatarsalgia.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\metatarsalgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\metatarsalgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\metatarsalgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\minimalist-shoes.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\minimalist-shoes.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\minimalist-shoes.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\minimalist-shoes.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\minimalist-shoes.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\minimalist-shoes.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\minimalist-shoes.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\foot\mortons-neuroma.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\mortons-neuroma.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\mortons-neuroma.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\mortons-neuroma.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\mortons-neuroma.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\mortons-neuroma.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\mortons-neuroma.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\mortons-neuroma.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\foot\orthotic-weaning.html** Inline CSS 2606 chars (>2000)
+- 🔵 **en\conditions\foot\orthotic-weaning.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\orthotic-weaning.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\orthotics.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\orthotics.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\orthotics.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\orthotics.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\orthotics.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\orthotics.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\orthotics.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\overpronation.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\overpronation.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\overpronation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\overpronation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\overpronation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\overpronation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\overpronation.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\foot\plantar-fasciopathy.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\plantar-fasciopathy.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\plantar-fasciopathy.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\plantar-fasciopathy.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\plantar-fasciopathy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\plantar-fasciopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\plantar-fasciopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\plantar-fasciopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\foot\severs-disease.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\severs-disease.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\severs-disease.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\severs-disease.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\severs-disease.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\severs-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\severs-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\severs-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\foot\stress-fracture-foot.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\stress-fracture-foot.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\stress-fracture-foot.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\stress-fracture-foot.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\stress-fracture-foot.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\stress-fracture-foot.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\stress-fracture-foot.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\stress-fracture-foot.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\foot\tibialis-posterior-tendinopathy.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\tibialis-posterior-tendinopathy.html** Image missing decoding="async": ankel-smerte-behandling.jpg
+- 🔵 **en\conditions\foot\tibialis-posterior-tendinopathy.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\tibialis-posterior-tendinopathy.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\tibialis-posterior-tendinopathy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\tibialis-posterior-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\tibialis-posterior-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\tibialis-posterior-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\foot\weak-feet.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\foot\weak-feet.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\weak-feet.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\weak-feet.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\weak-feet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\weak-feet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\weak-feet.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\when-orthotics-help.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\foot\when-orthotics-help.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\foot\when-orthotics-help.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\foot\when-orthotics-help.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\when-orthotics-help.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\when-orthotics-help.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\foot\when-orthotics-help.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\cervicogenic-headache.html** Image missing decoding="async": hodepine.webp
+- 🔵 **en\conditions\headache\cervicogenic-headache.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\headache\cervicogenic-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\cervicogenic-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\cervicogenic-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\cervicogenic-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\cervicogenic-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\chronic-daily-headache.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\chronic-daily-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\chronic-daily-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\chronic-daily-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\chronic-daily-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\chronic-daily-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\cluster-headache.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\cluster-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\cluster-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\cluster-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\cluster-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\cluster-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\headache-back-of-head.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\headache-back-of-head.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\headache-back-of-head.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-back-of-head.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-back-of-head.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-back-of-head.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\headache-dizziness.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\headache-dizziness.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\headache\headache-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\headache-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\headache-temple.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\headache-temple.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\headache-temple.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-temple.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-temple.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-temple.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\headache-top-of-head.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\headache-top-of-head.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\headache-top-of-head.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-top-of-head.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-top-of-head.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\headache-top-of-head.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\hormonal-headache.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\hormonal-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\hormonal-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\hormonal-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\hormonal-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\hormonal-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\medication-overuse-headache.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\medication-overuse-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\medication-overuse-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\medication-overuse-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\medication-overuse-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\medication-overuse-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\migraine.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\migraine.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\headache\migraine.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\migraine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\migraine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\migraine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\migraine.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\morning-headache.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\morning-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\morning-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\morning-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\morning-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\morning-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\occipital-neuralgia.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\occipital-neuralgia.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\occipital-neuralgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\occipital-neuralgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\occipital-neuralgia.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\occipital-neuralgia.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\headache\sinus-migraine.html** Inline CSS 5572 chars (>2000)
+- 🔵 **en\conditions\headache\sinus-migraine.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\sinus-migraine.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\sinus-migraine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\sinus-migraine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\sinus-migraine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\tension-headache.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\tension-headache.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\headache\tension-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\tension-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\tension-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\tension-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\tension-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\trigger-point-headache.html** Image missing decoding="async": Hodepine.webp
+- 🔵 **en\conditions\headache\trigger-point-headache.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\headache\trigger-point-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\trigger-point-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\trigger-point-headache.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\headache\trigger-point-headache.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\thoracic\between-shoulder-blades.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\between-shoulder-blades.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\thoracic\bra-strap-syndrome.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\bra-strap-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\thoracic\breathing-stress-back.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\breathing-stress-back.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\thoracic\costochondritis.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\thoracic\costochondritis.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\costochondritis.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\costochondritis.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\costochondritis.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\costochondritis.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\costochondritis.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\costochondritis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\costochondritis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\costochondritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\costochondritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\costochondritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\costochondritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\thoracic\fibromyalgia-chest-pain.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\fibromyalgia-chest-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\thoracic\flat-back.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\thoracic\flat-back.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\flat-back.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\flat-back.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\flat-back.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\flat-back.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\flat-back.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\flat-back.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\flat-back.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\flat-back.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\flat-back.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\flat-back.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\flat-back.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\kyphosis.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\kyphosis.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\kyphosis.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\kyphosis.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\kyphosis.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\kyphosis.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\kyphosis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\kyphosis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\kyphosis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\kyphosis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\kyphosis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\kyphosis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\kyphosis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\osteoporosis.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\osteoporosis.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\osteoporosis.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\osteoporosis.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\osteoporosis.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\osteoporosis.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\osteoporosis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\osteoporosis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\osteoporosis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\osteoporosis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\osteoporosis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\osteoporosis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\osteoporosis.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\thoracic\rib-dislocation.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\rib-dislocation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\scheuermanns-disease.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\stiff-back-sports.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\thoracic\t4-syndrome.html** Inline CSS 2115 chars (>2000)
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** Image missing decoding="async": tr?id=1020336498697498&ev=PageView&noscript=1
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\t4-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\thoracic-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** Image missing decoding="async": mid-back.jpg
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** Image missing decoding="async": Nakkesmerte 2.webp
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** Image missing decoding="async": Ryggrad anatomi.webp
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** Image missing decoding="async": skulder.webp
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** Image missing decoding="async": Ryggsmerte.webp
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** Image missing decoding="async": korsrygg.webp
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\thoracic\thoracic-disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\bppv\anterior-canal.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\bppv\anterior-canal.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\bppv\anterior-canal.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\bppv\anterior-canal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv\anterior-canal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv\anterior-canal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv\anterior-canal.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv\horizontal-canal.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\bppv\posterior-canal.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\bppv\posterior-canal.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\bppv\posterior-canal.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\bppv\posterior-canal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv\posterior-canal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv\posterior-canal.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv\posterior-canal.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\bppv-crystal-disease.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\bppv-crystal-disease.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\bppv-crystal-disease.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\bppv-crystal-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv-crystal-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv-crystal-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\bppv-crystal-disease.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\cervicogenic-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\mdds.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\mdds.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\mdds.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\mdds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\mdds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\mdds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\mdds.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\menieres-disease.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\menieres-disease.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\menieres-disease.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\menieres-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\menieres-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\menieres-disease.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\menieres-disease.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\post-concussion.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\post-concussion.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\post-concussion.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\post-concussion.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\post-concussion.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\post-concussion.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\post-concussion.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\pots-syndrome.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\pots-syndrome.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\pots-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\pots-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\pots-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\pots-syndrome.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\pots-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\pppd-chronic-dizziness.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\pppd-chronic-dizziness.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\pppd-chronic-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\pppd-chronic-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\pppd-chronic-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\pppd-chronic-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\pppd-chronic-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\scds.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\scds.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\scds.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\scds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\scds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\scds.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\scds.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\vestibular-hypofunction.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\vestibular-hypofunction.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\vestibular-hypofunction.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\vestibular-hypofunction.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\vestibular-hypofunction.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\vestibular-hypofunction.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\vestibular-hypofunction.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\vestibular-migraine.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\vestibular-migraine.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\vestibular-migraine.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\vestibular-migraine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\vestibular-migraine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\vestibular-migraine.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\vestibular-migraine.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\vestibular-neuritis.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\vestibular-neuritis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\vestibular-neuritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\vestibular-neuritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\vestibular-neuritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\vestibular-neuritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\vestibular-neuritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\whiplash-dizziness.html** Image missing decoding="async": svimmelhet-behandling.webp
+- 🔵 **en\conditions\dizziness\whiplash-dizziness.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\dizziness\whiplash-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\dizziness\whiplash-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\whiplash-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\whiplash-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\dizziness\whiplash-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\ac-joint-osteoarthritis.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\ac-joint-osteoarthritis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\ac-joint-osteoarthritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\ac-joint-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\ac-joint-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\ac-joint-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\ac-joint-osteoarthritis.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\shoulder\biceps-tendinopathy.html** Inline CSS 6784 chars (>2000)
+- 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\biceps-tendinopathy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\calcific-tendinitis.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\calcific-tendinitis.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\shoulder\calcific-tendinitis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\calcific-tendinitis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\calcific-tendinitis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\calcific-tendinitis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\calcific-tendinitis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\calcific-tendinitis.html** CSS missing version hash: hub-article.css
+- 🟡 **en\conditions\shoulder\clicking-shoulder.html** Inline CSS 2239 chars (>2000)
+- 🔵 **en\conditions\shoulder\clicking-shoulder.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\clicking-shoulder.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\clicking-shoulder.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\clicking-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\clicking-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\clicking-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🟡 **en\conditions\shoulder\cortisone-shoulder.html** Inline CSS 8016 chars (>2000)
+- 🔵 **en\conditions\shoulder\cortisone-shoulder.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\cortisone-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\pain-behind-shoulder.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\shoulder-ergonomics.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\shoulder-ergonomics.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\shoulder-ergonomics.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\shoulder-ergonomics.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\shoulder-ergonomics.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\shoulder-ergonomics.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\shoulder-ergonomics.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\shoulder-osteoarthritis.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\shoulder-osteoarthritis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\shoulder-osteoarthritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\shoulder-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\shoulder-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\shoulder-osteoarthritis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\shoulder-osteoarthritis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\slap-lesion.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\slap-lesion.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\slap-lesion.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\slap-lesion.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\slap-lesion.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\slap-lesion.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\slap-lesion.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\sleep-shoulder-pain.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\sleep-shoulder-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\sleep-shoulder-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\sleep-shoulder-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\sleep-shoulder-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\sleep-shoulder-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\sleep-shoulder-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\throwers-shoulder.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\throwers-shoulder.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\throwers-shoulder.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\throwers-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\throwers-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\throwers-shoulder.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\throwers-shoulder.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\tos-numb-arm.html** Image missing decoding="async": skulder smerter.webp
+- 🔵 **en\conditions\shoulder\tos-numb-arm.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\shoulder\tos-numb-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\shoulder\tos-numb-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\tos-numb-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\tos-numb-arm.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\shoulder\tos-numb-arm.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\disc-herniation.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **en\conditions\lower-back\disc-herniation.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\lower-back\disc-herniation.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\lower-back\disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\red-flags-back-pain.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **en\conditions\lower-back\red-flags-back-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\lower-back\red-flags-back-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\lower-back\red-flags-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\red-flags-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\red-flags-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\red-flags-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\red-flags-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\sciatica.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **en\conditions\lower-back\sciatica.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\lower-back\sciatica.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\lower-back\sciatica.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\sciatica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\sciatica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\sciatica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\sciatica.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\si-joint.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **en\conditions\lower-back\si-joint.html** Image missing decoding="async": meg.webp
+- 🔵 **en\conditions\lower-back\si-joint.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\lower-back\si-joint.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\si-joint.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\si-joint.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\si-joint.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\si-joint.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\spinal-stenosis.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **en\conditions\lower-back\spinal-stenosis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\lower-back\spinal-stenosis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\spinal-stenosis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\spinal-stenosis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\spinal-stenosis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\spinal-stenosis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\acute-back-pain.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **en\conditions\lower-back\acute-back-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\lower-back\acute-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\acute-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\acute-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\acute-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\acute-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\ankylosing-spondylitis.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **en\conditions\lower-back\ankylosing-spondylitis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\lower-back\ankylosing-spondylitis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\ankylosing-spondylitis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\ankylosing-spondylitis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\ankylosing-spondylitis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\ankylosing-spondylitis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\spondylolisthesis.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **en\conditions\lower-back\spondylolisthesis.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\lower-back\spondylolisthesis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\spondylolisthesis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\spondylolisthesis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\spondylolisthesis.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\spondylolisthesis.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\pregnancy-back-pain.html** Image missing decoding="async": korsrygg smerte (1).webp
+- 🔵 **en\conditions\lower-back\pregnancy-back-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions\lower-back\pregnancy-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\conditions\lower-back\pregnancy-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\pregnancy-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\pregnancy-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions\lower-back\pregnancy-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\dizziness\vestibular-rehabilitation.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\dizziness\vestibular-rehabilitation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\dizziness\vestibular-rehabilitation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness\vestibular-rehabilitation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness\vestibular-rehabilitation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness\vestibular-rehabilitation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\dizziness\vestibular-system.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\dizziness\vestibular-system.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\services\dizziness\vestibular-system.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\dizziness\vestibular-system.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness\vestibular-system.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness\vestibular-system.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness\vestibular-system.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\dizziness\vng-examination.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\dizziness\vng-examination.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\dizziness\vng-examination.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness\vng-examination.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness\vng-examination.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness\vng-examination.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\acute-treatment.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\acute-treatment.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\acute-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\acute-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\acute-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\acute-treatment.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\chiropractic.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\chiropractic.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\services\chiropractic.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\chiropractic.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\chiropractic.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\chiropractic.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\chiropractic.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\dizziness-treatment.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\dizziness-treatment.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\services\dizziness-treatment.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\dizziness-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dizziness-treatment.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\dry-needling.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\dry-needling.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\services\dry-needling.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\dry-needling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dry-needling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dry-needling.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\dry-needling.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\fascia-manipulation.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\fascia-manipulation.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\services\fascia-manipulation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\fascia-manipulation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\fascia-manipulation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\fascia-manipulation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\fascia-manipulation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\graston.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\graston.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\services\graston.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\graston.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\graston.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\graston.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\graston.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\preventive-treatment.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\preventive-treatment.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\preventive-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\preventive-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\preventive-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\preventive-treatment.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\soft-tissue.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\soft-tissue.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\services\soft-tissue.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\soft-tissue.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\soft-tissue.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\soft-tissue.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\soft-tissue.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\rehabilitation.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\rehabilitation.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\services\rehabilitation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\rehabilitation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\rehabilitation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\rehabilitation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\rehabilitation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\shockwave.html** Image missing decoding="async": meg.webp
+- 🔵 **en\services\shockwave.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\services\shockwave.html** CSS missing version hash: hub-article.css
+- 🔵 **en\services\shockwave.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\shockwave.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\shockwave.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services\shockwave.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\acute-back-pain-self-help.html** No CSS preload found
+- 🔵 **en\blog\acute-back-pain-self-help.html** Image missing decoding="async": Guide to Acute Low Back Pain.webp
+- 🔵 **en\blog\acute-back-pain-self-help.html** Image missing decoding="async": meg.webp
+- 🔵 **en\blog\acute-back-pain-self-help.html** Image missing decoding="async": facebook_media_social_icon.png
+- 🔵 **en\blog\acute-back-pain-self-help.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\blog\acute-back-pain-self-help.html** Image missing decoding="async": logo-footer.webp
+- 🔵 **en\blog\acute-back-pain-self-help.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\acute-back-pain-self-help.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\acute-back-pain-self-help.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\adhd-autism-jaw-pain.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\adhd-autism-jaw-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\blog\adhd-autism-jaw-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\bite-problems-myths-facts.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\bite-problems-myths-facts.html** Image missing decoding="async": Bruxism Day and Night Grinding.webp
+- 🔵 **en\blog\bite-problems-myths-facts.html** Image missing decoding="async": meg.webp
+- 🔵 **en\blog\bite-problems-myths-facts.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\blog\bite-problems-myths-facts.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\botox-vs-manual-treatment-jaw.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\botox-vs-manual-treatment-jaw.html** Image missing decoding="async": meg.webp
+- 🔵 **en\blog\botox-vs-manual-treatment-jaw.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\blog\botox-vs-manual-treatment-jaw.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\hypermobility-eds-jaw.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\hypermobility-eds-jaw.html** Image missing decoding="async": meg.webp
+- 🔵 **en\blog\hypermobility-eds-jaw.html** CSS missing version hash: hub-article.css
+- 🟡 **en\blog\index.html** Inline CSS 4280 chars (>2000)
+- 🟡 **en\blog\index.html** 9 external scripts (>8)
+- 🔵 **en\blog\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\jaw-exercises-home.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\jaw-exercises-home.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\blog\jaw-exercises-home.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\jaw-pain-children-adolescents.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\jaw-pain-children-adolescents.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\blog\jaw-pain-children-adolescents.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\martial-arts-jaw-injuries.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\martial-arts-jaw-injuries.html** Image missing decoding="async": meg.webp
+- 🔵 **en\blog\martial-arts-jaw-injuries.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\musicians-jaw-pain.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\musicians-jaw-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\blog\musicians-jaw-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\blog\musicians-jaw-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\pregnancy-jaw-pain.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\pregnancy-jaw-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\blog\pregnancy-jaw-pain.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\blog\pregnancy-jaw-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\stress-jaw-pain.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\stress-jaw-pain.html** Image missing decoding="async": Understanding and Managing Jaw Pain (TMD).webp
+- 🔵 **en\blog\stress-jaw-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\blog\stress-jaw-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\text-neck-jaw-pain.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\text-neck-jaw-pain.html** Image missing decoding="async": The Jaw-Headache Connection Guide to TMD.webp
+- 🔵 **en\blog\text-neck-jaw-pain.html** Image missing decoding="async": meg.webp
+- 🔵 **en\blog\text-neck-jaw-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\tmd-ibs-gut-jaw.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\tmd-ibs-gut-jaw.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\text-neck-phone-neck.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\blog\text-neck-phone-neck.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\text-neck-phone-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\text-neck-phone-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\text-neck-phone-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\trigger-points-neck.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\blog\trigger-points-neck.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\trigger-points-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\trigger-points-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\trigger-points-neck.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\neck-pain-pregnancy.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\neck-pain-pregnancy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\neck-pain-pregnancy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\neck-pain-pregnancy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\numbness-fingers-neck-hand.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\numbness-fingers-neck-hand.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\numbness-fingers-neck-hand.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\numbness-fingers-neck-hand.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\stress-neck-trigger-points.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\blog\stress-neck-trigger-points.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\stress-neck-trigger-points.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\stress-neck-trigger-points.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\stress-neck-trigger-points.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\sciatica-prolapse-lumbago-difference.html** Image missing decoding="async": Decoding Sciatica Pain and Recovery.webp
+- 🔵 **en\blog\sciatica-prolapse-lumbago-difference.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\blog\sciatica-prolapse-lumbago-difference.html** Image missing decoding="async": ryggmassasje-klinikk.png
+- 🔵 **en\blog\sciatica-prolapse-lumbago-difference.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\sciatica-prolapse-lumbago-difference.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\sciatica-prolapse-lumbago-difference.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\sciatica-prolapse-lumbago-difference.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\strengthening-exercises-lower-back.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\strengthening-exercises-lower-back.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\strengthening-exercises-lower-back.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\subtle-bppv.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\subtle-bppv.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\subtle-bppv.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\central-dizziness.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\central-dizziness.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\central-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\chiropractor-vs-physiotherapist.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\chiropractor-vs-physiotherapist.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\chiropractor-vs-physiotherapist.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\concussion-sports.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\concussion-sports.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\concussion-sports.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\discogenic-pain.html** Image missing decoding="async": Discogenic Pain Sitting and Movement.webp
+- 🔵 **en\blog\discogenic-pain.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\blog\discogenic-pain.html** Image missing decoding="async": ryggmassasje-klinikk.png
+- 🔵 **en\blog\discogenic-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\discogenic-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\discogenic-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\discogenic-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\dizziness-myths.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizziness-myths.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizziness-myths.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\dizziness-not-bppv.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizziness-not-bppv.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizziness-not-bppv.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\dizziness-stress-anxiety.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizziness-stress-anxiety.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizziness-stress-anxiety.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\dizziness-treatment.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\blog\dizziness-treatment.html** Image missing decoding="async": ryggmassasje-klinikk.png
+- 🔵 **en\blog\dizziness-treatment.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\dizziness-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\dizziness-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\dizziness-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\dizzy-and-nauseous.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizzy-and-nauseous.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizzy-and-nauseous.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\dizzy-in-bed.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizzy-in-bed.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizzy-in-bed.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\dizzy-when-standing-up.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizzy-when-standing-up.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\dizzy-when-standing-up.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\elderly-dizziness-fall-risk.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\elderly-dizziness-fall-risk.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\elderly-dizziness-fall-risk.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\exercises-sciatica.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\exercises-sciatica.html** Image missing decoding="async": Five Exercises to Relieve Sciatica Pain.webp
+- 🔵 **en\blog\exercises-sciatica.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\exercises-sciatica.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\facet-joint-syndrome.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\facet-joint-syndrome.html** Image missing decoding="async": Facet Joint Syndrome Causes and Management.webp
+- 🔵 **en\blog\facet-joint-syndrome.html** Image missing decoding="async": meg.webp
+- 🔵 **en\blog\facet-joint-syndrome.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\facet-joint-syndrome.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\jaw-neck-dizziness.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\jaw-neck-dizziness.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\jaw-neck-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\l4-l5-disc-herniation.html** Image missing decoding="async": Guide to L4-L5 Disc Herniation.webp
+- 🔵 **en\blog\l4-l5-disc-herniation.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\blog\l4-l5-disc-herniation.html** Image missing decoding="async": ryggmassasje-klinikk.png
+- 🔵 **en\blog\l4-l5-disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\l4-l5-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\l4-l5-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\l4-l5-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\l5-s1-disc-herniation.html** Image missing decoding="async": L5-S1 Disc Herniation Symptoms and Recovery.webp
+- 🔵 **en\blog\l5-s1-disc-herniation.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\blog\l5-s1-disc-herniation.html** Image missing decoding="async": ryggmassasje-klinikk.png
+- 🔵 **en\blog\l5-s1-disc-herniation.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\l5-s1-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\l5-s1-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\l5-s1-disc-herniation.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\living-with-dizziness.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\living-with-dizziness.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\living-with-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\mri-imaging-back-pain.html** Image missing decoding="async": Smart Approach to Back Pain MRIs.webp
+- 🔵 **en\blog\mri-imaging-back-pain.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\blog\mri-imaging-back-pain.html** Image missing decoding="async": ryggmassasje-klinikk.png
+- 🔵 **en\blog\mri-imaging-back-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\mri-imaging-back-pain.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\muscle-pain-vs-nerve-pain.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\muscle-pain-vs-nerve-pain.html** Image missing decoding="async": Final Transparent Logo.webp
+- 🔵 **en\blog\muscle-pain-vs-nerve-pain.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\piriformis-syndrome-false-sciatica.html** Image missing decoding="async": Piriformis Syndrome False Sciatica Explained.webp
+- 🔵 **en\blog\piriformis-syndrome-false-sciatica.html** Image missing decoding="async": instagramlogo.png
+- 🔵 **en\blog\piriformis-syndrome-false-sciatica.html** Image missing decoding="async": ryggmassasje-klinikk.png
+- 🔵 **en\blog\piriformis-syndrome-false-sciatica.html** CSS missing version hash: hub-article.css
+- 🔵 **en\blog\piriformis-syndrome-false-sciatica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\piriformis-syndrome-false-sciatica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\blog\piriformis-syndrome-false-sciatica.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\prices.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\prices.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\prices.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\prices.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\prices.html** CSS missing version hash: improvements-2026.css
+- 🔵 **en\prices.html** CSS missing version hash: improvements-2026.css
+- 🔵 **en\404.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\404.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\404.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\conditions.html** CSS missing version hash: conditions-premium.css
+- 🔵 **en\conditions.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\conditions.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\contact.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\contact.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\contact.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\contact.html** CSS missing version hash: improvements-2026.css
+- 🔵 **en\contact.html** CSS missing version hash: improvements-2026.css
+- 🔵 **en\emergency-dizziness.html** Image missing decoding="async": meg.webp
+- 🔵 **en\emergency-dizziness.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\emergency-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\emergency-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\emergency-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\emergency-dizziness.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\emergency-dizziness.html** CSS missing version hash: hub-article.css
+- 🔵 **en\emergency-treatment.html** Image missing decoding="async": meg.webp
+- 🔵 **en\emergency-treatment.html** CSS missing version hash: hub-article.css
+- 🔵 **en\emergency-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\emergency-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\emergency-treatment.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\emergency-treatment.html** CSS missing version hash: hub-article.css
+- 🔵 **en\emergency.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\emergency.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\emergency.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\faq.html** CSS missing version hash: hub-article.css
+- 🔵 **en\faq.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\faq.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\new-patients.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\new-patients.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\new-patients.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\privacy-policy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\privacy-policy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\privacy-policy.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\about.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\about.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\about.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\about.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\about.html** CSS missing version hash: improvements-2026.css
+- 🔵 **en\about.html** CSS missing version hash: improvements-2026.css
+- 🔵 **en\index.html** Image missing decoding="async": meg.webp
+- 🔵 **en\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\index.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\index.html** CSS missing version hash: improvements-2026.css
+- 🔵 **en\index.html** CSS missing version hash: improvements-2026.css
+- 🔵 **en\services.html** CSS missing version hash: index-2026-fixes.css
+- 🔵 **en\services.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services.html** CSS missing version hash: font-awesome-minimal.css
+- 🔵 **en\services.html** CSS missing version hash: improvements-2026.css
+- 🔵 **en\services.html** CSS missing version hash: improvements-2026.css
+
+### Schema Markup
+
+Critical: 0 | Warnings: 101 | Info: 0
+
+- 🟡 **priser.html** FAQ section found but no FAQPage schema
+- 🟡 **plager.html** No JSON-LD schema found
+- 🟡 **404.html** No JSON-LD schema found
+- 🟡 **privacy-policy.html** No JSON-LD schema found
+- 🟡 **personvern.html** No JSON-LD schema found
+- 🟡 **blogg\index.html** No JSON-LD schema found
+- 🟡 **blogg\nakkesmerter-gravid.html** FAQ section found but no FAQPage schema
+- 🟡 **blogg\eldre-svimmelhet-fallrisiko.html** No JSON-LD schema found
+- 🟡 **blogg\piriformissyndrom-falsk-isjias.html** FAQ section found but no FAQPage schema
+- 🟡 **blogg\kiropraktor-vs-fysioterapeut.html** No JSON-LD schema found
+- 🟡 **blogg\l4-l5-prolaps.html** FAQ section found but no FAQPage schema
+- 🟡 **blogg\sentral-svimmelhet.html** No JSON-LD schema found
+- 🟡 **blogg\kjeve-nakke-svimmelhet.html** No JSON-LD schema found
+- 🟡 **blogg\diskogen-smerte.html** FAQ section found but no FAQPage schema
+- 🟡 **blogg\ovelser-isjias.html** No JSON-LD schema found
+- 🟡 **blogg\leve-med-svimmelhet.html** No JSON-LD schema found
+- 🟡 **blogg\tmd-ibs-mage-kjeve.html** No JSON-LD schema found
+- 🟡 **blogg\svimmelhet-ikke-bppv.html** No JSON-LD schema found
+- 🟡 **blogg\subtil-krystallsyke.html** No JSON-LD schema found
+- 🟡 **blogg\musikere-kjevesmerter.html** No JSON-LD schema found
+- 🟡 **blogg\facettleddssyndrom.html** No JSON-LD schema found
+- 🟡 **blogg\graviditet-kjevesmerter.html** No JSON-LD schema found
+- 🟡 **blogg\bittfeil-myter-fakta.html** No JSON-LD schema found
+- 🟡 **blogg\l5-s1-prolaps.html** FAQ section found but no FAQPage schema
+- 🟡 **blogg\kampsport-kjeveskader.html** No JSON-LD schema found
+- 🟡 **blogg\svimmelhet-myter.html** No JSON-LD schema found
+- 🟡 **blogg\svimmel-naar-du-staar-opp.html** No JSON-LD schema found
+- 🟡 **blogg\styrkeovelser-korsrygg.html** No JSON-LD schema found
+- 🟡 **blogg\stress-kjevesmerter.html** No JSON-LD schema found
+- 🟡 **blogg\hjernerystelse-idrett.html** No JSON-LD schema found
+- 🟡 **blogg\svimmel-i-senga.html** No JSON-LD schema found
+- 🟡 **blogg\svimmelhet-stress-angst.html** No JSON-LD schema found
+- 🟡 **blogg\kjeveovelser-hjemme.html** No JSON-LD schema found
+- 🟡 **blogg\tekstnakke-kjevesmerter.html** No JSON-LD schema found
+- 🟡 **blogg\hypermobilitet-eds-kjeve.html** No JSON-LD schema found
+- 🟡 **blogg\kjevesmerter-barn-ungdom.html** No JSON-LD schema found
+- 🟡 **blogg\mr-bildediagnostikk-ryggsmerte.html** FAQ section found but no FAQPage schema
+- 🟡 **blogg\muskelsmerte-vs-nervesmerte.html** No JSON-LD schema found
+- 🟡 **blogg\stressnakke-triggerpunkter.html** FAQ section found but no FAQPage schema
+- 🟡 **blogg\adhd-autisme-kjevesmerter.html** No JSON-LD schema found
+- 🟡 **blogg\akutt-ryggsmerte-selvhjelp.html** No JSON-LD schema found
+- 🟡 **blogg\botox-vs-manuell-behandling-kjeve.html** No JSON-LD schema found
+- 🟡 **blogg\isjias-prolaps-hekseskudd-forskjell.html** FAQ section found but no FAQPage schema
+- 🟡 **tjeneste\svimmelhet.html** No JSON-LD schema found
+- 🟡 **en\conditions\neck\cervical-foraminal-stenosis.html** FAQ section found but no FAQPage schema
+- 🟡 **en\conditions\neck\finger-numbness.html** FAQ section found but no FAQPage schema
+- 🟡 **en\conditions\neck\stress-neck.html** FAQ section found but no FAQPage schema
+- 🟡 **en\conditions\neck\text-neck.html** FAQ section found but no FAQPage schema
+- 🟡 **en\conditions\neck\whiplash-headache.html** FAQ section found but no FAQPage schema
+- 🟡 **en\conditions\neck\whiplash.html** FAQ section found but no FAQPage schema
+- 🟡 **en\services\dizziness-treatment.html** No JSON-LD schema found
+- 🟡 **en\services\fascia-manipulation.html** FAQ section found but no FAQPage schema
+- 🟡 **en\services\graston.html** FAQ section found but no FAQPage schema
+- 🟡 **en\services\soft-tissue.html** FAQ section found but no FAQPage schema
+- 🟡 **en\services\rehabilitation.html** FAQ section found but no FAQPage schema
+- 🟡 **en\services\shockwave.html** FAQ section found but no FAQPage schema
+- 🟡 **en\blog\adhd-autism-jaw-pain.html** No JSON-LD schema found
+- 🟡 **en\blog\bite-problems-myths-facts.html** No JSON-LD schema found
+- 🟡 **en\blog\botox-vs-manual-treatment-jaw.html** No JSON-LD schema found
+- 🟡 **en\blog\hypermobility-eds-jaw.html** No JSON-LD schema found
+- 🟡 **en\blog\index.html** No JSON-LD schema found
+- 🟡 **en\blog\jaw-exercises-home.html** No JSON-LD schema found
+- 🟡 **en\blog\jaw-pain-children-adolescents.html** No JSON-LD schema found
+- 🟡 **en\blog\martial-arts-jaw-injuries.html** No JSON-LD schema found
+- 🟡 **en\blog\musicians-jaw-pain.html** No JSON-LD schema found
+- 🟡 **en\blog\pregnancy-jaw-pain.html** No JSON-LD schema found
+- 🟡 **en\blog\stress-jaw-pain.html** No JSON-LD schema found
+- 🟡 **en\blog\text-neck-jaw-pain.html** No JSON-LD schema found
+- 🟡 **en\blog\tmd-ibs-gut-jaw.html** No JSON-LD schema found
+- 🟡 **en\blog\neck-pain-pregnancy.html** FAQ section found but no FAQPage schema
+- 🟡 **en\blog\stress-neck-trigger-points.html** FAQ section found but no FAQPage schema
+- 🟡 **en\blog\sciatica-prolapse-lumbago-difference.html** FAQ section found but no FAQPage schema
+- 🟡 **en\blog\strengthening-exercises-lower-back.html** No JSON-LD schema found
+- 🟡 **en\blog\subtle-bppv.html** No JSON-LD schema found
+- 🟡 **en\blog\central-dizziness.html** No JSON-LD schema found
+- 🟡 **en\blog\chiropractor-vs-physiotherapist.html** No JSON-LD schema found
+- 🟡 **en\blog\concussion-sports.html** No JSON-LD schema found
+- 🟡 **en\blog\discogenic-pain.html** FAQ section found but no FAQPage schema
+- 🟡 **en\blog\dizziness-myths.html** No JSON-LD schema found
+- 🟡 **en\blog\dizziness-not-bppv.html** No JSON-LD schema found
+- 🟡 **en\blog\dizziness-stress-anxiety.html** No JSON-LD schema found
+- 🟡 **en\blog\dizzy-and-nauseous.html** No JSON-LD schema found
+- 🟡 **en\blog\dizzy-in-bed.html** No JSON-LD schema found
+- 🟡 **en\blog\dizzy-when-standing-up.html** No JSON-LD schema found
+- 🟡 **en\blog\elderly-dizziness-fall-risk.html** No JSON-LD schema found
+- 🟡 **en\blog\exercises-sciatica.html** No JSON-LD schema found
+- 🟡 **en\blog\facet-joint-syndrome.html** No JSON-LD schema found
+- 🟡 **en\blog\jaw-neck-dizziness.html** No JSON-LD schema found
+- 🟡 **en\blog\l4-l5-disc-herniation.html** FAQ section found but no FAQPage schema
+- 🟡 **en\blog\l5-s1-disc-herniation.html** FAQ section found but no FAQPage schema
+- 🟡 **en\blog\living-with-dizziness.html** No JSON-LD schema found
+- 🟡 **en\blog\mri-imaging-back-pain.html** FAQ section found but no FAQPage schema
+- 🟡 **en\blog\muscle-pain-vs-nerve-pain.html** No JSON-LD schema found
+- 🟡 **en\prices.html** No JSON-LD schema found
+- 🟡 **en\404.html** No JSON-LD schema found
+- 🟡 **en\conditions.html** No JSON-LD schema found
+- 🟡 **en\emergency.html** No JSON-LD schema found
+- 🟡 **en\new-patients.html** No JSON-LD schema found
+- 🟡 **en\privacy-policy.html** No JSON-LD schema found
+- 🟡 **en\about.html** No JSON-LD schema found
+- 🟡 **en\services.html** No JSON-LD schema found
+
+### Structural Consistency
+
+Critical: 0 | Warnings: 0 | Info: 99
+
+- 🔵 **404.html** Missing breadcrumb navigation
+- 🔵 **index.html** Missing breadcrumb navigation
+- 🔵 **akutt-svimmelhet-helg.html** Missing mobile sticky CTA
+- 🔵 **akutt-behandling.html** Missing mobile sticky CTA
+- 🔵 **blogg\index.html** Missing mobile sticky CTA
+- 🔵 **plager\nakke\nakkesleng-hodepine.html** Missing Facebook Pixel
+- 🔵 **plager\nakke\triggerpunkter-nakke.html** Missing Facebook Pixel
+- 🔵 **plager\nakke\rode-flagg-nakkesmerter.html** Missing Facebook Pixel
+- 🔵 **plager\kjeve\ovelser-tmd.html** Missing Facebook Pixel
+- 🔵 **plager\kjeve\oresmerter-tinnitus.html** Missing Facebook Pixel
+- 🔵 **plager\kjeve\klikking-lasing-leddproblemer.html** Missing Facebook Pixel
+- 🔵 **plager\kjeve\nakke-kjeve-sammenheng.html** Missing Facebook Pixel
+- 🔵 **plager\kjeve\kjevehodepine.html** Missing Facebook Pixel
+- 🔵 **plager\korsrygg\graviditet.html** Missing Facebook Pixel
+- 🔵 **plager\korsrygg\rode-flagg-ryggsmerter.html** Missing Facebook Pixel
+- 🔵 **tjeneste\svimmelhet\balansesystemet.html** Missing Facebook Pixel
+- 🔵 **tjeneste\svimmelhet\vestibular-rehabilitering.html** Missing Facebook Pixel
+- 🔵 **tjeneste\svimmelhet\vng-undersokelse.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\c5-c6-disc-herniation.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\c6-c7-disc-herniation.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\cervical-foraminal-stenosis.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\finger-numbness.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\neck-trigger-points.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\red-flags-neck-pain.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\stress-neck.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\text-neck.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\torticollis.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\whiplash-headache.html** Missing Facebook Pixel
+- 🔵 **en\conditions\neck\whiplash.html** Missing Facebook Pixel
+- 🔵 **en\conditions\jaw\bruxism.html** Missing Facebook Pixel
+- 🔵 **en\conditions\jaw\clicking-locking-joint-problems.html** Missing Facebook Pixel
+- 🔵 **en\conditions\jaw\eagle-syndrome.html** Missing Facebook Pixel
+- 🔵 **en\conditions\jaw\ear-pain-tinnitus.html** Missing Facebook Pixel
+- 🔵 **en\conditions\jaw\jaw-headache.html** Missing Facebook Pixel
+- 🔵 **en\conditions\jaw\neck-jaw-connection.html** Missing Facebook Pixel
+- 🔵 **en\conditions\jaw\tmd-exercises.html** Missing Facebook Pixel
+- 🔵 **en\conditions\headache\cervicogenic-headache.html** Missing mobile sticky CTA
+- 🔵 **en\conditions\lower-back\disc-herniation.html** Missing Facebook Pixel
+- 🔵 **en\conditions\lower-back\red-flags-back-pain.html** Missing Facebook Pixel
+- 🔵 **en\conditions\lower-back\si-joint.html** Missing Facebook Pixel
+- 🔵 **en\conditions\lower-back\pregnancy-back-pain.html** Missing Facebook Pixel
+- 🔵 **en\services\dizziness\vestibular-rehabilitation.html** Missing Facebook Pixel
+- 🔵 **en\services\dizziness\vestibular-system.html** Missing Facebook Pixel
+- 🔵 **en\services\dizziness\vng-examination.html** Missing Facebook Pixel
+- 🔵 **en\services\chiropractic.html** Missing Facebook Pixel
+- 🔵 **en\services\dizziness-treatment.html** Missing Facebook Pixel
+- 🔵 **en\services\dry-needling.html** Missing Facebook Pixel
+- 🔵 **en\services\fascia-manipulation.html** Missing Facebook Pixel
+- 🔵 **en\services\graston.html** Missing Facebook Pixel
+- 🔵 **en\services\soft-tissue.html** Missing Facebook Pixel
+- 🔵 **en\services\rehabilitation.html** Missing Facebook Pixel
+- 🔵 **en\services\shockwave.html** Missing Facebook Pixel
+- 🔵 **en\blog\acute-back-pain-self-help.html** Missing breadcrumb navigation
+- 🔵 **en\blog\acute-back-pain-self-help.html** Missing Facebook Pixel
+- 🔵 **en\blog\adhd-autism-jaw-pain.html** Missing Facebook Pixel
+- 🔵 **en\blog\bite-problems-myths-facts.html** Missing Facebook Pixel
+- 🔵 **en\blog\botox-vs-manual-treatment-jaw.html** Missing Facebook Pixel
+- 🔵 **en\blog\hypermobility-eds-jaw.html** Missing Facebook Pixel
+- 🔵 **en\blog\index.html** Missing mobile sticky CTA
+- 🔵 **en\blog\jaw-exercises-home.html** Missing Facebook Pixel
+- 🔵 **en\blog\jaw-pain-children-adolescents.html** Missing Facebook Pixel
+- 🔵 **en\blog\martial-arts-jaw-injuries.html** Missing Facebook Pixel
+- 🔵 **en\blog\musicians-jaw-pain.html** Missing Facebook Pixel
+- 🔵 **en\blog\pregnancy-jaw-pain.html** Missing Facebook Pixel
+- 🔵 **en\blog\stress-jaw-pain.html** Missing Facebook Pixel
+- 🔵 **en\blog\text-neck-jaw-pain.html** Missing Facebook Pixel
+- 🔵 **en\blog\tmd-ibs-gut-jaw.html** Missing Facebook Pixel
+- 🔵 **en\blog\text-neck-phone-neck.html** Missing Facebook Pixel
+- 🔵 **en\blog\neck-pain-pregnancy.html** Missing Facebook Pixel
+- 🔵 **en\blog\numbness-fingers-neck-hand.html** Missing Facebook Pixel
+- 🔵 **en\blog\stress-neck-trigger-points.html** Missing Facebook Pixel
+- 🔵 **en\blog\sciatica-prolapse-lumbago-difference.html** Missing Facebook Pixel
+- 🔵 **en\blog\strengthening-exercises-lower-back.html** Missing Facebook Pixel
+- 🔵 **en\blog\subtle-bppv.html** Missing Facebook Pixel
+- 🔵 **en\blog\central-dizziness.html** Missing Facebook Pixel
+- 🔵 **en\blog\chiropractor-vs-physiotherapist.html** Missing Facebook Pixel
+- 🔵 **en\blog\concussion-sports.html** Missing Facebook Pixel
+- 🔵 **en\blog\discogenic-pain.html** Missing Facebook Pixel
+- 🔵 **en\blog\dizziness-myths.html** Missing Facebook Pixel
+- 🔵 **en\blog\dizziness-not-bppv.html** Missing Facebook Pixel
+- 🔵 **en\blog\dizziness-stress-anxiety.html** Missing Facebook Pixel
+- 🔵 **en\blog\dizziness-treatment.html** Missing Facebook Pixel
+- 🔵 **en\blog\dizzy-and-nauseous.html** Missing Facebook Pixel
+- 🔵 **en\blog\dizzy-in-bed.html** Missing Facebook Pixel
+- 🔵 **en\blog\dizzy-when-standing-up.html** Missing Facebook Pixel
+- 🔵 **en\blog\elderly-dizziness-fall-risk.html** Missing Facebook Pixel
+- 🔵 **en\blog\exercises-sciatica.html** Missing Facebook Pixel
+- 🔵 **en\blog\facet-joint-syndrome.html** Missing Facebook Pixel
+- 🔵 **en\blog\jaw-neck-dizziness.html** Missing Facebook Pixel
+- 🔵 **en\blog\l5-s1-disc-herniation.html** Missing Facebook Pixel
+- 🔵 **en\blog\living-with-dizziness.html** Missing Facebook Pixel
+- 🔵 **en\blog\mri-imaging-back-pain.html** Missing Facebook Pixel
+- 🔵 **en\blog\muscle-pain-vs-nerve-pain.html** Missing Facebook Pixel
+- 🔵 **en\blog\piriformis-syndrome-false-sciatica.html** Missing Facebook Pixel
+- 🔵 **en\404.html** Missing mobile sticky CTA
+- 🔵 **en\emergency-dizziness.html** Missing mobile sticky CTA
+- 🔵 **en\emergency-treatment.html** Missing mobile sticky CTA
+- 🔵 **en\index.html** Missing mobile sticky CTA
+- 🔵 **en\index.html** Missing breadcrumb navigation
+
