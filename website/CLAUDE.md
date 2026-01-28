@@ -247,6 +247,58 @@ Single source for statistics/facts, brief references elsewhere:
 
 ## Session Learnings Log
 
+### 2026-01-28 - Full Audit Script & Warning Fixes (In Progress)
+
+**Task:** Created comprehensive audit script and fixed majority of warnings
+
+**Script Created:** `scripts/full-audit.js` (run with `npm run full-audit`)
+- Scans all 492 HTML pages
+- 9 check categories: Meta, Schema, Hreflang, CSS, Performance, Accessibility, Content, Sitemap, Structure
+- Outputs `docs/FULL-AUDIT-REPORT.md`
+
+**Results After Initial Fixes:**
+- Critical: 45 → 0 (all fixed)
+- Warnings: 2,331 → 691 (1,640 fixed)
+
+**Fixes Applied:**
+- 854 links: Added aria-label attributes
+- 364 files: Extracted inline CSS to `css/hub-article.css`
+- 4,407 blocks: Changed h4→h3 in article components
+- 221 files: Changed "Quick Summary" h3→h2
+- 53 tags: Added missing og:title/og:description
+- 42 dates: Fixed future lastReviewed in schema
+- 18 pages: Added missing hreflang tags
+- 42 blog posts: Fixed hreflang paths from `/blogg/xxx-en.html` to `/en/blog/xxx.html`
+
+**CSS Files Created:**
+- `css/hub-article.css` - Extracted from inline styles (article components, hub-hero, location styles)
+- `css/hub-inline.css` - Subset, now unused (hub-article.css is superset)
+
+**Remaining 691 Warnings (pending):**
+| Category | Count | Nature |
+|----------|-------|--------|
+| Accessibility | 325 | Heading skips needing per-page review |
+| Meta Tags | 221 | Title/description length (content decisions) |
+| Schema Markup | 101 | 74 no JSON-LD, 27 FAQ without schema |
+| Performance | 42 | Page-specific inline CSS |
+| Content/Hreflang | 2 | 1 typo, 1 no EN translation |
+
+**Next Steps (6-stage plan):**
+1. Stage 1: Add MedicalWebPage schema to 74 pages, FAQPage to 27
+2. Stage 2: Fix remaining heading hierarchy issues
+3. Stage 3: Extract remaining inline CSS to external files
+4. Stage 4: Quick fixes (1 typo)
+5. Stage 5: Generate meta tag length report for content review
+6. Stage 6: Manual heading structure fixes
+
+**Scripts to Create:**
+- `scripts/fix-schema-warnings.js`
+- `scripts/fix-heading-hierarchy.js`
+- `scripts/fix-remaining-inline-css.js`
+- `scripts/audit-meta-lengths.js`
+
+---
+
 ### 2026-01-27 - Comprehensive Website Audit & Fixes
 
 **Task:** Full audit of ~493 production HTML pages across 8 phases
