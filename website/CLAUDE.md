@@ -247,6 +247,64 @@ Single source for statistics/facts, brief references elsewhere:
 
 ## Session Learnings Log
 
+### 2026-01-29 - Comprehensive Website Review & Improvements
+
+**Task:** Full website audit and improvement plan implementation
+
+**Phase 1: Design Analysis & Visual Breaks**
+- Added new CSS components to `hub-article.css` for visual breaks:
+  - `.pull-quote` - Highlighted quote blocks
+  - `.content-break` - Decorative horizontal separators
+  - `.key-stat` - Standalone statistic highlights
+  - `.visual-break-image` - Inline images for text breaks
+  - `.highlight-box` - Colored callout boxes
+  - `.fact-card` - Icon + fact display
+- Increased `.hub-section` margin from 40px to 48px for better rhythm
+- Added breathing room for images (32px top, 40px bottom)
+
+**Phase 2: CSS Technical Fixes**
+- Verified all CSS classes are standardized (no issues found)
+- `hub-sidebar`, `section-header`, `premium-summary-card`, `hub-cta` all correct
+- No instances of deprecated classes found
+
+**Phase 3: Healthcare Law Compliance (Helsepersonelloven § 13)**
+- Full scan of all 527 pages
+- **Result: COMPLIANT** - No violations found
+- All treatment claims properly cited with research
+- Appropriate hedging language used throughout
+- Report: `reports/healthcare-compliance-report.md`
+
+**Phase 4: Website Folder Cleanup**
+- Scan for backup/temp/orphan files
+- **Result: CLEAN** - Only 1 .bak file (in node_modules)
+- ~44 files with "(1)" suffix in /images/ but many are actively used
+- Report: `reports/cleanup-candidates.md`
+
+**Reports Created:**
+- `reports/healthcare-compliance-report.md`
+- `reports/cleanup-candidates.md`
+- `reports/word-image-ratio-analysis.md`
+
+**New CSS Usage Examples:**
+```html
+<!-- Pull Quote -->
+<blockquote class="pull-quote">
+  "Quote text here."
+  <cite>— Source</cite>
+</blockquote>
+
+<!-- Key Stat -->
+<div class="key-stat">
+  <div class="key-stat__number">74%</div>
+  <div class="key-stat__label">Success rate</div>
+</div>
+
+<!-- Content Break -->
+<div class="content-break"><span>•••</span></div>
+```
+
+---
+
 ### 2026-01-28 - Full Audit Script & Warning Fixes (In Progress)
 
 **Task:** Created comprehensive audit script and fixed majority of warnings
