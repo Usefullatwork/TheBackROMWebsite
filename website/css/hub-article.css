@@ -214,3 +214,87 @@
     gap: 12px;
   }
 }
+
+/* ===== HUB-SUBNAV - Related Articles Navigation ===== */
+.hub-subnav {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 32px 0;
+}
+.hub-subnav h3 {
+  color: var(--hub-dark);
+  font-size: 1.15rem;
+  margin: 0 0 8px 0;
+}
+.hub-subnav__intro {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin: 0 0 16px 0;
+}
+.hub-subnav__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+.hub-subnav__grid--detailed {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.hub-subnav__card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.hub-subnav__card:hover {
+  border-color: var(--hub-primary);
+  box-shadow: 0 4px 12px rgba(26, 95, 122, 0.15);
+  transform: translateY(-2px);
+}
+.hub-subnav__card strong {
+  color: var(--hub-dark);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+.hub-subnav__card span {
+  color: #64748b;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+@media (max-width: 600px) {
+  .hub-subnav {
+    padding: 20px 16px;
+  }
+  .hub-subnav__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== OUTRO SECTION WITH BACKGROUND IMAGE ===== */
+/* Override for blog articles - adds background image to CTA section */
+.outro--overlay {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.outro--home-bg {
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.75), rgba(42, 123, 155, 0.7)), url('../images/Home/home-2-optimized.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.page__outro.outro_home.outro--home-bg {
+  position: relative;
+}
+.page__outro.outro_home.outro--home-bg .outro__container {
+  position: relative;
+  z-index: 1;
+}
+.page__outro.outro_home.outro--home-bg .outro__title--white,
+.page__outro.outro_home.outro--home-bg .outro__text--white {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}

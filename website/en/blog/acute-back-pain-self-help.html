@@ -30,8 +30,33 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "name": "Acute Back Pain - Self-Help and Early Treatment",
+        "description": "What to do when acute back pain strikes. Practical self-help guide for the first hours and days, including safe movements and pain relief tips.",
+        "url": "https://thebackrom.com/en/blog/acute-back-pain-self-help.html",
+        "mainContentOfPage": {
+          "@type": "WebPageElement",
+          "cssSelector": ".hub-main"
+        },
+        "medicalAudience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Patient"
+        },
+        "specialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Chiropractic"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Mads Finstad",
+          "jobTitle": "Chiropractor"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
       {
         "@type": "Question",
         "name": "Should I get an X-ray or MRI right away for acute back pain?",
@@ -71,6 +96,8 @@
           "@type": "Answer",
           "text": "Yes. Chiropractors have good experience with acute back episodes and use adapted techniques in the acute phase. Often early treatment can shorten the course and give you concrete strategies for faster improvement."
         }
+      }
+    ]
       }
     ]
   }
@@ -191,6 +218,29 @@
               <p><strong>These symptoms are rare but require urgent evaluation.</strong></p>
               <a href="../conditions/lower-back/red-flags-back-pain.html">Learn more about red flags</a>
             </div>
+            <!-- Related sub-articles -->
+            <nav class="hub-subnav">
+              <h3>Related articles</h3>
+              <p class="hub-subnav__intro">Explore more about low back pain and sciatica:</p>
+              <div class="hub-subnav__grid hub-subnav__grid--detailed">
+                <a href="../../en/conditions/low-back-pain.html" class="hub-subnav__card">
+                  <strong>Low Back Pain</strong>
+                  <span>Main article</span>
+                </a>
+                <a href="../../en/conditions/low-back/sciatica.html" class="hub-subnav__card">
+                  <strong>Sciatica</strong>
+                  <span>Nerve root pain in leg</span>
+                </a>
+                <a href="../../en/conditions/low-back/disc-herniation.html" class="hub-subnav__card">
+                  <strong>Disc Herniation</strong>
+                  <span>Back disc prolapse</span>
+                </a>
+                <a href="../../en/conditions/low-back/lumbago.html" class="hub-subnav__card">
+                  <strong>Lumbago</strong>
+                  <span>Acute back pain</span>
+                </a>
+              </div>
+            </nav>
 
             <section class="hub-section" id="s1">
               <div class="section-header"><span class="section-number">1</span>
@@ -453,7 +503,7 @@
       </div>
     </main>
       <!-- OUTRO/CTA SECTION -->
-      <section class="page__outro outro outro_home">
+      <section class="page__outro outro outro_home outro--overlay outro--home-bg">
         <div class="outro__container">
           <h2 class="outro__title outro__title--white">Ready to take control of your pain?</h2>
           <p class="outro__text outro__text--white">Book an appointment with a chiropractor today and take the first step towards a pain-free life.</p>

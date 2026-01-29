@@ -1,0 +1,331 @@
+{
+  "description": "Blog article category mapping for hub-subnav navigation",
+  "version": "1.0.0",
+  "generated": "2026-01-29",
+  "categories": {
+    "svimmelhet": {
+      "no": {
+        "parent": "../plager/svimmelhet.html",
+        "parentTitle": "Svimmelhet",
+        "introText": "Utforsk mer om svimmelhet og behandling:"
+      },
+      "en": {
+        "parent": "../../en/conditions/dizziness.html",
+        "parentTitle": "Dizziness",
+        "introText": "Explore more about dizziness and treatment:"
+      },
+      "articles": {
+        "no": [
+          "svimmel-og-kvalm.html",
+          "svimmelhet-behandling.html",
+          "svimmel-i-senga.html",
+          "svimmelhet-myter.html",
+          "svimmelhet-stress-angst.html",
+          "subtil-krystallsyke.html",
+          "svimmel-naar-du-staar-opp.html",
+          "leve-med-svimmelhet.html",
+          "eldre-svimmelhet-fallrisiko.html",
+          "sentral-svimmelhet.html",
+          "svimmelhet-ikke-bppv.html"
+        ],
+        "en": [
+          "dizzy-and-nauseous.html",
+          "dizziness-treatment.html",
+          "dizzy-in-bed.html",
+          "dizziness-myths.html",
+          "dizziness-stress-anxiety.html",
+          "subtle-bppv.html",
+          "dizzy-when-standing-up.html",
+          "living-with-dizziness.html",
+          "elderly-dizziness-fall-risk.html",
+          "central-dizziness.html",
+          "dizziness-not-bppv.html"
+        ]
+      },
+      "relatedArticles": {
+        "no": [
+          {"file": "../plager/svimmelhet/krystallsyke-bppv.html", "title": "Krystallsyke (BPPV)", "desc": "Årsaker og behandling"},
+          {"file": "../plager/svimmelhet/nakkesvimmelhet.html", "title": "Nakkesvimmelhet", "desc": "Cervikogen svimmelhet"},
+          {"file": "../plager/svimmelhet/vestibulaer-migrene.html", "title": "Vestibulær migrene", "desc": "Migrene med svimmelhet"}
+        ],
+        "en": [
+          {"file": "../../en/conditions/dizziness/bppv.html", "title": "BPPV (Crystal Disease)", "desc": "Causes and treatment"},
+          {"file": "../../en/conditions/dizziness/cervicogenic-dizziness.html", "title": "Neck Dizziness", "desc": "Cervicogenic dizziness"},
+          {"file": "../../en/conditions/dizziness/vestibular-migraine.html", "title": "Vestibular Migraine", "desc": "Migraine with dizziness"}
+        ]
+      }
+    },
+    "kjeve": {
+      "no": {
+        "parent": "../plager/kjevesmerte.html",
+        "parentTitle": "Kjevesmerter",
+        "introText": "Utforsk mer om kjeve og TMD:"
+      },
+      "en": {
+        "parent": "../../en/conditions/jaw-pain.html",
+        "parentTitle": "Jaw Pain",
+        "introText": "Explore more about jaw pain and TMD:"
+      },
+      "articles": {
+        "no": [
+          "stress-kjevesmerter.html",
+          "kjeveovelser-hjemme.html",
+          "tekstnakke-kjevesmerter.html",
+          "kjevesmerter-barn-ungdom.html",
+          "tmd-ibs-mage-kjeve.html",
+          "bittfeil-myter-fakta.html",
+          "kjeve-nakke-svimmelhet.html",
+          "adhd-autisme-kjevesmerter.html",
+          "graviditet-kjevesmerter.html",
+          "musikere-kjevesmerter.html",
+          "kampsport-kjeveskader.html",
+          "hypermobilitet-eds-kjeve.html",
+          "botox-vs-manuell-behandling-kjeve.html"
+        ],
+        "en": [
+          "stress-jaw-pain.html",
+          "jaw-exercises-home.html",
+          "text-neck-jaw-pain.html",
+          "jaw-pain-children-adolescents.html",
+          "tmd-ibs-gut-jaw.html",
+          "bite-problems-myths-facts.html",
+          "jaw-neck-dizziness.html",
+          "adhd-autism-jaw-pain.html",
+          "pregnancy-jaw-pain.html",
+          "musicians-jaw-pain.html",
+          "martial-arts-jaw-injuries.html",
+          "hypermobility-eds-jaw.html",
+          "botox-vs-manual-treatment-jaw.html"
+        ]
+      },
+      "relatedArticles": {
+        "no": [
+          {"file": "../plager/kjeve/tanngnissing-bruksisme.html", "title": "Tanngnissing", "desc": "Bruksisme og behandling"},
+          {"file": "../plager/kjeve/nakke-kjeve-sammenheng.html", "title": "Nakke-kjeve sammenheng", "desc": "Hvordan nakken påvirker kjeven"},
+          {"file": "../plager/kjeve/kjevehodepine.html", "title": "Kjevehodepine", "desc": "Hodepine fra kjeven"}
+        ],
+        "en": [
+          {"file": "../../en/conditions/jaw/teeth-grinding.html", "title": "Teeth Grinding", "desc": "Bruxism and treatment"},
+          {"file": "../../en/conditions/jaw/neck-jaw-connection.html", "title": "Neck-Jaw Connection", "desc": "How neck affects jaw"},
+          {"file": "../../en/conditions/jaw/jaw-headache.html", "title": "Jaw Headache", "desc": "Headache from jaw"}
+        ]
+      }
+    },
+    "korsrygg": {
+      "no": {
+        "parent": "../plager/korsryggsmerte.html",
+        "parentTitle": "Korsryggsmerter",
+        "introText": "Utforsk mer om korsrygg og isjias:"
+      },
+      "en": {
+        "parent": "../../en/conditions/low-back-pain.html",
+        "parentTitle": "Low Back Pain",
+        "introText": "Explore more about low back pain and sciatica:"
+      },
+      "articles": {
+        "no": [
+          "isjias-prolaps-hekseskudd-forskjell.html",
+          "mr-bildediagnostikk-ryggsmerte.html",
+          "piriformissyndrom-falsk-isjias.html",
+          "l4-l5-prolaps.html",
+          "l5-s1-prolaps.html",
+          "diskogen-smerte.html",
+          "facettleddssyndrom.html",
+          "muskelsmerte-vs-nervesmerte.html",
+          "akutt-ryggsmerte-selvhjelp.html",
+          "ovelser-isjias.html",
+          "styrkeovelser-korsrygg.html"
+        ],
+        "en": [
+          "sciatica-prolapse-lumbago-difference.html",
+          "mri-imaging-back-pain.html",
+          "piriformis-syndrome-false-sciatica.html",
+          "l4-l5-disc-herniation.html",
+          "l5-s1-disc-herniation.html",
+          "discogenic-pain.html",
+          "facet-joint-syndrome.html",
+          "muscle-pain-vs-nerve-pain.html",
+          "acute-back-pain-self-help.html",
+          "exercises-sciatica.html",
+          "strengthening-exercises-lower-back.html"
+        ]
+      },
+      "relatedArticles": {
+        "no": [
+          {"file": "../plager/korsrygg/isjias.html", "title": "Isjias", "desc": "Nerverotsmerte i benet"},
+          {"file": "../plager/korsrygg/skiveprolaps.html", "title": "Skiveprolaps", "desc": "Prolaps i ryggen"},
+          {"file": "../plager/korsrygg/hekseskudd.html", "title": "Hekseskudd", "desc": "Akutt lumbago"}
+        ],
+        "en": [
+          {"file": "../../en/conditions/low-back/sciatica.html", "title": "Sciatica", "desc": "Nerve root pain in leg"},
+          {"file": "../../en/conditions/low-back/disc-herniation.html", "title": "Disc Herniation", "desc": "Back disc prolapse"},
+          {"file": "../../en/conditions/low-back/lumbago.html", "title": "Lumbago", "desc": "Acute back pain"}
+        ]
+      }
+    },
+    "nakke": {
+      "no": {
+        "parent": "../plager/nakkesmerter.html",
+        "parentTitle": "Nakkesmerter",
+        "introText": "Utforsk mer om nakke og relaterte tilstander:"
+      },
+      "en": {
+        "parent": "../../en/conditions/neck-pain.html",
+        "parentTitle": "Neck Pain",
+        "introText": "Explore more about neck pain and related conditions:"
+      },
+      "articles": {
+        "no": [
+          "triggerpunkter-nakken.html",
+          "tekstnakke-mobilnakke.html",
+          "stressnakke-triggerpunkter.html",
+          "nummenhet-fingre-nakke-hand.html",
+          "nakkesmerter-gravid.html"
+        ],
+        "en": [
+          "trigger-points-neck.html",
+          "text-neck-phone-neck.html",
+          "stress-neck-trigger-points.html",
+          "numbness-fingers-neck-hand.html",
+          "neck-pain-pregnancy.html"
+        ]
+      },
+      "relatedArticles": {
+        "no": [
+          {"file": "../plager/nakke/nakkeprolaps.html", "title": "Nakkeprolaps", "desc": "Prolaps i nakken"},
+          {"file": "../plager/nakke/torticollis.html", "title": "Torticollis", "desc": "Stiv nakke/nakkesperre"},
+          {"file": "../plager/hodepine/nakkehodepine.html", "title": "Nakkehodepine", "desc": "Cervikogen hodepine"}
+        ],
+        "en": [
+          {"file": "../../en/conditions/neck/cervical-disc-herniation.html", "title": "Neck Prolapse", "desc": "Cervical disc herniation"},
+          {"file": "../../en/conditions/neck/torticollis.html", "title": "Torticollis", "desc": "Stiff neck/wry neck"},
+          {"file": "../../en/conditions/headache/cervicogenic-headache.html", "title": "Neck Headache", "desc": "Cervicogenic headache"}
+        ]
+      }
+    },
+    "andre": {
+      "no": {
+        "parent": "../plager.html",
+        "parentTitle": "Alle plager",
+        "introText": "Utforsk relaterte artikler:"
+      },
+      "en": {
+        "parent": "../../en/conditions.html",
+        "parentTitle": "All Conditions",
+        "introText": "Explore related articles:"
+      },
+      "articles": {
+        "no": [
+          "kiropraktor-vs-fysioterapeut.html",
+          "hjernerystelse-idrett.html"
+        ],
+        "en": [
+          "chiropractor-vs-physiotherapist.html",
+          "concussion-sports.html"
+        ]
+      },
+      "relatedArticles": {
+        "no": [
+          {"file": "../services.html", "title": "Tjenester", "desc": "Se alle behandlingsmetoder"},
+          {"file": "../about.html", "title": "Om meg", "desc": "Kiropraktor Mads Finstad"},
+          {"file": "../faq.html", "title": "FAQ", "desc": "Ofte stilte spørsmål"}
+        ],
+        "en": [
+          {"file": "../../en/services.html", "title": "Services", "desc": "See all treatment methods"},
+          {"file": "../../en/about.html", "title": "About Me", "desc": "Chiropractor Mads Finstad"},
+          {"file": "../../en/faq.html", "title": "FAQ", "desc": "Frequently asked questions"}
+        ]
+      }
+    }
+  },
+  "articleToCategory": {
+    "no": {
+      "svimmel-og-kvalm.html": "svimmelhet",
+      "svimmelhet-behandling.html": "svimmelhet",
+      "svimmel-i-senga.html": "svimmelhet",
+      "svimmelhet-myter.html": "svimmelhet",
+      "svimmelhet-stress-angst.html": "svimmelhet",
+      "subtil-krystallsyke.html": "svimmelhet",
+      "svimmel-naar-du-staar-opp.html": "svimmelhet",
+      "leve-med-svimmelhet.html": "svimmelhet",
+      "eldre-svimmelhet-fallrisiko.html": "svimmelhet",
+      "sentral-svimmelhet.html": "svimmelhet",
+      "svimmelhet-ikke-bppv.html": "svimmelhet",
+      "stress-kjevesmerter.html": "kjeve",
+      "kjeveovelser-hjemme.html": "kjeve",
+      "tekstnakke-kjevesmerter.html": "kjeve",
+      "kjevesmerter-barn-ungdom.html": "kjeve",
+      "tmd-ibs-mage-kjeve.html": "kjeve",
+      "bittfeil-myter-fakta.html": "kjeve",
+      "kjeve-nakke-svimmelhet.html": "kjeve",
+      "adhd-autisme-kjevesmerter.html": "kjeve",
+      "graviditet-kjevesmerter.html": "kjeve",
+      "musikere-kjevesmerter.html": "kjeve",
+      "kampsport-kjeveskader.html": "kjeve",
+      "hypermobilitet-eds-kjeve.html": "kjeve",
+      "botox-vs-manuell-behandling-kjeve.html": "kjeve",
+      "isjias-prolaps-hekseskudd-forskjell.html": "korsrygg",
+      "mr-bildediagnostikk-ryggsmerte.html": "korsrygg",
+      "piriformissyndrom-falsk-isjias.html": "korsrygg",
+      "l4-l5-prolaps.html": "korsrygg",
+      "l5-s1-prolaps.html": "korsrygg",
+      "diskogen-smerte.html": "korsrygg",
+      "facettleddssyndrom.html": "korsrygg",
+      "muskelsmerte-vs-nervesmerte.html": "korsrygg",
+      "akutt-ryggsmerte-selvhjelp.html": "korsrygg",
+      "ovelser-isjias.html": "korsrygg",
+      "styrkeovelser-korsrygg.html": "korsrygg",
+      "triggerpunkter-nakken.html": "nakke",
+      "tekstnakke-mobilnakke.html": "nakke",
+      "stressnakke-triggerpunkter.html": "nakke",
+      "nummenhet-fingre-nakke-hand.html": "nakke",
+      "nakkesmerter-gravid.html": "nakke",
+      "kiropraktor-vs-fysioterapeut.html": "andre",
+      "hjernerystelse-idrett.html": "andre"
+    },
+    "en": {
+      "dizzy-and-nauseous.html": "svimmelhet",
+      "dizziness-treatment.html": "svimmelhet",
+      "dizzy-in-bed.html": "svimmelhet",
+      "dizziness-myths.html": "svimmelhet",
+      "dizziness-stress-anxiety.html": "svimmelhet",
+      "subtle-bppv.html": "svimmelhet",
+      "dizzy-when-standing-up.html": "svimmelhet",
+      "living-with-dizziness.html": "svimmelhet",
+      "elderly-dizziness-fall-risk.html": "svimmelhet",
+      "central-dizziness.html": "svimmelhet",
+      "dizziness-not-bppv.html": "svimmelhet",
+      "stress-jaw-pain.html": "kjeve",
+      "jaw-exercises-home.html": "kjeve",
+      "text-neck-jaw-pain.html": "kjeve",
+      "jaw-pain-children-adolescents.html": "kjeve",
+      "tmd-ibs-gut-jaw.html": "kjeve",
+      "bite-problems-myths-facts.html": "kjeve",
+      "jaw-neck-dizziness.html": "kjeve",
+      "adhd-autism-jaw-pain.html": "kjeve",
+      "pregnancy-jaw-pain.html": "kjeve",
+      "musicians-jaw-pain.html": "kjeve",
+      "martial-arts-jaw-injuries.html": "kjeve",
+      "hypermobility-eds-jaw.html": "kjeve",
+      "botox-vs-manual-treatment-jaw.html": "kjeve",
+      "sciatica-prolapse-lumbago-difference.html": "korsrygg",
+      "mri-imaging-back-pain.html": "korsrygg",
+      "piriformis-syndrome-false-sciatica.html": "korsrygg",
+      "l4-l5-disc-herniation.html": "korsrygg",
+      "l5-s1-disc-herniation.html": "korsrygg",
+      "discogenic-pain.html": "korsrygg",
+      "facet-joint-syndrome.html": "korsrygg",
+      "muscle-pain-vs-nerve-pain.html": "korsrygg",
+      "acute-back-pain-self-help.html": "korsrygg",
+      "exercises-sciatica.html": "korsrygg",
+      "strengthening-exercises-lower-back.html": "korsrygg",
+      "trigger-points-neck.html": "nakke",
+      "text-neck-phone-neck.html": "nakke",
+      "stress-neck-trigger-points.html": "nakke",
+      "numbness-fingers-neck-hand.html": "nakke",
+      "neck-pain-pregnancy.html": "nakke",
+      "chiropractor-vs-physiotherapist.html": "andre",
+      "concussion-sports.html": "andre"
+    }
+  }
+}
