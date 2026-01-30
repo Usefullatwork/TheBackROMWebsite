@@ -1,26 +1,21 @@
 # Full Site Audit Report
 
 **Generated:** 2026-01-30
-**Pages scanned:** 492
-**Total issues:** 23
+**Pages scanned:** 498
+**Total issues:** 18
 
 ## Summary
 
 | Severity | Count |
 |----------|-------|
 | 🔴 Critical | 0 |
-| 🟡 Warning | 7 |
+| 🟡 Warning | 2 |
 | 🔵 Info | 16 |
 
 ## Warnings
 
 - **blogg\index.html** [Performance] 9 external scripts (>8)
-- **plager\ryggsmerter.html** [Hreflang & Language] Missing hreflang="en"
-- **plager\hofte\piriformis-syndrom.html** [Hreflang & Language] Missing hreflang="en"
-- **plager\hodepine\vestibulaer-migrene.html** [Hreflang & Language] Missing hreflang="en"
-- **plager\korsrygg\nociplastisk-smerte.html** [Hreflang & Language] Missing hreflang="en"
 - **en\blog\index.html** [Performance] 9 external scripts (>8)
-- **en\emergency-treatment.html** [Hreflang & Language] Missing hreflang="nb"
 
 ## Info
 
@@ -59,16 +54,6 @@ Critical: 0 | Warnings: 0 | Info: 12
 - 🔵 **en\contact.html** Low word count: 172 (<300)
 - 🔵 **en\services.html** Low word count: 143 (<300)
 - 🔵 **en\404.html** Low word count: 92 (<300)
-
-### Hreflang & Language
-
-Critical: 0 | Warnings: 5 | Info: 0
-
-- 🟡 **plager\ryggsmerter.html** Missing hreflang="en"
-- 🟡 **plager\hofte\piriformis-syndrom.html** Missing hreflang="en"
-- 🟡 **plager\hodepine\vestibulaer-migrene.html** Missing hreflang="en"
-- 🟡 **plager\korsrygg\nociplastisk-smerte.html** Missing hreflang="en"
-- 🟡 **en\emergency-treatment.html** Missing hreflang="nb"
 
 ### Performance
 

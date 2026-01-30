@@ -354,6 +354,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://thebackrom.com/blogg/svimmelhet-typer-forskjell.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/blogg/svimmelhet-typer-forskjell.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/blog/dizziness-types-differences.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://thebackrom.com/blogg/tekstnakke-kjevesmerter.html</loc>
     <lastmod>2025-12-28</lastmod>
     <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/blogg/tekstnakke-kjevesmerter.html"/>
@@ -1525,9 +1533,9 @@
   </url>
   <url>
     <loc>https://thebackrom.com/plager/ryggsmerter.html</loc>
-    <lastmod>2025-12-28</lastmod>
+    <lastmod>2026-01-30</lastmod>
     <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/ryggsmerter.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/lower-back-pain.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/thoracic-back-pain.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1709,9 +1717,9 @@
   </url>
   <url>
     <loc>https://thebackrom.com/plager/svimmelhet/vestibulaer-migrene.html</loc>
-    <lastmod>2025-12-28</lastmod>
+    <lastmod>2026-01-30</lastmod>
     <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/svimmelhet/vestibulaer-migrene.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/dizziness/vestibular-migraine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/headache/vestibular-migraine.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2269,9 +2277,9 @@
   </url>
   <url>
     <loc>https://thebackrom.com/en/conditions/dizziness/vestibular-migraine.html</loc>
-    <lastmod>2026-01-15</lastmod>
+    <lastmod>2026-01-30</lastmod>
     <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/svimmelhet/vestibulaer-migrene.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/dizziness/vestibular-migraine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/headache/vestibular-migraine.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -3484,14 +3492,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thebackrom.com/plager/hodepine/vestibulaer-migrene.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/hodepine/vestibulaer-migrene.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/dizziness/vestibular-migraine.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thebackrom.com/plager/hofte/athletic-pubalgia-lyskebrokk.html</loc>
     <lastmod>2026-01-15</lastmod>
     <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/hofte/athletic-pubalgia-lyskebrokk.html"/>
@@ -3581,7 +3581,9 @@
   </url>
   <url>
     <loc>https://thebackrom.com/plager/hofte/piriformis-syndrom.html</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-01-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/hofte/piriformis-syndrom.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/hip/piriformis-syndrome.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -3715,7 +3717,9 @@
   </url>
   <url>
     <loc>https://thebackrom.com/plager/korsrygg/nociplastisk-smerte.html</loc>
-    <lastmod>2026-01-15</lastmod>
+    <lastmod>2026-01-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/korsrygg/nociplastisk-smerte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/lower-back/nociplastic-pain.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -3966,5 +3970,53 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/foot/foot-exercises.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thebackrom.com/akutt-behandling-helg.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/akutt-behandling-helg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/emergency-treatment.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thebackrom.com/en/blog/dizziness-types-differences.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/blogg/svimmelhet-typer-forskjell.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/blog/dizziness-types-differences.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebackrom.com/en/conditions/thoracic-back-pain.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/ryggsmerter.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/thoracic-back-pain.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebackrom.com/en/conditions/hip/piriformis-syndrome.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/hofte/piriformis-syndrom.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/hip/piriformis-syndrome.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thebackrom.com/en/conditions/lower-back/nociplastic-pain.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/korsrygg/nociplastisk-smerte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/lower-back/nociplastic-pain.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thebackrom.com/en/conditions/headache/vestibular-migraine.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://thebackrom.com/plager/svimmelhet/vestibulaer-migrene.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebackrom.com/en/conditions/headache/vestibular-migraine.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
