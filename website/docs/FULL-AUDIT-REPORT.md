@@ -1,21 +1,26 @@
 # Full Site Audit Report
 
-**Generated:** 2026-01-29
+**Generated:** 2026-01-30
 **Pages scanned:** 492
-**Total issues:** 20
+**Total issues:** 23
 
 ## Summary
 
 | Severity | Count |
 |----------|-------|
 | 🔴 Critical | 0 |
-| 🟡 Warning | 2 |
-| 🔵 Info | 18 |
+| 🟡 Warning | 7 |
+| 🔵 Info | 16 |
 
 ## Warnings
 
 - **blogg\index.html** [Performance] 9 external scripts (>8)
+- **plager\ryggsmerter.html** [Hreflang & Language] Missing hreflang="en"
+- **plager\hofte\piriformis-syndrom.html** [Hreflang & Language] Missing hreflang="en"
+- **plager\hodepine\vestibulaer-migrene.html** [Hreflang & Language] Missing hreflang="en"
+- **plager\korsrygg\nociplastisk-smerte.html** [Hreflang & Language] Missing hreflang="en"
 - **en\blog\index.html** [Performance] 9 external scripts (>8)
+- **en\emergency-treatment.html** [Hreflang & Language] Missing hreflang="nb"
 
 ## Info
 
@@ -27,8 +32,6 @@
 - **index.html** [Structural Consistency] Missing breadcrumb navigation
 - **blogg\index.html** [Content Quality] Low word count: 107 (<300)
 - **plager\idrettsskader.html** [Content Quality] Low word count: 281 (<300)
-- **plager\hofte\piriformis-syndrom.html** [Hreflang & Language] No hreflang tags (single-language page)
-- **plager\korsrygg\nociplastisk-smerte.html** [Hreflang & Language] No hreflang tags (single-language page)
 - **en\blog\index.html** [Content Quality] Low word count: 129 (<300)
 - **en\blog\acute-back-pain-self-help.html** [Structural Consistency] Missing breadcrumb navigation
 - **en\prices.html** [Content Quality] Low word count: 241 (<300)
@@ -59,10 +62,13 @@ Critical: 0 | Warnings: 0 | Info: 12
 
 ### Hreflang & Language
 
-Critical: 0 | Warnings: 0 | Info: 2
+Critical: 0 | Warnings: 5 | Info: 0
 
-- 🔵 **plager\hofte\piriformis-syndrom.html** No hreflang tags (single-language page)
-- 🔵 **plager\korsrygg\nociplastisk-smerte.html** No hreflang tags (single-language page)
+- 🟡 **plager\ryggsmerter.html** Missing hreflang="en"
+- 🟡 **plager\hofte\piriformis-syndrom.html** Missing hreflang="en"
+- 🟡 **plager\hodepine\vestibulaer-migrene.html** Missing hreflang="en"
+- 🟡 **plager\korsrygg\nociplastisk-smerte.html** Missing hreflang="en"
+- 🟡 **en\emergency-treatment.html** Missing hreflang="nb"
 
 ### Performance
 

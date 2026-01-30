@@ -1,8 +1,8 @@
 # Hreflang Audit Report
 
-**Generated:** 2026-01-29
+**Generated:** 2026-01-30
 **Files scanned:** 492
-**Files with hreflang:** 485
+**Files with hreflang:** 487
 **Pairs checked:** 482
 
 ## Summary
@@ -12,7 +12,7 @@
 | Missing bidirectional links | 0 |
 | Missing self-reference | 12 |
 | Broken hreflang targets | 0 |
-| Pages without hreflang | 2 |
+| Pages without hreflang | 0 |
 | Missing translations | 460 |
 
 ## Critical: Broken Hreflang Targets
@@ -83,12 +83,7 @@ SEO best practice is to include a self-referencing hreflang tag.
 
 ## Pages Without Hreflang Tags
 
-ℹ️ 2 page(s) have no hreflang tags
-
-These pages may be single-language or intentionally excluded:
-
-- plager/hofte/piriformis-syndrom.html
-- plager/korsrygg/nociplastisk-smerte.html
+✅ All pages have hreflang tags
 
 ## Recommendations
 
