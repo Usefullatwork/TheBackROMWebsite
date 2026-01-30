@@ -29,8 +29,8 @@
 - **plager\idrettsskader.html** [Content Quality] Low word count: 281 (<300)
 - **plager\hofte\piriformis-syndrom.html** [Hreflang & Language] No hreflang tags (single-language page)
 - **plager\korsrygg\nociplastisk-smerte.html** [Hreflang & Language] No hreflang tags (single-language page)
-- **en\blog\acute-back-pain-self-help.html** [Structural Consistency] Missing breadcrumb navigation
 - **en\blog\index.html** [Content Quality] Low word count: 129 (<300)
+- **en\blog\acute-back-pain-self-help.html** [Structural Consistency] Missing breadcrumb navigation
 - **en\prices.html** [Content Quality] Low word count: 241 (<300)
 - **en\conditions.html** [Content Quality] Low word count: 150 (<300)
 - **en\contact.html** [Content Quality] Low word count: 172 (<300)
