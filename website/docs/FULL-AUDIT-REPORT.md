@@ -2,7 +2,7 @@
 
 **Generated:** 2026-01-31
 **Pages scanned:** 498
-**Total issues:** 17
+**Total issues:** 18
 
 ## Summary
 
@@ -10,7 +10,7 @@
 |----------|-------|
 | 🔴 Critical | 0 |
 | 🟡 Warning | 1 |
-| 🔵 Info | 16 |
+| 🔵 Info | 17 |
 
 ## Warnings
 
@@ -23,6 +23,7 @@
 - **plager.html** [Content Quality] Low word count: 143 (<300)
 - **404.html** [Content Quality] Low word count: 96 (<300)
 - **404.html** [Structural Consistency] Missing breadcrumb navigation
+- **index.html** [Performance] Image missing loading attribute: logo-header.webp
 - **index.html** [Structural Consistency] Missing breadcrumb navigation
 - **blogg\index.html** [Content Quality] Low word count: 107 (<300)
 - **plager\idrettsskader.html** [Content Quality] Low word count: 281 (<300)
@@ -53,6 +54,12 @@ Critical: 0 | Warnings: 0 | Info: 12
 - 🔵 **en\services.html** Low word count: 143 (<300)
 - 🔵 **en\404.html** Low word count: 92 (<300)
 - 🔵 **en\prices.html** Low word count: 280 (<300)
+
+### Performance
+
+Critical: 0 | Warnings: 0 | Info: 1
+
+- 🔵 **index.html** Image missing loading attribute: logo-header.webp
 
 ### Schema Markup
 
