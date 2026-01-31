@@ -2,19 +2,23 @@
 
 **Generated:** 2026-01-31
 **Pages scanned:** 498
-**Total issues:** 16
+**Total issues:** 17
 
 ## Summary
 
 | Severity | Count |
 |----------|-------|
 | 🔴 Critical | 0 |
-| 🟡 Warning | 0 |
+| 🟡 Warning | 1 |
 | 🔵 Info | 16 |
+
+## Warnings
+
+- **en\contact.html** [Schema Markup] FAQ section found but no FAQPage schema
 
 ## Info
 
-- **contact.html** [Content Quality] Low word count: 166 (<300)
+- **contact.html** [Content Quality] Low word count: 191 (<300)
 - **services.html** [Content Quality] Low word count: 136 (<300)
 - **plager.html** [Content Quality] Low word count: 143 (<300)
 - **404.html** [Content Quality] Low word count: 96 (<300)
@@ -22,14 +26,14 @@
 - **index.html** [Structural Consistency] Missing breadcrumb navigation
 - **blogg\index.html** [Content Quality] Low word count: 107 (<300)
 - **plager\idrettsskader.html** [Content Quality] Low word count: 281 (<300)
+- **en\contact.html** [Content Quality] Low word count: 197 (<300)
 - **en\blog\acute-back-pain-self-help.html** [Structural Consistency] Missing breadcrumb navigation
 - **en\blog\index.html** [Content Quality] Low word count: 129 (<300)
-- **en\prices.html** [Content Quality] Low word count: 241 (<300)
 - **en\conditions.html** [Content Quality] Low word count: 150 (<300)
-- **en\contact.html** [Content Quality] Low word count: 172 (<300)
 - **en\services.html** [Content Quality] Low word count: 143 (<300)
 - **en\index.html** [Structural Consistency] Missing breadcrumb navigation
 - **en\404.html** [Content Quality] Low word count: 92 (<300)
+- **en\prices.html** [Content Quality] Low word count: 280 (<300)
 
 ## By Category
 
@@ -37,18 +41,24 @@
 
 Critical: 0 | Warnings: 0 | Info: 12
 
-- 🔵 **contact.html** Low word count: 166 (<300)
+- 🔵 **contact.html** Low word count: 191 (<300)
 - 🔵 **services.html** Low word count: 136 (<300)
 - 🔵 **plager.html** Low word count: 143 (<300)
 - 🔵 **404.html** Low word count: 96 (<300)
 - 🔵 **blogg\index.html** Low word count: 107 (<300)
 - 🔵 **plager\idrettsskader.html** Low word count: 281 (<300)
+- 🔵 **en\contact.html** Low word count: 197 (<300)
 - 🔵 **en\blog\index.html** Low word count: 129 (<300)
-- 🔵 **en\prices.html** Low word count: 241 (<300)
 - 🔵 **en\conditions.html** Low word count: 150 (<300)
-- 🔵 **en\contact.html** Low word count: 172 (<300)
 - 🔵 **en\services.html** Low word count: 143 (<300)
 - 🔵 **en\404.html** Low word count: 92 (<300)
+- 🔵 **en\prices.html** Low word count: 280 (<300)
+
+### Schema Markup
+
+Critical: 0 | Warnings: 1 | Info: 0
+
+- 🟡 **en\contact.html** FAQ section found but no FAQPage schema
 
 ### Structural Consistency
 
